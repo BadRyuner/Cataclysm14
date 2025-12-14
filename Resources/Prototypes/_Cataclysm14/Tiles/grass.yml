@@ -1,0 +1,122 @@
+- type: tile
+  id: FloorCDDAGrassBaseDirty
+  name: CDDA-tiles-grass-base-dirty
+  sprite: /Textures/_Cataclysm14/Tiles/grass/grass.png
+  variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.4
+  - 0.4
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+  baseTurf: FloorDirt
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+  deconstructTools: [ Digging ] # Frontier
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCDDAGrassAutumnDirty
+  name: CDDA-tiles-grass-autumn-dirty
+  sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass.png
+  variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.4
+  - 0.4
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+  baseTurf: FloorDirt
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+  deconstructTools: [ Digging ] # Frontier
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCDDAGrassSummerDirty
+  name: CDDA-tiles-grass-summer-dirty
+  sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass.png
+  variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.4
+  - 0.4
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+  baseTurf: FloorDirt
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+  deconstructTools: [ Digging ] # Frontier
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+
+# - type: tile
+#   id: FloorCDDADirt
+#   name: CDDA-tiles-dirt-floor
+#   sprite: /Textures/Tiles/dirt.png
+#   variants: 4
+#   placementVariants:
+#   - 1.0
+#   - 1.0
+#   - 1.0
+#   - 1.0
+#   baseTurf: FloorBedrock # Delta V
+#   #canCrowbar: false # Come back
+#   # canShovel: true # Delta V # Frontier
+#   deconstructTools: [ Digging ] # Frontier
+#   footstepSounds:
+#     collection: FootstepAsteroid
+#   itemDrop: FloorTileItemDirt # Delta V
+#   heatCapacity: 10000
+#   weather: true

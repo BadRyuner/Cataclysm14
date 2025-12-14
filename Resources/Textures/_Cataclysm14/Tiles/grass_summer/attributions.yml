@@ -1,0 +1,4 @@
+- files: ["grass.png", "triple_edge.png", "double_edge.png", "single_edge.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from the CDDA tileset Ultimate Cataclysm"
+  source: "https://github.com/I-am-Erk/CDDA-Tilesets/tree/a0c49d1fa72692ab6316614dc8a1f070c82c487f/gfx/UltimateCataclysm/pngs_normal_32x32/terrain/t_grass"
