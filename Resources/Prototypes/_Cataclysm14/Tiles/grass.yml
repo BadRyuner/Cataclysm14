@@ -1,3 +1,5 @@
+#regular climat / grassland related tiles -> dirt, grass of regular seasons excluding winter
+
 # MARK: Dirty
 - type: tile
   id: FloorCDDAGrassBaseDirty
@@ -36,7 +38,7 @@
 - type: tile
   id: FloorCDDAGrassAutumnDirty
   name: CDDA-tiles-grass-autumn-dirty
-  sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass.png
+  sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass_autumn.png
   variants: 7
   placementVariants:
   - 1.0
@@ -70,7 +72,7 @@
 - type: tile
   id: FloorCDDAGrassSummerDirty
   name: CDDA-tiles-grass-summer-dirty
-  sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass.png
+  sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass_summer.png
   variants: 7
   placementVariants:
   - 1.0
@@ -140,7 +142,7 @@
 - type: tile
   id: FloorCDDAGrassAutumnClean
   name: CDDA-tiles-grass-autumn-clean
-  sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass.png
+  sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass_autumn.png
   variants: 7
   placementVariants:
   - 1.0
@@ -174,7 +176,7 @@
 - type: tile
   id: FloorCDDAGrassSummerClean
   name: CDDA-tiles-grass-summer-clean
-  sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass.png
+  sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass_summer.png
   variants: 7
   placementVariants:
   - 1.0

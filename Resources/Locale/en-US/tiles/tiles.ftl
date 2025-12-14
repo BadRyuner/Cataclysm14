@@ -146,3 +146,6 @@ CDDA-tiles-grass-summer-clean = summer mowed grass floor
 CDDA-tiles-dirt = dirt floor
 CDDA-tiles-asphalt-base = gray asphalt floor
 CDDA-tiles-asphalt-red = red asphalt floor
+CDDA-tiles-sand-base = sand floor
+CDDA-tiles-rock-base = rocky floor
+CDDA-tiles-rock-black = black rocky floor
