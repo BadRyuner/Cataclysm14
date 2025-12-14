@@ -144,3 +144,5 @@ CDDA-tiles-grass-base-clean = grass mowed floor
 CDDA-tiles-grass-autumn-clean = autumn mowed grass floor
 CDDA-tiles-grass-summer-clean = summer mowed grass floor
 CDDA-tiles-dirt = dirt floor
+CDDA-tiles-asphalt-base = gray asphalt floor
+CDDA-tiles-asphalt-red = red asphalt floor

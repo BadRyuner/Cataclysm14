@@ -42,11 +42,11 @@
   heatCapacity: 10000
   weather: true
 
-#MARK: RoadLine
+#MARK: RoadLines
 #actually an entity but ssssshhhhh
 
 - type: entity
-  id: FloorRoadMarkingWhites
+  id: FloorRoadMarkingWhite
   name: white road markings
   description: Some painted on road markings. Looks easy enough to remove by hitting it. Those ones are made with white paint.
   placement:
@@ -73,7 +73,6 @@
   - type: Fixtures
   - type: Damageable
     damageContainer: Inorganic
-    damageModifierSet: Metallic
   - type: Destructible
     thresholds:
     - trigger:
@@ -85,3 +84,21 @@
   - type: Appearance
   - type: CableVis
     node: power
+
+- type: entity
+  parent: FloorRoadMarkingWhite
+  id: FloorRoadMarkingYellow
+  name: yellow road markings
+  description: Some painted on road markings. Looks easy enough to remove by hitting it. Those ones are made with yellow paint.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line.rsi
+    color: "#cdc208"
+    state: line_0
+    drawdepth: ThickWire
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line.rsi
+    color: "#cdc208"
+    state: line_4
