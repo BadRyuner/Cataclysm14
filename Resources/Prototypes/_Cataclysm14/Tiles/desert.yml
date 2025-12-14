@@ -1,0 +1,35 @@
+#desert related tiles -> dry dirt, sandstone, grass
+
+#MARK: Sand
+- type: tile
+  id: FloorCDDASandBase
+  name: CDDA-tiles-sand-base
+  sprite: /Textures/_Cataclysm14/Tiles/sand/sand.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.4
+  - 0.4
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/sand/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/sand/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/sand/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/sand/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
+  baseTurf: FloorDirt
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+  deconstructTools: [ Digging ] # Frontier
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true

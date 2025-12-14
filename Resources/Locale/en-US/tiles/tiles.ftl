@@ -136,3 +136,16 @@ tiles-xeno-steel = xeno steel tile
 tiles-xeno-steel-corner = xeno steel corner tile
 tiles-xeno-maint = xeno techmaint
 tiles-dark-squiggly = dark steel squiggly tile
+
+CDDA-tiles-grass-base-dirty = grass dirty floor
+CDDA-tiles-grass-autumn-dirty = autumn dirty grass floor
+CDDA-tiles-grass-summer-dirty = summer dirty grass floor
+CDDA-tiles-grass-base-clean = grass mowed floor
+CDDA-tiles-grass-autumn-clean = autumn mowed grass floor
+CDDA-tiles-grass-summer-clean = summer mowed grass floor
+CDDA-tiles-dirt = dirt floor
+CDDA-tiles-asphalt-base = gray asphalt floor
+CDDA-tiles-asphalt-red = red asphalt floor
+CDDA-tiles-sand-base = sand floor
+CDDA-tiles-rock-base = rocky floor
+CDDA-tiles-rock-black = black rocky floor
