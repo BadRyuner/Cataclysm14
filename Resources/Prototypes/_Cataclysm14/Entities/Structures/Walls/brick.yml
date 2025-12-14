@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseWallTierOne # Mono
+  id: WallCDDABrickRedRed
+  name: brick wall
+  components:
+  - type: Sprite
+    sprite: Structures/Walls/brick.rsi
+  - type: Icon
+    sprite: Structures/Walls/brick.rsi
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: IconSmooth
+    key: bricks
+    base: brick
