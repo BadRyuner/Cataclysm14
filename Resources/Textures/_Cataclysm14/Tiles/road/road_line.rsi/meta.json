@@ -1,0 +1,75 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+	"license": "CC-BY-SA-3.0",
+	"copyright": "Made by zeranov/avtomata (disc:core_mene)",
+    "states": [
+        {
+            "name": "line_0"
+
+        },
+        {
+            "name": "line_1"
+
+        },
+        {
+            "name": "line_2"
+
+        },
+        {
+            "name": "line_3"
+
+        },
+        {
+            "name": "line_4"
+
+        },
+        {
+            "name": "line_5"
+
+        },
+        {
+            "name": "line_6"
+
+        },
+        {
+            "name": "line_7"
+
+        },
+        {
+            "name": "line_8"
+
+        },
+        {
+            "name": "line_9"
+
+        },
+        {
+            "name": "line_10"
+
+        },
+        {
+            "name": "line_11"
+
+        },
+        {
+            "name": "line_12"
+
+        },
+        {
+            "name": "line_13"
+
+        },
+        {
+            "name": "line_14"
+
+        },
+        {
+            "name": "line_15"
+
+        }
+    ]
+}
