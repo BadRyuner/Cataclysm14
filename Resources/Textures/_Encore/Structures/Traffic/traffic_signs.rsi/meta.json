@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "by kyres1 (Github)",
+    "size": {
+        "x": 96,
+        "y": 96
+    },
+    "states": [
+        {
+            "name": "label_1"
+        },
+        {
+            "name": "label_2"
+        },
+        {
+            "name": "label_3"
+        },
+        {
+            "name": "label_4"
+        },
+        {
+            "name": "pedestrian",
+            "directions": 4
+        },
+        {
+            "name": "stop",
+            "directions": 4
+        },
+        {
+            "name": "turn_left",
+            "directions": 4
+        },
+        {
+            "name": "turn_right",
+            "directions": 4
+        },
+        {
+            "name": "yield",
+            "directions": 4
+        },
+        {
+            "name": "one_way"
+        }
+    ]
+}

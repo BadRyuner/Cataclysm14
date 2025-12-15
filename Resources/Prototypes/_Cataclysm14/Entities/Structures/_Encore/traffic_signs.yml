@@ -1,0 +1,97 @@
+#made by kyres/noodle_buster for Encore
+
+- type: entity
+  id: TrafficSign
+  name: stop traffic sign
+  description: A sign which hopefully indicates you should stop fully and look both ways before proceeding.
+  parent: BaseStructure
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Encore/Structures/Traffic/traffic_signs.rsi
+    state: stop
+    drawdepth: Overdoors
+
+- type: entity
+  id: YieldSign
+  name: yield traffic sign
+  description: A triangular red-and-white sign, telling you to slow down and potentially stop for merging traffic.
+  parent: TrafficSign
+  components:
+  - type: Appearance
+  - type: Sprite
+    state: yield
+
+- type: entity
+  id: PedestrianSign
+  name: pedestrian traffic sign
+  description: A big yellow sign, asking you to speed up for bonus points.
+  parent: TrafficSign
+  components:
+  - type: Appearance
+  - type: Sprite
+    state: pedestrian
+
+- type: entity
+  id: OneWaySign
+  name: one way traffic sign
+  description: An innocuous sign alerting you that the street you see only allows traffic in one direction. As if you care.
+  parent: TrafficSign
+  components:
+  - type: Appearance
+  - type: Sprite
+    state: one_way
+
+- type: entity
+  id: TurnLeftSign
+  name: left turn traffic sign
+  description: A sign warning you of a sharp left turn ahead.
+  parent: TrafficSign
+  components:
+  - type: Appearance
+  - type: Sprite
+    state: turn_left
+
+- type: entity
+  id: TurnRightSign
+  name: right turn traffic sign
+  description: A sign warning you of a sharp right turn ahead.
+  parent: TrafficSign
+  components:
+  - type: Appearance
+  - type: Sprite
+    state: turn_right
+
+- type: entity
+  id: LabelSign
+  name: street label traffic sign #This gets described and renamed in mapping according to street name
+  description: A sign labelling a street.
+  parent: TrafficSign
+  components:
+  - type: Appearance
+  - type: Sprite
+    state: label_1
+
+- type: entity
+  id: LabelSign2
+  parent: LabelSign
+  components:
+  - type: Appearance
+  - type: Sprite
+    state: label_2
+
+- type: entity
+  id: LabelSign3
+  parent: LabelSign
+  components:
+  - type: Appearance
+  - type: Sprite
+    state: label_3
+
+- type: entity
+  id: LabelSign4
+  parent: LabelSign
+  components:
+  - type: Appearance
+  - type: Sprite
+    state: label_4
