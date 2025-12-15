@@ -1,16 +1,12 @@
 - type: entity
-  parent: BaseWallTierOne # Mono
+  parent: BaseWallTierOne
   id: WallCDDABrickRedRed
-  name: brick wall
+  name: red brick wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/brick.rsi
+    sprite: _Cataclysm14/Structures/Walls/brick_red_red.rsi
   - type: Icon
-    sprite: Structures/Walls/brick.rsi
-  - type: RCDDeconstructable
-    cost: 6
-    delay: 8
-    fx: EffectRCDDeconstruct8
+    sprite: _Cataclysm14/Structures/Walls/brick_red_red.rsi
   - type: IconSmooth
-    key: bricks
+    key: walls
     base: brick
