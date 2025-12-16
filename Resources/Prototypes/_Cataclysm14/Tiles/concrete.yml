@@ -12,7 +12,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDARockBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass
@@ -35,7 +35,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDARockBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass
@@ -70,7 +70,7 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDARockBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass
@@ -103,7 +103,7 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDARockBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass

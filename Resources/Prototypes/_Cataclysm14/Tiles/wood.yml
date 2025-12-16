@@ -7,7 +7,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDAConcreteSlabBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass
@@ -27,7 +27,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDAConcreteSlabBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass

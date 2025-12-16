@@ -10,7 +10,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorBedrock # Delta V
+  baseTurf: FloorCDDARockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   # deconstructTools: [ Digging ] # Frontier
@@ -31,7 +31,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorBedrock # Delta V
+  baseTurf: FloorCDDARockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   # deconstructTools: [ Digging ] # Frontier
@@ -183,7 +183,7 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
-  baseTurf: FloorBedrock # Delta V
+  baseTurf: FloorCDDARockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   # deconstructTools: [ Digging ] # Frontier
@@ -214,7 +214,7 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
-  baseTurf: FloorBedrock # Delta V
+  baseTurf: FloorCDDARockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   # deconstructTools: [ Digging ] # Frontier

@@ -23,7 +23,7 @@
     East: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDARockSand
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier

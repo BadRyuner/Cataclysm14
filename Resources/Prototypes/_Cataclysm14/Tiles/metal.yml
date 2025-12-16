@@ -2,7 +2,7 @@
   id: FloorCDDAMetalDiamondPlating
   name: CDDA-tiles-metal-diamond-plating
   sprite: /Textures/_Cataclysm14/Tiles/metal/diamond_plating.png
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDAConcreteSlabBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass
