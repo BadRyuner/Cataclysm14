@@ -5,13 +5,19 @@
   id: FloorCDDAGrassBaseDirty
   name: CDDA-tiles-grass-base-dirty
   sprite: /Textures/_Cataclysm14/Tiles/grass/grass.png
-  variants: 7
+  variants: 13
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 0.8
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
   - 0.4
   - 0.4
   edgeSpritePriority: 2
@@ -39,13 +45,19 @@
   id: FloorCDDAGrassAutumnDirty
   name: CDDA-tiles-grass-autumn-dirty
   sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass_autumn.png
-  variants: 7
+  variants: 13
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 0.8
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
   - 0.4
   - 0.4
   edgeSpritePriority: 2
@@ -73,13 +85,19 @@
   id: FloorCDDAGrassSummerDirty
   name: CDDA-tiles-grass-summer-dirty
   sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass_summer.png
-  variants: 7
+  variants: 13
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 0.8
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
   - 0.4
   - 0.4
   edgeSpritePriority: 2
@@ -109,13 +127,19 @@
   id: FloorCDDAGrassBaseClean
   name: CDDA-tiles-grass-base-clean
   sprite: /Textures/_Cataclysm14/Tiles/grass/grass.png
-  variants: 7
+  variants: 13
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
   - 0.0
   - 0.0
   edgeSpritePriority: 2
@@ -143,13 +167,19 @@
   id: FloorCDDAGrassAutumnClean
   name: CDDA-tiles-grass-autumn-clean
   sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass_autumn.png
-  variants: 7
+  variants: 13
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
   - 0.0
   - 0.0
   edgeSpritePriority: 2
@@ -177,13 +207,19 @@
   id: FloorCDDAGrassSummerClean
   name: CDDA-tiles-grass-summer-clean
   sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass_summer.png
-  variants: 7
+  variants: 13
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
   - 0.0
   - 0.0
   edgeSpritePriority: 2
