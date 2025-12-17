@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseWallTierOne
+  parent: BaseWallCataTierTwo
   id: WallCDDAConcreteSolidWhite
   name: white solid concrete wall
   components:
@@ -12,7 +12,7 @@
     base: concrete
 
 - type: entity
-  parent: BaseWallTierOne
+  parent: BaseWallCataTierThree
   id: WallCDDAConcreteReinforcedWhite
   name: white reinforced concrete wall
   components:

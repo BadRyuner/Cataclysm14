@@ -27,7 +27,31 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 300
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+
+- type: entity
+  parent: BaseWallMonoTierOne
+  id: DoorCDDAWoodHouseBroken
+  name: broken wooden residential door
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: broken
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: broken
+
+- type: entity
+  parent: BaseWallMonoTierOne
+  id: DoorCDDAWoodHouseLocked
+  name: wooden residential door
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: closed
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: closed
