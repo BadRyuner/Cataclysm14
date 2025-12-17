@@ -1,74 +1,63 @@
-# - type: constructionGraph
-#   id: Rebar
-#   start: start
-#   graph:
-#     - node: start
-#       edges:
-#         - to: Rebar
-#           completed:
-#             - !type:SnapToGrid {} # Frontier: use default ctor
-#               # southRotation: true # Frontier
-#           steps:
-#             - material: Steel
-#               amount: 2
-#               doAfter: 1
+#MARK: Brick
+- type: constructionGraph
+  id: WallCDDABrickRedRedBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: WallCDDABrickRedRedBase
+          completed:
+            - !type:SnapToGrid {} # Frontier: use default ctor
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
 
-#     - node: Rebar
-#       entity: WallCDDARebar
-#       edges:
-#         - to: start
-#           completed:
-#             - !type:SpawnPrototype
-#               prototype: SheetSteel1
-#               amount: 2
-#             - !type:DeleteEntity {}
-#           conditions:
-#             - !type:EntityAnchored
-#               anchored: false
-#           steps:
-#             - tool: Screwing
-#               doAfter: 2
+    - node: WallCDDABrickRedRedBase
+      entity: WallCDDABrickRedRedBase
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
 
-# #MARK: Reinforced metal
-#         - to: WallCDDAMetalReinforced
-#           completed:
-#             - !type:SnapToGrid
-#               southRotation: true
-#           conditions:
-#             - !type:EntityAnchored {}
-#           steps:
-#             - material: Steel
-#               amount: 5
-#               doAfter: 2
+#MARK: Concrete
+- type: constructionGraph
+  id: WallCDDAConcreteSolidWhite
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: WallCDDAConcreteSolidWhite
+          completed:
+            - !type:SnapToGrid {} # Frontier: use default ctor
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
 
-#     - node: WallCDDAMetalReinforced
-#       entity: WallCDDAMetalReinforced
-#       edges:
-#         - to: Rebar
-#           completed:
-#             - !type:GivePrototype
-#               prototype: Steel
-#               amount: 5
-#           steps:
-#             - tool: Welding
-#               doAfter: 20
-#             - tool: Prying
-#               doAfter: 10
-
-
-#     #should be made for CDDA walls too with rusted variant
-#     # - node: wallrust
-#     #   entity: WallSolidRust
-#     #   edges:
-#     #     - to: wall
-#     #       steps:
-#     #         - tool: Welding
-#     #           doAfter: 5
-
-#     # - node: reinforcedWallRust
-#     #   entity: WallReinforcedRust
-#     #   edges:
-#     #     - to: reinforcedWall
-#     #       steps:
-#     #         - tool: Welding
-#     #           doAfter: 5
+    - node: WallCDDAConcreteSolidWhite
+      entity: WallCDDAConcreteSolidWhite
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2

@@ -30,7 +30,19 @@
             - tool: Screwing
               doAfter: 2
 
-#MARK: Brick Reinforced
+#MARK: Reinforced Metal
+        - to: WallCDDAMetalReinforced
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2
+
+#MARK: Reinforced Brick
         - to: WallCDDABrickRedRedReinforced
           completed:
             - !type:SnapToGrid
@@ -38,12 +50,12 @@
           conditions:
             - !type:EntityAnchored {}
           steps:
-            - material: Steel #No brick mat yet
+            - material: Steel
               amount: 5
               doAfter: 2
 
-#MARK: Reinforced Metal
-        - to: WallCDDAMetalReinforced
+#MARK: Reinforced Concrete
+        - to: WallCDDAConcreteReinforcedWhite
           completed:
             - !type:SnapToGrid
               southRotation: true
@@ -62,8 +74,22 @@
 
 
 
+#MARK: Reinforced Metal
+    - node: WallCDDAMetalReinforced
+      entity: WallCDDAMetalReinforced
+      edges:
+        - to: Rebar
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 5
+          steps:
+            - tool: Welding
+              doAfter: 20
+            - tool: Prying
+              doAfter: 10
 
-#MARK: Brick Reinforced
+#MARK: Reinforced Brick
     - node: WallCDDABrickRedRedReinforced
       entity: WallCDDABrickRedRedReinforced
       edges:
@@ -78,9 +104,9 @@
             - tool: Prying
               doAfter: 10
 
-#MARK: Reinforced Metal
-    - node: WallCDDAMetalReinforced
-      entity: WallCDDAMetalReinforced
+#MARK: Reinforced Concrete
+    - node: WallCDDAConcreteReinforcedWhite
+      entity: WallCDDAConcreteReinforcedWhite
       edges:
         - to: Rebar
           completed:

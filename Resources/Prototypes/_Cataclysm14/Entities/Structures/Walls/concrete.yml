@@ -10,6 +10,10 @@
   - type: IconSmooth
     key: walls
     base: concrete
+  - type: Construction
+    graph: WallCDDAConcreteSolidWhite
+    node: WallCDDAConcreteSolidWhite
+
 
 - type: entity
   parent: BaseWallCataTierThree
@@ -23,3 +27,6 @@
   - type: IconSmooth
     key: walls
     base: concrete
+  - type: Construction
+    graph: Rebar
+    node: WallCDDAConcreteReinforcedWhite
