@@ -57,6 +57,15 @@
     - Applicating
   - type: ArmorThickness
     thickness: 3
+  - type: ExaminableDamage
+    messages: WallMessages
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    damageDivisor: 2
+    trackAllDamage: true
+    damageOverlay:
+      sprite: Structures/Windows/cracks.rsi
+    targetLayers: Walls
 
 - type: entity
   parent: BaseWallMonoTierOne # Mono
