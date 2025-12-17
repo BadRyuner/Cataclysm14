@@ -1,7 +1,7 @@
 #MARK: Asphalt
 
 - type: tile
-  id: FloorCDDAasphaltBase
+  id: FloorCDDAAsphaltBase
   name: CDDA-tiles-asphalt-base
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt.png
   variants: 4
@@ -10,7 +10,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorBedrock # Delta V
+  baseTurf: FloorCDDARockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   # deconstructTools: [ Digging ] # Frontier
@@ -22,7 +22,7 @@
   weather: true
 
 - type: tile
-  id: FloorCDDAasphaltRed
+  id: FloorCDDAAsphaltRed
   name: CDDA-tiles-asphalt-red
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt_red.png
   variants: 4
@@ -31,7 +31,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorBedrock # Delta V
+  baseTurf: FloorCDDARockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   # deconstructTools: [ Digging ] # Frontier
@@ -42,7 +42,7 @@
   heatCapacity: 10000
   weather: true
 
-#MARK: RoadLines
+#MARK: Road Markings
 #actually an entity but ssssshhhhh
 
 - type: entity
@@ -63,7 +63,7 @@
     nodes:
       power:
         !type:CableNode
-        nodeGroupID: HVPower # this SUUUUCKS ass, better solution one week away trust
+        nodeGroupID: MVPower
   - type: CableVisualizer
     statePrefix: line_
   - type: Clickable
@@ -102,3 +102,125 @@
     sprite: /Textures/_Cataclysm14/Tiles/road/road_line.rsi
     color: "#cdc208"
     state: line_4
+
+- type: entity
+  id: FloorRoadCrossingWhite
+  name: white road crossing markings
+  description: Some painted on road crossing markings. Looks easy enough to remove by hitting it. Those ones are made with white paint.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_crossing.rsi
+    state: line_0
+    drawdepth: ThickWire
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_crossing.rsi
+    state: line_4
+  - type: NodeContainer
+    nodes:
+      power:
+        !type:CableNode
+        nodeGroupID: HVPower # this SUUUUCKS ass, better solution one week away trust
+  - type: CableVisualizer
+    statePrefix: line_
+  - type: Clickable
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Fixtures
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Appearance
+  - type: CableVis
+    node: power
+
+- type: entity
+  parent: FloorRoadCrossingWhite
+  id: FloorRoadCrossingYellow
+  name: yellow road crossing markings
+  description: Some painted on road markings. Looks easy enough to remove by hitting it. Those ones are made with yellow paint.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_crossing.rsi
+    color: "#cdc208"
+    state: line_0
+    drawdepth: ThickWire
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_crossing.rsi
+    color: "#cdc208"
+    state: line_4
+
+# MARK: Sidewalk
+
+- type: tile
+  id: FloorCDDAAsphaltSidewalkBase
+  name: CDDA-tiles-asphalt-base-sidewalk
+  sprite: /Textures/_Cataclysm14/Tiles/road/asphalt.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 3
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+  baseTurf: FloorCDDARockBase # Delta V
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+  # deconstructTools: [ Digging ] # Frontier
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  # itemDrop: FloorTileItemDirt # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCDDAAsphaltSidewalkRed
+  name: CDDA-tiles-asphalt-red-sidewalk
+  sprite: /Textures/_Cataclysm14/Tiles/road/asphalt_red.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 3
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+  baseTurf: FloorCDDARockBase # Delta V
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+  # deconstructTools: [ Digging ] # Frontier
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  # itemDrop: FloorTileItemDirt # Delta V
+  heatCapacity: 10000
+  weather: true

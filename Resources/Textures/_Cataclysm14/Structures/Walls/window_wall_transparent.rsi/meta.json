@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Taken from CDDA tileset Ultimate Cataclysm, modified by zeranov/avtomata (disc:core_mene)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "glass0",
+      "directions": 4
+    },
+    {
+      "name": "glass1",
+      "directions": 4
+    },
+    {
+      "name": "glass2",
+      "directions": 4
+    },
+    {
+      "name": "glass3",
+      "directions": 4
+    },
+    {
+      "name": "glass4",
+      "directions": 4
+    },
+    {
+      "name": "glass5",
+      "directions": 4
+    },
+    {
+      "name": "glass6",
+      "directions": 4
+    },
+    {
+      "name": "glass7",
+      "directions": 4
+    }
+  ]
+}

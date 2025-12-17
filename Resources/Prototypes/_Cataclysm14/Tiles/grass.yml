@@ -5,13 +5,19 @@
   id: FloorCDDAGrassBaseDirty
   name: CDDA-tiles-grass-base-dirty
   sprite: /Textures/_Cataclysm14/Tiles/grass/grass.png
-  variants: 7
+  variants: 13
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 0.8
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
   - 0.4
   - 0.4
   edgeSpritePriority: 2
@@ -24,7 +30,7 @@
     East: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDADirt
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier
@@ -39,13 +45,19 @@
   id: FloorCDDAGrassAutumnDirty
   name: CDDA-tiles-grass-autumn-dirty
   sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass_autumn.png
-  variants: 7
+  variants: 13
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 0.8
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
   - 0.4
   - 0.4
   edgeSpritePriority: 2
@@ -58,7 +70,7 @@
     East: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDADirt
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier
@@ -73,13 +85,19 @@
   id: FloorCDDAGrassSummerDirty
   name: CDDA-tiles-grass-summer-dirty
   sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass_summer.png
-  variants: 7
+  variants: 13
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 0.8
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
   - 0.4
   - 0.4
   edgeSpritePriority: 2
@@ -92,7 +110,7 @@
     East: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDADirt
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier
@@ -109,13 +127,19 @@
   id: FloorCDDAGrassBaseClean
   name: CDDA-tiles-grass-base-clean
   sprite: /Textures/_Cataclysm14/Tiles/grass/grass.png
-  variants: 7
+  variants: 13
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
   - 0.0
   - 0.0
   edgeSpritePriority: 2
@@ -128,7 +152,7 @@
     East: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDADirt
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier
@@ -143,13 +167,19 @@
   id: FloorCDDAGrassAutumnClean
   name: CDDA-tiles-grass-autumn-clean
   sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass_autumn.png
-  variants: 7
+  variants: 13
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
   - 0.0
   - 0.0
   edgeSpritePriority: 2
@@ -162,7 +192,7 @@
     East: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDADirt
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier
@@ -177,13 +207,19 @@
   id: FloorCDDAGrassSummerClean
   name: CDDA-tiles-grass-summer-clean
   sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass_summer.png
-  variants: 7
+  variants: 13
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
   - 0.0
   - 0.0
   edgeSpritePriority: 2
@@ -196,7 +232,7 @@
     East: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
-  baseTurf: FloorDirt
+  baseTurf: FloorCDDADirt
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier
@@ -229,7 +265,7 @@
     East: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
-  baseTurf: FloorBedrock # Delta V
+  baseTurf: FloorCDDARockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier

@@ -76,7 +76,7 @@
     thickness: 10
 
 - type: entity
-  parent: BaseWallTierFour
+  parent: BaseWallMonoTierFour
   id: WallNanolaminate # Mono
   name: nanolaminate wall # Mono
   suffix: ADS ONLY # Mono

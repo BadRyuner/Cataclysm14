@@ -3,7 +3,7 @@
 - type: entity
   abstract: true
   parent: BaseWall
-  id: BaseWallTierOne
+  id: BaseWallMonoTierOne
   name: default wall
   description: Keeps the air in and the chimera out.
   placement:
@@ -44,7 +44,7 @@
 - type: entity
   abstract: true
   parent: BaseWall
-  id: BaseWallTierTwo
+  id: BaseWallMonoTierTwo
   name: reinforced wall
   description: Keeps the air in and the chimera out.
   placement:
@@ -85,7 +85,7 @@
 - type: entity
   abstract: true
   parent: BaseWall
-  id: BaseWallTierThree
+  id: BaseWallMonoTierThree
   name: super reinforced wall
   description: Keeps the air in and the chimera out.
   placement:
@@ -126,7 +126,7 @@
 - type: entity
   abstract: true
   parent: BaseWall
-  id: BaseWallTierFour
+  id: BaseWallMonoTierFour
   name: super ultra giga reinforced wall
   description: Keeps the air in and the chimera out.
   placement:
@@ -332,7 +332,7 @@
 # capital-only plastitainum
 
 - type: entity
-  parent: [ WallPlastitanium, BaseWallTierFour ]
+  parent: [ WallPlastitanium, BaseWallMonoTierFour ]
   id: WallPlastitaniumCapital
   name: reinforced plastitanium wall
   suffix: CAPITAL ONLY

@@ -1,0 +1,57 @@
+- type: entity
+  id: DoorCDDAWoodHouse
+  name: wooden residential door
+  parent: BaseMaterialDoorNavMap
+  description: A door, where will it lead?
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0.6
+    closeTimeTwo: 1
+    openTimeOne: 1
+    openTimeTwo: 0.6
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  parent: BaseWallMonoTierOne
+  id: DoorCDDAWoodHouseBroken
+  name: broken wooden residential door
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: broken
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: broken
+
+- type: entity
+  parent: BaseWallMonoTierOne
+  id: DoorCDDAWoodHouseLocked
+  name: wooden residential door
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: closed
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: closed

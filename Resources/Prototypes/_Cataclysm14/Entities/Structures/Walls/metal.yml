@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseWallCataTierThree
+  id: WallCDDAMetalReinforced
+  name: reinforced metal wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/metal_reinforced.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/metal_reinforced.rsi
+  - type: IconSmooth
+    key: walls
+    base: metal

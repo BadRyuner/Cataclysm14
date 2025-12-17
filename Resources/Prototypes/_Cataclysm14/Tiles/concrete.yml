@@ -1,0 +1,115 @@
+# MARK: Slab
+
+- type: tile
+  id: FloorCDDAConcreteSlabBase
+  name: CDDA-tiles-concrete-slab-base
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCDDARockBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+
+- type: tile
+  id: FloorCDDAConcreteSlabBlack
+  name: CDDA-tiles-concrete-slab-black
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab_black.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCDDARockBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+
+# MARK: Sidewalk
+
+- type: tile
+  id: FloorCDDAConcreteSlabSidewalkBase
+  name: CDDA-tiles-concrete-slab-base-sidewalk
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 3
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+  baseTurf: FloorCDDARockBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+
+- type: tile
+  id: FloorCDDAConcreteSlabSidewalkBlack
+  name: CDDA-tiles-concrete-slab-black-sidewalk
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab_black.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 3
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+  baseTurf: FloorCDDARockBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
