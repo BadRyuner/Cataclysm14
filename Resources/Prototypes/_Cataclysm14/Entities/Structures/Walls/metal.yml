@@ -10,3 +10,6 @@
   - type: IconSmooth
     key: walls
     base: metal
+  - type: Construction
+    graph: Rebar
+    node: WallCDDAMetalReinforced

@@ -27,7 +27,7 @@
       - Structure
 #Cataclysm14 start
   - type: ExaminableDamage
-    messages: WallMessages
+    messages: WindowMessages
   # - type: Repairable Maybe not actually
 #Cataclysm14 end
 

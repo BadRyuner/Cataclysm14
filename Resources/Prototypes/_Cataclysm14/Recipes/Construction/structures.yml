@@ -1,0 +1,53 @@
+- type: construction
+  name: rebar
+  id: WallCDDARebar
+  graph: Rebar
+  startNode: start
+  targetNode: Rebar
+  category: construction-category-structures-cataclysm
+  description: A large structural assembly made out of metal.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/rebar.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+# - type: construction
+#   name: reinforced metal wall
+#   id: WallCDDAMetalReinforced
+#   graph: Rebar
+#   startNode: start
+#   targetNode: WallCDDAMetalReinforced
+#   category: construction-category-structures-cataclysm
+#   description: A large structural assembly made out of metal.
+#   icon:
+#     sprite: /Textures/_Cataclysm14/Structures/Walls/metal_reinforced.rsi
+#     state: full
+#   objectType: Structure
+#   placementMode: SnapgridCenter
+#   canRotate: false
+#   canBuildInImpassable: false
+#   conditions:
+#     - !type:TileNotBlocked
+
+# - type: construction
+#   name: reinforced red brick wall
+#   id: WallCDDABrickRedRedReinforced
+#   graph: Rebar
+#   startNode: start
+#   targetNode: WallCDDABrickRedRedReinforced
+#   category: construction-category-structures-cataclysm
+#   description: A large structural assembly made out of metal.
+#   icon:
+#     sprite: /Textures/_Cataclysm14/Structures/Walls/brick_red_red.rsi
+#     state: full
+#   objectType: Structure
+#   placementMode: SnapgridCenter
+#   canRotate: false
+#   canBuildInImpassable: false
+#   conditions:
+#     - !type:TileNotBlocked

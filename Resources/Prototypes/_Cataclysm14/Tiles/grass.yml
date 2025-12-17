@@ -275,3 +275,9 @@
   itemDrop: FloorTileItemDirt # Delta V
   heatCapacity: 10000
   weather: true
+  RandomSpawner:
+    prototypes:
+    - HoloGraffitiSimple01
+    - HoloGraffitiSimple02
+    chance: 1.0
+    offset: 0.0

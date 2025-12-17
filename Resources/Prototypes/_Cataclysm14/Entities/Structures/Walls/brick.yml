@@ -1,7 +1,20 @@
 - type: entity
   parent: BaseWallCataTierTwo
-  id: WallCDDABrickRedRed
+  id: WallCDDABrickRedRedBase
   name: red brick wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/brick_red_red.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/brick_red_red.rsi
+  - type: IconSmooth
+    key: walls
+    base: brick
+
+- type: entity
+  parent: BaseWallCataTierThree
+  id: WallCDDABrickRedRedReinforced
+  name: reinforced red brick wall
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Walls/brick_red_red.rsi
