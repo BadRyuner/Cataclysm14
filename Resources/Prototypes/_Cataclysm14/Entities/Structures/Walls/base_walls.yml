@@ -29,7 +29,7 @@
         sound:
           collection: MetalSlam
       - !type:ChangeConstructionNodeBehavior
-        node: girder
+        node: Rebar
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: ArmorThickness
@@ -66,7 +66,7 @@
         sound:
           collection: MetalSlam
       - !type:ChangeConstructionNodeBehavior
-        node: girder
+        node: Rebar
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: ArmorThickness
@@ -103,7 +103,7 @@
         sound:
           collection: MetalSlam
       - !type:ChangeConstructionNodeBehavior
-        node: girder
+        node: Rebar
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: ArmorThickness
@@ -139,7 +139,7 @@
         sound:
           collection: MetalSlam
       - !type:ChangeConstructionNodeBehavior
-        node: girder
+        node: Rebar
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: ArmorThickness
@@ -176,7 +176,7 @@
         sound:
           collection: MetalSlam
       - !type:ChangeConstructionNodeBehavior
-        node: girder
+        node: Rebar
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: ArmorThickness

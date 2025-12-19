@@ -1,0 +1,120 @@
+#MARK: Rebar Graph
+- type: constructionGraph
+  id: Rebar
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: Rebar
+          completed:
+            - !type:SnapToGrid {} # Frontier: use default ctor
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+#MARK: Rebar Node
+    - node: Rebar
+      entity: WallCDDARebar
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Reinforced Metal
+        - to: WallCDDAMetalReinforced
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2
+
+#MARK: Reinforced Brick
+        - to: WallCDDABrickRedRedReinforced
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2
+
+#MARK: Reinforced Concrete
+        - to: WallCDDAConcreteReinforcedWhite
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2
+
+#MARK: Nodes >>>>
+
+
+
+
+
+
+
+#MARK: Reinforced Metal
+    - node: WallCDDAMetalReinforced
+      entity: WallCDDAMetalReinforced
+      edges:
+        - to: Rebar
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 5
+          steps:
+            - tool: Welding
+              doAfter: 20
+            - tool: Prying
+              doAfter: 10
+
+#MARK: Reinforced Brick
+    - node: WallCDDABrickRedRedReinforced
+      entity: WallCDDABrickRedRedReinforced
+      edges:
+        - to: Rebar
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 5
+          steps:
+            - tool: Welding
+              doAfter: 20
+            - tool: Prying
+              doAfter: 10
+
+#MARK: Reinforced Concrete
+    - node: WallCDDAConcreteReinforcedWhite
+      entity: WallCDDAConcreteReinforcedWhite
+      edges:
+        - to: Rebar
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 5
+          steps:
+            - tool: Welding
+              doAfter: 20
+            - tool: Prying
+              doAfter: 10

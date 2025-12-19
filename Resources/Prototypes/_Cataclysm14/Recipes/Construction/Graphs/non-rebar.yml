@@ -1,0 +1,63 @@
+#MARK: Brick
+- type: constructionGraph
+  id: WallCDDABrickRedRedBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: WallCDDABrickRedRedBase
+          completed:
+            - !type:SnapToGrid {} # Frontier: use default ctor
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
+    - node: WallCDDABrickRedRedBase
+      entity: WallCDDABrickRedRedBase
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Concrete
+- type: constructionGraph
+  id: WallCDDAConcreteSolidWhite
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: WallCDDAConcreteSolidWhite
+          completed:
+            - !type:SnapToGrid {} # Frontier: use default ctor
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
+    - node: WallCDDAConcreteSolidWhite
+      entity: WallCDDAConcreteSolidWhite
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2

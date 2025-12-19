@@ -36,6 +36,7 @@
   parent: BaseWallMonoTierOne
   id: DoorCDDAWoodHouseBroken
   name: broken wooden residential door
+  description: A door, where will it lead?
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
@@ -48,6 +49,7 @@
   parent: BaseWallMonoTierOne
   id: DoorCDDAWoodHouseLocked
   name: wooden residential door
+  description: A shattered wooden door.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Doors/wood_house.rsi

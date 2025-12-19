@@ -57,6 +57,15 @@
     - Applicating
   - type: ArmorThickness
     thickness: 3
+  - type: ExaminableDamage
+    messages: WallMessages
+  #Cataclysm14, can't get it to work and layer over wall, sucks
+  # - type: DamageVisuals
+  #   thresholds: [5, 10, 20]
+  #   damageDivisor: 2
+  #   trackAllDamage: true
+  #   damageOverlay:
+  #     sprite: Structures/Windows/cracks.rsi
 
 - type: entity
   parent: BaseWallMonoTierOne # Mono
