@@ -33,7 +33,7 @@
   - type: CartridgeAmmo
     proto: Bullet127x99mmExplosive
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/12.7x99mm_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/12.7x99mm_casing.rsi
     layers:
     - state: base
       map: [ "enum.AmmoVisualLayers.Base" ]
