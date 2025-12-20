@@ -20,7 +20,7 @@
       params:
         variation: 0.06
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Ammunition/Casings/12_gauge_shell.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/12_gauge_shell.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
