@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by zeranov (disc:core_mene)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "brick-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "brick-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "brick_3"
+    },
+    {
+      "name": "brick_2"
+    },
+    {
+      "name": "brick_1"
+    }
+  ]
+}

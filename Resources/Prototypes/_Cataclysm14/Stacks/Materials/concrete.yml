@@ -1,0 +1,6 @@
+- type: stack
+  id: Concrete
+  name: concrete bag portion
+  icon: { sprite: _Cataclysm14/Objects/Materials/concrete_bags.rsi, state: concrete_3 }
+  spawn: SheetConcrete1
+  maxCount: 100

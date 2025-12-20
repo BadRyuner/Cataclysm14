@@ -1,0 +1,6 @@
+- type: stack
+  id: Brick
+  name: brick
+  icon: { sprite: _Cataclysm14/Objects/Materials/bricks.rsi, state: brick_3 }
+  spawn: SheetBrick1
+  maxCount: 100

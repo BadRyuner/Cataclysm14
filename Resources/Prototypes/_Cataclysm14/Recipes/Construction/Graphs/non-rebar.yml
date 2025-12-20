@@ -10,7 +10,7 @@
             - !type:SnapToGrid {} # Frontier: use default ctor
               # southRotation: true # Frontier
           steps:
-            - material: Steel
+            - material: Brick
               amount: 2
               doAfter: 1
 
@@ -20,7 +20,7 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
+              prototype: SheetBrick1
               amount: 2
             - !type:DeleteEntity {}
           conditions:
@@ -42,7 +42,7 @@
             - !type:SnapToGrid {} # Frontier: use default ctor
               # southRotation: true # Frontier
           steps:
-            - material: Steel
+            - material: Concrete
               amount: 2
               doAfter: 1
 
@@ -52,7 +52,7 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
+              prototype: SheetConcrete1
               amount: 2
             - !type:DeleteEntity {}
           conditions:
