@@ -1,0 +1,68 @@
+
+# Brick - self explanatory
+
+- type: material
+  id: Brick
+  stackEntity: SheetBrick1
+  name: materials-Brick
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/bricks.rsi, state: brick_1 }
+  color: "#000000"
+  price: 0.1 # 10/sheet
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialBrick
+  name: Brick
+  description: A complex alloy synthesized from atmospheric gases, commonly used outside of the sector for heavy industrial machinery, nanofibers, and high-grade computers.
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Materials/bricks.rsi
+    state: brick_3
+    layers:
+    - state: brick_3
+      map: ["base"]
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Item
+    sprite: _Cataclysm14/Objects/Materials/bricks.rsi
+    heldPrefix: Brick
+  - type: Stack
+    stackType: Brick
+    count: 100
+    baseLayer: base
+    layerStates:
+    - brick_1
+    - brick_2
+    - brick_3
+  - type: Material
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      Brick: 100
+
+- type: entity
+  parent: MaterialBrick
+  id: SheetBrick1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialBrick
+  id: SheetBrick10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MaterialBrick
+  id: SheetBrick50
+  suffix: 50
+  components:
+  - type: Stack
+    count: 50

@@ -1,0 +1,6 @@
+- type: stack
+  id: Rebar
+  name: rebar pole
+  icon: { sprite: _Cataclysm14/Objects/Materials/rebar_poles.rsi, state: rebar_3 }
+  spawn: SheetRebar1
+  maxCount: 100

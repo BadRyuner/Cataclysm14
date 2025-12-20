@@ -10,7 +10,7 @@
             - !type:SnapToGrid {} # Frontier: use default ctor
               # southRotation: true # Frontier
           steps:
-            - material: Steel
+            - material: Rebar
               amount: 2
               doAfter: 1
 #MARK: Rebar Node
@@ -20,7 +20,7 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
+              prototype: SheetRebar1
               amount: 2
             - !type:DeleteEntity {}
           conditions:
@@ -50,7 +50,7 @@
           conditions:
             - !type:EntityAnchored {}
           steps:
-            - material: Steel
+            - material: Brick
               amount: 5
               doAfter: 2
 
@@ -62,7 +62,7 @@
           conditions:
             - !type:EntityAnchored {}
           steps:
-            - material: Steel
+            - material: Concrete
               amount: 5
               doAfter: 2
 
@@ -96,7 +96,7 @@
         - to: Rebar
           completed:
             - !type:GivePrototype
-              prototype: SheetSteel1
+              prototype: SheetBrick1
               amount: 5
           steps:
             - tool: Welding
@@ -111,7 +111,7 @@
         - to: Rebar
           completed:
             - !type:GivePrototype
-              prototype: SheetSteel1
+              prototype: SheetConcrete1
               amount: 5
           steps:
             - tool: Welding
