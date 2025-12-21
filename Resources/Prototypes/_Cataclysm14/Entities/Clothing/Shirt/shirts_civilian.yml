@@ -1,0 +1,145 @@
+#MARK: -Sweaters-
+  #MARK: Sweater - red
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtSweaterRed
+      name: red sweater
+      description: A warm sweater, this one is colored in red.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        color: "#9E1A1A"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        clothingVisuals:
+          jumpsuit:
+          - state: equipped-INNERCLOTHING
+            color: "#9E1A1A"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#9E1A1A"
+          right:
+          - state: inhand-right
+            color: "#9E1A1A"
+  #MARK: Sweater - blue
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtSweaterBlue
+      name: blue sweater
+      description: A warm sweater, this one is colored in blue.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        color: "#2832C2"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        clothingVisuals:
+          jumpsuit:
+          - state: equipped-INNERCLOTHING
+            color: "#2832C2"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#2832C2"
+          right:
+          - state: inhand-right
+            color: "#2832C2"
+  #MARK: Sweater - green
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtSweaterGreen
+      name: green sweater
+      description: A warm sweater, this one is colored in green.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        color: "#3d8c40"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        clothingVisuals:
+          jumpsuit:
+          - state: equipped-INNERCLOTHING
+            color: "#3d8c40"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#3d8c40"
+          right:
+          - state: inhand-right
+            color: "#3d8c40"
+  #MARK: Sweater - yellow
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtSweaterYellow
+      name: yellow sweater
+      description: A warm sweater, this one is colored in yellow.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        color: "#E4CD05"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        clothingVisuals:
+          jumpsuit:
+          - state: equipped-INNERCLOTHING
+            color: "#E4CD05"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#E4CD05"
+          right:
+          - state: inhand-right
+            color: "#E4CD05"
+  #MARK: Sweater - purple
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtSweaterPurple
+      name: purple sweater
+      description: A warm sweater, this one is colored in purple.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        color: "#702963"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        clothingVisuals:
+          jumpsuit:
+          - state: equipped-INNERCLOTHING
+            color: "#702963"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#702963"
+          right:
+          - state: inhand-right
+            color: "#702963"
+  #MARK: Sweater - black
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtSweaterBlack
+      name: black sweater
+      description: A warm sweater, this one is colored in black.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        color: "#444444"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        clothingVisuals:
+          jumpsuit:
+          - state: equipped-INNERCLOTHING
+            color: "#444444"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#444444"
+          right:
+          - state: inhand-right
+            color: "#444444"

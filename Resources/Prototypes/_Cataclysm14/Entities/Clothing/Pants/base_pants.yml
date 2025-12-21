@@ -46,8 +46,12 @@
     tags:
     - ClothMade
     # - WhitelistChameleon #Cataclysm, no chameleon
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,2
 
-#Version with pockets
+#Version with large pockets
 - type: entity
   abstract: true
   parent: [ClothingPantsBase, NFClothingBeltStorageBase, RecyclableItemClothBasic]
@@ -56,6 +60,19 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,2,1
+    - 0,0,3,1
+  - type: Item
+    size: Huge
+
+#Version with small pockets
+- type: entity
+  abstract: true
+  parent: [ClothingPantsBase, NFClothingBeltStorageBase, RecyclableItemClothBasic]
+  id: ClothingPantsPocketBase
+  components:
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1
   - type: Item
     size: Huge

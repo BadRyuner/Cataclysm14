@@ -7,9 +7,9 @@
   description: An armband bearing the flag of the Universal States of America, worn by Vanguards for indentification.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_UNSA.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_UNSA.rsi
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_UNSA.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_UNSA.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -23,9 +23,9 @@
   description: An armband bearing the flag of the United States of America, worn by true patriots.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_USA.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_USA.rsi
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_USA.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_USA.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -41,10 +41,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#f8f8ff"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -60,10 +60,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#6F6F6F"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -79,10 +79,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#131313"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -98,10 +98,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#9E1A1A"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -117,10 +117,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#ff2c2c"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -136,10 +136,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#3d8c40"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -155,10 +155,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#4CBB17"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -174,10 +174,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#0A1172"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -193,10 +193,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#2832C2"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -212,10 +212,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#702963"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -231,10 +231,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#B200ED"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -250,10 +250,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#E4CD05"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
@@ -269,10 +269,10 @@
   description: A basic colored armband for tactical or fashion purpose.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     color: "#FFF200"
   - type: Clothing
-    sprite: _Mono/Clothing/Armbands/armband_any.rsi
+    sprite: _Cataclysm14/Clothing/Armbands/armband_any.rsi
     clothingVisuals:
       leftarmband:
       - state: equipped-ARMBANDLEFT
