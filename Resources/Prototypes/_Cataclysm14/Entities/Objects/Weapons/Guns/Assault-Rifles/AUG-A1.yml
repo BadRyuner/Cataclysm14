@@ -1,21 +1,21 @@
 - type: entity
-  name: Colt M4A1 (5.56x45mm NATO)
+  name: Steyr Aug-A1 (5.56x45mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponAssaultRifleM4A1
-  description: A modern polymer assault rifle based on the M16 and XM serie of rifles. Chambered in 5.56x45mm NATO.
+  id: WeaponAssaultRifleAUG-A1
+  description: A modern polymer bullpup assault rifle made b y Steyr and used by the austrian army. Chambered in 5.56x45mm NATO.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/M4A1_64x32.rsi
-    scale: 0.75, 0.75
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AUG-A1_64x32.rsi
+    scale: 0.80, 0.80
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/M4A1_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AUG-A1_32x32.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/M4A1_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AUG-A1_32x32.rsi
     clothingVisuals:
       slingfront:
       - state: equipped-SLINGFRONT
