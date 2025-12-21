@@ -14,8 +14,9 @@
     sprite: Objects/Weapons/Guns/LMGs/l6.rsi
     quickEquip: false
     slots:
-    - Back
+    # - Back #Cataclysm14
     - suitStorage
+    - SLINGFRONT #Cataclysm14
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus

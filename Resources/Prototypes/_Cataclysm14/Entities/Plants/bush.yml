@@ -1,0 +1,34 @@
+- type: entity
+  parent: BaseFlora
+  id: FloraCDDABlackberry
+  name: blackberry shrub
+  description: A large bush.
+  components:
+  - type: Sprite
+    layers:
+    - state: bush1
+    drawdepth: Overdoors
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4
