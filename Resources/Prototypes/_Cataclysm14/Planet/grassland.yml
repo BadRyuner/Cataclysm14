@@ -1,200 +1,202 @@
-- type: planet
-  id: CataclysmGrasslandPlanet
-  biome: CataclysmGrasslandBiome
-  mapName: shuttle-destination-desert-planet
-  mapLight: "#FEFEFE"
-  # addedComponents:
-  # - type: FTLDestination
-  atmosphere:
-    volume: 2500
-    temperature: 305.75 # 32.6 celsius
-    moles:
-    - 32.458
-    - 68.213
+# not yet used and duplicate ids
 
-# Different ore so its more worthwile
+# - type: planet
+#   id: CataclysmGrasslandPlanet
+#   biome: CataclysmGrasslandBiome
+#   mapName: shuttle-destination-desert-planet
+#   mapLight: "#FEFEFE"
+#   # addedComponents:
+#   # - type: FTLDestination
+#   atmosphere:
+#     volume: 2500
+#     temperature: 305.75 # 32.6 celsius
+#     moles:
+#     - 32.458
+#     - 68.213
 
-- type: entityTable
-  id: MonoPlanetmapOreSandRich
-  table: !type:GroupSelector
-    children:
-    - id: WallRock
-      weight: 0.33
-    - id: WallRockCoal
-      weight: 0.05
-    - id: WallRockTin
-      weight: 0.10
-    - id: WallRockQuartz
-      weight: 0.07
-    - id: WallRockSilver
-      weight: 0.05
-    - id: WallRockGold
-      weight: 0.05
-    - id: WallRockPlasma
-      weight: 0.05
-    - id: WallRockUranium
-      weight: 0.05
+# # Different ore so its more worthwile
 
-- type: entity
-  id: MonoPlanetmapOreSandRich
-  parent: MarkerBase
-  name: planet mineral spawner
-  suffix: Soft
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Sprite
-    layers:
-    - state: green
-    - sprite: Objects/Weapons/Melee/pickaxe.rsi
-      state: pickaxe
-  - type: EntityTableSpawner
-    offset: 0
-    table: !type:NestedSelector
-      tableId: MonoPlanetmapOreSandRich
+# - type: entityTable
+#   id: MonoPlanetmapOreSandRich
+#   table: !type:GroupSelector
+#     children:
+#     - id: WallRock
+#       weight: 0.33
+#     - id: WallRockCoal
+#       weight: 0.05
+#     - id: WallRockTin
+#       weight: 0.10
+#     - id: WallRockQuartz
+#       weight: 0.07
+#     - id: WallRockSilver
+#       weight: 0.05
+#     - id: WallRockGold
+#       weight: 0.05
+#     - id: WallRockPlasma
+#       weight: 0.05
+#     - id: WallRockUranium
+#       weight: 0.05
 
-# Less rocky, more ore rich variant of deserts
+# - type: entity
+#   id: MonoPlanetmapOreSandRich
+#   parent: MarkerBase
+#   name: planet mineral spawner
+#   suffix: Soft
+#   categories: [ HideSpawnMenu ]
+#   components:
+#   - type: Sprite
+#     layers:
+#     - state: green
+#     - sprite: Objects/Weapons/Melee/pickaxe.rsi
+#       state: pickaxe
+#   - type: EntityTableSpawner
+#     offset: 0
+#     table: !type:NestedSelector
+#       tableId: MonoPlanetmapOreSandRich
 
-- type: biomeTemplate
-  id: CataclysmGrasslandBiome
-  layers:
-  # Boulder Placement
-  - !type:BiomeEntityLayer
-    threshold: 0.975
-    noise:
-      seed: 0
-      frequency: 5
-      noiseType: OpenSimplex2
-    allowedTiles:
-    - FloorCDDADirt
-    - FloorCDDARockBase
-    - FloorCDDAGrassBaseDirty
-    - FloorCDDAGrassBaseDirty
-    entities:
-    - FloraRockSolidPlanet
-  # Fauna Placement
-  - !type:BiomeEntityLayer
-    threshold: 0.98
-    noise:
-      seed: 0
-      frequency: 3
-      noiseType: OpenSimplex2
-    allowedTiles:
-    - FloorCDDADirt
-    - FloorCDDARockBase
-    - FloorCDDAGrassBaseDirty
-    - FloorCDDAGrassBaseDirty
-    entities:
-    - MonoPlanetmapFaunaDesert
-  # Flora Placement
-  # Piluma
-  - !type:BiomeEntityLayer
-    threshold: 0.915
-    noise:
-      seed: 0
-      frequency: 2
-      noiseType: OpenSimplex2
-    allowedTiles:
-    - FloorCDDADirt
-    - FloorCDDAGrassBaseDirty
-    - FloorCDDAGrassBaseDirty
-    entities:
-    - FloraPilumaPlant
-  # Orakim
-  - !type:BiomeEntityLayer
-    threshold: 0.925
-    noise:
-      seed: 0
-      frequency: 2
-      noiseType: OpenSimplex2
-    allowedTiles:
-    - FloorCDDADirt
-    - FloorCDDAGrassBaseDirty
-    entities:
-    - FloraOrakimPlant
-  # Rock decals
-  - !type:BiomeDecalLayer
-    allowedTiles:
-    - FloorCDDADirt
-    - FloorCDDARockBase
-    - FloorCDDAGrassBaseDirty
-    - FloorCDDAGrassBaseDirty
-    - FloorCDDADirt
-    threshold: 0.9
-    divisions: 1
-    noise:
-      seed: 1
-      frequency: 5
-    decals:
-    - Basalt1
-    - Basalt2
-    - Basalt3
-    - Basalt4
-    - Basalt5
-    - Basalt6
-    - Basalt7
-    - Basalt8
-    - Basalt9
-  # Bush decals
-  - !type:BiomeDecalLayer
-    allowedTiles:
-    - FloorCDDADirt
-    - FloorCDDAGrassBaseDirty
-    threshold: 0.9
-    divisions: 1
-    noise:
-      seed: 1
-      frequency: 0.9
-    decals:
-    - Bushj1
-    - Bushj2
-    - Bushj3
-  # Large rock areas
-  - !type:BiomeEntityLayer
-    allowedTiles:
-    - FloorCDDAGrassBaseDirty
-    threshold: -0.05
-    noise:
-      seed: 0
-      noiseType: Cellular
-      frequency: 0.05
-      lacunarity: 5
-      fractalType: FBm
-      octaves: 2
-      cellularDistanceFunction: Euclidean
-      cellularReturnType: Distance2
-    entities:
-    - MonoPlanetmapOreSandRich
-  - !type:BiomeDummyLayer
-    id: Loot
-  # Fill layer
-  # Base tiles
-  - !type:BiomeTileLayer
-    threshold: -1
-    tile: FloorCDDADirt
-  # Apply planet desert tile as noise so it doesnt look flat and boring
-  - !type:BiomeTileLayer
-    threshold: -0.40
-    tile: FloorCDDAGrassBaseDirty
-    noise:
-      seed: 0
-      noiseType: Cellular
-      frequency: 0.2
-      lacunarity: 2
-      fractalType: FBm
-      octaves: 2
-      cellularDistanceFunction: Euclidean
-      cellularReturnType: Distance2
-  # Unvariantized tile for rock walls to be placed on
-  - !type:BiomeTileLayer
-    tile: FloorCDDAGrassBaseDirty
-    threshold: -0.30
-    noise:
-      seed: 0
-      noiseType: Cellular
-      frequency: 0.05
-      lacunarity: 2
-      fractalType: FBm
-      octaves: 5
-      cellularDistanceFunction: Euclidean
-      cellularReturnType: Distance2
+# # Less rocky, more ore rich variant of deserts
+
+# - type: biomeTemplate
+#   id: CataclysmGrasslandBiome
+#   layers:
+#   # Boulder Placement
+#   - !type:BiomeEntityLayer
+#     threshold: 0.975
+#     noise:
+#       seed: 0
+#       frequency: 5
+#       noiseType: OpenSimplex2
+#     allowedTiles:
+#     - FloorCDDADirt
+#     - FloorCDDARockBase
+#     - FloorCDDAGrassBaseDirty
+#     - FloorCDDAGrassBaseDirty
+#     entities:
+#     - FloraRockSolidPlanet
+#   # Fauna Placement
+#   - !type:BiomeEntityLayer
+#     threshold: 0.98
+#     noise:
+#       seed: 0
+#       frequency: 3
+#       noiseType: OpenSimplex2
+#     allowedTiles:
+#     - FloorCDDADirt
+#     - FloorCDDARockBase
+#     - FloorCDDAGrassBaseDirty
+#     - FloorCDDAGrassBaseDirty
+#     entities:
+#     - MonoPlanetmapFaunaDesert
+#   # Flora Placement
+#   # Piluma
+#   - !type:BiomeEntityLayer
+#     threshold: 0.915
+#     noise:
+#       seed: 0
+#       frequency: 2
+#       noiseType: OpenSimplex2
+#     allowedTiles:
+#     - FloorCDDADirt
+#     - FloorCDDAGrassBaseDirty
+#     - FloorCDDAGrassBaseDirty
+#     entities:
+#     - FloraPilumaPlant
+#   # Orakim
+#   - !type:BiomeEntityLayer
+#     threshold: 0.925
+#     noise:
+#       seed: 0
+#       frequency: 2
+#       noiseType: OpenSimplex2
+#     allowedTiles:
+#     - FloorCDDADirt
+#     - FloorCDDAGrassBaseDirty
+#     entities:
+#     - FloraOrakimPlant
+#   # Rock decals
+#   - !type:BiomeDecalLayer
+#     allowedTiles:
+#     - FloorCDDADirt
+#     - FloorCDDARockBase
+#     - FloorCDDAGrassBaseDirty
+#     - FloorCDDAGrassBaseDirty
+#     - FloorCDDADirt
+#     threshold: 0.9
+#     divisions: 1
+#     noise:
+#       seed: 1
+#       frequency: 5
+#     decals:
+#     - Basalt1
+#     - Basalt2
+#     - Basalt3
+#     - Basalt4
+#     - Basalt5
+#     - Basalt6
+#     - Basalt7
+#     - Basalt8
+#     - Basalt9
+#   # Bush decals
+#   - !type:BiomeDecalLayer
+#     allowedTiles:
+#     - FloorCDDADirt
+#     - FloorCDDAGrassBaseDirty
+#     threshold: 0.9
+#     divisions: 1
+#     noise:
+#       seed: 1
+#       frequency: 0.9
+#     decals:
+#     - Bushj1
+#     - Bushj2
+#     - Bushj3
+#   # Large rock areas
+#   - !type:BiomeEntityLayer
+#     allowedTiles:
+#     - FloorCDDAGrassBaseDirty
+#     threshold: -0.05
+#     noise:
+#       seed: 0
+#       noiseType: Cellular
+#       frequency: 0.05
+#       lacunarity: 5
+#       fractalType: FBm
+#       octaves: 2
+#       cellularDistanceFunction: Euclidean
+#       cellularReturnType: Distance2
+#     entities:
+#     - MonoPlanetmapOreSandRich
+#   - !type:BiomeDummyLayer
+#     id: Loot
+#   # Fill layer
+#   # Base tiles
+#   - !type:BiomeTileLayer
+#     threshold: -1
+#     tile: FloorCDDADirt
+#   # Apply planet desert tile as noise so it doesnt look flat and boring
+#   - !type:BiomeTileLayer
+#     threshold: -0.40
+#     tile: FloorCDDAGrassBaseDirty
+#     noise:
+#       seed: 0
+#       noiseType: Cellular
+#       frequency: 0.2
+#       lacunarity: 2
+#       fractalType: FBm
+#       octaves: 2
+#       cellularDistanceFunction: Euclidean
+#       cellularReturnType: Distance2
+#   # Unvariantized tile for rock walls to be placed on
+#   - !type:BiomeTileLayer
+#     tile: FloorCDDAGrassBaseDirty
+#     threshold: -0.30
+#     noise:
+#       seed: 0
+#       noiseType: Cellular
+#       frequency: 0.05
+#       lacunarity: 2
+#       fractalType: FBm
+#       octaves: 5
+#       cellularDistanceFunction: Euclidean
+#       cellularReturnType: Distance2
 
