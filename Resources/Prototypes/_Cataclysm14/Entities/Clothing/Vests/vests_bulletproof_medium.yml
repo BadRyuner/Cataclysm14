@@ -1,0 +1,156 @@
+#MARK: -6B13-
+  #MARK: 6B13 - flora
+    - type: entity
+      parent: ClothingOuterArmorBasic
+      id: ClothingOuterBulletProofVest6B13Flora
+      name: 6B13 body armor (flora)
+      description: A medium kevlar vest made out of titanium. Capable of whistanding fairly large pistol calibers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B13_flora.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B13_flora.rsi
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.85
+            Slash: 0.8
+            Piercing: 0.65
+            Heat: 0.85
+            Caustic: 0.9 # Frontier
+      - type: Tag  # Mono
+        tags:
+        - Kevlar
+      - type: StaminaDamageResistance # Mono - Stamres
+        coefficient: 0.8
+      - type: ExplosionResistance
+        damageCoefficient: 0.90
+      - type: StaticPrice
+        price: 8500
+        vendPrice: 12000
+  #MARK: 6B13 - police
+    - type: entity
+      parent: ClothingOuterArmorBasic
+      id: ClothingOuterBulletProofVest6B13Police
+      name: 6B13 body armor (police)
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B13_police.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B13_police.rsi
+#MARK: -Korund VM-
+    - type: entity
+      parent: ClothingOuterArmorBasic
+      id: ClothingOuterBulletProofVestKorundVM
+      name: Korund-VM armor vest
+      description: An high quality russian armor vest used by special forces and members of the GRU.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Korund-VM.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Korund-VM.rsi
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.95
+            Slash: 0.85
+            Piercing: 0.5
+            Heat: 0.85
+            Caustic: 0.9 # Frontier
+      - type: Tag  # Mono
+        tags:
+        - Kevlar
+      - type: StaminaDamageResistance # Mono - Stamres
+        coefficient: 0.8
+      - type: ExplosionResistance
+        damageCoefficient: 0.90
+      - type: StaticPrice
+        price: 6500
+        vendPrice: 9000
+#MARK: -Kirasa-N-
+    - type: entity
+      parent: ClothingOuterArmorBasic
+      id: ClothingOuterBulletProofVestKirasaN
+      name: Kirasa-N armor vest
+      description: The BNTI Kirasa-N, a decent armor vest made for the russian police.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Kirasa-N.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Kirasa-N.rsi
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.95
+            Slash: 0.85
+            Piercing: 0.5
+            Heat: 0.85
+            Caustic: 0.9 # Frontier
+      - type: Tag  # Mono
+        tags:
+        - Kevlar
+      - type: StaminaDamageResistance # Mono - Stamres
+        coefficient: 0.8
+      - type: ExplosionResistance
+        damageCoefficient: 0.90
+      - type: StaticPrice
+        price: 6500
+        vendPrice: 9000
+#MARK: -IOTV-Gen4-
+    - type: entity
+      parent: ClothingOuterArmorBasic
+      id: ClothingOuterBulletProofVestIOTVGen4
+      name: IOTV Gen4 armor vest
+      description: An high quality vest part of the IOTV modular kit. Can handle weak fully powered rounds.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_IOTV-Gen4.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_IOTV-Gen4.rsi
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.95
+            Slash: 0.85
+            Piercing: 0.5
+            Heat: 0.85
+            Caustic: 0.9 # Frontier
+      - type: Tag  # Mono
+        tags:
+        - Kevlar
+      - type: StaminaDamageResistance # Mono - Stamres
+        coefficient: 0.8
+      - type: ExplosionResistance
+        damageCoefficient: 0.90
+      - type: StaticPrice
+        price: 6500
+        vendPrice: 9000
+#MARK: -ANA UnNations-
+    - type: entity
+      parent: ClothingOuterArmorBasic
+      id: ClothingOuterBulletProofVestANAModularUN
+      name: ANA modular armor vest (UN)
+      description: An standard quality armor vest made for UN forces. Can resist a whole lot of pistol caliber rounds.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_ANA_UN.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_ANA_UN.rsi
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.95
+            Slash: 0.85
+            Piercing: 0.5
+            Heat: 0.85
+            Caustic: 0.9 # Frontier
+      - type: Tag  # Mono
+        tags:
+        - Kevlar
+      - type: StaminaDamageResistance # Mono - Stamres
+        coefficient: 0.8
+      - type: ExplosionResistance
+        damageCoefficient: 0.90
+      - type: StaticPrice
+        price: 6500
+        vendPrice: 9000
