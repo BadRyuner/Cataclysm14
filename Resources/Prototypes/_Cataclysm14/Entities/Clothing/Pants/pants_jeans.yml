@@ -1,0 +1,97 @@
+#MARK: -Jeans-
+  #MARK: Jeans - blue
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJeansBlue
+      name: blue jeans
+      description: A warm jeans, this one is colored in blue.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        color: "#6F8FAF"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        clothingVisuals:
+          pants:
+          - state: equipped-PANTS
+            color: "#6F8FAF"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#6F8FAF"
+          right:
+          - state: inhand-right
+            color: "#6F8FAF"
+  #MARK: Jeans - purple
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJeansPurple
+      name: purple jeans
+      description: A warm jeans, this one is colored in purple.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        color: "#89839C"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        clothingVisuals:
+          pants:
+          - state: equipped-PANTS
+            color: "#89839C"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#89839C"
+          right:
+          - state: inhand-right
+            color: "#89839C"
+  #MARK: Jeans - black
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJeansBlack
+      name: black jeans
+      description: A warm jeans, this one is colored in black.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        color: "#444444"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        clothingVisuals:
+          pants:
+          - state: equipped-PANTS
+            color: "#444444"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#444444"
+          right:
+          - state: inhand-right
+            color: "#444444"
+  #MARK: Jeans - brown
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJeansBrown
+      name: brown jeans
+      description: A warm jeans, this one is colored in brown.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        color: "#81613C"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        clothingVisuals:
+          pants:
+          - state: equipped-PANTS
+            color: "#81613C"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#81613C"
+          right:
+          - state: inhand-right
+            color: "#81613C"

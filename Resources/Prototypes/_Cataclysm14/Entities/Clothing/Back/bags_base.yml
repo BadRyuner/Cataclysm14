@@ -1,0 +1,17 @@
+- type: entity
+  parent: [ ClothingBackpackDuffel, NFBackpackHiddenStash ]
+  id: ClothingBackpackDuffelTacticalBase
+  abstract: true
+  components:
+  - type: Storage
+    maxItemSize: Huge
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,9,4
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,7,5
+  - type: StaticPrice
+    price: 35000
+    vendPrice: 65000

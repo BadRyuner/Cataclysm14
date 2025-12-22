@@ -79,12 +79,12 @@
 #     ClothingBeltSecurity: 4294967295 # Infinite
 #     ClothingBeltBandolier: 4294967295 # Infinite
 #     # region Backpacks
-#     ClothingBackpackDuffelTacticalDuffelTan: 4294967295 # Infinite
-#     ClothingBackpackDuffelTacticalDuffelOlive: 4294967295 # Infinite
-#     ClothingBackpackDuffelTacticalDuffelBlack: 4294967295 # Infinite
-#     ClothingBackpackDuffelTacticalDuffelRangerGreen: 4294967295 # Infinite
-#     ClothingBackpackDuffelTacticalDuffelCoyoteBrown: 4294967295 # Infinite
-#     ClothingBackpackDuffelTacticalDuffelWhite: 4294967295 # Infinite
+#     ClothingBackpackDuffelTacticalTan: 4294967295 # Infinite
+#     ClothingBackpackDuffelTacticalOlive: 4294967295 # Infinite
+#     ClothingBackpackDuffelTacticalBlack: 4294967295 # Infinite
+#     ClothingBackpackDuffelTacticalRangerGreen: 4294967295 # Infinite
+#     ClothingBackpackDuffelTacticalCoyoteBrown: 4294967295 # Infinite
+#     ClothingBackpackDuffelTacticalWhite: 4294967295 # Infinite
 #     ClothingBackpackMercenary: 4294967295
 #     ClothingBackpackDuffelMercenary: 4294967295
 #     ClothingBackpackSatchelMercenary: 4294967295

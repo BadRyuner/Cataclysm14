@@ -47,6 +47,12 @@
     - map: [ "helmetattachment" ]
     - map: [ "pocket1" ]
     - map: [ "pocket2" ]
+    #Cataclysm14, start
+    - map: [ "pocket3" ]
+    - map: [ "pocket4" ]
+    - map: [ "suitstorage" ]
+    - map: [ "frontsling" ]
+    #Cataclysm14, end
     - map: ["enum.HumanoidVisualLayers.Handcuffs"]
       color: "#ffffff"
       sprite: Objects/Misc/handcuffs.rsi
@@ -363,7 +369,12 @@
     - map: [ "head" ]
     - map: [ "pocket1" ]
     - map: [ "pocket2" ]
-  - type: Appearance
+    #Cataclysm14, start
+    - map: [ "pocket3" ]
+    - map: [ "pocket4" ]
+    - map: [ "suitstorage" ]
+    - map: [ "frontsling" ]
+    #Cataclysm14, end
   - type: HumanoidAppearance
     species: Human
   - type: Body
