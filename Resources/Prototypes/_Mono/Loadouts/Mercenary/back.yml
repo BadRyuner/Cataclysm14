@@ -12,31 +12,31 @@
     back: ClothingModsuitMercenaryPowerCell
 
 - type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalDuffelTan
+  id: MercenaryClothingBackpackDuffelTacticalTan
   equipment:
-    back: ClothingBackpackDuffelTacticalDuffelTan
+    back: ClothingBackpackDuffelTacticalTan
 
 - type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalDuffelOlive
+  id: MercenaryClothingBackpackDuffelTacticalOlive
   equipment:
-    back: ClothingBackpackDuffelTacticalDuffelOlive
+    back: ClothingBackpackDuffelTacticalOlive
 
 - type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalDuffelBlack
+  id: MercenaryClothingBackpackDuffelTacticalBlack
   equipment:
-    back: ClothingBackpackDuffelTacticalDuffelBlack
+    back: ClothingBackpackDuffelTacticalBlack
 
 - type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalDuffelRangerGreen
+  id: MercenaryClothingBackpackDuffelTacticalRangerGreen
   equipment:
-    back: ClothingBackpackDuffelTacticalDuffelRangerGreen
+    back: ClothingBackpackDuffelTacticalRangerGreen
 
 - type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalDuffelCoyoteBrown
+  id: MercenaryClothingBackpackDuffelTacticalCoyoteBrown
   equipment:
-    back: ClothingBackpackDuffelTacticalDuffelCoyoteBrown
+    back: ClothingBackpackDuffelTacticalCoyoteBrown
 
 - type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalDuffelWhite
+  id: MercenaryClothingBackpackDuffelTacticalWhite
   equipment:
-    back: ClothingBackpackDuffelTacticalDuffelWhite
+    back: ClothingBackpackDuffelTacticalWhite

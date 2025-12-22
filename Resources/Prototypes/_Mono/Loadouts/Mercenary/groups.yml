@@ -91,12 +91,12 @@
   loadouts:
   - MercenaryClothingModsuitSecurityPowerCell # Mono
   - MercenaryClothingModsuitMercenaryPowerCell # Mono
-  - MercenaryClothingBackpackDuffelTacticalDuffelTan
-  - MercenaryClothingBackpackDuffelTacticalDuffelOlive
-  - MercenaryClothingBackpackDuffelTacticalDuffelBlack
-  - MercenaryClothingBackpackDuffelTacticalDuffelRangerGreen
-  - MercenaryClothingBackpackDuffelTacticalDuffelCoyoteBrown
-  - MercenaryClothingBackpackDuffelTacticalDuffelWhite
+  - MercenaryClothingBackpackDuffelTacticalTan
+  - MercenaryClothingBackpackDuffelTacticalOlive
+  - MercenaryClothingBackpackDuffelTacticalBlack
+  - MercenaryClothingBackpackDuffelTacticalRangerGreen
+  - MercenaryClothingBackpackDuffelTacticalCoyoteBrown
+  - MercenaryClothingBackpackDuffelTacticalWhite
 
 - type: loadoutGroup
   id: MercenaryBalaclava
