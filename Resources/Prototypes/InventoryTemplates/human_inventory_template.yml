@@ -152,7 +152,7 @@
       stripTime: 3
       uiWindowPos: 1,0
       strippingWindowPos: 0,4
-      dependsOn: pants
+      # dependsOn: pants
       displayName: Pocket 1
       stripHidden: true
     - name: pocket2
@@ -163,7 +163,7 @@
       stripTime: 3
       uiWindowPos: 2,0
       strippingWindowPos: 1,4
-      dependsOn: pants
+      # dependsOn: pants
       displayName: Pocket 2
       stripHidden: true
     - name: slingfront
@@ -192,7 +192,7 @@
       stripTime: 3
       uiWindowPos: 3,0
       strippingWindowPos: 1,4
-      dependsOn: pants
+      # dependsOn: pants
       displayName: Pocket 3
       stripHidden: true
     - name: pocket4
@@ -203,6 +203,6 @@
       stripTime: 3
       uiWindowPos: 4,0
       strippingWindowPos: 1,4
-      dependsOn: pants
+      # dependsOn: pants
       displayName: Pocket 4
       stripHidden: true

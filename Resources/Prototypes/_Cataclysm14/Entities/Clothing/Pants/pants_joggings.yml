@@ -1,0 +1,145 @@
+#MARK: -TShirts-
+  #MARK: TShirt - red
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJoggingsRed
+      name: red joggings
+      description: A plain colored joggings, this one is colored in red.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        color: "#9E1A1A"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        clothingVisuals:
+          pants:
+          - state: equipped-PANTS
+            color: "#9E1A1A"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#9E1A1A"
+          right:
+          - state: inhand-right
+            color: "#9E1A1A"
+  #MARK: TShirt - blue
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJoggingsBlue
+      name: blue joggings
+      description: A plain colored joggings, this one is colored in blue.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        color: "#2832C2"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        clothingVisuals:
+          pants:
+          - state: equipped-PANTS
+            color: "#2832C2"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#2832C2"
+          right:
+          - state: inhand-right
+            color: "#2832C2"
+  #MARK: TShirt - green
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJoggingsGreen
+      name: green joggings
+      description: A plain colored joggings, this one is colored in green.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        color: "#3d8c40"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        clothingVisuals:
+          pants:
+          - state: equipped-PANTS
+            color: "#3d8c40"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#3d8c40"
+          right:
+          - state: inhand-right
+            color: "#3d8c40"
+  #MARK: TShirt - yellow
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJoggingsYellow
+      name: yellow joggings
+      description: A plain colored joggings, this one is colored in yellow.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        color: "#E4CD05"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        clothingVisuals:
+          pants:
+          - state: equipped-PANTS
+            color: "#E4CD05"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#E4CD05"
+          right:
+          - state: inhand-right
+            color: "#E4CD05"
+  #MARK: TShirt - purple
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJoggingsPurple
+      name: purple joggings
+      description: A plain colored joggings, this one is colored in purple.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        color: "#702963"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        clothingVisuals:
+          pants:
+          - state: equipped-PANTS
+            color: "#702963"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#702963"
+          right:
+          - state: inhand-right
+            color: "#702963"
+  #MARK: TShirt - black
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJoggingsBlack
+      name: black joggings
+      description: A plain colored joggings, this one is colored in black.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        color: "#444444"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        clothingVisuals:
+          pants:
+          - state: equipped-PANTS
+            color: "#444444"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#444444"
+          right:
+          - state: inhand-right
+            color: "#444444"

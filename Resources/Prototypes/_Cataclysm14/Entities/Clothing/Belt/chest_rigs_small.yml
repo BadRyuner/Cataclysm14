@@ -1,0 +1,18 @@
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband]
+  id: ClothingBeltChestRigScavenger
+  name: Scavenger vest
+  description: A basic vests made for hunters, now used by scavengers.
+  components:
+  - type: StaticPrice
+    price: 3000
+    vendPrice: 5500
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_scav.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_scav.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    grid:
+    - 0,0,2,1
