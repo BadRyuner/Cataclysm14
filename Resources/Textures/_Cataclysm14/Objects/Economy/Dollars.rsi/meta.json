@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "By zeranov (disc:core_mene)",
+  "states": [
+    {
+      "name": "bills_dollars_1"
+    },
+    {
+      "name": "bills_dollars_5"
+    },
+    {
+      "name": "bills_dollars_10"
+    },
+    {
+      "name": "bills_dollars_20"
+    },
+    {
+      "name": "bills_dollars_50"
+    },
+    {
+      "name": "bills_dollars_100"
+    },
+    {
+      "name": "bills_dollars_250"
+    },
+    {
+      "name": "bills_dollars_500"
+    },
+    {
+      "name": "bills_dollars_1000"
+    }
+  ]
+}
