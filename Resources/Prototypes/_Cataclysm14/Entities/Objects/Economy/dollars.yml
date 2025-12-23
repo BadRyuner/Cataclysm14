@@ -1,0 +1,161 @@
+- type: entity
+  parent: BaseItem
+  id: MoneyDollars
+  name: dollars
+  description: Veridian Standard Credits, the lifeblood of the galaxy! Most commonly referred to as "Credits" they are prints sourced from the Veridian Emerald Bank, the largest bank in the galaxy.
+  components:
+  - type: Cash
+  - type: Item
+    shape:
+    - 0,0,1,0
+    storedOffset: 0,-2
+  - type: Currency
+    price:
+      Speso: 1
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 1
+  - type: StaticPrice
+    price: 0
+  - type: Stack
+    stackType: MoneyDollars
+    count: 1
+    baseLayer: base
+    layerStates:
+    - bills_dollars_1
+    - bills_dollars_5
+    - bills_dollars_10
+    - bills_dollars_20
+    - bills_dollars_100
+    - bills_dollars_250
+    - bills_dollars_500
+    - bills_dollars_1000
+    layerFunction: Threshold
+  - type: UserInterface
+    interfaces:
+      enum.StackCustomSplitUiKey.Key:
+        type: StackCustomSplitBoundUserInterface
+  - type: StackLayerThreshold
+    thresholds: [1, 5, 10, 20, 100, 250, 500, 1000]
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Economy/Dollars.rsi
+    state: bills_dollars_1
+    layers:
+    - state: bills_dollars_1
+      map: ["base"]
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 30
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.25,0.1"
+        mask:
+        - ItemMask
+  - type: Appearance
+  - type: CargoSellBlacklist
+
+- type: material
+  id: MoneyDollars
+  name: dollar
+  unit: materials-unit-bill
+  stackEntity: MoneyDollars
+  icon: { sprite: _Cataclysm14/Objects/Economy/Dollars.rsi, state: bills_dollars_1 }
+  price: 1
+
+- type: stack
+  id: MoneyDollars
+  name: dollars
+  icon: { sprite: _Cataclysm14/Objects/Economy/Dollars.rsi, state: bills_dollars_1 }
+  spawn: MoneyDollars
+
+- type: entity
+  parent: MoneyDollars
+  id: MoneyDollars1
+  suffix: 1
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Economy/Dollars.rsi
+    state: bills_dollars_1
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MoneyDollars
+  id: MoneyDollars5
+  suffix: 5
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Economy/Dollars.rsi
+    state: bills_dollars_5
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: MoneyDollars
+  id: MoneyDollars10
+  suffix: 10
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Economy/Dollars.rsi
+    state: bills_dollars_10
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MoneyDollars
+  id: MoneyDollars20
+  suffix: 20
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Economy/Dollars.rsi
+    state: bills_dollars_20
+  - type: Stack
+    count: 20
+
+- type: entity
+  parent: MoneyDollars
+  id: MoneyDollars100
+  suffix: 100
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Economy/Dollars.rsi
+    state: bills_dollars_100
+  - type: Stack
+    count: 100
+
+- type: entity
+  parent: MoneyDollars
+  id: MoneyDollars250
+  suffix: 250
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Economy/Dollars.rsi
+    state: bills_dollars_250
+  - type: Stack
+    count: 250
+
+- type: entity
+  parent: MoneyDollars
+  id: MoneyDollars500
+  suffix: 500
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Economy/Dollars.rsi
+    state: bills_dollars_500
+  - type: Stack
+    count: 500
+
+- type: entity
+  parent: MoneyDollars
+  id: MoneyDollars1000
+  suffix: 1000
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Economy/Dollars.rsi
+    state: bills_dollars_1000
+  - type: Stack
+    count: 1000
