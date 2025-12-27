@@ -15,9 +15,10 @@
       - 0,0,1,1
     - type: ArmorPlateItem
       maxDurability: 100
-      walkSpeedModifier: 0.96
-      sprintSpeedModifier: 0.96
-      staminaDamageMultiplier: 1.0
+      walkSpeedModifier: 0.99
+      sprintSpeedModifier: 0.99
+      staminaDamageMultiplier: 0.4
+      bluntDamageMultiplier: 0.1
     - type: Damageable
       damageContainer: Inorganic
     - type: Destructible
@@ -45,9 +46,10 @@
       - 0,0,0,0
     - type: ArmorPlateItem
       maxDurability: 20
-      walkSpeedModifier: 0.96
-      sprintSpeedModifier: 0.96
-      staminaDamageMultiplier: 1.0
+      walkSpeedModifier: 0.99
+      sprintSpeedModifier: 0.99
+      staminaDamageMultiplier: 0.4
+      bluntDamageMultiplier: 0.1
     - type: Damageable
       damageContainer: Inorganic
     - type: Destructible
