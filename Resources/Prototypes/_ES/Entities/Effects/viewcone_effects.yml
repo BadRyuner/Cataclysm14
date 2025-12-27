@@ -13,7 +13,7 @@
   - type: ESViewconeOccludable
     inverted: true
   - type: Sprite
-    sprite: _
+    sprite: _ES/Effects.rsi
     anchored: true
   - type: TimedDespawn
     lifetime: 3.0
