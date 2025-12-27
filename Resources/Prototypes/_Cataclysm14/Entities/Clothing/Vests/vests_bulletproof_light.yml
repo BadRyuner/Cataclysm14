@@ -1,6 +1,6 @@
 #MARK: -PACA-
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: [ClothingBallisticPlateT2Front, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestPACA
       name: PACA soft body armor
       description: A simple kevlar vest of decent quality. This one is a simple bulletproof vest made to resist low caliber rounds.

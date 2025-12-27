@@ -1,0 +1,66 @@
+- type: entity
+  abstract: true
+  id: ClothingBallisticPlate
+  components:
+  - type: ArmorPlateHolder
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
+      toggleable-clothing: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+
+- type: entity
+  abstract: true
+  parent: ClothingArmorPlate
+  id: ClothingBallisticPlateT2Front
+  components:
+  - type: StorageFill
+    contents:
+    - id: BallisticPlateT2Front
+
+- type: entity
+  abstract: true
+  parent: ClothingArmorPlate
+  id: ClothingBallisticPlateT2FrontBack
+  components:
+  - type: StorageFill
+    contents:
+    - id: BallisticPlateT2Front
+    - id: BallisticPlateT2Front
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1
+    - 2,0,4,1
+
+
+- type: entity
+  abstract: true
+  parent: ClothingArmorPlate
+  id: ClothingBallisticPlateT2FrontBackSides
+  components:
+  - type: StorageFill
+    contents:
+    - id: BallisticPlateT2Sides
+    - id: BallisticPlateT2Front
+    - id: BallisticPlateT2Front
+    - id: BallisticPlateT2Sides
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,1,0,1
+    - 1,0,4,1
+    - 5,1,5,1

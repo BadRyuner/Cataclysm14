@@ -1,6 +1,6 @@
 #MARK: -THOR-
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: [ClothingBallisticPlateT2FrontBackSides, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestTHOR
       name: NFM-THOR heavy armor vest
       description: A an heavy armor vest colored in tan. Made to resist intermediate calibers.

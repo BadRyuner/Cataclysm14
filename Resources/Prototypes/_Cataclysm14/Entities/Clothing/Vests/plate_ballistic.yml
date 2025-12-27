@@ -1,0 +1,60 @@
+# Level 2 plate (2 is the lowest level cause tarkov copying moment)
+  - type: entity
+    parent: BaseItem
+    id: BallisticPlateT2Front
+    name: Level II ballistic frontal plate
+    description: A lightweight level 2 protective plate made in the back or in the front.
+    components:
+    - type: Sprite
+      sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi
+      state: icon
+    - type: Item
+      sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi
+      size: Normal
+      shape:
+      - 0,0,1,1
+    - type: ArmorPlateItem
+      maxDurability: 100
+      walkSpeedModifier: 0.96
+      sprintSpeedModifier: 0.96
+      staminaDamageMultiplier: 1.0
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+
+  - type: entity
+    parent: BaseItem
+    id: BallisticPlateT2Sides
+    name: Level II ballistic side plate
+    description: A lightweight level 2 protective plate made to fit on the sides.
+    components:
+    - type: Sprite
+      sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi
+      state: icon
+    - type: Item
+      sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi
+      size: Normal
+      shape:
+      - 0,0,0,0
+    - type: ArmorPlateItem
+      maxDurability: 20
+      walkSpeedModifier: 0.96
+      sprintSpeedModifier: 0.96
+      staminaDamageMultiplier: 1.0
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
