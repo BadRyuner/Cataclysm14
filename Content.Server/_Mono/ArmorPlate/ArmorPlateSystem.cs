@@ -16,7 +16,6 @@ public sealed class ArmorPlateSystem : SharedArmorPlateSystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly DamageableSystem _blunt = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
 
     public override void Initialize()
@@ -75,6 +74,10 @@ public sealed class ArmorPlateSystem : SharedArmorPlateSystem
         var bluntDamage = new DamageSpecifier();
         bluntDamage.DamageDict.Add("Blunt", damage);
         _damageable.TryChangeDamage(wearer, bluntDamage * plate.Comp.BluntDamageMultiplier, ignoreResistances: false);
+
+        var slashDamage = new DamageSpecifier();
+        slashDamage.DamageDict.Add("Slash", damage);
+        _damageable.TryChangeDamage(wearer, slashDamage * plate.Comp.SlashDamageMultiplier, ignoreResistances: false);
 // Cataclysm14 END
     }
 

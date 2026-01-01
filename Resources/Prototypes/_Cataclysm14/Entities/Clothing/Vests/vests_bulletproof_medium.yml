@@ -1,8 +1,9 @@
 #MARK: -6B13-
   #MARK: 6B13 - flora
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: [ClothingBallisticPlateFrontBackHeavy, ClothingOuterArmorBase]
       id: ClothingOuterBulletProofVest6B13Flora
+      suffix: Empty
       name: 6B13 body armor (flora)
       description: A medium kevlar vest made out of titanium. Capable of whistanding fairly large pistol calibers.
       components:
@@ -28,20 +29,47 @@
       - type: StaticPrice
         price: 8500
         vendPrice: 12000
+      - type: Storage
+        whitelist:
+          tags:
+          - 6B33FrontBallisticPlateLevel4
+          - Zhuk3FrontBallisticPlateLevel3
+
+    - type: entity
+      parent: ClothingOuterBulletProofVest6B13Flora
+      id: ClothingOuterBulletProofVest6B13FloraFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateFront6B33Level4
+        - id: BallisticPlateFront6B33Level4
   #MARK: 6B13 - police
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: ClothingOuterBulletProofVest6B13Flora
       id: ClothingOuterBulletProofVest6B13Police
+      suffix: Empty
       name: 6B13 body armor (police)
       components:
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B13_police.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B13_police.rsi
+
+    - type: entity
+      parent: ClothingOuterBulletProofVest6B13Police
+      id: ClothingOuterBulletProofVest6B13PoliceFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateFront6B33Level4
+        - id: BallisticPlateFront6B33Level4
 #MARK: -Korund VM-
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: [ClothingBallisticPlateFrontBackHeavySides, ClothingOuterArmorBase]
       id: ClothingOuterBulletProofVestKorundVM
+      suffix: Empty
       name: Korund-VM armor vest
       description: An high quality russian armor vest used by special forces and members of the GRU.
       components:
@@ -67,10 +95,28 @@
       - type: StaticPrice
         price: 6500
         vendPrice: 9000
+      - type: Storage
+        whitelist:
+          tags:
+          - KorundVMSideBallisticPlateLevel5
+          - KorundVMFrontBallisticPlateLevel5
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestKorundVM
+      id: ClothingOuterBulletProofVestKorundVMFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateFrontKorundVMLevel5
+        - id: BallisticPlateFrontKorundVMLevel5
+        - id: BallisticPlateSidesKorundVMLevel5
+        - id: BallisticPlateSidesKorundVMLevel5
 #MARK: -Kirasa-N-
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
       id: ClothingOuterBulletProofVestKirasaN
+      suffix: Empty
       name: Kirasa-N armor vest
       description: The BNTI Kirasa-N, a decent armor vest made for the russian police.
       components:
@@ -96,10 +142,28 @@
       - type: StaticPrice
         price: 6500
         vendPrice: 9000
+      - type: Storage
+        whitelist:
+          tags:
+          - NESCO4400FrontBallisticPlateLevel6
+          - AR500FrontBallisticPlateLevel3
+          - CultLocustFrontBallisticPlateLevel5
+          - MonocletePEFrontBallisticPlateLevel4
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestKirasaN
+      id: ClothingOuterBulletProofVestKirasaNFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: AR500FrontBallisticPlateLevel3
+        - id: AR500FrontBallisticPlateLevel3
 #MARK: -IOTV-Gen4-
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBase]
       id: ClothingOuterBulletProofVestIOTVGen4
+      suffix: Empty
       name: IOTV Gen4 armor vest
       description: An high quality vest part of the IOTV modular kit. Can handle weak fully powered rounds.
       components:
@@ -125,9 +189,30 @@
       - type: StaticPrice
         price: 6500
         vendPrice: 9000
+      - type: Storage
+        whitelist:
+          tags:
+          - ESBISideBallisticPlateLevel6
+          - NESCO4400FrontBallisticPlateLevel6
+          - AR500FrontBallisticPlateLevel3
+          - SSAPISideBallisticPlateLevel5
+          - CultLocustFrontBallisticPlateLevel5
+          - MonocletePEFrontBallisticPlateLevel4
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestIOTVGen4
+      id: ClothingOuterBulletProofVestIOTVGen4Filled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: SSAPISideBallisticPlateLevel5
+        - id: CultLocustFrontBallisticPlateLevel5
+        - id: CultLocustFrontBallisticPlateLevel5
+        - id: SSAPISideBallisticPlateLevel5
 #MARK: -ANA UnNations-
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: ClothingOuterArmorBase
       id: ClothingOuterBulletProofVestANAModularUN
       name: ANA modular armor vest (UN)
       description: An standard quality armor vest made for UN forces. Can resist a whole lot of pistol caliber rounds.
@@ -156,7 +241,7 @@
         vendPrice: 9000
 #MARK: -OTV UnNations-
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: ClothingOuterArmorBase
       id: ClothingOuterBulletProofVestOTVUN
       name: OTV medium armor vest (UN)
       description: An standard quality armor vest made for the United Nation peace keeping forces. Can resist a whole lot of pistol caliber rounds.

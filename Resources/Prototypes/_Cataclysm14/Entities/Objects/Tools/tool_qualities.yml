@@ -1,0 +1,51 @@
+#MARK: Prying
+  - type: tool
+    id: PryingT1
+    name: tool-quality-prying-name-T1
+    toolName: tool-quality-prying-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: PryingT2
+    name: tool-quality-prying-name-T2
+    toolName: tool-quality-prying-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: PryingT3
+    name: tool-quality-prying-name-T3
+    toolName: tool-quality-prying-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Hammering
+  - type: tool
+    id: HammeringT1
+    name: tool-quality-hammering-name-T1
+    toolName: tool-quality-hammering-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: HammeringT2
+    name: tool-quality-hammering-name-T2
+    toolName: tool-quality-hammering-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: HammeringT3
+    name: tool-quality-hammering-name-T3
+    toolName: tool-quality-hammering-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Hammering
+  - type: tool
+    id: NailPryingT1
+    name: tool-quality-nail-prying-name-T1
+    toolName: tool-quality-nail-prying-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }

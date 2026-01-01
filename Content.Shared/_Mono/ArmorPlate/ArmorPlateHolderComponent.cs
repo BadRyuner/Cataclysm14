@@ -47,6 +47,12 @@ public sealed partial class ArmorPlateHolderComponent : Component
     /// </summary>
     [DataField]
     public float BluntDamageMultiplier = 1.0f;
+
+    /// <summary>
+    /// Slash damage multiplier from the currently active plate.
+    /// </summary>
+    [DataField]
+    public float SlashDamageMultiplier = 1.0f;
 //Cataclysm14 ENND
 }
 

@@ -42,6 +42,12 @@ public sealed partial class ArmorPlateItemComponent : Component
     /// </summary>
     [DataField]
     public float BluntDamageMultiplier = 1.0f;
+
+    /// <summary>
+    /// Multiplier applied when converting absorbed piercing damage to slash damage.
+    /// </summary>
+    [DataField]
+    public float SlashDamageMultiplier = 1.0f;
 // Cataclysm14 END
 }
 
