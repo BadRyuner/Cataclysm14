@@ -1,3 +1,5 @@
+# too lazy to change the spawn/icon thing yet so like, have fun
+
 #MARK: Prying
   - type: tool
     id: PryingT1
@@ -42,10 +44,39 @@
     spawn: ToolCrowbar
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
-#MARK: Hammering
+#MARK: Nail prying
   - type: tool
     id: NailPryingT1
     name: tool-quality-nail-prying-name-T1
     toolName: tool-quality-nail-prying-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Metal sawing
+  - type: tool
+    id: MetalSawingT1
+    name: tool-quality-metal-sawing-name-T1
+    toolName: tool-quality-metal-sawing-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: MetalSawingT2
+    name: tool-quality-metal-sawing-name-T2
+    toolName: tool-quality-metal-sawing-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: MetalSawingT3
+    name: tool-quality-metal-sawing-name-T3
+    toolName: tool-quality-metal-sawing-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: MetalSawingT4
+    name: tool-quality-metal-sawing-name-T4
+    toolName: tool-quality-metal-sawing-tool-name
     spawn: ToolCrowbar
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }

@@ -1,0 +1,64 @@
+#MARK: Base
+  - type: entity
+    name: power circular saw
+    parent: BaseItem
+    id: ToolPowerCircularSaw
+    components:
+    - type: EmitSoundOnPickup
+      sound:
+        path: /Audio/_Goobstation/Items/handling/crowbar_pickup.ogg
+        params:
+          volume: -2
+    - type: EmitSoundOnDrop
+      sound:
+        path: /Audio/Items/crowbar_drop.ogg
+        params:
+          volume: -2
+    - type: EmitSoundOnLand
+      sound:
+        path: /Audio/Items/crowbar_drop.ogg
+    # - type: Tag
+    #   tags:
+    #   - ToolPowerCIrcularSaw
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 24
+      soundHit:
+        path: /Audio/Items/drill_hit.ogg
+    - type: Tool
+      qualities:
+      - MetalSawingT1
+      - MetalSawingT2
+      - MetalSawingT3
+      - MetalSawingT4
+      useSound:
+        path: /Audio/Items/drill_hit.ogg
+    - type: ToolTileCompatible
+    - type: PhysicalComposition
+      materialComposition:
+        Steel: 100
+    - type: StaticPrice
+      price: 22
+    - type: Prying
+    - type: UseDelay
+      delay: 1
+    - type: Sprite
+      state: circular-saw
+      sprite: _Cataclysm14/Objects/Tools/power_circular_saw.rsi
+      scale: 0.85,0.85
+    - type: Clothing
+      sprite: _Cataclysm14/Objects/Tools/power_circular_saw.rsi
+      quickEquip: false
+      slots:
+      - Belt
+    - type: Item
+      sprite: _Cataclysm14/Objects/Tools/power_circular_saw.rsi
+      size: Normal
+      shape:
+      - 0,0,0,1
+    # realism, kinda, feel free to modify if you don't like
+    # - type: Tweezers
+    #   speed: 0.55
+    # - type: SurgeryTool # Shitmed
+      startSound: /Audio/Items/crowbar.ogg
