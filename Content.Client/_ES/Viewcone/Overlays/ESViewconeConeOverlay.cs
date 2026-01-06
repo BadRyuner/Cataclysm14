@@ -33,7 +33,8 @@ public sealed class ESViewconeConeOverlay : Overlay
     //Cataclysm14 start
     private float _grainMultiplier;
     private float _grainBase;
-    private float _grayscaleFactor;
+    private float _coneColorFactor;
+    private float _coneColor;
     //Cataclysm14 end
 
     public ESViewconeConeOverlay()
@@ -63,7 +64,8 @@ public sealed class ESViewconeConeOverlay : Overlay
             //Cataclysm14 start
             _grainMultiplier = viewcone.GrainMultiplier;
             _grainBase = viewcone.GrainBase;
-            _grayscaleFactor = viewcone.GrayscaleFactor;
+            _coneColorFactor = viewcone.ConeColorFactor;
+            _coneColor = viewcone.ConeColor;
             //Cataclysm14 end
             _eyeEntity = (uid, eye, viewcone, xform);
             break;
@@ -90,7 +92,8 @@ public sealed class ESViewconeConeOverlay : Overlay
         //Cataclysm14 start
         _viewconeShader.SetParameter("GrainMultiplier", _grainMultiplier);
         _viewconeShader.SetParameter("GrainBase", _grainBase);
-        _viewconeShader.SetParameter("GrayscaleFactor", _grayscaleFactor);
+        _viewconeShader.SetParameter("ConeColorFactor", _coneColorFactor);
+        _viewconeShader.SetParameter("ConeColor", _coneColor);
         //Cataclysm14 end
 
         worldHandle.UseShader(_viewconeShader);
