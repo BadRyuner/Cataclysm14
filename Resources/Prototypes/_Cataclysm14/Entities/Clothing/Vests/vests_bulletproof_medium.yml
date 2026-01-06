@@ -157,8 +157,8 @@
       components:
       - type: StorageFill
         contents:
-        - id: AR500FrontBallisticPlateLevel3
-        - id: AR500FrontBallisticPlateLevel3
+        - id: BallisticPlateFrontAR500Level3
+        - id: BallisticPlateFrontAR500Level3
 #MARK: -IOTV-Gen4-
     - type: entity
       parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBase]
@@ -206,10 +206,10 @@
       components:
       - type: StorageFill
         contents:
-        - id: SSAPISideBallisticPlateLevel5
-        - id: CultLocustFrontBallisticPlateLevel5
-        - id: CultLocustFrontBallisticPlateLevel5
-        - id: SSAPISideBallisticPlateLevel5
+        - id: BallisticPlateSidesSSAPILevel5
+        - id: BallisticPlateFrontCultLocustLevel5
+        - id: BallisticPlateFrontCultLocustLevel5
+        - id: BallisticPlateSidesSSAPILevel5
 #MARK: -ANA UnNations-
     - type: entity
       parent: ClothingOuterArmorBase

@@ -165,8 +165,8 @@
       components:
       - type: StorageFill
         contents:
-        - id: MonocletePEFrontBallisticPlateLevel4
-        - id: MonocletePEFrontBallisticPlateLevel4
+        - id: BallisticPlateFrontMonocletePELevel4
+        - id: BallisticPlateFrontMonocletePELevel4
 #MARK: -Slick-
   #MARK: Slick - flora
     - type: entity
@@ -212,8 +212,8 @@
       components:
       - type: StorageFill
         contents:
-        - id: NESCO4400FrontBallisticPlateLevel6
-        - id: NESCO4400FrontBallisticPlateLevel6
+        - id: BallisticPlateFrontNESCO4400Level6
+        - id: BallisticPlateFrontNESCO4400Level6
   #MARK: Slick - olive
     - type: entity
       parent: ClothingOuterArmorBase
@@ -232,8 +232,8 @@
       components:
       - type: StorageFill
         contents:
-        - id: NESCO4400FrontBallisticPlateLevel6
-        - id: NESCO4400FrontBallisticPlateLevel6
+        - id: BallisticPlateFrontNESCO4400Level6
+        - id: BallisticPlateFrontNESCO4400Level6
   #MARK: Slick - black
     - type: entity
       parent: ClothingOuterArmorBase
@@ -252,8 +252,8 @@
       components:
       - type: StorageFill
         contents:
-        - id: NESCO4400FrontBallisticPlateLevel6
-        - id: NESCO4400FrontBallisticPlateLevel6
+        - id: BallisticPlateFrontNESCO4400Level6
+        - id: BallisticPlateFrontNESCO4400Level6
 #MARK: -Interceptor OTV-
     - type: entity
       parent: ClothingOuterArmorBase

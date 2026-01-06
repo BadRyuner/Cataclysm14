@@ -58,7 +58,7 @@
     # - type: Tweezers
     #   speed: 0.55
     # - type: SurgeryTool # Shitmed
-      startSound: /Audio/Items/crowbar.ogg
+      # startSound: /Audio/Items/crowbar.ogg
 
 #MARK: regular crowbars
   - type: entity
