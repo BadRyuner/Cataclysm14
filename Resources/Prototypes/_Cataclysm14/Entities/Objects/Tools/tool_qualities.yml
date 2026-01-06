@@ -80,3 +80,25 @@
     toolName: tool-quality-metal-sawing-tool-name
     spawn: ToolCrowbar
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Digging
+  - type: tool
+    id: DiggingT1
+    name: tool-quality-digging-name-T1
+    toolName: tool-quality-digging-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: DiggingT2
+    name: tool-quality-digging-name-T2
+    toolName: tool-quality-digging-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: DiggingT3
+    name: tool-quality-digging-name-T3
+    toolName: tool-quality-digging-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }

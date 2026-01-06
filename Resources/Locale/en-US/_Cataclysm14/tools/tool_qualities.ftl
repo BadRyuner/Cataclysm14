@@ -99,3 +99,11 @@ tool-quality-fine-bolt-turning-name-T1 = Fine bolt turning: 1
 # adjustable wrench / socket screw/wrench set
 tool-quality-fine-bolt-turning-name-T2 = [color=orange] Fine bolt turning: 2 [/color]
 tool-quality-fine-bolt-turning-tool-name = Adjustable wrench
+
+# whatever could be used to shovel in emergency
+tool-quality-digging-name-T1 = Digging: 1
+# wooden shovel
+tool-quality-digging-name-T2 = [color=orange] Digging: 2 [/color]
+# proper shovel / entrenching tool
+tool-quality-digging-name-T3 = [color=red] Digging: 3 [/color]
+# vanilla has tool-name

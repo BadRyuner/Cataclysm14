@@ -1,6 +1,6 @@
 #MARK: Base
   - type: entity
-    name: crowbar
+    name: metal crowbar
     parent: BaseItem
     id: BaseToolCrowbar
     abstract: true
@@ -18,6 +18,7 @@
     - type: EmitSoundOnLand
       sound:
         path: /Audio/Items/crowbar_drop.ogg
+    # Used for whitelists but not needed by us
     # - type: Tag
     #   tags:
     #   - ToolCrowbar
@@ -41,15 +42,15 @@
     - type: UseDelay
       delay: 1
     - type: Sprite
-      sprite: _NF/Objects/Tools/crowbar.rsi
+      sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
       scale: 0.75,0.75
     - type: Clothing
-      sprite: _NF/Objects/Tools/crowbar.rsi
+      sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
       quickEquip: false
       slots:
       - Belt
     - type: Item
-      sprite: _NF/Objects/Tools/crowbar.rsi
+      sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
       size: Normal
       shape:
       - 0,0,0,1
@@ -73,7 +74,7 @@
       state: icon
     - type: Item
       storedSprite:
-        sprite: _NF/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
         state: storage
     - type: Tool
       qualities:
@@ -98,7 +99,7 @@
     - type: Item
       storedSprite:
         state: red-storage
-        sprite: _NF/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
       inhandVisuals:
         left:
         - state: inhand-left
@@ -128,7 +129,7 @@
     - type: Item
       storedSprite:
         state: green-storage
-        sprite: _NF/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
       inhandVisuals:
         left:
         - state: inhand-left
@@ -158,7 +159,7 @@
     - type: Item
       storedSprite:
         state: orange-storage
-        sprite: _NF/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
       inhandVisuals:
         left:
         - state: inhand-left
@@ -188,7 +189,7 @@
     - type: Item
       storedSprite:
         state: yellow-storage
-        sprite: _NF/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
       inhandVisuals:
         left:
         - state: inhand-left
@@ -209,6 +210,7 @@
   - type: entity
     parent: BaseToolCrowbar
     id: ToolCrowbarMakeshift
+    name: makeshift crowbar
     description: A multipurpose tool to pry open doors made out of bent scrap metal.
     components:
     - type: MeleeWeapon
@@ -216,12 +218,69 @@
         types:
           Blunt: 24
     - type: Sprite
-      state: icon
-    - type: Item
-      storedSprite:
-        sprite: _NF/Objects/Tools/crowbar.rsi #No sprite yet
-        state: storage
+      state: icon-makeshift
     - type: Tool
       qualities:
       - PryingT1
       - HammeringT1
+    - type: Item
+      storedSprite:
+        state: makeshift-storage
+        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
+      inhandVisuals:
+        left:
+        - state: inhand-left-grey
+          color: "#c6b9b3"
+        right:
+        - state: inhand-right-grey
+          color: "#c6b9b3"
+    - type: Clothing
+      clothingVisuals:
+        belt:
+        - state: equipped-BELT-grey
+          color: "#c6b9b3"
+
+#MARK: Halligan Bar
+  - type: entity
+    parent: BaseToolCrowbar
+    id: ToolHalliganBar
+    name: halligan bar
+    description: A tool used to pry open doors and used by firefighter for breaching.
+    components:
+    - type: MeleeWeapon
+      damage:
+        types:
+          Blunt: 24
+    - type: Sprite
+      sprite: _Cataclysm14/Objects/Tools/halligan_bar.rsi
+      state: icon
+      scale: 0.9,0.9
+    - type: Tool
+      qualities:
+      - PryingT1
+      - PryingT2
+      - PryingT3
+      - HammeringT1
+      - HammeringT2
+      - NailPryingT1
+      - DiggingT1
+  # Not used but good to have on hand if behavior change needed
+  # - type: UseDelay # Goobstation - For insta prying
+  #   delay: 1
+  # - type: MultipleTool #Mono start
+  #   statusShowBehavior: true
+  #   entries:
+  #     - behavior:
+  #       - Prying
+  #       - Axing
+  #       sprite:
+  #         sprite: _NF/Objects/Tools/maintenance-jack.rsi
+  #         state: icon
+  #       useSound: /Audio/Items/crowbar.ogg
+  #       changeSound: /Audio/Effects/thudswoosh.ogg
+  #     - behavior: Anchoring
+  #       sprite:
+  #         sprite: _NF/Objects/Tools/maintenance-jack.rsi
+  #         state: icon-1
+  #       useSound: /Audio/Items/ratchet.ogg
+  #       changeSound: /Audio/Effects/thudswoosh.ogg #Mono end

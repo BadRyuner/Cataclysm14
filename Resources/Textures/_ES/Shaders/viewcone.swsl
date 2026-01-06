@@ -9,13 +9,13 @@ uniform highp float ConeAngle; //= 270.0
 uniform highp float ConeFeather; //= 10.0;
 uniform highp float ConeIgnoreRadius; //= 0.5;
 uniform highp float ConeIgnoreFeather; //= 0.1;
+// Cataclysm14 start
+uniform highp float GrainMultiplier; //= 0.35;
+uniform highp float GrainBase; //= 0.6;
+uniform highp float GrayscaleFactor; //= 1;
+// Cataclysm14 end
 
 uniform highp float ViewAngle;
-
-const highp float grainMult = 0.35;
-const highp float grainBase = 0.6;
-
-const highp float grayscaleFactor = 0.72;
 
 void fragment(){
     highp vec2 pixelSize = vec2(1.0/SCREEN_PIXEL_SIZE.x, 1.0/SCREEN_PIXEL_SIZE.y);
@@ -47,7 +47,7 @@ void fragment(){
     highp float grain = zRandom(FRAGCOORD.xy * sin(TIME * 0.01)).x;
 
     // Lil bit of grayscale for good measure, too
-    highp float grayscale = zGrayscale(color.rgb) * (grain * grainMult + grainBase);
+    highp float grayscale = zGrayscale(color.rgb) * (grain * GrainMultiplier + GrainBase);
 
-    COLOR = vec4(mix(color.rgb, vec3(grayscale), mask * grayscaleFactor), color.a);
+    COLOR = vec4(mix(color.rgb, vec3(grayscale), mask * GrayscaleFactor), color.a);
 }

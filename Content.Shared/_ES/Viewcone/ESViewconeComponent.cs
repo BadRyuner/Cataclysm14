@@ -43,6 +43,17 @@ public sealed partial class ESViewconeComponent : Component
     [DataField, AutoNetworkedField]
     public float ConeIgnoreFeather = 0.25f;
 
+    //Cataclysm14 start
+    [DataField, AutoNetworkedField]
+    public float GrainMultiplier = 0.35f;
+
+    [DataField, AutoNetworkedField]
+    public float GrainBase = 0.6f;
+
+    [DataField, AutoNetworkedField]
+    public float GrayscaleFactor = 1f;
+    //Cataclysm14 end
+
     // Clientside, used for lerping view angle
     // and keeping it consistent across all overlays
     public Angle ViewAngle;

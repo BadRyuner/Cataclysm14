@@ -4,7 +4,7 @@
   sprite: /Textures/_Mono/Tiles/sterile_techmaint.png
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ Prying ]
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemTechmaintSterile
@@ -16,7 +16,7 @@
   sprite: /Textures/_Mono/Tiles/sterile_maint.png
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ Prying ]
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemMaintSterile
@@ -28,7 +28,7 @@
   sprite: /Textures/_Mono/Tiles/sterile_maint_mono.png
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ Prying ]
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemMaintMonoSterile
@@ -40,7 +40,7 @@
   sprite: /Textures/_Mono/Tiles/grid.png
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ Prying ]
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemGrid
@@ -52,7 +52,7 @@
   sprite: /Textures/_Mono/Tiles/grid_dark.png
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ Prying ]
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemGridDark
