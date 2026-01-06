@@ -298,5 +298,5 @@
       components:
       - type: StorageFill
         contents:
-        - id: MonocletePEFrontBallisticPlateLevel4
-        - id: MonocletePEFrontBallisticPlateLevel4
+        - id: BallisticPlateFrontMonocletePELevel4
+        - id: BallisticPlateFrontMonocletePELevel4
