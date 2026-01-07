@@ -1,0 +1,110 @@
+#MARK: Base
+  - type: entity
+    abstract: true
+    id: ClothingBallisticPlate
+    components:
+    - type: ArmorPlateHolder
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+      - 0,0,1,1
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        toggleable-clothing: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+#MARK: grids
+
+  #grid representation
+  #  O O
+  #  O O
+  - type: entity
+    abstract: true
+    parent: ClothingArmorPlate
+    id: ClothingBallisticPlateFront
+    components:
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+      - 0,0,1,1
+
+  #grid representation
+  #  O O
+  #  O O
+  #  O O
+  - type: entity
+    abstract: true
+    parent: ClothingArmorPlate
+    id: ClothingBallisticPlateFrontHeavy
+    components:
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+      - 0,0,1,2
+
+  #grid representation
+  #  O O  O O
+  #  O O  O O
+  - type: entity
+    abstract: true
+    parent: ClothingArmorPlate
+    id: ClothingBallisticPlateFrontBack
+    components:
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+      - 0,0,3,1
+
+  #grid representation
+  #  O O  O O
+  #  O O  O O
+  #  O O  O O
+  - type: entity
+    abstract: true
+    parent: ClothingArmorPlate
+    id: ClothingBallisticPlateFrontBackHeavy
+    components:
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+      - 0,0,3,2
+
+  #grid representation
+  #     O O  O O
+  #  O  O O  O O  O
+  - type: entity
+    abstract: true
+    parent: ClothingArmorPlate
+    id: ClothingBallisticPlateFrontBackSides
+    components:
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+      - 0,1,0,1
+      - 1,0,4,1
+      - 5,1,5,1
+
+  #grid representation
+  #     O O  O O
+  #     O O  O O
+  #  O  O O  O O  O
+  - type: entity
+    abstract: true
+    parent: ClothingArmorPlate
+    id: ClothingBallisticPlateFrontBackHeavySides
+    components:
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+      - 0,1,0,1
+      - 1,0,4,2
+      - 5,1,5,1

@@ -1,0 +1,36 @@
+#MARK: Ballistic plates
+
+  - type: Tag
+    id: ESBISideBallisticPlateLevel6
+
+  - type: Tag
+    id: NESCO4400FrontBallisticPlateLevel6
+
+  - type: Tag
+    id: 6B33FrontBallisticPlateLevel4
+
+  - type: Tag
+    id: KorundVMSideBallisticPlateLevel5
+
+  - type: Tag
+    id: KorundVMFrontBallisticPlateLevel5
+
+  - type: Tag
+    id: AR500FrontBallisticPlateLevel3
+
+  - type: Tag
+    id: SSAPISideBallisticPlateLevel5
+
+  - type: Tag
+    id: CultLocustFrontBallisticPlateLevel5
+
+  - type: Tag
+    id: Zhuk3FrontBallisticPlateLevel3
+
+  - type: Tag
+    id: MonocletePEFrontBallisticPlateLevel4
+
+#MARK: Tools
+
+  - type: Tag
+    id: ToolCrowbar

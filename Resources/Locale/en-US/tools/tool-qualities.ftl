@@ -8,7 +8,7 @@ tool-quality-screwing-name = Screwing
 tool-quality-screwing-tool-name = Screwdriver
 
 tool-quality-cutting-name = Cutting
-tool-quality-cutting-tool-name = Wirecutter
+# tool-quality-cutting-tool-name = Wirecutter #Cataclysm14, commented because of conflict with knife quality
 
 tool-quality-welding-name = Welding
 tool-quality-welding-tool-name = Welder

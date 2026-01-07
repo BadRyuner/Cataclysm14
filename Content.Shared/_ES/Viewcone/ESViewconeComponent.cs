@@ -32,16 +32,30 @@ namespace Content.Shared._ES.Viewcone;
 public sealed partial class ESViewconeComponent : Component
 {
     [DataField, AutoNetworkedField]
-    public float ConeAngle = 135f;
+    public float ConeAngle = 190f;
 
     [DataField, AutoNetworkedField]
-    public float ConeFeather = 20f;
+    public float ConeFeather = 40f;
 
     [DataField, AutoNetworkedField]
-    public float ConeIgnoreRadius = 0.90f;
+    public float ConeIgnoreRadius = 1f;
 
     [DataField, AutoNetworkedField]
-    public float ConeIgnoreFeather = 0.25f;
+    public float ConeIgnoreFeather = 0.35f;
+
+    //Cataclysm14 start
+    [DataField, AutoNetworkedField]
+    public float GrainMultiplier = 1f;
+
+    [DataField, AutoNetworkedField]
+    public float GrainBase = 0.5f;
+
+    [DataField, AutoNetworkedField]
+    public float ConeColorFactor = 0.7f;
+
+    [DataField, AutoNetworkedField]
+    public float ConeColor = 0.01f;
+    //Cataclysm14 end
 
     // Clientside, used for lerping view angle
     // and keeping it consistent across all overlays

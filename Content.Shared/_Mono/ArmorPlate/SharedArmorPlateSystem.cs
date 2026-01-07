@@ -133,6 +133,8 @@ public abstract class SharedArmorPlateSystem : EntitySystem
         holder.WalkSpeedModifier = plateComp.WalkSpeedModifier;
         holder.SprintSpeedModifier = plateComp.SprintSpeedModifier;
         holder.StaminaDamageMultiplier = plateComp.StaminaDamageMultiplier;
+        holder.BluntDamageMultiplier = plateComp.BluntDamageMultiplier; //Cataclysm14
+        holder.SlashDamageMultiplier = plateComp.SlashDamageMultiplier; //Cataclysm14
 
         Dirty(holderUid, holder);
         RefreshMovementSpeed(holderUid);
@@ -147,6 +149,8 @@ public abstract class SharedArmorPlateSystem : EntitySystem
         holder.WalkSpeedModifier = 1.0f;
         holder.SprintSpeedModifier = 1.0f;
         holder.StaminaDamageMultiplier = 1.0f;
+        holder.BluntDamageMultiplier = 1.0f; //Cataclysm14
+        holder.SlashDamageMultiplier = 1.0f; //Cataclysm14
 
         Dirty(holderUid, holder);
         RefreshMovementSpeed(holderUid);

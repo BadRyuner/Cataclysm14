@@ -1,6 +1,6 @@
 #MARK: -PACA-
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: ClothingOuterArmorBase
       id: ClothingOuterBulletProofVestPACA
       name: PACA soft body armor
       description: A simple kevlar vest of decent quality. This one is a simple bulletproof vest made to resist low caliber rounds.
@@ -30,7 +30,7 @@
 #MARK: -6B2-
   #MARK: 6B2 - flora
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: ClothingOuterArmorBase
       id: ClothingOuterBulletProofVest6B2Flora
       name: 6B2 body armor (flora)
       description: A simple kevlar vest made out of titanium. Capable of whistanding pistol calibers.
@@ -59,7 +59,7 @@
         vendPrice: 12000
   #MARK: 6B2 - brown
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: ClothingOuterArmorBase
       id: ClothingOuterBulletProofVest6B2Brown
       name: 6B2 body armor (brown)
       components:
@@ -69,7 +69,7 @@
         sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B2_brown.rsi
   #MARK: 6B2 - grey
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: ClothingOuterArmorBase
       id: ClothingOuterBulletProofVest6B2Grey
       name: 6B2 body armor (grey)
       components:
@@ -77,10 +77,10 @@
         sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B2_grey.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B2_grey.rsi
-#MARK: -Press-
+#MARK: -BNTIZhuk Press-
     - type: entity
-      parent: ClothingOuterArmorBasic
-      id: ClothingOuterBulletProofVestPress
+      parent: [ClothingBallisticPlateFrontBackHeavy, ClothingOuterArmorBase]
+      id: ClothingOuterBulletProofVestBNTIZhukPress
       name: BNTI zhuk press body armor
       description: A simple kevlar vest of decent quality with press markings. This one is a simple bulletproof vest made to resist low caliber rounds.
       components:
@@ -106,9 +106,24 @@
       - type: StaticPrice
         price: 6500
         vendPrice: 9000
+      - type: Storage
+        whitelist:
+          tags:
+          - 6B33FrontBallisticPlateLevel4
+          - Zhuk3FrontBallisticPlateLevel3
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestBNTIZhukPress
+      id: ClothingOuterBulletProofVestBNTIZhukPressFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateFrontZhuk3Level3
+        - id: BallisticPlateFrontZhuk3Level3
 #MARK: -Highcom toroper-
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
       id: ClothingOuterBulletProofVestHighcomTrooperTan
       name: Highcom Trooper body armor (tan)
       description: An high quality armor vest out of high quality materials. Can handle armor piercing pistol calibers.
@@ -135,10 +150,29 @@
       - type: StaticPrice
         price: 6500
         vendPrice: 9000
-#MARK: -Slick-
-  #MARK: Slick - flora
+      - type: Storage
+        whitelist:
+          tags:
+          - ESBISideBallisticPlateLevel6
+          - NESCO4400FrontBallisticPlateLevel6
+          - AR500FrontBallisticPlateLevel3
+          - SSAPISideBallisticPlateLevel5
+          - CultLocustFrontBallisticPlateLevel5
+          - MonocletePEFrontBallisticPlateLevel4
+
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: ClothingOuterBulletProofVestHighcomTrooperTan
+      id: ClothingOuterBulletProofVestHighcomTrooperTanFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateFrontMonocletePELevel4
+        - id: BallisticPlateFrontMonocletePELevel4
+#MARK: -Slick-
+  #MARK: Slick - coyote
+    - type: entity
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
       id: ClothingOuterBulletProofVestSlickCoyote
       name: LBT slick armor vest (coyote)
       description: An LBT-6094A milspec standard quality armor vest. Can handle low power intermediate calibers.
@@ -165,9 +199,28 @@
       - type: StaticPrice
         price: 8500
         vendPrice: 12000
+      - type: Storage
+        whitelist:
+          tags:
+          - ESBISideBallisticPlateLevel6
+          - NESCO4400FrontBallisticPlateLevel6
+          - AR500FrontBallisticPlateLevel3
+          - SSAPISideBallisticPlateLevel5
+          - CultLocustFrontBallisticPlateLevel5
+          - MonocletePEFrontBallisticPlateLevel4
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestSlickCoyote
+      id: ClothingOuterBulletProofVestSlickCoyoteFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateFrontNESCO4400Level6
+        - id: BallisticPlateFrontNESCO4400Level6
   #MARK: Slick - olive
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: ClothingOuterBulletProofVestSlickCoyote
       id: ClothingOuterBulletProofVestSlickOlive
       name: LBT slick armor vest (olive)
       components:
@@ -175,9 +228,19 @@
         sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_LBT-6094A-slick_olive.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_LBT-6094A-slick_olive.rsi
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestSlickOlive
+      id: ClothingOuterBulletProofVestSlickOliveFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateFrontNESCO4400Level6
+        - id: BallisticPlateFrontNESCO4400Level6
   #MARK: Slick - black
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: ClothingOuterBulletProofVestSlickCoyote
       id: ClothingOuterBulletProofVestSlickBlack
       name: LBT slick armor vest (black)
       components:
@@ -185,9 +248,19 @@
         sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_LBT-6094A-slick_black.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_LBT-6094A-slick_black.rsi
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestSlickBlack
+      id: ClothingOuterBulletProofVestSlickBlackFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateFrontNESCO4400Level6
+        - id: BallisticPlateFrontNESCO4400Level6
 #MARK: -Interceptor OTV-
     - type: entity
-      parent: ClothingOuterArmorBasic
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
       id: ClothingOuterBulletProofVestInterceptorOTV
       name: Interceptor OTV armor vest
       description: An above average armor vest out of quality materials. Can handle armor piercing pistol calibers.
@@ -214,3 +287,22 @@
       - type: StaticPrice
         price: 6500
         vendPrice: 9000
+      - type: Storage
+        whitelist:
+          tags:
+          - ESBISideBallisticPlateLevel6
+          - NESCO4400FrontBallisticPlateLevel6
+          - AR500FrontBallisticPlateLevel3
+          - SSAPISideBallisticPlateLevel5
+          - CultLocustFrontBallisticPlateLevel5
+          - MonocletePEFrontBallisticPlateLevel4
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestInterceptorOTV
+      id: ClothingOuterBulletProofVestInterceptorOTVFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateFrontMonocletePELevel4
+        - id: BallisticPlateFrontMonocletePELevel4

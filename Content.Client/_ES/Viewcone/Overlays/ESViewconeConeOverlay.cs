@@ -30,6 +30,12 @@ public sealed class ESViewconeConeOverlay : Overlay
     private float _coneFeather;
     private float _coneIgnoreRadius;
     private float _coneIgnoreFeather;
+    //Cataclysm14 start
+    private float _grainMultiplier;
+    private float _grainBase;
+    private float _coneColorFactor;
+    private float _coneColor;
+    //Cataclysm14 end
 
     public ESViewconeConeOverlay()
     {
@@ -55,6 +61,12 @@ public sealed class ESViewconeConeOverlay : Overlay
             _coneFeather = viewcone.ConeFeather;
             _coneIgnoreRadius = (viewcone.ConeIgnoreRadius - viewcone.ConeIgnoreFeather) * 50f;
             _coneIgnoreFeather = Math.Max(viewcone.ConeIgnoreFeather * 200f, 8f);
+            //Cataclysm14 start
+            _grainMultiplier = viewcone.GrainMultiplier;
+            _grainBase = viewcone.GrainBase;
+            _coneColorFactor = viewcone.ConeColorFactor;
+            _coneColor = viewcone.ConeColor;
+            //Cataclysm14 end
             _eyeEntity = (uid, eye, viewcone, xform);
             break;
         }
@@ -77,6 +89,12 @@ public sealed class ESViewconeConeOverlay : Overlay
         _viewconeShader.SetParameter("ConeFeather", _coneFeather);
         _viewconeShader.SetParameter("ConeIgnoreRadius", _coneIgnoreRadius);
         _viewconeShader.SetParameter("ConeIgnoreFeather", _coneIgnoreFeather);
+        //Cataclysm14 start
+        _viewconeShader.SetParameter("GrainMultiplier", _grainMultiplier);
+        _viewconeShader.SetParameter("GrainBase", _grainBase);
+        _viewconeShader.SetParameter("ConeColorFactor", _coneColorFactor);
+        _viewconeShader.SetParameter("ConeColor", _coneColor);
+        //Cataclysm14 end
 
         worldHandle.UseShader(_viewconeShader);
         worldHandle.DrawRect(viewport, Color.White);
