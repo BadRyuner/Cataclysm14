@@ -168,10 +168,10 @@
         - id: BallisticPlateFrontMonocletePELevel4
         - id: BallisticPlateFrontMonocletePELevel4
 #MARK: -Slick-
-  #MARK: Slick - flora
+  #MARK: Slick - coyote
     - type: entity
       parent: ClothingOuterArmorBase
-      id: ClothingOuterBulletProofVestSlickCoyote
+      id: [ClothingBallisticPlateFrontBack, ClothingOuterBulletProofVestSlickCoyote]
       name: LBT slick armor vest (coyote)
       description: An LBT-6094A milspec standard quality armor vest. Can handle low power intermediate calibers.
       components:
@@ -200,8 +200,10 @@
       - type: Storage
         whitelist:
           tags:
+          - ESBISideBallisticPlateLevel6
           - NESCO4400FrontBallisticPlateLevel6
           - AR500FrontBallisticPlateLevel3
+          - SSAPISideBallisticPlateLevel5
           - CultLocustFrontBallisticPlateLevel5
           - MonocletePEFrontBallisticPlateLevel4
 
@@ -286,8 +288,10 @@
       - type: Storage
         whitelist:
           tags:
+          - ESBISideBallisticPlateLevel6
           - NESCO4400FrontBallisticPlateLevel6
           - AR500FrontBallisticPlateLevel3
+          - SSAPISideBallisticPlateLevel5
           - CultLocustFrontBallisticPlateLevel5
           - MonocletePEFrontBallisticPlateLevel4
 
