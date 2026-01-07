@@ -218,7 +218,7 @@
         - id: BallisticPlateFrontNESCO4400Level6
   #MARK: Slick - olive
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: ClothingOuterBulletProofVestSlickCoyote
       id: ClothingOuterBulletProofVestSlickOlive
       name: LBT slick armor vest (olive)
       components:
@@ -238,7 +238,7 @@
         - id: BallisticPlateFrontNESCO4400Level6
   #MARK: Slick - black
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: ClothingOuterBulletProofVestSlickCoyote
       id: ClothingOuterBulletProofVestSlickBlack
       name: LBT slick armor vest (black)
       components:
