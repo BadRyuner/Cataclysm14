@@ -153,8 +153,10 @@
       - type: Storage
         whitelist:
           tags:
+          - ESBISideBallisticPlateLevel6
           - NESCO4400FrontBallisticPlateLevel6
           - AR500FrontBallisticPlateLevel3
+          - SSAPISideBallisticPlateLevel5
           - CultLocustFrontBallisticPlateLevel5
           - MonocletePEFrontBallisticPlateLevel4
 

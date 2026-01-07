@@ -141,7 +141,7 @@
       - 6B33FrontBallisticPlateLevel4
 
   - type: entity
-    parent: BallisticPlateFrontHeavy
+    parent: BallisticPlateFront
     id: BallisticPlateFrontMonocletePELevel4
     name: Monoclete PE ballistic plate (Level IV)
     components:
