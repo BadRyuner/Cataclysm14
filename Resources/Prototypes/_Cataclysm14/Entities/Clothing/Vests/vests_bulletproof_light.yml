@@ -170,8 +170,8 @@
 #MARK: -Slick-
   #MARK: Slick - coyote
     - type: entity
-      parent: ClothingOuterArmorBase
-      id: [ClothingBallisticPlateFrontBack, ClothingOuterBulletProofVestSlickCoyote]
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
+      id: ClothingOuterBulletProofVestSlickCoyote
       name: LBT slick armor vest (coyote)
       description: An LBT-6094A milspec standard quality armor vest. Can handle low power intermediate calibers.
       components:
