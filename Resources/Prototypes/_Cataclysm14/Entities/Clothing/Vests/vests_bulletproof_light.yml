@@ -123,7 +123,7 @@
         - id: BallisticPlateFrontZhuk3Level3
 #MARK: -Highcom toroper-
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
       id: ClothingOuterBulletProofVestHighcomTrooperTan
       name: Highcom Trooper body armor (tan)
       description: An high quality armor vest out of high quality materials. Can handle armor piercing pistol calibers.
@@ -258,7 +258,7 @@
         - id: BallisticPlateFrontNESCO4400Level6
 #MARK: -Interceptor OTV-
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
       id: ClothingOuterBulletProofVestInterceptorOTV
       name: Interceptor OTV armor vest
       description: An above average armor vest out of quality materials. Can handle armor piercing pistol calibers.
