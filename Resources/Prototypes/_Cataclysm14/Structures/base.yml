@@ -1,0 +1,34 @@
+- type: entity
+  id: BaseStructureSpawner
+  parent: MarkerBase
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+      - sprite: /Textures/_Cataclysm14/Mapping.rsi
+        state: structure_border_small
+  - type: RoomFill
+
+- type: dungeonRoom
+  id: CataStructureTest5x5a
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/proceduraltest.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureTest
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerTest5x5
+  name: test structure spawner
+  components:
+  - type: Sprite
+    scale: 5,5
+    layers:
+      - sprite: /Textures/_Cataclysm14/Mapping.rsi
+        state: structure_border_small
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureTest

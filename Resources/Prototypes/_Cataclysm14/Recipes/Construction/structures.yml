@@ -101,7 +101,7 @@
   category: construction-category-structures-cataclysm
   description: A sturdy solid wall.
   icon:
-    sprite: /Textures/_Cataclysm14/Structures/Walls/concrete_solid_white.rsi
+    sprite: /Textures/_Cataclysm14/Structures/Walls/concrete_solid_base.rsi
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
