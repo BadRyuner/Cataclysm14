@@ -13,3 +13,19 @@
   - type: Construction
     graph: Rebar
     node: WallCDDAMetalReinforced
+
+- type: entity
+  parent: BaseWallCataTierTwo
+  id: WallCDDAMetalSimpleBase
+  name: simple metal wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/metal_simple.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/metal_simple.rsi
+  - type: IconSmooth
+    key: walls
+    base: metal
+  - type: Construction
+    graph: Rebar
+    node: WallCDDAMetalSimple

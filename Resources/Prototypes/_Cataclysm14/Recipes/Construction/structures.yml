@@ -1,7 +1,7 @@
 #MARK: Rebar
 
 - type: construction
-  name: rebar
+  name: rebar assembly
   id: WallCDDARebar
   graph: Rebar
   startNode: start
@@ -25,7 +25,7 @@
   startNode: start
   targetNode: WallCDDAMetalReinforced
   category: construction-category-structures-cataclysm
-  description: A large structural assembly made out of metal.
+  description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/metal_reinforced.rsi
     state: full
@@ -43,7 +43,7 @@
   startNode: start
   targetNode: WallCDDABrickRedRedReinforced
   category: construction-category-structures-cataclysm
-  description: A large structural assembly made out of metal.
+  description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/brick_red_red.rsi
     state: full
@@ -61,7 +61,7 @@
   startNode: start
   targetNode: WallCDDAConcreteReinforcedWhite
   category: construction-category-structures-cataclysm
-  description: A large structural assembly made out of metal.
+  description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
     state: full
@@ -81,7 +81,7 @@
   startNode: start
   targetNode: WallCDDABrickRedRedBase
   category: construction-category-structures-cataclysm
-  description: A large structural assembly made out of metal.
+  description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/brick_red_red.rsi
     state: full
@@ -92,7 +92,6 @@
   conditions:
     - !type:TileNotBlocked
 
-
 - type: construction
   name: white solid concrete wall
   id: WallCDDAConcreteSolidWhite
@@ -100,10 +99,83 @@
   startNode: start
   targetNode: WallCDDAConcreteSolidWhite
   category: construction-category-structures-cataclysm
-  description: A large structural assembly made out of metal.
+  description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/concrete_solid_white.rsi
     state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: simple metal wall
+  id: WallCDDAMetalSimpleBase
+  graph: WallCDDAMetalSimpleBase
+  startNode: start
+  targetNode: WallCDDAMetalSimpleBase
+  category: construction-category-structures-cataclysm
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/metal_simple.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: wooden plank wall
+  id: WallCDDAWoodPlankBase
+  graph: WallCDDAWoodPlankBase
+  startNode: start
+  targetNode: WallCDDAWoodPlankBase
+  category: construction-category-structures-cataclysm
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/wood_plank_base.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: wooden log wall
+  id: WallCDDAWoodLogBase
+  graph: WallCDDAWoodLogBase
+  startNode: start
+  targetNode: WallCDDAWoodLogBase
+  category: construction-category-structures-cataclysm
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/wood_log.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: Doors
+- type: construction
+  name: wooden residential door
+  id: DoorCDDAWoodHouse
+  graph: DoorCDDAWoodHouse
+  startNode: start
+  targetNode: DoorCDDAWoodHouse
+  category: construction-category-structures-cataclysm
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Doors/wood_house.rsi
+    state: closed
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false

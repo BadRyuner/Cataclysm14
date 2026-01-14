@@ -36,24 +36,31 @@
   parent: BaseWallMonoTierOne
   id: DoorCDDAWoodHouseBroken
   name: broken wooden residential door
-  description: A door, where will it lead?
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
-    state: broken
-  - type: Icon
-    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
-    state: broken
-
-- type: entity
-  parent: BaseWallMonoTierOne
-  id: DoorCDDAWoodHouseLocked
-  name: wooden residential door
   description: A shattered wooden door.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: broken
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: broken
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: BaseWallMonoTierOne
+  id: DoorCDDAWoodHouseLocked
+  suffix: Locked
+  name: wooden residential door
+  description: A door, where will it lead?
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
     state: closed
   - type: Icon
     sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
     state: closed
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite

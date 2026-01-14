@@ -7,7 +7,7 @@
       edges:
         - to: Rebar
           completed:
-            - !type:SnapToGrid {} # Frontier: use default ctor
+            - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
             - material: Rebar

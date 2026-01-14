@@ -5,9 +5,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _Cataclysm14/Structures/Walls/window_wall_transparent.rsi
+    sprite: _Cataclysm14/Structures/Walls/glass_wall_transparent.rsi
   - type: Icon
-    sprite: _Cataclysm14/Structures/Walls/window_wall_transparent.rsi
+    sprite: _Cataclysm14/Structures/Walls/glass_wall_transparent.rsi
   - type: IconSmooth
     key: walls
     base: glass

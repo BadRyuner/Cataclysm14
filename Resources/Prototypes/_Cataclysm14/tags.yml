@@ -34,3 +34,8 @@
 
   - type: Tag
     id: ToolCrowbar
+
+#MARK: Structures
+
+  - type: Tag
+    id: CataStructureTest

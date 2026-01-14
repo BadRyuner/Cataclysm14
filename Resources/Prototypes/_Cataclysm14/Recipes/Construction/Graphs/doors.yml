@@ -1,0 +1,31 @@
+#MARK: Concrete
+- type: constructionGraph
+  id: DoorCDDAWoodHouse
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: DoorCDDAWoodHouse
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+
+    - node: DoorCDDAWoodHouse
+      entity: DoorCDDAWoodHouse
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetConcrete1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2

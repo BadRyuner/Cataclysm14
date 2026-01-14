@@ -7,7 +7,7 @@
       edges:
         - to: WallCDDABrickRedRedBase
           completed:
-            - !type:SnapToGrid {} # Frontier: use default ctor
+            - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
             - material: Brick
@@ -39,7 +39,7 @@
       edges:
         - to: WallCDDAConcreteSolidWhite
           completed:
-            - !type:SnapToGrid {} # Frontier: use default ctor
+            - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
             - material: Concrete
@@ -48,6 +48,102 @@
 
     - node: WallCDDAConcreteSolidWhite
       entity: WallCDDAConcreteSolidWhite
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetConcrete1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Concrete
+- type: constructionGraph
+  id: WallCDDAMetalSimpleBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: WallCDDAMetalSimpleBase
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
+    - node: WallCDDAMetalSimpleBase
+      entity: WallCDDAMetalSimpleBase
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetConcrete1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Planks
+- type: constructionGraph
+  id: WallCDDAWoodPlankBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: WallCDDAWoodPlankBase
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
+    - node: WallCDDAWoodPlankBase
+      entity: WallCDDAWoodPlankBase
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetConcrete1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Logs
+- type: constructionGraph
+  id: WallCDDAWoodLogBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: WallCDDAWoodLogBase
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
+    - node: WallCDDAWoodLogBase
+      entity: WallCDDAWoodLogBase
       edges:
         - to: start
           completed:

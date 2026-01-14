@@ -1,0 +1,159 @@
+#MARK: Log
+  - type: entity
+    parent: BaseWallCataTierTwo
+    id: WallCDDAWoodLogBase
+    name: wooden log wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/wood_log.rsi
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/wood_log.rsi
+    - type: IconSmooth
+      key: walls
+      base: wood
+    - type: Construction
+      graph: WallCDDABrickRedRedBase
+      node: WallCDDABrickRedRedBase
+
+#MARK: Planks
+  - type: entity
+    parent: BaseWallCataTierOne
+    id: WallCDDAWoodPlankBase
+    name: wooden plank wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_base.rsi
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_base.rsi
+    - type: IconSmooth
+      key: walls
+      base: wood
+    - type: Construction
+      graph: WallCDDABrickRedRedBase
+      node: WallCDDABrickRedRedBase
+
+#TODO: make the center piece not colored, failed at doing this and spent so much time
+#MARK: Plank white
+  - type: entity
+    parent: BaseWallCataTierOne
+    id: WallCDDAWoodPlankWhite
+    name: white wooden plank wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: wood
+    - type: Construction
+      graph: WallCDDABrickRedRedBase
+      node: WallCDDABrickRedRedBase
+
+#MARK: Plank red
+  - type: entity
+    parent: BaseWallCataTierOne
+    id: WallCDDAWoodPlankRed
+    name: red wooden plank wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+      color: "#ED2939"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: wood
+    - type: Construction
+      graph: WallCDDABrickRedRedBase
+      node: WallCDDABrickRedRedBase
+
+#MARK: Plank blue
+  - type: entity
+    parent: BaseWallCataTierOne
+    id: WallCDDAWoodPlankBlue
+    name: blue wooden plank wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+      color: "#2832C2"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: wood
+    - type: Construction
+      graph: WallCDDABrickRedRedBase
+      node: WallCDDABrickRedRedBase
+
+#MARK: Plank green
+  - type: entity
+    parent: BaseWallCataTierOne
+    id: WallCDDAWoodPlankGreen
+    name: green wooden plank wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+      color: "#3d8c40"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: wood
+    - type: Construction
+      graph: WallCDDABrickRedRedBase
+      node: WallCDDABrickRedRedBase
+
+#MARK: Plank yellow
+  - type: entity
+    parent: BaseWallCataTierOne
+    id: WallCDDAWoodPlankYellow
+    name: yellow wooden plank wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+      color: "#E4CD05"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: wood
+    - type: Construction
+      graph: WallCDDABrickRedRedBase
+      node: WallCDDABrickRedRedBase
+
+#MARK: Plank purple
+  - type: entity
+    parent: BaseWallCataTierOne
+    id: WallCDDAWoodPlankPurple
+    name: purple wooden plank wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+      color: "#702963"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: wood
+    - type: Construction
+      graph: WallCDDABrickRedRedBase
+      node: WallCDDABrickRedRedBase
+
+#MARK: Plank grey
+  - type: entity
+    parent: BaseWallCataTierOne
+    id: WallCDDAWoodPlankGrey
+    name: grey wooden plank wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+      color: "#AAAAAA"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: wood
+    - type: Construction
+      graph: WallCDDABrickRedRedBase
+      node: WallCDDABrickRedRedBase
