@@ -1,0 +1,25 @@
+- type: dungeonRoom
+  id: StructureSpawnerHouseSmall20x20a
+  size: 20,20
+  atlas: /Maps/_Cataclysm14/Structures/structure_house_residential_small_1.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureHouseSmall20x20
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerHouseSmall
+  name: structure spawner small house
+  suffix: 20x20
+  components:
+  - type: Sprite
+    scale: 20,20
+    offset: -0.5,-0.5
+    layers:
+      - sprite: /Textures/_Cataclysm14/Mapping.rsi
+        state: structure_border_small
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureHouseSmall20x20
