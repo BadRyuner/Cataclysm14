@@ -1,151 +1,107 @@
 #MARK: Sidewalk-less
 - type: dungeonRoom
-  id: StructureSpawnerRoadGrayWhiteBaseBaseNS13x13a
+  id: StructureSpawnerRoadGrayWhiteBaseBaseStraight13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_base_base_NS_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_base_base_straight_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerRoadGrayWhiteBaseBaseNS13x13
+  - CataStructureSpawnerRoadGrayWhiteBaseBaseStraight13x13
 
 - type: entity
   parent: BaseStructureSpawner
-  id: StructureSpawnerRoadGrayWhiteBaseBaseNS
+  id: StructureSpawnerRoadGrayWhiteBaseBaseStraight13x13
   name: structure spawner road gray-white base-base
-  suffix: NS][13x13
+  suffix: Straight][13x13
   components:
   - type: Sprite
     scale: 13,13
+    sprite: /Textures/_Cataclysm14/Mapping.rsi
     layers:
-      - sprite: /Textures/_Cataclysm14/Mapping.rsi
-        state: structure_border_small
+        state: structure_border_road_asphalt_gray_straight
+        state: structure_border_road_line_white_straight
   - type: RoomFill
     roomWhitelist:
       tags:
-      - CataStructureSpawnerRoadGrayWhiteBaseBaseNS13x13
+      - CataStructureSpawnerRoadGrayWhiteBaseBaseStraight13x13
 
 - type: dungeonRoom
-  id: StructureSpawnerRoadGrayWhiteBaseBaseWE13x13a
+  id: StructureSpawnerRoadGrayWhiteBaseBaseFourway13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_base_base_WE_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_base_base_fourway_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerRoadGrayWhiteBaseBaseWE13x13
+  - CataStructureSpawnerRoadGrayWhiteBaseBaseFourway13x13
 
 - type: entity
   parent: BaseStructureSpawner
-  id: StructureSpawnerRoadGrayWhiteBaseBaseWE
+  id: StructureSpawnerRoadGrayWhiteBaseBaseFourway13x13
   name: structure spawner road gray-white base-base
-  suffix: WE][13x13
+  suffix: Fourway][13x13
   components:
   - type: Sprite
     scale: 13,13
+    sprite: /Textures/_Cataclysm14/Mapping.rsi
     layers:
-      - sprite: /Textures/_Cataclysm14/Mapping.rsi
-        state: structure_border_small
+        state: structure_border_road_asphalt_gray_fourway
+        state: structure_border_road_line_white_fourway
   - type: RoomFill
     roomWhitelist:
       tags:
-      - CataStructureSpawnerRoadGrayWhiteBaseBaseWE13x13
-
-- type: dungeonRoom
-  id: StructureSpawnerRoadGrayWhiteBaseBaseFourways13x13a
-  size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_base_base_fourways_1.yml
-  offset: 0,0
-  ignoreTile: FloorShuttleOrange
-  tags:
-  - CataStructureSpawnerRoadGrayWhiteBaseBaseFourways13x13
-
-- type: entity
-  parent: BaseStructureSpawner
-  id: StructureSpawnerRoadGrayWhiteBaseBaseFourways
-  name: structure spawner road gray-white base-base
-  suffix: Fourways][13x13
-  components:
-  - type: Sprite
-    scale: 13,13
-    layers:
-      - sprite: /Textures/_Cataclysm14/Mapping.rsi
-        state: structure_border_small
-  - type: RoomFill
-    roomWhitelist:
-      tags:
-      - CataStructureSpawnerRoadGrayWhiteBaseBaseFourways13x13
+      - CataStructureSpawnerRoadGrayWhiteBaseBaseFourway13x13
 
 #MARK: sidewalk
 - type: dungeonRoom
-  id: StructureSpawnerRoadGrayWhiteSidewalkBaseNS13x13a
+  id: StructureSpawnerRoadGrayWhiteSidewalkBaseStraight13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_sidewalk_base_NS_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_sidewalk_base_straight_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerRoadGrayWhiteSidewalkBaseNS13x13
+  - CataStructureSpawnerRoadGrayWhiteSidewalkBase13x13
 
 - type: entity
   parent: BaseStructureSpawner
-  id: StructureSpawnerRoadGrayWhiteSidewalkBaseNS
+  id: StructureSpawnerRoadGrayWhiteSidewalkBaseStraight13x13
   name: structure spawner road gray-white sidewalk-base
-  suffix: NS][13x13
+  suffix: Straight][13x13
   components:
   - type: Sprite
     scale: 13,13
+    sprite: /Textures/_Cataclysm14/Mapping.rsi
     layers:
-      - sprite: /Textures/_Cataclysm14/Mapping.rsi
-        state: structure_border_small
+        state: structure_border_road_asphalt_gray_straight
+        state: structure_border_road_line_white_straight
+        state: structure_border_road_sidewalk_straight
   - type: RoomFill
     roomWhitelist:
       tags:
-      - CataStructureSpawnerRoadGrayWhiteSidewalkBaseNS13x13
+      - CataStructureSpawnerRoadGrayWhiteSidewalkBase13x13
 
 - type: dungeonRoom
-  id: StructureSpawnerRoadGrayWhiteSidewalkBaseWE13x13a
+  id: StructureSpawnerRoadGrayWhiteSidewalkBaseFourway13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_sidewalk_base_WE_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_sidewalk_base_fourway_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerRoadGrayWhiteSidewalkBaseWE13x13
+  - CataStructureSpawnerRoadGrayWhiteSidewalkBaseFourway13x13
 
 - type: entity
   parent: BaseStructureSpawner
-  id: StructureSpawnerRoadGrayWhiteSidewalkBaseWE
+  id: StructureSpawnerRoadGrayWhiteSidewalkBaseFourway13x13
   name: structure spawner road gray-white sidewalk-base
-  suffix: WE][13x13
+  suffix: Fourway][13x13
   components:
   - type: Sprite
     scale: 13,13
+    sprite: /Textures/_Cataclysm14/Mapping.rsi
     layers:
-      - sprite: /Textures/_Cataclysm14/Mapping.rsi
-        state: structure_border_small
+        state: structure_border_road_asphalt_gray_fourway
+        state: structure_border_road_line_white_fourway
+        state: structure_border_road_sidewalk_fourway
   - type: RoomFill
     roomWhitelist:
       tags:
-      - CataStructureSpawnerRoadGrayWhiteSidewalkBaseWE13x13
-
-- type: dungeonRoom
-  id: StructureSpawnerRoadGrayWhiteSidewalkBaseFourways13x13a
-  size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_sidewalk_base_fourways_1.yml
-  offset: 0,0
-  ignoreTile: FloorShuttleOrange
-  tags:
-  - CataStructureSpawnerRoadGrayWhiteSidewalkBaseFourways13x13
-
-- type: entity
-  parent: BaseStructureSpawner
-  id: StructureSpawnerRoadGrayWhiteSidewalkBaseFourways
-  name: structure spawner road gray-white sidewalk-base
-  suffix: Fourways][13x13
-  components:
-  - type: Sprite
-    scale: 13,13
-    layers:
-      - sprite: /Textures/_Cataclysm14/Mapping.rsi
-        state: structure_border_small
-  - type: RoomFill
-    roomWhitelist:
-      tags:
-      - CataStructureSpawnerRoadGrayWhiteSidewalkBaseFourways13x13
+      - CataStructureSpawnerRoadGrayWhiteSidewalkBaseFourway13x13

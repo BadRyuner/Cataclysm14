@@ -70,7 +70,6 @@
   - type: Transform
     anchored: true
     noRot: true
-  - type: Fixtures
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -128,7 +127,6 @@
   - type: Transform
     anchored: true
     noRot: true
-  - type: Fixtures
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible

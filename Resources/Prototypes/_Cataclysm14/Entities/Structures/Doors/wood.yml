@@ -4,7 +4,10 @@
   parent: BaseMaterialDoorNavMap
   description: A door, where will it lead?
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
     layers:
     - state: closed
@@ -38,7 +41,10 @@
   name: broken wooden residential door
   description: A shattered wooden door.
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
     state: broken
   - type: Icon
@@ -55,7 +61,10 @@
   name: wooden residential door
   description: A door, where will it lead?
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
     state: closed
   - type: Icon

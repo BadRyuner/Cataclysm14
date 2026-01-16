@@ -47,19 +47,10 @@
     id: CataStructureHouseSmall20x20
 
   - type: Tag
-    id: CataStructureSpawnerRoadGrayWhiteBaseBaseNS15x15
-
-  - type: Tag
-    id: CataStructureSpawnerRoadGrayWhiteBaseBaseWE15x15
-
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseStraight13x13
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteBaseBaseFourways13x13
-
   - type: Tag
-    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseNS15x15
-
-  - type: Tag
-    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseWE15x15
-
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBase13x13
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseFourways13x13

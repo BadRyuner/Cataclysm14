@@ -11,6 +11,7 @@
     maxSize: 50,50
     rotation: false
     clearExisting: true
+    inheritRotation: true
 
 - type: dungeonRoom
   id: CataStructureTest5x5a
