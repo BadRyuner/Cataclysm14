@@ -2,7 +2,7 @@
   id: StructureFurnitureShelfMetal
   parent: BaseStructure
   name: metal shelves
-  description: Metal shelves, can store things inside itself, ideal for underwear, and someone's kidneys?...
+  description: Metal shelves, can store things inside itself.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/shelf_metal.rsi
@@ -26,8 +26,8 @@
         acts: [ "Destruction" ]
   - type: Storage
     grid:
-    - 0,0,9,7
-    maxItemSize: Normal
+    - 0,0,13,11
+    maxItemSize: Huge
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -53,7 +53,7 @@
   id: StructureFurnitureShelfMetalStorage
   parent: BaseStructure
   name: metal storage shelves
-  description: Metal shelves, can store things inside itself, ideal for underwear, and someone's kidneys?...
+  description: Metal shelves, can store things inside itself.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/shelf_metal_storage.rsi
@@ -77,8 +77,8 @@
         acts: [ "Destruction" ]
   - type: Storage
     grid:
-    - 0,0,11,11
-    maxItemSize: Normal
+    - 0,0,15,15
+    maxItemSize: Huge
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

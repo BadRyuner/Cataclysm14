@@ -1,0 +1,42 @@
+#MARK: Dresser
+  - type: entity
+    id: StructureFurnitureDresserWoodFilledClothingCivilian
+    suffix: Filled
+    parent: StructureFurnitureDresserWood
+    components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:NestedSelector
+          tableId: LootTableClothingCivilian
+
+  - type: entity
+    name: bedroom furnitures spawner
+    id: EntitiesSpawnerStructureFurnituresDresserRandom
+    parent: MarkerBase
+    components:
+    - type: RandomSpawner
+      prototypes:
+      - StructureFurnitureDresserWoodFilledClothingCivilian
+      - StructureFurnitureDresserWood
+      chance: 1
+      offset: 0.0
+
+  - type: entity
+    id: StructureFurnitureShelfWoodFilledClothingCivilian
+    suffix: Filled
+    parent: StructureFurnitureShelfWood
+    components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:NestedSelector
+          tableId: LootTableClothingCivilian
+
+  - type: entity
+    id: StructureFurnitureShelfWoodStorageFilledClothingCivilian
+    suffix: Filled
+    parent: StructureFurnitureShelfWoodStorage
+    components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:NestedSelector
+          tableId: LootTableClothingCivilian

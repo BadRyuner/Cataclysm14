@@ -1,0 +1,21 @@
+- type: entity
+  name: bedroom furnitures spawner
+  id: EntitiesSpawnerStructureFurnituresHouseBedroom
+  parent: MarkerBase
+  components:
+  - type: RandomSpawner
+    prototypes:
+    - StructureFurnitureChairArmchair
+    - StructureFurnitureDeskWood
+    - StructureFurnitureTrashBinSmall
+    - DogBed
+    - EntitiesSpawnerStructureFurnituresDresserRandom
+    - StructureFurnitureShelfWoodFilledClothingCivilian
+    - StructureFurnitureShelfWood
+    - StructureFurnitureShelfWoodStorageFilledClothingCivilian
+    - StructureFurnitureShelfWoodStorage
+    chance: 1
+    offset: 0.0
+    # rarePrototypes:
+    # - SpawnDungeonLootLockersGeneral
+    # rareChance: 0.1

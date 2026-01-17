@@ -206,6 +206,7 @@ public sealed partial class DungeonSystem
 
             var childXform = _xformQuery.GetComponent(ent);
             var anchored = templateXform.Anchored;
+            //_transform.SetLocalRotation(ent, childRot, childXform); // Carpmosia-edit - Fix nested marker rotations
 
             // If the templated entity was anchored then anchor us too.
             if (anchored && !childXform.Anchored)
