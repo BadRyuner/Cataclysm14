@@ -159,6 +159,46 @@
     color: "#cdc208"
     state: line_4
 
+- type: entity
+  id: FloorRoadMarkingStopSolidWhite
+  name: white solid road stop markings
+  description: Some painted on road markings. Looks easy enough to remove by hitting it. Those ones are made with white paint.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_solid
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_solid
+  - type: Clickable
+  - type: Transform
+    anchored: true
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Appearance
+
+- type: entity
+  parent: FloorRoadMarkingStopSolidWhite
+  id: FloorRoadMarkingStopBrokenWhite
+  name: white broken road stop markings
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_broken
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_broken
+
 # MARK: Sidewalk
 
 - type: tile

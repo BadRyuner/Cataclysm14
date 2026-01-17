@@ -51,6 +51,14 @@
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteBaseBaseFourways13x13
   - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseThreeway13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseCornerSharp13x13
+  - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBase13x13
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseFourways13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseThreeway13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerSharp13x13
