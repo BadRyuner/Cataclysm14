@@ -1,11 +1,11 @@
 #MARK: Concrete
 - type: constructionGraph
-  id: DoorCDDAWoodHouse
+  id: DoorCataWoodHouse
   start: start
   graph:
     - node: start
       edges:
-        - to: DoorCDDAWoodHouse
+        - to: DoorCataWoodHouse
           completed:
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
@@ -14,8 +14,8 @@
               amount: 2
               doAfter: 1
 
-    - node: DoorCDDAWoodHouse
-      entity: DoorCDDAWoodHouse
+    - node: DoorCataWoodHouse
+      entity: DoorCataWoodHouse
       edges:
         - to: start
           completed:

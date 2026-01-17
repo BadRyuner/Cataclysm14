@@ -1,11 +1,11 @@
 #MARK: Brick
 - type: constructionGraph
-  id: WallCDDABrickRedRedBase
+  id: StructureWallCDDABrickRedRedBase
   start: start
   graph:
     - node: start
       edges:
-        - to: WallCDDABrickRedRedBase
+        - to: StructureWallCDDABrickRedRedBase
           completed:
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
@@ -14,8 +14,8 @@
               amount: 2
               doAfter: 1
 
-    - node: WallCDDABrickRedRedBase
-      entity: WallCDDABrickRedRedBase
+    - node: StructureWallCDDABrickRedRedBase
+      entity: StructureWallCDDABrickRedRedBase
       edges:
         - to: start
           completed:
@@ -32,12 +32,12 @@
 
 #MARK: Concrete
 - type: constructionGraph
-  id: WallCDDAConcreteSolidWhite
+  id: StructureWallCDDAConcreteSolidWhite
   start: start
   graph:
     - node: start
       edges:
-        - to: WallCDDAConcreteSolidWhite
+        - to: StructureWallCDDAConcreteSolidWhite
           completed:
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
@@ -46,8 +46,8 @@
               amount: 2
               doAfter: 1
 
-    - node: WallCDDAConcreteSolidWhite
-      entity: WallCDDAConcreteSolidWhite
+    - node: StructureWallCDDAConcreteSolidWhite
+      entity: StructureWallCDDAConcreteSolidWhite
       edges:
         - to: start
           completed:
@@ -64,12 +64,12 @@
 
 #MARK: Concrete
 - type: constructionGraph
-  id: WallCDDAMetalSimpleBase
+  id: StructureWallCDDAMetalSimpleBase
   start: start
   graph:
     - node: start
       edges:
-        - to: WallCDDAMetalSimpleBase
+        - to: StructureWallCDDAMetalSimpleBase
           completed:
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
@@ -78,8 +78,8 @@
               amount: 2
               doAfter: 1
 
-    - node: WallCDDAMetalSimpleBase
-      entity: WallCDDAMetalSimpleBase
+    - node: StructureWallCDDAMetalSimpleBase
+      entity: StructureWallCDDAMetalSimpleBase
       edges:
         - to: start
           completed:
@@ -96,12 +96,12 @@
 
 #MARK: Planks
 - type: constructionGraph
-  id: WallCDDAWoodPlankBase
+  id: StructureWallCDDAWoodPlankBase
   start: start
   graph:
     - node: start
       edges:
-        - to: WallCDDAWoodPlankBase
+        - to: StructureWallCDDAWoodPlankBase
           completed:
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
@@ -110,8 +110,8 @@
               amount: 2
               doAfter: 1
 
-    - node: WallCDDAWoodPlankBase
-      entity: WallCDDAWoodPlankBase
+    - node: StructureWallCDDAWoodPlankBase
+      entity: StructureWallCDDAWoodPlankBase
       edges:
         - to: start
           completed:
@@ -128,12 +128,12 @@
 
 #MARK: Logs
 - type: constructionGraph
-  id: WallCDDAWoodLogBase
+  id: StructureWallCDDAWoodLogBase
   start: start
   graph:
     - node: start
       edges:
-        - to: WallCDDAWoodLogBase
+        - to: StructureWallCDDAWoodLogBase
           completed:
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
@@ -142,8 +142,8 @@
               amount: 2
               doAfter: 1
 
-    - node: WallCDDAWoodLogBase
-      entity: WallCDDAWoodLogBase
+    - node: StructureWallCDDAWoodLogBase
+      entity: StructureWallCDDAWoodLogBase
       edges:
         - to: start
           completed:

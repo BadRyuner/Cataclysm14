@@ -2,7 +2,7 @@
 
 - type: tile
   id: FloorCDDAConcreteSlabBase
-  name: CDDA-tiles-concrete-slab-base
+  name: Cata-tiles-concrete-slab-base
   sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab.png
   variants: 6
   placementVariants:
@@ -25,7 +25,7 @@
 
 - type: tile
   id: FloorCDDAConcreteSlabBlack
-  name: CDDA-tiles-concrete-slab-black
+  name: Cata-tiles-concrete-slab-black
   sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab_black.png
   variants: 6
   placementVariants:
@@ -50,7 +50,7 @@
 
 - type: tile
   id: FloorCDDAConcreteSlabSidewalkBase
-  name: CDDA-tiles-concrete-slab-base-sidewalk
+  name: Cata-tiles-concrete-slab-base-sidewalk
   sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab.png
   variants: 6
   placementVariants:
@@ -83,7 +83,7 @@
 
 - type: tile
   id: FloorCDDAConcreteSlabSidewalkBlack
-  name: CDDA-tiles-concrete-slab-black-sidewalk
+  name: Cata-tiles-concrete-slab-black-sidewalk
   sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab_black.png
   variants: 6
   placementVariants:

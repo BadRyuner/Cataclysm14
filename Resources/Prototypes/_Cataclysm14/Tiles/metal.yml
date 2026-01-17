@@ -1,6 +1,6 @@
 - type: tile
   id: FloorCDDAMetalDiamondPlating
-  name: CDDA-tiles-metal-diamond-plating
+  name: Cata-tiles-metal-diamond-plating
   sprite: /Textures/_Cataclysm14/Tiles/metal/diamond_plating.png
   baseTurf: FloorCDDAConcreteSlabBase
   deconstructTools: [ Digging ] # Frontier

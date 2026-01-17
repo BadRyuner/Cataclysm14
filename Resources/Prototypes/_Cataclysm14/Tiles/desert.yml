@@ -3,7 +3,7 @@
 #MARK: Sand
 - type: tile
   id: FloorCDDASandBase
-  name: CDDA-tiles-sand-base
+  name: Cata-tiles-sand-base
   sprite: /Textures/_Cataclysm14/Tiles/sand/sand.png
   variants: 6
   placementVariants:

@@ -2,7 +2,7 @@
 
 - type: tile
   id: FloorCDDAAsphaltBase
-  name: CDDA-tiles-asphalt-base
+  name: Cata-tiles-asphalt-base
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt.png
   variants: 4
   placementVariants:
@@ -23,7 +23,7 @@
 
 - type: tile
   id: FloorCDDAAsphaltRed
-  name: CDDA-tiles-asphalt-red
+  name: Cata-tiles-asphalt-red
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt_red.png
   variants: 4
   placementVariants:
@@ -203,7 +203,7 @@
 
 - type: tile
   id: FloorCDDAAsphaltSidewalkBase
-  name: CDDA-tiles-asphalt-base-sidewalk
+  name: Cata-tiles-asphalt-base-sidewalk
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt.png
   variants: 4
   placementVariants:
@@ -234,7 +234,7 @@
 
 - type: tile
   id: FloorCDDAAsphaltSidewalkRed
-  name: CDDA-tiles-asphalt-red-sidewalk
+  name: Cata-tiles-asphalt-red-sidewalk
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt_red.png
   variants: 4
   placementVariants:

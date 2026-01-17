@@ -15,7 +15,7 @@
               doAfter: 1
 #MARK: Rebar Node
     - node: Rebar
-      entity: WallCDDARebar
+      entity: StructureWallCDDARebar
       edges:
         - to: start
           completed:
@@ -31,7 +31,7 @@
               doAfter: 2
 
 #MARK: Reinforced Metal
-        - to: WallCDDAMetalReinforced
+        - to: StructureWallCDDAMetalReinforced
           completed:
             - !type:SnapToGrid
               southRotation: true
@@ -43,7 +43,7 @@
               doAfter: 2
 
 #MARK: Reinforced Brick
-        - to: WallCDDABrickRedRedReinforced
+        - to: StructureWallCDDABrickRedRedReinforced
           completed:
             - !type:SnapToGrid
               southRotation: true
@@ -55,7 +55,7 @@
               doAfter: 2
 
 #MARK: Reinforced Concrete
-        - to: WallCDDAConcreteReinforcedWhite
+        - to: StructureWallCDDAConcreteReinforcedWhite
           completed:
             - !type:SnapToGrid
               southRotation: true
@@ -75,8 +75,8 @@
 
 
 #MARK: Reinforced Metal
-    - node: WallCDDAMetalReinforced
-      entity: WallCDDAMetalReinforced
+    - node: StructureWallCDDAMetalReinforced
+      entity: StructureWallCDDAMetalReinforced
       edges:
         - to: Rebar
           completed:
@@ -90,8 +90,8 @@
               doAfter: 10
 
 #MARK: Reinforced Brick
-    - node: WallCDDABrickRedRedReinforced
-      entity: WallCDDABrickRedRedReinforced
+    - node: StructureWallCDDABrickRedRedReinforced
+      entity: StructureWallCDDABrickRedRedReinforced
       edges:
         - to: Rebar
           completed:
@@ -105,8 +105,8 @@
               doAfter: 10
 
 #MARK: Reinforced Concrete
-    - node: WallCDDAConcreteReinforcedWhite
-      entity: WallCDDAConcreteReinforcedWhite
+    - node: StructureWallCDDAConcreteReinforcedWhite
+      entity: StructureWallCDDAConcreteReinforcedWhite
       edges:
         - to: Rebar
           completed:

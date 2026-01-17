@@ -1,6 +1,6 @@
 - type: tile
   id: FloorCDDAWoodPlankVertical
-  name: CDDA-tiles-floor-plank-vertical
+  name: Cata-tiles-floor-plank-vertical
   sprite: /Textures/_Cataclysm14/Tiles/wood/plank_vertical.png
   variants: 3
   placementVariants:
@@ -20,7 +20,7 @@
 
 - type: tile
   id: FloorCDDAWoodPlankHorizontal
-  name: CDDA-tiles-floor-plank-horizontal
+  name: Cata-tiles-floor-plank-horizontal
   sprite: /Textures/_Cataclysm14/Tiles/wood/plank_horizontal.png
   variants: 3
   placementVariants:

@@ -1,6 +1,6 @@
 - type: entity
-  parent: BaseWallCataTierOne
-  id: WallCDDARebar
+  parent: BaseStructureWallCDDATierOne
+  id: StructureWallCDDARebar
   name: rebar assembly
   components:
   - type: Sprite

@@ -1,0 +1,101 @@
+- type: entity
+  id: StructureFurnitureShelfMetal
+  parent: BaseStructure
+  name: metal shelves
+  description: Metal shelves, can store things inside itself, ideal for underwear, and someone's kidneys?...
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Furnitures/shelf_metal.rsi
+    state: icon
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,9,7
+    maxItemSize: Normal
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: true
+
+- type: entity
+  id: StructureFurnitureShelfMetalStorage
+  parent: BaseStructure
+  name: metal storage shelves
+  description: Metal shelves, can store things inside itself, ideal for underwear, and someone's kidneys?...
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Furnitures/shelf_metal_storage.rsi
+    state: icon
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,11,11
+    maxItemSize: Normal
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: true

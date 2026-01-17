@@ -3,7 +3,7 @@
 #MARK: Rock
 - type: tile
   id: FloorCDDARockBase
-  name: CDDA-tiles-rock-base
+  name: Cata-tiles-rock-base
   sprite: /Textures/_Cataclysm14/Tiles/rock/rock.png
   variants: 3
   placementVariants:
@@ -32,7 +32,7 @@
 
 - type: tile
   id: FloorCDDARockBlack
-  name: CDDA-tiles-rock-black
+  name: Cata-tiles-rock-black
   sprite: /Textures/_Cataclysm14/Tiles/rock_black/rock_black.png
   variants: 3
   placementVariants:
@@ -61,7 +61,7 @@
 
 - type: tile
   id: FloorCDDARockSand
-  name: CDDA-tiles-rock-sand
+  name: Cata-tiles-rock-sand
   sprite: /Textures/_Cataclysm14/Tiles/rock_sand/rock_sand.png
   variants: 3
   placementVariants:
