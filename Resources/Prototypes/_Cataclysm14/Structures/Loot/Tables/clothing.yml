@@ -1,4 +1,13 @@
 - type: entityTable
+  id: LootTableClothingCivilianRandom50
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingCivilian
+        prob: 0.5
+
+- type: entityTable
   id: LootTableClothingCivilian
   table: !type:GroupSelector
     children:

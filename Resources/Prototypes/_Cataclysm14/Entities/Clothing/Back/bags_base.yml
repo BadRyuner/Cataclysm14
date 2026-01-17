@@ -5,7 +5,7 @@
   abstract: true
   components:
   - type: Storage
-    maxItemSize: Giant
+    maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
     - 0,0,9,3
@@ -24,7 +24,7 @@
   abstract: true
   components:
   - type: Storage
-    maxItemSize: Giant
+    maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
     - 0,0,5,2
@@ -43,7 +43,7 @@
   abstract: true
   components:
   - type: Storage
-    maxItemSize: Giant
+    maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
     - 0,0,3,3
@@ -62,7 +62,7 @@
   abstract: true
   components:
   - type: Storage
-    maxItemSize: Giant
+    maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
     - 0,0,3,2
@@ -82,7 +82,7 @@
   abstract: true
   components:
   - type: Storage
-    maxItemSize: Giant
+    maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
     - 0,0,7,3

@@ -9,11 +9,9 @@
     - StructureFurnitureDeskWood
     - StructureFurnitureTrashBinSmall
     - DogBed
-    - EntitiesSpawnerStructureFurnituresDresserRandom
-    - StructureFurnitureShelfWoodFilledClothingCivilian
-    - StructureFurnitureShelfWood
-    - StructureFurnitureShelfWoodStorageFilledClothingCivilian
-    - StructureFurnitureShelfWoodStorage
+    - StructureFurnitureDresserWoodFilledClothingCivilianRandom50
+    - StructureFurnitureShelfWoodFilledClothingCivilianRandom50
+    - StructureFurnitureShelfWoodStorageFilledClothingCivilianRandom50
     chance: 1
     offset: 0.0
     # rarePrototypes:
