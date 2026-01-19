@@ -1,5 +1,5 @@
 - type: tile
-  id: FloorCDDAWoodPlankVertical
+  id: FloorCataWoodPlankVertical
   name: Cata-tiles-floor-plank-vertical
   sprite: /Textures/_Cataclysm14/Tiles/wood/plank_vertical.png
   variants: 3
@@ -7,7 +7,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorCDDAConcreteSlabBase
+  baseTurf: FloorCataConcreteSlabBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass
@@ -19,7 +19,7 @@
   # canShovel: true # Delta V # Frontier
 
 - type: tile
-  id: FloorCDDAWoodPlankHorizontal
+  id: FloorCataWoodPlankHorizontal
   name: Cata-tiles-floor-plank-horizontal
   sprite: /Textures/_Cataclysm14/Tiles/wood/plank_horizontal.png
   variants: 3
@@ -27,7 +27,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorCDDAConcreteSlabBase
+  baseTurf: FloorCataConcreteSlabBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass

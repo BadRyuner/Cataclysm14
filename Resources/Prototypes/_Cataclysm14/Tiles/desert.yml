@@ -2,7 +2,7 @@
 
 #MARK: Sand
 - type: tile
-  id: FloorCDDASandBase
+  id: FloorCataSandBase
   name: Cata-tiles-sand-base
   sprite: /Textures/_Cataclysm14/Tiles/sand/sand.png
   variants: 6
@@ -23,7 +23,7 @@
     East: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
-  baseTurf: FloorCDDARockSand
+  baseTurf: FloorCataRockSand
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier

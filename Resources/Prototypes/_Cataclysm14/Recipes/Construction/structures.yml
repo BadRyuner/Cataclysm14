@@ -2,7 +2,7 @@
 
 - type: construction
   name: rebar assembly
-  id: StructureWallCDDARebar
+  id: StructureWallCataRebar
   graph: Rebar
   startNode: start
   targetNode: Rebar
@@ -20,10 +20,10 @@
 
 - type: construction
   name: reinforced metal wall
-  id: StructureWallCDDAMetalReinforced
+  id: StructureWallCataMetalReinforced
   graph: Rebar
   startNode: start
-  targetNode: StructureWallCDDAMetalReinforced
+  targetNode: StructureWallCataMetalReinforced
   category: construction-category-structures-cataclysm
   description: A sturdy solid wall.
   icon:
@@ -38,10 +38,10 @@
 
 - type: construction
   name: reinforced red brick wall
-  id: StructureWallCDDABrickRedRedReinforced
+  id: StructureWallCataBrickRedRedReinforced
   graph: Rebar
   startNode: start
-  targetNode: StructureWallCDDABrickRedRedReinforced
+  targetNode: StructureWallCataBrickRedRedReinforced
   category: construction-category-structures-cataclysm
   description: A sturdy solid wall.
   icon:
@@ -56,10 +56,10 @@
 
 - type: construction
   name: white reinforced concrete wall
-  id: StructureWallCDDAConcreteReinforcedWhite
+  id: StructureWallCataConcreteReinforcedWhite
   graph: Rebar
   startNode: start
-  targetNode: StructureWallCDDAConcreteReinforcedWhite
+  targetNode: StructureWallCataConcreteReinforcedWhite
   category: construction-category-structures-cataclysm
   description: A sturdy solid wall.
   icon:
@@ -76,10 +76,10 @@
 
 - type: construction
   name: red brick wall
-  id: StructureWallCDDABrickRedRedBase
-  graph: StructureWallCDDABrickRedRedBase
+  id: StructureWallCataBrickRedRedBase
+  graph: StructureWallCataBrickRedRedBase
   startNode: start
-  targetNode: StructureWallCDDABrickRedRedBase
+  targetNode: StructureWallCataBrickRedRedBase
   category: construction-category-structures-cataclysm
   description: A sturdy solid wall.
   icon:
@@ -94,10 +94,10 @@
 
 - type: construction
   name: white solid concrete wall
-  id: StructureWallCDDAConcreteSolidWhite
-  graph: StructureWallCDDAConcreteSolidWhite
+  id: StructureWallCataConcreteSolidWhite
+  graph: StructureWallCataConcreteSolidWhite
   startNode: start
-  targetNode: StructureWallCDDAConcreteSolidWhite
+  targetNode: StructureWallCataConcreteSolidWhite
   category: construction-category-structures-cataclysm
   description: A sturdy solid wall.
   icon:
@@ -112,10 +112,10 @@
 
 - type: construction
   name: simple metal wall
-  id: StructureWallCDDAMetalSimpleBase
-  graph: StructureWallCDDAMetalSimpleBase
+  id: StructureWallCataMetalSimpleBase
+  graph: StructureWallCataMetalSimpleBase
   startNode: start
-  targetNode: StructureWallCDDAMetalSimpleBase
+  targetNode: StructureWallCataMetalSimpleBase
   category: construction-category-structures-cataclysm
   description: A sturdy solid wall.
   icon:
@@ -130,10 +130,10 @@
 
 - type: construction
   name: wooden plank wall
-  id: StructureWallCDDAWoodPlankBase
-  graph: StructureWallCDDAWoodPlankBase
+  id: StructureWallCataWoodPlankBase
+  graph: StructureWallCataWoodPlankBase
   startNode: start
-  targetNode: StructureWallCDDAWoodPlankBase
+  targetNode: StructureWallCataWoodPlankBase
   category: construction-category-structures-cataclysm
   description: A sturdy solid wall.
   icon:
@@ -148,10 +148,10 @@
 
 - type: construction
   name: wooden log wall
-  id: StructureWallCDDAWoodLogBase
-  graph: StructureWallCDDAWoodLogBase
+  id: StructureWallCataWoodLogBase
+  graph: StructureWallCataWoodLogBase
   startNode: start
-  targetNode: StructureWallCDDAWoodLogBase
+  targetNode: StructureWallCataWoodLogBase
   category: construction-category-structures-cataclysm
   description: A sturdy solid wall.
   icon:

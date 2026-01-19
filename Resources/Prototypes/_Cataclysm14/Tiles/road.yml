@@ -1,7 +1,7 @@
 #MARK: Asphalt
 
 - type: tile
-  id: FloorCDDAAsphaltBase
+  id: FloorCataAsphaltBase
   name: Cata-tiles-asphalt-base
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt.png
   variants: 4
@@ -10,7 +10,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorCDDARockBase # Delta V
+  baseTurf: FloorCataRockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   # deconstructTools: [ Digging ] # Frontier
@@ -22,7 +22,7 @@
   weather: true
 
 - type: tile
-  id: FloorCDDAAsphaltRed
+  id: FloorCataAsphaltRed
   name: Cata-tiles-asphalt-red
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt_red.png
   variants: 4
@@ -31,7 +31,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorCDDARockBase # Delta V
+  baseTurf: FloorCataRockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   # deconstructTools: [ Digging ] # Frontier
@@ -202,7 +202,7 @@
 # MARK: Sidewalk
 
 - type: tile
-  id: FloorCDDAAsphaltSidewalkBase
+  id: FloorCataAsphaltSidewalkBase
   name: Cata-tiles-asphalt-base-sidewalk
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt.png
   variants: 4
@@ -221,7 +221,7 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
-  baseTurf: FloorCDDARockBase # Delta V
+  baseTurf: FloorCataRockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   # deconstructTools: [ Digging ] # Frontier
@@ -233,7 +233,7 @@
   weather: true
 
 - type: tile
-  id: FloorCDDAAsphaltSidewalkRed
+  id: FloorCataAsphaltSidewalkRed
   name: Cata-tiles-asphalt-red-sidewalk
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt_red.png
   variants: 4
@@ -252,7 +252,7 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
-  baseTurf: FloorCDDARockBase # Delta V
+  baseTurf: FloorCataRockBase # Delta V
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   # deconstructTools: [ Digging ] # Frontier

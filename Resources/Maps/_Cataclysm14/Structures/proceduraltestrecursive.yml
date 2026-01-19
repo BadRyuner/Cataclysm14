@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 01/15/2026 13:40:34
-  entityCount: 8
+  time: 01/18/2026 12:08:57
+  entityCount: 5
 maps:
 - 1
 grids:
@@ -19,7 +19,7 @@ tilemap:
   5: FloorAsteroidTile
   10: FloorAstroGrass
   8: FloorBrokenWood
-  12: FloorCDDAAsphaltRed
+  12: FloorCataAsphaltRed
   11: FloorRGlass
   15: FloorShuttleBlack
   13: FloorShuttleBlue
@@ -71,41 +71,29 @@ entities:
         nodes: []
     - type: SpreaderGrid
     - type: GridPathfinding
-- proto: StructureSpawnerTest5x5
+- proto: RoomSpawnerHouseBedroomBase4x4
   entities:
   - uid: 2
     components:
     - type: Transform
-      pos: 2.5,2.5
+      pos: 2.5,8.5
       parent: 1
   - uid: 3
     components:
     - type: Transform
-      pos: 4.5,7.5
+      rot: 1.5707963267948966 rad
+      pos: 7.5,2.5
       parent: 1
   - uid: 4
     components:
     - type: Transform
-      pos: 3.5,7.5
+      rot: 3.141592653589793 rad
+      pos: 7.5,7.5
       parent: 1
   - uid: 5
     components:
     - type: Transform
-      pos: 2.5,7.5
-      parent: 1
-  - uid: 6
-    components:
-    - type: Transform
-      pos: 5.5,7.5
-      parent: 1
-  - uid: 7
-    components:
-    - type: Transform
-      pos: 6.5,7.5
-      parent: 1
-  - uid: 8
-    components:
-    - type: Transform
-      pos: 7.5,7.5
+      rot: -1.5707963267948966 rad
+      pos: 2.5,1.5
       parent: 1
 ...

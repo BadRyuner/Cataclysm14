@@ -2,7 +2,7 @@
 
 #MARK: Rock
 - type: tile
-  id: FloorCDDARockBase
+  id: FloorCataRockBase
   name: Cata-tiles-rock-base
   sprite: /Textures/_Cataclysm14/Tiles/rock/rock.png
   variants: 3
@@ -19,7 +19,7 @@
     East: /Textures/_Cataclysm14/Tiles/rock/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/rock/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/rock/double_edge.png
-  baseTurf: FloorCDDARockBase
+  baseTurf: FloorCataRockBase
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier
@@ -31,7 +31,7 @@
   weather: true
 
 - type: tile
-  id: FloorCDDARockBlack
+  id: FloorCataRockBlack
   name: Cata-tiles-rock-black
   sprite: /Textures/_Cataclysm14/Tiles/rock_black/rock_black.png
   variants: 3
@@ -48,7 +48,7 @@
     East: /Textures/_Cataclysm14/Tiles/rock_black/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/rock_black/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/rock_black/double_edge.png
-  baseTurf: FloorCDDARockBase
+  baseTurf: FloorCataRockBase
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier
@@ -60,7 +60,7 @@
   weather: true
 
 - type: tile
-  id: FloorCDDARockSand
+  id: FloorCataRockSand
   name: Cata-tiles-rock-sand
   sprite: /Textures/_Cataclysm14/Tiles/rock_sand/rock_sand.png
   variants: 3
@@ -77,7 +77,7 @@
     East: /Textures/_Cataclysm14/Tiles/rock_sand/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/rock_sand/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/rock_sand/double_edge.png
-  baseTurf: FloorCDDARockBase
+  baseTurf: FloorCataRockBase
   #canCrowbar: false # Come back
   # canShovel: true # Delta V # Frontier
   deconstructTools: [ Digging ] # Frontier

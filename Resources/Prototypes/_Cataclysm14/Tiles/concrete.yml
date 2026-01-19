@@ -1,7 +1,7 @@
 # MARK: Slab
 
 - type: tile
-  id: FloorCDDAConcreteSlabBase
+  id: FloorCataConcreteSlabBase
   name: Cata-tiles-concrete-slab-base
   sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab.png
   variants: 6
@@ -12,7 +12,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorCDDARockBase
+  baseTurf: FloorCataRockBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass
@@ -24,7 +24,7 @@
   # canShovel: true # Delta V # Frontier
 
 - type: tile
-  id: FloorCDDAConcreteSlabBlack
+  id: FloorCataConcreteSlabBlack
   name: Cata-tiles-concrete-slab-black
   sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab_black.png
   variants: 6
@@ -35,7 +35,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorCDDARockBase
+  baseTurf: FloorCataRockBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass
@@ -49,7 +49,7 @@
 # MARK: Sidewalk
 
 - type: tile
-  id: FloorCDDAConcreteSlabSidewalkBase
+  id: FloorCataConcreteSlabSidewalkBase
   name: Cata-tiles-concrete-slab-base-sidewalk
   sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab.png
   variants: 6
@@ -70,7 +70,7 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
-  baseTurf: FloorCDDARockBase
+  baseTurf: FloorCataRockBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass
@@ -82,7 +82,7 @@
   # canShovel: true # Delta V # Frontier
 
 - type: tile
-  id: FloorCDDAConcreteSlabSidewalkBlack
+  id: FloorCataConcreteSlabSidewalkBlack
   name: Cata-tiles-concrete-slab-black-sidewalk
   sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab_black.png
   variants: 6
@@ -103,7 +103,7 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
-  baseTurf: FloorCDDARockBase
+  baseTurf: FloorCataRockBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass

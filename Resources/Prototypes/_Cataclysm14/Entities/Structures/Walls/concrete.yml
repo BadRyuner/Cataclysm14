@@ -1,7 +1,7 @@
 #MARK: Reinfor concrete
   - type: entity
-    parent: BaseStructureWallCDDATierThree
-    id: StructureWallCDDAConcreteReinforcedWhite
+    parent: BaseStructureWallCataTierThree
+    id: StructureWallCataConcreteReinforcedWhite
     name: white reinforced concrete wall
     components:
     - type: Sprite
@@ -13,12 +13,12 @@
       base: concrete
     - type: Construction
       graph: Rebar
-      node: StructureWallCDDAConcreteReinforcedWhite
+      node: StructureWallCataConcreteReinforcedWhite
 
 #MARK: Simple concrete
   - type: entity
-    parent: BaseStructureWallCDDATierTwo
-    id: StructureWallCDDAConcreteSolidBase
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidBase
     name: solid concrete wall
     components:
     - type: Sprite
@@ -29,14 +29,14 @@
       key: walls
       base: concrete
     - type: Construction
-      graph: StructureWallCDDAConcreteSolidWhite
-      node: StructureWallCDDAConcreteSolidWhite
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
 
 #TODO: make the center piece not colored, failed at doing this and spent so much time
 #MARK: Concrete white
   - type: entity
-    parent: BaseStructureWallCDDATierTwo
-    id: StructureWallCDDAConcreteSolidWhite
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidWhite
     name: white solid concrete wall
     components:
     - type: Sprite
@@ -47,13 +47,13 @@
       key: walls
       base: concrete
     - type: Construction
-      graph: StructureWallCDDAConcreteSolidWhite
-      node: StructureWallCDDAConcreteSolidWhite
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
 
 #MARK: Concrete red
   - type: entity
-    parent: BaseStructureWallCDDATierTwo
-    id: StructureWallCDDAConcreteSolidRed
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidRed
     name: red solid concrete wall
     components:
     - type: Sprite
@@ -65,13 +65,13 @@
       key: walls
       base: concrete
     - type: Construction
-      graph: StructureWallCDDAConcreteSolidWhite
-      node: StructureWallCDDAConcreteSolidWhite
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
 
 #MARK: Concrete blue
   - type: entity
-    parent: BaseStructureWallCDDATierTwo
-    id: StructureWallCDDAConcreteSolidBlue
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidBlue
     name: blue solid concrete wall
     components:
     - type: Sprite
@@ -83,13 +83,13 @@
       key: walls
       base: concrete
     - type: Construction
-      graph: StructureWallCDDAConcreteSolidWhite
-      node: StructureWallCDDAConcreteSolidWhite
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
 
 #MARK: Concrete green
   - type: entity
-    parent: BaseStructureWallCDDATierTwo
-    id: StructureWallCDDAConcreteSolidGreen
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidGreen
     name: green solid concrete wall
     components:
     - type: Sprite
@@ -101,13 +101,13 @@
       key: walls
       base: concrete
     - type: Construction
-      graph: StructureWallCDDAConcreteSolidWhite
-      node: StructureWallCDDAConcreteSolidWhite
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
 
 #MARK: Concrete yellow
   - type: entity
-    parent: BaseStructureWallCDDATierTwo
-    id: StructureWallCDDAConcreteSolidYellow
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidYellow
     name: yellow solid concrete wall
     components:
     - type: Sprite
@@ -119,13 +119,13 @@
       key: walls
       base: concrete
     - type: Construction
-      graph: StructureWallCDDAConcreteSolidWhite
-      node: StructureWallCDDAConcreteSolidWhite
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
 
 #MARK: Concrete purple
   - type: entity
-    parent: BaseStructureWallCDDATierTwo
-    id: StructureWallCDDAConcreteSolidPurple
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidPurple
     name: purple solid concrete wall
     components:
     - type: Sprite
@@ -137,13 +137,13 @@
       key: walls
       base: concrete
     - type: Construction
-      graph: StructureWallCDDAConcreteSolidWhite
-      node: StructureWallCDDAConcreteSolidWhite
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
 
 #MARK: Concrete grey
   - type: entity
-    parent: BaseStructureWallCDDATierTwo
-    id: StructureWallCDDAConcreteSolidGrey
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidGrey
     name: grey solid concrete wall
     components:
     - type: Sprite
@@ -155,5 +155,5 @@
       key: walls
       base: concrete
     - type: Construction
-      graph: StructureWallCDDAConcreteSolidWhite
-      node: StructureWallCDDAConcreteSolidWhite
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite

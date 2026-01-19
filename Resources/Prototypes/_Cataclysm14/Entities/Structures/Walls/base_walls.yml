@@ -3,7 +3,7 @@
 - type: entity
   abstract: true
   parent: BaseWall
-  id: BaseStructureWallCDDATierOne
+  id: BaseStructureWallCataTierOne
   name: default wall
   description: Keeps the air in and the chimera out.
   components:
@@ -40,7 +40,7 @@
 - type: entity
   abstract: true
   parent: BaseWall
-  id: BaseStructureWallCDDATierTwo
+  id: BaseStructureWallCataTierTwo
   name: reinforced wall
   description: Keeps the air in and the chimera out.
   components:
@@ -77,7 +77,7 @@
 - type: entity
   abstract: true
   parent: BaseWall
-  id: BaseStructureWallCDDATierThree
+  id: BaseStructureWallCataTierThree
   name: super reinforced wall
   description: Keeps the air in and the chimera out.
   components:
@@ -113,7 +113,7 @@
 - type: entity
   abstract: true
   parent: BaseWall
-  id: BaseStructureWallCDDATierFour
+  id: BaseStructureWallCataTierFour
   name: super ultra giga reinforced wall
   description: Keeps the air in and the chimera out.
   components:
@@ -149,7 +149,7 @@
 - type: entity
   abstract: true
   parent: BaseWall
-  id: BaseStructureWallCDDASafezone
+  id: BaseStructureWallCataSafezone
   name: super ultra giga mega deluxe reinforced wall
   description: Keeps the air in and the chimera out.
   suffix: SAFEZONE

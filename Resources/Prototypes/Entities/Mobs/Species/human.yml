@@ -35,6 +35,10 @@
   - type: Carriable # Frontier: Carrying system from nyanotrasen.
   - type: Speech # Frontier
     allowedEmotes: ['Belch'] # Frontier
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5 # Cataclysm14
+    baseSprintSpeed: 5 # Cataclysm14
+    baseWeightlessModifier: 1 # Cataclysm14
 
 - type: entity
   parent: BaseSpeciesDummy

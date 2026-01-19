@@ -1,6 +1,6 @@
 - type: entity
-  parent: BaseStructureWallCDDATierTwo
-  id: StructureWallCDDABrickRedRedBase
+  parent: BaseStructureWallCataTierTwo
+  id: StructureWallCataBrickRedRedBase
   name: red brick wall
   components:
   - type: Sprite
@@ -11,12 +11,12 @@
     key: walls
     base: brick
   - type: Construction
-    graph: StructureWallCDDABrickRedRedBase
-    node: StructureWallCDDABrickRedRedBase
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
 
 - type: entity
-  parent: BaseStructureWallCDDATierThree
-  id: StructureWallCDDABrickRedRedReinforced
+  parent: BaseStructureWallCataTierThree
+  id: StructureWallCataBrickRedRedReinforced
   name: reinforced red brick wall
   components:
   - type: Sprite
@@ -28,4 +28,4 @@
     base: brick
   - type: Construction
     graph: Rebar
-    node: StructureWallCDDABrickRedRedReinforced
+    node: StructureWallCataBrickRedRedReinforced

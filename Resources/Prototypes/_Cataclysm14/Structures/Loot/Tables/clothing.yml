@@ -14,17 +14,23 @@
       - !type:NestedSelector
         weight: 100
         tableId: LootTableClothingTopCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,4
       - !type:NestedSelector
         weight: 100
         tableId: LootTableClothingBottomCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,4
       - !type:NestedSelector
         weight: 100
         tableId: LootTableClothingShoesCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,4
       - !type:NestedSelector
         weight: 100
         tableId: LootTableClothingBagCivilian
-    rolls: !type:RangeNumberSelector
-      range: 0, 10
+        rolls: !type:RangeNumberSelector
+          range: 0,2
 
 - type: entityTable
   id: LootTableClothingTopCivilian
@@ -79,7 +85,7 @@
     - id: ClothingShirtTShirtPurple
     - id: ClothingShirtTShirtBlack
     - id: ClothingShirtTShirtBeige
-    
+
 - type: entityTable
   id: LootTableClothingSweater
   table: !type:GroupSelector
@@ -92,7 +98,7 @@
     - id: ClothingShirtSweaterPurple
     - id: ClothingShirtSweaterBlack
     - id: ClothingShirtSweaterBeige
-    
+
 - type: entityTable
   id: LootTableClothingJeans
   table: !type:GroupSelector
@@ -101,7 +107,7 @@
     - id: ClothingPantsJeansPurple
     - id: ClothingPantsJeansBlack
     - id: ClothingPantsJeansBrown
-    
+
 - type: entityTable
   id: LootTableClothingJoggings
   table: !type:GroupSelector
@@ -112,7 +118,7 @@
     - id: ClothingPantsJoggingsYellow
     - id: ClothingPantsJoggingsPurple
     - id: ClothingPantsJoggingsBlack
-    
+
 - type: entityTable
   id: LootTableClothingSneakers
   table: !type:GroupSelector

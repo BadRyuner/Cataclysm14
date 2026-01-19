@@ -1,8 +1,8 @@
 - type: tile
-  id: FloorCDDAMetalDiamondPlating
+  id: FloorCataMetalDiamondPlating
   name: Cata-tiles-metal-diamond-plating
   sprite: /Textures/_Cataclysm14/Tiles/metal/diamond_plating.png
-  baseTurf: FloorCDDAConcreteSlabBase
+  baseTurf: FloorCataConcreteSlabBase
   deconstructTools: [ Digging ] # Frontier
   footstepSounds:
     collection: FootstepGrass

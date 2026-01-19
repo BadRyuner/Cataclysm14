@@ -1,6 +1,6 @@
 - type: entity
   parent: Window
-  id: WindowCataGlassWallBase
+  id: StructureWindowCataGlassWallBase
   name: full window
   components:
   - type: Sprite

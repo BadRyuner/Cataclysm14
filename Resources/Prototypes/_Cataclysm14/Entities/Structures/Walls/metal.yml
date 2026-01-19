@@ -1,6 +1,6 @@
 - type: entity
-  parent: BaseStructureWallCDDATierThree
-  id: StructureWallCDDAMetalReinforced
+  parent: BaseStructureWallCataTierThree
+  id: StructureWallCataMetalReinforced
   name: reinforced metal wall
   components:
   - type: Sprite
@@ -12,11 +12,11 @@
     base: metal
   - type: Construction
     graph: Rebar
-    node: StructureWallCDDAMetalReinforced
+    node: StructureWallCataMetalReinforced
 
 - type: entity
-  parent: BaseStructureWallCDDATierTwo
-  id: StructureWallCDDAMetalSimpleBase
+  parent: BaseStructureWallCataTierTwo
+  id: StructureWallCataMetalSimpleBase
   name: simple metal wall
   components:
   - type: Sprite
@@ -28,4 +28,4 @@
     base: metal
   - type: Construction
     graph: Rebar
-    node: StructureWallCDDAMetalSimple
+    node: StructureWallCataMetalSimple

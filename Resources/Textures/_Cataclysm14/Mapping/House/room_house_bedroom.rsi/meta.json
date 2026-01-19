@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "by avtomata (disc:core_mene) for mapping spawner borders",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "structure_border_room_entry_bedroom_3x3"
+    },
+    {
+      "name": "structure_border_room_entry_bedroom_4x3"
+    },
+    {
+      "name": "structure_border_room_entry_bedroom_4x4"
+    }
+  ]
+}

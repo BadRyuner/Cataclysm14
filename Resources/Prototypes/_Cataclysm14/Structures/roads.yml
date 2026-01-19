@@ -10,7 +10,7 @@
 - type: dungeonRoom
   id: StructureSpawnerRoadGrayWhiteBaseBaseStraight13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_base_base_straight_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_straight_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -24,7 +24,7 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: /Textures/_Cataclysm14/Mapping.rsi
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
     layers:
     - state: structure_border_road_asphalt_gray_straight
     - state: structure_border_road_line_white_straight
@@ -37,7 +37,7 @@
 - type: dungeonRoom
   id: StructureSpawnerRoadGrayWhiteBaseBaseFourway13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_base_base_fourway_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_fourway_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -51,7 +51,7 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: /Textures/_Cataclysm14/Mapping.rsi
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
     layers:
     - state: structure_border_road_asphalt_gray_fourway
     - state: structure_border_road_line_white_fourway
@@ -64,7 +64,7 @@
 - type: dungeonRoom
   id: StructureSpawnerRoadGrayWhiteBaseBaseThreeway13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_base_base_threeway_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_threeway_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -78,7 +78,7 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: /Textures/_Cataclysm14/Mapping.rsi
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
     layers:
     - state: structure_border_road_asphalt_gray_threeway
     - state: structure_border_road_line_white_threeway
@@ -91,7 +91,7 @@
 - type: dungeonRoom
   id: StructureSpawnerRoadGrayWhiteBaseBaseCornerSharp13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_base_base_corner_sharp_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_corner_sharp_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -105,7 +105,7 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: /Textures/_Cataclysm14/Mapping.rsi
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
     layers:
     - state: structure_border_road_asphalt_gray_corner_sharp
     - state: structure_border_road_line_white_corner_sharp
@@ -118,7 +118,7 @@
 - type: dungeonRoom
   id: StructureSpawnerRoadGrayWhiteBaseBaseCornerLong26x26a
   size: 26,26
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_base_base_corner_long_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_corner_long_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -132,7 +132,8 @@
   components:
   - type: Sprite
     scale: 26,26
-    sprite: /Textures/_Cataclysm14/Mapping.rsi
+    offset: -0.5,0.5
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
     layers:
     - state: structure_border_road_asphalt_gray_corner_sharp
     - state: structure_border_road_line_white_corner_sharp
@@ -153,7 +154,7 @@
 - type: dungeonRoom
   id: StructureSpawnerRoadGrayWhiteSidewalkBaseStraight13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_sidewalk_base_straight_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_sidewalk_base_straight_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -167,7 +168,7 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: /Textures/_Cataclysm14/Mapping.rsi
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
     layers:
     - state: structure_border_road_asphalt_gray_straight
     - state: structure_border_road_line_white_straight
@@ -181,7 +182,7 @@
 - type: dungeonRoom
   id: StructureSpawnerRoadGrayWhiteSidewalkBaseFourway13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_sidewalk_base_fourway_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_sidewalk_base_fourway_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -195,7 +196,7 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: /Textures/_Cataclysm14/Mapping.rsi
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
     layers:
     - state: structure_border_road_asphalt_gray_fourway
     - state: structure_border_road_line_white_fourway
@@ -209,7 +210,7 @@
 - type: dungeonRoom
   id: StructureSpawnerRoadGrayWhiteSidewalkBaseThreeway13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_sidewalk_base_threeway_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_sidewalk_base_threeway_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -223,7 +224,7 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: /Textures/_Cataclysm14/Mapping.rsi
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
     layers:
     - state: structure_border_road_asphalt_gray_threeway
     - state: structure_border_road_line_white_threeway
@@ -237,7 +238,7 @@
 - type: dungeonRoom
   id: StructureSpawnerRoadGrayWhiteSidewalkBaseCornerSharp13x13a
   size: 13,13
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_sidewalk_base_corner_sharp_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_sidewalk_base_corner_sharp_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -251,7 +252,7 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: /Textures/_Cataclysm14/Mapping.rsi
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
     layers:
     - state: structure_border_road_asphalt_gray_corner_sharp
     - state: structure_border_road_line_white_corner_sharp
@@ -265,7 +266,7 @@
 - type: dungeonRoom
   id: StructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong13x13a
   size: 26,26
-  atlas: /Maps/_Cataclysm14/Structures/structure_road_gray_white_sidewalk_base_corner_long_1.yml
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_sidewalk_base_corner_long_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -279,7 +280,8 @@
   components:
   - type: Sprite
     scale: 26,26
-    sprite: /Textures/_Cataclysm14/Mapping.rsi
+    offset: -0.5,-0.5
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
     layers:
     - state: structure_border_road_asphalt_gray_corner_sharp
     - state: structure_border_road_line_white_corner_sharp
