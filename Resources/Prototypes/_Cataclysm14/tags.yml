@@ -68,7 +68,7 @@
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong26x26
 
-#MARK: Rooms
+#MARK: Roomfills>
 
 
 
@@ -91,7 +91,7 @@
   - type: Tag
     id: CataStructureSpawnerBedroomBase5x5
 
-#MARK: Bedrooms
+#MARK: Living rooms
   - type: Tag
     id: CataStructureSpawnerLivingRoomBase4x4
 
@@ -104,12 +104,23 @@
   - type: Tag
     id: CataStructureSpawnerLivingRoomBase6x5
 
-#MARK: Bedrooms
+#MARK: Garages
   - type: Tag
     id: CataRoomSpawnerHouseGarageBase5x6
 
   - type: Tag
     id: CataRoomSpawnerHouseGarageBase6x6
 
+#MARK: City Block
   - type: Tag
     id: CataStructureSmallNeighborhood91x91
+
+#MARK: Houses
+  - type: Tag
+    id: CataStructureHouseSmall13x13
+
+  - type: Tag
+    id: CataStructureHouseMedium26x26
+
+  - type: Tag
+    id: CataStructureHouseLarge39x39

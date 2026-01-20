@@ -20,7 +20,7 @@
   parent: BaseStructureSpawner
   id: StructureSpawnerRoadGrayWhiteBaseBaseStraight13x13
   name: structure spawner road gray-white base-base
-  suffix: Straight][13x13
+  suffix: Straight][1x1 Chunk][13x13
   components:
   - type: Sprite
     scale: 13,13
@@ -47,7 +47,7 @@
   parent: BaseStructureSpawner
   id: StructureSpawnerRoadGrayWhiteBaseBaseFourway13x13
   name: structure spawner road gray-white base-base
-  suffix: Fourway][13x13
+  suffix: Fourway][1x1 Chunk][13x13
   components:
   - type: Sprite
     scale: 13,13
@@ -74,7 +74,7 @@
   parent: BaseStructureSpawner
   id: StructureSpawnerRoadGrayWhiteBaseBaseThreeway13x13
   name: structure spawner road gray-white base-base
-  suffix: Threeway][13x13
+  suffix: Threeway][1x1 Chunk][13x13
   components:
   - type: Sprite
     scale: 13,13
@@ -101,7 +101,7 @@
   parent: BaseStructureSpawner
   id: StructureSpawnerRoadGrayWhiteBaseBaseCornerSharp13x13
   name: structure spawner road gray-white base-base
-  suffix: Sharp Corner][13x13
+  suffix: Sharp Corner][1x1 Chunk][13x13
   components:
   - type: Sprite
     scale: 13,13
@@ -164,7 +164,7 @@
   parent: BaseStructureSpawner
   id: StructureSpawnerRoadGrayWhiteSidewalkBaseStraight13x13
   name: structure spawner road gray-white sidewalk-base
-  suffix: Straight][13x13
+  suffix: Straight][1x1 Chunk][13x13
   components:
   - type: Sprite
     scale: 13,13
@@ -192,7 +192,7 @@
   parent: BaseStructureSpawner
   id: StructureSpawnerRoadGrayWhiteSidewalkBaseFourway13x13
   name: structure spawner road gray-white sidewalk-base
-  suffix: Fourway][13x13
+  suffix: Fourway][1x1 Chunk][13x13
   components:
   - type: Sprite
     scale: 13,13
@@ -220,7 +220,7 @@
   parent: BaseStructureSpawner
   id: StructureSpawnerRoadGrayWhiteSidewalkBaseThreeway13x13
   name: structure spawner road gray-white sidewalk-base
-  suffix: Threeway][13x13
+  suffix: Threeway][1x1 Chunk][13x13
   components:
   - type: Sprite
     scale: 13,13
@@ -248,7 +248,7 @@
   parent: BaseStructureSpawner
   id: StructureSpawnerRoadGrayWhiteSidewalkBaseCornerSharp13x13
   name: structure spawner road gray-white sidewalk-base
-  suffix: Sharp Corner][13x13
+  suffix: Sharp Corner][1x1 Chunk][13x13
   components:
   - type: Sprite
     scale: 13,13
@@ -276,7 +276,7 @@
   parent: BaseStructureSpawner
   id: StructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong13x13
   name: structure spawner road gray-white sidewalk-base
-  suffix: Long Corner][26,26
+  suffix: Long Corner][2x2 Chunk][26,26
   components:
   - type: Sprite
     scale: 26,26
