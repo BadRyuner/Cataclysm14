@@ -264,17 +264,17 @@
 
 #MARK: CornerLong
 - type: dungeonRoom
-  id: StructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong13x13a
+  id: StructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong26x26a
   size: 26,26
   atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_sidewalk_base_corner_long_1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong13x13
+  - CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong26x26
 
 - type: entity
   parent: BaseStructureSpawner
-  id: StructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong13x13
+  id: StructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong26x26
   name: structure spawner road gray-white sidewalk-base
   suffix: Long Corner][2x2 Chunk][26,26
   components:
@@ -289,4 +289,4 @@
   - type: RoomFill
     roomWhitelist:
       tags:
-      - CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong13x13
+      - CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong26x26

@@ -1,0 +1,83 @@
+- type: tile
+  id: FloorCataTilingKitchenVariant1Base
+  name: Cata-tiles-floor-tiling-kitchen-1-base
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/bar_1_base.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.6
+  - 0.4
+  - 0.2
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+
+- type: tile
+  id: FloorCataTilingBlackWhiteVariant1Base
+  name: Cata-tiles-floor-tiling-black-white-1-base
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/black_white_1_base.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.6
+  - 0.4
+  - 0.2
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+
+- type: tile
+  id: FloorCataTilingBathroomVariant1Base
+  name: Cata-tiles-floor-tiling-bathroom-1-base
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/bathroom_1_base.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.6
+  - 0.4
+  - 0.2
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier
+
+- type: tile
+  id: FloorCataTilingBathroomVariant1Mini
+  name: Cata-tiles-floor-tiling-bathroom-1-mini
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/bathroom_1_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.6
+  - 0.4
+  - 0.2
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+  #canCrowbar: false # Come back
+  # canShovel: true # Delta V # Frontier

@@ -16,7 +16,7 @@
         - type: StationJobs
           availableJobs:
             #Cataclysm14 start
-            ProfessionOfficeWorker: [ -1, -1 ]
+            # ProfessionOfficeWorker: [ -1, -1 ]
             #Cataclysm14 end
             Contractor: [ -1, -1 ]
             # Pilot: [ -1, -1 ]
