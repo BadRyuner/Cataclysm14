@@ -17,7 +17,7 @@
         - TableMask
         layer:
         - TableLayer
-        - BulletImpassable #Goobstation
+        - BulletImpassable
   - type: Climbable
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/desk_wood.rsi
