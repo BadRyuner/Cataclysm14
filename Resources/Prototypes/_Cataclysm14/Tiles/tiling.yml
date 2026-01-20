@@ -1,3 +1,4 @@
+#MARK: kitchen 1
 - type: tile
   id: FloorCataTilingKitchenVariant1Base
   name: Cata-tiles-floor-tiling-kitchen-1-base
@@ -14,11 +15,25 @@
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
-  # isSubfloor: true
-  # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
 
+- type: tile
+  id: FloorCataTilingKitchenVariant1Mini
+  name: Cata-tiles-floor-tiling-kitchen-1-mini
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/bar_1_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.6
+  - 0.4
+  - 0.2
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+#MARK: black/white 1
 - type: tile
   id: FloorCataTilingBlackWhiteVariant1Base
   name: Cata-tiles-floor-tiling-black-white-1-base
@@ -35,11 +50,25 @@
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
-  # isSubfloor: true
-  # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
 
+- type: tile
+  id: FloorCataTilingBlackWhiteVariant1Mini
+  name: Cata-tiles-floor-tiling-black-white-1-mini
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/black_white_1_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.6
+  - 0.4
+  - 0.2
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+#MARK: bathroom 1
 - type: tile
   id: FloorCataTilingBathroomVariant1Base
   name: Cata-tiles-floor-tiling-bathroom-1-base
@@ -56,10 +85,6 @@
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
-  # isSubfloor: true
-  # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
 
 - type: tile
   id: FloorCataTilingBathroomVariant1Mini
@@ -77,7 +102,38 @@
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
-  # isSubfloor: true
-  # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
+
+#MARK: bathroom 2
+- type: tile
+  id: FloorCataTilingBathroomVariant2Base
+  name: Cata-tiles-floor-tiling-bathroom-2-base
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/bathroom_2_base.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.6
+  - 0.4
+  - 0.2
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCataTilingBathroomVariant2Mini
+  name: Cata-tiles-floor-tiling-bathroom-2-mini
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/bathroom_2_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.6
+  - 0.4
+  - 0.2
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ Digging ] # Frontier
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000

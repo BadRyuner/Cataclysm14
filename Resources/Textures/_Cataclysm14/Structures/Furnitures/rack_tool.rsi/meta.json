@@ -8,13 +8,13 @@
   },
   "states": [
     {
-      "name": "variant1"
+      "name": "variant_1"
     },
     {
-      "name": "variant2"
+      "name": "variant_2"
     },
     {
-      "name": "variant3"
+      "name": "variant_3"
     }
   ]
 }
