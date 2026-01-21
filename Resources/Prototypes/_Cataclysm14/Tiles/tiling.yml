@@ -1,33 +1,68 @@
-#MARK: kitchen 1
+#MARK: brown grey 1
 - type: tile
-  id: FloorCataTilingKitchenVariant1Base
-  name: Cata-tiles-floor-tiling-kitchen-1-base
-  sprite: /Textures/_Cataclysm14/Tiles/tiling/bar_1_base.png
+  id: FloorCataTilingBrownGreyVariant1Base
+  name: Cata-tiles-floor-tiling-brown-grey-1-base
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/brown_grey_1_base.png
   variants: 4
   placementVariants:
   - 1.0
-  - 0.6
-  - 0.4
   - 0.2
+  - 0.1
+  - 0.05
   baseTurf: FloorCataConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
 
 - type: tile
-  id: FloorCataTilingKitchenVariant1Mini
-  name: Cata-tiles-floor-tiling-kitchen-1-mini
-  sprite: /Textures/_Cataclysm14/Tiles/tiling/bar_1_mini.png
+  id: FloorCataTilingBrownGreyVariant1Mini
+  name: Cata-tiles-floor-tiling-brown-grey-1-mini
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/brown_grey_1_mini.png
   variants: 4
   placementVariants:
   - 1.0
-  - 0.6
-  - 0.4
   - 0.2
+  - 0.1
+  - 0.05
   baseTurf: FloorCataConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+#MARK: green grey 1
+- type: tile
+  id: FloorCataTilingGreenGreyVariant1Base
+  name: Cata-tiles-floor-tiling-green-grey-1-base
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/green_grey_1_base.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.2
+  - 0.1
+  - 0.05
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCataTilingGreenGreyVariant1Mini
+  name: Cata-tiles-floor-tiling-green-grey-1-mini
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/green_grey_1_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.2
+  - 0.1
+  - 0.05
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
@@ -41,11 +76,11 @@
   variants: 4
   placementVariants:
   - 1.0
-  - 0.6
-  - 0.4
   - 0.2
+  - 0.1
+  - 0.05
   baseTurf: FloorCataConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
@@ -58,81 +93,152 @@
   variants: 4
   placementVariants:
   - 1.0
-  - 0.6
-  - 0.4
   - 0.2
+  - 0.1
+  - 0.05
   baseTurf: FloorCataConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
 
-#MARK: bathroom 1
+#MARK: teal white 1
 - type: tile
-  id: FloorCataTilingBathroomVariant1Base
-  name: Cata-tiles-floor-tiling-bathroom-1-base
-  sprite: /Textures/_Cataclysm14/Tiles/tiling/bathroom_1_base.png
+  id: FloorCataTilingTealWhiteVariant1Base
+  name: Cata-tiles-floor-tiling-teal-white-1-base
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/teal_white_1_base.png
   variants: 4
   placementVariants:
   - 1.0
-  - 0.6
-  - 0.4
   - 0.2
+  - 0.1
+  - 0.05
   baseTurf: FloorCataConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
-  footstepSounds:
-    collection: FootstepGrass
-  itemDrop: FloorTileItemGrassDark # Delta V
-  heatCapacity: 10000
-
-- type: tile
-  id: FloorCataTilingBathroomVariant1Mini
-  name: Cata-tiles-floor-tiling-bathroom-1-mini
-  sprite: /Textures/_Cataclysm14/Tiles/tiling/bathroom_1_mini.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 0.6
-  - 0.4
-  - 0.2
-  baseTurf: FloorCataConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
-  footstepSounds:
-    collection: FootstepGrass
-  itemDrop: FloorTileItemGrassDark # Delta V
-  heatCapacity: 10000
-
-#MARK: bathroom 2
-- type: tile
-  id: FloorCataTilingBathroomVariant2Base
-  name: Cata-tiles-floor-tiling-bathroom-2-base
-  sprite: /Textures/_Cataclysm14/Tiles/tiling/bathroom_2_base.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 0.6
-  - 0.4
-  - 0.2
-  baseTurf: FloorCataConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
 
 - type: tile
-  id: FloorCataTilingBathroomVariant2Mini
-  name: Cata-tiles-floor-tiling-bathroom-2-mini
-  sprite: /Textures/_Cataclysm14/Tiles/tiling/bathroom_2_mini.png
+  id: FloorCataTilingTealWhiteVariant1Mini
+  name: Cata-tiles-floor-tiling-teal-white-1-mini
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/teal_white_1_mini.png
   variants: 4
   placementVariants:
   - 1.0
-  - 0.6
-  - 0.4
   - 0.2
+  - 0.1
+  - 0.05
   baseTurf: FloorCataConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+#MARK: teal white 2
+- type: tile
+  id: FloorCataTilingTealWhiteVariant2Base
+  name: Cata-tiles-floor-tiling-teal-white-2-base
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/teal_white_2_base.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.2
+  - 0.1
+  - 0.05
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCataTilingTealWhiteVariant2Mini
+  name: Cata-tiles-floor-tiling-teal-white-2-mini
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/teal_white_2_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.2
+  - 0.1
+  - 0.05
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+#MARK: full white 1
+- type: tile
+  id: FloorCataTilingFullWhiteVariant1Hex
+  name: Cata-tiles-floor-tiling-full-white-1-hex
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/full_white_1_hex.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.2
+  - 0.1
+  - 0.05
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+#MARK: black red 1
+- type: tile
+  id: FloorCataTilingBlackRedVariant1Hex
+  name: Cata-tiles-floor-tiling-black-red-1-hex
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/black_red_1_hex.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.2
+  - 0.1
+  - 0.05
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+#MARK: blue white 1
+- type: tile
+  id: FloorCataTilingBlueWhiteVariant1Base
+  name: Cata-tiles-floor-tiling-blue-white-1-base
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/blue_white_1_base.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.2
+  - 0.1
+  - 0.05
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCataTilingBlueWhiteVariant1Mini
+  name: Cata-tiles-floor-tiling-blue-white-1-mini
+  sprite: /Textures/_Cataclysm14/Tiles/tiling/blue_white_1_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 0.2
+  - 0.1
+  - 0.05
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V

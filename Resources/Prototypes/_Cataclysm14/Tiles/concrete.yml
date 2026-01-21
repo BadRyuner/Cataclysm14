@@ -13,15 +13,13 @@
   - 1.0
   - 1.0
   baseTurf: FloorCataRockBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
   # isSubfloor: true
   # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
 
 - type: tile
   id: FloorCataConcreteSlabBlack
@@ -36,15 +34,37 @@
   - 1.0
   - 1.0
   baseTurf: FloorCataRockBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
   # isSubfloor: true
   # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
+
+#MARK: Hex concrete tiles
+
+- type: tile
+  id: FloorCataConcreteSlabHex
+  name: Cata-tiles-concrete-slab-hex
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_hex.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCataRockBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
 
 # MARK: Sidewalk
 
@@ -71,15 +91,13 @@
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
   baseTurf: FloorCataRockBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
   # isSubfloor: true
   # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
 
 - type: tile
   id: FloorCataConcreteSlabSidewalkBlack
@@ -104,12 +122,10 @@
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
   baseTurf: FloorCataRockBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
   # isSubfloor: true
   # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier

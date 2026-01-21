@@ -8,15 +8,13 @@
   - 1.0
   - 1.0
   baseTurf: FloorCataConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
   # isSubfloor: true
   # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
 
 - type: tile
   id: FloorCataWoodPlankHorizontal
@@ -28,12 +26,10 @@
   - 1.0
   - 1.0
   baseTurf: FloorCataConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
   # isSubfloor: true
   # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier

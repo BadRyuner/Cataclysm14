@@ -1,0 +1,77 @@
+- type: tile
+  id: FloorCataCarpetBlack
+  name: Cata-tiles-carpet-black
+  sprite: /Textures/_Cataclysm14/Tiles/carpet/carpet_black.png
+  baseTurf: FloorCataWoodPlankHorizontal
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+- type: tile
+  id: FloorCataCarpetBlue
+  name: Cata-tiles-carpet-blue
+  sprite: /Textures/_Cataclysm14/Tiles/carpet/carpet_blue.png
+  baseTurf: FloorCataWoodPlankHorizontal
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+- type: tile
+  id: FloorCataCarpetGreen
+  name: Cata-tiles-carpet-green
+  sprite: /Textures/_Cataclysm14/Tiles/carpet/carpet_green.png
+  baseTurf: FloorCataWoodPlankHorizontal
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+- type: tile
+  id: FloorCataCarpetBeige
+  name: Cata-tiles-carpet-beige
+  sprite: /Textures/_Cataclysm14/Tiles/carpet/carpet_beige.png
+  baseTurf: FloorCataWoodPlankHorizontal
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+- type: tile
+  id: FloorCataCarpetRed
+  name: Cata-tiles-carpet-red
+  sprite: /Textures/_Cataclysm14/Tiles/carpet/carpet_red.png
+  baseTurf: FloorCataWoodPlankHorizontal
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+- type: tile
+  id: FloorCataCarpetBlackGold
+  name: Cata-tiles-carpet-black-gold
+  sprite: /Textures/_Cataclysm14/Tiles/carpet/carpet_black_gold.png
+  baseTurf: FloorCataWoodPlankHorizontal
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true

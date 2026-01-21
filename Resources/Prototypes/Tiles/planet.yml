@@ -330,7 +330,7 @@
     West: /Textures/Tiles/Planet/Snow/snow_double_edge_west.png
   baseTurf: FloorDirt
   itemDrop: FloorTileItemSnow # Delta V
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   # canShovel: true # Delta V # Frontier
   isSubfloor: true
   footstepSounds:

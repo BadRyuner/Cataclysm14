@@ -31,9 +31,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
   baseTurf: FloorCataDirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -71,9 +69,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
   baseTurf: FloorCataDirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -111,9 +107,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
   baseTurf: FloorCataDirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -153,9 +147,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
   baseTurf: FloorCataDirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -193,9 +185,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
   baseTurf: FloorCataDirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -233,9 +223,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
   baseTurf: FloorCataDirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -266,9 +254,7 @@
     North: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
   baseTurf: FloorCataRockBase # Delta V
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
