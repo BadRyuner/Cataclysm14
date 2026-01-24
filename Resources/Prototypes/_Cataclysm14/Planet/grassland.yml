@@ -67,10 +67,10 @@
 #       frequency: 5
 #       noiseType: OpenSimplex2
 #     allowedTiles:
-#     - FloorCDDADirt
-#     - FloorCDDARockBase
-#     - FloorCDDAGrassBaseDirty
-#     - FloorCDDAGrassBaseDirty
+#     - FloorCataDirt
+#     - FloorCataRockBase
+#     - FloorCataGrassBaseDirty
+#     - FloorCataGrassBaseDirty
 #     entities:
 #     - FloraRockSolidPlanet
 #   # Fauna Placement
@@ -81,10 +81,10 @@
 #       frequency: 3
 #       noiseType: OpenSimplex2
 #     allowedTiles:
-#     - FloorCDDADirt
-#     - FloorCDDARockBase
-#     - FloorCDDAGrassBaseDirty
-#     - FloorCDDAGrassBaseDirty
+#     - FloorCataDirt
+#     - FloorCataRockBase
+#     - FloorCataGrassBaseDirty
+#     - FloorCataGrassBaseDirty
 #     entities:
 #     - MonoPlanetmapFaunaDesert
 #   # Flora Placement
@@ -96,9 +96,9 @@
 #       frequency: 2
 #       noiseType: OpenSimplex2
 #     allowedTiles:
-#     - FloorCDDADirt
-#     - FloorCDDAGrassBaseDirty
-#     - FloorCDDAGrassBaseDirty
+#     - FloorCataDirt
+#     - FloorCataGrassBaseDirty
+#     - FloorCataGrassBaseDirty
 #     entities:
 #     - FloraPilumaPlant
 #   # Orakim
@@ -109,18 +109,18 @@
 #       frequency: 2
 #       noiseType: OpenSimplex2
 #     allowedTiles:
-#     - FloorCDDADirt
-#     - FloorCDDAGrassBaseDirty
+#     - FloorCataDirt
+#     - FloorCataGrassBaseDirty
 #     entities:
 #     - FloraOrakimPlant
 #   # Rock decals
 #   - !type:BiomeDecalLayer
 #     allowedTiles:
-#     - FloorCDDADirt
-#     - FloorCDDARockBase
-#     - FloorCDDAGrassBaseDirty
-#     - FloorCDDAGrassBaseDirty
-#     - FloorCDDADirt
+#     - FloorCataDirt
+#     - FloorCataRockBase
+#     - FloorCataGrassBaseDirty
+#     - FloorCataGrassBaseDirty
+#     - FloorCataDirt
 #     threshold: 0.9
 #     divisions: 1
 #     noise:
@@ -139,8 +139,8 @@
 #   # Bush decals
 #   - !type:BiomeDecalLayer
 #     allowedTiles:
-#     - FloorCDDADirt
-#     - FloorCDDAGrassBaseDirty
+#     - FloorCataDirt
+#     - FloorCataGrassBaseDirty
 #     threshold: 0.9
 #     divisions: 1
 #     noise:
@@ -153,7 +153,7 @@
 #   # Large rock areas
 #   - !type:BiomeEntityLayer
 #     allowedTiles:
-#     - FloorCDDAGrassBaseDirty
+#     - FloorCataGrassBaseDirty
 #     threshold: -0.05
 #     noise:
 #       seed: 0
@@ -172,11 +172,11 @@
 #   # Base tiles
 #   - !type:BiomeTileLayer
 #     threshold: -1
-#     tile: FloorCDDADirt
+#     tile: FloorCataDirt
 #   # Apply planet desert tile as noise so it doesnt look flat and boring
 #   - !type:BiomeTileLayer
 #     threshold: -0.40
-#     tile: FloorCDDAGrassBaseDirty
+#     tile: FloorCataGrassBaseDirty
 #     noise:
 #       seed: 0
 #       noiseType: Cellular
@@ -188,7 +188,7 @@
 #       cellularReturnType: Distance2
 #   # Unvariantized tile for rock walls to be placed on
 #   - !type:BiomeTileLayer
-#     tile: FloorCDDAGrassBaseDirty
+#     tile: FloorCataGrassBaseDirty
 #     threshold: -0.30
 #     noise:
 #       seed: 0

@@ -2,8 +2,8 @@
 
 #MARK: Rock
 - type: tile
-  id: FloorCDDARockBase
-  name: CDDA-tiles-rock-base
+  id: FloorCataRockBase
+  name: Cata-tiles-rock-base
   sprite: /Textures/_Cataclysm14/Tiles/rock/rock.png
   variants: 3
   placementVariants:
@@ -19,10 +19,8 @@
     East: /Textures/_Cataclysm14/Tiles/rock/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/rock/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/rock/double_edge.png
-  baseTurf: FloorCDDARockBase
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataRockBlack
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -31,8 +29,8 @@
   weather: true
 
 - type: tile
-  id: FloorCDDARockBlack
-  name: CDDA-tiles-rock-black
+  id: FloorCataRockBlack
+  name: Cata-tiles-rock-black
   sprite: /Textures/_Cataclysm14/Tiles/rock_black/rock_black.png
   variants: 3
   placementVariants:
@@ -48,10 +46,8 @@
     East: /Textures/_Cataclysm14/Tiles/rock_black/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/rock_black/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/rock_black/double_edge.png
-  baseTurf: FloorCDDARockBase
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataRockBlack
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -60,8 +56,8 @@
   weather: true
 
 - type: tile
-  id: FloorCDDARockSand
-  name: CDDA-tiles-rock-sand
+  id: FloorCataRockSand
+  name: Cata-tiles-rock-sand
   sprite: /Textures/_Cataclysm14/Tiles/rock_sand/rock_sand.png
   variants: 3
   placementVariants:
@@ -77,10 +73,8 @@
     East: /Textures/_Cataclysm14/Tiles/rock_sand/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/rock_sand/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/rock_sand/double_edge.png
-  baseTurf: FloorCDDARockBase
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataRockBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass

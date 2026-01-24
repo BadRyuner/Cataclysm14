@@ -1,21 +1,21 @@
 #MARK: Brick
 - type: constructionGraph
-  id: WallCDDABrickRedRedBase
+  id: StructureWallCataBrickRedRedBase
   start: start
   graph:
     - node: start
       edges:
-        - to: WallCDDABrickRedRedBase
+        - to: StructureWallCataBrickRedRedBase
           completed:
-            - !type:SnapToGrid {} # Frontier: use default ctor
+            - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
             - material: Brick
               amount: 2
               doAfter: 1
 
-    - node: WallCDDABrickRedRedBase
-      entity: WallCDDABrickRedRedBase
+    - node: StructureWallCataBrickRedRedBase
+      entity: StructureWallCataBrickRedRedBase
       edges:
         - to: start
           completed:
@@ -32,22 +32,118 @@
 
 #MARK: Concrete
 - type: constructionGraph
-  id: WallCDDAConcreteSolidWhite
+  id: StructureWallCataConcreteSolidWhite
   start: start
   graph:
     - node: start
       edges:
-        - to: WallCDDAConcreteSolidWhite
+        - to: StructureWallCataConcreteSolidWhite
           completed:
-            - !type:SnapToGrid {} # Frontier: use default ctor
+            - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
             - material: Concrete
               amount: 2
               doAfter: 1
 
-    - node: WallCDDAConcreteSolidWhite
-      entity: WallCDDAConcreteSolidWhite
+    - node: StructureWallCataConcreteSolidWhite
+      entity: StructureWallCataConcreteSolidWhite
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetConcrete1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Concrete
+- type: constructionGraph
+  id: StructureWallCataMetalSimpleBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: StructureWallCataMetalSimpleBase
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
+    - node: StructureWallCataMetalSimpleBase
+      entity: StructureWallCataMetalSimpleBase
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetConcrete1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Planks
+- type: constructionGraph
+  id: StructureWallCataWoodPlankBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: StructureWallCataWoodPlankBase
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
+    - node: StructureWallCataWoodPlankBase
+      entity: StructureWallCataWoodPlankBase
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetConcrete1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Logs
+- type: constructionGraph
+  id: StructureWallCataWoodLogBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: StructureWallCataWoodLogBase
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
+    - node: StructureWallCataWoodLogBase
+      entity: StructureWallCataWoodLogBase
       edges:
         - to: start
           completed:

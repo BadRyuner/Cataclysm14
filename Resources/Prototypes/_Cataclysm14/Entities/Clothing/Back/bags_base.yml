@@ -5,7 +5,7 @@
   abstract: true
   components:
   - type: Storage
-    maxItemSize: Huge
+    maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
     - 0,0,9,3
@@ -24,14 +24,14 @@
   abstract: true
   components:
   - type: Storage
-    maxItemSize: Huge
+    maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
     - 0,0,5,2
   - type: Item
     size: Huge
     shape:
-    - 0,0,7,5
+    - 0,0,4,3
   - type: StaticPrice
     price: 17500
     vendPrice: 22500
@@ -43,7 +43,7 @@
   abstract: true
   components:
   - type: Storage
-    maxItemSize: Huge
+    maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
     - 0,0,3,3
@@ -62,7 +62,7 @@
   abstract: true
   components:
   - type: Storage
-    maxItemSize: Huge
+    maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
     - 0,0,3,2
@@ -82,7 +82,7 @@
   abstract: true
   components:
   - type: Storage
-    maxItemSize: Huge
+    maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
     - 0,0,7,3

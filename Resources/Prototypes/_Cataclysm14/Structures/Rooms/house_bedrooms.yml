@@ -1,0 +1,133 @@
+#MARK: bedroom 3x3
+- type: dungeonRoom
+  id: RoomSpawnerHouseBedroomBase3x3a
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_3x3.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerBedroomBase3x3
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseBedroomBase3x3b
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_3x3.yml
+  offset: 4,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerBedroomBase3x3
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseBedroomBase3x3c
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_3x3.yml
+  offset: 8,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerBedroomBase3x3
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHouseBedroomBase3x3
+  name: room spawner house bedroom base
+  suffix: Bedroom][3x3
+  components:
+  - type: Sprite
+    scale: 3,3
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_3x3
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerBedroomBase3x3
+
+#MARK: bedroom 4x3
+- type: dungeonRoom
+  id: RoomSpawnerHouseBedroomBase4x3a
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x3.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerBedroomBase4x3
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseBedroomBase4x3b
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x3.yml
+  offset: 6,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerBedroomBase4x3
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseBedroomBase4x3c
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x3.yml
+  offset: 12,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerBedroomBase4x3
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHouseBedroomBase4x3
+  name: room spawner house bedroom base
+  suffix: Bedroom][4x3
+  components:
+  - type: Sprite
+    offset: -0.5,-1
+    scale: 4,3
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_4x3
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerBedroomBase4x3
+
+#MARK: bedroom 4x4
+- type: dungeonRoom
+  id: RoomSpawnerHouseBedroomBase4x4a
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x4.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerBedroomBase4x4
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseBedroomBase4x4b
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x4.yml
+  offset: 6,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerBedroomBase4x4
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseBedroomBase4x4c
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x4.yml
+  offset: 12,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerBedroomBase4x4
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHouseBedroomBase4x4
+  name: room spawner house bedroom base
+  suffix: Bedroom][4x4
+  components:
+  - type: Sprite
+    offset: -0.5,-0.5
+    scale: 4,4
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_4x4
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerBedroomBase4x4

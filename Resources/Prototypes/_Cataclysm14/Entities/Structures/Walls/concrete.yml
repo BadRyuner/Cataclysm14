@@ -1,32 +1,159 @@
-- type: entity
-  parent: BaseWallCataTierTwo
-  id: WallCDDAConcreteSolidWhite
-  name: white solid concrete wall
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Structures/Walls/concrete_solid_white.rsi
-  - type: Icon
-    sprite: _Cataclysm14/Structures/Walls/concrete_solid_white.rsi
-  - type: IconSmooth
-    key: walls
-    base: concrete
-  - type: Construction
-    graph: WallCDDAConcreteSolidWhite
-    node: WallCDDAConcreteSolidWhite
+#MARK: Reinfor concrete
+  - type: entity
+    parent: BaseStructureWallCataTierThree
+    id: StructureWallCataConcreteReinforcedWhite
+    name: white reinforced concrete wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: Rebar
+      node: StructureWallCataConcreteReinforcedWhite
 
+#MARK: Simple concrete
+  - type: entity
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidBase
+    name: solid concrete wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_base.rsi
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_base.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
 
-- type: entity
-  parent: BaseWallCataTierThree
-  id: WallCDDAConcreteReinforcedWhite
-  name: white reinforced concrete wall
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
-  - type: Icon
-    sprite: _Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
-  - type: IconSmooth
-    key: walls
-    base: concrete
-  - type: Construction
-    graph: Rebar
-    node: WallCDDAConcreteReinforcedWhite
+#TODO: make the center piece not colored, failed at doing this and spent so much time
+#MARK: Concrete white
+  - type: entity
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidWhite
+    name: white solid concrete wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
+
+#MARK: Concrete red
+  - type: entity
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidRed
+    name: red solid concrete wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      color: "#ED2939"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
+
+#MARK: Concrete blue
+  - type: entity
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidBlue
+    name: blue solid concrete wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      color: "#2832C2"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
+
+#MARK: Concrete green
+  - type: entity
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidGreen
+    name: green solid concrete wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      color: "#3d8c40"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
+
+#MARK: Concrete yellow
+  - type: entity
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidYellow
+    name: yellow solid concrete wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      color: "#E4CD05"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
+
+#MARK: Concrete purple
+  - type: entity
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidPurple
+    name: purple solid concrete wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      color: "#702963"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite
+
+#MARK: Concrete grey
+  - type: entity
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataConcreteSolidGrey
+    name: grey solid concrete wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      color: "#AAAAAA"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: StructureWallCataConcreteSolidWhite
+      node: StructureWallCataConcreteSolidWhite

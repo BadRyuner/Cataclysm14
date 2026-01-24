@@ -137,25 +137,47 @@ tiles-xeno-steel-corner = xeno steel corner tile
 tiles-xeno-maint = xeno techmaint
 tiles-dark-squiggly = dark steel squiggly tile
 
-CDDA-tiles-grass-base-dirty = grass dirty floor
-CDDA-tiles-grass-autumn-dirty = autumn dirty grass floor
-CDDA-tiles-grass-summer-dirty = summer dirty grass floor
-CDDA-tiles-grass-base-clean = grass mowed floor
-CDDA-tiles-grass-autumn-clean = autumn mowed grass floor
-CDDA-tiles-grass-summer-clean = summer mowed grass floor
-CDDA-tiles-dirt = dirt floor
-CDDA-tiles-asphalt-base = gray asphalt floor
-CDDA-tiles-asphalt-red = red asphalt floor
-CDDA-tiles-asphalt-base-sidewalk = gray asphalt sidewalk floor
-CDDA-tiles-asphalt-red-sidewalk = red asphalt sidewalk floor
-CDDA-tiles-sand-base = sand floor
-CDDA-tiles-rock-base = rocky floor
-CDDA-tiles-rock-black = black rocky floor
-CDDA-tiles-rock-sand = sand rocky floor
-CDDA-tiles-floor-plank-vertical = vertical wooden plank floor
-CDDA-tiles-floor-plank-horizontal = horizontal wooden plank floor
-CDDA-tiles-concrete-slab-base = conrete slab floor
-CDDA-tiles-concrete-slab-black = black conrete slab floor
-CDDA-tiles-concrete-slab-base-sidewalk = conrete sidewalk floor
-CDDA-tiles-concrete-slab-black-sidewalk = black conrete sidewalk floor
-CDDA-tiles-metal-diamond-plating = diamond plating metal floor
+Cata-tiles-grass-base-dirty = grass dirty floor
+Cata-tiles-grass-autumn-dirty = autumn dirty grass floor
+Cata-tiles-grass-summer-dirty = summer dirty grass floor
+Cata-tiles-grass-base-clean = grass mowed floor
+Cata-tiles-grass-autumn-clean = autumn mowed grass floor
+Cata-tiles-grass-summer-clean = summer mowed grass floor
+
+Cata-tiles-dirt = dirt floor
+
+Cata-tiles-asphalt-base = gray asphalt floor
+Cata-tiles-asphalt-red = red asphalt floor
+Cata-tiles-asphalt-base-sidewalk = gray asphalt sidewalk floor
+Cata-tiles-asphalt-red-sidewalk = red asphalt sidewalk floor
+
+Cata-tiles-sand-base = sand floor
+Cata-tiles-rock-base = rocky floor
+Cata-tiles-rock-black = black rocky floor
+Cata-tiles-rock-sand = sand rocky floor
+
+Cata-tiles-floor-plank-vertical = vertical wooden plank floor
+Cata-tiles-floor-plank-horizontal = horizontal wooden plank floor
+
+Cata-tiles-concrete-slab-base = conrete slab floor
+Cata-tiles-concrete-slab-black = black conrete slab floor
+Cata-tiles-concrete-slab-base-sidewalk = conrete sidewalk floor
+Cata-tiles-concrete-slab-black-sidewalk = black conrete sidewalk floor
+Cata-tiles-concrete-slab-hex = hexagonal conrete slab floor
+
+Cata-tiles-metal-diamond-plating = diamond plating metal floor
+
+Cata-tiles-floor-tiling-brown-grey-1-base = brown and grey tiling floor
+Cata-tiles-floor-tiling-brown-grey-1-mini = brown and grey small tiling floor
+Cata-tiles-floor-tiling-green-grey-1-base = green and grey tiling floor
+Cata-tiles-floor-tiling-green-grey-1-mini = green and grey small tiling floor
+Cata-tiles-floor-tiling-black-white-1-base = black and white tiling floor
+Cata-tiles-floor-tiling-black-white-1-mini = black and white small tiling floor
+Cata-tiles-floor-tiling-teal-white-1-base = teal and white tiling floor
+Cata-tiles-floor-tiling-teal-white-1-mini = teal and white small tiling floor
+Cata-tiles-floor-tiling-teal-white-2-base = teal and white mono tiling floor
+Cata-tiles-floor-tiling-teal-white-2-mini = teal and white small mono tiling floor
+Cata-tiles-floor-tiling-full-white-1-hex=  white hexagonal tiling floor
+Cata-tiles-floor-tiling-black-red-1-hex = black and red hexagonal tiling floor
+Cata-tiles-floor-tiling-blue-white-1-base = blue and white tiling floor
+Cata-tiles-floor-tiling-blue-white-1-mini = blue and white small tiling floor

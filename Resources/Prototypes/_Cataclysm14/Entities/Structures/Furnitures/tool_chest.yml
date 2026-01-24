@@ -1,0 +1,206 @@
+- type: entity
+  id: StructureFurnitureToolchestMobileCompact
+  parent: [BaseStructure, StructureWheeled]
+  name: compact tool chest
+  description: Metal shelves, can store things inside itself.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Furnitures/tool_chest_mobile.rsi
+    state: mobile_tool_chest_compact
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,9,9
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: true
+
+- type: entity
+  id: StructureFurnitureToolchestMobileLarge
+  parent: [BaseStructure, StructureWheeled]
+  name: large tool chest
+  description: Metal shelves, can store things inside itself.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Furnitures/tool_chest_mobile.rsi
+    state: mobile_tool_chest_large
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,11,11
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: true
+
+- type: entity
+  id: StructureFurnitureToolchestMobileWorkstation
+  parent: [BaseStructure, StructureWheeled]
+  name: tool chest mounted workstation
+  description: Metal shelves, can store things inside itself.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Furnitures/tool_chest_mobile.rsi
+    state: mobile_tool_chest_workstation
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,9,9
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: true
+
+- type: entity
+  id: StructureFurnitureToolchestCounter
+  parent: [BaseStructure, StructureWheeled]
+  name: tool chest counter
+  description: Metal shelves, can store things inside itself.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Furnitures/tool_chest_counter.rsi
+    state: full
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,5,7
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: IconSmooth
+    key: toolchest
+    base: metal
+  - type: Climbable

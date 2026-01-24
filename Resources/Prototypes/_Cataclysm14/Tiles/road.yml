@@ -1,8 +1,8 @@
 #MARK: Asphalt
 
 - type: tile
-  id: FloorCDDAAsphaltBase
-  name: CDDA-tiles-asphalt-base
+  id: FloorCataAsphaltBase
+  name: Cata-tiles-asphalt-base
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt.png
   variants: 4
   placementVariants:
@@ -10,10 +10,8 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorCDDARockBase # Delta V
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  # deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataRockBase # Delta V
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -22,8 +20,8 @@
   weather: true
 
 - type: tile
-  id: FloorCDDAAsphaltRed
-  name: CDDA-tiles-asphalt-red
+  id: FloorCataAsphaltRed
+  name: Cata-tiles-asphalt-red
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt_red.png
   variants: 4
   placementVariants:
@@ -31,10 +29,8 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorCDDARockBase # Delta V
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  # deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataRockBase # Delta V
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -70,7 +66,6 @@
   - type: Transform
     anchored: true
     noRot: true
-  - type: Fixtures
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -128,7 +123,6 @@
   - type: Transform
     anchored: true
     noRot: true
-  - type: Fixtures
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -161,11 +155,51 @@
     color: "#cdc208"
     state: line_4
 
+- type: entity
+  id: FloorRoadMarkingStopSolidWhite
+  name: white solid road stop markings
+  description: Some painted on road markings. Looks easy enough to remove by hitting it. Those ones are made with white paint.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_solid
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_solid
+  - type: Clickable
+  - type: Transform
+    anchored: true
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Appearance
+
+- type: entity
+  parent: FloorRoadMarkingStopSolidWhite
+  id: FloorRoadMarkingStopBrokenWhite
+  name: white broken road stop markings
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_broken
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_broken
+
 # MARK: Sidewalk
 
 - type: tile
-  id: FloorCDDAAsphaltSidewalkBase
-  name: CDDA-tiles-asphalt-base-sidewalk
+  id: FloorCataAsphaltSidewalkBase
+  name: Cata-tiles-asphalt-base-sidewalk
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt.png
   variants: 4
   placementVariants:
@@ -183,10 +217,8 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
-  baseTurf: FloorCDDARockBase # Delta V
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  # deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataRockBase # Delta V
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -195,8 +227,8 @@
   weather: true
 
 - type: tile
-  id: FloorCDDAAsphaltSidewalkRed
-  name: CDDA-tiles-asphalt-red-sidewalk
+  id: FloorCataAsphaltSidewalkRed
+  name: Cata-tiles-asphalt-red-sidewalk
   sprite: /Textures/_Cataclysm14/Tiles/road/asphalt_red.png
   variants: 4
   placementVariants:
@@ -214,10 +246,8 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
-  baseTurf: FloorCDDARockBase # Delta V
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  # deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataRockBase # Delta V
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid

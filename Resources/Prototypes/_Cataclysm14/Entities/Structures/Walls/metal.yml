@@ -1,6 +1,6 @@
 - type: entity
-  parent: BaseWallCataTierThree
-  id: WallCDDAMetalReinforced
+  parent: BaseStructureWallCataTierThree
+  id: StructureWallCataMetalReinforced
   name: reinforced metal wall
   components:
   - type: Sprite
@@ -12,4 +12,20 @@
     base: metal
   - type: Construction
     graph: Rebar
-    node: WallCDDAMetalReinforced
+    node: StructureWallCataMetalReinforced
+
+- type: entity
+  parent: BaseStructureWallCataTierTwo
+  id: StructureWallCataMetalSimpleBase
+  name: simple metal wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/metal_simple.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/metal_simple.rsi
+  - type: IconSmooth
+    key: walls
+    base: metal
+  - type: Construction
+    graph: Rebar
+    node: StructureWallCataMetalSimpleBase

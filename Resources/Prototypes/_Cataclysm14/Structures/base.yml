@@ -1,0 +1,65 @@
+- type: entity
+  id: BaseStructureSpawner
+  parent: MarkerBase
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Cataclysm14/Mapping/generic.rsi
+        state: structure_border_small
+  - type: RoomFill
+    maxSize: 999,999
+    rotation: false
+    clearExisting: true
+    inheritRotation: true
+
+- type: dungeonRoom
+  id: CataStructureTest5x5a
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/proceduraltestsmall.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureTestSmall
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerTest5x5
+  name: structure spawner small test
+  suffix: 5x5
+  components:
+  - type: Sprite
+    scale: 5,5
+    layers:
+      - sprite: _Cataclysm14/Mapping/generic.rsi
+        state: structure_border_small
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureTestSmall
+
+- type: dungeonRoom
+  id: CataStructureTestRecursive10x10
+  size: 10,10
+  atlas: /Maps/_Cataclysm14/Structures/proceduraltestrecursive.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureTestRecursive
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: CataStructureTestRecursive10x10
+  name: structure spawner recursive test
+  suffix: 10x10
+  components:
+  - type: Sprite
+    offset: -0.5,-0.5
+    scale: 10,10
+    layers:
+      - sprite: _Cataclysm14/Mapping/generic.rsi
+        state: structure_border_small
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureTestRecursive

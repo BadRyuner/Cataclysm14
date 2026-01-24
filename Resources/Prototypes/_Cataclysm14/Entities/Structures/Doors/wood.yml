@@ -1,10 +1,13 @@
 - type: entity
-  id: DoorCDDAWoodHouse
+  id: DoorCataWoodHouse
   name: wooden residential door
   parent: BaseMaterialDoorNavMap
   description: A door, where will it lead?
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
     layers:
     - state: closed
@@ -31,29 +34,45 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: Construction
+    graph: DoorCataWoodHouse
+    node: DoorCataWoodHouse
 
 - type: entity
   parent: BaseWallMonoTierOne
-  id: DoorCDDAWoodHouseBroken
+  id: DoorCataWoodHouseBroken
   name: broken wooden residential door
-  description: A door, where will it lead?
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
-    state: broken
-  - type: Icon
-    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
-    state: broken
-
-- type: entity
-  parent: BaseWallMonoTierOne
-  id: DoorCDDAWoodHouseLocked
-  name: wooden residential door
   description: A shattered wooden door.
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: broken
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+    state: broken
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: BaseWallMonoTierOne
+  id: DoorCataWoodHouseLocked
+  suffix: Locked
+  name: wooden residential door
+  description: A door, where will it lead?
+  components:
+  - type: Transform
+    noRot: true
+  - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
     state: closed
   - type: Icon
     sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
     state: closed
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite

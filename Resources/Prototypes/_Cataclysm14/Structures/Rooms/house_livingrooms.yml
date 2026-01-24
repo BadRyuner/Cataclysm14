@@ -1,0 +1,134 @@
+#MARK: Living room 4x4
+- type: dungeonRoom
+  id: RoomSpawnerHouseLivingRoomBase4x4a
+  size: 5,5
+  offset: 0,0
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_4x4.yml
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerLivingRoomBase4x4
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseLivingRoomBase4x4b
+  size: 5,5
+  offset: 6,0
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_4x4.yml
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerLivingRoomBase4x4
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseLivingRoomBase4x4c
+  size: 5,5
+  offset: 12,0
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_4x4.yml
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerLivingRoomBase4x4
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHouseLivingRoomBase4x4
+  name: room spawner house living room base
+  suffix: LivingRoom][4x4
+  components:
+  - type: Sprite
+    offset: -0.5,-0.5
+    scale: 4,4
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_4x4
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerLivingRoomBase4x4
+
+#MARK: Living room 5x4
+- type: dungeonRoom
+  id: RoomSpawnerHouseLivingRoomBase5x4a
+  size: 5,5
+  offset: 0,0
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x4.yml
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerLivingRoomBase5x4
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseLivingRoomBase5x4b
+  size: 5,5
+  offset: 6,0
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x4.yml
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerLivingRoomBase5x4
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseLivingRoomBase5x4c
+  size: 5,5
+  offset: 12,0
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x4.yml
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerLivingRoomBase5x4
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHouseLivingRoomBase5x4
+  name: room spawner house living room base
+  suffix: LivingRoom][5x4
+  components:
+  - type: Sprite
+    offset: 0,-0.5
+    scale: 5,4
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_4x4
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerLivingRoomBase5x4
+
+#MARK: Living room 5x5
+- type: dungeonRoom
+  id: RoomSpawnerHouseLivingRoomBase5x5a
+  size: 5,5
+  offset: 0,0
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x5.yml
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerLivingRoomBase5x5
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseLivingRoomBase5x5b
+  size: 5,5
+  offset: 6,0
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x5.yml
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerLivingRoomBase5x5
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseLivingRoomBase5x5c
+  size: 5,5
+  offset: 12,0
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x5.yml
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerLivingRoomBase5x5
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHouseLivingRoomBase5x5
+  name: room spawner house living room base
+  suffix: LivingRoom][5x5
+  components:
+  - type: Sprite
+    offset: 0,0
+    scale: 5,5
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_4x4
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerLivingRoomBase5x5

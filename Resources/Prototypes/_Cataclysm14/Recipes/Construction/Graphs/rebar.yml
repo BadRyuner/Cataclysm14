@@ -7,7 +7,7 @@
       edges:
         - to: Rebar
           completed:
-            - !type:SnapToGrid {} # Frontier: use default ctor
+            - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
             - material: Rebar
@@ -15,7 +15,7 @@
               doAfter: 1
 #MARK: Rebar Node
     - node: Rebar
-      entity: WallCDDARebar
+      entity: StructureWallCataRebar
       edges:
         - to: start
           completed:
@@ -31,7 +31,7 @@
               doAfter: 2
 
 #MARK: Reinforced Metal
-        - to: WallCDDAMetalReinforced
+        - to: StructureWallCataMetalReinforced
           completed:
             - !type:SnapToGrid
               southRotation: true
@@ -43,7 +43,7 @@
               doAfter: 2
 
 #MARK: Reinforced Brick
-        - to: WallCDDABrickRedRedReinforced
+        - to: StructureWallCataBrickRedRedReinforced
           completed:
             - !type:SnapToGrid
               southRotation: true
@@ -55,7 +55,19 @@
               doAfter: 2
 
 #MARK: Reinforced Concrete
-        - to: WallCDDAConcreteReinforcedWhite
+        - to: StructureWallCataConcreteReinforcedWhite
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Concrete
+              amount: 5
+              doAfter: 2
+
+#MARK: Solid metal
+        - to: StructureWallCataMetalSimpleBase
           completed:
             - !type:SnapToGrid
               southRotation: true
@@ -75,8 +87,8 @@
 
 
 #MARK: Reinforced Metal
-    - node: WallCDDAMetalReinforced
-      entity: WallCDDAMetalReinforced
+    - node: StructureWallCataMetalReinforced
+      entity: StructureWallCataMetalReinforced
       edges:
         - to: Rebar
           completed:
@@ -90,8 +102,8 @@
               doAfter: 10
 
 #MARK: Reinforced Brick
-    - node: WallCDDABrickRedRedReinforced
-      entity: WallCDDABrickRedRedReinforced
+    - node: StructureWallCataBrickRedRedReinforced
+      entity: StructureWallCataBrickRedRedReinforced
       edges:
         - to: Rebar
           completed:
@@ -105,8 +117,23 @@
               doAfter: 10
 
 #MARK: Reinforced Concrete
-    - node: WallCDDAConcreteReinforcedWhite
-      entity: WallCDDAConcreteReinforcedWhite
+    - node: StructureWallCataConcreteReinforcedWhite
+      entity: StructureWallCataConcreteReinforcedWhite
+      edges:
+        - to: Rebar
+          completed:
+            - !type:GivePrototype
+              prototype: SheetConcrete1
+              amount: 5
+          steps:
+            - tool: Welding
+              doAfter: 20
+            - tool: Prying
+              doAfter: 10
+
+#MARK: Solid metal
+    - node: StructureWallCataMetalSimpleBase
+      entity: StructureWallCataMetalSimpleBase
       edges:
         - to: Rebar
           completed:

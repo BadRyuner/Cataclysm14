@@ -1,0 +1,7 @@
+# Attempted to keep the files in alphabetical order so its easier to audit.
+# Finding individual authors is an unfeasible task. If you can reference the author please do so.
+
+- files: ["carpets (etc)"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "modified by avtomata (disc:core_mene) inspired by WALPVRGIS for Goonstation, taken at commit 236551b95a5b24917c72f3069223026b2dc4e690 from floors.dmi"
+  source: "https://github.com/goonstation/goonstation"

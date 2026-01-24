@@ -2,8 +2,8 @@
 
 #MARK: Sand
 - type: tile
-  id: FloorCDDASandBase
-  name: CDDA-tiles-sand-base
+  id: FloorCataSandBase
+  name: Cata-tiles-sand-base
   sprite: /Textures/_Cataclysm14/Tiles/sand/sand.png
   variants: 6
   placementVariants:
@@ -23,10 +23,8 @@
     East: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
-  baseTurf: FloorCDDARockSand
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataRockSand
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass

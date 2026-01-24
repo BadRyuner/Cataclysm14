@@ -34,3 +34,93 @@
 
   - type: Tag
     id: ToolCrowbar
+
+#MARK: Structures
+
+  - type: Tag
+    id: CataStructureTestSmall
+
+  - type: Tag
+    id: CataStructureTestRecursive
+
+  - type: Tag
+    id: CataStructureHouseSmall20x20
+
+#MARK: Roads
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseStraight13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseFourway13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseThreeway13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseCornerSharp13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseCornerLong26x26
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBase13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseFourway13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseThreeway13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerSharp13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong26x26
+
+#MARK: Roomfills>
+
+
+
+#marking space
+
+
+#MARK: Bedrooms
+  - type: Tag
+    id: CataStructureSpawnerBedroomBase3x3
+
+  - type: Tag
+    id: CataStructureSpawnerBedroomBase4x3
+
+  - type: Tag
+    id: CataStructureSpawnerBedroomBase4x4
+
+  - type: Tag
+    id: CataStructureSpawnerBedroomBase5x4
+
+  - type: Tag
+    id: CataStructureSpawnerBedroomBase5x5
+
+#MARK: Living rooms
+  - type: Tag
+    id: CataStructureSpawnerLivingRoomBase4x4
+
+  - type: Tag
+    id: CataStructureSpawnerLivingRoomBase5x4
+
+  - type: Tag
+    id: CataStructureSpawnerLivingRoomBase5x5
+
+  - type: Tag
+    id: CataStructureSpawnerLivingRoomBase6x5
+
+#MARK: Garages
+  - type: Tag
+    id: CataRoomSpawnerHouseGarageBase5x6
+
+  - type: Tag
+    id: CataRoomSpawnerHouseGarageBase6x6
+
+# #MARK: City Block
+#   - type: Tag
+#     id: CataStructureSmallNeighborhood91x91
+
+#MARK: Houses
+  - type: Tag
+    id: CataStructureHouseSmall13x13
+
+  - type: Tag
+    id: CataStructureHouseMedium26x26
+
+  - type: Tag
+    id: CataStructureHouseLarge39x39

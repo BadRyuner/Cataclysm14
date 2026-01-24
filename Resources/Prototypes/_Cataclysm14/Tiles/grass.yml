@@ -2,8 +2,8 @@
 
 # MARK: Dirty
 - type: tile
-  id: FloorCDDAGrassBaseDirty
-  name: CDDA-tiles-grass-base-dirty
+  id: FloorCataGrassBaseDirty
+  name: Cata-tiles-grass-base-dirty
   sprite: /Textures/_Cataclysm14/Tiles/grass/grass.png
   variants: 13
   placementVariants:
@@ -30,10 +30,8 @@
     East: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
-  baseTurf: FloorCDDADirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -42,8 +40,8 @@
   weather: true
 
 - type: tile
-  id: FloorCDDAGrassAutumnDirty
-  name: CDDA-tiles-grass-autumn-dirty
+  id: FloorCataGrassAutumnDirty
+  name: Cata-tiles-grass-autumn-dirty
   sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass_autumn.png
   variants: 13
   placementVariants:
@@ -70,10 +68,8 @@
     East: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
-  baseTurf: FloorCDDADirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -82,8 +78,8 @@
   weather: true
 
 - type: tile
-  id: FloorCDDAGrassSummerDirty
-  name: CDDA-tiles-grass-summer-dirty
+  id: FloorCataGrassSummerDirty
+  name: Cata-tiles-grass-summer-dirty
   sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass_summer.png
   variants: 13
   placementVariants:
@@ -110,10 +106,8 @@
     East: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
-  baseTurf: FloorCDDADirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -124,8 +118,8 @@
 # MARK: Clean
 
 - type: tile
-  id: FloorCDDAGrassBaseClean
-  name: CDDA-tiles-grass-base-clean
+  id: FloorCataGrassBaseClean
+  name: Cata-tiles-grass-base-clean
   sprite: /Textures/_Cataclysm14/Tiles/grass/grass.png
   variants: 13
   placementVariants:
@@ -152,10 +146,8 @@
     East: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
-  baseTurf: FloorCDDADirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -164,8 +156,8 @@
   weather: true
 
 - type: tile
-  id: FloorCDDAGrassAutumnClean
-  name: CDDA-tiles-grass-autumn-clean
+  id: FloorCataGrassAutumnClean
+  name: Cata-tiles-grass-autumn-clean
   sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass_autumn.png
   variants: 13
   placementVariants:
@@ -192,10 +184,8 @@
     East: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
-  baseTurf: FloorCDDADirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -204,8 +194,8 @@
   weather: true
 
 - type: tile
-  id: FloorCDDAGrassSummerClean
-  name: CDDA-tiles-grass-summer-clean
+  id: FloorCataGrassSummerClean
+  name: Cata-tiles-grass-summer-clean
   sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass_summer.png
   variants: 13
   placementVariants:
@@ -232,10 +222,8 @@
     East: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
-  baseTurf: FloorCDDADirt
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -246,8 +234,8 @@
 #MARK: Dirt
 
 - type: tile
-  id: FloorCDDADirt
-  name: CDDA-tiles-dirt
+  id: FloorCataDirt
+  name: Cata-tiles-dirt
   sprite: /Textures/_Cataclysm14/Tiles/dirt/dirt.png
   variants: 4
   placementVariants:
@@ -265,10 +253,8 @@
     East: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
-  baseTurf: FloorCDDARockBase # Delta V
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataRockBase # Delta V
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid

@@ -1,0 +1,87 @@
+- type: entity
+  id: StructureApplianceFuelStationPumpBase
+  name: fuel station pump
+  parent: StorageTank
+  suffix: Full
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+  - type: DamageOnToolInteract
+    tools: Welding
+    weldingDamage:
+      types:
+        Heat: 10
+  - type: PacifismDangerousAttack
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 175
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Appliances/fuel_station_pump.rsi
+    state: icon
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 1500
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.45,0.25,0.05"
+        density: 55
+        mask:
+        - BulletImpassable
+        layer:
+        - BulletImpassable
+  - type: RequiresGrid
+
+- type: entity
+  id: StructureApplianceFuelStationPumpOld
+  name: old fuel station pump
+  parent: StorageTank
+  suffix: Full
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+    tankType: Fuel
+  - type: DamageOnToolInteract
+    tools: Welding
+    weldingDamage:
+      types:
+        Heat: 10
+  - type: PacifismDangerousAttack
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 175
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Appliances/fuel_station_pump_old.rsi
+    state: icon
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 1500
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.45,0.25,0.05"
+        density: 55
+        mask:
+        - BulletImpassable
+        layer:
+        - BulletImpassable
+  - type: RequiresGrid

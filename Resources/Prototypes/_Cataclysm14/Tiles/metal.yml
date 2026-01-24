@@ -1,14 +1,12 @@
 - type: tile
-  id: FloorCDDAMetalDiamondPlating
-  name: CDDA-tiles-metal-diamond-plating
+  id: FloorCataMetalDiamondPlating
+  name: Cata-tiles-metal-diamond-plating
   sprite: /Textures/_Cataclysm14/Tiles/metal/diamond_plating.png
-  baseTurf: FloorCDDAConcreteSlabBase
-  deconstructTools: [ Digging ] # Frontier
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassDark # Delta V
   heatCapacity: 10000
   # isSubfloor: true
   # weather: true
-  #canCrowbar: false # Come back
-  # canShovel: true # Delta V # Frontier
