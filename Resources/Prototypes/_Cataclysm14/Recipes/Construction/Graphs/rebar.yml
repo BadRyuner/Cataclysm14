@@ -66,6 +66,18 @@
               amount: 5
               doAfter: 2
 
+#MARK: Solid metal
+        - to: StructureWallCataMetalSimpleBase
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Concrete
+              amount: 5
+              doAfter: 2
+
 #MARK: Nodes >>>>
 
 
@@ -107,6 +119,21 @@
 #MARK: Reinforced Concrete
     - node: StructureWallCataConcreteReinforcedWhite
       entity: StructureWallCataConcreteReinforcedWhite
+      edges:
+        - to: Rebar
+          completed:
+            - !type:GivePrototype
+              prototype: SheetConcrete1
+              amount: 5
+          steps:
+            - tool: Welding
+              doAfter: 20
+            - tool: Prying
+              doAfter: 10
+
+#MARK: Solid metal
+    - node: StructureWallCataMetalSimpleBase
+      entity: StructureWallCataMetalSimpleBase
       edges:
         - to: Rebar
           completed:
