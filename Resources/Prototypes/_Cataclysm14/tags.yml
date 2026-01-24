@@ -111,9 +111,9 @@
   - type: Tag
     id: CataRoomSpawnerHouseGarageBase6x6
 
-#MARK: City Block
-  - type: Tag
-    id: CataStructureSmallNeighborhood91x91
+# #MARK: City Block
+#   - type: Tag
+#     id: CataStructureSmallNeighborhood91x91
 
 #MARK: Houses
   - type: Tag
