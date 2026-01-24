@@ -28,4 +28,4 @@
     base: metal
   - type: Construction
     graph: Rebar
-    node: StructureWallCataMetalSimple
+    node: StructureWallCataMetalSimpleBase
