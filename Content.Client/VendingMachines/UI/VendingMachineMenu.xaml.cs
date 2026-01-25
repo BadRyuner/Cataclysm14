@@ -206,7 +206,7 @@ namespace Content.Client.VendingMachines.UI
 
                 // Frontier: unlimited vending
                 if (entry.Amount != uint.MaxValue)
-                    itemText = $"[{BankSystemExtensions.ToSpesoString(cost)}] [{"x" + entry.Amount}] {itemName}"; // Cataclysm14, pythonslop enjoyer
+                    itemText = $"[{BankSystemExtensions.ToSpesoString(cost)}] [{"x" + entry.Amount}] {itemName}"; //Cataclysm14, pythonslop enjoyer
                 else
                     itemText = $"[{BankSystemExtensions.ToSpesoString(cost)}] {itemName}";
                 // End Frontier: unlimited vending
