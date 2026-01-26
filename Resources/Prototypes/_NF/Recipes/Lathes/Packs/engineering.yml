@@ -9,8 +9,6 @@
 - type: latheRecipePack
   id: NFEngineering
   recipes:
-#  - ShipyardRCD
-#  - ShipyardRCDAmmo
   - RCD
   - RCDAmmo
   - ConstructionBagOfHolding

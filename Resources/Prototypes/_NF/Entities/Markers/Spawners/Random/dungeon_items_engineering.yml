@@ -108,8 +108,6 @@
     rarePrototypes:
     - RCD # Mono revert
     - RCDAmmo # Mono
-#    - ShipyardRCD
-#    - ShipyardRCDAmmo
     - SyndicateJawsOfLife
     rareChance: 0.03 # 0.01->0.03 Mono
 
@@ -309,7 +307,6 @@
     # Mats
     - WeldingFuelTankHighCapacity
     # Filled crates
-    - CrateEngineeringKitShipyardRcd
     - CrateEngineeringKitRtg
     - CrateEngineeringKitFabrication
     - CrateEngineerChiefHardsuit

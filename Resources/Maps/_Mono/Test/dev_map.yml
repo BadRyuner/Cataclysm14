@@ -7393,20 +7393,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -3.2517176,-10.459884
       parent: 2
-- proto: ShipyardRCD
-  entities:
-  - uid: 1086
-    components:
-    - type: Transform
-      pos: -2.0677912,4.7188888
-      parent: 2
-- proto: ShipyardRCDAmmo
-  entities:
-  - uid: 1087
-    components:
-    - type: Transform
-      pos: -1.5573746,4.7501388
-      parent: 2
 - proto: SignalButton
   entities:
   - uid: 1088

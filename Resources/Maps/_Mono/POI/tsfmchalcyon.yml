@@ -48246,20 +48246,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 5.696982,23.40262
       parent: 1
-- proto: ShipyardRCD
-  entities:
-  - uid: 7391
-    components:
-    - type: Transform
-      pos: 6.624542,-26.38359
-      parent: 1
-- proto: ShipyardRCDAmmo
-  entities:
-  - uid: 7392
-    components:
-    - type: Transform
-      pos: 7.062042,-26.550373
-      parent: 1
 - proto: ShotGunCabinetFilled
   entities:
   - uid: 7393

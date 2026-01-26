@@ -100,15 +100,6 @@
     - PinpointerUniversal
 
 - type: loadout
-  id: ContractorShipyardRCD
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: ContractorT2
-  price: 5000
-  inhand:
-    - ShipyardRCD
-
-- type: loadout
   id: ContractorHandheldCrewMonitor
   effects:
   - !type:GroupLoadoutEffect

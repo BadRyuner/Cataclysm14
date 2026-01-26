@@ -44,18 +44,6 @@
 
 - type: entity
   parent: CrateEngineering
-  id: CrateEngineeringKitShipyardRcd
-  name: shipyard RCD toolkit
-  description: Contains a full shipyard RCD kit.
-  components:
-  - type: StorageFill
-    contents:
-    - id: ShipyardRCD
-    - id: ShipyardRCDAmmo
-      amount: 4
-
-- type: entity
-  parent: CrateEngineering
   id: CrateEngineerHardsuit
   name: station engineer's hardsuit crate
   description: Contains a station engineer hardsuit.

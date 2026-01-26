@@ -257,8 +257,6 @@
   tier: 3
   cost: 15000
   recipeUnlocks:
-#  - ShipyardRCD # Frontier
-#  - ShipyardRCDAmmo # Frontier
   - RCD
   - RCDAmmo
   - NFBlueprintRCDAmmo

@@ -29,16 +29,6 @@
     providedRecipes:
     - WelderExperimental
 
-- type: entity # ShipyardRCDAmmo->RCDAmmo
-  parent: NFBaseBlueprintEngineering
-  id: NFBlueprintRCDAmmo
-  name: compressed matter blueprint
-  description: A blueprint with a schematic of a compressed matter. It can be inserted into an autolathe or a techfab.
-  components:
-  - type: Blueprint
-    providedRecipes:
-    - RCDAmmo
-
 # Power cells
 - type: entity
   parent: NFBaseBlueprintEngineering
