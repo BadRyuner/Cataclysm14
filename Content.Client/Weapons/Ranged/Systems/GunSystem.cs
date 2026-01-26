@@ -112,8 +112,8 @@ public sealed partial class GunSystem : SharedGunSystem
         // Find the gun's holder by checking its parent entity
         // If the gun is being held, its parent will be a hand container, and the hand container's parent will be the holder
         EntityUid? holder = null;
-        var gunXform = Transform(gunUid);
-        if (gunXform.ParentUid != EntityUid.Invalid)
+
+        if (EntityManager.TryGetComponent(gunUid, out TransformComponent? gunXform) && gunXform.ParentUid != EntityUid.Invalid)
         {
             var parent = gunXform.ParentUid;
             // Check if the parent has HandsComponent (it's the holder)
@@ -469,10 +469,11 @@ public sealed partial class GunSystem : SharedGunSystem
         Vector2 gunVelocity,
         EntityUid gunUid,
         EntityUid? user = null,
-        float speed = 20f)
+        float speed = 20f,
+        float offset = 0f) // Mono
     {
         EnsureComp<PredictedProjectileClientComponent>(uid);
         _physics.UpdateIsPredicted(uid);
-        base.ShootProjectile(uid, direction, gunVelocity, gunUid, user, speed);
+        base.ShootProjectile(uid, direction, gunVelocity, gunUid, user, speed, offset);
     }
 }
