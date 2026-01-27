@@ -7,7 +7,7 @@
   - PDVGloves
   - PDVOuterClothing
   - PDVHud
-  - PDVBackpack
+  # - PDVBackpack
   - PDVShoes
   - PirateFace
   - ContractorBoxSurvival
@@ -29,7 +29,7 @@
   - PDVJumpsuit
   - PDVGloves
   - PDVHud
-  - PDVBackpack
+  # - PDVBackpack
   - PDVOuterClothing
   - PDVShoes
   - PDVFace
@@ -52,7 +52,7 @@
   - PDVGloves
   - PDVOuterClothing
   - PDVHud
-  - PDVBackpack
+  # - PDVBackpack
   - PDVShoes
   - PDVFace
   - PDVCommanderNeck
@@ -75,7 +75,7 @@
   - PDVGloves
   - PDVOuterClothing
   - PDVHud
-  - PDVBackpack
+  # - PDVBackpack
   - PDVShoes
   - PDVFace
   - PDVNeck
@@ -99,7 +99,7 @@
   - PDVGloves
   - PDVOuterClothing
   - PDVHud
-  - PDVBackpack
+  # - PDVBackpack
   - PDVShoes
   - PirateFace
   - ContractorBoxSurvival

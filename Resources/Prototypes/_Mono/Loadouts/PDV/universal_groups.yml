@@ -66,17 +66,17 @@
   - PDVGasmask
   fallbacks:
   - PDVGaiter
-- type: loadoutGroup
-  id: PDVBackpack
-  name: loadout-group-contractor-backpack
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - PDVClothingBackpack
-  - PDVClothingSatchel
-  - PDVClothingDuffel
-  fallbacks:
-  - PDVClothingBackpack
+# - type: loadoutGroup
+#   id: PDVBackpack
+#   name: loadout-group-contractor-backpack
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - PDVClothingBackpack
+#   - PDVClothingSatchel
+#   - PDVClothingDuffel
+#   fallbacks:
+#   - PDVClothingBackpack
 - type: loadoutGroup
   id: PDVHead
   name: loadout-group-contractor-head
