@@ -47,7 +47,7 @@
 - type: startingGear
   id: PirateCaptainNFGear
   equipment:
-    ears: ClothingHeadsetAltVanguardCommand
+    # ears: ClothingHeadsetAltVanguardCommand
     #belt: ClothingBeltUtility # mono
     pocket1: BasePirateUplinkRadioPirateCaptain
     pocket2: EnergySword

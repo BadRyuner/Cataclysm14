@@ -46,7 +46,7 @@
 - type: startingGear
   id: PirateFirstMateNFGear
   equipment:
-    ears: ClothingHeadsetAltVanguardCommand
+    # ears: ClothingHeadsetAltVanguardCommand
     #belt: ClothingBeltUtility
     pocket1: BasePirateUplinkPirateCrew
     #pocket2: AppraisalTool

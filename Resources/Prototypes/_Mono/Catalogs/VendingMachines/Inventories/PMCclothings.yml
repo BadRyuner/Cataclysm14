@@ -77,19 +77,19 @@
     ClothingBeltSecurity: 4294967295 # Infinite
     ClothingBeltBandolier: 4294967295 # Infinite
     # region Backpacks
-    ClothingBackpackDuffelTacticalDuffelTan: 4294967295 # Infinite
-    ClothingBackpackDuffelTacticalDuffelOlive: 4294967295 # Infinite
-    ClothingBackpackDuffelTacticalDuffelBlack: 4294967295 # Infinite
-    ClothingBackpackDuffelTacticalDuffelRangerGreen: 4294967295 # Infinite
-    ClothingBackpackDuffelTacticalDuffelCoyoteBrown: 4294967295 # Infinite
-    ClothingBackpackDuffelTacticalDuffelWhite: 4294967295 # Infinite
-    ClothingBackpackMercenary: 4294967295
-    ClothingBackpackDuffelMercenary: 4294967295
-    ClothingBackpackSatchelMercenary: 4294967295
-    ClothingBackpackMessengerMercenary: 4294967295
-    ClothingBackpackSecurity: 4294967295 # Infinite
-    ClothingBackpackDuffelSecurity: 4294967295 # Infinite
-    ClothingBackpackSatchelSecurity: 4294967295 # Infinite
+    # ClothingBackpackDuffelTacticalDuffelTan: 4294967295 # Infinite
+    # ClothingBackpackDuffelTacticalDuffelOlive: 4294967295 # Infinite
+    # ClothingBackpackDuffelTacticalDuffelBlack: 4294967295 # Infinite
+    # ClothingBackpackDuffelTacticalDuffelRangerGreen: 4294967295 # Infinite
+    # ClothingBackpackDuffelTacticalDuffelCoyoteBrown: 4294967295 # Infinite
+    # ClothingBackpackDuffelTacticalDuffelWhite: 4294967295 # Infinite
+    # ClothingBackpackMercenary: 4294967295
+    # ClothingBackpackDuffelMercenary: 4294967295
+    # ClothingBackpackSatchelMercenary: 4294967295
+    # ClothingBackpackMessengerMercenary: 4294967295
+    # ClothingBackpackSecurity: 4294967295 # Infinite
+    # ClothingBackpackDuffelSecurity: 4294967295 # Infinite
+    # ClothingBackpackSatchelSecurity: 4294967295 # Infinite
     #ClothingBackpackMessengerSecurity: 4294967295 # Infinite
     # region Glasses
     ClothingEyesBallisticGogglesRed: 4294967295 # Infinite
@@ -121,15 +121,15 @@
     ClothingHelmetAttachmentGogglesCoverBlack: 4294967295 # Infinite
     ClothingHelmetAttachmentGogglesCoverRedDigital: 4294967295 # Infinite
     # region Covers
-    ClothingfaceshieldCCEBase: 4294967295 # Infinite
-    ClothingfaceshieldCCEDesert: 4294967295 # Infinite
-    ClothingfaceshieldRedDigital: 4294967295 # Infinite
-    ClothingfaceshieldHelmetMount: 4294967295 # Infinite
-    ClothingfaceshieldBlack: 4294967295 # Infinite
-    ClothingfaceshieldTan: 4294967295 # Infinite
-    ClothingfaceshieldRangerGreen: 4294967295 # Infinite
-    ClothingfaceshieldOlive: 4294967295 # Infinite
-    ClothingfaceshieldWhite: 4294967295 # Infinite
+    # ClothingfaceshieldCCEBase: 4294967295 # Infinite
+    # ClothingfaceshieldCCEDesert: 4294967295 # Infinite
+    # ClothingfaceshieldRedDigital: 4294967295 # Infinite
+    # ClothingfaceshieldHelmetMount: 4294967295 # Infinite
+    # ClothingfaceshieldBlack: 4294967295 # Infinite
+    # ClothingfaceshieldTan: 4294967295 # Infinite
+    # ClothingfaceshieldRangerGreen: 4294967295 # Infinite
+    # ClothingfaceshieldOlive: 4294967295 # Infinite
+    # ClothingfaceshieldWhite: 4294967295 # Infinite
     # # region Jumpsuits
     # ClothingUniformJumpsuitCombatSuitCCEBasic: 4294967295 # Infinite
     # ClothingUniformJumpsuitCombatSuitCCEWorn: 4294967295 # Infinite
