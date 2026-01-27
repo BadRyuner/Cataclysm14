@@ -1,7 +1,7 @@
 - type: entity
   id: BaseCartridge556x45mm
   name: cartridge (5.56x45mm FMJ)
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: BaseCartridge
   description: An extremely-common intermediate cartridge for rifles.
   abstract: true
   components:
@@ -12,11 +12,10 @@
   - type: CartridgeAmmo
     proto: Bullet556x45mmFMJ
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/5.56x45mm_casing.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    scale: 0.3, 0.3
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

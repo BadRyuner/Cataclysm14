@@ -57,18 +57,9 @@
     - Applicating
   - type: ArmorThickness
     thickness: 3
-  - type: ExaminableDamage
-    messages: WallMessages
-  #Cataclysm14, can't get it to work and layer over wall, sucks
-  # - type: DamageVisuals
-  #   thresholds: [5, 10, 20]
-  #   damageDivisor: 2
-  #   trackAllDamage: true
-  #   damageOverlay:
-  #     sprite: Structures/Windows/cracks.rsi
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallBrick
   name: brick wall
   components:
@@ -85,7 +76,7 @@
     base: brick
 
 - type: entity
-  parent: BaseWallMonoTierTwo # Mono
+  parent: BaseWallTierTwo # Mono
   id: WallClock
   name: clock wall
   components:
@@ -110,7 +101,7 @@
     price: 60 # Frontier 60
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallClown
   name: bananium wall
   components:
@@ -144,7 +135,7 @@
         density: 8000 # really good ramming wall, bananium is rare so it's probably fine
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallMeat
   name: meat wall
   description: Sticky.
@@ -165,7 +156,7 @@
     base: meat
 
 - type: entity
-  parent: BaseWallMonoTierTwo # Mono
+  parent: BaseWallTierTwo # Mono
   id: WallCult
   name: cult wall
   components:
@@ -181,7 +172,7 @@
     base: cult
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallDebug
   name: debug wall
   suffix: DEBUG
@@ -199,7 +190,7 @@
     base: debug
 
 - type: entity
-  parent: BaseWallMonoTierThree # Mono - surely its fine since diamonds are so rare
+  parent: BaseWallTierThree # Mono - surely its fine since diamonds are so rare
   id: WallDiamond
   name: diamond wall
   components:
@@ -219,7 +210,7 @@
     base: diamond
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallGold
   name: gold wall
   components:
@@ -253,7 +244,7 @@
     base: gold
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallIce
   name: ice wall
   components:
@@ -269,7 +260,7 @@
     base: ice
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallPlasma
   name: plasma wall
   components:
@@ -294,7 +285,7 @@
     resistance: 5
 
 - type: entity
-  parent: BaseWallMonoTierOne
+  parent: BaseWallTierOne
   id: WallPlastic
   name: plastic wall
   components:
@@ -355,7 +346,7 @@
     canBePierced: false
 
 - type: entity
-  parent: [ WallPlastitaniumIndestructible, BaseWallMonoTierThree ]
+  parent: [ WallPlastitaniumIndestructible, BaseWallTierThree ]
   id: WallPlastitanium
   name: plastitanium wall
   description: Keeps the air in and the chimera out. # Frontier: restore base value
@@ -366,7 +357,7 @@
     node: plastitaniumWall
 
 - type: entity
-  parent: BaseWallMonoTierTwo # Mono
+  parent: [ WallPlastitaniumDiagonalIndestructible, BaseWallTierTwo ] # Mono
   id: WallPlastitaniumDiagonal
   name: plastitanium wall
   suffix: diagonal
@@ -375,17 +366,6 @@
     snap:
     - Wall
   components:
-  - type: Sprite
-    drawdepth: Walls
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
-    state: state0
-  - type: IconSmooth
-    mode: Diagonal
-    key: walls
-    base: state
-  - type: Icon
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
-    state: state0
   - type: RCDDeconstructable # Frontier
     deconstructable: false # Frontier
   - type: StaticPrice
@@ -445,7 +425,7 @@
     canBePierced: false
 
 - type: entity
-  parent: BaseWallMonoTierTwo # Mono
+  parent: BaseWallTierTwo # Mono
   id: WallReinforced
   name: reinforced wall
   components:
@@ -562,6 +542,9 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: ShipRepairable
+    repairTime: 2
+    repairCost: 3
 
 # Riveting
 - type: entity
@@ -588,7 +571,7 @@
     fx: EffectRCDDeconstruct8 #Frontier
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallSandstone
   name: sandstone wall
   components:
@@ -608,7 +591,7 @@
     base: sandstone
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallSilver
   name: silver wall
   components:
@@ -634,6 +617,7 @@
 - type: entity
   id: WallShuttleDiagonal
   name: shuttle wall
+  parent: BaseWallTierOne
   suffix: Diagonal
   description: Keeps the air in and the greytide out.
   placement:
@@ -681,33 +665,8 @@
         layer:
         - WallLayer
         density: 2000
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: StructuralMetallic
   - type: Physics
     bodyType: Static
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1000 # Mono - wall buff
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-    - trigger:
-        !type:DamageTrigger
-        damage: 800 # Mono - wall buff
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Construction
     graph: Girder
     node: diagonalshuttleWall
@@ -719,7 +678,7 @@
     price: 95 # This shit is decorative anyways
 
 - type: entity
-  parent: BaseWallMonoTierTwo # Mono
+  parent: BaseWallTierTwo # Mono
   id: WallShuttle
   name: shuttle wall
   suffix: Reinforced, Exterior
@@ -772,7 +731,7 @@
 #    reflectProb: 1 # Frontier
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallShuttleInterior
   name: shuttle wall
   suffix: Interior
@@ -795,7 +754,7 @@
 #    reflectProb: 1 # Frontier
 
 - type: entity
-  parent: BaseWallMonoTierOne
+  parent: BaseWallTierOne
   id: WallSolid
   name: solid wall
   components:
@@ -861,6 +820,9 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: ShipRepairable
+    repairTime: 2
+    repairCost: 2
   - type: StaticPrice
     price: 95
 
@@ -882,7 +844,7 @@
     base: solid
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallSolidChitin
   name: solid chitin
   components:
@@ -905,7 +867,7 @@
     fx: EffectRCDDeconstruct8
 
 - type: entity
-  parent: BaseWallMonoTierTwo # Mono
+  parent: BaseWallTierTwo # Mono
   id: WallReinforcedChitin
   name: reinforced chitin
   components:
@@ -941,7 +903,7 @@
     node: reinforcedWallChitin
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallUranium
   name: uranium wall
   components:
@@ -974,7 +936,7 @@
     fx: EffectRCDDeconstruct8 #Frontier
 
 - type: entity
-  parent: BaseWallMonoTierOne
+  parent: BaseWallTierOne
   id: WallWood
   name: wood wall
   description: The traditional greytide defense.
@@ -999,7 +961,7 @@
     thickness: 1
 
 - type: entity
-  parent: BaseWallMonoTierOne
+  parent: BaseWallTierOne
   id: WallWeb
   name: web wall
   description: Keeps the spiders in and the chimera out.
@@ -1052,7 +1014,7 @@
 # Lavalend Walls
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallNecropolis
   name: stone wall
   components:
@@ -1068,7 +1030,7 @@
     base: necropolis
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallMining
   name: mining wall
   components:
@@ -1116,7 +1078,7 @@
 # Vault Walls
 
 - type: entity
-  parent: BaseWallMonoTierThree # Mono
+  parent: BaseWallTierThree # Mono
   id: WallVaultAlien
   name: alien vault wall
   description: A mysterious ornate looking wall. There may be ancient dangers inside.
@@ -1207,7 +1169,7 @@
     state: forcewall
 
 - type: entity
-  parent: BaseWallMonoTierOne # Mono
+  parent: BaseWallTierOne # Mono
   id: WallCobblebrick
   name: cobblestone brick wall
   description: Stone by stone, perfectly fitted together to form a wall.

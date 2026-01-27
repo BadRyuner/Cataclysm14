@@ -1,7 +1,7 @@
 - type: entity
   id: BaseCartridge8x65mmSKR
   name: cartridge (8x65mm SKR)
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: BaseCartridge
   description: An experimental high performance round. Standard round for high-power rifles across all branches of the TSF's armed forces.
   abstract: true
   components:
@@ -12,11 +12,10 @@
   - type: CartridgeAmmo
     proto: Bullet8x65mmSKR
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/8x65mm_casing.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    scale: 0.3, 0.3
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

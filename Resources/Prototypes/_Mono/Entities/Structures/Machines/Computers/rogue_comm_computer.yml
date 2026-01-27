@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ ComputerComms, BaseC3PirateContrabandHighValue ]
+  parent: ComputerComms
   id: RogueComputerComms
   name: imperial vanguard communications computer
-  description: A computer capable of remotely hacking into the station's communications systems. Using this to make an announcement will alert the station to your presence.
+  description: The Imperial Vanguard's primary communications computer for issuing announcements.
   components:
   - type: Sprite
     sprite: _Mono/Structures/Machines/computers.rsi

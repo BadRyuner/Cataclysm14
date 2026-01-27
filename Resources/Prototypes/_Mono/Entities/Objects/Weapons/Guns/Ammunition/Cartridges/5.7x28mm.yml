@@ -2,7 +2,7 @@
   id: BaseCartridge57x28mm
   name: cartridge (5.7x28mm FMJ)
   description: A small PDW cartridge. More internal damage than 4.6, but less armor-piercing capabilities. Formerly infamous for its high cost.
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: BaseCartridge
   abstract: true
   components:
   - type: Tag
@@ -12,11 +12,10 @@
   - type: CartridgeAmmo
     proto: Bullet57x28mmFMJ
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/5.7x28mm_casing.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
-    scale: 0.35, 0.20 #odd number for accurate shape
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

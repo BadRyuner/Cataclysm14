@@ -1,7 +1,7 @@
 - type: entity
   id: BaseCartridge762x51mm
   name: cartridge (7.62x51mm FMJ)
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: BaseCartridge
   description: A decently sized full-power round.
   abstract: true
   components:
@@ -12,11 +12,10 @@
   - type: CartridgeAmmo
     proto: Bullet762x51mmFMJ
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/7.62x51mm_casing.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    scale: 0.3, 0.3
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

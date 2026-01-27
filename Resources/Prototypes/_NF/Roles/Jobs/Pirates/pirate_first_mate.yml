@@ -7,11 +7,8 @@
     - !type:OverallPlaytimeRequirement
       time: 180000 # 50 hours # mono
     - !type:RoleTimeRequirement
-      role: JobPirate
-      time: 72000 # 20 hours
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 18000 # 5 hours # mono
+      role: JobPDVDenasvar
+      time: 28800 # 8 hours
   #whitelisted: true # mono - comment out
   startingGear: PirateFirstMateNFGear
   alwaysUseSpawner: true
@@ -19,21 +16,19 @@
   canBeAntag: true
   icon: "JobIconPirateFirstMate"
   supervisors: job-supervisors-captain
-  weight: 30
-  displayWeight: 30
+  weight: 40
+  displayWeight: 40
   setPreference: true
   guides: [ BasicLore, PhaethonDynasty] # Mono
   access:
   - Pirate
+  - PDVCommand
   - Mercenary
   accessGroups:
   - GeneralAccess
   special:
   - !type:AddComponentSpecial
     components:
-    - type: MailDisabled
-    - type: SpecialSectorStationRecord
-      recordGeneration: FalseRecord
     - type: NpcFactionMember
       factions:
       - PirateNF
@@ -51,7 +46,7 @@
 - type: startingGear
   id: PirateFirstMateNFGear
   equipment:
-    ears: ClothingHeadsetAltFreelancer
+    ears: ClothingHeadsetAltVanguardCommand
     #belt: ClothingBeltUtility
     pocket1: BasePirateUplinkPirateCrew
     #pocket2: AppraisalTool

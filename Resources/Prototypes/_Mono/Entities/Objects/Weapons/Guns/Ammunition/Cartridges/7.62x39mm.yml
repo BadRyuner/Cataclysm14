@@ -1,7 +1,7 @@
 - type: entity
   id: BaseCartridge762x39mm
   name: cartridge (7.62x39mm FMJ)
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: BaseCartridge
   description: Originating from over 400 years ago, this round has seen use in the rifles of multiple militias and militaries alike.
   abstract: true
   components:
@@ -12,11 +12,10 @@
   - type: CartridgeAmmo
     proto: Bullet762x39mmFMJ
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/7.62x39mm_casing.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    scale: 0.3, 0.3
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

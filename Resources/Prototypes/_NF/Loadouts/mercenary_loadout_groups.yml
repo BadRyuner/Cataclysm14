@@ -14,7 +14,7 @@
   - MercenaryClothingUniformJumpsuitMilitaryTurtleneckBlueMercenaryCaptain
   - MercenaryClothingUniformJumpsitDrakeIndustriesWatchdog
   subgroups:
-  # - MonoMercenaryJumpsuit # Mono #Cataclysm, trashed
+  - MonoMercenaryJumpsuit # Mono
   - MonoUSSPJumpsuit # Mono
   - PilotJumpsuit
   - ContractorJumpsuit

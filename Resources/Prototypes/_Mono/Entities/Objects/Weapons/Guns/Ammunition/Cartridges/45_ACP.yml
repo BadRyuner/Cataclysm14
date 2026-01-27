@@ -1,7 +1,7 @@
 - type: entity
   id: BaseCartridge45_ACP
   name: cartridge (.45 ACP FMJ)
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: BaseCartridge
   description: Heavier alternative to 9x19mm for handguns and SMGs.
   abstract: true
   components:
@@ -12,11 +12,10 @@
   - type: CartridgeAmmo
     proto: Bullet45_ACPFMJ
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/45_ACP_casing.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
-    scale: 0.3, 0.3
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

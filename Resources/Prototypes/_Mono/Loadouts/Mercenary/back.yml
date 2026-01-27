@@ -1,42 +1,36 @@
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelTan
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelTan
 
 - type: loadout
-  id: MercenaryClothingModsuitSecurityPowerCell
-  price: 15000
+  id: MercenaryClothingBackpackDuffelTacticalDuffelOlive
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelOlive
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelBlack
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelBlack
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelRangerGreen
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelRangerGreen
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelCoyoteBrown
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelCoyoteBrown
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelWhite
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelWhite
+
+- type: loadout
+  id: MercenaryClothingModsuitSecurityPowerCell # Only to CC guards
+  price: 0
   equipment:
     back: ClothingModsuitSecurityPowerCell
 
-- type: loadout
-  id: MercenaryClothingModsuitMercenaryPowerCell
-  price: 65000
-  equipment:
-    back: ClothingModsuitMercenaryPowerCell
-
-- type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalTan
-  equipment:
-    back: ClothingBackpackDuffelTacticalTan
-
-- type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalOlive
-  equipment:
-    back: ClothingBackpackDuffelTacticalOlive
-
-- type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalBlack
-  equipment:
-    back: ClothingBackpackDuffelTacticalBlack
-
-- type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalRangerGreen
-  equipment:
-    back: ClothingBackpackDuffelTacticalRangerGreen
-
-- type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalCoyoteBrown
-  equipment:
-    back: ClothingBackpackDuffelTacticalCoyoteBrown
-
-- type: loadout
-  id: MercenaryClothingBackpackDuffelTacticalWhite
-  equipment:
-    back: ClothingBackpackDuffelTacticalWhite

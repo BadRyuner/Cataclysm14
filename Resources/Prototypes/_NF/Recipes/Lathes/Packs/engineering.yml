@@ -9,8 +9,12 @@
 - type: latheRecipePack
   id: NFEngineering
   recipes:
+#  - ShipyardRCD
+#  - ShipyardRCDAmmo
   - RCD
   - RCDAmmo
+  - ShipRepairDevice #Mono
+  - ShipRepairDeviceAmmo #Mono
   - ConstructionBagOfHolding
   - UtilityBeltChiefEngineer
   # - FireExtinguisherBluespace # Delta-V

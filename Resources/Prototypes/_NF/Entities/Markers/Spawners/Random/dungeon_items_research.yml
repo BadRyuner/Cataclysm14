@@ -186,6 +186,7 @@
     # Mats
     - WeldingFuelTankHighCapacity
     # Filled crates
+    - CrateEngineeringKitShipyardRcd
     - CrateEngineeringKitRtg
     - CrateEngineeringKitFabrication
     - CrateEngineerChiefHardsuit

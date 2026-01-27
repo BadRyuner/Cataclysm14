@@ -4,7 +4,6 @@
 
 - type: entity #Viper
   parent:
-  - BaseMinorContraband
   - WeaponPistolViper
   id: WeaponPistolViperPMC
   suffix: Registered
@@ -16,7 +15,6 @@
 
 - type: entity #WT-550
   parent:
-  - BaseMinorContraband
   - WeaponSubMachineGunWt550
   id: WeaponSubMachineGunWt550PMC
   suffix: Registered
@@ -26,7 +24,6 @@
 
 - type: entity #Drozd
   parent:
-  - BaseMinorContraband
   - WeaponSubMachineGunDrozd
   id: WeaponSubMachineGunDrozdPMC
   suffix: Registered
@@ -36,7 +33,6 @@
 
 - type: entity #C-20r
   parent:
-  - BaseMinorContraband
   - WeaponSubMachineGunC20r
   id: WeaponSubMachineGunC20rPMC
   suffix: Registered
@@ -50,7 +46,6 @@
 
 - type: entity #Lecter
   parent:
-  - BaseMinorContraband
   - WeaponRifleLecter
   id: WeaponRifleLecterPMC
   suffix: Registered
@@ -62,7 +57,6 @@
 
 - type: entity #Kammerer
   parent:
-  - BaseMinorContraband
   - WeaponShotgunKammerer
   id: WeaponShotgunKammererPMC
   suffix: Registered
@@ -72,7 +66,6 @@
 
 - type: entity #Enforcer
   parent:
-  - BaseMinorContraband
   - WeaponShotgunEnforcer
   id: WeaponShotgunEnforcerPMC
   suffix: Registered
@@ -84,7 +77,6 @@
 
 - type: entity #Energy Gun
   parent:
-  - BaseMinorContraband
   - WeaponEnergyGun
   id: WeaponEnergyGunPMC
   suffix: Registered
@@ -94,7 +86,6 @@
 
 - type: entity #Laser Cannon
   parent:
-  - BaseMinorContraband
   - WeaponLaserCannon
   id: WeaponLaserCannonPMC
   suffix: Registered
@@ -104,7 +95,6 @@
 
 - type: entity #Disabler SMG
   parent:
-  - BaseMinorContraband
   - WeaponDisablerSMG
   id: WeaponDisablerSMGPMC
   suffix: Registered

@@ -5914,6 +5914,30 @@ entities:
           - 633
           - 639
           - 638
+- proto: ShipRepairDevice
+  entities:
+  - uid: 857
+    components:
+    - type: Transform
+      pos: 4.5254717,6.776931
+      parent: 1
+- proto: ShipRepairDeviceAmmo
+  entities:
+  - uid: 858
+    components:
+    - type: Transform
+      pos: 4.2754717,6.636306
+      parent: 1
+  - uid: 859
+    components:
+    - type: Transform
+      pos: 4.4317217,6.573806
+      parent: 1
+  - uid: 860
+    components:
+    - type: Transform
+      pos: 4.7129717,6.573806
+      parent: 1
 - proto: ShuttersNormalOpen
   entities:
   - uid: 861

@@ -171,6 +171,8 @@
     - id: RCD # Mono
     - id: RCDAmmo # Mono
     - id: RubberStampCE
+    #    - id: ShipyardRCD # Mono
+    #    - id: ShipyardRCDAmmo # Mono
     - id: trayScanner # Frontier
 
 # Hardsuit table, used for suit storage as well
