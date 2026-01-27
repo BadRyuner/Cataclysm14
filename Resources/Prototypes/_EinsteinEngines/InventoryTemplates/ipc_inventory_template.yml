@@ -114,7 +114,7 @@
       stripTime: 3
       uiWindowPos: 2,0
       strippingWindowPos: 2,5
-      dependsOn: outerClothing
+#      dependsOn: outerClothing #Mono: Disable shoulder slot restrictions
       displayName: Suit Storage
     - name: id
       slotTexture: id
@@ -174,12 +174,12 @@
       displayName: Right_armband
     - name: faceshield
       slotTexture: helmet_cover
-      slotFlags: FACESHIELD
+      slotFlags: faceshield
       stripTime: 3
       uiWindowPos: 1,5
       strippingWindowPos: 3,3
       dependsOn: head
-      displayName: Face shield
+      displayName: Helmet cover
     - name: helmetattachment
       slotTexture: helmet_attachment
       slotFlags: HELMETATTACHMENT

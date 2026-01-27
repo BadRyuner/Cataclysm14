@@ -64,7 +64,7 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<int> StorageLimit =
         CVarDef.Create("control.storage_limit", 10, CVar.REPLICATED | CVar.SERVER); // Frontier: 1<2
-         // Cataclysm: 2->10
+         //Cataclysm14: 2->10
 
     /// <summary>
     /// Whether or not storage can be opened recursively.

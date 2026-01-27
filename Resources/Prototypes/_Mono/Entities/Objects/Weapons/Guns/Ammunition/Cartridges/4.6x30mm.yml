@@ -1,7 +1,7 @@
 - type: entity
   id: BaseCartridge46x30mm
   name: cartridge (4.6x30mm FMJ)
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: BaseCartridge
   description: A light AP round developed for PDWs in the 1990s, by an older world.
   abstract: true
   components:
@@ -12,11 +12,10 @@
   - type: CartridgeAmmo
     proto: Bullet46x30mm
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/4.6x30mm_casing.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
-    scale: 0.35, 0.20 #odd number for accurate shape
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

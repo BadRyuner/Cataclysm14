@@ -9,7 +9,7 @@
   - 1.0
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
   itemDrop: FloorTileItemSteelCommercial
@@ -25,7 +25,7 @@
   - 1.0
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemSteelMonoCommercial
@@ -37,7 +37,7 @@
   sprite: /Textures/_Mono/Tiles/dark.png
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkSteelCommercial
@@ -49,7 +49,7 @@
   sprite: /Textures/_Mono/Tiles/dark_mono.png
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemSteelDarkMonoCommercial
@@ -61,7 +61,7 @@
   sprite: /Textures/_Mono/Tiles/tech_maint.png
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemTechMaintAlt
@@ -73,7 +73,7 @@
   sprite: /Textures/_Mono/Tiles/steel_grey.png
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
   itemDrop: FloorTileItemGreySteelCommercial
@@ -85,7 +85,7 @@
   sprite: /Textures/_Mono/Tiles/steel_mono_grey.png
   baseTurf: Plating
   isSubfloor: false
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemSteelGreyMonoCommercial

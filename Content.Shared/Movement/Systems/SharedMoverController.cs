@@ -51,9 +51,9 @@ public abstract partial class SharedMoverController : VirtualController
     [Dependency] private   readonly SharedGravitySystem _gravity = default!;
     [Dependency] private   readonly SharedTransformSystem _transform = default!;
     [Dependency] private   readonly TagSystem _tags = default!;
-    // ES START
+    //EphemeralSpace START
     [Dependency] private   readonly ESViewconeEffectSystem _viewconeEffect = default!;
-    // ES END
+    //EphemeralSpace END
     [Dependency] private   readonly IEntityManager _entities = default!; // Delta V-NoShoesSilentFootstepsComponent
 
     protected EntityQuery<CanMoveInAirComponent> CanMoveInAirQuery;
@@ -61,9 +61,9 @@ public abstract partial class SharedMoverController : VirtualController
     protected EntityQuery<InputMoverComponent> MoverQuery;
     protected EntityQuery<MapComponent> MapQuery;
     protected EntityQuery<MapGridComponent> MapGridQuery;
-    // ES START
+    //EphemeralSpace START
     private static readonly EntProtoId ESFootstepViewconeEffect = "ESViewconeEffectFootstep";
-    // ES END
+    //EphemeralSpace END
     protected EntityQuery<MobMoverComponent> MobMoverQuery;
     protected EntityQuery<MovementRelayTargetComponent> RelayTargetQuery;
     protected EntityQuery<MovementSpeedModifierComponent> ModifierQuery;

@@ -5,9 +5,9 @@ namespace Content.Shared.Input
     [KeyFunctions]
     public static class ContentKeyFunctions
     {
-        // ES START
+        //EphemeralSpace START
         public static readonly BoundKeyFunction ESHoldToFace = "ESHoldToFace";
-        // ES END
+        //EphemeralSpace END
         public static readonly BoundKeyFunction UseItemInHand = "ActivateItemInHand";
         public static readonly BoundKeyFunction AltUseItemInHand = "AltActivateItemInHand";
         public static readonly BoundKeyFunction ActivateItemInWorld = "ActivateItemInWorld";
