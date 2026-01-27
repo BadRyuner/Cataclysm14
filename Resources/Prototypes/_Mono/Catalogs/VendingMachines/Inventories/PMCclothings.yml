@@ -130,27 +130,27 @@
     ClothingfaceshieldRangerGreen: 4294967295 # Infinite
     ClothingfaceshieldOlive: 4294967295 # Infinite
     ClothingfaceshieldWhite: 4294967295 # Infinite
-    # region Jumpsuits
-    ClothingUniformJumpsuitCombatSuitCCEBasic: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitCCEWorn: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitCCEBleached: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitCCEDesert: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitGrassland: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitMudland: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitMisko: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitLampartFlag: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitLampart: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitSummerFloraFlag: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitSummerFlora: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitUrbanWhite: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitDigitalBlack: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitDigitalBlue: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitDigitalRed: 4294967295 # Infinite
-    ClothingUniformJumpsuitCombatSuitDigitalGreenTan: 4294967295 # Infinite
-    ClothingUniformJumpsuitMercenary: 4294967295 # Infinite
-    ClothingUniformJumpskirtMercenary: 4294967295 # Infinite
-    ClothingUniformJumpsuitPrivateSec: 4294967295 # Infinite
-    ClothingUniformJumpskirtPrivateSec: 4294967295 # Infinite
+    # # region Jumpsuits
+    # ClothingUniformJumpsuitCombatSuitCCEBasic: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitCCEWorn: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitCCEBleached: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitCCEDesert: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitGrassland: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitMudland: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitMisko: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitLampartFlag: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitLampart: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitSummerFloraFlag: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitSummerFlora: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitUrbanWhite: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitDigitalBlack: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitDigitalBlue: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitDigitalRed: 4294967295 # Infinite
+    # ClothingUniformJumpsuitCombatSuitDigitalGreenTan: 4294967295 # Infinite
+    # ClothingUniformJumpsuitMercenary: 4294967295 # Infinite
+    # ClothingUniformJumpskirtMercenary: 4294967295 # Infinite
+    # ClothingUniformJumpsuitPrivateSec: 4294967295 # Infinite
+    # ClothingUniformJumpskirtPrivateSec: 4294967295 # Infinite
     # region Masks
     ClothingMaskSOM40: 4294967295 # Infinite
     ClothingMaskSOM41: 4294967295 # Infinite
