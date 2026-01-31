@@ -1,0 +1,66 @@
+{
+    "name": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "closing",
+            "directions": 1,
+            "delays": [
+                [
+                    0.2,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.2
+                ]
+            ]
+        },
+        {
+            "name": "opening",
+            "directions": 1,
+            "delays": [
+                [
+                    0.2,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.2
+                ]
+            ]
+        },
+        {
+            "name": "open",
+            "directions": 1
+        },
+        {
+            "name": "frame",
+            "directions": 1
+        },
+        {
+            "name": "closed",
+            "directions": 1
+        }
+    ],
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from CDDA tileset Ultimate Cataclysm, modified by zeranov/avtomata (disc:core_mene)",
+    "version": 1
+}
