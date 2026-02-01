@@ -1,6 +1,6 @@
 - type: entity
-  id: StructureApplianceTankLiquidMediumWater
-  name: liquid storage tank
+  id: StructureApplianceWaterHeaterOld
+  name: old water heater
   parent: [StructureFurnitureBaseLarge, StorageTank]
   suffix: Full][Water
   components:
@@ -20,12 +20,23 @@
     totalIntensity: 175
   - type: Sprite
     offset: 0,0.5
-    sprite: _Cataclysm14/Structures/Appliances/tank_liquid.rsi
-    state: tank_liquid_large
+    sprite: _Cataclysm14/Structures/Appliances/water_heaters.rsi
+    state: water_heater_old
   - type: SolutionContainerManager
     solutions:
       tank:
-        maxVol: 10000
+        maxVol: 150
         reagents:
         - ReagentId: Water
-          Quantity: 10000
+          Quantity: 150
+  # - type: Fixtures
+  #   fixtures:
+  #     fix1:
+  #       shape:
+  #         !type:PhysShapeAabb
+  #         bounds: "-0.25,-0.45,0.25,0.05"
+  #       density: 55
+  #       mask:
+  #       - BulletImpassable
+  #       layer:
+  #       - BulletImpassable

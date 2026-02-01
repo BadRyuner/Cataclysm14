@@ -1,13 +1,13 @@
 - type: entity
-  id: StructureApplianceDishwasherOld
+  id: StructureApplianceStoveWoodOld
   parent: StructureFurnitureBaseLarge
-  name: old dishwasher
-  description: A dishwasher, can store things inside itself.
+  name: old wood stove
+  description: An old wood stove, can store things inside itself.
   components:
   - type: Sprite
-    offset: 0,0.25
-    sprite: _Cataclysm14/Structures/Appliances/dishwasher_old.rsi
-    state: icon
+    offset: 0,0.5
+    sprite: _Cataclysm14/Structures/Appliances/stove_wood.rsi
+    state: stove_old
     noRot: true
   - type: Damageable
     damageModifierSet: Wood
@@ -27,7 +27,7 @@
         acts: [ "Destruction" ]
   - type: Storage
     grid:
-    - 0,0,9,9
+    - 0,0,4,6
     maxItemSize: Huge
   - type: ContainerContainer
     containers:

@@ -1,7 +1,7 @@
 - type: entity
   id: StructureApplianceFuelStationPumpBase
   name: fuel station pump
-  parent: StorageTank
+  parent: [StructureFurnitureBaseLarge, StorageTank]
   suffix: Full][Gasoline
   components:
   - type: StaticPrice
@@ -21,6 +21,7 @@
     explosionType: Default
     totalIntensity: 175
   - type: Sprite
+    offset: 0,0.25
     sprite: _Cataclysm14/Structures/Appliances/fuel_station_pump.rsi
     state: icon
   - type: SolutionContainerManager
@@ -46,7 +47,7 @@
 - type: entity
   id: StructureApplianceFuelStationPumpOld
   name: old fuel station pump
-  parent: StorageTank
+  parent: [StructureFurnitureBaseLarge, StorageTank]
   suffix: Full][Gasoline
   components:
   - type: StaticPrice
@@ -66,6 +67,7 @@
     explosionType: Default
     totalIntensity: 175
   - type: Sprite
+    offset: 0,0.25
     sprite: _Cataclysm14/Structures/Appliances/fuel_station_pump_old.rsi
     state: icon
   - type: SolutionContainerManager

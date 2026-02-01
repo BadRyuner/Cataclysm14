@@ -5,6 +5,7 @@
   description: A washing machine, can store things inside itself.
   components:
   - type: Sprite
+    offset: 0,0.25
     sprite: _Cataclysm14/Structures/Appliances/washing_machine_modern.rsi
     state: icon
     noRot: true

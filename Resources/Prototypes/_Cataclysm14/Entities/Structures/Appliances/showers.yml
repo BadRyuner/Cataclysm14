@@ -1,12 +1,12 @@
 - type: entity
-  id: StructureApplianceDishwasherOld
+  id: StructureApplianceShowerOld
   parent: StructureFurnitureBaseLarge
-  name: old dishwasher
-  description: A dishwasher, can store things inside itself.
+  name: old shower
+  description: An old shower.
   components:
   - type: Sprite
-    offset: 0,0.25
-    sprite: _Cataclysm14/Structures/Appliances/dishwasher_old.rsi
+    offset: 0,0.5
+    sprite: _Cataclysm14/Structures/Appliances/shower_old.rsi
     state: icon
     noRot: true
   - type: Damageable
@@ -25,13 +25,6 @@
             max: 3
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: Storage
-    grid:
-    - 0,0,9,9
-    maxItemSize: Huge
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:

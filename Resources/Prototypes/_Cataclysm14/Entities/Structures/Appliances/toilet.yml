@@ -1,6 +1,6 @@
 - type: entity
   name: toilet
-  id: BaseStructureFurnitureToilet
+  id: BaseStructureApplianceToilet
   parent: [ DisposalUnitBase, SeatBase ]
   description: A simple porcelain toilet.
   abstract: true
@@ -110,7 +110,7 @@
 - type: entity
   name: toilet
   description: A simple porcelain toilet.
-  id: StructureFurnitureToiletEmpty
+  id: StructureApplianceToiletEmpty
   parent: BaseToilet
   suffix: Empty
   components:
@@ -119,8 +119,8 @@
     node: toilet
 
 - type: entity
-  id: StructureFurnitureToiletDirtyWater
-  parent: StructureFurnitureToiletEmpty
+  id: StructureApplianceToiletDirtyWater
+  parent: StructureApplianceToiletEmpty
   suffix: Dirty Water
   components:
   - type: SolutionContainerManager
