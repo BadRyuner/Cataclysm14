@@ -1,7 +1,7 @@
 - type: entity
   id: BaseShellShotgun23x75mm
   name: shotgun shell (4 gauge)
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: added BaseC1Contraband
+  parent: BaseCartridge
   description: Large shotgun round. Kicks like a mule, and will tear a chunk out of anything that doesnt have the armor to protect it.
   abstract: true
   components:
@@ -20,11 +20,11 @@
       params:
         variation: 0.06
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/4_gauge_shell.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/4_gauge_shell.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
-    scale: 0.45, 0.45
+    scale: 0.65, 0.65
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice
@@ -33,7 +33,7 @@
 - type: entity
   id: ShellShotgun23x75mmBeanbag
   name: shotgun shell (4 gauge beanbag)
-  parent: BaseShellShotgun23x75mm # Frontier: remove BaseSecurityBartenderContraband
+  parent: BaseShellShotgun23x75mm
   components:
   - type: Tag
     tags:

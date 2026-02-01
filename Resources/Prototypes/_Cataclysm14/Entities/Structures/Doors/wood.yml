@@ -39,7 +39,7 @@
     node: DoorCataWoodHouse
 
 - type: entity
-  parent: BaseWallMonoTierOne
+  parent: BaseWallTierOne
   id: DoorCataWoodHouseBroken
   name: broken wooden residential door
   description: A shattered wooden door.
@@ -58,7 +58,7 @@
     mode: NoSprite
 
 - type: entity
-  parent: BaseWallMonoTierOne
+  parent: BaseWallTierOne
   id: DoorCataWoodHouseLocked
   suffix: Locked
   name: wooden residential door

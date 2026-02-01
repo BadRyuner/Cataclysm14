@@ -1,6 +1,3 @@
-# The mercenary techfab made into packs.
-# TODO: Reorganize these into common packs.
-
 - type: latheRecipePack
   id: NFMercenaryTechfabDeprecatedStatic
   recipes:
@@ -85,7 +82,7 @@
   - WeaponRevolverArgenti
   - WeaponPistolMk58NF
   - WeaponShotgunDoubleBarreled
-  - WeaponShotgunHelopolis
+  - WeaponShotgunHelepolis
   - WeaponRifleNovaliteC1
   - WeaponRifleGestio
   - WeaponSubMachineGunKnallstock # Mono
@@ -106,6 +103,7 @@
   - JetpackVoid
   - PowerCellHigh
   # - PowerCellHyperNF
+  - PowerCellCombat # Mono edit
   - PowerCellMicroreactor
 # Mercenary techfab
 ## Armor
@@ -135,6 +133,7 @@
   - ClothingOuterHardsuitMercenary
   - ClothingOuterHardsuitPrivateSecurity
   - ClothingOuterHardsuitScaf
+  - ClothingModsuitMercenaryPowerCell # Mono edit
   - ClothingShoesBootsMagSecurity
   - ClothingShoesBootsMagMercenary
 ## Utilities
@@ -185,6 +184,8 @@
   - WeaponSubMachineGunWt550
   - WeaponRifleNtsfLtr
   - WeaponSubMachineGunVectorNtsfHclm
+  - WeaponRadAx
+  - HardlightShield
   - WeaponRifleAk
   - UllmanHardsuitPilot
   - UllmanHardsuitEngineer
@@ -195,7 +196,6 @@
   - UllmanWeaponPulseRifle
   - UllmanWeaponPulseSniper
   - UllmanMeleePlasmaBlade
-
 #Mono end
 
 - type: latheRecipePack

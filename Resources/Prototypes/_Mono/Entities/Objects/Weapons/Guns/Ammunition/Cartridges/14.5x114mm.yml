@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ BaseCartridge, BaseC2Contraband ] # Frontier: BaseMajorContraband<BaseC2Contraband
+  parent: BaseCartridge
   id: Cartridge145x114mm
   name: cartridge (14.5x114mm)
   description: Even larger anti-material round, capable of punching through any armor and barriers without difficulty.
@@ -11,11 +11,10 @@
   - type: CartridgeAmmo
     proto: Bullet145x114mm
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/14.5x114mm_casing.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/14.5x114mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    scale: 0.45,0.45
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

@@ -70,7 +70,7 @@ public sealed class ArmorPlateSystem : SharedArmorPlateSystem
 
         var staminaDamage = damage.Float() * plate.Comp.StaminaDamageMultiplier;
         _stamina.TakeStaminaDamage(wearer, staminaDamage);
-// Cataclysm14 START
+//Cataclysm14 START
         var bluntDamage = new DamageSpecifier();
         bluntDamage.DamageDict.Add("Blunt", damage);
         _damageable.TryChangeDamage(wearer, bluntDamage * plate.Comp.BluntDamageMultiplier, ignoreResistances: false);
@@ -78,7 +78,7 @@ public sealed class ArmorPlateSystem : SharedArmorPlateSystem
         var slashDamage = new DamageSpecifier();
         slashDamage.DamageDict.Add("Slash", damage);
         _damageable.TryChangeDamage(wearer, slashDamage * plate.Comp.SlashDamageMultiplier, ignoreResistances: false);
-// Cataclysm14 END
+//Cataclysm14 END
     }
 
     private void OnPlateDestroyed(Entity<ArmorPlateItemComponent> ent, ref EntityTerminatingEvent args)
