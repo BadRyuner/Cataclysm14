@@ -1,7 +1,7 @@
 - type: entity
   id: BaseCartridge635x40mmCaseless
   name: cartridge (.25 rifle)
-  parent: [ BaseCartridge, BaseC3SyndicateContrabandNoValue ] # Frontier: BaseSecurityContraband<BaseC3SyndicateContraband
+  parent: BaseCartridge
   description: Developed during corporate wars for subsonic weapons to keep a low-profile during operations.
   abstract: true
   components:
@@ -13,11 +13,10 @@
     deleteOnSpawn: true
   - type: Sprite
     noRot: false
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/6.35x40mm_casing.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/caseless_ammo_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    scale: 0.3, 0.3
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

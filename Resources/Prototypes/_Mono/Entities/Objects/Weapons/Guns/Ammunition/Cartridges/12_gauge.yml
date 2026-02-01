@@ -1,7 +1,7 @@
 - type: entity
   id: BaseShellShotgun12_gauge
   name: shotgun shell (12 gauge)
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: added BaseC1Contraband
+  parent: BaseCartridge
   description: Standard shotgun round practically everywhere.
   abstract: true
   components:
@@ -20,11 +20,11 @@
       params:
         variation: 0.06
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/12_gauge_shell.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/12_gauge_shell.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
-    scale: 0.45, 0.45
+    scale: 0.6, 0.6
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice
@@ -33,7 +33,7 @@
 - type: entity
   id: ShellShotgun12_gaugeBeanbag
   name: shotgun shell (12 gauge beanbag)
-  parent: BaseShellShotgun12_gauge # Frontier: remove BaseSecurityBartenderContraband
+  parent: BaseShellShotgun12_gauge
   components:
   - type: Tag
     tags:

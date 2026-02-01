@@ -23,6 +23,7 @@ public abstract partial class SharedGunSystem
         SubscribeLocalEvent<BallisticAmmoProviderComponent, ComponentInit>(OnBallisticInit);
         SubscribeLocalEvent<BallisticAmmoProviderComponent, MapInitEvent>(OnBallisticMapInit);
         SubscribeLocalEvent<BallisticAmmoProviderComponent, TakeAmmoEvent>(OnBallisticTakeAmmo);
+        SubscribeLocalEvent<BallisticAmmoProviderComponent, CheckShootPrototypeEvent>(OnBallisticCheckProto); // Mono
         SubscribeLocalEvent<BallisticAmmoProviderComponent, GetAmmoCountEvent>(OnBallisticAmmoCount);
 
         SubscribeLocalEvent<BallisticAmmoProviderComponent, ExaminedEvent>(OnBallisticExamine);
@@ -47,7 +48,7 @@ public abstract partial class SharedGunSystem
         if (args.Handled)
             return;
 
-        if (_whitelistSystem.IsWhitelistFailOrNull(component.Whitelist, args.Used))
+        if (_whitelistSystem.IsWhitelistFailOrNull(component.Whitelist, args.Used) && !component.IgnoreWhitelist) // Mono edit - Skip this check if whitelist is ignored
             return;
 
         if (GetBallisticShots(component) >= component.Capacity)
@@ -162,7 +163,7 @@ public abstract partial class SharedGunSystem
             if (ent == null)
                 continue;
 
-            if (ballisticTarget is not null && _whitelistSystem.IsWhitelistFailOrNull(ballisticTarget?.Whitelist, ent.Value) || // Frontier: better revolver reloading
+            if (ballisticTarget is not null && _whitelistSystem.IsWhitelistFailOrNull(ballisticTarget?.Whitelist, ent.Value) && !component.IgnoreWhitelist || // Frontier: better revolver reloading. Mono edit
                 revolverTarget is not null && _whitelistSystem.IsWhitelistFailOrNull(revolverTarget?.Whitelist, ent.Value)) // Frontier: better revolver reloading
             {
                 Popup(
@@ -323,6 +324,21 @@ public abstract partial class SharedGunSystem
         }
 
         UpdateBallisticAppearance(uid, component);
+    }
+
+    // Mono
+    private void OnBallisticCheckProto(Entity<BallisticAmmoProviderComponent> ent, ref CheckShootPrototypeEvent args)
+    {
+        if (ent.Comp.Entities.Count > 0)
+        {
+            var ammo = ent.Comp.Entities[^1];
+            args.ShootPrototype = MetaData(ammo).EntityPrototype;
+        }
+        else if (ent.Comp.UnspawnedCount > 0 || ent.Comp.InfiniteUnspawned)
+        {
+            ProtoManager.TryIndex(ent.Comp.Proto, out var proto);
+            args.ShootPrototype = proto;
+        }
     }
 
     private void OnBallisticAmmoCount(EntityUid uid, BallisticAmmoProviderComponent component, ref GetAmmoCountEvent args)

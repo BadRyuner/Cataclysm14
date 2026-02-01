@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ BaseCartridge, BaseC3PirateContrabandNoValue ]
+  parent: BaseCartridge
   description: Large anti-material round, capable of punching through armor and walls easily.
   id: Cartridge127x99mm
   name: cartridge (12.7x99mm anti-material)
@@ -11,18 +11,17 @@
   - type: CartridgeAmmo
     proto: Bullet127x99mm
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/12.7x99mm_casing.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/14.5x114mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    scale: 0.4,0.4
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice
     price: 20
 
 - type: entity
-  parent: [ BaseCartridge, BaseC3PirateContrabandNoValue ]
+  parent: BaseCartridge
   id: Cartridge127x99mmExplosive
   name: cartridge (12.7x99mm high-explosive)
   components:
@@ -33,14 +32,10 @@
   - type: CartridgeAmmo
     proto: Bullet127x99mmExplosive
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Casings/12.7x99mm_casing.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/14.5x114mm_casing.rsi
     layers:
     - state: base
-      map: [ "enum.AmmoVisualLayers.Base" ]
-    - state: tip
-      map: [ "enum.AmmoVisualLayers.Tip" ]
-      color: "#ff6e52"
-    scale: 0.55,0.55
+      map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

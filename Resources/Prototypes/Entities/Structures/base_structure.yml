@@ -4,6 +4,8 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: ExaminableDamage
+    messages: WindowMessages
   - type: Transform
     anchored: true
   - type: Clickable
@@ -25,11 +27,6 @@
   - type: Tag
     tags:
       - Structure
-#Cataclysm14 start
-  - type: ExaminableDamage
-    messages: WindowMessages
-  # - type: Repairable Maybe not actually
-#Cataclysm14 end
 
 - type: entity
   # This means that it's not anchored on spawn.

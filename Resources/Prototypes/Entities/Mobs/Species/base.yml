@@ -27,7 +27,6 @@
     - map: ["enum.HumanoidVisualLayers.LHand"]
     - map: ["enum.HumanoidVisualLayers.RHand"]
     - map: [ "gloves" ]
-    - map: ["pants"] #cataclysm
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "id" ] # Mono - move from between belt and back
@@ -48,12 +47,6 @@
     - map: [ "helmetattachment" ]
     - map: [ "pocket1" ]
     - map: [ "pocket2" ]
-    #Cataclysm14, start
-    - map: [ "pocket3" ]
-    - map: [ "pocket4" ]
-    - map: [ "suitstorage" ]
-    - map: [ "frontsling" ]
-    #Cataclysm14, end
     - map: ["enum.HumanoidVisualLayers.Handcuffs"]
       color: "#ffffff"
       sprite: Objects/Misc/handcuffs.rsi
@@ -288,7 +281,7 @@
     sweatHeatRegulation: 2000
     shiveringHeatRegulation: 2000
     normalBodyTemperature: 310.15
-    thermalRegulationTemperatureThreshold: 25
+    thermalRegulationTemperatureThreshold: 2
   - type: Perishable
   - type: Butcherable
     butcheringType: Spike # TODO human.
@@ -350,7 +343,6 @@
       state: body-overlay-2
       visible: false
     - map: [ "gloves" ]
-    - map: ["pants"] #cataclysm
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "outerClothing" ] # mono - i hate you upstream
@@ -370,12 +362,7 @@
     - map: [ "head" ]
     - map: [ "pocket1" ]
     - map: [ "pocket2" ]
-    #Cataclysm14, start
-    - map: [ "pocket3" ]
-    - map: [ "pocket4" ]
-    - map: [ "suitstorage" ]
-    - map: [ "frontsling" ]
-    #Cataclysm14, end
+  - type: Appearance
   - type: HumanoidAppearance
     species: Human
   - type: Body
