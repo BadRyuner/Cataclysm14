@@ -1,11 +1,12 @@
 - type: entity
-  id: StructureFurnitureDresserWood
+  id: StructureFurnitureWardrobeWood
   parent: StructureFurnitureBaseLarge
-  name: wooden dresser
-  description: Wooden dresser, can store things inside itself.
+  name: wooden wardrobe
+  description: Wooden wardrobe, can store things inside itself.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Structures/Furnitures/dresser_wood.rsi
+    offset: 0,0.5
+    sprite: _Cataclysm14/Structures/Furnitures/wardrobe_wood.rsi
     state: icon
     noRot: true
   - type: Damageable
@@ -26,7 +27,7 @@
         acts: [ "Destruction" ]
   - type: Storage
     grid:
-    - 0,0,9,9
+    - 0,0,13,11
     maxItemSize: Huge
   - type: ContainerContainer
     containers:

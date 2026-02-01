@@ -1,0 +1,28 @@
+#MARK: GunsMilitaryModernCommonGeneric
+- type: entityTable
+  id: LootTableWeaponGunsMilitaryModernCommonGenericRandom75
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableWeaponGunsMilitaryModernCommonGeneric
+        prob: 0.75
+
+- type: entityTable
+  id: LootTableWeaponGunsMilitaryModernCommonGenericRandom50
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableWeaponGunsMilitaryModernCommonGeneric
+        prob: 0.5
+
+- type: entityTable
+  id: LootTableWeaponGunsMilitaryModernCommonGeneric
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableLoadoutWeaponGunFAMAS
+        rolls: !type:RangeNumberSelector
+          range: 1,2

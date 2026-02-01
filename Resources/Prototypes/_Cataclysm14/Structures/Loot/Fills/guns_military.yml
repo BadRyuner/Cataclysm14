@@ -1,0 +1,19 @@
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledMilitaryArmyFrench
+  suffix: ArmyFrench Filled
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableLoadoutMilitaryArmyFrench
+
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledMilitaryArmyFrenchRandom50
+  suffix: ArmyFrench 50%
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableLoadoutMilitaryArmyFrenchRandom50

@@ -1,0 +1,27 @@
+#MARK: CombatCCE
+- type: entityTable
+  id: LootTableClothingCombatCCE
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingShirtCombatCCE
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingPantsCombatCCE
+
+#MARK: ShirtCombatCCE
+- type: entityTable
+  id: LootTableClothingShirtCombatCCE
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtCombatCEE
+    - id: ClothingShirtCombatCEECargo
+
+#MARK: PantsCombatCCE
+- type: entityTable
+  id: LootTableClothingPantsCombatCCE
+  table: !type:GroupSelector
+    children:
+    - id: ClothingPantsCombatCEE
+    - id: ClothingPantsCombatCEECargo

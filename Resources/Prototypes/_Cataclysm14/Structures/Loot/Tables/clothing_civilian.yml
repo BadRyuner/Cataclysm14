@@ -1,37 +1,4 @@
-- type: entityTable
-  id: LootTableClothingCivilianRandom50
-  table: !type:GroupSelector
-    children:
-      - !type:NestedSelector
-        weight: 100
-        tableId: LootTableClothingCivilian
-        prob: 0.5
-
-- type: entityTable
-  id: LootTableClothingCivilian
-  table: !type:GroupSelector
-    children:
-      - !type:NestedSelector
-        weight: 100
-        tableId: LootTableClothingTopCivilian
-        rolls: !type:RangeNumberSelector
-          range: 0,4
-      - !type:NestedSelector
-        weight: 100
-        tableId: LootTableClothingBottomCivilian
-        rolls: !type:RangeNumberSelector
-          range: 0,4
-      - !type:NestedSelector
-        weight: 100
-        tableId: LootTableClothingShoesCivilian
-        rolls: !type:RangeNumberSelector
-          range: 0,4
-      - !type:NestedSelector
-        weight: 100
-        tableId: LootTableClothingBagCivilian
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-
+#MARK: TopCivilian
 - type: entityTable
   id: LootTableClothingTopCivilian
   table: !type:GroupSelector
@@ -43,6 +10,8 @@
         weight: 100
         tableId: LootTableClothingSweater
 
+
+#MARK: BottomCivilian
 - type: entityTable
   id: LootTableClothingBottomCivilian
   table: !type:GroupSelector
@@ -54,6 +23,7 @@
         weight: 100
         tableId: LootTableClothingJoggings
 
+#MARK: SoesCivilian
 - type: entityTable
   id: LootTableClothingShoesCivilian
   table: !type:GroupSelector
@@ -62,6 +32,7 @@
         weight: 100
         tableId: LootTableClothingSneakers
 
+#MARK: BagCivilian
 - type: entityTable
   id: LootTableClothingBagCivilian
   table: !type:GroupSelector
@@ -73,6 +44,7 @@
         weight: 100
         tableId: LootTableClothingSchoolBag
 
+#MARK: TShirt
 - type: entityTable
   id: LootTableClothingTShirt
   table: !type:GroupSelector
@@ -86,6 +58,7 @@
     - id: ClothingShirtTShirtBlack
     - id: ClothingShirtTShirtBeige
 
+#MARK: Sweater
 - type: entityTable
   id: LootTableClothingSweater
   table: !type:GroupSelector
@@ -99,6 +72,7 @@
     - id: ClothingShirtSweaterBlack
     - id: ClothingShirtSweaterBeige
 
+#MARK: Jeans
 - type: entityTable
   id: LootTableClothingJeans
   table: !type:GroupSelector
@@ -108,6 +82,7 @@
     - id: ClothingPantsJeansBlack
     - id: ClothingPantsJeansBrown
 
+#MARK: Joggings
 - type: entityTable
   id: LootTableClothingJoggings
   table: !type:GroupSelector
@@ -119,6 +94,7 @@
     - id: ClothingPantsJoggingsPurple
     - id: ClothingPantsJoggingsBlack
 
+#MARK: Sneakers
 - type: entityTable
   id: LootTableClothingSneakers
   table: !type:GroupSelector
@@ -131,6 +107,7 @@
     - id: ClothingShoesSneakersPurple
     - id: ClothingShoesSneakersBlack
 
+#MARK: DuffelSport
 - type: entityTable
   id: LootTableClothingDuffelSport
   table: !type:GroupSelector
@@ -141,6 +118,7 @@
     - id: ClothingBackpackDuffelSportYellow
     - id: ClothingBackpackDuffelSportPurple
 
+#MARK: SchoolBag
 - type: entityTable
   id: LootTableClothingSchoolBag
   table: !type:GroupSelector

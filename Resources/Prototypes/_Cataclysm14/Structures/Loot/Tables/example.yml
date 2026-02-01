@@ -1,6 +1,6 @@
 #Gacha table
 - type: entityTable
-  id: ExempleTable1 #It's overall not a very exciting prize table, but we can make iteration with ideas
+  id: exampleTable1 #It's overall not a very exciting prize table, but we can make iteration with ideas
   table: !type:GroupSelector
     children:
   #Coal prize: Uncomment and set weight to modulate gacha pull frequency if a 1/100 pull rate is fucked.
@@ -46,7 +46,7 @@
         weight: 0.01
 
 - type: entityTable
-  id: ExempleTable2
+  id: exampleTable2
   table: !type:GroupSelector
     children:
     - !type:GroupSelector

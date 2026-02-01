@@ -1,0 +1,72 @@
+#MARK: CivilianRandom
+- type: entityTable
+  id: LootTableClothingCivilianGenericRandom75
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.75
+
+- type: entityTable
+  id: LootTableClothingCivilianGenericRandom50
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.5
+
+- type: entityTable
+  id: LootTableClothingCivilianGeneric
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingTopCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,4
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingBottomCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,4
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingShoesCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,4
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingBagCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: MilitaryRandom
+- type: entityTable
+  id: LootTableClothingMilitaryGenericRandom75
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingMilitaryGeneric
+        prob: 0.75
+
+- type: entityTable
+  id: LootTableClothingMilitaryGenericRandom50
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingMilitaryGeneric
+        prob: 0.5
+
+- type: entityTable
+  id: LootTableClothingMilitaryGeneric
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingCombatCCE
+        rolls: !type:RangeNumberSelector
+          range: 0,5

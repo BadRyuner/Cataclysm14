@@ -16,6 +16,7 @@
     - StructureFurnitureDresserWoodFilledClothingCivilianRandom50
     - StructureFurnitureShelfWoodFilledClothingCivilianRandom50
     - StructureFurnitureShelfWoodStorageFilledClothingCivilianRandom50
+    - StructureFurnitureWardrobeWoodFilledClothingCivilianRandom75
     chance: 1
     offset: 0.0
     # rarePrototypes:
