@@ -1,0 +1,42 @@
+- type: entity
+  id: StructureApplianceTankLiquidMediumWater
+  name: liquid storage tank
+  parent: StorageTank
+  suffix: Full][Water
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: DamageOnToolInteract
+    tools: Welding
+    weldingDamage:
+      types:
+        Heat: 10
+  - type: PacifismDangerousAttack
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 175
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Appliances/tank_liquid.rsi
+    state: tank_liquid_large
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        maxVol: 10000
+        reagents:
+        - ReagentId: Water
+          Quantity: 10000
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.45,0.25,0.05"
+        density: 55
+        mask:
+        - BulletImpassable
+        layer:
+        - BulletImpassable
+  - type: RequiresGrid

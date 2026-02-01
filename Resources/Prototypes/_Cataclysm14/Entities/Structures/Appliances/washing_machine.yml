@@ -1,0 +1,50 @@
+- type: entity
+  id: StructureApplianceWashingMachineModern
+  parent: StructureFurnitureBaseLarge
+  name: modern washing machine
+  description: A washing machine, can store things inside itself.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Appliances/washing_machine_modern.rsi
+    state: icon
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,9,9
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: true

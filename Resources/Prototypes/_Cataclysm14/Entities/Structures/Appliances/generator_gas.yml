@@ -5,7 +5,7 @@
     Runs off solid plasma sheets and is rated for up to 25 kW.
   parent: PortableGeneratorSwitchableBase
   id: StructureApplianceGeneratorGasSmall
-  suffix: Gas, 15 kW
+  suffix: Gasoline, 15 kW
   components:
     - type: Sprite
       sprite: _Cataclysm14/Structures/Appliances/generator_gas_small.rsi

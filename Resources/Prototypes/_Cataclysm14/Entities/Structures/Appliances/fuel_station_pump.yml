@@ -2,7 +2,7 @@
   id: StructureApplianceFuelStationPumpBase
   name: fuel station pump
   parent: StorageTank
-  suffix: Full
+  suffix: Full][Gasoline
   components:
   - type: StaticPrice
     price: 750
@@ -26,6 +26,7 @@
   - type: SolutionContainerManager
     solutions:
       tank:
+        maxVol: 1500
         reagents:
         - ReagentId: WeldingFuel
           Quantity: 1500
@@ -46,7 +47,7 @@
   id: StructureApplianceFuelStationPumpOld
   name: old fuel station pump
   parent: StorageTank
-  suffix: Full
+  suffix: Full][Gasoline
   components:
   - type: StaticPrice
     price: 750
@@ -70,6 +71,7 @@
   - type: SolutionContainerManager
     solutions:
       tank:
+        maxVol: 1500
         reagents:
         - ReagentId: WeldingFuel
           Quantity: 1500
