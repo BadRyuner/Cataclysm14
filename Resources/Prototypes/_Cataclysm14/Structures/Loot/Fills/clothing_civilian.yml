@@ -1,0 +1,89 @@
+- type: entity
+  id: StructureFurnitureDresserWoodFilledClothingCivilian
+  suffix: CivClothing Filled
+  parent: StructureFurnitureDresserWood
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGeneric
+
+- type: entity
+  id: StructureFurnitureDresserWoodFilledClothingCivilianRandom50
+  suffix: CivClothing 50%
+  parent: StructureFurnitureDresserWood
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGenericRandom50
+
+- type: entity
+  id: StructureFurnitureShelfWoodFilledClothingCivilian
+  suffix: CivClothing Filled
+  parent: StructureFurnitureShelfWood
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGeneric
+
+- type: entity
+  id: StructureFurnitureShelfWoodFilledClothingCivilianRandom50
+  suffix: CivClothing 50%
+  parent: StructureFurnitureShelfWood
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGenericRandom50
+
+- type: entity
+  id: StructureFurnitureShelfWoodStorageFilledClothingCivilian
+  suffix: CivClothing Filled
+  parent: StructureFurnitureShelfWoodStorage
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGeneric
+
+- type: entity
+  id: StructureFurnitureShelfWoodStorageFilledClothingCivilianRandom50
+  suffix: CivClothing 50%
+  parent: StructureFurnitureShelfWoodStorage
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGenericRandom50
+
+- type: entity
+  id: StructureFurnitureWardrobeWoodFilledClothingCivilian
+  suffix: CivClothing Filled
+  parent: StructureFurnitureWardrobeWood
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGeneric
+
+- type: entity
+  id: StructureFurnitureWardrobeWoodFilledClothingCivilianRandom75
+  suffix: CivClothing 75%
+  parent: StructureFurnitureWardrobeWood
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGenericRandom75
+
+- type: entity
+  id: StructureFurnitureWardrobeWoodFilledClothingCivilianRandom50
+  suffix: CivClothing 50%
+  parent: StructureFurnitureWardrobeWood
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGenericRandom50

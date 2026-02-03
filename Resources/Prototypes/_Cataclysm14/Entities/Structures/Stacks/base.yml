@@ -1,0 +1,15 @@
+- type: entity
+  parent: [BaseWallTierOne, StructureFurnitureBaseLarge]
+  id: BaseStructureStack
+  abstract: true
+  name: stack
+  description: A stack of semi-loose things.
+  components:
+  - type: SpriteFade
+  - type: Transform
+    noRot: true
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+  - type: Occluder
+    enabled: false

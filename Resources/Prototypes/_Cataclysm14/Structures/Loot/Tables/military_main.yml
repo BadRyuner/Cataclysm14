@@ -1,0 +1,33 @@
+#MARK: GunsMilitaryModernCommonGeneric
+- type: entityTable
+  id: LootTableLoadoutMilitaryArmyFrenchRandom75
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableLoadoutMilitaryArmyFrench
+        prob: 0.75
+
+- type: entityTable
+  id: LootTableLoadoutMilitaryArmyFrenchRandom50
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableLoadoutMilitaryArmyFrench
+        prob: 0.5
+
+- type: entityTable
+  id: LootTableLoadoutMilitaryArmyFrench
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableLoadoutWeaponGunFAMAS
+        rolls: !type:RangeNumberSelector
+          range: 1,2
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingCombatCCE
+        rolls: !type:RangeNumberSelector
+          range: 1,5

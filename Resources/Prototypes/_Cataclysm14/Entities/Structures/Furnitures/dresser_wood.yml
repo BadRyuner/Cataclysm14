@@ -1,6 +1,6 @@
 - type: entity
   id: StructureFurnitureDresserWood
-  parent: BaseStructure
+  parent: StructureFurnitureBaseLarge
   name: wooden dresser
   description: Wooden dresser, can store things inside itself.
   components:

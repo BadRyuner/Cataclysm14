@@ -1,0 +1,61 @@
+#Gacha table
+- type: entityTable
+  id: exampleTable1 #It's overall not a very exciting prize table, but we can make iteration with ideas
+  table: !type:GroupSelector
+    children:
+  #Coal prize: Uncomment and set weight to modulate gacha pull frequency if a 1/100 pull rate is fucked.
+#    - !type:GroupSelector
+#      weight: 1
+#      children:
+#      - id: Coal1
+  #Meh prize
+    - !type:GroupSelector
+      weight: 4
+      children:
+      - id: BoxT3ComponentsAssorted
+      - id: NFShovel
+      - id: Telecrystal5
+      - id: MobCatSpaceGhost
+      - id: WehMedipen
+      - id: DrinkBeerCervezaCristalFull
+      - id: SyringeCognizine
+  #Yeh prize
+    - !type:GroupSelector
+      weight: 1
+      children:
+      - id: ClothingShoesBootsMagBlinding
+      - id: BoxT4ComponentsAssorted
+      #Syndie shit
+      - !type:AllSelector
+        children:
+        - id: SyndicateBusinessCard #Saves you the misery of needing to check EVERY SINGLE gas mask/black shoe
+        - !type:GroupSelector
+          children:
+          - id: ClothingBackpackChameleonFill
+          - id: ClothingShoesChameleonNoSlips
+          - id: ClothingMaskGasVoiceChameleon
+          - id: HypopenBox
+          - id: HypoDartBox
+          - id: EnergyDaggerBox
+          - id: CigPackSyndicate
+          - id: Emag
+          - id: ChameleonProjector
+          - id: RadioJammer
+          - id: StorageImplanter
+      - id: ClothingHeadHatCatEarsValid #most vile and powerful
+        weight: 0.01
+
+- type: entityTable
+  id: exampleTable2
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 9
+      children:
+      - id: TechDiskMechS4Base
+      - id: TechDiskMechS4Spec
+      - id: TechDiskMechS2Base
+      - id: TechDiskMechS2Spec
+      - !type:NestedSelector
+        weight: 100
+        tableId: SpawnLootTechDisksT3FractureTrunk

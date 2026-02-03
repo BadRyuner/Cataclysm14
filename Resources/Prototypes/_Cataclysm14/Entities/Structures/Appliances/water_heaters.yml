@@ -1,0 +1,42 @@
+- type: entity
+  id: StructureApplianceWaterHeaterOld
+  name: old water heater
+  parent: [StructureFurnitureBaseLarge, StorageTank]
+  suffix: Full][Water
+  components:
+  - type: StaticPrice
+    price: 750
+  - type: Appearance
+  - type: ExaminableSolution
+    solution: tank
+  - type: DamageOnToolInteract
+    tools: Welding
+    weldingDamage:
+      types:
+        Heat: 10
+  - type: PacifismDangerousAttack
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 175
+  - type: Sprite
+    offset: 0,0.5
+    sprite: _Cataclysm14/Structures/Appliances/water_heaters.rsi
+    state: water_heater_old
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        maxVol: 150
+        reagents:
+        - ReagentId: Water
+          Quantity: 150
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.45,0.2,0.05"
+        density: 55
+        mask:
+        - BulletImpassable
+        layer:
+        - BulletImpassable

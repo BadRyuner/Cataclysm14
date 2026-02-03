@@ -29,3 +29,19 @@
   - type: Construction
     graph: Rebar
     node: StructureWallCataMetalSimpleBase
+
+- type: entity
+  parent: BaseStructureWallCataTierTwo
+  id: StructureWallCataMetalSheetPrefabBase
+  name: sheet metal prefab wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/metal_sheet_prefab.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/metal_sheet_prefab.rsi
+  - type: IconSmooth
+    key: walls
+    base: metal
+  # - type: Construction
+  #   graph: Rebar
+  #   node: StructureWallCataMetalSimpleBase

@@ -1,0 +1,304 @@
+#ReadMe: the only lockers that should be used for lootspawns (with exeptions if reasonable) are the 1/3 for small and 3/3 for big
+#The others are there for player to make for organisations etc.
+
+#MARK: Locker 1/2
+
+- type: entity
+  id: StructureFurnitureLockerMetalHalfSingle
+  parent: StructureFurnitureBaseLarge
+  name: metal locker (1/2)
+  description: Metal locker, can store things inside itself.
+  components:
+  - type: Sprite
+    offset: 0,0.25
+    sprite: _Cataclysm14/Structures/Furnitures/locker_metal.rsi
+    state: locker_metal_half_single
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Metallic
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,9,15
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: True
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.2,0.15,0.4"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+
+- type: entity
+  id: StructureFurnitureLockerMetalHalfDouble
+  parent: StructureFurnitureBaseLarge
+  name: metal locker (2/2)
+  description: Metal locker, can store things inside itself.
+  components:
+  - type: Sprite
+    offset: 0,0.25
+    sprite: _Cataclysm14/Structures/Furnitures/locker_metal.rsi
+    state: locker_metal_half_double
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Metallic
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,9,15
+    - 11,0,20,15
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: True
+
+#MARK: Locker 1/3
+
+- type: entity
+  id: StructureFurnitureLockerMetalThirdSingle
+  parent: StructureFurnitureBaseLarge
+  name: metal locker (1/3)
+  description: Metal locker, can store things inside itself.
+  components:
+  - type: Sprite
+    offset: 0,0.25
+    sprite: _Cataclysm14/Structures/Furnitures/locker_metal.rsi
+    state: locker_metal_third_single
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Metallic
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,7,15
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: True
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.125,-0.2,0.125,0.4"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+
+- type: entity
+  id: StructureFurnitureLockerMetalThirdDouble
+  parent: StructureFurnitureBaseLarge
+  name: metal locker (2/3)
+  description: Metal locker, can store things inside itself.
+  components:
+  - type: Sprite
+    offset: 0,0.25
+    sprite: _Cataclysm14/Structures/Furnitures/locker_metal.rsi
+    state: locker_metal_third_double
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Metallic
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,7,15
+    - 9,0,16,15
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: True
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.2,0.25,0.4"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+
+
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTriple
+  parent: StructureFurnitureBaseLarge
+  name: metal locker (3/3)
+  description: Metal locker, can store things inside itself.
+  components:
+  - type: Sprite
+    offset: 0,0.25
+    sprite: _Cataclysm14/Structures/Furnitures/locker_metal.rsi
+    state: locker_metal_third_triple
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Metallic
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,7,15
+    - 9,0,16,15
+    - 18,0,25,15
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: True

@@ -1,6 +1,6 @@
 - type: entity
   id: StructureFurnitureToolchestMobileCompact
-  parent: [BaseStructure, StructureWheeled]
+  parent: [StructureFurnitureBaseLarge, StructureWheeled]
   name: compact tool chest
   description: Metal shelves, can store things inside itself.
   components:
@@ -9,7 +9,7 @@
     state: mobile_tool_chest_compact
     noRot: true
   - type: Damageable
-    damageModifierSet: Wood
+    damageModifierSet: Metallic
     damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
@@ -51,7 +51,7 @@
 
 - type: entity
   id: StructureFurnitureToolchestMobileLarge
-  parent: [BaseStructure, StructureWheeled]
+  parent: [StructureFurnitureBaseLarge, StructureWheeled]
   name: large tool chest
   description: Metal shelves, can store things inside itself.
   components:
@@ -60,7 +60,7 @@
     state: mobile_tool_chest_large
     noRot: true
   - type: Damageable
-    damageModifierSet: Wood
+    damageModifierSet: Metallic
     damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
@@ -102,7 +102,7 @@
 
 - type: entity
   id: StructureFurnitureToolchestMobileWorkstation
-  parent: [BaseStructure, StructureWheeled]
+  parent: [StructureFurnitureBaseLarge, StructureWheeled]
   name: tool chest mounted workstation
   description: Metal shelves, can store things inside itself.
   components:
@@ -111,7 +111,7 @@
     state: mobile_tool_chest_workstation
     noRot: true
   - type: Damageable
-    damageModifierSet: Wood
+    damageModifierSet: Metallic
     damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
@@ -153,7 +153,7 @@
 
 - type: entity
   id: StructureFurnitureToolchestCounter
-  parent: [BaseStructure, StructureWheeled]
+  parent: [StructureFurnitureBaseLarge, StructureWheeled]
   name: tool chest counter
   description: Metal shelves, can store things inside itself.
   components:
@@ -161,7 +161,7 @@
     sprite: _Cataclysm14/Structures/Furnitures/tool_chest_counter.rsi
     state: full
   - type: Damageable
-    damageModifierSet: Wood
+    damageModifierSet: Metallic
     damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:

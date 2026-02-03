@@ -1,0 +1,44 @@
+- type: entity
+  id: StructureApplianceShowerOld
+  parent: StructureFurnitureBaseLarge
+  name: old shower
+  description: An old shower.
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    sprite: _Cataclysm14/Structures/Appliances/shower_old.rsi
+    state: icon
+    noRot: true
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+  - type: Transform
+    anchored: true
+    noRot: true

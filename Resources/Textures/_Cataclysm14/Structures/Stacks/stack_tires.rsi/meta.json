@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from CDDA tileset Ultimate Cataclysm, modified by zeranov/avtomata (disc:core_mene)",
+  "size": {
+    "x": 32,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "4-4"
+    },
+    {
+      "name": "3-4"
+    },
+    {
+      "name": "2-4"
+    },
+    {
+      "name": "1-4"
+    }
+  ]
+}

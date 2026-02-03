@@ -1,6 +1,6 @@
 - type: entity
   id: StructureFurnitureShelfWood
-  parent: BaseStructure
+  parent: StructureFurnitureBaseLarge
   name: wooden shelves
   description: Wooden shelves, can store things inside itself.
   components:
@@ -51,7 +51,7 @@
 
 - type: entity
   id: StructureFurnitureShelfWoodStorage
-  parent: BaseStructure
+  parent: StructureFurnitureBaseLarge
   name: wooden storage shelves
   description: Wooden shelves, can store things inside itself.
   components:

@@ -1,7 +1,7 @@
 - type: entity
   name: GIAT FAMAS-G2 (5.56x45mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponAssaultRifleFAMAS-G2
+  id: WeaponAssaultRifleFAMASG2
   description: A modern polymer bullpup assault rifle made by the GIAT group and used by the french army. Chambered in 5.56x45mm NATO.
   components:
   - type: Sprite

@@ -1,0 +1,12 @@
+#MARK: LoadoutFAMAS
+- type: entityTable
+  id: LootTableLoadoutWeaponGunFAMAS
+  table: !type:AllSelector
+    children:
+      - id: WeaponAssaultRifleFAMASG2
+      - id: Magazine556x45mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+      - id: AmmoBox556x45mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,1

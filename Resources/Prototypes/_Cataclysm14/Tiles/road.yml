@@ -55,13 +55,6 @@
   - type: Icon
     sprite: /Textures/_Cataclysm14/Tiles/road/road_line.rsi
     state: line_4
-  - type: NodeContainer
-    nodes:
-      power:
-        !type:CableNode
-        nodeGroupID: MVPower
-  - type: CableVisualizer
-    statePrefix: line_
   - type: Clickable
   - type: Transform
     anchored: true
@@ -77,8 +70,10 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Appearance
-  - type: CableVis
-    node: power
+  - type: IconSmooth
+    key: RoadMarkings
+    base: line_
+    mode: CardinalFlags
 
 - type: entity
   parent: FloorRoadMarkingWhite
@@ -112,13 +107,6 @@
   - type: Icon
     sprite: /Textures/_Cataclysm14/Tiles/road/road_crossing.rsi
     state: line_4
-  - type: NodeContainer
-    nodes:
-      power:
-        !type:CableNode
-        nodeGroupID: HVPower # this SUUUUCKS ass, better solution one week away trust
-  - type: CableVisualizer
-    statePrefix: line_
   - type: Clickable
   - type: Transform
     anchored: true
@@ -134,8 +122,10 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Appearance
-  - type: CableVis
-    node: power
+  - type: IconSmooth
+    key: RoadMarkings
+    base: line_
+    mode: CardinalFlags
 
 - type: entity
   parent: FloorRoadCrossingWhite
@@ -185,6 +175,18 @@
 
 - type: entity
   parent: FloorRoadMarkingStopSolidWhite
+  id: FloorRoadMarkingStopSolidYellow
+  name: yellow solid road stop markings
+  components:
+  - type: Sprite
+    state: white_solid
+    color: "#cdc208"
+  - type: Icon
+    state: white_solid
+    color: "#cdc208"
+
+- type: entity
+  parent: FloorRoadMarkingStopSolidWhite
   id: FloorRoadMarkingStopBrokenWhite
   name: white broken road stop markings
   components:
@@ -194,6 +196,20 @@
   - type: Icon
     sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
     state: white_broken
+
+- type: entity
+  parent: FloorRoadMarkingStopSolidWhite
+  id: FloorRoadMarkingStopBrokenYellow
+  name: yellow broken road stop markings
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_broken
+    color: "#cdc208"
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_broken
+    color: "#cdc208"
 
 # MARK: Sidewalk
 

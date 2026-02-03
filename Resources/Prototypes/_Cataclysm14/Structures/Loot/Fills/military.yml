@@ -1,0 +1,19 @@
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledGunsMilitaryModernCommonGeneric
+  suffix: GunsMilitaryModernCommonGeneric Filled
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunsMilitaryModernCommonGeneric
+
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledGunsMilitaryModernCommonGenericRandom50
+  suffix: GunsMilitaryModernCommonGeneric 50%
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunsMilitaryModernCommonGenericRandom50

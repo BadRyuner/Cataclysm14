@@ -1,0 +1,110 @@
+- type: entity
+  id: StructureShutterCommercialMetalBase
+  parent: BaseShutter
+  name: commercial shutters
+  description: Sturdy shutters to protect a shop from thieves.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Shutters/shutter_commercial_base.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    openDrawDepth: BlastDoors
+    closedDrawDepth: BlastDoors
+    bumpOpen: false
+    clickOpen: false
+    closeTimeOne: 0.3
+    closeTimeTwo: 1.5
+    openTimeOne: 1.5
+    openTimeTwo: 0.3
+    openingAnimationTime: 1.6
+    closingAnimationTime: 1.6
+    crushDamage:
+      types:
+        Blunt: 5
+    openSound:
+      path: /Audio/Machines/shutter.ogg
+    closeSound:
+      path: /Audio/Machines/shutter.ogg
+  - type: Airtight
+    airBlocked: true
+  # - type: Occluder
+  # - type: Construction
+  #   graph: Shutters
+  #   node: ShuttersRadiation
+  #   containers:
+  #   - board
+  # - type: RadiationBlocker
+  #   resistance: 4
+
+- type: entity
+  id: StructureShutterCommercialMetalBaseOpen
+  parent: StructureShutterCommercialMetalBase
+  suffix: Open
+  components:
+  - type: Door
+    state: Open
+  - type: Physics
+    canCollide: false
+  - type: Airtight
+    airBlocked: false
+  # - type: RadiationBlocker
+  #   enabled: false
+
+
+- type: entity
+  id: StructureShutterCommercialMetalSheetMetal
+  parent: StructureShutterCommercialMetalBase
+  name: sheet metal commercial shutters
+  description: Sturdy shutters to protect a shop from thieves.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Shutters/shutter_commercial_sheet_metal.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    openDrawDepth: BlastDoors
+    closedDrawDepth: BlastDoors
+    bumpOpen: false
+    clickOpen: false
+    closeTimeOne: 0.3
+    closeTimeTwo: 1.5
+    openTimeOne: 1.5
+    openTimeTwo: 0.3
+    openingAnimationTime: 1.6
+    closingAnimationTime: 1.6
+    crushDamage:
+      types:
+        Blunt: 5
+    openSound:
+      path: /Audio/Machines/shutter.ogg
+    closeSound:
+      path: /Audio/Machines/shutter.ogg
+  - type: Occluder
+  - type: Airtight
+    airBlocked: true
+  # - type: Construction
+  #   graph: Shutters
+  #   node: ShuttersRadiation
+  #   containers:
+  #   - board
+  # - type: RadiationBlocker
+  #   resistance: 4
+
+- type: entity
+  id: StructureShutterCommercialMetalSheetMetalOpen
+  parent: StructureShutterCommercialMetalSheetMetal
+  suffix: Open
+  components:
+  - type: Airtight
+    airBlocked: false
+  - type: Door
+    state: Open
+  - type: Occluder
+    enabled: false
+  - type: Physics
+    canCollide: false
+  # - type: RadiationBlocker
+  #   enabled: false

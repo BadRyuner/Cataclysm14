@@ -1,6 +1,6 @@
 - type: entity
   id: StructureFurnitureShelfMetal
-  parent: BaseStructure
+  parent: StructureFurnitureBaseLarge
   name: metal shelves
   description: Metal shelves, can store things inside itself.
   components:
@@ -9,7 +9,7 @@
     state: icon
     noRot: true
   - type: Damageable
-    damageModifierSet: Wood
+    damageModifierSet: Metallic
     damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
@@ -51,7 +51,7 @@
 
 - type: entity
   id: StructureFurnitureShelfMetalStorage
-  parent: BaseStructure
+  parent: StructureFurnitureBaseLarge
   name: metal storage shelves
   description: Metal shelves, can store things inside itself.
   components:
@@ -60,7 +60,7 @@
     state: icon
     noRot: true
   - type: Damageable
-    damageModifierSet: Wood
+    damageModifierSet: Metallic
     damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
