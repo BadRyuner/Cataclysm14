@@ -27,6 +27,8 @@
       path: /Audio/Machines/shutter.ogg
     closeSound:
       path: /Audio/Machines/shutter.ogg
+  - type: Airtight
+    airBlocked: true
   # - type: Occluder
   # - type: Construction
   #   graph: Shutters
@@ -45,6 +47,8 @@
     state: Open
   - type: Physics
     canCollide: false
+  - type: Airtight
+    airBlocked: false
   # - type: RadiationBlocker
   #   enabled: false
 
@@ -79,6 +83,8 @@
     closeSound:
       path: /Audio/Machines/shutter.ogg
   - type: Occluder
+  - type: Airtight
+    airBlocked: true
   # - type: Construction
   #   graph: Shutters
   #   node: ShuttersRadiation
@@ -92,6 +98,8 @@
   parent: StructureShutterCommercialMetalSheetMetal
   suffix: Open
   components:
+  - type: Airtight
+    airBlocked: false
   - type: Door
     state: Open
   - type: Occluder
