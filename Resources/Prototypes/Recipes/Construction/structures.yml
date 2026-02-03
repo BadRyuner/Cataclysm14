@@ -52,23 +52,23 @@
 #   conditions:
 #     - !type:TileNotBlocked
 
-# - type: construction
-#   name: wall
-#   id: Wall
-#   graph: Girder
-#   startNode: start
-#   targetNode: wall
-#   category: construction-category-structures
-#   description: Keeps the air in and the greytide out.
-#   icon:
-#     sprite: _NF/Structures/Walls/solid.rsi # Frontier
-#     state: full
-#   objectType: Structure
-#   placementMode: SnapgridCenter
-#   canRotate: false
-#   canBuildInImpassable: false
-#   conditions:
-#     - !type:TileNotBlocked
+- type: construction
+  name: wall
+  id: Wall
+  graph: Girder
+  startNode: start
+  targetNode: wall
+  category: construction-category-deprecated
+  description: Keeps the air in and the greytide out.
+  icon:
+    sprite: _NF/Structures/Walls/solid.rsi # Frontier
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
 
 # - type: construction
 #   name: reinforced wall
@@ -304,23 +304,23 @@
 #   conditions:
 #   - !type:TileNotBlocked
 
-# - type: construction
-#   name: grille
-#   id: Grille
-#   graph: Grille
-#   startNode: start
-#   targetNode: grille
-#   category: construction-category-structures
-#   description: A flimsy framework of iron rods.
-#   conditions:
-#     - !type:TileNotBlocked
-#       failIfSpace: false
-#   icon:
-#     sprite: Structures/Walls/grille.rsi
-#     state: grille
-#   objectType: Structure
-#   placementMode: SnapgridCenter
-#   canRotate: false
+- type: construction
+  name: grille
+  id: Grille
+  graph: Grille
+  startNode: start
+  targetNode: grille
+  category: construction-category-deprecated
+  description: A flimsy framework of iron rods.
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+  icon:
+    sprite: Structures/Walls/grille.rsi
+    state: grille
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
 
 # - type: construction
 #   name: clockwork grille
@@ -374,24 +374,24 @@
 #   objectType: Structure
 #   placementMode: SnapgridCenter
 
-# - type: construction
-#   name: window
-#   id: Window
-#   graph: Window
-#   startNode: start
-#   targetNode: window
-#   category: construction-category-structures
-#   description: Clear.
-#   canBuildInImpassable: true
-#   conditions:
-#     - !type:EmptyOrWindowValidInTile
-#     - !type:NoWindowsInTile
-#   icon:
-#     sprite: _NF/Structures/Windows/window.rsi # Frontier
-#     state: full
-#   objectType: Structure
-#   placementMode: SnapgridCenter
-#   canRotate: false
+- type: construction
+  name: window
+  id: Window
+  graph: Window
+  startNode: start
+  targetNode: window
+  category: construction-category-deprecated
+  description: Clear.
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: _NF/Structures/Windows/window.rsi # Frontier
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
 
 # - type: construction
 #   name: diagonal window
@@ -411,24 +411,24 @@
 #   objectType: Structure
 #   placementMode: SnapgridCenter
 
-# - type: construction
-#   name: reinforced window
-#   id: ReinforcedWindow
-#   graph: Window
-#   startNode: start
-#   targetNode: reinforcedWindow
-#   category: construction-category-structures
-#   description: Clear but tough.
-#   canBuildInImpassable: true
-#   conditions:
-#     - !type:EmptyOrWindowValidInTile
-#     - !type:NoWindowsInTile
-#   icon:
-#     sprite: _NF/Structures/Windows/reinforced_window.rsi # Frontier
-#     state: full
-#   objectType: Structure
-#   placementMode: SnapgridCenter
-#   canRotate: false
+- type: construction
+  name: reinforced window
+  id: ReinforcedWindow
+  graph: Window
+  startNode: start
+  targetNode: reinforcedWindow
+  category: construction-category-deprecated
+  description: Clear but tough.
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: _NF/Structures/Windows/reinforced_window.rsi # Frontier
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
 
 # - type: construction
 #   name: diagonal reinforced window

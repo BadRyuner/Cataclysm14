@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseStructure
+  parent: StructureFurnitureBaseLarge
   id: StructureFurnitureWorkbenchMetal
   name: metal workbench
   description: A large metal workbench, for tinkering or crafting.
