@@ -6,7 +6,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Structures/Furniture/toilet.rsi
+    sprite: _Cataclysm14/Structures/Appliances/toilet_base.rsi
     layers:
     - state: condisposal
       map: [ "enum.DisposalUnitVisualLayers.Unanchored" ]
@@ -111,7 +111,7 @@
   name: toilet
   description: A simple porcelain toilet.
   id: StructureApplianceToiletEmpty
-  parent: BaseToilet
+  parent: BaseStructureApplianceToilet
   suffix: Empty
   components:
   - type: Construction

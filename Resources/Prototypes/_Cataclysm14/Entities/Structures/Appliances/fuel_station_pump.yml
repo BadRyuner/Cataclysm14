@@ -42,7 +42,8 @@
         - BulletImpassable
         layer:
         - BulletImpassable
-  - type: RequiresGrid
+  - type: Anchorable
+    delay: 99999 #unanchorable-ish
 
 - type: entity
   id: StructureApplianceFuelStationPumpOld
@@ -88,4 +89,5 @@
         - BulletImpassable
         layer:
         - BulletImpassable
-  - type: RequiresGrid
+  - type: Anchorable
+    delay: 99999 #unanchorable-ish

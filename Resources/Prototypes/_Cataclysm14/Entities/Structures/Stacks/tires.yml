@@ -1,0 +1,13 @@
+- type: entity
+  parent: BaseStructureStack
+  id: StructureStackTires
+  name: tire stack
+  description: A shattered wooden door.
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    sprite: _Cataclysm14/Structures/Stacks/stack_tires.rsi
+    state: 4-4
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Stacks/stack_tires.rsi
+    state: 4-4

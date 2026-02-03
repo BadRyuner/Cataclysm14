@@ -1,8 +1,8 @@
 - type: entity
-  name: wooden desk
-  id: StructureFurnitureDeskWood
   parent: BaseStructure
-  description: A small desk, often used for schools.
+  id: StructureFurnitureWorkbenchMetal
+  name: metal workbench
+  description: A large metal workbench, for tinkering or crafting.
   components:
   - type: Physics
     bodyType: Static
@@ -20,7 +20,9 @@
         - BulletImpassable
   - type: Climbable
   - type: Sprite
-    sprite: _Cataclysm14/Structures/Furnitures/desk_wood.rsi
+    scale: 0.9,0.7
+    noRot: true
+    sprite: _Cataclysm14/Structures/Furnitures/workbench_metal.rsi
     state: icon
   # Construction has to be before PlaceableSurface or you'll place things onto the entity instead of deconstructing it.
   - type: Construction
@@ -48,5 +50,6 @@
             max: 2
   - type: Transform
     anchored: true
+    noRot: true
   - type: Anchorable
   - type: Pullable

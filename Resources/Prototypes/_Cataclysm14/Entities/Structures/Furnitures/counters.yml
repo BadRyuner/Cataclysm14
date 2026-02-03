@@ -1,0 +1,90 @@
+- type: entity
+  id: StructureFurnitureCounterGreyBeige
+  parent: CounterBase
+  name: grey and beige counter
+  description: Do not apply fire to this. Rumour says it burns easily.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Furnitures/counter_grey_beige.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Furnitures/counter_grey_beige.rsi
+    state: full
+  - type: Fixtures
+    fixtures:
+      table:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 55
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+        hard: true
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: SmoothFurnitureCounter
+    base: wood
+  - type: Construction
+    graph: Table
+    node: CounterWood
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepWood
+  - type: Anchorable
+
+- type: entity
+  name: grey and beige counter sink
+  id: StructureFurnitureCounterGreyBeigeSink
+  parent: [BaseStructure, Sink]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Furnitures/counter_sink_grey_beige.rsi
+    layers:
+      - state: icon
+      - map: [ "enum.SolutionContainerLayers.Fill" ]
+        state: filled
+        visible: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    fillBaseName: filled
+    solutionName: drainBuffer
+  - type: IconSmooth
+    key: SmoothFurnitureCounter
+    mode: NoSprite
+  - type: Anchorable

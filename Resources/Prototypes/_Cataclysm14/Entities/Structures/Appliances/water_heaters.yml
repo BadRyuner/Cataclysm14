@@ -29,14 +29,14 @@
         reagents:
         - ReagentId: Water
           Quantity: 150
-  # - type: Fixtures
-  #   fixtures:
-  #     fix1:
-  #       shape:
-  #         !type:PhysShapeAabb
-  #         bounds: "-0.25,-0.45,0.25,0.05"
-  #       density: 55
-  #       mask:
-  #       - BulletImpassable
-  #       layer:
-  #       - BulletImpassable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.45,0.2,0.05"
+        density: 55
+        mask:
+        - BulletImpassable
+        layer:
+        - BulletImpassable

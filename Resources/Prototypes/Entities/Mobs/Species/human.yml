@@ -5,6 +5,9 @@
   name: Urist McHands
   abstract: true
   components:
+  #Cataclysm14, bigger hitbox and sprite
+  - type: Sprite
+    scale: 1.1,1.1
   - type: Hunger
   - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
     sprite: Mobs/Species/Human/parts.rsi
@@ -38,7 +41,19 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.5 # Cataclysm14
     baseSprintSpeed: 5 # Cataclysm14
-    baseWeightlessModifier: 1 # Cataclysm14
+  #Cataclysm14, bigger hitbox and sprite
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 220
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
 
 - type: entity
   parent: BaseSpeciesDummy
