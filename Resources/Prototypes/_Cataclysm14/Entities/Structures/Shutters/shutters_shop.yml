@@ -47,6 +47,8 @@
     state: Open
   - type: Physics
     canCollide: false
+  - type: Airtight
+    airBlocked: false
   # - type: RadiationBlocker
   #   enabled: false
 
@@ -96,6 +98,8 @@
   parent: StructureShutterCommercialMetalSheetMetal
   suffix: Open
   components:
+  - type: Airtight
+    airBlocked: false
   - type: Door
     state: Open
   - type: Occluder

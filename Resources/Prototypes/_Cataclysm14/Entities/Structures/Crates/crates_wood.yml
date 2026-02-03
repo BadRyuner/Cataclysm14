@@ -1,0 +1,118 @@
+#MARK: wood
+- type: entity
+  parent: StructureCrateBase
+  id: StructureCrateWoodSmall
+  name: small wooden crate
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Crates/crate_wood_small.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Crates/crate_wood_small.rsi
+    state: base
+  - type: EntityStorage
+    capacity: 10
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.1"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: StructureCrateBase
+  id: StructureCrateWoodMedium
+  name: medium wooden crate
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Crates/crate_wood_medium.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Crates/crate_wood_medium.rsi
+    state: base
+  - type: EntityStorage
+    capacity: 20
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.35,0.1"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: StructureCrateBase
+  id: StructureCrateWoodLarge
+  name: large wooden crate
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Crates/crate_wood_large.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Crates/crate_wood_large.rsi
+    state: base
+  - type: EntityStorage
+    capacity: 30
+    isCollidableWhenOpen: true
+    itemCanStoreMobs: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.35,0.2"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: StructureCrateBase
+  id: StructureCrateShippingWood
+  name: wooden shipping crate
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    sprite: _Cataclysm14/Structures/Crates/crate_shipping_wood.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Crates/crate_shipping_wood.rsi
+    state: base
+  - type: EntityStorage
+    capacity: 50
+    isCollidableWhenOpen: true
+    airtight: true
+    itemCanStoreMobs: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.35,0.5"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer

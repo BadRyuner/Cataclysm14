@@ -1,6 +1,6 @@
 - type: entity
   name: water drinking pump
-  id: StrucutreApplianceWaterDrinkingPump
+  id: StructureApplianceWaterDrinkingPump
   suffix: Water
   placement:
     mode: SnapgridCenter
@@ -8,10 +8,6 @@
   - type: Clickable
   - type: InteractionOutline
   - type: Appearance
-  - type: SolutionContainerVisuals
-    maxFillLevels: 1
-    fillBaseName: sink-fill-
-    solutionName: drainBuffer
   - type: SolutionRegeneration
     solution: tank
     generated:
