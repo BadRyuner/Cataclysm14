@@ -20,6 +20,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly ProtoId<EntityCategoryPrototype> SpawnerCategory = "Spawner";
 
         [Test]
+        [Explicit] // Floofstation - OOM bait
         public async Task SpawnAndDeleteAllEntitiesOnDifferentMaps()
         {
             // This test dirties the pair as it simply deletes ALL entities when done. Overhead of restarting the round
@@ -83,6 +84,7 @@ namespace Content.IntegrationTests.Tests
         }
 
         [Test]
+        [Explicit] // Floofstation - OOM bait
         public async Task SpawnAndDeleteAllEntitiesInTheSameSpot()
         {
             // This test dirties the pair as it simply deletes ALL entities when done. Overhead of restarting the round
@@ -142,7 +144,8 @@ namespace Content.IntegrationTests.Tests
         ///     Variant of <see cref="SpawnAndDeleteAllEntitiesOnDifferentMaps"/> that also launches a client and dirties
         ///     all components on every entity.
         /// </summary>
-        [Test, NonParallelizable] //Cataclysm14, ram issue fix
+        [Test]
+        [Explicit] // Floofstation - OOM bait
         [Ignore("Preventing CI tests from failing")] // Frontier: FIXME - these take forever to run and fail.
         public async Task SpawnAndDirtyAllEntities()
         {
