@@ -142,7 +142,7 @@ namespace Content.IntegrationTests.Tests
         ///     Variant of <see cref="SpawnAndDeleteAllEntitiesOnDifferentMaps"/> that also launches a client and dirties
         ///     all components on every entity.
         /// </summary>
-        [Test]
+        [Test, NonParallelizable] //Cataclysm14, ram issue fix
         [Ignore("Preventing CI tests from failing")] // Frontier: FIXME - these take forever to run and fail.
         public async Task SpawnAndDirtyAllEntities()
         {
