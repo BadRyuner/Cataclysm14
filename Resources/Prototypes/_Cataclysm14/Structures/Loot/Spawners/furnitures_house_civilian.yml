@@ -24,8 +24,56 @@
     # rareChance: 0.1
 
 - type: entity
-  name: bedroom furnitures spawner
+  name: bedroom decoration spawner
   id: EntitiesSpawnerStructureFurnituresHouseBedroomDecoration
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _Cataclysm14/Structures/Furnitures/trash_bin_small.rsi
+        state: icon
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+  - type: RandomSpawner
+    prototypes:
+    - StructureFurnitureTrashBinSmall
+    - DogBed
+    - PottedPlantRandom
+    chance: 1
+    offset: 0.0
+    # rarePrototypes:
+    # - SpawnDungeonLootLockersGeneral
+    # rareChance: 0.1
+
+- type: entity
+  name: pantry furnitures spawner
+  id: EntitiesSpawnerStructureFurnituresHousePantryStorage
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _Cataclysm14/Structures/Furnitures/shelf_wood.rsi
+        state: icon
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+  - type: RandomSpawner
+    prototypes:
+    - StructureFurnitureDresserWoodFilledClothingCivilianRandom50
+    - StructureFurnitureShelfWoodFilledClothingCivilianRandom50
+    - StructureFurnitureShelfWoodStorageFilledClothingCivilianRandom50
+    chance: 1
+    offset: 0.0
+    # rarePrototypes:
+    # - SpawnDungeonLootLockersGeneral
+    # rareChance: 0.1
+
+- type: entity
+  name: generic house decoration spawner
+  id: EntitiesSpawnerStructureFurnituresHouseDecoration
   parent: MarkerBase
   components:
   - type: Sprite

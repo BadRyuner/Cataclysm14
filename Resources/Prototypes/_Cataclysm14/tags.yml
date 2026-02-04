@@ -111,6 +111,24 @@
   - type: Tag
     id: CataRoomSpawnerHouseGarageBase6x6
 
+#MARK: Pantries
+  - type: Tag
+    id: CataRoomSpawnerHousePantryBase3x3
+
+  - type: Tag
+    id: CataRoomSpawnerHousePantryBase3x4
+
+#MARK: Toilets
+  - type: Tag
+    id: CataRoomSpawnerHouseToiletBase2x1
+
+  - type: Tag
+    id: CataRoomSpawnerHouseToiletBase1x2
+
+#MARK: Bathroom
+  - type: Tag
+    id: CataRoomSpawnerHouseBathroomBase3x3
+
 # #MARK: City Block
 #   - type: Tag
 #     id: CataStructureSmallNeighborhood91x91

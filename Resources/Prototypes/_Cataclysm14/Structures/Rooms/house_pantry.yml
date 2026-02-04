@@ -1,0 +1,88 @@
+#MARK: pantry 3x3
+- type: dungeonRoom
+  id: RoomSpawnerHousePantryBase3x3a
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Pantry/room_pantry_3x3.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerPantryBase3x3
+
+- type: dungeonRoom
+  id: RoomSpawnerHousePantryBase3x3b
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Pantry/room_pantry_3x3.yml
+  offset: 4,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerPantryBase3x3
+
+- type: dungeonRoom
+  id: RoomSpawnerHousePantryBase3x3c
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Pantry/room_pantry_3x3.yml
+  offset: 8,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerPantryBase3x3
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHousePantryBase3x3
+  name: room spawner house pantry base
+  suffix: Pantry][3x3
+  components:
+  - type: Sprite
+    scale: 3,3
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_3x3
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerPantryBase3x3
+
+#MARK: pantry 3x4
+- type: dungeonRoom
+  id: RoomSpawnerHousePantryBase3x4a
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Pantry/room_pantry_3x4.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerPantryBase3x4
+
+- type: dungeonRoom
+  id: RoomSpawnerHousePantryBase3x4b
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Pantry/room_pantry_3x4.yml
+  offset: 6,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerPantryBase3x4
+
+- type: dungeonRoom
+  id: RoomSpawnerHousePantryBase3x4c
+  size: 5,5
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Pantry/room_pantry_3x4.yml
+  offset: 12,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerPantryBase3x4
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHousePantryBase3x4
+  name: room spawner house pantry base
+  suffix: Pantry][3x4
+  components:
+  - type: Sprite
+    offset: -1,-0.5
+    scale: 3,4
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_3x3
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerPantryBase3x4

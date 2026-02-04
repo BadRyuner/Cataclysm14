@@ -58,12 +58,12 @@
   - type: Anchorable
 
 - type: entity
-  name: grey and beige counter sink
-  id: StructureFurnitureCounterGreyBeigeSink
+  name: counter sink
+  id: StructureFurnitureCounterSink
   parent: [BaseStructure, Sink]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Structures/Furnitures/counter_sink_grey_beige.rsi
+    sprite: _Cataclysm14/Structures/Furnitures/counter_sink.rsi
     layers:
       - state: icon
       - map: [ "enum.SolutionContainerLayers.Fill" ]

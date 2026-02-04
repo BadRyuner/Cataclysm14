@@ -1,0 +1,43 @@
+- type: entity
+  parent: ComputerSurveillanceWirelessCameraMonitor
+  id: StructureApplianceTelevisionVintage
+  name: vintage television
+  description: Finally, some decent reception around here...
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Appliances/television_vintage.rsi
+    noRot: true
+    drawdepth: SmallObjects
+    layers:
+    - map: ["computerLayerBody"]
+      state: television
+    - map: ["computerLayerScreen"]
+      state: television_on
+  - type: Computer
+    board: ComputerTelevisionCircuitboard
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#b89f25"
+
+- type: entity
+  parent: ComputerSurveillanceWirelessCameraMonitor
+  id: StructureApplianceTelevisionFlatscreen
+  name: flatscreen television
+  description: Finally, some decent reception around here...
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Appliances/television_flatscreen.rsi
+    noRot: true
+    drawdepth: SmallObjects
+    layers:
+    - map: ["computerLayerBody"]
+      state: television
+    - map: ["computerLayerScreen"]
+      state: television_on
+  - type: Computer
+    board: ComputerTelevisionCircuitboard
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#b89f25"
