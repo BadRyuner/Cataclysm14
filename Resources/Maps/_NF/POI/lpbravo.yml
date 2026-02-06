@@ -16778,7 +16778,7 @@ entities:
     - type: Transform
       pos: 35.5,8.5
       parent: 1
-- proto: Magazine556x45mmIncendiary
+- proto: Magazine5.56x45mmIncendiary
   entities:
   - uid: 1876
     components:

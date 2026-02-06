@@ -1760,7 +1760,7 @@ entities:
         - 0
         - 0
         - 0
-- proto: Magazine57x28mmSubMachineGunFMJ
+- proto: Magazine5.7x28mmSubMachineGunFMJ
   entities:
   - uid: 133
     components:
