@@ -1,34 +1,25 @@
 - type: dungeonRoom
-  id: StructureSpawnerHouseMedium26x26a
+  id: StructureSpawnerHouseSmall26x26a
   size: 27,27
-  atlas: /Maps/_Cataclysm14/Structures/structure_house_residential_medium_26x26_a.yml
+  atlas: /Maps/_Cataclysm14/Structures/structure_house_residential_small_26x26_a.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureHouseMedium26x26
+  - CataStructureHouseSmall26x26
 
 - type: dungeonRoom
-  id: StructureSpawnerHouseMedium26x26b
+  id: StructureSpawnerHouseSmall26x26b
   size: 27,27
-  atlas: /Maps/_Cataclysm14/Structures/structure_house_residential_medium_26x26_b.yml
+  atlas: /Maps/_Cataclysm14/Structures/structure_house_residential_small_26x26_b.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureHouseMedium26x26
-
-# - type: dungeonRoom
-#   id: StructureSpawnerHouseMedium26x26c
-#   size: 27,27
-#   atlas: /Maps/_Cataclysm14/Structures/structure_house_residential_medium_26x26_c.yml
-#   offset: 0,0
-#   ignoreTile: FloorShuttleOrange
-  # tags:
-  # - CataStructureHouseMedium26x26
+  - CataStructureHouseSmall26x26
 
 - type: entity
   parent: BaseStructureSpawner
-  id: StructureSpawnerHouseMedium26x26
-  name: structure spawner medium house
+  id: StructureSpawnerHouseSmall26x26
+  name: structure spawner Small house
   suffix: 2x2 Chunk][26x26
   components:
   - type: Sprite
@@ -41,31 +32,4 @@
     rotation: false
     roomWhitelist:
       tags:
-      - CataStructureHouseMedium26x26
-
-# - type: dungeonRoom
-#   id: StructureSpawnerMediumNeighborhood91x91
-#   size: 91,91
-#   atlas: /Maps/_Cataclysm14/Structures/medium_neighborhood_91x91.yml
-#   offset: 0,0
-#   ignoreTile: FloorShuttleOrange
-#   tags:
-#   - CataStructureMediumNeighborhood91x91
-
-# - type: entity
-#   parent: BaseStructureSpawner
-#   id: StructureSpawnerMediumNeighborhood91x91
-#   name: structure spawner medium neighborhood
-#   suffix: 91x91
-#   components:
-#   - type: Sprite
-#     scale: 91,91
-#     offset: -0.5,-0.5
-#     layers:
-#       - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
-#         state: structure_border_house_small
-#   - type: RoomFill
-#     roomWhitelist:
-#       tags:
-#       - CataStructureMediumNeighborhood91x91
-
+      - CataStructureHouseSmall26x26

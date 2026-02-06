@@ -1,0 +1,23 @@
+- type: entity
+  name: red toolbox
+  parent: ToolboxBase
+  id: ContainerToolboxRed
+  components:
+  - type: Sprite
+    scale: 0.8,0.8
+    sprite: _Cataclysm14/Objects/Containers/toolbox_red.rsi
+    state: icon
+  - type: Item
+    sprite: _Cataclysm14/Objects/Containers/toolbox_red.rsi
+
+- type: entity
+  name: mechanic toolbox
+  parent: ToolboxBase
+  id: ContainerToolboxMechanic
+  components:
+  - type: Sprite
+    scale: 0.8,0.8
+    sprite: _Cataclysm14/Objects/Containers/toolbox_mechanic.rsi
+    state: icon
+  - type: Item
+    sprite: _Cataclysm14/Objects/Containers/toolbox_mechanic.rsi

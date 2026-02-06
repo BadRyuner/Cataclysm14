@@ -1,0 +1,141 @@
+#MARK: Leather sofa
+- type: entity
+  name: sofa
+  id: FurnitureSofaLeatherMiddle
+  parent: BenchBaseMiddle
+  components:
+  - type: Sprite
+    sprite: SimpleStation14/Structures/Furniture/Benches/sofa.rsi
+  - type: Construction # Frontier
+    graph: SofasGraph # Frontier
+    node: BenchSofaMiddleNode # Frontier
+  - type: StaticPrice # Frontier
+    price: 25 # Frontier: 25
+
+- type: entity
+  id: FurnitureSofaLeatherLeft
+  suffix: Left
+  parent: BenchSofaMiddle
+  components:
+  - type: Sprite
+    state: left
+  - type: Construction # Frontier
+    graph: SofasGraph # Frontier
+    node: BenchSofaLeftNode # Frontier
+
+- type: entity
+  id: FurnitureSofaLeatherRight
+  suffix: Right
+  parent: BenchSofaMiddle
+  components:
+  - type: Sprite
+    state: right
+  - type: Construction # Frontier
+    graph: SofasGraph # Frontier
+    node: BenchSofaRightNode # Frontier
+
+- type: entity
+  name: sofa
+  id: FurnitureSofaLeatherCorner
+  suffix: Corner
+#  parent: BenchSofaMiddle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: SimpleStation14/Structures/Furniture/Benches/sofa.rsi
+    state: corner
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Pullable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Construction # Frontier
+    graph: SofasGraph # Frontier
+    node: BenchSofaCornerNode # Frontier
+
+#MARK: Modern sofa
+- type: entity
+  name: sofa
+  id: FurnitureSofaModernMiddle
+  parent: BenchBaseMiddle
+  components:
+  - type: Sprite
+    sprite: SimpleStation14/Structures/Furniture/Benches/sofa.rsi
+  - type: Construction # Frontier
+    graph: SofasGraph # Frontier
+    node: BenchSofaMiddleNode # Frontier
+  - type: StaticPrice # Frontier
+    price: 25 # Frontier: 25
+
+- type: entity
+  id: FurnitureSofaModernLeft
+  suffix: Left
+  parent: BenchSofaMiddle
+  components:
+  - type: Sprite
+    state: left
+  - type: Construction # Frontier
+    graph: SofasGraph # Frontier
+    node: BenchSofaLeftNode # Frontier
+
+- type: entity
+  id: FurnitureSofaModernRight
+  suffix: Right
+  parent: BenchSofaMiddle
+  components:
+  - type: Sprite
+    state: right
+  - type: Construction # Frontier
+    graph: SofasGraph # Frontier
+    node: BenchSofaRightNode # Frontier
+
+- type: entity
+  name: sofa
+  id: FurnitureSofaModernCorner
+  suffix: Corner
+#  parent: BenchSofaMiddle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: SimpleStation14/Structures/Furniture/Benches/sofa.rsi
+    state: corner
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Pullable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Construction # Frontier
+    graph: SofasGraph # Frontier
+    node: BenchSofaCornerNode # Frontier

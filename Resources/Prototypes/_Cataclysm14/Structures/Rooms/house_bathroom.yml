@@ -1,0 +1,43 @@
+#MARK: Bathroom 3x3
+- type: dungeonRoom
+  id: RoomSpawnerHouseBathroomBase3x3a
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bathroom/room_bathroom_3x3.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataRoomSpawnerHouseBathroomBase3x3
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseBathroomBase3x3b
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bathroom/room_bathroom_3x3.yml
+  offset: 4,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataRoomSpawnerHouseBathroomBase3x3
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseBathroomBase3x3c
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bathroom/room_bathroom_3x3.yml
+  offset: 8,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataRoomSpawnerHouseBathroomBase3x3
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHouseBathroomBase3x3
+  name: room spawner house Bathroom base
+  suffix: Bathroom][3x3
+  components:
+  - type: Sprite
+    scale: 3,3
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_3x3
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataRoomSpawnerHouseBathroomBase3x3

@@ -11,8 +11,6 @@ construction-category-utilities = Utilities
 construction-category-misc = Misc
 construction-category-clothing = Clothing
 construction-category-favorites = Favorites
-construction-add-favorite-button = Add to favorites
-construction-remove-from-favorite-button = Remove from favorites
 
 construction-category-structures-cata = Structures
 construction-category-deprecated = deprecated
