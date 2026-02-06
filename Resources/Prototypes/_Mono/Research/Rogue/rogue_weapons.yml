@@ -91,8 +91,8 @@
   cost: 55000
   recipeUnlocks:
   - WeaponSniperHristovRogue
-  - AmmoBox145x114mm
-  - AmmoBox145x114mmBig
+  - AmmoBox14.5x114mm
+  - AmmoBox14.5x114mmBig
   technologyPrerequisites:
   - RogueAdvancedGuns
   - UniversalMaterialResearchT3
@@ -107,12 +107,12 @@
   cost: 35000
   recipeUnlocks:
   - WeaponRifleWSPRRogue
-  - Magazine762x39mmSubsonic
-  - AmmoBox762x39mmSubsonic
+  - Magazine7.62x39mmSubsonic
+  - AmmoBox7.62x39mmSubsonic
   - WeaponSubMachineGunMla73Rogue
-  - Magazine635x40mmCaseless
-  - AmmoBox635x40mmCaseless
-  - MagazineAsmgtUniversal635x40mm
+  - Magazine6.35x40mmCaseless
+  - AmmoBox6.35x40mmCaseless
+  - MagazineAsmgtUniversal6.35x40mm
   technologyPrerequisites:
   - RogueCQCGuns
   position: 21, 8

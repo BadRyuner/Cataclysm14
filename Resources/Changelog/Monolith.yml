@@ -6355,7 +6355,7 @@ Entries:
     - type: Add
       message: Ported original Goob stealthsuit.
     - type: Tweak
-      message: Changed M-90 and M-90GL to 762x51mm from 556x45mm
+      message: Changed M-90 and M-90GL to 7.62x51mm from 5.56x45mm
     - type: Tweak
       message: Replaced AK-502 recipe for Rogues with M-90.
     - type: Tweak
@@ -8516,7 +8516,7 @@ Entries:
       message: Drozd, Lecter, and Annie now use Shiptest SFX/sprites.
     - type: Add
       message: >-
-        45 ACP SMG mags, 556x45mm rifle mags, and 762x51mm mags now use Shiptest
+        45 ACP SMG mags, 5.56x45mm rifle mags, and 7.62x51mm mags now use Shiptest
         sprites.
     - type: Fix
       message: Fixed TSF T1 weapon research using Wizden Lecter sprite instead of Mono.
@@ -11226,7 +11226,7 @@ Entries:
     - type: Add
       message: >-
         (Starch) Added MK-290 turret to TSF uplink, feeds from
-        556x45mm/6.8x52mm/7.62x39mm/ magazines.
+        5.56x45mm/6.8x52mm/7.62x39mm/ magazines.
     - type: Add
       message: 'Research Tech Tree!:'
     - type: Add
@@ -14775,7 +14775,7 @@ Entries:
     - type: Add
       message: >-
         The DIS Pluto MK. II has pierced it's way on the hull market. A
-        replacement of the honorable Pluto. 
+        replacement of the honorable Pluto.
     - type: Remove
       message: >-
         DIS Pluto hulls are no longer available on the hull market. We will miss
@@ -14885,7 +14885,7 @@ Entries:
     - type: Tweak
       message: >-
         Spasaka sabotage kit has gotten equipment changes to help with boarding
-        as well as receiving the RX-01 suit. 
+        as well as receiving the RX-01 suit.
   id: 1651
   time: '2025-12-13T08:10:05.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2782
@@ -15226,7 +15226,7 @@ Entries:
     - type: Tweak
       message: >-
         Bluespace crates occur more frequently. By extension there will be fewer
-        solar flares. 
+        solar flares.
     - type: Tweak
       message: >-
         Increased the number of smuggling hints sent out to ships. Happy
@@ -15789,7 +15789,7 @@ Entries:
     - type: Add
       message: >-
         A new challanger! BT-Y Hazel enters the PDV Roster as a small-strafer in
-        place of the Vega featuring a 3 barreled 220m Battery! 
+        place of the Vega featuring a 3 barreled 220m Battery!
     - type: Remove
       message: PDV Vega is now gone, o7.
   id: 1752
@@ -15815,7 +15815,7 @@ Entries:
         The Europa is now a beefy capital ship with medical and cloning
         capabilities. She is now restricted to two vessels active at a time, as
         well as costing 240k. These changes come with the benefit of a heavy
-        upgrade. Glory to Phaethon. 
+        upgrade. Glory to Phaethon.
   id: 1754
   time: '2026-01-05T16:53:42.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2929

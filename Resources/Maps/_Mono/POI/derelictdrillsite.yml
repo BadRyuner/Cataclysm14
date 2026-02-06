@@ -14393,7 +14393,7 @@ entities:
     - type: Transform
       pos: -4.5,8.5
       parent: 1
-- proto: Magazine556x45mmEmpty
+- proto: Magazine5.56x45mmEmpty
   entities:
   - uid: 2083
     components:

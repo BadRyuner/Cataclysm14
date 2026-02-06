@@ -4,9 +4,9 @@
   table: !type:AllSelector
     children:
       - id: WeaponAssaultRifleFAMASG2
-      - id: Magazine556x45mmFMJ
+      - id: Magazine5.56x45mmFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
-      - id: AmmoBox556x45mmFMJ
+      - id: AmmoBox5.56x45mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,1
