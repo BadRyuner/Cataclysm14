@@ -1,5 +1,5 @@
 - type: entity
-  id: Bullet68x52mmCaseless
+  id: Bullet6.8x52mmCaseless
   name: bullet (6.8x52mm Caseless)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -11,7 +11,7 @@
     armorPenetration: 0.075
 
 - type: entity
-  id: Bullet68x52mmCaselessPractice
+  id: Bullet6.8x52mmCaselessPractice
   name: bullet (6.8x52mm Caseless practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
@@ -22,7 +22,7 @@
         Blunt: 2
 
 - type: entity
-  id: Bullet68x52mmCaselessRubber
+  id: Bullet6.8x52mmCaselessRubber
   name: bullet (6.8x52mm Caseless rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]

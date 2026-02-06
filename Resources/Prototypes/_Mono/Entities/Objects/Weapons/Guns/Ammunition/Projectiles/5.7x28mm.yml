@@ -1,5 +1,5 @@
 - type: entity
-  id: Bullet57x28mmFMJ
+  id: Bullet5.7x28mmFMJ
   name: bullet (5.7x28mm FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -11,7 +11,7 @@
     armorPenetration: 0.075
 
 - type: entity
-  id: Bullet57x28mmPractice
+  id: Bullet5.7x28mmPractice
   name: bullet (5.7x28mm practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
@@ -22,7 +22,7 @@
         Blunt: 2
 
 - type: entity
-  id: Bullet57x28mmRubber
+  id: Bullet5.7x28mmRubber
   name: bullet (5.7x28mm rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
@@ -33,7 +33,7 @@
         Blunt: 3
 
 - type: entity
-  id: Bullet57x28mmIncendiary
+  id: Bullet5.7x28mmIncendiary
   parent: BaseBulletIncendiary
   name: bullet (5.7x28mm incendiary)
   categories: [ HideSpawnMenu ]
@@ -45,7 +45,7 @@
         Heat: 17
 
 - type: entity
-  id: Bullet57x28mmUranium
+  id: Bullet5.7x28mmUranium
   parent: BaseBulletUranium
   name: bullet (5.7x28mm uranium)
   categories: [ HideSpawnMenu ]
@@ -58,7 +58,7 @@
 
 # Upstream
 - type: entity
-  id: Bullet57x28mmEmp
+  id: Bullet5.7x28mmEmp
   name: bullet (5.7x28mm emp)
   parent: BaseBulletEmp
   categories: [ HideSpawnMenu ]
@@ -72,7 +72,7 @@
 # + 0.05 base AP
 #anti-flesh:
 - type: entity
-  id: Bullet57x28mmHP
+  id: Bullet5.7x28mmHP
   parent: BaseBullet
   name: bullet (5.7x28mm hollow-point)
   categories: [ HideSpawnMenu ]
@@ -85,7 +85,7 @@
     armorPenetration: -0.55
 
 - type: entity
-  id: Bullet57x28mmRIP
+  id: Bullet5.7x28mmRIP
   parent: BaseBullet
   name: bullet (5.7x28mm RIP)
   categories: [ HideSpawnMenu ]
@@ -100,7 +100,7 @@
 #armor-piercing:
 
 - type: entity
-  id: Bullet57x28mmPlasteelAP
+  id: Bullet5.7x28mmPlasteelAP
   parent: BaseBullet
   name: bullet (5.7x28mm AP)
   categories: [ HideSpawnMenu ]

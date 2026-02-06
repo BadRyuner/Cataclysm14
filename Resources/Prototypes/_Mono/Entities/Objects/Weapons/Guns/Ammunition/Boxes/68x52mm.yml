@@ -1,14 +1,14 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox68x52mmCaseless
+  id: BaseAmmoBox6.8x52mmCaseless
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge68x52mmCaseless
-    proto: Cartridge68x52mmCaseless
+        - Cartridge6.8x52mmCaseless
+    proto: Cartridge6.8x52mmCaseless
     capacity: 80
   - type: Item
     size: Small
@@ -24,7 +24,7 @@
   - type: Appearance
   - type: Tag
     tags:
-     - Magazine68x52mmCaselessBoxSmall
+     - Magazine6.8x52mmCaselessBoxSmall
   - type: EmitSoundOnPickup
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_pickup.ogg
@@ -37,12 +37,12 @@
 
 # Boxes
 - type: entity
-  parent: BaseAmmoBox68x52mmCaseless
-  id: AmmoBox68x52mmCaseless
+  parent: BaseAmmoBox6.8x52mmCaseless
+  id: AmmoBox6.8x52mmCaseless
   name: ammunition box (6.8x52mm STANAG Caseless)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge68x52mmCaseless
+    proto: Cartridge6.8x52mmCaseless
   - type: Sprite
     layers:
     - state: base
@@ -51,12 +51,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseAmmoBox68x52mmCaseless
-  id: AmmoBox68x52mmCaselessPractice
+  parent: BaseAmmoBox6.8x52mmCaseless
+  id: AmmoBox6.8x52mmCaselessPractice
   name: ammunition box (6.8x52mm STANAG Caseless practice)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge68x52mmCaselessPractice
+    proto: Cartridge6.8x52mmCaselessPractice
   - type: Sprite
     layers:
     - state: base
@@ -66,12 +66,12 @@
     - state: practice
 
 - type: entity
-  parent: BaseAmmoBox68x52mmCaseless
-  id: AmmoBox68x52mmCaselessRubber
+  parent: BaseAmmoBox6.8x52mmCaseless
+  id: AmmoBox6.8x52mmCaselessRubber
   name: ammunition box (6.8x52mm STANAG Caseless rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge68x52mmCaselessRubber
+    proto: Cartridge6.8x52mmCaselessRubber
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/6.35x40mm_caseless.rsi
     layers:
@@ -82,8 +82,8 @@
     - state: rubber
 
 - type: entity
-  parent: BaseAmmoBox68x52mmCaseless
-  id: AmmoBox68x52mmCaselessBig
+  parent: BaseAmmoBox6.8x52mmCaseless
+  id: AmmoBox6.8x52mmCaselessBig
   name: big ammunition box (6.8x52mm STANAG Caseless)
   suffix: Big
   components:
@@ -92,7 +92,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: Cartridge68x52mmCaseless
+    proto: Cartridge6.8x52mmCaseless
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/6.35x40mm_caseless.rsi
     layers:
@@ -104,4 +104,4 @@
     magState: magb
   - type: Tag
     tags:
-     - Magazine68x52mmCaselessBoxBig
+     - Magazine6.8x52mmCaselessBoxBig

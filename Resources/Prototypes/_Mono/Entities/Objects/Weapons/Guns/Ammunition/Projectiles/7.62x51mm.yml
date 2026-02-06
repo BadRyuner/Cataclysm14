@@ -1,5 +1,5 @@
 - type: entity
-  id: Bullet762x51mmFMJ
+  id: Bullet7.62x51mmFMJ
   name: bullet (7.62x51mm FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -11,7 +11,7 @@
     armorPenetration: 0.1
 
 - type: entity
-  id: Bullet762x51mmPractice
+  id: Bullet7.62x51mmPractice
   name: bullet (7.62x51mm practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
@@ -22,7 +22,7 @@
         Blunt: 4
 
 - type: entity
-  id: Bullet762x51mmRubber
+  id: Bullet7.62x51mmRubber
   name: bullet (7.62x51mm rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
@@ -33,7 +33,7 @@
         Blunt: 6
 
 - type: entity
-  id: Bullet762x51mmIncendiary
+  id: Bullet7.62x51mmIncendiary
   parent: BaseBulletIncendiary
   name: bullet (7.62x51mm incendiary)
   categories: [ HideSpawnMenu ]
@@ -45,7 +45,7 @@
         Heat: 27
 
 - type: entity
-  id: Bullet762x51mmUranium
+  id: Bullet7.62x51mmUranium
   parent: BaseBulletUranium
   name: bullet (7.62x51mm uranium)
   categories: [ HideSpawnMenu ]
@@ -60,7 +60,7 @@
 # + 0.05 base AP
 #anti-flesh:
 - type: entity
-  id: Bullet762x51mmHP
+  id: Bullet7.62x51mmHP
   parent: BaseBullet
   name: bullet (7.62x51mm hollow-point)
   categories: [ HideSpawnMenu ]
@@ -73,7 +73,7 @@
     armorPenetration: -0.55
 
 - type: entity
-  id: Bullet762x51mmRIP
+  id: Bullet7.62x51mmRIP
   parent: BaseBullet
   name: bullet (7.62x51mm Radically Invasive Projectile)
   categories: [ HideSpawnMenu ]
@@ -87,7 +87,7 @@
 
 #armor-piercing:
 - type: entity
-  id: Bullet762x51mmPlasteelAP
+  id: Bullet7.62x51mmPlasteelAP
   parent: BaseBullet
   name: bullet (7.62x51mm AP)
   categories: [ HideSpawnMenu ]

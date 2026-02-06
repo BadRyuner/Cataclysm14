@@ -2,15 +2,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox556x45mm
+  id: BaseAmmoBox5.56x45mm
   name: ammunition box (5.56x45mm FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge556x45mmFMJ
-    proto: Cartridge556x45mmFMJ
+        - Cartridge5.56x45mmFMJ
+    proto: Cartridge5.56x45mmFMJ
     capacity: 70 # more than 2 rifle mag
   - type: Item
     size: Small
@@ -25,7 +25,7 @@
     zeroVisible: false
   - type: Tag
     tags:
-    - Magazine556x45mmBox
+    - Magazine5.56x45mmBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:
@@ -39,12 +39,12 @@
 
 #small ammo boxes
 - type: entity
-  parent: BaseAmmoBox556x45mm
-  id: AmmoBox556x45mmFMJ
+  parent: BaseAmmoBox5.56x45mm
+  id: AmmoBox5.56x45mmFMJ
   name: ammunition box (5.56x45mm FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge556x45mmFMJ
+    proto: Cartridge5.56x45mmFMJ
   - type: Sprite
     layers:
     - state: base
@@ -53,12 +53,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseAmmoBox556x45mm
-  id: AmmoBox556x45mmPractice
+  parent: BaseAmmoBox5.56x45mm
+  id: AmmoBox5.56x45mmPractice
   name: ammunition box (5.56x45mm practice)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge556x45mmPractice
+    proto: Cartridge5.56x45mmPractice
   - type: Sprite
     layers:
     - state: base
@@ -68,12 +68,12 @@
     - state: practice
 
 - type: entity
-  parent: BaseAmmoBox556x45mm
-  id: AmmoBox556x45mmIncendiary
+  parent: BaseAmmoBox5.56x45mm
+  id: AmmoBox5.56x45mmIncendiary
   name: ammunition box (5.56x45mm incendiary)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge556x45mmIncendiary
+    proto: Cartridge5.56x45mmIncendiary
   - type: Sprite
     layers:
     - state: base
@@ -83,12 +83,12 @@
     - state: incendiary
 
 - type: entity
-  id: AmmoBox556x45mmUranium
-  parent: BaseAmmoBox556x45mm
+  id: AmmoBox5.56x45mmUranium
+  parent: BaseAmmoBox5.56x45mm
   name: ammunition box (5.56x45mm uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge556x45mmUranium
+    proto: Cartridge5.56x45mmUranium
   - type: Sprite
     layers:
     - state: base
@@ -99,12 +99,12 @@
 
 # Upstream
 - type: entity
-  parent: BaseAmmoBox556x45mm
-  id: AmmoBox556x45mmRubber
+  parent: BaseAmmoBox5.56x45mm
+  id: AmmoBox5.56x45mmRubber
   name: ammunition box (5.56x45mm rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge556x45mmRubber
+    proto: Cartridge5.56x45mmRubber
   - type: Sprite
     layers:
     - state: base
@@ -116,12 +116,12 @@
 # Mono AP syst
 #anti-flesh:
 - type: entity
-  parent: BaseAmmoBox556x45mm
-  id: AmmoBox556x45mmHP
+  parent: BaseAmmoBox5.56x45mm
+  id: AmmoBox5.56x45mmHP
   name: ammunition box (5.56x45mm hollow-point)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge556x45mmHP
+    proto: Cartridge5.56x45mmHP
   - type: Sprite
     layers:
     - state: base
@@ -131,12 +131,12 @@
     - state: HP
 
 - type: entity
-  parent: BaseAmmoBox556x45mm
-  id: AmmoBox556x45mmRIP
+  parent: BaseAmmoBox5.56x45mm
+  id: AmmoBox5.56x45mmRIP
   name: ammunition box (5.56x45mm RIP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge556x45mmRIP
+    proto: Cartridge5.56x45mmRIP
   - type: Sprite
     layers:
     - state: base
@@ -148,12 +148,12 @@
 #armor-piercing:
 
 - type: entity
-  parent: BaseAmmoBox556x45mm
-  id: AmmoBox556x45mmPlasteelAP
+  parent: BaseAmmoBox5.56x45mm
+  id: AmmoBox5.56x45mmPlasteelAP
   name: ammunition box (5.56x45mm AP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge556x45mmPlasteelAP
+    proto: Cartridge5.56x45mmPlasteelAP
   - type: Sprite
     layers:
     - state: base
@@ -164,8 +164,8 @@
 
 #big ammo boxes
 - type: entity
-  parent: BaseAmmoBox556x45mm
-  id: AmmoBox556x45mmBigFMJ
+  parent: BaseAmmoBox5.56x45mm
+  id: AmmoBox5.56x45mmBigFMJ
   name: big ammunition box (5.56x45mm FMJ)
   suffix: Big
   components:
@@ -174,7 +174,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 210 # 7 rifle mags
-    proto: Cartridge556x45mmFMJ
+    proto: Cartridge5.56x45mmFMJ
   - type: Sprite
     layers:
     - state: base-b # Frontier: base-big<base-b
@@ -188,13 +188,13 @@
   - type: Appearance
 
 - type: entity
-  parent: AmmoBox556x45mmBigFMJ
-  id: AmmoBox556x45mmBigRubber
+  parent: AmmoBox5.56x45mmBigFMJ
+  id: AmmoBox5.56x45mmBigRubber
   name: ammunition box (5.56x45mm rubber)
   components:
   - type: BallisticAmmoProvider
     capacity: 210
-    proto: Cartridge556x45mmRubber
+    proto: Cartridge5.56x45mmRubber
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi
     layers:

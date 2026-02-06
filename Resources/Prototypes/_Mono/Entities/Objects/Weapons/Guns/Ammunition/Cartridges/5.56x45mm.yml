@@ -1,5 +1,5 @@
 - type: entity
-  id: BaseCartridge556x45mm
+  id: BaseCartridge5.56x45mm
   name: cartridge (5.56x45mm FMJ)
   parent: BaseCartridge
   description: An extremely-common intermediate cartridge for rifles.
@@ -8,9 +8,9 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge556x45mmFMJ
+      - Cartridge5.56x45mmFMJ
   - type: CartridgeAmmo
-    proto: Bullet556x45mmFMJ
+    proto: Bullet5.56x45mmFMJ
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -22,20 +22,20 @@
     price: 1
 
 - type: entity
-  id: Cartridge556x45mmFMJ
+  id: Cartridge5.56x45mmFMJ
   name: cartridge (5.56x45mm FMJ)
-  parent: BaseCartridge556x45mm
+  parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet556x45mmFMJ
+    proto: Bullet5.56x45mmFMJ
 
 - type: entity
-  id: Cartridge556x45mmPractice
+  id: Cartridge5.56x45mmPractice
   name: cartridge (5.56x45mm practice)
-  parent: BaseCartridge556x45mm
+  parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet556x45mmPractice
+    proto: Bullet5.56x45mmPractice
   - type: Sprite
     layers:
       - state: base
@@ -45,12 +45,12 @@
         color: "#dbdbdb"
 
 - type: entity
-  id: Cartridge556x45mmIncendiary
+  id: Cartridge5.56x45mmIncendiary
   name: cartridge (5.56x45mm incendiary)
-  parent: BaseCartridge556x45mm
+  parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet556x45mmIncendiary
+    proto: Bullet5.56x45mmIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -60,12 +60,12 @@
         color: "#ff6e52"
 
 - type: entity
-  id: Cartridge556x45mmUranium
+  id: Cartridge5.56x45mmUranium
   name: cartridge (5.56x45mm uranium)
-  parent: BaseCartridge556x45mm
+  parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet556x45mmUranium
+    proto: Bullet5.56x45mmUranium
   - type: Sprite
     layers:
       - state: base
@@ -75,12 +75,12 @@
         color: "#65fe08"
 
 - type: entity
-  id: Cartridge556x45mmRubber
+  id: Cartridge5.56x45mmRubber
   name: cartridge (5.56x45mm rubber)
-  parent: BaseCartridge556x45mm
+  parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet556x45mmRubber
+    proto: Bullet5.56x45mmRubber
   - type: Sprite
     layers:
       - state: base
@@ -92,12 +92,12 @@
 # Mono AP syst
 #anti-flesh:
 - type: entity
-  id: Cartridge556x45mmHP
+  id: Cartridge5.56x45mmHP
   name: cartridge (5.56x45mm hollow-point)
-  parent: BaseCartridge556x45mm
+  parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet556x45mmHP
+    proto: Bullet5.56x45mmHP
   - type: Sprite
     layers:
       - state: base
@@ -107,12 +107,12 @@
         color: "#90EE90"
 
 - type: entity
-  id: Cartridge556x45mmRIP
+  id: Cartridge5.56x45mmRIP
   name: cartridge (5.56x45mm RIP)
-  parent: BaseCartridge556x45mm
+  parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet556x45mmRIP
+    proto: Bullet5.56x45mmRIP
   - type: Sprite
     layers:
       - state: base
@@ -124,12 +124,12 @@
 #armor-piercing:
 
 - type: entity
-  id: Cartridge556x45mmPlasteelAP
+  id: Cartridge5.56x45mmPlasteelAP
   name: cartridge (5.56x45mm AP)
-  parent: BaseCartridge556x45mm
+  parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet556x45mmPlasteelAP
+    proto: Bullet5.56x45mmPlasteelAP
   - type: Sprite
     layers:
       - state: base
