@@ -1,0 +1,35 @@
+#MARK: Wooden park bench
+- type: entity
+  name: park bench
+  id: FurnitureBenchParkWoodMiddle
+  parent: BenchBaseMiddle
+  components:
+  - type: Sprite
+    sprite: SimpleStation14/Structures/Furniture/Benches/parkbench_wooden.rsi
+  - type: Construction # Frontier
+    graph: BenchesGraph # Frontier
+    node: BenchParkMiddleNode # Frontier
+  - type: StaticPrice # Frontier
+    price: 30 # Frontier: 30
+
+- type: entity
+  id: FurnitureBenchParkWoodLeft
+  suffix: Left
+  parent: BenchParkMiddle
+  components:
+  - type: Sprite
+    state: left
+  - type: Construction # Frontier
+    graph: BenchesGraph # Frontier
+    node: BenchParkLeftNode # Frontier
+
+- type: entity
+  id: FurnitureBenchParkWoodRight
+  suffix: Right
+  parent: BenchParkMiddle
+  components:
+  - type: Sprite
+    state: right
+  - type: Construction # Frontier
+    graph: BenchesGraph # Frontier
+    node: BenchParkRightNode # Frontier

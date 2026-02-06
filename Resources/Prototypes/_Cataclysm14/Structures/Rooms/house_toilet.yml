@@ -1,0 +1,89 @@
+#MARK: toilet 1x2
+- type: dungeonRoom
+  id: RoomSpawnerHouseToiletBase1x2a
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_1x2.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataRoomSpawnerHouseToiletBase1x2
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseToiletBase1x2b
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_1x2.yml
+  offset: 4,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataRoomSpawnerHouseToiletBase1x2
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseToiletBase1x2c
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_1x2.yml
+  offset: 8,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataRoomSpawnerHouseToiletBase1x2
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHouseToiletBase1x2
+  name: room spawner house toilet base
+  suffix: Toilet][1x2
+  components:
+  - type: Sprite
+    offset: -1,-0.5
+    scale: 1,2
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_3x3
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataRoomSpawnerHouseToiletBase1x2
+
+#MARK: toilet 2x1
+- type: dungeonRoom
+  id: RoomSpawnerHouseToiletBase2x1a
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_2x1.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataRoomSpawnerHouseToiletBase2x1
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseToiletBase2x1b
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_2x1.yml
+  offset: 4,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataRoomSpawnerHouseToiletBase2x1
+
+- type: dungeonRoom
+  id: RoomSpawnerHouseToiletBase2x1c
+  size: 3,3
+  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_2x1.yml
+  offset: 8,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataRoomSpawnerHouseToiletBase2x1
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: RoomSpawnerHouseToiletBase2x1
+  name: room spawner house toilet base
+  suffix: Toilet][2x1
+  components:
+  - type: Sprite
+    offset: -0.5,-1
+    scale: 2,1
+    sprite: _Cataclysm14/Mapping/House/room_house_bedroom.rsi
+    layers:
+    - state: structure_border_room_entry_bedroom_3x3
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataRoomSpawnerHouseToiletBase2x1

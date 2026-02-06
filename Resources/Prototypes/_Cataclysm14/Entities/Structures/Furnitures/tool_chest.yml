@@ -152,14 +152,19 @@
     noRot: true
 
 - type: entity
-  id: StructureFurnitureToolchestCounter
-  parent: [StructureFurnitureBaseLarge, StructureWheeled]
+  id: StructureFurnitureToolchestCounters1
+  parent: TableBase
+  # parent: [TableBase, StructureFurnitureBaseLarge, StructureWheeled]
   name: tool chest counter
   description: Metal shelves, can store things inside itself.
   components:
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Furnitures/tool_chest_counter.rsi
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/tool_chest_counter.rsi
-    state: full
+  - type: IconSmooth
+    key: toolchest
+    base: metal
   - type: Damageable
     damageModifierSet: Metallic
     damageContainer: StructuralInorganic
@@ -187,20 +192,20 @@
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
-  - type: InteractionOutline
-  - type: Clickable
-  - type: Tag
-    tags:
-    - Wooden
   - type: Anchorable
   - type: Rotatable
   - type: Construction
     graph: Dresser
     node: dresser
-  - type: Transform
-    anchored: true
-    noRot: true
-  - type: IconSmooth
-    key: toolchest
-    base: metal
-  - type: Climbable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.45,0.35,0.45"
+        density: 55
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+        - BulletImpassable #Goobstation
