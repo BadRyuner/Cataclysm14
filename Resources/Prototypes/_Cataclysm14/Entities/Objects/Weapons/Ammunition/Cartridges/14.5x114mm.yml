@@ -11,6 +11,7 @@
   - type: CartridgeAmmo
     proto: Bullet14.5x114mm
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Objects/Weapons/Casings/14.5x114mm_casing.rsi
     layers:
     - state: base

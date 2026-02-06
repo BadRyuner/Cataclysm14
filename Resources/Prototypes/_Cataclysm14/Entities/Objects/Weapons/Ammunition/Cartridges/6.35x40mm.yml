@@ -12,8 +12,9 @@
   - type: CartridgeAmmo
     deleteOnSpawn: true
   - type: Sprite
+    scale: 0.2, 0.2
     noRot: false
-    sprite: _Cataclysm14/Objects/Weapons/Casings/caseless_ammo_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/6.35x40mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

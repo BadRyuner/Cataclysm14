@@ -12,7 +12,8 @@
     deleteOnSpawn: true
     proto: BulletSmart
   - type: Sprite
-    sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Casings/smartgun.rsi
+    scale: 0.2,0.2
+    sprite: _Cataclysm14/Objects/Weapons/Casings/160_smart_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

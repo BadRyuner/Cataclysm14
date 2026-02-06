@@ -12,7 +12,8 @@
   - type: CartridgeAmmo
     proto: Bullet7.62x39mmFMJ
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    scale: 0.3, 0.3
+    sprite: _Cataclysm14/Objects/Weapons/Casings/7.62x39mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

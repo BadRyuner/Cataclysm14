@@ -21,14 +21,3 @@
     damage:
       types:
         Blunt: 4
-
-- type: entity
-  id: Bullet38_specialEmp
-  name: bullet (.38 Special emp)
-  parent: BaseBulletEmp
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Shock: 2

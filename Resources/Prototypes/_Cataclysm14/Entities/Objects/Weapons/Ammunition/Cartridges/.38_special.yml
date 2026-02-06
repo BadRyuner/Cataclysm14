@@ -12,7 +12,8 @@
   - type: CartridgeAmmo
     proto: Bullet38_specialFMJ
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    scale: 0.2, 0.2
+    sprite: _Cataclysm14/Objects/Weapons/Casings/38_special_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -43,15 +44,3 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#43c4f7"
-
-- type: entity
-  id: Cartridge38_specialEmp
-  name: cartridge (.38 Special emp)
-  parent: BaseCartridge38_special
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet38_specialEmp
-  - type: EmpDescription
-    range: 0.3
-    energyConsumption: 2700000
-    disableDuration: 10

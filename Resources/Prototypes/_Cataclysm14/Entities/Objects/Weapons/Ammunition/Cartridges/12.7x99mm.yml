@@ -11,7 +11,8 @@
   - type: CartridgeAmmo
     proto: Bullet12.7x99mm
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Casings/14.5x114mm_casing.rsi
+    scale: 0.3,0.3
+    sprite: _Cataclysm14/Objects/Weapons/Casings/12.7x99mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -32,7 +33,8 @@
   - type: CartridgeAmmo
     proto: Bullet12.7x99mmExplosive
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Casings/14.5x114mm_casing.rsi
+    scale: 0.3,0.3
+    sprite: _Cataclysm14/Objects/Weapons/Casings/12.7x99mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
