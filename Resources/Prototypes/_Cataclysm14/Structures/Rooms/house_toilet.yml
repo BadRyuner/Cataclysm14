@@ -6,7 +6,7 @@
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerToiletBase1x2
+  - CataRoomSpawnerHouseToiletBase1x2
 
 - type: dungeonRoom
   id: RoomSpawnerHouseToiletBase1x2b
@@ -15,7 +15,7 @@
   offset: 4,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerToiletBase1x2
+  - CataRoomSpawnerHouseToiletBase1x2
 
 - type: dungeonRoom
   id: RoomSpawnerHouseToiletBase1x2c
@@ -24,7 +24,7 @@
   offset: 8,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerToiletBase1x2
+  - CataRoomSpawnerHouseToiletBase1x2
 
 - type: entity
   parent: BaseStructureSpawner
@@ -41,7 +41,7 @@
   - type: RoomFill
     roomWhitelist:
       tags:
-      - CataStructureSpawnerToiletBase1x2
+      - CataRoomSpawnerHouseToiletBase1x2
 
 #MARK: toilet 2x1
 - type: dungeonRoom
@@ -51,7 +51,7 @@
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerToiletBase2x1
+  - CataRoomSpawnerHouseToiletBase2x1
 
 - type: dungeonRoom
   id: RoomSpawnerHouseToiletBase2x1b
@@ -60,7 +60,7 @@
   offset: 4,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerToiletBase2x1
+  - CataRoomSpawnerHouseToiletBase2x1
 
 - type: dungeonRoom
   id: RoomSpawnerHouseToiletBase2x1c
@@ -69,7 +69,7 @@
   offset: 8,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerToiletBase2x1
+  - CataRoomSpawnerHouseToiletBase2x1
 
 - type: entity
   parent: BaseStructureSpawner
@@ -86,4 +86,4 @@
   - type: RoomFill
     roomWhitelist:
       tags:
-      - CataStructureSpawnerToiletBase2x1
+      - CataRoomSpawnerHouseToiletBase2x1

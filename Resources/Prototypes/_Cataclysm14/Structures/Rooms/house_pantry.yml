@@ -6,7 +6,7 @@
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerPantryBase3x3
+  - CataRoomSpawnerHousePantryBase3x3
 
 - type: dungeonRoom
   id: RoomSpawnerHousePantryBase3x3b
@@ -15,7 +15,7 @@
   offset: 4,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerPantryBase3x3
+  - CataRoomSpawnerHousePantryBase3x3
 
 - type: dungeonRoom
   id: RoomSpawnerHousePantryBase3x3c
@@ -24,7 +24,7 @@
   offset: 8,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerPantryBase3x3
+  - CataRoomSpawnerHousePantryBase3x3
 
 - type: entity
   parent: BaseStructureSpawner
@@ -40,7 +40,7 @@
   - type: RoomFill
     roomWhitelist:
       tags:
-      - CataStructureSpawnerPantryBase3x3
+      - CataRoomSpawnerHousePantryBase3x3
 
 #MARK: pantry 3x4
 - type: dungeonRoom
@@ -50,7 +50,7 @@
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerPantryBase3x4
+  - CataRoomSpawnerHousePantryBase3x4
 
 - type: dungeonRoom
   id: RoomSpawnerHousePantryBase3x4b
@@ -59,7 +59,7 @@
   offset: 6,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerPantryBase3x4
+  - CataRoomSpawnerHousePantryBase3x4
 
 - type: dungeonRoom
   id: RoomSpawnerHousePantryBase3x4c
@@ -68,7 +68,7 @@
   offset: 12,0
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureSpawnerPantryBase3x4
+  - CataRoomSpawnerHousePantryBase3x4
 
 - type: entity
   parent: BaseStructureSpawner
@@ -85,4 +85,4 @@
   - type: RoomFill
     roomWhitelist:
       tags:
-      - CataStructureSpawnerPantryBase3x4
+      - CataRoomSpawnerHousePantryBase3x4
