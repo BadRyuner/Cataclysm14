@@ -1,8 +1,8 @@
 #MARK: -police pants-
-  #MARK: russian police
+  #MARK: RU police
     - type: entity
       parent: ClothingPantsPocketBase
-      id: ClothingPantsPoliceCopRussian
+      id: ClothingPantsPoliceCopRU
       name: russian police pants
       description: An above average pair of pants made for use by russian police officers.
       components:
@@ -10,3 +10,27 @@
         sprite: _Cataclysm14/Clothing/Pants/pants_police_cop_RU.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Pants/pants_police_cop_RU.rsi
+
+  #MARK: US police
+    - type: entity
+      parent: ClothingPantsPocketBase
+      id: ClothingPantsPoliceCopUS
+      name: US police pants
+      description: An above average pair of pants made for use by US police officers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_police_cop_US.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_police_cop_US.rsi
+
+  #MARK: FR police municipale
+    - type: entity
+      parent: ClothingPantsPocketBase
+      id: ClothingPantsPoliceMunicipaleFR
+      name: french municipale police pants
+      description: An above average pair of pants made for use by french municipale police officers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_police_municipale_FR.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_police_municipale_FR.rsi

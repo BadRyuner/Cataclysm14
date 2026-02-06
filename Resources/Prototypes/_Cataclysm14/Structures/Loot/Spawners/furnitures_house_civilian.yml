@@ -62,7 +62,6 @@
         color: red
   - type: RandomSpawner
     prototypes:
-    - StructureFurnitureDresserWoodFilledClothingCivilianRandom50
     - StructureFurnitureShelfWoodFilledClothingCivilianRandom50
     - StructureFurnitureShelfWoodStorageFilledClothingCivilianRandom50
     chance: 1

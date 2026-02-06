@@ -1,8 +1,8 @@
 #MARK: -police tops-
-  #MARK: russian police
+  #MARK: RU police
     - type: entity
       parent: ClothingShirtPocketBase
-      id: ClothingShirtPoliceCopRussian
+      id: ClothingShirtPoliceCopRU
       name: russian police jacket
       description: An above average jacket made for use by russian police officers.
       components:
@@ -10,3 +10,27 @@
         sprite: _Cataclysm14/Clothing/Shirt/shirt_police_cop_RU.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Shirt/shirt_police_cop_RU.rsi
+
+  #MARK: US police
+    - type: entity
+      parent: ClothingShirtPocketBase
+      id: ClothingShirtPoliceCopUS
+      name: US police jacket
+      description: An above average jacket made for use by US police officers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_police_cop_US.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_police_cop_US.rsi
+
+  #MARK: FR police municipale
+    - type: entity
+      parent: ClothingShirtPocketBase
+      id: ClothingShirtPoliceMunicipaleFR
+      name: french municipale police jacket
+      description: An above average jacket made for use by french municipale police officers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_police_municipale_FR.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_police_municipale_FR.rsi

@@ -1,11 +1,36 @@
-#MARK: Russian cap
+#MARK: RU cop cap
     - type: entity
       parent: ClothingHeadBase
-      id: ClothingHeadHatCapPoliceRussian
+      id: ClothingHeadHatCapPoliceRU
       name: russian police cap
       description: Donning the colours of the russian police and made for russian police officers.
       components:
       - type: Sprite
+        scale: 0.65,0.65
         sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
+#MARK: US cop cap
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadHatCapPoliceUS
+      name: US police cap
+      description: Donning the colours of the russian US and made for american police officers.
+      components:
+      - type: Sprite
+        scale: 0.65,0.65
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
+#MARK: French cop beret
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadHatBeretPoliceFR
+      name: french police beret
+      description: Donning the colours of the french and made for french police officers.
+      components:
+      - type: Sprite
+        scale: 0.65,0.65
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_police_FR.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_police_FR.rsi
