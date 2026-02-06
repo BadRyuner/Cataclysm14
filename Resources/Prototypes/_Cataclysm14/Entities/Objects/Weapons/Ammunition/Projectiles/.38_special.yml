@@ -1,5 +1,5 @@
 - type: entity
-  id: Bullet.38_specialFMJ
+  id: Bullet38_specialFMJ
   name: bullet (.38 Special FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -12,7 +12,7 @@
     armorPenetration: 0.2
 
 - type: entity
-  id: Bullet.38_specialPractice
+  id: Bullet38_specialPractice
   name: bullet (.38 Special practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
@@ -23,7 +23,7 @@
         Blunt: 2
 
 - type: entity
-  id: Bullet.38_specialRubber
+  id: Bullet38_specialRubber
   name: bullet (.38 Special rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
@@ -34,7 +34,7 @@
         Blunt: 4
 
 - type: entity
-  id: Bullet.38_specialIncendiary
+  id: Bullet38_specialIncendiary
   parent: BaseBulletIncendiary
   name: bullet (.38 Special incendiary)
   categories: [ HideSpawnMenu ]
@@ -47,7 +47,7 @@
     armorPenetration: -0.1
 
 - type: entity
-  id: Bullet.38_specialUranium
+  id: Bullet38_specialUranium
   parent: BaseBulletUranium
   name: bullet (.38 Special uranium)
   categories: [ HideSpawnMenu ]
@@ -62,7 +62,7 @@
 
 # Upstream
 - type: entity
-  id: Bullet.38_specialEmp
+  id: Bullet38_specialEmp
   name: bullet (.38 Special emp)
   parent: BaseBulletEmp
   categories: [ HideSpawnMenu ]
@@ -76,7 +76,7 @@
 # Mono AP syst
 #anti-flesh:
 - type: entity
-  id: Bullet.38_specialHP
+  id: Bullet38_specialHP
   parent: BaseBullet
   name: bullet (.45 hollow-point)
   categories: [ HideSpawnMenu ]
@@ -89,7 +89,7 @@
     armorPenetration: -0.7
 
 - type: entity
-  id: Bullet.38_specialRIP
+  id: Bullet38_specialRIP
   parent: BaseBullet
   name: bullet (.45 RIP)
   categories: [ HideSpawnMenu ]
@@ -104,7 +104,7 @@
 #armor-piercing:
 
 - type: entity
-  id: Bullet.38_specialPlasteelAP
+  id: Bullet38_specialPlasteelAP
   parent: BaseBullet
   name: bullet (.45 AP)
   categories: [ HideSpawnMenu ]

@@ -1,15 +1,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox.38_special
+  id: BaseAmmoBox38_special
   name: ammunition box (.38 Special FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge.38_specialFMJ
-    proto: Cartridge.38_specialFMJ
+        - Cartridge38_specialFMJ
+    proto: Cartridge38_specialFMJ
     capacity: 80
   - type: Item
     size: Small
@@ -17,14 +17,14 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/.38_special.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/38_special.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3
     zeroVisible: false
   - type: Tag
     tags:
-    - Magazine.38_specialFMJBox
+    - Magazine38_specialFMJBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:
@@ -38,12 +38,12 @@
 
 #small ammo boxes
 - type: entity
-  parent: BaseAmmoBox.38_special
-  id: AmmoBox.38_specialFMJ
+  parent: BaseAmmoBox38_special
+  id: AmmoBox38_specialFMJ
   name: ammunition box (.38 Special FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge.38_specialFMJ
+    proto: Cartridge38_specialFMJ
   - type: Sprite
     layers:
     - state: base
@@ -52,12 +52,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseAmmoBox.38_special
-  id: AmmoBox.38_specialPractice
+  parent: BaseAmmoBox38_special
+  id: AmmoBox38_specialPractice
   name: ammunition box (.38 Special practice)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge.38_specialPractice
+    proto: Cartridge38_specialPractice
   - type: Sprite
     layers:
     - state: base
@@ -67,12 +67,12 @@
     - state: practice
 
 - type: entity
-  parent: BaseAmmoBox.38_special
-  id: AmmoBox.38_specialIncendiary
+  parent: BaseAmmoBox38_special
+  id: AmmoBox38_specialIncendiary
   name: ammunition box (.38 Special incendiary)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge.38_specialIncendiary
+    proto: Cartridge38_specialIncendiary
   - type: Sprite
     layers:
     - state: base
@@ -82,12 +82,12 @@
     - state: incendiary
 
 - type: entity
-  id: AmmoBox.38_specialUranium
-  parent: BaseAmmoBox.38_special
+  id: AmmoBox38_specialUranium
+  parent: BaseAmmoBox38_special
   name: ammunition box (.38 Special uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge.38_specialUranium
+    proto: Cartridge38_specialUranium
   - type: Sprite
     layers:
     - state: base
@@ -98,12 +98,12 @@
 
 # Upstream
 - type: entity
-  parent: BaseAmmoBox.38_special
-  id: AmmoBox.38_specialRubber
+  parent: BaseAmmoBox38_special
+  id: AmmoBox38_specialRubber
   name: ammunition box (.38 Special rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge.38_specialRubber
+    proto: Cartridge38_specialRubber
   - type: Sprite
     layers:
     - state: base
@@ -114,12 +114,12 @@
 
 # Frontier
 - type: entity
-  parent: BaseAmmoBox.38_special
-  id: AmmoBox.38_specialEmp
+  parent: BaseAmmoBox38_special
+  id: AmmoBox38_specialEmp
   name: ammunition box (.38 Special emp)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge.38_specialEmp
+    proto: Cartridge38_specialEmp
   - type: Sprite
     layers:
     - state: base
@@ -131,12 +131,12 @@
 # Mono AP syst
 #anti-flesh:
 - type: entity
-  parent: BaseAmmoBox.38_special
-  id: AmmoBox.38_specialHP
+  parent: BaseAmmoBox38_special
+  id: AmmoBox38_specialHP
   name: ammunition box (.38 Special hollow-point)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge.38_specialHP
+    proto: Cartridge38_specialHP
   - type: Sprite
     layers:
     - state: base
@@ -146,12 +146,12 @@
     - state: HP
 
 - type: entity
-  parent: BaseAmmoBox.38_special
-  id: AmmoBox.38_specialRIP
+  parent: BaseAmmoBox38_special
+  id: AmmoBox38_specialRIP
   name: ammunition box (.38 Special RIP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge.38_specialRIP
+    proto: Cartridge38_specialRIP
   - type: Sprite
     layers:
     - state: base
@@ -162,12 +162,12 @@
 
 #armor-piercing:
 - type: entity
-  parent: BaseAmmoBox.38_special
-  id: AmmoBox.38_specialPlasteelAP
+  parent: BaseAmmoBox38_special
+  id: AmmoBox38_specialPlasteelAP
   name: ammunition box (.38 Special AP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge.38_specialPlasteelAP
+    proto: Cartridge38_specialPlasteelAP
   - type: Sprite
     layers:
     - state: base
@@ -178,8 +178,8 @@
 
 #big ammo boxes
 - type: entity
-  parent: BaseAmmoBox.38_special
-  id: AmmoBox.38_specialBigFMJ
+  parent: BaseAmmoBox38_special
+  id: AmmoBox38_specialBigFMJ
   name: big ammunition box (.38 Special FMJ)
   suffix: Big
   components:
@@ -188,7 +188,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 280 # 8 mags per box similar to rifle box
-    proto: Cartridge.38_specialFMJ
+    proto: Cartridge38_specialFMJ
   - type: Sprite
     layers:
     - state: base-b # Frontier: base-big<base-b
