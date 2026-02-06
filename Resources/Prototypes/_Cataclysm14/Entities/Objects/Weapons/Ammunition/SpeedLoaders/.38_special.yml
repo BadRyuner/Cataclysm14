@@ -1,0 +1,150 @@
+- type: entity
+  id: BaseSpeedLoader.38_special
+  name: "speed loader (.38 Special FMJ)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - SpeedLoader.38_specialFMJ
+  - type: SpeedLoader
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - Cartridge.38_specialFMJ
+    capacity: 8
+  - type: Sprite
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+
+- type: entity
+  id: SpeedLoader.38_specialFMJ
+  name: "speed loader (.38 Special FMJ)"
+  parent: BaseSpeedLoader.38_special
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.38_specialFMJ
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    state: icon
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-8
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: base
+    steps: 9
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: SpeedLoader.38_specialEmpty
+  name: "speed loader (.38 Special any)"
+  parent: SpeedLoader.38_specialFMJ
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    state: base
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-8
+        map: [ "enum.GunVisualLayers.Mag" ]
+
+- type: entity
+  id: SpeedLoader.38_specialIncendiary
+  name: "speed loader (.38 Special incendiary)"
+  parent: BaseSpeedLoader.38_special
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.38_specialIncendiary
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-8
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: base
+    steps: 9
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: SpeedLoader.38_specialPractice
+  name: "speed loader (.38 Special practice)"
+  parent: BaseSpeedLoader.38_special
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.38_specialPractice
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    state: practice-icon
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: practice-8
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: practice
+    steps: 9
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: SpeedLoader.38_specialUranium
+  name: "speed loader (.38 Special uranium)"
+  parent: BaseSpeedLoader.38_special
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.38_specialUranium
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    state: uranium-icon
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: uranium-8
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: uranium
+    steps: 9
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: SpeedLoader.38_specialRubber
+  name: "speed loader (.38 Special rubber)"
+  parent: BaseSpeedLoader.38_special
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.38_specialRubber
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    state: rubber-icon
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/.38_special/.38_special.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: rubber-8
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: rubber
+    steps: 9
+    zeroVisible: false
+  - type: Appearance

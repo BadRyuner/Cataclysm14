@@ -542,7 +542,7 @@
   name: uplink-pirate-shell-box-lethal-name
   description: uplink-pirate-shell-box-lethal-desc
   productEntity: AmmoBox12_gaugeBuckshot
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/12_gauge.rsi, state: lethal }
+  icon: { sprite: _Cataclysm14/Objects/Weapons/Boxes/12_gauge.rsi, state: lethal }
   cost:
     Doubloon: 5
   categories:

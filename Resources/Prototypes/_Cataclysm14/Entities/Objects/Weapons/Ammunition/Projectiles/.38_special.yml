@@ -1,0 +1,117 @@
+- type: entity
+  id: Bullet.38_specialFMJ
+  name: bullet (.38 Special FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+        Structural: 20
+    armorPenetration: 0.2
+
+- type: entity
+  id: Bullet.38_specialPractice
+  name: bullet (.38 Special practice)
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+
+- type: entity
+  id: Bullet.38_specialRubber
+  name: bullet (.38 Special rubber)
+  parent: BaseBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 4
+
+- type: entity
+  id: Bullet.38_specialIncendiary
+  parent: BaseBulletIncendiary
+  name: bullet (.38 Special incendiary)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+        Heat: 22
+    armorPenetration: -0.1
+
+- type: entity
+  id: Bullet.38_specialUranium
+  parent: BaseBulletUranium
+  name: bullet (.38 Special uranium)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 9
+        Piercing: 15
+        Structural: 20
+    armorPenetration: -0.075
+
+# Upstream
+- type: entity
+  id: Bullet.38_specialEmp
+  name: bullet (.38 Special emp)
+  parent: BaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 2
+
+
+# Mono AP syst
+#anti-flesh:
+- type: entity
+  id: Bullet.38_specialHP
+  parent: BaseBullet
+  name: bullet (.45 hollow-point)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 4
+        Piercing: 32
+    armorPenetration: -0.7
+
+- type: entity
+  id: Bullet.38_specialRIP
+  parent: BaseBullet
+  name: bullet (.45 RIP)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 7
+        Piercing: 42
+    armorPenetration: -0.95
+
+#armor-piercing:
+
+- type: entity
+  id: Bullet.38_specialPlasteelAP
+  parent: BaseBullet
+  name: bullet (.45 AP)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16
+        Structural: 40
+    armorPenetration: 0.7

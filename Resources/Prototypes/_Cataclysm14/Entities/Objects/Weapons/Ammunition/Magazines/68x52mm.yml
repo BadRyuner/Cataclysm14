@@ -20,7 +20,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/6.35x40mm_caseless/6.35x40mm_caseless_rifle_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/6.35x40mm_caseless/6.35x40mm_caseless_rifle_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -44,7 +44,7 @@
   - type: Item
     size: Tiny
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/6.35x40mm_caseless/6.35x40mm_caseless_rifle_mag_short.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/6.35x40mm_caseless/6.35x40mm_caseless_rifle_mag_short.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -60,7 +60,7 @@
     proto: Cartridge6.8x52mmCaseless
     capacity: 99
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/6.35x40mm_caseless/6.35x40mm_caseless_lmg_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/6.35x40mm_caseless/6.35x40mm_caseless_lmg_mag.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 8

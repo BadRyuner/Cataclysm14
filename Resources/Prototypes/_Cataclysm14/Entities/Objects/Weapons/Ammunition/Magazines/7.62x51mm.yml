@@ -21,7 +21,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/7.62x51mm/7.62x51mm_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/7.62x51mm/7.62x51mm_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -113,7 +113,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmRubber
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/7.62x51mm/7.62x51mm_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/7.62x51mm/7.62x51mm_mag.rsi
     layers:
     - state: rubber
       map: ["enum.GunVisualLayers.Base"]
@@ -134,7 +134,7 @@
   - type: Item
     size: Tiny
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/7.62x51mm/7.62x51mm_cap_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/7.62x51mm/7.62x51mm_cap_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -154,7 +154,7 @@
   - type: Item
     size: Tiny
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/7.62x51mm/7.62x51mm_cap_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/7.62x51mm/7.62x51mm_cap_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
