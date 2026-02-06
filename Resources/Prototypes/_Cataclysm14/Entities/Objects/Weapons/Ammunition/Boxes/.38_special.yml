@@ -51,50 +51,30 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+#big ammo boxes
 - type: entity
   parent: BaseAmmoBox38_special
-  id: AmmoBox38_specialPractice
-  name: ammunition box (.38 Special practice)
+  id: AmmoBox38_specialBigFMJ
+  name: big ammunition box (.38 Special FMJ)
+  suffix: Big
   components:
+  - type: Item
+    shape:
+    - 0,0,1,1
   - type: BallisticAmmoProvider
-    proto: Cartridge38_specialPractice
+    capacity: 200
+    proto: Cartridge38_specialFMJ
   - type: Sprite
     layers:
-    - state: base
+    - state: base-b
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: magb-1
       map: ["enum.GunVisualLayers.Mag"]
-    - state: practice
-
-- type: entity
-  parent: BaseAmmoBox38_special
-  id: AmmoBox38_specialIncendiary
-  name: ammunition box (.38 Special incendiary)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge38_specialIncendiary
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: incendiary
-
-- type: entity
-  id: AmmoBox38_specialUranium
-  parent: BaseAmmoBox38_special
-  name: ammunition box (.38 Special uranium)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge38_specialUranium
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: uranium
+  - type: MagazineVisuals
+    magState: magb
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
 
 # Upstream
 - type: entity
@@ -127,76 +107,3 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: emp
-
-# Mono AP syst
-#anti-flesh:
-- type: entity
-  parent: BaseAmmoBox38_special
-  id: AmmoBox38_specialHP
-  name: ammunition box (.38 Special hollow-point)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge38_specialHP
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: HP
-
-- type: entity
-  parent: BaseAmmoBox38_special
-  id: AmmoBox38_specialRIP
-  name: ammunition box (.38 Special RIP)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge38_specialRIP
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: RIP
-
-#armor-piercing:
-- type: entity
-  parent: BaseAmmoBox38_special
-  id: AmmoBox38_specialPlasteelAP
-  name: ammunition box (.38 Special AP)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge38_specialPlasteelAP
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: plasteelAP
-
-#big ammo boxes
-- type: entity
-  parent: BaseAmmoBox38_special
-  id: AmmoBox38_specialBigFMJ
-  name: big ammunition box (.38 Special FMJ)
-  suffix: Big
-  components:
-  - type: Item
-    shape:
-    - 0,0,1,1
-  - type: BallisticAmmoProvider
-    capacity: 280 # 8 mags per box similar to rifle box
-    proto: Cartridge38_specialFMJ
-  - type: Sprite
-    layers:
-    - state: base-b # Frontier: base-big<base-b
-      map: ["enum.GunVisualLayers.Base"]
-    - state: magb-1 # Frontier: mag-big-1<magb-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: magb # Frontier: mag-big<magb
-    steps: 4
-    zeroVisible: false
-  - type: Appearance

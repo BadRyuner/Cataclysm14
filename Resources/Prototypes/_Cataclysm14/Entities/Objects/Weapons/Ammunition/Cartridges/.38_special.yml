@@ -30,52 +30,6 @@
     proto: Bullet38_specialFMJ
 
 - type: entity
-  id: Cartridge38_specialPractice
-  name: cartridge (.38 Special practice)
-  parent: BaseCartridge38_special
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet38_specialPractice
-  -  type: Sprite
-     layers:
-       - state: base
-         map: [ "enum.AmmoVisualLayers.Base" ]
-       - state: tip
-         map: [ "enum.AmmoVisualLayers.Tip" ]
-         color: "#dbdbdb"
-
-- type: entity
-  id: Cartridge38_specialIncendiary
-  name: cartridge (.38 Special incendiary)
-  parent: BaseCartridge38_special
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet38_specialIncendiary
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#ff6e52"
-
-- type: entity
-  id: Cartridge38_specialUranium
-  name: cartridge (.38 Special uranium)
-  parent: BaseCartridge38_special
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet38_specialUranium
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#65fe08"
-
-# Upstream
-- type: entity
   id: Cartridge38_specialRubber
   name: cartridge (.38 Special rubber)
   parent: BaseCartridge38_special
@@ -90,7 +44,6 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#43c4f7"
 
-# Frontier
 - type: entity
   id: Cartridge38_specialEmp
   name: cartridge (.38 Special emp)
@@ -102,52 +55,3 @@
     range: 0.3
     energyConsumption: 2700000
     disableDuration: 10
-
-# Mono AP syst
-#anti-flesh:
-- type: entity
-  id: Cartridge38_specialHP
-  name: cartridge (.38 Special hollow-point)
-  parent: BaseCartridge38_special
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet38_specialHP
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#90EE90"
-
-- type: entity
-  id: Cartridge38_specialRIP
-  name: cartridge (.38 Special RIP)
-  parent: BaseCartridge38_special
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet38_specialRIP
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#C04000"
-
-#armor-piercing:
-
-- type: entity
-  id: Cartridge38_specialPlasteelAP
-  name: cartridge (.38 Special AP)
-  parent: BaseCartridge38_special
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet38_specialPlasteelAP
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#888888"
