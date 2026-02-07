@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   id: BaseCartridge7.62x51mm
   name: cartridge (7.62x51mm NATO FMJ)
@@ -22,6 +23,7 @@
   - type: StaticPrice
     price: 1
 
+#MARK: FMJ
 - type: entity
   id: Cartridge7.62x51mmFMJ
   name: cartridge (7.62x51mm NATO FMJ)
@@ -30,21 +32,61 @@
   - type: CartridgeAmmo
     proto: Bullet7.62x51mmFMJ
 
+#MARK: .308 Winchester
 - type: entity
-  id: Cartridge7.62x51mmPractice
-  name: cartridge (7.62x51mm NATO practice)
+  id: Cartridge7.62x51mm308Winchester
+  name: cartridge (.308 Winchester)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmPractice
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#dbdbdb"
+    proto: Bullet7.62x51mm308Winchester
 
+#MARK: M993
+- type: entity
+  id: Cartridge7.62x51mmM993
+  name: cartridge (7.62x51mm NATO M993)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmM993
+
+#MARK: M80
+- type: entity
+  id: Cartridge7.62x51mmM80
+  name: cartridge (7.62x51mm NATO M80)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmM80
+
+#MARK: M60
+- type: entity
+  id: Cartridge7.62x51mmM60
+  name: cartridge (7.62x51mm NATO M60)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmM60
+
+#MARK: Ultra Nosler
+- type: entity
+  id: Cartridge7.62x51mmUltraNosler
+  name: cartridge (7.62x51mm NATO Ultra Nosler)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmUltraNosler
+
+#MARK: red tracer
+- type: entity
+  id: Cartridge7.62x51mmTracerRed
+  name: cartridge (7.62x51mm NATO red tracer)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmTracerRed
+
+#MARK: Incendiary
 - type: entity
   id: Cartridge7.62x51mmIncendiary
   name: cartridge (7.62x51mm NATO incendiary)
@@ -60,6 +102,7 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#ff6e52"
 
+#MARK: Depleted Uranium
 - type: entity
   id: Cartridge7.62x51mmDepletedUranium
   name: cartridge (7.62x51mm NATO uranium)
@@ -75,6 +118,7 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#65fe08"
 
+#MARK: Rubber
 - type: entity
   id: Cartridge7.62x51mmRubber
   name: cartridge (7.62x51mm NATO rubber)
@@ -90,8 +134,7 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#43c4f7"
 
-# Mono AP syst
-#anti-flesh:
+#MARK: HP
 - type: entity
   id: Cartridge7.62x51mmHP
   name: cartridge (7.62x51mm NATO hollow-point)
@@ -107,6 +150,7 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#90EE90"
 
+#MARK: RIP
 - type: entity
   id: Cartridge7.62x51mmRIP
   name: cartridge (7.62x51mm NATO RIP)
@@ -122,7 +166,7 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#C04000"
 
-#armor-piercing:
+#MARK: Deprecated >
 
 - type: entity
   id: Cartridge7.62x51mmPlasteelAP
@@ -138,3 +182,18 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#888888"
+
+- type: entity
+  id: Cartridge7.62x51mmPractice
+  name: cartridge (7.62x51mm NATO practice)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmPractice
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"

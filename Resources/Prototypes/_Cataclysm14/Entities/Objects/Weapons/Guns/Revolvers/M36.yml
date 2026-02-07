@@ -40,6 +40,8 @@
   components:
   - type: RevolverAmmoProvider
     proto: Cartridge38_specialFMJ
+    chambers: [ true, true, true, true, true, true ]
+    ammoSlots: [ null, null, null, null, null, null ]
 
 #MARK: JHP
 - type: entity
@@ -49,6 +51,9 @@
   components:
   - type: RevolverAmmoProvider
     proto: Cartridge38_specialJHP
+    chambers: [ true, true, true, true, true, true ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
 
 #MARK: +P
 - type: entity
@@ -58,6 +63,9 @@
   components:
   - type: RevolverAmmoProvider
     proto: Cartridge38_special+P
+    chambers: [ true, true, true, true, true, true ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
 
 #MARK: Rubber
 - type: entity
@@ -67,3 +75,6 @@
   components:
   - type: RevolverAmmoProvider
     proto: Cartridge38_specialRubber
+    chambers: [ true, true, true, true, true, true ]
+    ammoSlots: [ null, null, null, null, null, null ]
+

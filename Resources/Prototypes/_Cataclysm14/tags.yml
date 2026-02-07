@@ -37,6 +37,8 @@
 
 #MARK: Ammo >
   #MARK: 7.62x51mm
+  - type: Tag
+    id: Magazine7.62x51mmSTANAGCompatible
 
     #Deprecated
   - type: Tag

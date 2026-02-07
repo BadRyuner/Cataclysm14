@@ -79,6 +79,15 @@
 
 #MARK: FMJ
 - type: entity
+  id: Cartridge5.56x45mmTracerRed
+  name: cartridge (5.56x45mm NATO red tracer)
+  parent: BaseCartridge5.56x45mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5.56x45mmTracerRed
+
+#MARK: FMJ
+- type: entity
   id: Cartridge5.56x45mmFMJ
   name: cartridge (5.56x45mm NATO FMJ)
   parent: BaseCartridge5.56x45mm
