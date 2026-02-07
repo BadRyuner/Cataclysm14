@@ -128,10 +128,10 @@
 - type: entity
   name: shotgun shell box (4 gauge uranium)
   parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmUranium
+  id: AmmoBox23x75mmDepletedUranium
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmUranium
+      proto: ShellShotgun23x75mmDepletedUranium
     - type: MagazineVisuals
       magState: mag-uranium
       steps: 5

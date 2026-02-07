@@ -95,7 +95,7 @@
   parent: BaseMagazine5.7x28mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmUranium
+    proto: Cartridge5.7x28mmDepletedUranium
   - type: Sprite
     layers:
     - state: uranium
@@ -350,7 +350,7 @@
   parent: BaseMagazine5.7x28mmSubMachineGunFMJ
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmUranium
+    proto: Cartridge5.7x28mmDepletedUranium
   - type: Sprite
     layers:
     - state: uranium

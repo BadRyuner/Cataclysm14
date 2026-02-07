@@ -61,12 +61,12 @@
         color: "#ff6e52"
 
 - type: entity
-  id: Cartridge5.7x28mmUranium
+  id: Cartridge5.7x28mmDepletedUranium
   name: cartridge (5.7x28mm uranium)
   parent: BaseCartridge5.7x28mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mmUranium
+    proto: Bullet5.7x28mmDepletedUranium
   - type: Sprite
     layers:
       - state: base

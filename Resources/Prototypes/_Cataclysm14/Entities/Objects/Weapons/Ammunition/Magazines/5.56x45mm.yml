@@ -1,4 +1,4 @@
-# Empty mags
+#MARK: Base
 - type: entity
   id: BaseMagazine5.56x45mm
   name: "magazine (5.56x45mm FMJ)"
@@ -20,6 +20,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
+    scale: 0.3,0.3
     sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/5.56x45mm_mag.rsi
     layers:
     - state: base
@@ -32,198 +33,154 @@
     zeroVisible: false
   - type: Appearance
 
-# Magazines
+#MARK: STANAG 30rd
 - type: entity
-  id: Magazine5.56x45mmFMJ
-  name: "magazine (5.56x45mm FMJ)"
+  id: BaseMagazine5.56x45mmSTANAG30rd
+  abstract: true
+  name: "STANAG 30rd magazine (5.56x45mm NATO)"
   parent: BaseMagazine5.56x45mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    capacity: 30
+  - type: Tag
+    tags:
+      - Magazine5.56x45mmSTANAGCompatible
   - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_5.56x45mm_STANAG_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+#MARK: Empty
 - type: entity
-  id: Magazine5.56x45mmEmpty
-  name: "magazine (5.56x45mm any)"
-  suffix: empty
-  parent: Magazine5.56x45mmFMJ
+  id: Magazine5.56x45mmSTANAG30rdEmpty
+  suffix: Empty
+  parent: BaseMagazine5.56x45mmSTANAG30rd
   components:
   - type: BallisticAmmoProvider
     proto: null
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
 
+#MARK: FMJ
 - type: entity
-  id: Magazine5.56x45mmIncendiary
-  name: "magazine (5.56x45mm incendiary)"
-  parent: Magazine5.56x45mmFMJ
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmIncendiary
-  - type: Sprite
-    layers:
-    - state: red
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: Magazine5.56x45mmPractice
-  name: "magazine (5.56x45mm practice)"
-  parent: BaseMagazine5.56x45mm
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmPractice
-  - type: Sprite
-    layers:
-    - state: practice
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: Magazine5.56x45mmUranium
-  name: "magazine (5.56x45mm uranium)"
-  parent: BaseMagazine5.56x45mm
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmUranium
-  - type: Sprite
-    layers:
-    - state: uranium
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: Magazine5.56x45mmRubber
-  name: "magazine (5.56x45mm rubber)"
-  parent: BaseMagazine5.56x45mm
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmRubber
-  - type: Sprite
-    layers:
-    - state: rubber
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-# Novalite
-- type: entity
-  parent: BaseMagazine5.56x45mm
-  id: MagazineNovaliteC1Empty
-  name: "clip (5.56x45mm any)"
-  suffix: empty
-  components:
-  - type: Tag
-    tags:
-      - MagazineNovaliteC1
-  - type: Item
-    size: Small
-  - type: BallisticAmmoProvider
-    mayTransfer: true
-    whitelist:
-      tags:
-        - Cartridge5.56x45mmFMJ
-    capacity: 25
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/novalite_clip.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-15
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 16
-    zeroVisible: false
-  - type: Appearance
-
-- type: entity
-  parent: MagazineNovaliteC1Empty
-  id: MagazineNovaliteC1
-  name: "clip (5.56x45mm FMJ)"
-  suffix: full
+  id: Magazine5.56x45mmSTANAG30rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine5.56x45mmSTANAG30rd
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmFMJ
+
+#MARK: STANAG 20rd
+- type: entity
+  id: BaseMagazine5.56x45mmSTANAG20rd
+  abstract: true
+  name: "STANAG 20rd magazine (5.56x45mm NATO)"
+  parent: BaseMagazine5.56x45mm
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 20
+  - type: Tag
+    tags:
+      - Magazine5.56x45mmSTANAGCompatible
   - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_5.56x45mm_STANAG_20rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-15
+    - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+#MARK: Empty
 - type: entity
-  parent: MagazineNovaliteC1Empty
-  id: MagazineNovaliteC1Rubber
-  name: "clip (5.56x45mm rubber)"
-  suffix: full
+  id: Magazine5.56x45mmSTANAG20rdEmpty
+  suffix: Empty
+  parent: BaseMagazine5.56x45mmSTANAG20rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmRubber
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine5.56x45mmSTANAG20rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine5.56x45mmSTANAG20rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmFMJ
+
+#MARK: Magpul Black 30rd
+- type: entity
+  id: BaseMagazine5.56x45mmMagpulBlack30rd
+  abstract: true
+  name: "Magpul black 30rd magazine (5.56x45mm NATO)"
+  parent: BaseMagazine5.56x45mm
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 30
+  - type: Tag
+    tags:
+      - Magazine5.56x45mmSTANAGCompatible
   - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_5.56x45mm_Magpul_black_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-15
+    - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
-# Mono AP syst
-#anti-flesh:
+#MARK: Empty
 - type: entity
-  id: Magazine5.56x45mmHP
-  name: "magazine (5.56x45mm hollow-point)"
+  id: Magazine5.56x45mmMagpulBlack30rdEmpty
+  suffix: Empty
+  parent: BaseMagazine5.56x45mmMagpulBlack30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine5.56x45mmMagpulBlack30rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine5.56x45mmMagpulBlack30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmFMJ
+
+#MARK: FAMAS 25rd
+- type: entity
+  id: BaseMagazine5.56x45mmFAMAS25rd
+  abstract: true
+  name: "FAMAS 25rd magazine (5.56x45mm NATO)"
   parent: BaseMagazine5.56x45mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmHP
+    capacity: 25
+  - type: Tag
+    tags:
+      - Magazine5.56x45mmSTANAGCompatible
   - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_5.56x45mm_FAMAS_25rd.rsi
     layers:
-    - state: HP
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+#MARK: Empty
 - type: entity
-  id: Magazine5.56x45mmRIP
-  name: "magazine (5.56x45mm RIP)"
-  parent: BaseMagazine5.56x45mm
+  id: Magazine5.56x45mmFAMAS25rdEmpty
+  suffix: Empty
+  parent: BaseMagazine5.56x45mmFAMAS25rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmRIP
-  - type: Sprite
-    layers:
-    - state: RIP
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
+    proto: null
 
-#armor-piercing:
-
+#MARK: FMJ
 - type: entity
-  id: Magazine5.56x45mmPlasteelAP
-  name: "magazine (5.56x45mm AP)"
-  parent: BaseMagazine5.56x45mm
+  id: Magazine5.56x45mmFAMAS25rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine5.56x45mmFAMAS25rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmPlasteelAP
-  - type: Sprite
-    layers:
-    - state: plasteelAP
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
+    proto: Cartridge5.56x45mmFMJ

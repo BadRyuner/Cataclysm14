@@ -104,12 +104,12 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader5.56x45mmUranium
+  id: SpeedLoader5.56x45mmDepletedUranium
   name: "speed loader (5.56x45mm uranium)"
   parent: BaseSpeedLoader5.56x45mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmUranium
+    proto: Cartridge5.56x45mmDepletedUranium
   - type: Icon
     sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
     state: uranium-icon

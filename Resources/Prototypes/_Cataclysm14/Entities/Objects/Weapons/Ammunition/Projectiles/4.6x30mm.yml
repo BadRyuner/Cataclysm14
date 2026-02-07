@@ -48,7 +48,7 @@
     armorPenetration: 0.025
 
 - type: entity
-  id: Bullet4.6x30mmUranium
+  id: Bullet4.6x30mmDepletedUranium
   parent: BaseBulletUranium
   name: bullet (4.6x30mm uranium)
   categories: [ HideSpawnMenu ]

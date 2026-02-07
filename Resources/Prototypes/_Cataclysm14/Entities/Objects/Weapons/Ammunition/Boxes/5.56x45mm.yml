@@ -83,12 +83,12 @@
     - state: incendiary
 
 - type: entity
-  id: AmmoBox5.56x45mmUranium
+  id: AmmoBox5.56x45mmDepletedUranium
   parent: BaseAmmoBox5.56x45mm
   name: ammunition box (5.56x45mm uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmUranium
+    proto: Cartridge5.56x45mmDepletedUranium
   - type: Sprite
     layers:
     - state: base

@@ -135,7 +135,7 @@
     state: "practice"
 
 - type: entity
-  id: ShellShotgun23x75mmUranium
+  id: ShellShotgun23x75mmDepletedUranium
   name: shotgun shell (4 gauge uranium)
   parent: BaseShellShotgun23x75mm
   components:
@@ -144,7 +144,7 @@
         - state: depleted-uranium
           map: [ "enum.AmmoVisualLayers.Base" ]
     - type: CartridgeAmmo
-      proto: Pellet23x75mmUraniumSpread
+      proto: Pellet23x75mmDepletedUraniumSpread
     - type: SpentAmmoVisuals
       state: "depleted-uranium"
 

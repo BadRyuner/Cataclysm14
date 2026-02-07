@@ -98,12 +98,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine7.62x39mmUranium
+  id: Magazine7.62x39mmDepletedUranium
   name: "magazine (7.62x39mm uranium)"
   parent: BaseMagazine7.62x39mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x39mmUranium
+    proto: Cartridge7.62x39mmDepletedUranium
   - type: Sprite
     layers:
     - state: uranium
@@ -248,7 +248,7 @@
   parent: Magazine7.62x39mmLowCapacityFMJ
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x39mmUranium
+    proto: Cartridge7.62x39mmDepletedUranium
   - type: Sprite
     layers:
     - state: uranium

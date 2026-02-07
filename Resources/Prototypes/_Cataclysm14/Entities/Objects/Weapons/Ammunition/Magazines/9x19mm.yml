@@ -95,7 +95,7 @@
   parent: BaseMagazine9x19mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmUranium
+    proto: Cartridge9x19mmDepletedUranium
   - type: Sprite
     layers:
     - state: uranium
@@ -350,7 +350,7 @@
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmUranium
+    proto: Cartridge9x19mmDepletedUranium
   - type: Sprite
     layers:
     - state: uranium
