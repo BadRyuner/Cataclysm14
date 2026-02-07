@@ -3,6 +3,7 @@
 #MARK: 5.56x45mm
 - type: entity
   id: Magazine5.56x45mmFMJ
+  categories: [ HideSpawnMenu ]
   name: "magazine (5.56x45mm NATO FMJ)"
   parent: BaseMagazine5.56x45mm
   components:
@@ -17,6 +18,7 @@
 
 - type: entity
   id: Magazine5.56x45mmEmpty
+  categories: [ HideSpawnMenu ]
   name: "magazine (5.56x45mm NATO any)"
   suffix: empty
   parent: Magazine5.56x45mmFMJ
@@ -32,6 +34,7 @@
 
 - type: entity
   id: Magazine5.56x45mmIncendiary
+  categories: [ HideSpawnMenu ]
   name: "magazine (5.56x45mm NATO incendiary)"
   parent: Magazine5.56x45mmFMJ
   components:
@@ -46,6 +49,7 @@
 
 - type: entity
   id: Magazine5.56x45mmPractice
+  categories: [ HideSpawnMenu ]
   name: "magazine (5.56x45mm NATO practice)"
   parent: BaseMagazine5.56x45mm
   components:
@@ -60,6 +64,7 @@
 
 - type: entity
   id: Magazine5.56x45mmDepletedUranium
+  categories: [ HideSpawnMenu ]
   name: "magazine (5.56x45mm NATO uranium)"
   parent: BaseMagazine5.56x45mm
   components:
@@ -74,6 +79,7 @@
 
 - type: entity
   id: Magazine5.56x45mmRubber
+  categories: [ HideSpawnMenu ]
   name: "magazine (5.56x45mm NATO rubber)"
   parent: BaseMagazine5.56x45mm
   components:
@@ -90,6 +96,7 @@
 - type: entity
   parent: BaseMagazine5.56x45mm
   id: MagazineNovaliteC1Empty
+  categories: [ HideSpawnMenu ]
   name: "clip (5.56x45mm NATO any)"
   suffix: empty
   components:
@@ -123,6 +130,7 @@
 - type: entity
   parent: MagazineNovaliteC1Empty
   id: MagazineNovaliteC1
+  categories: [ HideSpawnMenu ]
   name: "clip (5.56x45mm NATO FMJ)"
   suffix: full
   components:
@@ -138,6 +146,7 @@
 - type: entity
   parent: MagazineNovaliteC1Empty
   id: MagazineNovaliteC1Rubber
+  categories: [ HideSpawnMenu ]
   name: "clip (5.56x45mm NATO rubber)"
   suffix: full
   components:
@@ -154,6 +163,7 @@
 #anti-flesh:
 - type: entity
   id: Magazine5.56x45mmHP
+  categories: [ HideSpawnMenu ]
   name: "magazine (5.56x45mm NATO hollow-point)"
   parent: BaseMagazine5.56x45mm
   components:
@@ -168,6 +178,7 @@
 
 - type: entity
   id: Magazine5.56x45mmRIP
+  categories: [ HideSpawnMenu ]
   name: "magazine (5.56x45mm NATO RIP)"
   parent: BaseMagazine5.56x45mm
   components:
@@ -184,6 +195,7 @@
 
 - type: entity
   id: Magazine5.56x45mmPlasteelAP
+  categories: [ HideSpawnMenu ]
   name: "magazine (5.56x45mm NATO AP)"
   parent: BaseMagazine5.56x45mm
   components:
