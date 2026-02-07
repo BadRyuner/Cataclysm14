@@ -216,6 +216,9 @@
 
   #MARK:9x19mm
 
+  - type: Tag
+    id: Magazine9x19mmGlockCompatible
+
     #Deprecated
   - type: Tag
     id: Cartridge9x19mmFMJ

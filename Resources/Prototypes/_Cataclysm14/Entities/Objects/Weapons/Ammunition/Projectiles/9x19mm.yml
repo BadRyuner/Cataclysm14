@@ -1,6 +1,6 @@
+#MARK: FMJ
 - type: entity
   id: Bullet9x19mmFMJ
-  name: bullet (9x19mm FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -10,20 +10,33 @@
         Piercing: 24
     armorPenetration: 0.05
 
+#MARK: +P
 - type: entity
-  id: Bullet9x19mmPractice
-  name: bullet (9x19mm practice)
-  parent: BaseBulletPractice
+  id: Bullet9x19mm+P
+  parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Blunt: 2
+        Piercing: 24
+    armorPenetration: 0.05
 
+#MARK: AP6.3
+- type: entity
+  id: Bullet9x19mmAP6.3
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 24
+    armorPenetration: 0.05
+
+#MARK: Rubber
 - type: entity
   id: Bullet9x19mmRubber
-  name: bullet (9x19mm rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -32,10 +45,10 @@
       types:
         Blunt: 3
 
+#MARK: Incendiary
 - type: entity
   id: Bullet9x19mmIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (9x19mm incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -45,10 +58,10 @@
         Heat: 18
     armorPenetration: -0.15
 
+#MARK: Depleted Uranium
 - type: entity
   id: Bullet9x19mmDepletedUranium
   parent: BaseBulletUranium
-  name: bullet (9x19mm uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -58,24 +71,10 @@
         Piercing: 13
     armorPenetration: -0.1
 
-# Upstream
-- type: entity
-  id: Bullet9x19mmEmp
-  name: bullet (9x19mm emp)
-  parent: BaseBulletEmp
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Shock: 0
-
-# Mono AP syst
-#anti-flesh:
+#MARK: HP
 - type: entity
   id: Bullet9x19mmHP
   parent: BaseBullet
-  name: bullet (9x19mm hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -85,10 +84,10 @@
         Piercing: 26
     armorPenetration: -0.6
 
+#MARK: RIP
 - type: entity
   id: Bullet9x19mmRIP
   parent: BaseBullet
-  name: bullet (9x19mm RIP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -98,12 +97,11 @@
         Piercing: 35
     armorPenetration: -0.95
 
-#armor-piercing:
+#MARK: Deprecated >
 
 - type: entity
   id: Bullet9x19mmPlasteelAP
   parent: BaseBullet
-  name: bullet (9x19mm AP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -112,3 +110,24 @@
         Piercing: 7
         Structural: 25
     armorPenetration: 0.9
+
+# Upstream
+- type: entity
+  id: Bullet9x19mmEmp
+  parent: BaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 0
+
+- type: entity
+  id: Bullet9x19mmPractice
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2

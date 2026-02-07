@@ -1,0 +1,47 @@
+- type: entity
+  name: Glock 17 (9x19mm)
+  parent: BaseWeaponPistol
+  id: WeaponPistolGlock17
+  description: A cheap, ubiquitous sidearm, produced by Glock and uses 9x19mm Parabellum ammunition.
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/Glock17.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/Glock17.rsi
+  - type: Gun
+    fireRate: 10
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mk_fire.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine9x19mmGlock17rdFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine9x19mmGlockCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge9x19mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge9x19mmFMJ
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice # Mono
+    price: 50

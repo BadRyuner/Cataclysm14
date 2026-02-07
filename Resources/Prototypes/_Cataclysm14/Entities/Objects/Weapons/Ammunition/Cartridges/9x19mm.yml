@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   id: BaseCartridge9x19mm
   name: cartridge (9x19mm FMJ)
@@ -22,6 +23,7 @@
   - type: StaticPrice
     price: 1
 
+#MARK: FMJ
 - type: entity
   id: Cartridge9x19mmFMJ
   name: cartridge (9x19mm FMJ)
@@ -29,6 +31,103 @@
   components:
   - type: CartridgeAmmo
     proto: Bullet9x19mmFMJ
+
+#MARK: Incendiary
+- type: entity
+  id: Cartridge9x19mmIncendiary
+  name: cartridge (9x19mm incendiary)
+  parent: BaseCartridge9x19mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet9x19mmIncendiary
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ff6e52"
+
+#MARK: Depleted Uranium
+- type: entity
+  id: Cartridge9x19mmDepletedUranium
+  name: cartridge (9x19mm uranium)
+  parent: BaseCartridge9x19mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet9x19mmDepletedUranium
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#65fe08"
+
+#MARK: Rubber
+- type: entity
+  id: Cartridge9x19mmRubber
+  name: cartridge (9x19mm rubber)
+  parent: BaseCartridge9x19mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet9x19mmRubber
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#43c4f7"
+
+#MARK: HP
+- type: entity
+  id: Cartridge9x19mmHP
+  name: cartridge (9x19mm hollow-point)
+  parent: BaseCartridge9x19mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet9x19mmHP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#90EE90"
+
+#MARK: RIP
+- type: entity
+  id: Cartridge9x19mmRIP
+  name: cartridge (9x19mm RIP)
+  parent: BaseCartridge9x19mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet9x19mmRIP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#C04000"
+
+#MARK: Deprecated >
+
+- type: entity
+  id: Cartridge9x19mmPlasteelAP
+  name: cartridge (9x19mm AP)
+  parent: BaseCartridge9x19mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet9x19mmPlasteelAP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#888888"
 
 - type: entity
   id: Cartridge9x19mmPractice
@@ -45,52 +144,6 @@
          map: [ "enum.AmmoVisualLayers.Tip" ]
          color: "#dbdbdb"
 
-- type: entity
-  id: Cartridge9x19mmIncendiary
-  name: cartridge (9x19mm incendiary)
-  parent: BaseCartridge9x19mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet9x19mmIncendiary
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#ff6e52"
-
-- type: entity
-  id: Cartridge9x19mmDepletedUranium
-  name: cartridge (9x19mm uranium)
-  parent: BaseCartridge9x19mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet9x19mmDepletedUranium
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#65fe08"
-
-# Upstream
-- type: entity
-  id: Cartridge9x19mmRubber
-  name: cartridge (9x19mm rubber)
-  parent: BaseCartridge9x19mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet9x19mmRubber
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#43c4f7"
-
 # Frontier
 - type: entity
   id: Cartridge9x19mmEmp
@@ -103,52 +156,3 @@
     range: 0.3
     energyConsumption: 2700000
     disableDuration: 10
-
-# Mono AP syst
-#anti-flesh:
-- type: entity
-  id: Cartridge9x19mmHP
-  name: cartridge (9x19mm hollow-point)
-  parent: BaseCartridge9x19mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet9x19mmHP
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#90EE90"
-
-- type: entity
-  id: Cartridge9x19mmRIP
-  name: cartridge (9x19mm RIP)
-  parent: BaseCartridge9x19mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet9x19mmRIP
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#C04000"
-
-#armor-piercing:
-
-- type: entity
-  id: Cartridge9x19mmPlasteelAP
-  name: cartridge (9x19mm AP)
-  parent: BaseCartridge9x19mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet9x19mmPlasteelAP
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#888888"

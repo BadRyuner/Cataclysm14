@@ -59,14 +59,14 @@
   - type: CartridgeAmmo
     proto: Bullet7.62x51mmM80
 
-#MARK: M60
+#MARK: M61
 - type: entity
-  id: Cartridge7.62x51mmM60
-  name: cartridge (7.62x51mm NATO M60)
+  id: Cartridge7.62x51mmM61
+  name: cartridge (7.62x51mm NATO M61)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmM60
+    proto: Bullet7.62x51mmM61
 
 #MARK: Ultra Nosler
 - type: entity

@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
@@ -36,7 +37,7 @@
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
 
-#small ammo boxes
+#MARK: FMJ
 - type: entity
   parent: BaseAmmoBox9x19mm
   id: AmmoBox9x19mmFMJ
@@ -51,21 +52,37 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+#MARK: +P
 - type: entity
   parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmPractice
-  name: ammunition box (9x19mm practice)
+  id: AmmoBox9x19mm+P
+  name: ammunition box (9x19mm +P)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmPractice
+    proto: Cartridge9x19mm+P
   - type: Sprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    - state: practice
 
+#MARK: AP6.3
+- type: entity
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmAP6.3
+  name: ammunition box (9x19mm AP6.3)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge9x19mmAP6.3
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Incendiary
 - type: entity
   parent: BaseAmmoBox9x19mm
   id: AmmoBox9x19mmIncendiary
@@ -81,6 +98,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: incendiary
 
+#MARK: Depleted Uranium
 - type: entity
   id: AmmoBox9x19mmDepletedUranium
   parent: BaseAmmoBox9x19mm
@@ -96,7 +114,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: uranium
 
-# Upstream
+#MARK: Rubber
 - type: entity
   parent: BaseAmmoBox9x19mm
   id: AmmoBox9x19mmRubber
@@ -112,24 +130,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: rubber
 
-# Frontier
-- type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmEmp
-  name: ammunition box (9x19mm emp)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmEmp
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: emp
-
-# Mono AP syst
-#anti-flesh:
+#MARK: HP
 - type: entity
   parent: BaseAmmoBox9x19mm
   id: AmmoBox9x19mmHP
@@ -145,6 +146,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: HP
 
+#MARK: RIP
 - type: entity
   parent: BaseAmmoBox9x19mm
   id: AmmoBox9x19mmRIP
@@ -160,24 +162,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: RIP
 
-#armor-piercing:
-
-- type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmPlasteelAP
-  name: ammunition box (9x19mm AP)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmPlasteelAP
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: plasteelAP
-
-#big ammo boxes
+#MARK: Big FMJ
 - type: entity
   parent: BaseAmmoBox9x19mm
   id: AmmoBox9x19mmBigFMJ
@@ -201,3 +186,53 @@
     steps: 4
     zeroVisible: false
   - type: Appearance
+
+#MARK: Deprecated >
+
+#armor-piercing:
+
+- type: entity
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmPlasteelAP
+  name: ammunition box (9x19mm AP)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge9x19mmPlasteelAP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: plasteelAP
+
+- type: entity
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmPractice
+  name: ammunition box (9x19mm practice)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge9x19mmPractice
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice
+
+# Frontier
+- type: entity
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmEmp
+  name: ammunition box (9x19mm emp)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge9x19mmEmp
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: emp

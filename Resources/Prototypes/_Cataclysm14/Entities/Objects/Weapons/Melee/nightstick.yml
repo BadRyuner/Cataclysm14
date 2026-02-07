@@ -1,0 +1,26 @@
+- type: entity
+  name: nightstick
+  parent: BaseItem
+  id: WeaponMeleeNightstick
+  description: A nightstick for hitting incapacitating people with. Actively harming with this is considered bad tone.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Melee/nighstick.rsi
+  - type: MeleeWeapon
+    angle: 0
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 7
+    bluntStaminaDamageFactor: 2.0
+    animation: WeaponArcSlash
+  - type: LandAtCursor
+  - type: Item
+    size: Normal
+  - type: DisarmMalus
+    malus: 0.225
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
+      Plastic: 100
