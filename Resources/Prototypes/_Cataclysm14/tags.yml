@@ -149,13 +149,10 @@
   #.38 Special tags
 
   - type: Tag
-    id: Cartridge38_specialFMJ
+    id: Cartridge38_special
 
   - type: Tag
-    id: Magazine38_specialFMJBox
-
-  - type: Tag
-    id: SpeedLoader38_specialFMJ
+    id: SpeedLoader38_special
 
   #45 magnum tags
 
