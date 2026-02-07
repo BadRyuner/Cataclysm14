@@ -1,7 +1,7 @@
 #MARK: Base
 - type: entity
   id: BaseMagazine5.56x45mm
-  name: "magazine (5.56x45mm FMJ)"
+  name: "magazine (5.56x45mm NATO FMJ)"
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
@@ -71,6 +71,15 @@
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmFMJ
 
+#MARK: 223 Remington
+- type: entity
+  id: Magazine5.56x45mmSTANAG30rd223Remington
+  suffix: .223 Remington
+  parent: BaseMagazine5.56x45mmSTANAG30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mm223Remington
+
 #MARK: STANAG 20rd
 - type: entity
   id: BaseMagazine5.56x45mmSTANAG20rd
@@ -108,6 +117,15 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmFMJ
+
+#MARK: 223 Remington
+- type: entity
+  id: Magazine5.56x45mmSTANAG20rd223Remington
+  suffix: .223 Remington
+  parent: BaseMagazine5.56x45mmSTANAG20rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mm223Remington
 
 #MARK: Magpul Black 30rd
 - type: entity

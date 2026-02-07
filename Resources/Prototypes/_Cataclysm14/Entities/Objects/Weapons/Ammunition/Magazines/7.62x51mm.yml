@@ -1,7 +1,7 @@
 # Empty mags
 - type: entity
   id: BaseMagazine7.62x51mm
-  name: "magazine (7.62x51mm FMJ)"
+  name: "magazine (7.62x51mm NATO FMJ)"
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
@@ -36,7 +36,7 @@
 # Magazines
 - type: entity
   id: Magazine7.62x51mmFMJ
-  name: "magazine (7.62x51mm FMJ)"
+  name: "magazine (7.62x51mm NATO FMJ)"
   parent: BaseMagazine7.62x51mm
   components:
   - type: BallisticAmmoProvider
@@ -50,7 +50,7 @@
 
 - type: entity
   id: Magazine7.62x51mmEmpty
-  name: "magazine (7.62x51mm any)"
+  name: "magazine (7.62x51mm NATO any)"
   suffix: empty
   parent: Magazine7.62x51mmFMJ
   components:
@@ -65,7 +65,7 @@
 
 - type: entity
   id: Magazine7.62x51mmPractice
-  name: "magazine (7.62x51mm practice)"
+  name: "magazine (7.62x51mm NATO practice)"
   parent: BaseMagazine7.62x51mm
   components:
   - type: BallisticAmmoProvider
@@ -79,7 +79,7 @@
 
 - type: entity
   id: Magazine7.62x51mmDepletedUranium
-  name: "magazine (7.62x51mm uranium)"
+  name: "magazine (7.62x51mm NATO uranium)"
   parent: BaseMagazine7.62x51mm
   components:
   - type: BallisticAmmoProvider
@@ -93,7 +93,7 @@
 
 - type: entity
   id: Magazine7.62x51mmIncendiary
-  name: "magazine (7.62x51mm incendiary)"
+  name: "magazine (7.62x51mm NATO incendiary)"
   parent: Magazine7.62x51mmFMJ
   components:
   - type: BallisticAmmoProvider
@@ -107,7 +107,7 @@
 
 - type: entity
   id: Magazine7.62x51mmRubber
-  name: "magazine (7.62x51mm rubber)"
+  name: "magazine (7.62x51mm NATO rubber)"
   parent: Magazine7.62x51mmFMJ
   components:
   - type: BallisticAmmoProvider
@@ -122,7 +122,7 @@
 
 - type: entity
   id: Magazine7.62x51mmLowCapacityEmpty
-  name: "low cap magazine (7.62x51mm any)"
+  name: "low cap magazine (7.62x51mm NATO any)"
   suffix: empty
   parent: Magazine7.62x51mmLowCapacityFMJ
   components:
@@ -143,7 +143,7 @@
 
 - type: entity
   id: Magazine7.62x51mmLowCapacityFMJ
-  name: "low cap magazine (7.62x51mm FMJ)"
+  name: "low cap magazine (7.62x51mm NATO FMJ)"
   parent: Magazine7.62x51mmFMJ
   components:
   - type: Tag
@@ -163,7 +163,7 @@
 
 - type: entity
   id: Magazine7.62x51mmLowCapacityPractice
-  name: "low cap magazine (7.62x51mm practice)"
+  name: "low cap magazine (7.62x51mm NATO practice)"
   parent: Magazine7.62x51mmLowCapacityFMJ
   components:
   - type: BallisticAmmoProvider
@@ -177,7 +177,7 @@
 
 - type: entity
   id: Magazine7.62x51mmLowCapacityRubber
-  name: "low cap magazine (7.62x51mm rubber)"
+  name: "low cap magazine (7.62x51mm NATO rubber)"
   parent: Magazine7.62x51mmLowCapacityFMJ
   components:
   - type: BallisticAmmoProvider
@@ -191,7 +191,7 @@
 
 - type: entity
   id: Magazine7.62x51mmLowCapacityUranium
-  name: "low cap magazine (7.62x51mm uranium)"
+  name: "low cap magazine (7.62x51mm NATO uranium)"
   parent: Magazine7.62x51mmLowCapacityFMJ
   components:
   - type: BallisticAmmoProvider
@@ -205,7 +205,7 @@
 
 - type: entity
   id: Magazine7.62x51mmLowCapacityIncendiary
-  name: "low cap magazine (7.62x51mm incendiary)"
+  name: "low cap magazine (7.62x51mm NATO incendiary)"
   parent: Magazine7.62x51mmLowCapacityFMJ
   components:
   - type: BallisticAmmoProvider
@@ -221,7 +221,7 @@
 #anti-flesh:
 - type: entity
   id: Magazine7.62x51mmHP
-  name: "magazine (7.62x51mm hollow-point)"
+  name: "magazine (7.62x51mm NATO hollow-point)"
   parent: BaseMagazine7.62x51mm
   components:
   - type: BallisticAmmoProvider
@@ -235,7 +235,7 @@
 
 - type: entity
   id: Magazine7.62x51mmRIP
-  name: "magazine (7.62x51mm RIP)"
+  name: "magazine (7.62x51mm NATO RIP)"
   parent: BaseMagazine7.62x51mm
   components:
   - type: BallisticAmmoProvider
@@ -251,7 +251,7 @@
 
 - type: entity
   id: Magazine7.62x51mmPlasteelAP
-  name: "magazine (7.62x51mm AP)"
+  name: "magazine (7.62x51mm NATO AP)"
   parent: BaseMagazine7.62x51mm
   components:
   - type: BallisticAmmoProvider

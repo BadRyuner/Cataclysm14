@@ -3,7 +3,7 @@
 #MARK: 5.56x45mm
 - type: entity
   id: Magazine5.56x45mmFMJ
-  name: "magazine (5.56x45mm FMJ)"
+  name: "magazine (5.56x45mm NATO FMJ)"
   parent: BaseMagazine5.56x45mm
   components:
   - type: BallisticAmmoProvider
@@ -17,7 +17,7 @@
 
 - type: entity
   id: Magazine5.56x45mmEmpty
-  name: "magazine (5.56x45mm any)"
+  name: "magazine (5.56x45mm NATO any)"
   suffix: empty
   parent: Magazine5.56x45mmFMJ
   components:
@@ -32,7 +32,7 @@
 
 - type: entity
   id: Magazine5.56x45mmIncendiary
-  name: "magazine (5.56x45mm incendiary)"
+  name: "magazine (5.56x45mm NATO incendiary)"
   parent: Magazine5.56x45mmFMJ
   components:
   - type: BallisticAmmoProvider
@@ -46,7 +46,7 @@
 
 - type: entity
   id: Magazine5.56x45mmPractice
-  name: "magazine (5.56x45mm practice)"
+  name: "magazine (5.56x45mm NATO practice)"
   parent: BaseMagazine5.56x45mm
   components:
   - type: BallisticAmmoProvider
@@ -60,7 +60,7 @@
 
 - type: entity
   id: Magazine5.56x45mmDepletedUranium
-  name: "magazine (5.56x45mm uranium)"
+  name: "magazine (5.56x45mm NATO uranium)"
   parent: BaseMagazine5.56x45mm
   components:
   - type: BallisticAmmoProvider
@@ -74,7 +74,7 @@
 
 - type: entity
   id: Magazine5.56x45mmRubber
-  name: "magazine (5.56x45mm rubber)"
+  name: "magazine (5.56x45mm NATO rubber)"
   parent: BaseMagazine5.56x45mm
   components:
   - type: BallisticAmmoProvider
@@ -90,7 +90,7 @@
 - type: entity
   parent: BaseMagazine5.56x45mm
   id: MagazineNovaliteC1Empty
-  name: "clip (5.56x45mm any)"
+  name: "clip (5.56x45mm NATO any)"
   suffix: empty
   components:
   - type: Tag
@@ -123,7 +123,7 @@
 - type: entity
   parent: MagazineNovaliteC1Empty
   id: MagazineNovaliteC1
-  name: "clip (5.56x45mm FMJ)"
+  name: "clip (5.56x45mm NATO FMJ)"
   suffix: full
   components:
   - type: BallisticAmmoProvider
@@ -138,7 +138,7 @@
 - type: entity
   parent: MagazineNovaliteC1Empty
   id: MagazineNovaliteC1Rubber
-  name: "clip (5.56x45mm rubber)"
+  name: "clip (5.56x45mm NATO rubber)"
   suffix: full
   components:
   - type: BallisticAmmoProvider
@@ -154,7 +154,7 @@
 #anti-flesh:
 - type: entity
   id: Magazine5.56x45mmHP
-  name: "magazine (5.56x45mm hollow-point)"
+  name: "magazine (5.56x45mm NATO hollow-point)"
   parent: BaseMagazine5.56x45mm
   components:
   - type: BallisticAmmoProvider
@@ -168,7 +168,7 @@
 
 - type: entity
   id: Magazine5.56x45mmRIP
-  name: "magazine (5.56x45mm RIP)"
+  name: "magazine (5.56x45mm NATO RIP)"
   parent: BaseMagazine5.56x45mm
   components:
   - type: BallisticAmmoProvider
@@ -184,7 +184,7 @@
 
 - type: entity
   id: Magazine5.56x45mmPlasteelAP
-  name: "magazine (5.56x45mm AP)"
+  name: "magazine (5.56x45mm NATO AP)"
   parent: BaseMagazine5.56x45mm
   components:
   - type: BallisticAmmoProvider

@@ -1,6 +1,6 @@
 - type: entity
   id: Bullet7.62x51mmFMJ
-  name: bullet (7.62x51mm FMJ)
+  name: bullet (7.62x51mm NATO FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -12,7 +12,7 @@
 
 - type: entity
   id: Bullet7.62x51mmPractice
-  name: bullet (7.62x51mm practice)
+  name: bullet (7.62x51mm NATO practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:
@@ -23,7 +23,7 @@
 
 - type: entity
   id: Bullet7.62x51mmRubber
-  name: bullet (7.62x51mm rubber)
+  name: bullet (7.62x51mm NATO rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -35,7 +35,7 @@
 - type: entity
   id: Bullet7.62x51mmIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (7.62x51mm incendiary)
+  name: bullet (7.62x51mm NATO incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -47,7 +47,7 @@
 - type: entity
   id: Bullet7.62x51mmDepletedUranium
   parent: BaseBulletUranium
-  name: bullet (7.62x51mm uranium)
+  name: bullet (7.62x51mm NATO uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -62,7 +62,7 @@
 - type: entity
   id: Bullet7.62x51mmHP
   parent: BaseBullet
-  name: bullet (7.62x51mm hollow-point)
+  name: bullet (7.62x51mm NATO hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -75,7 +75,7 @@
 - type: entity
   id: Bullet7.62x51mmRIP
   parent: BaseBullet
-  name: bullet (7.62x51mm Radically Invasive Projectile)
+  name: bullet (7.62x51mm NATO Radically Invasive Projectile)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -89,7 +89,7 @@
 - type: entity
   id: Bullet7.62x51mmPlasteelAP
   parent: BaseBullet
-  name: bullet (7.62x51mm AP)
+  name: bullet (7.62x51mm NATO AP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

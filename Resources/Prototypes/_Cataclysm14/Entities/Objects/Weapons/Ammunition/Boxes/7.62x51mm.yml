@@ -2,7 +2,7 @@
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
   id: BaseAmmoBox7.62x51mm
-  name: ammunition box (7.62x51mm FMJ)
+  name: ammunition box (7.62x51mm NATO FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -40,7 +40,7 @@
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmFMJ
-  name: ammunition box (7.62x51mm FMJ)
+  name: ammunition box (7.62x51mm NATO FMJ)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmFMJ
@@ -54,7 +54,7 @@
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmPractice
-  name: ammunition box (7.62x51mm practice)
+  name: ammunition box (7.62x51mm NATO practice)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmPractice
@@ -69,7 +69,7 @@
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmIncendiary
-  name: ammunition box (7.62x51mm incendiary)
+  name: ammunition box (7.62x51mm NATO incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmIncendiary
@@ -84,7 +84,7 @@
 - type: entity
   id: AmmoBox7.62x51mmDepletedUranium
   parent: BaseAmmoBox7.62x51mm
-  name: ammunition box (7.62x51mm uranium)
+  name: ammunition box (7.62x51mm NATO uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmDepletedUranium
@@ -100,7 +100,7 @@
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmRubber
-  name: ammunition box (7.62x51mm rubber)
+  name: ammunition box (7.62x51mm NATO rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmRubber
@@ -117,7 +117,7 @@
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmHP
-  name: ammunition box (7.62x51mm hollow-point)
+  name: ammunition box (7.62x51mm NATO hollow-point)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmHP
@@ -132,7 +132,7 @@
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmRIP
-  name: ammunition box (7.62x51mm RIP)
+  name: ammunition box (7.62x51mm NATO RIP)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmRIP
@@ -149,7 +149,7 @@
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmPlasteelAP
-  name: ammunition box (7.62x51mm AP)
+  name: ammunition box (7.62x51mm NATO AP)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmPlasteelAP
@@ -165,7 +165,7 @@
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmBigFMJ
-  name: big ammunition box (7.62x51mm FMJ)
+  name: big ammunition box (7.62x51mm NATO FMJ)
   suffix: Big
   components:
   - type: Item

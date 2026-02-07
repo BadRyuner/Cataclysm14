@@ -35,121 +35,154 @@
   - type: Tag
     id: ToolCrowbar
 
-#MARK: Ammo
-  #7.62x51mm tags
+#MARK: Ammo >
+  #MARK: 7.62x51mm
 
+    #Deprecated
   - type: Tag
     id: Cartridge7.62x51mmFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine7.62x51mmFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine7.62x51mmLowCapacityFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine7.62x51mmBoxSmall
 
+    #Deprecated
   - type: Tag
     id: Magazine7.62x51mmBoxBig
 
-  #7.62x54mmR tags
+  #MARK: 7.62x54mmR
 
+    #Deprecated
   - type: Tag
     id: Cartridge7.62x54mmRFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine7.62x54mmRFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine7.62x54mmRBox
 
-  #6.8x52mm tags
+  #MARK: 6.8x52m
 
+    #Deprecated
   - type: Tag
     id: Cartridge6.8x52mmCaseless
 
+    #Deprecated
   - type: Tag
     id: Magazine6.8x52mmCaseless
 
+    #Deprecated
   - type: Tag
     id: Magazine6.8x52mmCaselessBoxSmall
 
+    #Deprecated
   - type: Tag
     id: Magazine6.8x52mmCaselessBoxBig
 
-  #5.56x45mm tags
+  #MARK: 5.56x45mm
 
+    #Deprecated
   - type: Tag
     id: Cartridge5.56x45mmFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine5.56x45mmSTANAGCompatible
 
+    #Deprecated
   - type: Tag
     id: Magazine5.56x45mmFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine5.56x45mmBox
 
-  #7.62x39mm tags
+  #MARK: 7.62x39mm
 
+    #Deprecated
   - type: Tag
     id: Cartridge7.62x39mmFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine7.62x39mmFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine7.62x39mmLowCapacityFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine7.62x39mmBox
 
+    #Deprecated
   - type: Tag
     id: Magazine7.62x39mmPan
 
-  #4.6x30mm tags
+  #MARK: 4.6x30mm
 
+    #Deprecated
   - type: Tag
     id: Cartridge4.6x30mmFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine4.6x30mmPistolFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine4.6x30mmPistolHighCapacityFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine4.6x30mmSubMachineGunFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine4.6x30mmSubMachineGunTopMountedFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine4.6x30mmFMJBox
 
-  #45 ACP tags
+  #MARK:.45 ACP
 
+    #Deprecated
   - type: Tag
     id: Cartridge45_ACPFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine45_ACPPistolFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine45_ACPPistolHighCapacityFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine45_ACPSubMachineGunFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine45_ACPSubMachineGunTopMountedFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine45_ACPFMJBox
 
-  #.38 Special tags
+  #MARK:.38 Special
 
   - type: Tag
     id: Cartridge38_special
@@ -157,78 +190,99 @@
   - type: Tag
     id: SpeedLoader38_special
 
-  #45 magnum tags
+  #MARK:.45 magnum
 
+    #Deprecated
   - type: Tag
     id: Cartridge45_magnumFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine45_magnumPistolHighCapacityFMJ
 
+    #Deprecated
   - type: Tag
     id: SpeedLoader45_magnumFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine45_magnumPistolFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine45_magnumSubMachineGunFMJ
 
-  #9x19mm tags
+  #MARK:9x19mm
 
+    #Deprecated
   - type: Tag
     id: Cartridge9x19mmFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine9x19mmPistolFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine9x19mmPistolHighCapacityFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine9x19mmSubMachineGunFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine9x19mmSubMachineGunTopMountedFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine9x19mmFMJBox
 
+    #Deprecated
   - type: Tag
     id: SpeedLoader9x19mmFMJ
 
-  #5.7x28mm tags
+  #MARK: 5.7x28mm
 
+    #Deprecated
   - type: Tag
     id: Cartridge5.7x28mmFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine5.7x28mmPistolFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine5.7x28mmPistolHighCapacityFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine5.7x28mmSubMachineGunFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine5.7x28mmSubMachineGunTopMountedFMJ
 
+    #Deprecated
   - type: Tag
     id: Magazine5.7x28mmFMJBox
 
   # Misc ammo shit
 
+    #Deprecated
   - type: Tag
     id: MilitaryPowerCellMG
 
+    #Deprecated
   - type: Tag
     id: PPLCell
 
+    #Deprecated-ish?, unless we implement DP29
   - type: Tag
     id: MagazineDP29
 
-  #8x65mm SKR tags
+  #MARK: 8x65mm SKR
 
   - type: Tag
     id: Cartridge8x65mmSKR
@@ -239,7 +293,7 @@
   - type: Tag
     id: MagazineBox8x65mmSKR
 
-  #.55 SAM caliber tags
+  #MARK: .55 SAM
 
   - type: Tag
     id: Cartridge55_SAM
@@ -250,51 +304,63 @@
   - type: Tag
     id: Magazine55_SAMPistolHighCapacity
 
-  #12 gauge tags
+  #MARK: 12 gauge
 
+    #Deprecated
   - type: Tag
     id: WeaponShotgunHelepolis
 
+    #Deprecated
   - type: Tag
     id: Magazine12_gaugeBuckshot
 
+    #Deprecated
   - type: Tag
     id: ShellShotgun12_gaugeBuckshot
 
-  #4 gauge tags
+  #MARK: 4 gauge
 
+    #Deprecated
   - type: Tag
     id: WeaponShotgunBigLeady
 
+    #Deprecated
   - type: Tag
     id: WeaponShotgunBigJohnny
 
+    #Deprecated
   - type: Tag
     id: WeaponShotgunBigBuddy
 
+    #Deprecated
   - type: Tag
     id: ShellShotgun23x75mmBuckshot
 
-  # 14.5x114mm tags
+  #MARK: 14.5x114mm
 
   - type: Tag
     id: Cartridge14.5x114mm
 
-  # 6.35x40mm tags
+  #MARK: 6.35x40mm
+    #Deprecated
   - type: Tag
     id: Cartridge6.35x40mmCaseless
 
+    #Deprecated
   - type: Tag
     id: Magazine6.35x40mmCaseless
 
+    #Deprecated
   - type: Tag
     id: Magazine6.35x40mmCaselessPistol
 
-  #40mm tags
+  #MARK: 40mm deprecated
 
+    #Deprecated
   - type: Tag
     id: Magazine40mm
 
+    #Deprecated
   - type: Tag
     id: LessLethalGrenade
 

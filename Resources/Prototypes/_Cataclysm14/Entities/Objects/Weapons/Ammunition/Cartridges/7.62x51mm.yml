@@ -1,6 +1,6 @@
 - type: entity
   id: BaseCartridge7.62x51mm
-  name: cartridge (7.62x51mm FMJ)
+  name: cartridge (7.62x51mm NATO FMJ)
   parent: BaseCartridge
   description: A decently sized full-power round.
   abstract: true
@@ -24,7 +24,7 @@
 
 - type: entity
   id: Cartridge7.62x51mmFMJ
-  name: cartridge (7.62x51mm FMJ)
+  name: cartridge (7.62x51mm NATO FMJ)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo
@@ -32,7 +32,7 @@
 
 - type: entity
   id: Cartridge7.62x51mmPractice
-  name: cartridge (7.62x51mm practice)
+  name: cartridge (7.62x51mm NATO practice)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo
@@ -47,7 +47,7 @@
 
 - type: entity
   id: Cartridge7.62x51mmIncendiary
-  name: cartridge (7.62x51mm incendiary)
+  name: cartridge (7.62x51mm NATO incendiary)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo
@@ -62,7 +62,7 @@
 
 - type: entity
   id: Cartridge7.62x51mmDepletedUranium
-  name: cartridge (7.62x51mm uranium)
+  name: cartridge (7.62x51mm NATO uranium)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo
@@ -77,7 +77,7 @@
 
 - type: entity
   id: Cartridge7.62x51mmRubber
-  name: cartridge (7.62x51mm rubber)
+  name: cartridge (7.62x51mm NATO rubber)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo
@@ -94,7 +94,7 @@
 #anti-flesh:
 - type: entity
   id: Cartridge7.62x51mmHP
-  name: cartridge (7.62x51mm hollow-point)
+  name: cartridge (7.62x51mm NATO hollow-point)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo
@@ -109,7 +109,7 @@
 
 - type: entity
   id: Cartridge7.62x51mmRIP
-  name: cartridge (7.62x51mm RIP)
+  name: cartridge (7.62x51mm NATO RIP)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo
@@ -126,7 +126,7 @@
 
 - type: entity
   id: Cartridge7.62x51mmPlasteelAP
-  name: cartridge (7.62x51mm AP)
+  name: cartridge (7.62x51mm NATO AP)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo

@@ -1,9 +1,9 @@
-
+#MARK: Base
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
   id: BaseAmmoBox5.56x45mm
-  name: ammunition box (5.56x45mm FMJ)
+  name: ammunition box (5.56x45mm NATO FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -11,13 +11,14 @@
       tags:
         - Cartridge5.56x45mmFMJ
     proto: Cartridge5.56x45mmFMJ
-    capacity: 70 # more than 2 rifle mag
+    capacity: 50 # more than 2 rifle mag
   - type: Item
     size: Small
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
+    scale: 0.5,0.5
     sprite: _Cataclysm14/Objects/Weapons/Boxes/5.56x45mm.rsi
   - type: MagazineVisuals
     magState: mag
@@ -37,11 +38,11 @@
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
 
-#small ammo boxes
+#MARK: FMJ
 - type: entity
   parent: BaseAmmoBox5.56x45mm
   id: AmmoBox5.56x45mmFMJ
-  name: ammunition box (5.56x45mm FMJ)
+  name: ammunition box (5.56x45mm NATO FMJ)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmFMJ
@@ -52,25 +53,26 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+#MARK: 223 Remington
 - type: entity
   parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmPractice
-  name: ammunition box (5.56x45mm practice)
+  id: AmmoBox5.56x45mm223Remington
+  name: ammunition box (.223 Remington)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmPractice
+    proto: Cartridge5.56x45mm223Remington
   - type: Sprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    - state: practice
 
+#MARK: Incendiary
 - type: entity
   parent: BaseAmmoBox5.56x45mm
   id: AmmoBox5.56x45mmIncendiary
-  name: ammunition box (5.56x45mm incendiary)
+  name: ammunition box (5.56x45mm NATO incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmIncendiary
@@ -82,10 +84,11 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: incendiary
 
+#MARK: Depleted Uranium
 - type: entity
   id: AmmoBox5.56x45mmDepletedUranium
   parent: BaseAmmoBox5.56x45mm
-  name: ammunition box (5.56x45mm uranium)
+  name: ammunition box (5.56x45mm NATO uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmDepletedUranium
@@ -97,11 +100,11 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: uranium
 
-# Upstream
+#MARK: Rubber
 - type: entity
   parent: BaseAmmoBox5.56x45mm
   id: AmmoBox5.56x45mmRubber
-  name: ammunition box (5.56x45mm rubber)
+  name: ammunition box (5.56x45mm NATO rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmRubber
@@ -113,12 +116,11 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: rubber
 
-# Mono AP syst
-#anti-flesh:
+#MARK: HP
 - type: entity
   parent: BaseAmmoBox5.56x45mm
   id: AmmoBox5.56x45mmHP
-  name: ammunition box (5.56x45mm hollow-point)
+  name: ammunition box (5.56x45mm NATO hollow-point)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmHP
@@ -130,10 +132,11 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: HP
 
+#MARK: RIP
 - type: entity
   parent: BaseAmmoBox5.56x45mm
   id: AmmoBox5.56x45mmRIP
-  name: ammunition box (5.56x45mm RIP)
+  name: ammunition box (5.56x45mm NATO RIP)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmRIP
@@ -145,12 +148,72 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: RIP
 
+#MARK: Big FMJ
+- type: entity
+  parent: BaseAmmoBox5.56x45mm
+  id: AmmoBox5.56x45mmBigFMJ
+  name: big ammunition box (5.56x45mm NATO FMJ)
+  suffix: Big
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: BallisticAmmoProvider
+    capacity: 160
+    proto: Cartridge5.56x45mmFMJ
+  - type: Sprite
+    layers:
+    - state: base-b
+      map: ["enum.GunVisualLayers.Base"]
+    - state: magb-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: magb
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: Big Rubber
+- type: entity
+  parent: AmmoBox5.56x45mmBigFMJ
+  id: AmmoBox5.56x45mmBigRubber
+  name: ammunition box (5.56x45mm NATO rubber)
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 160
+    proto: Cartridge5.56x45mmRubber
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/5.56x45mm.rsi
+    layers:
+    - state: base-b
+      map: ["enum.GunVisualLayers.Base"]
+    - state: magb-3
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice-b
+
+#MARK: Deprecated >
+
+- type: entity
+  parent: BaseAmmoBox5.56x45mm
+  id: AmmoBox5.56x45mmPractice
+  name: ammunition box (5.56x45mm NATO practice)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmPractice
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice
+
 #armor-piercing:
 
 - type: entity
   parent: BaseAmmoBox5.56x45mm
   id: AmmoBox5.56x45mmPlasteelAP
-  name: ammunition box (5.56x45mm AP)
+  name: ammunition box (5.56x45mm NATO AP)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmPlasteelAP
@@ -161,45 +224,3 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: plasteelAP
-
-#big ammo boxes
-- type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmBigFMJ
-  name: big ammunition box (5.56x45mm FMJ)
-  suffix: Big
-  components:
-  - type: Item
-    shape:
-    - 0,0,1,1
-  - type: BallisticAmmoProvider
-    capacity: 210 # 7 rifle mags
-    proto: Cartridge5.56x45mmFMJ
-  - type: Sprite
-    layers:
-    - state: base-b # Frontier: base-big<base-b
-      map: ["enum.GunVisualLayers.Base"]
-    - state: magb-1 # Frontier: mag-big-1<magb-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: magb # Frontier: mag-big<magb
-    steps: 4
-    zeroVisible: false
-  - type: Appearance
-
-- type: entity
-  parent: AmmoBox5.56x45mmBigFMJ
-  id: AmmoBox5.56x45mmBigRubber
-  name: ammunition box (5.56x45mm rubber)
-  components:
-  - type: BallisticAmmoProvider
-    capacity: 210
-    proto: Cartridge5.56x45mmRubber
-  - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/5.56x45mm.rsi
-    layers:
-    - state: base-b
-      map: ["enum.GunVisualLayers.Base"]
-    - state: magb-3
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: practice-b
