@@ -1,0 +1,69 @@
+#MARK: Base
+- type: entity
+  name: S&W M36 (.38 Special)
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverM36
+  suffix: Empty
+  description: A revolver that is commonly used by american law enforcer when budget is lacking. Manufactured by Smith & Wesson and uses .38 Special ammo.
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Revolvers/M36.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Revolvers/M36.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 2
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/python_fire.ogg
+      params:
+        volume: 2.25
+  - type: StaticPrice
+    price: 1
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - Cartridge38_special
+        - SpeedLoader38_special
+    capacity: 6
+    proto:  null
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
+#MARK: FMJ
+- type: entity
+  parent: WeaponRevolverM36
+  id: WeaponRevolverM36LoadedFMJ
+  suffix: FMJ
+  components:
+  - type: RevolverAmmoProvider
+    proto: Cartridge38_specialFMJ
+
+#MARK: JHP
+- type: entity
+  parent: WeaponRevolverM36
+  id: WeaponRevolverM36LoadedJHP
+  suffix: JHP
+  components:
+  - type: RevolverAmmoProvider
+    proto: Cartridge38_specialJHP
+
+#MARK: +P
+- type: entity
+  parent: WeaponRevolverM36
+  id: WeaponRevolverM36Loaded+P
+  suffix: +P
+  components:
+  - type: RevolverAmmoProvider
+    proto: Cartridge38_special+P
+
+#MARK: Rubber
+- type: entity
+  parent: WeaponRevolverM36
+  id: WeaponRevolverM36LoadedRubber
+  suffix: Rubber
+  components:
+  - type: RevolverAmmoProvider
+    proto: Cartridge38_specialRubber

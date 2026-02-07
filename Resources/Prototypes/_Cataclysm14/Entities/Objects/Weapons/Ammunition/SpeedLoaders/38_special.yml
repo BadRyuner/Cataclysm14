@@ -1,0 +1,81 @@
+#MARK: Base
+- type: entity
+  name: "speed loader (.38 Special)"
+  id: BaseSpeedLoader38_special
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/38_special/speedloader_38_special_6rd.rsi
+    state: icon
+  - type: Sprite
+    scale: 0.25,0.25
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/38_special/speedloader_38_special_6rd.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: base
+    steps: 7
+    zeroVisible: false
+  - type: Tag
+    tags:
+      - SpeedLoader38_special
+  - type: SpeedLoader
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - Cartridge38_special
+    capacity: 6
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: Appearance
+
+#MARK: FMJ
+- type: entity
+  id: SpeedLoader38_specialFMJ
+  suffix: FMJ
+  parent: BaseSpeedLoader38_special
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge38_specialFMJ
+
+#MARK: JHP
+- type: entity
+  id: SpeedLoader38_specialJHP
+  suffix: JHP
+  parent: BaseSpeedLoader38_special
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge38_specialJHP
+
+#MARK: +P
+- type: entity
+  id: SpeedLoader38_special+P
+  suffix: +P
+  parent: BaseSpeedLoader38_special
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge38_special+P
+
+#MARK: Empty
+- type: entity
+  id: SpeedLoader38_specialEmpty
+  suffix: Empty
+  parent: BaseSpeedLoader38_special
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: Rubber
+- type: entity
+  id: SpeedLoader38_specialRubber
+  suffix: Rubber
+  parent: BaseSpeedLoader38_special
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge38_specialRubber
