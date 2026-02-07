@@ -32,6 +32,24 @@
   - type: CartridgeAmmo
     proto: Bullet9x19mmFMJ
 
+#MARK: +P
+- type: entity
+  id: Cartridge9x19mm+P
+  name: cartridge (9x19mm +P)
+  parent: BaseCartridge9x19mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet9x19mm+P
+
+#MARK: AP6.3
+- type: entity
+  id: Cartridge9x19mmAP6.3
+  name: cartridge (9x19mm AP6.3)
+  parent: BaseCartridge9x19mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet9x19mmAP6.3
+
 #MARK: Incendiary
 - type: entity
   id: Cartridge9x19mmIncendiary
