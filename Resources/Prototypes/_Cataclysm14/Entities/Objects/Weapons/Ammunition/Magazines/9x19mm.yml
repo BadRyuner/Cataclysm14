@@ -20,6 +20,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
+    scale: 0.3,0.4
     sprite: _Cataclysm14/Objects/Weapons/Magazine/9x19mm/9x19mm_pistol_mag.rsi
     layers:
     - state: base
@@ -28,7 +29,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 6
+    steps: 2
     zeroVisible: false
   - type: Appearance
 

@@ -1,0 +1,20 @@
+#MARK: Duty belt
+  - type: entity
+    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband]
+    id: ClothingBeltDutyBelt
+    name: duty belt
+    description: A belt with plenty of attach for equipment and pockets, used by law enforcement.
+    components:
+    - type: StaticPrice
+      price: 3000
+      vendPrice: 5500
+    - type: Sprite
+      scale: 0.7,0.7
+      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt.rsi
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt.rsi
+    - type: ExplosionResistance
+      damageCoefficient: 0.9
+    - type: Storage
+      grid:
+      - 0,0,7,1

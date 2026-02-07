@@ -1,4 +1,4 @@
-#MARK: Scav 3x2
+#MARK: Scav 2x3 * 2 + 2x1 µ 2
   - type: entity
     parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband]
     id: ClothingBeltChestRigScavenger
@@ -16,8 +16,11 @@
       damageCoefficient: 0.9
     - type: Storage
       grid:
-      - 0,0,2,1
-#MARK: Security 4x2
+      - 0,0,1,2
+      - 0,4,1,4
+      - 3,0,4,2
+      - 3,4,4,4
+#MARK: Security 2x3 * 3
   - type: entity
     parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband]
     id: ClothingBeltChestRigSecurity
@@ -35,4 +38,6 @@
       damageCoefficient: 0.9
     - type: Storage
       grid:
-      - 0,0,3,1
+      - 0,0,1,2
+      - 3,0,4,2
+      - 6,0,7,2
