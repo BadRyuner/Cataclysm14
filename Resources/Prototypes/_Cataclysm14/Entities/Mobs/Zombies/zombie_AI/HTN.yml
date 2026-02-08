@@ -1,0 +1,129 @@
+# AI packages
+- type: entity
+  id: MobHumanoidHostileAISimpleMeleeZombie
+  abstract: true
+  components:
+  - type: HTN
+    rootTask:
+       task: SimpleHostileCompoundZombie
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool # They use this option too much for my liking, but I'll keep it here as an option
+        true
+
+- type: htnCompound
+  id: SimpleHostileCompoundZombie
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeCombatCompoundZombie
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompoundZombie
+
+- type: htnCompound
+  id: IdleCompoundZombie
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:WaitOperator
+            key: IdleTime
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: IdleTime
+
+- type: htnCompound
+  id: MeleeCombatCompoundZombie
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyMeleeTargets
+        - !type:HTNCompoundTask
+          task: BeforeMeleeAttackTargetCompoundZombieZombie
+
+- type: htnCompound
+  id: BeforeMeleeAttackTargetCompoundZombieZombie
+  branches:
+    - preconditions:
+        - !type:BuckledPrecondition
+          isBuckled: true
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UnbuckleOperator
+            shutdownState: TaskFinished
+
+    - preconditions:
+        - !type:PulledPrecondition
+          isPulled: true
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UnPullOperator
+            shutdownState: TaskFinished
+
+    - preconditions:
+        - !type:InContainerPrecondition
+          isInContainer: true
+      tasks:
+        - !type:HTNCompoundTask
+          task: EscapeCompound
+
+    #Cataclysm14, no need to grab weapon
+    # Pickup weapon if we don't have one.
+    # - preconditions:
+    #     - !type:ActiveHandComponentPrecondition
+    #         components:
+    #           # Just serializer things
+    #           - type: MeleeWeapon
+    #             damage:
+    #               types:
+    #                 Blunt: 0
+    #         invert: true
+    #   tasks:
+    #     - !type:HTNCompoundTask
+    #       task: PickupMeleeCompound
+
+    # Melee combat (unarmed or otherwise)
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeAttackTargetCompoundZombie
+
+# Tries to melee attack our target.
+- type: htnCompound
+  id: MeleeAttackTargetCompoundZombie
+  branches:
+    - preconditions:
+      - !type:KeyExistsPrecondition
+        key: Target
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            shutdownState: PlanFinished
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            brakeMaxVelocity: null # Monolith - don't try to brake
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            rangeKey: MeleeRange
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: Away
+        - !type:HTNPrimitiveTask
+          operator: !type:MeleeOperator
+            targetKey: Target
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: MeleeRange
+          services:
+            - !type:UtilityService
+              id: MeleeService
+              proto: NearbyMeleeTargets
+              key: Target

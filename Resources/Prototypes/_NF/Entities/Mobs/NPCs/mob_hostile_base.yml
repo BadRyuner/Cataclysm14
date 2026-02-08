@@ -364,7 +364,7 @@
   - MobStepTriggerImmune
   - BaseMobSpecies
   - MobHumanoidHostileAIComplex
-  - BaseC3MobHuman
+  # - BaseC3MobHuman #Cataclysm14, begone frontier slop
   id: MobHumanoidHostileBase
   components:
   - type: NPCRetaliation

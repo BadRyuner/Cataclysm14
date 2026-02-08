@@ -1,0 +1,20 @@
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: National Guard
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieNationalGuard
+  suffix: National Guard
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: Loadout
+    prototypes:
+      - LoadoutNationalGuard
