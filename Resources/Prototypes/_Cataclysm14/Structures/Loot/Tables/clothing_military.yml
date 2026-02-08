@@ -15,13 +15,13 @@
   id: LootTableClothingShirtCombatCCE
   table: !type:GroupSelector
     children:
-    - id: ClothingShirtCombatCEE
-    - id: ClothingShirtCombatCEECargo
+    - id: ClothingShirtCombatCCE
+    - id: ClothingShirtCombatCCECargo
 
 #MARK: PantsCombatCCE
 - type: entityTable
   id: LootTableClothingPantsCombatCCE
   table: !type:GroupSelector
     children:
-    - id: ClothingPantsCombatCEE
-    - id: ClothingPantsCombatCEECargo
+    - id: ClothingPantsCombatCCE
+    - id: ClothingPantsCombatCCECargo

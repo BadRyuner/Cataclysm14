@@ -1,0 +1,28 @@
+#MARK: ACH
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadBulletproofHelmetACHOCPMulticam
+      name: ACH ballistic helmet (OCP multicam)
+      description: A medium ballistic helmet made for the US army, the Advanced Combat Headgear ACH.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_ACH_OCP_multicam.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_ACH_OCP_multicam.rsi
+      - type: ExplosionResistance
+        damageCoefficient: 0.8
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.85
+            Slash: 0.85
+            Piercing: 0.85
+      - type: HideLayerClothing
+        slots:
+        - Hair
+        - Snout
+        - HeadTop
+        - HeadSide
+      - type: StaticPrice
+        price: 12000
+        vendPrice: 20000

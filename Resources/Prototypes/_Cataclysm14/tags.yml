@@ -7,6 +7,9 @@
     id: NESCO4400FrontBallisticPlateLevel6
 
   - type: Tag
+    id: ESAPIFrontBallisticPlateLevel6
+
+  - type: Tag
     id: 6B33FrontBallisticPlateLevel4
 
   - type: Tag

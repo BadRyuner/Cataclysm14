@@ -153,6 +153,7 @@
       - type: Storage
         whitelist:
           tags:
+          - ESAPIFrontBallisticPlateLevel6
           - ESBISideBallisticPlateLevel6
           - NESCO4400FrontBallisticPlateLevel6
           - AR500FrontBallisticPlateLevel3
@@ -202,6 +203,7 @@
       - type: Storage
         whitelist:
           tags:
+          - ESAPIFrontBallisticPlateLevel6
           - ESBISideBallisticPlateLevel6
           - NESCO4400FrontBallisticPlateLevel6
           - AR500FrontBallisticPlateLevel3
@@ -290,6 +292,7 @@
       - type: Storage
         whitelist:
           tags:
+          - ESAPIFrontBallisticPlateLevel6
           - ESBISideBallisticPlateLevel6
           - NESCO4400FrontBallisticPlateLevel6
           - AR500FrontBallisticPlateLevel3
