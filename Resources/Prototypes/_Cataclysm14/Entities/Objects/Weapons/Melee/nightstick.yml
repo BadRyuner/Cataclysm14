@@ -6,6 +6,8 @@
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Melee/nighstick.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Weapons/Melee/nighstick.rsi
   - type: MeleeWeapon
     angle: 0
     wideAnimationRotation: -135
