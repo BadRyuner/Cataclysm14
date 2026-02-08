@@ -92,6 +92,44 @@
         - id: ClothingBalaclavaSkiMaskBlack
         prob: 0.4
 
+#MARK: SWAT officer
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieSWATOfficer
+  suffix: SWAT officer
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: ContainerFill
+    containers:
+      shoes:
+      - ClothingShoesTacticalSwatBlack
+      pants:
+      - ClothingPantsPoliceCopUS
+      jumpsuit:
+      - ClothingShirtPoliceCopUS
+  - type: EntityTableContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingPoliceUSBulletProofVest
+        prob: 0.95
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadBulletproofHelmetM88SWAT
+        prob: 0.95
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.5
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskBlack
+        prob: 0.95
+
 #MARK: Civilian Basic
 - type: entity
   parent: BaseMobZombieSimple
