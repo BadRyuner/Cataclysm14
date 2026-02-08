@@ -1,0 +1,14 @@
+- type: startingGear
+  id: LoadoutNationalGuard
+  equipment:
+    head: ClothingHeadBulletproofHelmetACHOCPMulticam
+    shoes: ClothingShoesTacticalSwatTan
+    gloves: ClothingHandsGlovesTacticalCombatTan
+    # neck: BedsheetCult
+    jumpsuit: ClothingShirtCombatUCP
+    pants: ClothingPantsCombatUCP
+    outerClothing: ClothingOuterBulletProofVestIOTVNationalGuardFilled
+    belt: ClothingBeltDutyBeltTan
+    back: ClothingBackpackAlicePackTan
+  # inhand:
+  #   - WizardStaffMeleeBlood

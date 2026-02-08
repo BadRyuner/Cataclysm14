@@ -1,5 +1,5 @@
-- type: inventoryTemplate
-  id: human
+﻿- type: inventoryTemplate
+  id: InvTemplateZombieBase
   slots:
     - name: shoes
       slotTexture: cata_shoes

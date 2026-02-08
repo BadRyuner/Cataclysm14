@@ -1,0 +1,51 @@
+- type: entity
+  id: BaseMobZombieInventory
+  abstract: true
+  name: zombie
+  description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileBase
+  - MobHumanoidInvetory
+  - NFMobRestrictions
+  components:
+  - type: Sprite
+    sprite: _NF/Mobs/Zombies/zombie_human.rsi
+    state: zombie
+  - type: NpcFactionMember
+    factions:
+      - BloodCultNF
+  - type: Advertise
+    pack: bloodcultisthumanoidchatter
+    minimumWait: 30
+    maximumWait: 120
+    nextAdvertisementTime: 10
+  - type: AutoWakeUp
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+
+#MARK: Naked / no gear
+- type: entity
+  parent:
+  - BaseMobZombieInventory
+  - MobHumanoidHostileAISimpleMelee
+  id: MobZombieNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: National Guard
+- type: entity
+  parent:
+  - BaseMobZombieInventory
+  - MobHumanoidHostileAISimpleMelee
+  id: MobZombieNationalGuard
+  suffix: National Guard
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: Loadout
+    prototypes:
+      - LoadoutNationalGuard

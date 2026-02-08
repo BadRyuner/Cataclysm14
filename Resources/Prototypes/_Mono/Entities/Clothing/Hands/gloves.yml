@@ -25,7 +25,7 @@
 - type: entity
   parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
   id: ClothingHandsGlovesTacticalCombatTan
-  name: tan tactical combat gloves
+  name: tan tactical gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -52,7 +52,7 @@
 - type: entity
   parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
   id: ClothingHandsGlovesTacticalCombatBlack
-  name: black tactical combat gloves
+  name: black tactical gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -79,7 +79,7 @@
 - type: entity
   parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
   id: ClothingHandsGlovesTacticalCombatRangerGreen
-  name: ranger green tactical combat gloves
+  name: ranger green tactical gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -106,7 +106,7 @@
 - type: entity
   parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
   id: ClothingHandsGlovesTacticalCombatOlive
-  name: olive tactical combat gloves
+  name: olive tactical gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -133,7 +133,7 @@
 - type: entity
   parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
   id: ClothingHandsGlovesTacticalCombatCoyoteBrown
-  name: coyote brown tactical combat gloves
+  name: coyote brown tactical gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -160,7 +160,7 @@
 - type: entity
   parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
   id: ClothingHandsGlovesTacticalCombatWhite
-  name: white tactical combat gloves
+  name: white tactical gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite

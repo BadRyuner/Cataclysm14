@@ -47,7 +47,7 @@
   #MARK: UCP
     - type: entity
       parent: ClothingPantsBase
-      id: ClothingPantsCombatUCPDesert
+      id: ClothingPantsCombatUCP
       name: UCP combat pants (desert)
       description: Ripstop combat pants. It has a UCP (Universal Combat Patern) camo variant made for the US army.
       components:
@@ -58,7 +58,7 @@
 
     - type: entity
       parent: ClothingPantsCargoBase
-      id: ClothingPantsCombatUCPDesertCargo
+      id: ClothingPantsCombatUCPCargo
       name: UCP cargo combat pants (desert)
       description: Ripstop combat pants with large pockets. It has a UCP (Universal Combat Patern) camo variant made for the US army.
       components:
