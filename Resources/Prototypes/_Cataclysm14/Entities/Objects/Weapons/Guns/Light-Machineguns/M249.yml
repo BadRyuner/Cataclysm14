@@ -1,5 +1,5 @@
 - type: entity
-  name: M249 (5.56x45mm NATO NATO)
+  name: M249 (5.56x45mm NATO)
   parent: BaseWeaponRifle
   id: WeaponLightMachinegunM249
   description: A modern LMG made for use by the US army and NATO countries, Chambered in 5.56x45mm NATO .
@@ -20,32 +20,38 @@
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_32x32.rsi
     clothingVisuals:
-      slingfront:
-      - state: equipped-SLINGFRONT
       suitstorage:
       - state: equipped-SUITSTORAGE
+      slingfront:
+      - state: equipped-SUITSTORAGE
   - type: Gun
-    fireRate: 9
+    fireRate: 14
     soundGunshot:
-      path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg
+      path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
       params:
+        pitch: 1.2
         volume: 15
-        variation: 0.1
-        pitch: 2.2
+        variation: 0.15
   - type: ChamberMagazineAmmoProvider
     soundRack:
-      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+      path: /Audio/_Cataclysm14/Weapons/Guns/Cocking/cata_heavy_1.ogg
+    soundBoltClosed:
+      path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_closing.ogg
+    soundBoltOpened:
+      path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_opening.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmSTANAG20rdEmpty
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        startingItem: MagazineBox5.56x45mmLMG200rdFMJ
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
         priority: 2
         whitelist:
           tags:
             - Magazine5.56x45mmSTANAGCompatible
+            - AmmoBelt5.56x45mm
+            - MagazineBox5.56x45mmLMGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber

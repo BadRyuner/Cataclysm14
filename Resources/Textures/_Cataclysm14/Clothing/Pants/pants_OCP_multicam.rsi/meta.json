@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by SS14 S.T.A.L.K.E.R. RU for their own use and usage by Monolith Station with explicit permission (ignore CC-BY-SA-3.0 its there so the rsi validator doesnt fail checks)",
+  "copyright": "Made by zeranov (disc:core_mene)",
   "size": {
     "x": 32,
     "y": 32
@@ -11,7 +11,7 @@
       "name": "icon"
     },
     {
-      "name": "equipped-INNERCLOTHING",
+      "name": "equipped-PANTS",
       "directions": 4
     },
     {

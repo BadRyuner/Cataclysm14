@@ -25,3 +25,48 @@
     children:
     - id: ClothingPantsCombatCCE
     - id: ClothingPantsCombatCCECargo
+
+#MARK: National Guard Vest
+- type: entityTable
+  id: LootTableClothingNationalGuardBulletProofVest
+  table: !type:GroupSelector
+    children:
+    - id: ClothingOuterBulletProofVestIOTVTan
+    - id: ClothingOuterBulletProofVestIOTVTanFilled
+    - id: ClothingOuterBulletProofVestIOTVOCPMulticam
+    - id: ClothingOuterBulletProofVestIOTVOCPMulticamFilled
+    - id: ClothingOuterBulletProofVestIOTVNationalGuard
+    - id: ClothingOuterBulletProofVestIOTVNationalGuardFilled
+    - id: ClothingOuterBulletProofVestHighcomTrooperTan
+    - id: ClothingOuterBulletProofVestHighcomTrooperTanFilled
+    - id: ClothingOuterBulletProofVestSlickCoyote
+    - id: ClothingOuterBulletProofVestSlickCoyoteFilled
+
+#MARK: National Guard Top
+- type: entityTable
+  id: LootTableClothingNationalGuardTop
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtCombatUCP
+    - id: ClothingShirtCombatUCPCargo
+    - id: ClothingShirtCombatOCPMulticam
+    - id: ClothingShirtCombatOCPMulticamCargo
+
+#MARK: National Guard Bottom
+- type: entityTable
+  id: LootTableClothingNationalGuardBottom
+  table: !type:GroupSelector
+    children:
+    - id: ClothingPantsCombatUCP
+    - id: ClothingPantsCombatUCPCargo
+    - id: ClothingPantsCombatOCPMulticam
+    - id: ClothingPantsCombatOCPMulticamCargo
+
+#MARK: US Police vest
+- type: entityTable
+  id: LootTableClothingPoliceUSBulletProofVest
+  table: !type:GroupSelector
+    children:
+    - id: ClothingOuterBulletProofVestPoliceUSLightBlack
+    - id: ClothingOuterBulletProofVestPoliceUSLightHighVis
+

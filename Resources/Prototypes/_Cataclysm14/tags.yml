@@ -101,9 +101,14 @@
   - type: Tag
     id: Cartridge5.56x45mmFMJ
 
-    #Deprecated
   - type: Tag
     id: Magazine5.56x45mmSTANAGCompatible
+
+  - type: Tag
+    id: AmmoBelt5.56x45mm
+
+  - type: Tag
+    id: MagazineBox5.56x45mmLMGCompatible
 
     #Deprecated
   - type: Tag

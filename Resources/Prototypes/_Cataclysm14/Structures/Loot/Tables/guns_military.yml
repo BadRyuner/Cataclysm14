@@ -10,3 +10,11 @@
       - id: AmmoBox5.56x45mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,1
+
+#MARK: Guns National Guard
+- type: entityTable
+  id: LootTableWeaponGunNationalGuard
+  table: !type:GroupSelector
+    children:
+      - id: WeaponAssaultRifleM4A1
+      - id: WeaponLightMachinegunM249

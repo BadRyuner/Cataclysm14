@@ -1,0 +1,20 @@
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaNeckGaiterBlack
+  name: black neck gaiter
+  description: Stylish neck gaiter for your neck, can protect from the cosmic wind?...
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/neckgaiter.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/neckgaiter.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-MASK
+  - type: BreathMask
+  - type: IdentityBlocker
+    coverage: MOUTH
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - IPCMaskWearable # EE - IPCs

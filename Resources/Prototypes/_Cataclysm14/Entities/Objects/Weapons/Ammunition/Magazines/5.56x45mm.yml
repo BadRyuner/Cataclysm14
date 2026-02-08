@@ -202,3 +202,81 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmFMJ
+
+#MARK: 100rd LMG Box
+- type: entity
+  id: BaseMagazineBox5.56x45mmLMG100rd
+  abstract: true
+  name: "100rd magazine box (5.56x45mm NATO)"
+  parent: BaseMagazine5.56x45mm
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 100
+  - type: Tag
+    tags:
+      - MagazineBox5.56x45mmLMGCompatible
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_box_5.56x45mm_100rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: MagazineBox5.56x45mmLMG100rdEmpty
+  suffix: Empty
+  parent: BaseMagazineBox5.56x45mmLMG100rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: MagazineBox5.56x45mmLMG100rdFMJ
+  suffix: FMJ
+  parent: BaseMagazineBox5.56x45mmLMG100rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmFMJ
+
+#MARK: 200rd LMG Box
+- type: entity
+  id: BaseMagazineBox5.56x45mmLMG200rd
+  abstract: true
+  name: "200rd magazine box (5.56x45mm NATO)"
+  parent: BaseMagazine5.56x45mm
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 200
+  - type: Tag
+    tags:
+      - MagazineBox5.56x45mmLMGCompatible
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_box_5.56x45mm_200rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: MagazineBox5.56x45mmLMG200rdEmpty
+  suffix: Empty
+  parent: BaseMagazineBox5.56x45mmLMG200rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: MagazineBox5.56x45mmLMG200rdFMJ
+  suffix: FMJ
+  parent: BaseMagazineBox5.56x45mmLMG200rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmFMJ

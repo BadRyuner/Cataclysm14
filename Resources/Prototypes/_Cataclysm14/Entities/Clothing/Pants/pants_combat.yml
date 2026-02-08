@@ -66,3 +66,26 @@
         sprite: _Cataclysm14/Clothing/Pants/pants_UCP_cargo.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Pants/pants_UCP_cargo.rsi
+
+  #MARK: OCP Multicam
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsCombatOCPMulticam
+      name: OCP multicam combat pants
+      description: Ripstop combat pants. It has a OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
+
+    - type: entity
+      parent: ClothingPantsCargoBase
+      id: ClothingPantsCombatOCPMulticamCargo
+      name: OCP multicam cargo combat pants
+      description: Ripstop combat pants with large pockets. It has a OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
