@@ -1,0 +1,211 @@
+#MARK: body: Base
+- type: body
+  id: BodyPartSetZombieBase
+  name: "zombie"
+  root: torso
+  slots:
+    head:
+      part: HeadZombie
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoHuman
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmZombie
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmZombie
+      connections:
+      - left hand
+    right hand:
+      part: RightHandZombie
+    left hand:
+      part: LeftHandZombie
+    right leg:
+      part: RightLegZombie
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegZombie
+      connections:
+      - left foot
+    right foot:
+      part: RightFootZombie
+    left foot:
+      part: LeftFootZombie
+
+#MARK: body: Headless
+- type: body
+  id: BodyPartSetZombieHeadless
+  name: "headless zombie"
+  root: torso
+  slots:
+    torso:
+      part: TorsoHuman
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmZombie
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmZombie
+      connections:
+      - left hand
+    right hand:
+      part: RightHandZombie
+    left hand:
+      part: LeftHandZombie
+    right leg:
+      part: RightLegZombie
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegZombie
+      connections:
+      - left foot
+    right foot:
+      part: RightFootZombie
+    left foot:
+      part: LeftFootZombie
+
+#MARK: body: Crawling
+- type: body
+  id: BodyPartSetZombieCrawling
+  name: "crawling zombie"
+  root: torso
+  slots:
+    head:
+      part: HeadZombie
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoHuman
+      connections:
+      - right arm
+      - left arm
+      - head
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmZombie
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmZombie
+      connections:
+      - left hand
+    right hand:
+      part: RightHandZombie
+    left hand:
+      part: LeftHandZombie
+
+#MARK: species: Base
+- type: species
+  id: SpecieZombieBase
+  name: species-name-zombie-base
+  roundStart: false
+  prototype: MobZombieNaked #Not really important
+  sprites: MobZombieSpritesBase
+  defaultSkinTone: "#4F7942"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy  #Not really important either
+  skinColoration: HumanToned
+
+#MARK: species: Headless
+- type: species
+  id: SpecieZombieHeadless
+  name: species-name-zombie-headless
+  roundStart: false
+  prototype: MobZombieNaked #Not really important
+  sprites: MobZombieSpritesHeadless
+  defaultSkinTone: "#4F7942"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy  #Not really important either
+  skinColoration: HumanToned
+
+#MARK: species: Crawling
+- type: species
+  id: SpecieZombieCrawling
+  name: species-name-zombie-crawling
+  roundStart: false
+  prototype: MobZombieNaked #Not really important
+  sprites: MobZombieSpritesCrawling
+  defaultSkinTone: "#4F7942"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy  #Not really important either
+  skinColoration: HumanToned
+
+#MARK: sprite: Base
+- type: speciesBaseSprites
+  id: MobZombieSpritesBase
+  sprites:
+    Head: MobZombieHead
+    Chest: MobZombieTorso
+    Eyes: MobHumanoidEyes
+    LArm: MobZombieLArm
+    RArm: MobZombieRArm
+    LHand: MobZombieLHand
+    RHand: MobZombieRHand
+    LLeg: MobZombieLLeg
+    RLeg: MobZombieRLeg
+    LFoot: MobZombieLFoot
+    RFoot: MobZombieRFoot
+
+#MARK: sprite: Headless
+- type: speciesBaseSprites
+  id: MobZombieSpritesHeadless
+  sprites:
+    Chest: MobZombieTorso
+    LArm: MobZombieLArm
+    RArm: MobZombieRArm
+    LHand: MobZombieLHand
+    RHand: MobZombieRHand
+    LLeg: MobZombieLLeg
+    RLeg: MobZombieRLeg
+    LFoot: MobZombieLFoot
+    RFoot: MobZombieRFoot
+
+#MARK: sprite: Crawling
+- type: speciesBaseSprites
+  id: MobZombieSpritesCrawling
+  sprites:
+    Head: MobZombieHead
+    Chest: MobZombieTorso
+    Eyes: MobHumanoidEyes
+    LArm: MobZombieLArm
+    RArm: MobZombieRArm
+    LHand: MobZombieLHand
+    RHand: MobZombieRHand

@@ -45,7 +45,7 @@
         Heat: 17
 
 - type: entity
-  id: Bullet5.7x28mmUranium
+  id: Bullet5.7x28mmDepletedUranium
   parent: BaseBulletUranium
   name: bullet (5.7x28mm uranium)
   categories: [ HideSpawnMenu ]

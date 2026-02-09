@@ -153,6 +153,7 @@
       - type: Storage
         whitelist:
           tags:
+          - ESAPIFrontBallisticPlateLevel6
           - ESBISideBallisticPlateLevel6
           - NESCO4400FrontBallisticPlateLevel6
           - AR500FrontBallisticPlateLevel3
@@ -202,6 +203,7 @@
       - type: Storage
         whitelist:
           tags:
+          - ESAPIFrontBallisticPlateLevel6
           - ESBISideBallisticPlateLevel6
           - NESCO4400FrontBallisticPlateLevel6
           - AR500FrontBallisticPlateLevel3
@@ -290,6 +292,7 @@
       - type: Storage
         whitelist:
           tags:
+          - ESAPIFrontBallisticPlateLevel6
           - ESBISideBallisticPlateLevel6
           - NESCO4400FrontBallisticPlateLevel6
           - AR500FrontBallisticPlateLevel3
@@ -306,3 +309,42 @@
         contents:
         - id: BallisticPlateFrontMonocletePELevel4
         - id: BallisticPlateFrontMonocletePELevel4
+#MARK: Police US light
+    - type: entity
+      parent: ClothingOuterArmorBase
+      id: ClothingOuterBulletProofVestPoliceUSLightBlack
+      name: US police light body armor
+      description: A simple kevlar vest of decent quality. This one is a simple bulletproof vest made to resist low caliber rounds.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_police_USA_small_black.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_police_USA_small_black.rsi
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.95
+            Slash: 0.85
+            Piercing: 0.8
+            Heat: 0.85
+            Caustic: 0.9 # Frontier
+      - type: Tag  # Mono
+        tags:
+        - Kevlar
+      - type: StaminaDamageResistance # Mono - Stamres
+        coefficient: 0.8
+      - type: ExplosionResistance
+        damageCoefficient: 0.90
+      - type: StaticPrice
+        price: 6500
+        vendPrice: 9000
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestPoliceUSLightBlack
+      id: ClothingOuterBulletProofVestPoliceUSLightHighVis
+      name: high-vis US police light body armor
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_police_USA_small_high-vis.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_police_USA_small_high-vis.rsi

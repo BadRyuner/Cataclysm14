@@ -16,7 +16,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/6.35x40mm_caseless.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/6.35x40mm_caseless.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -73,7 +73,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge6.8x52mmCaselessRubber
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/6.35x40mm_caseless.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/6.35x40mm_caseless.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -94,7 +94,7 @@
     capacity: 200
     proto: Cartridge6.8x52mmCaseless
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/6.35x40mm_caseless.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/6.35x40mm_caseless.rsi
     layers:
     - state: base-b
       map: ["enum.GunVisualLayers.Base"]

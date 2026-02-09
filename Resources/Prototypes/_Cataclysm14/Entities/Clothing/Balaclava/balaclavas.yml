@@ -1,6 +1,14 @@
 
 #ski mask no hole + ghost
 
+#MARK: Ski Mask >
+
+
+
+
+
+
+#MARK: Black
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskBlack
@@ -25,6 +33,7 @@
       - state: inhand-right
         color: "#1F1F1F"
 
+#MARK: Gray
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskGray
@@ -49,6 +58,7 @@
       - state: inhand-right
         color: "#6A6A6A"
 
+#MARK: White
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskWhite
@@ -69,6 +79,7 @@
       right:
       - state: inhand-right
 
+#MARK: Red
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskRed
@@ -93,6 +104,7 @@
       - state: inhand-right
         color: "#ff2c2c"
 
+#MARK: Green
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskGreen
@@ -117,6 +129,7 @@
       - state: inhand-right
         color: "#4CBB17"
 
+#MARK: Blue
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskBlue
@@ -141,6 +154,7 @@
       - state: inhand-right
         color: "#2832C2"
 
+#MARK: Purple
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskPurple
@@ -165,6 +179,7 @@
       - state: inhand-right
         color: "#B200ED"
 
+#MARK: Yellow
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskYellow
@@ -189,6 +204,7 @@
       - state: inhand-right
         color: "#FFF200"
 
+#MARK: Tan
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskTan
@@ -213,6 +229,7 @@
       - state: inhand-right
         color: "#d2B48C"
 
+#MARK: Ranger Green
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskRangerGreen
@@ -237,6 +254,7 @@
       - state: inhand-right
         color: "#4A5A49"
 
+#MARK: Coyote Brown
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskCoyoteBrown
@@ -261,8 +279,14 @@
       - state: inhand-right
         color: "#81613C"
 
-#ski mask + hole
+#MARK: Ski Mask Mouth >
 
+
+
+
+
+
+#MARK: Black
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthBlack
@@ -287,6 +311,7 @@
       - state: inhand-right
         color: "#1F1F1F"
 
+#MARK: Gray
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthGray
@@ -311,6 +336,7 @@
       - state: inhand-right
         color: "#6A6A6A"
 
+#MARK: White
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthWhite
@@ -331,6 +357,7 @@
       right:
       - state: inhand-right
 
+#MARK: Red
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthRed
@@ -355,6 +382,7 @@
       - state: inhand-right
         color: "#ff2c2c"
 
+#MARK: Green
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthGreen
@@ -379,6 +407,7 @@
       - state: inhand-right
         color: "#4CBB17"
 
+#MARK: Blue
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthBlue
@@ -403,6 +432,7 @@
       - state: inhand-right
         color: "#2832C2"
 
+#MARK: Purple
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthPurple
@@ -427,6 +457,7 @@
       - state: inhand-right
         color: "#B200ED"
 
+#MARK: Yellow
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthYellow
@@ -451,6 +482,7 @@
       - state: inhand-right
         color: "#FFF200"
 
+#MARK: Tan
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthTan
@@ -475,6 +507,7 @@
       - state: inhand-right
         color: "#d2B48C"
 
+#MARK: Ranger Green
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthRangerGreen
@@ -499,6 +532,7 @@
       - state: inhand-right
         color: "#4A5A49"
 
+#MARK: Coyote Brown
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthCoyoteBrown
@@ -523,8 +557,14 @@
       - state: inhand-right
         color: "#81613C"
 
-#classic mask no hole
+#MARK: Classic >
 
+
+
+
+
+
+#MARK: Black
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicBlack
@@ -549,6 +589,7 @@
       - state: inhand-right
         color: "#1F1F1F"
 
+#MARK: Gray
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicGray
@@ -573,6 +614,7 @@
       - state: inhand-right
         color: "#6A6A6A"
 
+#MARK: White
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicWhite
@@ -593,6 +635,7 @@
       right:
       - state: inhand-right
 
+#MARK: Red
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicRed
@@ -617,6 +660,7 @@
       - state: inhand-right
         color: "#ff2c2c"
 
+#MARK: Green
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicGreen
@@ -641,6 +685,7 @@
       - state: inhand-right
         color: "#4CBB17"
 
+#MARK: Blue
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicBlue
@@ -665,6 +710,7 @@
       - state: inhand-right
         color: "#2832C2"
 
+#MARK: Purple
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicPurple
@@ -689,6 +735,7 @@
       - state: inhand-right
         color: "#B200ED"
 
+#MARK: Yellow
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicYellow
@@ -713,6 +760,7 @@
       - state: inhand-right
         color: "#FFF200"
 
+#MARK: Tan
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicTan
@@ -737,6 +785,7 @@
       - state: inhand-right
         color: "#d2B48C"
 
+#MARK: Ranger Green
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicRangerGreen
@@ -761,6 +810,7 @@
       - state: inhand-right
         color: "#4A5A49"
 
+#MARK: Coyote Brown
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicCoyoteBrown
@@ -785,8 +835,14 @@
       - state: inhand-right
         color: "#81613C"
 
-#classic mask + hole
+#MARK: Classic Mouth >
 
+
+
+
+
+
+#MARK: Black
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthBlack
@@ -811,6 +867,7 @@
       - state: inhand-right
         color: "#1F1F1F"
 
+#MARK: Gray
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthGray
@@ -835,6 +892,7 @@
       - state: inhand-right
         color: "#6A6A6A"
 
+#MARK: White
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthWhite
@@ -855,6 +913,7 @@
       right:
       - state: inhand-right
 
+#MARK: Red
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthRed
@@ -879,6 +938,7 @@
       - state: inhand-right
         color: "#ff2c2c"
 
+#MARK: Green
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthGreen
@@ -903,6 +963,7 @@
       - state: inhand-right
         color: "#4CBB17"
 
+#MARK: Blue
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthBlue
@@ -927,6 +988,7 @@
       - state: inhand-right
         color: "#2832C2"
 
+#MARK: Purple
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthPurple
@@ -951,6 +1013,7 @@
       - state: inhand-right
         color: "#B200ED"
 
+#MARK: Yellow
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthYellow
@@ -975,6 +1038,7 @@
       - state: inhand-right
         color: "#FFF200"
 
+#MARK: Tan
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthTan
@@ -999,6 +1063,7 @@
       - state: inhand-right
         color: "#d2B48C"
 
+#MARK: Ranger Green
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthRangerGreen
@@ -1023,6 +1088,7 @@
       - state: inhand-right
         color: "#4A5A49"
 
+#MARK: Coyote Brown
 - type: entity
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthCoyoteBrown

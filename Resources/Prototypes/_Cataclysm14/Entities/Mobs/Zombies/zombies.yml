@@ -1,0 +1,234 @@
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieHeadless
+  id: MobZombieHeadless
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieCrawling
+  id: MobZombieCrawling
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: National Guard
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieNationalGuard
+  suffix: National Guard
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardBulletProofVest
+        prob: 0.95
+      pants: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardBottom
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardTop
+        prob: 0.9
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadBulletproofHelmetACHOCPMulticam
+        prob: 0.8
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltTan
+        prob: 0.8
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskTan
+        - id: ClothingBalaclavaSkiMaskCoyoteBrown
+        prob: 0.2
+      slingfront: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      suitstorage: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatTan
+        prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesTacticalSwatTan
+        prob: 0.99
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackTan
+        prob: 0.99
+
+#MARK: US Police officer
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombiePoliceOfficerUS
+  suffix: US Police officer
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingPoliceUSBulletProofVest
+        prob: 0.95
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHatCapPoliceUS
+        prob: 0.5
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.5
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaNeckGaiterBlack
+        - id: ClothingBalaclavaSkiMaskBlack
+        prob: 0.4
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+        prob: 0.99
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesTacticalSwatBlack
+        - id: ClothingShoesSneakersBlack
+        prob: 0.99
+
+#MARK: SWAT officer
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieSWATOfficer
+  suffix: SWAT officer
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+         - id: ClothingOuterBulletProofVestPoliceUSLightBlack
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadBulletproofHelmetM88SWAT
+        prob: 0.95
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.5
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaNeckGaiterBlack
+        - id: ClothingBalaclavaSkiMaskBlack
+        prob: 0.5
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+        - id: ClothingPantsCombatDigitalBlack
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+        - id: ClothingShirtCombatDigitalBlack
+        prob: 0.99
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesTacticalSwatBlack
+        prob: 0.99
+
+#MARK: UN Peacekeeper FR
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieUNPeacekeeperFR
+  suffix: UN Peacekeeper FR
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingUNPeacekeeperBulletProofVest
+        prob: 0.95
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadBulletproofHelmetM88UN
+        - id: ClothingHeadHatBeretUN
+        - id: ClothingHeadHatCapUN
+        prob: 0.95
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.5
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskBlack
+        prob: 0.8
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsCombatCCEDesert
+        - id: ClothingPantsCombatCCEDesertCargo
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtCombatCCEDesert
+        - id: ClothingShirtCombatCCEDesertCargo
+        prob: 0.99
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesTacticalSwatBlack
+        prob: 0.99
+
+#MARK: Civilian Basic
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieCivilianBasic
+  suffix: Civilian Basic
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      shoes: !type:NestedSelector
+        tableId: LootTableClothingShoesCivilian
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.95
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomCivilian
+        prob: 0.99
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4

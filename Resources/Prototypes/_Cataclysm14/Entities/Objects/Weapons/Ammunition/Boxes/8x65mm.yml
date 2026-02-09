@@ -16,7 +16,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/8x65mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/8x65mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -55,7 +55,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge8x65mmSKRPractice
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/8x65mm_practice.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/8x65mm_practice.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -70,7 +70,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge8x65mmSKRIncendiary
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/8x65mm_incendiary.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/8x65mm_incendiary.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

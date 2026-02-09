@@ -20,11 +20,11 @@
       params:
         variation: 0.06
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/4_gauge_shell.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/4_gauge_shell.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
-    scale: 0.65, 0.65
+    scale: 0.3, 0.3
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice
@@ -135,7 +135,7 @@
     state: "practice"
 
 - type: entity
-  id: ShellShotgun23x75mmUranium
+  id: ShellShotgun23x75mmDepletedUranium
   name: shotgun shell (4 gauge uranium)
   parent: BaseShellShotgun23x75mm
   components:
@@ -144,7 +144,7 @@
         - state: depleted-uranium
           map: [ "enum.AmmoVisualLayers.Base" ]
     - type: CartridgeAmmo
-      proto: Pellet23x75mmUraniumSpread
+      proto: Pellet23x75mmDepletedUraniumSpread
     - type: SpentAmmoVisuals
       state: "depleted-uranium"
 

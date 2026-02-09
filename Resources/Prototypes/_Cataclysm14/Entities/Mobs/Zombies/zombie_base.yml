@@ -1,0 +1,251 @@
+#MARK: BaseZombieStats
+- type: entity
+  id: BaseMobZombieStats
+  abstract: true
+  components:
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    - Critical
+    - Dead
+    damageCap: 9999
+    damage:
+      groups:
+        Brute: -0.4
+        Burn: -0.2
+        Airloss: -1
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+  - type: DamageVisuals
+    thresholds: [ 10, 20, 30, 50, 70, 100 ]
+    targetLayers:
+    - "enum.HumanoidVisualLayers.Chest"
+    - "enum.HumanoidVisualLayers.Head"
+    - "enum.HumanoidVisualLayers.LArm"
+    - "enum.HumanoidVisualLayers.LLeg"
+    - "enum.HumanoidVisualLayers.RArm"
+    - "enum.HumanoidVisualLayers.RLeg"
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#FF0000"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      40: 0.95
+      60: 0.90
+      80: 0.85
+      90: 0.7
+      95: 0.4
+  - type: Stamina
+    critThreshold: 100
+
+#MARK: BaseZombie
+- type: entity
+  save: false
+  parent:
+  - BaseMobSpecies
+  - MobBloodstream
+  - MobFlammable
+  - MobEnhancedMovement
+  - MobPrying
+  - MobStepTriggerImmune
+  id: BasePrototypeSpecieZombie
+  abstract: true
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    state: full
+  - type: Sprite
+    layers:
+    - map: [ "enum.HumanoidVisualLayers.Chest" ]
+    - map: [ "enum.HumanoidVisualLayers.Head" ]
+    - map: [ "enum.HumanoidVisualLayers.Snout" ]
+    - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+    - map: [ "enum.HumanoidVisualLayers.RArm" ]
+    - map: [ "enum.HumanoidVisualLayers.LArm" ]
+    - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+    - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+    - map: ["jumpsuit"]
+    - map: ["pants"]
+    - map: [ "balaclava" ]
+    - map: ["enum.HumanoidVisualLayers.LFoot"]
+    - map: ["enum.HumanoidVisualLayers.RFoot"]
+    - map: ["enum.HumanoidVisualLayers.LHand"]
+    - map: ["enum.HumanoidVisualLayers.RHand"]
+    - map: [ "gloves" ]
+    - map: [ "shoes" ]
+    - map: [ "ears" ]
+    - map: [ "id" ] # Mono - move from between belt and back
+    - map: [ "outerClothing" ] # mono - i hate you upstream
+    - map: [ "eyes" ]
+    - map: [ "belt" ]
+    - map: [ "back" ]
+    - map: [ "neck" ]
+    - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+    - map: [ "enum.HumanoidVisualLayers.Hair" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
+    - map: [ "enum.HumanoidVisualLayers.Tail" ]
+    - map: [ "enum.HumanoidVisualLayers.Wings" ] # For IPC wings porting from SimpleStation
+    - map: [ "mask" ]
+    - map: [ "head" ]
+    - map: [ "faceshield" ]
+    - map: [ "helmetattachment" ]
+    - map: [ "pocket1" ]
+    - map: [ "pocket2" ]
+    - map: ["enum.HumanoidVisualLayers.Handcuffs"]
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
+    - map: [ "clownedon" ] # Dynamically generated
+      sprite: "Effects/creampie.rsi"
+      state: "creampie_human"
+      visible: false
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: MobMover
+  - type: StandingState
+  - type: HumanoidAppearance
+    species: SpecieZombieBase
+  - type: RandomHumanoidAppearance
+    randomizeName: true
+  - type: Blindable
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: Advertise
+    pack: syndicatehumanoidchatter
+    minimumWait: 120 # 1 * 2
+    maximumWait: 240 # 2 * 60
+    nextAdvertisementTime: 0
+  - type: Zombie
+  - type: NpcFactionMember
+    factions:
+      - Zombie
+  - type: AutoWakeUp
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: zombie
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+
+#MARK: Dummy
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobZombieDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _Mono/Mobs/Species/Protogen/displacement.rsi #Dont really care
+            state: jumpsuit-female
+
+#MARK: Mob Base
+- type: entity
+  id: BaseMobZombieSimple
+  abstract: true
+  name: zombie
+  description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombie
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+  - type: MeleeWeapon
+    attackRate: 0.8
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5
+
+#MARK: Mob Headless
+- type: entity
+  id: BaseMobZombieHeadless
+  abstract: true
+  name: headless zombie
+  description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombie
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieHeadless
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+  - type: MeleeWeapon
+    attackRate: 0.8
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5
+  - type: HumanoidAppearance
+    species: SpecieZombieHeadless
+
+#MARK: Mob Crawling
+- type: entity
+  id: BaseMobZombieCrawling
+  abstract: true
+  name: crawling zombie
+  description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombie
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieCrawling
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+  - type: MeleeWeapon
+    attackRate: 0.8
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5
+  - type: HumanoidAppearance
+    species: SpecieZombieCrawling
+  - type: Sprite
+    scale: 2,2

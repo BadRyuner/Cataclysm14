@@ -1,0 +1,60 @@
+#MARK: Base
+- type: entity
+  id: BaseCartridge38_special
+  name: cartridge (.38 Special FMJ)
+  parent: BaseCartridge
+  description: Heavier alternative to 9x19mm for handguns and SMGs.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge38_special
+  - type: CartridgeAmmo
+    proto: Bullet38_specialFMJ
+  - type: Sprite
+    scale: 0.2, 0.2
+    sprite: _Cataclysm14/Objects/Weapons/Casings/38_special_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+#MARK: FMJ
+- type: entity
+  id: Cartridge38_specialFMJ
+  name: cartridge (.38 Special FMJ)
+  parent: BaseCartridge38_special
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet38_specialFMJ
+
+#MARK: JHP
+- type: entity
+  id: Cartridge38_specialJHP
+  name: cartridge (.38 Special JHP)
+  parent: BaseCartridge38_special
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet38_specialJHP
+
+#MARK: +P
+- type: entity
+  id: Cartridge38_special+P
+  name: cartridge (.38 Special +P)
+  parent: BaseCartridge38_special
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet38_special+P
+
+#MARK: Rubber
+- type: entity
+  id: Cartridge38_specialRubber
+  name: cartridge (.38 Special rubber)
+  parent: BaseCartridge38_special
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet38_specialRubber

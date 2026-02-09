@@ -1,0 +1,55 @@
+#MARK: FMJ
+- type: entity
+  id: Bullet38_specialFMJ
+  name: bullet (.38 Special FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+        Structural: 20
+    armorPenetration: 0.1
+
+#MARK: JHP
+- type: entity
+  id: Bullet38_specialJHP
+  name: bullet (.38 Special JHP)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+        Structural: 25
+    armorPenetration: -0.2
+
+#MARK: +P
+- type: entity
+  id: Bullet38_special+P
+  name: bullet (.38 Special +P)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 23
+        Structural: 23
+    armorPenetration: 0.3
+
+#MARK: Rubber
+- type: entity
+  id: Bullet38_specialRubber
+  name: bullet (.38 Special rubber)
+  parent: BaseBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 4
+  - type: StaminaDamageOnCollide
+    damage: 22

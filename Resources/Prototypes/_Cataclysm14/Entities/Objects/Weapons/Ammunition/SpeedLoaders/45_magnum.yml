@@ -27,7 +27,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumFMJ
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -47,7 +47,7 @@
   - type: BallisticAmmoProvider
     proto: null
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -73,7 +73,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumPractice
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -93,7 +93,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumAP
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -113,7 +113,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumUranium
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -133,7 +133,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumRubber
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_rubber_speed_loader.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/45_magnum/45_magnum_rubber_speed_loader.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -155,7 +155,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumHP
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -175,7 +175,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumRIP
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -197,7 +197,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumPlasteelAP
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]

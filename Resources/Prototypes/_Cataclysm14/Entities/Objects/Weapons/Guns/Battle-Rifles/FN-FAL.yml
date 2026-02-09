@@ -2,7 +2,7 @@
   name: FN FAL (7.62x51mm NATO)
   parent: BaseWeaponRifle
   id: WeaponBattleRifleFN-FAL
-  description: A somewhat modern battle rifle made by the belgian company FN Herstal and used by armies throughout the world, nicknamed "the right arm of the free world". Chambered in 7.62x51mm NATO.
+  description: A somewhat modern battle rifle made by the belgian company FN Herstal and used by armies throughout the world, nicknamed "the right arm of the free world". Chambered in 7.62x51mm NATO .
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/FN-FAL_64x32.rsi
@@ -39,13 +39,13 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x51mmFMJ
+        startingItem: Magazine7.62x51mmSTANAG20rdEmpty
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x51mmFMJ
+            - Magazine7.62x51mmSTANAGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber

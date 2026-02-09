@@ -40,7 +40,7 @@
     proto: CartridgeDebugZoom
     capacity: 1000
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazine/9x19mm/9x19mm_pistol_mag.rsi
 
 - type: entity
   id: BulletDebugZoom

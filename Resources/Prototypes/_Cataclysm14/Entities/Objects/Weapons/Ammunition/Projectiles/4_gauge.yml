@@ -174,7 +174,7 @@
         Heat: 10
 
 - type: entity
-  id: Pellet23x75mmUranium
+  id: Pellet23x75mmDepletedUranium
   name: pellet (4 gauge uranium)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
@@ -191,12 +191,12 @@
     armorPenetration: -0.05
 
 - type: entity
-  id: Pellet23x75mmUraniumSpread
+  id: Pellet23x75mmDepletedUraniumSpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet23x75mmUranium
+  parent: Pellet23x75mmDepletedUranium
   components:
   - type: ProjectileSpread
-    proto: Pellet23x75mmUranium
+    proto: Pellet23x75mmDepletedUranium
     count: 5
     spread: 6
 

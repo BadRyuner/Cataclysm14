@@ -567,19 +567,19 @@
     randomMode: false
     mode: SensorVitals
 
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitCombatSuitDigitalGreenTan
-  name: green and tan digital combat uniform
-  description: Digital camouflaged combat suit. Camo in space...
-  components:
-  - type: StaticPrice
-    price: 700
-    vendPrice: 1150
-  - type: Sprite
-    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_green_and_tan.rsi
-  - type: Clothing
-    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_green_and_tan.rsi
-  - type: SuitSensor
-    randomMode: false
-    mode: SensorVitals
+# - type: entity
+#   parent: ClothingUniformBase
+#   id: ClothingUniformJumpsuitCombatSuitDigitalGreenTan
+#   name: green and tan digital combat uniform
+#   description: Digital camouflaged combat suit. Camo in space...
+#   components:
+#   - type: StaticPrice
+#     price: 700
+#     vendPrice: 1150
+#   - type: Sprite
+#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_green_and_tan.rsi
+#   - type: Clothing
+#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_green_and_tan.rsi
+#   - type: SuitSensor
+#     randomMode: false
+#     mode: SensorVitals

@@ -20,3 +20,14 @@
         sprite: _Cataclysm14/Clothing/Back/backpack_alicepack_black.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Back/backpack_alicepack_black.rsi
+  #MARK: Alicepack - Tan
+    - type: entity
+      parent: ClothingBackpackAlicePackBase
+      id: ClothingBackpackAlicePackTan
+      name: tan alicepack
+      description: A large military backpack with a main pocket and multiple medium ones.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_alicepack_tan.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_alicepack_tan.rsi

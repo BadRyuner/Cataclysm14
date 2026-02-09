@@ -27,10 +27,10 @@
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
   - type: Icon
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     state: icon
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -50,10 +50,10 @@
   - type: BallisticAmmoProvider
     proto: null
   - type: Icon
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     state: base
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -68,7 +68,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmIncendiary
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -88,10 +88,10 @@
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmPractice
   - type: Icon
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     state: practice-icon
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -104,17 +104,17 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader9x19mmUranium
+  id: SpeedLoader9x19mmDepletedUranium
   name: "speed loader (9x19mm uranium)"
   parent: BaseSpeedLoader9x19mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmUranium
+    proto: Cartridge9x19mmDepletedUranium
   - type: Icon
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     state: uranium-icon
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -134,10 +134,10 @@
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmRubber
   - type: Icon
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     state: rubber-icon
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]

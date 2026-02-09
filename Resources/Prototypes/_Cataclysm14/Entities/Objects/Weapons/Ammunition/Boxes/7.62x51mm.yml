@@ -1,8 +1,9 @@
+#MARK: Base
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
   id: BaseAmmoBox7.62x51mm
-  name: ammunition box (7.62x51mm FMJ)
+  name: ammunition box (7.62x51mm NATO FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -17,7 +18,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/7.62x51mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/7.62x51mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -36,11 +37,11 @@
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
 
-#small ammo boxes
+#MARK: FMJ
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmFMJ
-  name: ammunition box (7.62x51mm FMJ)
+  name: ammunition box (7.62x51mm NATO FMJ)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmFMJ
@@ -51,25 +52,11 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
-- type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmPractice
-  name: ammunition box (7.62x51mm practice)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmPractice
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: practice
-
+#MARK: Incendiary
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmIncendiary
-  name: ammunition box (7.62x51mm incendiary)
+  name: ammunition box (7.62x51mm NATO incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmIncendiary
@@ -81,13 +68,14 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: incendiary
 
+#MARK: Depleted Uranium
 - type: entity
-  id: AmmoBox7.62x51mmUranium
+  id: AmmoBox7.62x51mmDepletedUranium
   parent: BaseAmmoBox7.62x51mm
-  name: ammunition box (7.62x51mm uranium)
+  name: ammunition box (7.62x51mm NATO uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmUranium
+    proto: Cartridge7.62x51mmDepletedUranium
   - type: Sprite
     layers:
     - state: base
@@ -96,11 +84,11 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: uranium
 
-# Upstream
+#MARK: Rubber
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmRubber
-  name: ammunition box (7.62x51mm rubber)
+  name: ammunition box (7.62x51mm NATO rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmRubber
@@ -112,12 +100,11 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: rubber
 
-# Mono AP syst
-#anti-flesh:
+#MARK: HP
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmHP
-  name: ammunition box (7.62x51mm hollow-point)
+  name: ammunition box (7.62x51mm NATO hollow-point)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmHP
@@ -129,10 +116,11 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: HP
 
+#MARK: RIP
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmRIP
-  name: ammunition box (7.62x51mm RIP)
+  name: ammunition box (7.62x51mm NATO RIP)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmRIP
@@ -144,28 +132,11 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: RIP
 
-#armor-piercing:
-
-- type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmPlasteelAP
-  name: ammunition box (7.62x51mm AP)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmPlasteelAP
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: plasteelAP
-
-#big ammo boxes
+#MARK: Big FMJ
 - type: entity
   parent: BaseAmmoBox7.62x51mm
   id: AmmoBox7.62x51mmBigFMJ
-  name: big ammunition box (7.62x51mm FMJ)
+  name: big ammunition box (7.62x51mm NATO FMJ)
   suffix: Big
   components:
   - type: Item
@@ -188,3 +159,35 @@
   - type: Tag
     tags:
     - Magazine7.62x51mmBoxBig
+
+#MARK: Deprecated >
+
+- type: entity
+  parent: BaseAmmoBox7.62x51mm
+  id: AmmoBox7.62x51mmPlasteelAP
+  name: ammunition box (7.62x51mm NATO AP)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x51mmPlasteelAP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: plasteelAP
+
+- type: entity
+  parent: BaseAmmoBox7.62x51mm
+  id: AmmoBox7.62x51mmPractice
+  name: ammunition box (7.62x51mm NATO practice)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x51mmPractice
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice

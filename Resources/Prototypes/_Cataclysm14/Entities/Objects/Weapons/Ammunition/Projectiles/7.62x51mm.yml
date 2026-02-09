@@ -1,6 +1,7 @@
+#MARK: 308 Winchester
 - type: entity
-  id: Bullet7.62x51mmFMJ
-  name: bullet (7.62x51mm FMJ)
+  id: Bullet7.62x51mm308Winchester
+  name: bullet (.308 Winchester)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -10,20 +11,91 @@
         Piercing: 36
     armorPenetration: 0.1
 
+#MARK: M993
 - type: entity
-  id: Bullet7.62x51mmPractice
-  name: bullet (7.62x51mm practice)
-  parent: BaseBulletPractice
+  id: Bullet7.62x51mmM993
+  name: bullet (7.62x51mm NATO M993)
+  parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Blunt: 4
+        Piercing: 36
+    armorPenetration: 0.1
 
+#MARK: M80
+- type: entity
+  id: Bullet7.62x51mmM80
+  name: bullet (7.62x51mm NATO M80)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 36
+    armorPenetration: 0.1
+
+#MARK: M61
+- type: entity
+  id: Bullet7.62x51mmM61
+  name: bullet (7.62x51mm NATO M61)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 36
+    armorPenetration: 0.1
+
+#MARK: Ultra Nosler
+- type: entity
+  id: Bullet7.62x51mmUltraNosler
+  name: bullet (7.62x51mm NATO Ultra Nosler)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 36
+    armorPenetration: 0.1
+
+#MARK: yellow tracer
+- type: entity
+  id: Bullet7.62x51mmTracerYellow
+  name: bullet (7.62x51mm NATO yellow tracer)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 36
+    armorPenetration: 0.1
+  - type: Tracer
+    color: "#c30010ff"
+    length: 6
+
+#MARK: FMJ
+- type: entity
+  id: Bullet7.62x51mmFMJ
+  name: bullet (7.62x51mm NATO FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 36
+    armorPenetration: 0.1
+
+#MARK: Rubber
 - type: entity
   id: Bullet7.62x51mmRubber
-  name: bullet (7.62x51mm rubber)
+  name: bullet (7.62x51mm NATO rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -32,10 +104,11 @@
       types:
         Blunt: 6
 
+#MARK: Incendiary
 - type: entity
   id: Bullet7.62x51mmIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (7.62x51mm incendiary)
+  name: bullet (7.62x51mm NATO incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -44,10 +117,11 @@
         Blunt: 4
         Heat: 27
 
+#MARK: Depleted Uranium
 - type: entity
-  id: Bullet7.62x51mmUranium
+  id: Bullet7.62x51mmDepletedUranium
   parent: BaseBulletUranium
-  name: bullet (7.62x51mm uranium)
+  name: bullet (7.62x51mm NATO uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -56,13 +130,11 @@
         Radiation: 13
         Piercing: 18
 
-# Mono AP syst
-# + 0.05 base AP
-#anti-flesh:
+#MARK: HP
 - type: entity
   id: Bullet7.62x51mmHP
   parent: BaseBullet
-  name: bullet (7.62x51mm hollow-point)
+  name: bullet (7.62x51mm NATO hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -72,10 +144,11 @@
         Piercing: 37
     armorPenetration: -0.55
 
+#MARK: RIP
 - type: entity
   id: Bullet7.62x51mmRIP
   parent: BaseBullet
-  name: bullet (7.62x51mm Radically Invasive Projectile)
+  name: bullet (7.62x51mm NATO Radically Invasive Projectile)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -85,11 +158,12 @@
         Piercing: 50
     armorPenetration: -0.9
 
-#armor-piercing:
+#MARK: Deprecated >
+
 - type: entity
   id: Bullet7.62x51mmPlasteelAP
   parent: BaseBullet
-  name: bullet (7.62x51mm AP)
+  name: bullet (7.62x51mm NATO AP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -98,3 +172,14 @@
         Piercing: 13
         Structural: 40
     armorPenetration: 0.8
+
+- type: entity
+  id: Bullet7.62x51mmPractice
+  name: bullet (7.62x51mm NATO practice)
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 4

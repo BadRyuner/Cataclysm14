@@ -17,7 +17,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/7.62x39mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/7.62x39mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -82,12 +82,12 @@
     - state: incendiary
 
 - type: entity
-  id: AmmoBox7.62x39mmUranium
+  id: AmmoBox7.62x39mmDepletedUranium
   parent: BaseAmmoBox7.62x39mm
   name: ammunition box (7.62x39mm uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x39mmUranium
+    proto: Cartridge7.62x39mmDepletedUranium
   - type: Sprite
     layers:
     - state: base

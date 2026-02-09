@@ -19,9 +19,9 @@
       components:
       - type: Sprite
         scale: 0.65,0.65
-        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_US.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_US.rsi
 #MARK: French cop beret
     - type: entity
       parent: ClothingHeadBase

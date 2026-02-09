@@ -52,7 +52,7 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine5.56x45mmFMJ
+            - Magazine5.56x45mmSTANAGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber

@@ -1,6 +1,7 @@
+#MARK: Base
 - type: entity
   id: BaseCartridge5.56x45mm
-  name: cartridge (5.56x45mm FMJ)
+  name: cartridge (5.56x45mm NATO FMJ)
   parent: BaseCartridge
   description: An extremely-common intermediate cartridge for rifles.
   abstract: true
@@ -12,7 +13,8 @@
   - type: CartridgeAmmo
     proto: Bullet5.56x45mmFMJ
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    scale: 0.3, 0.3
+    sprite: _Cataclysm14/Objects/Weapons/Casings/5.56x45mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -21,32 +23,82 @@
   - type: StaticPrice
     price: 1
 
+#MARK: 223 Remington
+- type: entity
+  id: Cartridge5.56x45mm223Remington
+  name: cartridge (.223 Remington)
+  parent: BaseCartridge5.56x45mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5.56x45mm223Remington
+
+#MARK: M855
+- type: entity
+  id: Cartridge5.56x45mmM855
+  name: cartridge (5.56x45mm NATO M855)
+  parent: BaseCartridge5.56x45mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5.56x45mmM855
+
+#MARK: M855A1
+- type: entity
+  id: Cartridge5.56x45mmM855A1
+  name: cartridge (5.56x45mm NATO M855A1)
+  parent: BaseCartridge5.56x45mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5.56x45mmM855A1
+
+#MARK: M995
+- type: entity
+  id: Cartridge5.56x45mmM995
+  name: cartridge (5.56x45mm NATO M995)
+  parent: BaseCartridge5.56x45mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5.56x45mmM995
+
+#MARK: Mk262
+- type: entity
+  id: Cartridge5.56x45mmMk262
+  name: cartridge (5.56x45mm NATO Mk262)
+  parent: BaseCartridge5.56x45mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5.56x45mmMk262
+
+#MARK: Mk318
+- type: entity
+  id: Cartridge5.56x45mmMk318
+  name: cartridge (5.56x45mm NATO Mk318)
+  parent: BaseCartridge5.56x45mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5.56x45mmMk318
+
+#MARK: FMJ
+- type: entity
+  id: Cartridge5.56x45mmTracerRed
+  name: cartridge (5.56x45mm NATO red tracer)
+  parent: BaseCartridge5.56x45mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5.56x45mmTracerRed
+
+#MARK: FMJ
 - type: entity
   id: Cartridge5.56x45mmFMJ
-  name: cartridge (5.56x45mm FMJ)
+  name: cartridge (5.56x45mm NATO FMJ)
   parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
     proto: Bullet5.56x45mmFMJ
 
-- type: entity
-  id: Cartridge5.56x45mmPractice
-  name: cartridge (5.56x45mm practice)
-  parent: BaseCartridge5.56x45mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet5.56x45mmPractice
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#dbdbdb"
-
+#MARK: Incendiary
 - type: entity
   id: Cartridge5.56x45mmIncendiary
-  name: cartridge (5.56x45mm incendiary)
+  name: cartridge (5.56x45mm NATO incendiary)
   parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
@@ -59,13 +111,14 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#ff6e52"
 
+#MARK: Depleted Uranium
 - type: entity
-  id: Cartridge5.56x45mmUranium
-  name: cartridge (5.56x45mm uranium)
+  id: Cartridge5.56x45mmDepletedUranium
+  name: cartridge (5.56x45mm NATO uranium)
   parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.56x45mmUranium
+    proto: Bullet5.56x45mmDepletedUranium
   - type: Sprite
     layers:
       - state: base
@@ -74,9 +127,10 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#65fe08"
 
+#MARK: Rubber
 - type: entity
   id: Cartridge5.56x45mmRubber
-  name: cartridge (5.56x45mm rubber)
+  name: cartridge (5.56x45mm NATO rubber)
   parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
@@ -89,11 +143,10 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#43c4f7"
 
-# Mono AP syst
-#anti-flesh:
+#MARK: HP
 - type: entity
   id: Cartridge5.56x45mmHP
-  name: cartridge (5.56x45mm hollow-point)
+  name: cartridge (5.56x45mm NATO hollow-point)
   parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
@@ -106,9 +159,10 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#90EE90"
 
+#MARK: RIP
 - type: entity
   id: Cartridge5.56x45mmRIP
-  name: cartridge (5.56x45mm RIP)
+  name: cartridge (5.56x45mm NATO RIP)
   parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
@@ -121,11 +175,11 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#C04000"
 
-#armor-piercing:
+#MARK: Deprecated >
 
 - type: entity
   id: Cartridge5.56x45mmPlasteelAP
-  name: cartridge (5.56x45mm AP)
+  name: cartridge (5.56x45mm NATO AP)
   parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
@@ -137,3 +191,18 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#888888"
+
+- type: entity
+  id: Cartridge5.56x45mmPractice
+  name: cartridge (5.56x45mm NATO practice)
+  parent: BaseCartridge5.56x45mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5.56x45mmPractice
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
