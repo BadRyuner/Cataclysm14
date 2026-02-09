@@ -77,14 +77,14 @@
   - type: CartridgeAmmo
     proto: Bullet7.62x51mmUltraNosler
 
-#MARK: red tracer
+#MARK: yellow tracer
 - type: entity
-  id: Cartridge7.62x51mmTracerRed
-  name: cartridge (7.62x51mm NATO red tracer)
+  id: Cartridge7.62x51mmTracerYellow
+  name: cartridge (7.62x51mm NATO yellow tracer)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmTracerRed
+    proto: Bullet7.62x51mmTracerYellow
 
 #MARK: Incendiary
 - type: entity

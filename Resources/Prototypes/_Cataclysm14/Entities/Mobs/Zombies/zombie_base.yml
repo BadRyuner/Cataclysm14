@@ -1,4 +1,4 @@
-#MARK: BaseMobZombieStats
+#MARK: BaseZombieStats
 - type: entity
   id: BaseMobZombieStats
   abstract: true
@@ -44,7 +44,7 @@
   - type: Stamina
     critThreshold: 100
 
-#MARK: BaseSpecieZombie
+#MARK: BaseZombie
 - type: entity
   save: false
   parent:
@@ -54,7 +54,7 @@
   - MobEnhancedMovement
   - MobPrying
   - MobStepTriggerImmune
-  id: BaseSpecieZombie
+  id: BasePrototypeSpecieZombie
   abstract: true
   components:
   - type: Icon
@@ -112,7 +112,7 @@
   - type: MobMover
   - type: StandingState
   - type: HumanoidAppearance
-    species: Zombie
+    species: SpecieZombieBase
   - type: RandomHumanoidAppearance
     randomizeName: true
   - type: Blindable
@@ -126,8 +126,21 @@
     minimumWait: 120 # 1 * 2
     maximumWait: 240 # 2 * 60
     nextAdvertisementTime: 0
+  - type: Zombie
+  - type: NpcFactionMember
+    factions:
+      - Zombie
+  - type: AutoWakeUp
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: zombie
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
 
-#MARK: MobZombieDummy
+#MARK: Dummy
 - type: entity
   parent: BaseSpeciesDummy
   id: MobZombieDummy
@@ -141,7 +154,7 @@
             sprite: _Mono/Mobs/Species/Protogen/displacement.rsi #Dont really care
             state: jumpsuit-female
 
-#MARK: BaseMobZombieSimple
+#MARK: Mob Base
 - type: entity
   id: BaseMobZombieSimple
   abstract: true
@@ -150,34 +163,15 @@
   categories: [ HideSpawnMenu ]
   parent:
   - MobHumanoidHostileAISimpleMeleeZombie
-  - BaseSpecieZombie
+  - BasePrototypeSpecieZombie
   - BaseMobZombieStats
   components:
-  # - type: Sprite
-  #   drawdepth: Mobs
-  #   sprite: _NF/Mobs/Zombies/zombie_human.rsi
-  #   state: zombie
-  - type: Zombie
-  - type: NpcFactionMember
-    factions:
-      - Zombie
-  - type: Advertise
-    pack: bloodcultisthumanoidchatter
-    minimumWait: 30
-    maximumWait: 120
-    nextAdvertisementTime: 10
-  - type: AutoWakeUp
+  - type: Body
+    prototype: BodyPartSetZombieBase
+    requiredLegs: 2
   - type: MovementSpeedModifier
     baseWalkSpeed : 4.5
     baseSprintSpeed : 4.5
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: zombie
-      Critical:
-        Base: crit
-      Dead:
-        Base: dead
   - type: MeleeWeapon
     attackRate: 0.8
     altDisarm: false
@@ -189,3 +183,69 @@
       types:
         Brute: 8
         Slash: 5
+
+#MARK: Mob Headless
+- type: entity
+  id: BaseMobZombieHeadless
+  abstract: true
+  name: headless zombie
+  description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombie
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieHeadless
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+  - type: MeleeWeapon
+    attackRate: 0.8
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5
+  - type: HumanoidAppearance
+    species: SpecieZombieHeadless
+
+#MARK: Mob Crawling
+- type: entity
+  id: BaseMobZombieCrawling
+  abstract: true
+  name: crawling zombie
+  description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombie
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieCrawling
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+  - type: MeleeWeapon
+    attackRate: 0.8
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5
+  - type: HumanoidAppearance
+    species: SpecieZombieCrawling
+  - type: Sprite
+    scale: 2,2

@@ -7,7 +7,7 @@
   - type: Icon # Shitmed Change
     sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
   - type: BodyPart # Shitmed Change
-    species: Zombie
+    species: SpecieZombieBase
   - type: Extractable
     juiceSolution:
       reagents:

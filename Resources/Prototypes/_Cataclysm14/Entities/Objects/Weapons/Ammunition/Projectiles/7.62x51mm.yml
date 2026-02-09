@@ -63,10 +63,10 @@
         Piercing: 36
     armorPenetration: 0.1
 
-#MARK: red tracer
+#MARK: yellow tracer
 - type: entity
-  id: Bullet7.62x51mmTracerRed
-  name: bullet (7.62x51mm NATO red tracer)
+  id: Bullet7.62x51mmTracerYellow
+  name: bullet (7.62x51mm NATO yellow tracer)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:

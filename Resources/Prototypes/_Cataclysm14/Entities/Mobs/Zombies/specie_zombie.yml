@@ -1,6 +1,7 @@
+#MARK: body: Base
 - type: body
-  id: Zombie
-  name: "human"
+  id: BodyPartSetZombieBase
+  name: "zombie"
   root: torso
   slots:
     head:
@@ -17,7 +18,7 @@
       - left arm
       - right leg
       - left leg
-      - head # Shitmed
+      - head
       organs:
         heart: OrganHumanHeart
         lungs: OrganHumanLungs
@@ -49,19 +50,127 @@
     left foot:
       part: LeftFootZombie
 
+#MARK: body: Headless
+- type: body
+  id: BodyPartSetZombieHeadless
+  name: "headless zombie"
+  root: torso
+  slots:
+    torso:
+      part: TorsoHuman
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmZombie
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmZombie
+      connections:
+      - left hand
+    right hand:
+      part: RightHandZombie
+    left hand:
+      part: LeftHandZombie
+    right leg:
+      part: RightLegZombie
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegZombie
+      connections:
+      - left foot
+    right foot:
+      part: RightFootZombie
+    left foot:
+      part: LeftFootZombie
+
+#MARK: body: Crawling
+- type: body
+  id: BodyPartSetZombieCrawling
+  name: "crawling zombie"
+  root: torso
+  slots:
+    head:
+      part: HeadZombie
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoHuman
+      connections:
+      - right arm
+      - left arm
+      - head
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmZombie
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmZombie
+      connections:
+      - left hand
+    right hand:
+      part: RightHandZombie
+    left hand:
+      part: LeftHandZombie
+
+#MARK: species: Base
 - type: species
-  id: Zombie
-  name: species-name-zombie
+  id: SpecieZombieBase
+  name: species-name-zombie-base
   roundStart: false
-  prototype: MobZombieNaked
-  sprites: MobZombieSprites
+  prototype: MobZombieNaked #Not really important
+  sprites: MobZombieSpritesBase
   defaultSkinTone: "#4F7942"
   markingLimits: MobZombieMarkingLimits
-  dollPrototype: MobZombieDummy
+  dollPrototype: MobZombieDummy  #Not really important either
   skinColoration: HumanToned
 
+#MARK: species: Headless
+- type: species
+  id: SpecieZombieHeadless
+  name: species-name-zombie-headless
+  roundStart: false
+  prototype: MobZombieNaked #Not really important
+  sprites: MobZombieSpritesHeadless
+  defaultSkinTone: "#4F7942"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy  #Not really important either
+  skinColoration: HumanToned
+
+#MARK: species: Crawling
+- type: species
+  id: SpecieZombieCrawling
+  name: species-name-zombie-crawling
+  roundStart: false
+  prototype: MobZombieNaked #Not really important
+  sprites: MobZombieSpritesCrawling
+  defaultSkinTone: "#4F7942"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy  #Not really important either
+  skinColoration: HumanToned
+
+#MARK: sprite: Base
 - type: speciesBaseSprites
-  id: MobZombieSprites
+  id: MobZombieSpritesBase
   sprites:
     Head: MobZombieHead
     Chest: MobZombieTorso
@@ -75,112 +184,28 @@
     LFoot: MobZombieLFoot
     RFoot: MobZombieRFoot
 
-- type: markingPoints
-  id: MobZombieMarkingLimits
-  points:
-    Chest:
-      points: 0
-      required: false
-    Legs:
-      points: 8 # imp 2<8
-      required: false
-    Arms:
-      points: 8 # imp 2<8
-      required: false
+#MARK: sprite: Headless
+- type: speciesBaseSprites
+  id: MobZombieSpritesHeadless
+  sprites:
+    Chest: MobZombieTorso
+    LArm: MobZombieLArm
+    RArm: MobZombieRArm
+    LHand: MobZombieLHand
+    RHand: MobZombieRHand
+    LLeg: MobZombieLLeg
+    RLeg: MobZombieRLeg
+    LFoot: MobZombieLFoot
+    RFoot: MobZombieRFoot
 
-- type: humanoidBaseSprite
-  id: MobZombieEyes
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Customization/ZombieEyes.rsi
-    state: eyes
-
-- type: humanoidBaseSprite
-  id: MobZombieAnyMarking
-
-- type: humanoidBaseSprite
-  id: MobZombieMarkingMatchSkin
-  markingsMatchSkin: true
-
-- type: humanoidBaseSprite
-  id: MobZombieHead
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: head_m
-
-- type: humanoidBaseSprite
-  id: MobZombieHeadMale
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: head_m
-
-- type: humanoidBaseSprite
-  id: MobZombieHeadFemale
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: head_f
-
-- type: humanoidBaseSprite
-  id: MobZombieTorso
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: torso_m
-
-- type: humanoidBaseSprite
-  id: MobZombieTorsoMale
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: torso_m
-
-- type: humanoidBaseSprite
-  id: MobZombieTorsoFemale
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: torso_f
-
-- type: humanoidBaseSprite
-  id: MobZombieLLeg
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: l_leg
-
-- type: humanoidBaseSprite
-  id: MobZombieLArm
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: l_arm
-
-- type: humanoidBaseSprite
-  id: MobZombieLHand
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: l_hand
-
-- type: humanoidBaseSprite
-  id: MobZombieLFoot
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: l_foot
-
-- type: humanoidBaseSprite
-  id: MobZombieRLeg
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: r_leg
-
-- type: humanoidBaseSprite
-  id: MobZombieRArm
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: r_arm
-
-- type: humanoidBaseSprite
-  id: MobZombieRHand
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: r_hand
-
-- type: humanoidBaseSprite
-  id: MobZombieRFoot
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: r_foot
+#MARK: sprite: Crawling
+- type: speciesBaseSprites
+  id: MobZombieSpritesCrawling
+  sprites:
+    Head: MobZombieHead
+    Chest: MobZombieTorso
+    Eyes: MobHumanoidEyes
+    LArm: MobZombieLArm
+    RArm: MobZombieRArm
+    LHand: MobZombieLHand
+    RHand: MobZombieRHand
