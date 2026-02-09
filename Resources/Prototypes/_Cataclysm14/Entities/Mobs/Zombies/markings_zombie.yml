@@ -11,11 +11,12 @@
       points: 8 # imp 2<8
       required: false
 
-- type: humanoidBaseSprite
-  id: MobZombieEyes
-  baseSprite:
-    sprite: _Cataclysm14/Mobs/Customization/ZombieEyes.rsi
-    state: eyes
+# Not needed yet + the .rsi folder doesn't exist
+# - type: humanoidBaseSprite
+#   id: MobZombieEyes
+#   baseSprite:
+#     sprite: _Cataclysm14/Mobs/Customization/ZombieEyes.rsi
+#     state: eyes
 
 - type: humanoidBaseSprite
   id: MobZombieAnyMarking
