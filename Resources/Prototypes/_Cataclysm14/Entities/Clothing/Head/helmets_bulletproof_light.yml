@@ -30,7 +30,7 @@
     - type: entity
       parent: ClothingHeadBase
       id: ClothingHeadBulletproofHelmetM88Black
-      name: M88 ballistic helmet (UN)
+      name: M88 ballistic helmet (Black)
       description: A light ballistic helmet made for the US army.
       components:
       - type: Sprite

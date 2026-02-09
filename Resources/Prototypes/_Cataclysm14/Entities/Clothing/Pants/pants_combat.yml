@@ -89,3 +89,26 @@
         sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
+
+  #MARK: Digital Black
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsCombatDigitalBlack
+      name: OCP multicam combat Pants
+      description: Ripstop combat Pants. It has a black digital camo patern for covert operations and larpers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/Pants_digital_black.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/Pants_digital_black.rsi
+
+    - type: entity
+      parent: ClothingPantsCargoBase
+      id: ClothingPantsCombatDigitalBlackCargo
+      name: OCP multicam cargo combat Pants
+      description: Ripstop combat Pants with large pockets. It has a black digital camo patern for covert operations and larpers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/Pants_digital_black_cargo.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/Pants_digital_black_cargo.rsi

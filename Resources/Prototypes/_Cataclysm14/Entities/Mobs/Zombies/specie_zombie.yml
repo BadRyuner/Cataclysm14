@@ -53,7 +53,7 @@
   id: Zombie
   name: species-name-zombie
   roundStart: false
-  prototype: MobZombie
+  prototype: MobZombieNaked
   sprites: MobZombieSprites
   defaultSkinTone: "#4F7942"
   markingLimits: MobZombieMarkingLimits

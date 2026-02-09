@@ -89,3 +89,26 @@
         sprite: _Cataclysm14/Clothing/Shirt/shirt_OCP_multicam.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Shirt/shirt_OCP_multicam.rsi
+
+  #MARK: Digital Black
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtCombatDigitalBlack
+      name: OCP multicam combat shirt
+      description: Ripstop combat shirt. It has a black digital camo patern for covert operations and larpers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black.rsi
+
+    - type: entity
+      parent: ClothingShirtCargoBase
+      id: ClothingShirtCombatDigitalBlackCargo
+      name: OCP multicam cargo combat shirt
+      description: Ripstop combat shirt with large pockets. It has a black digital camo patern for covert operations and larpers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black.rsi

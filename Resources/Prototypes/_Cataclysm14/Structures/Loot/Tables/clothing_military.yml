@@ -70,3 +70,10 @@
     - id: ClothingOuterBulletProofVestPoliceUSLightBlack
     - id: ClothingOuterBulletProofVestPoliceUSLightHighVis
 
+#MARK: UN Peacekeeper vest
+- type: entityTable
+  id: LootTableClothingUNPeacekeeperBulletProofVest
+  table: !type:GroupSelector
+    children:
+    - id: ClothingOuterBulletProofVestOTVUN
+    - id: ClothingOuterBulletProofVestANAModularUN

@@ -15,14 +15,6 @@
   components:
   - type: Inventory
     templateId: InvTemplateZombieBase
-  - type: ContainerFill
-    containers:
-      shoes:
-      - ClothingShoesTacticalSwatTan
-      gloves:
-      - ClothingHandsGlovesTacticalCombatTan
-      back:
-      - ClothingBackpackAlicePackTan
   - type: EntityTableContainerFill
     containers:
       outerClothing: !type:NestedSelector
@@ -52,6 +44,18 @@
       suitstorage: !type:NestedSelector
         tableId: LootTableWeaponGunNationalGuard
         prob: 0.01
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatTan
+        prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesTacticalSwatTan
+        prob: 0.99
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackTan
+        prob: 0.99
 
 #MARK: US Police officer
 - type: entity
@@ -61,14 +65,6 @@
   components:
   - type: Inventory
     templateId: InvTemplateZombieBase
-  - type: ContainerFill
-    containers:
-      shoes:
-      - ClothingShoesTacticalSwatBlack
-      pants:
-      - ClothingPantsPoliceCopUS
-      jumpsuit:
-      - ClothingShirtPoliceCopUS
   - type: EntityTableContainerFill
     containers:
       outerClothing: !type:NestedSelector
@@ -91,6 +87,19 @@
         - id: ClothingBalaclavaNeckGaiterBlack
         - id: ClothingBalaclavaSkiMaskBlack
         prob: 0.4
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+        prob: 0.99
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesTacticalSwatBlack
+        - id: ClothingShoesSneakersBlack
+        prob: 0.99
 
 #MARK: SWAT officer
 - type: entity
@@ -100,19 +109,11 @@
   components:
   - type: Inventory
     templateId: InvTemplateZombieBase
-  - type: ContainerFill
-    containers:
-      shoes:
-      - ClothingShoesTacticalSwatBlack
-      pants:
-      - ClothingPantsPoliceCopUS
-      jumpsuit:
-      - ClothingShirtPoliceCopUS
   - type: EntityTableContainerFill
     containers:
-      outerClothing: !type:NestedSelector
-        tableId: LootTableClothingPoliceUSBulletProofVest
-        prob: 0.95
+      outerClothing: !type:GroupSelector
+        children:
+         - id: ClothingOuterBulletProofVestPoliceUSLightBlack
       head: !type:GroupSelector
         children:
         - id: ClothingHeadBulletproofHelmetM88SWAT
@@ -127,8 +128,69 @@
         prob: 0.5
       balaclava: !type:GroupSelector
         children:
+        - id: ClothingBalaclavaNeckGaiterBlack
         - id: ClothingBalaclavaSkiMaskBlack
+        prob: 0.5
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+        - id: ClothingPantsCombatDigitalBlack
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+        - id: ClothingShirtCombatDigitalBlack
+        prob: 0.99
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesTacticalSwatBlack
+        prob: 0.99
+
+#MARK: UN Peacekeeper FR
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieUNPeacekeeperFR
+  suffix: UN Peacekeeper FR
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingUNPeacekeeperBulletProofVest
         prob: 0.95
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadBulletproofHelmetM88UN
+        - id: ClothingHeadHatBeretUN
+        - id: ClothingHeadHatCapUN
+        prob: 0.95
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.5
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskBlack
+        prob: 0.8
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsCombatCCEDesert
+        - id: ClothingPantsCombatCCEDesertCargo
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtCombatCCEDesert
+        - id: ClothingShirtCombatCCEDesertCargo
+        prob: 0.99
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesTacticalSwatBlack
+        prob: 0.99
 
 #MARK: Civilian Basic
 - type: entity

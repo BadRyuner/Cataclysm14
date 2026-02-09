@@ -71,6 +71,15 @@
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmFMJ
 
+#MARK: Tracer Red
+- type: entity
+  id: Magazine5.56x45mmSTANAG30rdTracerRed
+  suffix: Tracer Red
+  parent: BaseMagazine5.56x45mmSTANAG30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmTracerRed
+
 #MARK: 223 Remington
 - type: entity
   id: Magazine5.56x45mmSTANAG30rd223Remington
@@ -242,6 +251,15 @@
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmFMJ
 
+#MARK: Tracer Red
+- type: entity
+  id: MagazineBox5.56x45mmLMG100rdTracerRed
+  suffix: Tracer Red
+  parent: BaseMagazineBox5.56x45mmLMG100rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmTracerRed
+
 #MARK: 200rd LMG Box
 - type: entity
   id: BaseMagazineBox5.56x45mmLMG200rd
@@ -280,3 +298,12 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmFMJ
+
+#MARK: Tracer Red
+- type: entity
+  id: MagazineBox5.56x45mmLMG200rdTracerRed
+  suffix: Tracer Red
+  parent: BaseMagazineBox5.56x45mmLMG200rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmTracerRed
