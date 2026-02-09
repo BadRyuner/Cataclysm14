@@ -98,9 +98,9 @@
       description: Ripstop combat Pants. It has a black digital camo patern for covert operations and larpers.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/Pants_digital_black.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_digital_black.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/Pants_digital_black.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_digital_black.rsi
 
     - type: entity
       parent: ClothingPantsCargoBase
@@ -109,6 +109,6 @@
       description: Ripstop combat Pants with large pockets. It has a black digital camo patern for covert operations and larpers.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/Pants_digital_black_cargo.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_digital_black_cargo.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/Pants_digital_black_cargo.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_digital_black_cargo.rsi
