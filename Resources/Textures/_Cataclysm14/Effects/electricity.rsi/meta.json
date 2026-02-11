@@ -8,7 +8,7 @@
   },
   "states": [
     {
-      "name": "lighting",
+      "name": "lightning",
       "delays": [
         [
           0.08,
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "name": "lighting_ball",
+      "name": "lightning_ball",
       "delays": [
         [
           0.08,

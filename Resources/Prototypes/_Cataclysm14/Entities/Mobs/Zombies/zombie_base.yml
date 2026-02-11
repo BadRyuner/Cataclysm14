@@ -299,19 +299,8 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 4.5
     baseSprintSpeed : 4.5
-  - type: MeleeWeapon
-    attackRate: 0.8
-    altDisarm: false
-    hidden: true
-    soundHit:
-      collection: AlienClaw
-    animation: WeaponArcBite
-    damage:
-      types:
-        Brute: 8
-        Slash: 5
   - type: ProjectileBatteryAmmoProvider
-    proto: ProjectileLightingZombie
+    proto: ProjectileLightningZombie
     fireCost: 1
   - type: BatterySelfRecharger
     autoRecharge: true
@@ -320,80 +309,83 @@
     maxCharge: 1
     startingCharge: 1
   - type: Gun
-    projectileSpeed: 100
+    projectileSpeed: 20
     showExamineText: false
-    fireRate: 0.1
+    fireRate: 1
     minAngle: 0
-    maxAngle: 15
+    maxAngle: 0
     soundGunshot:
       path: /Audio/Effects/Lightning/lightningshock.ogg
       params:
         variation: 0.2
+  - type: Insulated
 
 - type: entity
   name: ball lightning
-  id: ProjectileLightingZombie
+  id: ProjectileLightningZombie
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
+  # categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Cataclysm14/Effects/electricity.rsi
     layers:
-    - state: lighting_ball
+    - state: lightning_ball
       shader: unshaded
   - type: StaminaDamageOnCollide
     damage: 35
   - type: EmbeddableProjectile
   - type: Projectile
-    deleteOnCollide: false
-    soundHit:
-      path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
+    deleteOnCollide: true
     damage:
       types:
         Piercing: 0
-        Heat: 17
-        Shock: 10
+        Heat: 4
+        Shock: 4
   - type: Electrified
     requirePower: false
-  - type: Tag
-    tags:
-      - HideContextMenu
+  # - type: Tag
+  #   tags:
+  #     - HideContextMenu
   - type: Timer
   - type: TimedSpawner
     prototypes:
-    - ProjectileEffectLighting
-    intervalSeconds: 0.2
+    - ProjectileEffectLightning
+    chance: 1.0
+    intervalSeconds: 0.025
     minimumEntitiesSpawned: 1
-    maximumEntitiesSpawned: 99
+    maximumEntitiesSpawned: 1
   - type: TimedDespawn
-    lifetime: 1
+    lifetime: 0.3
 
 - type: entity
   name: ball lightning
-  id: ProjectileEffectLighting
-  parent: BaseBullet
-  categories: [ HideSpawnMenu ]
+  id: ProjectileEffectLightning
+  # categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Cataclysm14/Effects/electricity.rsi
     layers:
-    - state: lighting
+    - state: lightning
       shader: unshaded
   - type: StaminaDamageOnCollide
     damage: 35
   - type: Projectile
-    deleteOnCollide: false
-    soundHit:
-      path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
+    deleteOnCollide: true
     damage:
       types:
         Piercing: 0
-        Heat: 17
-        Shock: 10
+        Heat: 4
+        Shock: 4
   - type: Electrified
     requirePower: false
-  - type: Tag
-    tags:
-      - HideContextMenu
+  # - type: Tag
+  #   tags:
+  #     - HideContextMenu
   - type: TimedDespawn
-    lifetime: 0.8
+    lifetime: 3
+  - type: Reflective
+  - type: Clickable
+  - type: Physics
+    bodyType: Dynamic
+    linearDamping: 0
+    angularDamping: 0
