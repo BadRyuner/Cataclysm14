@@ -1,33 +1,33 @@
-# AI packages
+#MARK: Basic range
 - type: entity
-  id: MobHumanoidHostileAISimpleMeleeZombie
+  id: MobHumanoidHostileAISimpleMeleeZombieBase
   abstract: true
   components:
   - type: HTN
     rootTask:
-       task: SimpleHostileCompoundZombie
+       task: SimpleHostileCompoundZombieBase
     blackboard:
       NavClimb: !type:Bool
-        false
+        true
       NavInteract: !type:Bool
         true
       NavPry: !type:Bool
         true
-      NavSmash: !type:Bool # They use this option too much for my liking, but I'll keep it here as an option
+      NavSmash: !type:Bool
         true
 
 - type: htnCompound
-  id: SimpleHostileCompoundZombie
+  id: SimpleHostileCompoundZombieBase
   branches:
     - tasks:
         - !type:HTNCompoundTask
-          task: MeleeCombatCompoundZombie
+          task: MeleeCombatCompoundZombieBase
     - tasks:
         - !type:HTNCompoundTask
-          task: IdleCompoundZombie
+          task: IdleCompoundZombieBase
 
 - type: htnCompound
-  id: IdleCompoundZombie
+  id: IdleCompoundZombieBase
   branches:
     - tasks:
         - !type:HTNPrimitiveTask
@@ -38,17 +38,17 @@
               key: IdleTime
 
 - type: htnCompound
-  id: MeleeCombatCompoundZombie
+  id: MeleeCombatCompoundZombieBase
   branches:
     - tasks:
         - !type:HTNPrimitiveTask
           operator: !type:UtilityOperator
-            proto: NearbyMeleeTargets
+            proto: NearbyMeleeTargetsZombieBase
         - !type:HTNCompoundTask
-          task: BeforeMeleeAttackTargetCompoundZombieZombie
+          task: BeforeMeleeAttackTargetCompoundZombieBase
 
 - type: htnCompound
-  id: BeforeMeleeAttackTargetCompoundZombieZombie
+  id: BeforeMeleeAttackTargetCompoundZombieBase
   branches:
     - preconditions:
         - !type:BuckledPrecondition
@@ -91,11 +91,11 @@
     # Melee combat (unarmed or otherwise)
     - tasks:
         - !type:HTNCompoundTask
-          task: MeleeAttackTargetCompoundZombie
+          task: MeleeAttackTargetCompoundZombieBase
 
 # Tries to melee attack our target.
 - type: htnCompound
-  id: MeleeAttackTargetCompoundZombie
+  id: MeleeAttackTargetCompoundZombieBase
   branches:
     - preconditions:
       - !type:KeyExistsPrecondition
@@ -125,5 +125,195 @@
           services:
             - !type:UtilityService
               id: MeleeService
-              proto: NearbyMeleeTargets
+              proto: NearbyMeleeTargetsZombieBase
               key: Target
+
+- type: utilityQuery
+  id: NearbyMeleeTargetsZombieBase
+  query:
+    - !type:NearbyHostilesQuery
+  considerations:
+    - !type:TargetIsAliveCon
+      curve: !type:BoolCurve
+    - !type:TargetDistanceCon
+      curve: !type:PresetCurve
+        preset: TargetDistanceZombieBase
+    - !type:TargetHealthCon
+      curve: !type:PresetCurve
+        preset: TargetHealth
+    - !type:TargetAccessibleCon
+      curve: !type:BoolCurve
+    - !type:TargetInLOSOrCurrentCon
+      curve: !type:BoolCurve
+
+- type: utilityCurvePreset
+  id: TargetDistanceZombieBase
+  curve: !type:QuadraticCurve
+    slope: -1
+    exponent: 1
+    yOffset: 1
+    xOffset: 0
+
+#MARK: Reduced range
+- type: entity
+  id: MobHumanoidHostileAISimpleMeleeZombieReducedRange
+  abstract: true
+  components:
+  - type: HTN
+    rootTask:
+       task: SimpleHostileCompoundZombieReducedRange
+    blackboard:
+      IdleRange: !type:Single
+        1
+      FollowCloseRange: !type:Single
+        1
+      FollowRange: !type:Single
+        1
+      MeleeRange: !type:Single
+        0.2
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+
+- type: htnCompound
+  id: SimpleHostileCompoundZombieReducedRange
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeCombatCompoundZombieReducedRange
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompoundZombieReducedRange
+
+- type: htnCompound
+  id: IdleCompoundZombieReducedRange
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:WaitOperator
+            key: IdleTime
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: IdleTime
+
+- type: htnCompound
+  id: MeleeCombatCompoundZombieReducedRange
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyMeleeTargetsZombieReducedRange
+        - !type:HTNCompoundTask
+          task: BeforeMeleeAttackTargetCompoundZombieReducedRange
+
+- type: htnCompound
+  id: BeforeMeleeAttackTargetCompoundZombieReducedRange
+  branches:
+    - preconditions:
+        - !type:BuckledPrecondition
+          isBuckled: true
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UnbuckleOperator
+            shutdownState: TaskFinished
+
+    - preconditions:
+        - !type:PulledPrecondition
+          isPulled: true
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UnPullOperator
+            shutdownState: TaskFinished
+
+    - preconditions:
+        - !type:InContainerPrecondition
+          isInContainer: true
+      tasks:
+        - !type:HTNCompoundTask
+          task: EscapeCompound
+
+    #Cataclysm14, no need to grab weapon
+    # Pickup weapon if we don't have one.
+    # - preconditions:
+    #     - !type:ActiveHandComponentPrecondition
+    #         components:
+    #           # Just serializer things
+    #           - type: MeleeWeapon
+    #             damage:
+    #               types:
+    #                 Blunt: 0
+    #         invert: true
+    #   tasks:
+    #     - !type:HTNCompoundTask
+    #       task: PickupMeleeCompound
+
+    # Melee combat (unarmed or otherwise)
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeAttackTargetCompoundZombieReducedRange
+
+# Tries to melee attack our target.
+- type: htnCompound
+  id: MeleeAttackTargetCompoundZombieReducedRange
+  branches:
+    - preconditions:
+      - !type:KeyExistsPrecondition
+        key: Target
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            shutdownState: PlanFinished
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            brakeMaxVelocity: null # Monolith - don't try to brake
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            rangeKey: MeleeRange
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: Away
+        - !type:HTNPrimitiveTask
+          operator: !type:MeleeOperator
+            targetKey: Target
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: MeleeRange
+          services:
+            - !type:UtilityService
+              id: MeleeService
+              proto: NearbyMeleeTargetsZombieReducedRange
+              key: Target
+
+- type: utilityQuery
+  id: NearbyMeleeTargetsZombieReducedRange
+  query:
+    - !type:NearbyHostilesQuery
+  considerations:
+    - !type:TargetIsAliveCon
+      curve: !type:BoolCurve
+    - !type:TargetDistanceCon
+      curve: !type:PresetCurve
+        preset: TargetDistanceZombieReducedRange
+    - !type:TargetHealthCon
+      curve: !type:PresetCurve
+        preset: TargetHealth
+    - !type:TargetAccessibleCon
+      curve: !type:BoolCurve
+    - !type:TargetInLOSOrCurrentCon
+      curve: !type:BoolCurve
+
+- type: utilityCurvePreset
+  id: TargetDistanceZombieReducedRange
+  curve: !type:QuadraticCurve
+    slope: -1
+    exponent: 1
+    yOffset: 1
+    xOffset: 0

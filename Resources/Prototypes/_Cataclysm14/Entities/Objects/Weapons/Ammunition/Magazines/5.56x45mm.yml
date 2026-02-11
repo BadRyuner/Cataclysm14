@@ -42,6 +42,8 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 30
+  - type: Item
+    storedScale: 2.5
   - type: Tag
     tags:
       - Magazine5.56x45mmSTANAGCompatible
@@ -98,6 +100,8 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 20
+  - type: Item
+    storedScale: 2.5
   - type: Tag
     tags:
       - Magazine5.56x45mmSTANAGCompatible
@@ -145,6 +149,8 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 30
+  - type: Item
+    storedScale: 2.5
   - type: Tag
     tags:
       - Magazine5.56x45mmSTANAGCompatible
@@ -183,6 +189,8 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 25
+  - type: Item
+    storedScale: 2.5
   - type: Tag
     tags:
       - Magazine5.56x45mmSTANAGCompatible
@@ -221,6 +229,10 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 100
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: Tag
     tags:
       - MagazineBox5.56x45mmLMGCompatible
@@ -269,6 +281,10 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 200
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: Tag
     tags:
       - MagazineBox5.56x45mmLMGCompatible

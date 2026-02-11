@@ -8,10 +8,13 @@
   },
   "states": [
     {
+      "name": "base"
+    },
+    {
       "name": "mag-1"
     },
     {
-      "name": "base"
+      "name": "icon"
     }
   ]
 }
