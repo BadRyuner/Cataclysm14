@@ -1,6 +1,6 @@
+#MARK: FMJ
 - type: entity
   id: Bullet45_ACPFMJ
-  name: bullet (.45 ACP FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -11,20 +11,9 @@
         Structural: 20
     armorPenetration: 0.2
 
-- type: entity
-  id: Bullet45_ACPPractice
-  name: bullet (.45 ACP practice)
-  parent: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 2
-
+#MARK: Rubber
 - type: entity
   id: Bullet45_ACPRubber
-  name: bullet (.45 ACP rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -33,10 +22,10 @@
       types:
         Blunt: 4
 
+#MARK: Incendiary
 - type: entity
   id: Bullet45_ACPIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (.45 ACP incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -46,10 +35,10 @@
         Heat: 22
     armorPenetration: -0.1
 
+#MARK: Depleted Uranium
 - type: entity
-  id: Bullet45_ACPUranium
+  id: Bullet45_ACPDepletedUranium
   parent: BaseBulletUranium
-  name: bullet (.45 ACP uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -60,25 +49,10 @@
         Structural: 20
     armorPenetration: -0.075
 
-# Upstream
-- type: entity
-  id: Bullet45_ACPEmp
-  name: bullet (.45 ACP emp)
-  parent: BaseBulletEmp
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Shock: 2
-
-
-# Mono AP syst
-#anti-flesh:
+#MARK: HP
 - type: entity
   id: Bullet45_ACPHP
   parent: BaseBullet
-  name: bullet (.45 hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -88,10 +62,10 @@
         Piercing: 32
     armorPenetration: -0.7
 
+#MARK: RIP
 - type: entity
   id: Bullet45_ACPRIP
   parent: BaseBullet
-  name: bullet (.45 RIP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -101,12 +75,32 @@
         Piercing: 42
     armorPenetration: -0.95
 
-#armor-piercing:
+#MARK: Deprecated >
+
+- type: entity
+  id: Bullet45_ACPPractice
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+
+# Upstream
+- type: entity
+  id: Bullet45_ACPEmp
+  parent: BaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 2
 
 - type: entity
   id: Bullet45_ACPPlasteelAP
   parent: BaseBullet
-  name: bullet (.45 AP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

@@ -1,27 +1,26 @@
 #MARK: Base
 - type: entity
-  id: BaseMagazine7.62x51mm
-  name: "magazine (7.62x51mm NATO FMJ)"
+  id: BaseMagazine45_ACP
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine7.62x51mmFMJ
+      - Magazine45_ACPPistolFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x51mmFMJ
-    proto: Cartridge7.62x51mmFMJ
-    capacity: 20
+        - Cartridge45_ACPFMJ
+    capacity: 17
   - type: Item
     size: Small
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/7.62x51mm/7.62x51mm_mag.rsi
+    scale: 0.5,0.5
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/45_ACP/45_ACP_pistol_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -33,20 +32,22 @@
     zeroVisible: false
   - type: Appearance
 
-#MARK: STANAG 20rd
+#MARK: M1911 Mag 10rd
 - type: entity
-  id: BaseMagazine7.62x51mmSTANAG20rd
+  id: BaseMagazine45_ACPM1911_10rd
   abstract: true
-  name: "STANAG 20rd magazine (7.62x51mm NATO)"
-  parent: BaseMagazine7.62x51mm
+  name: "M1911 10rd magazine (.45 ACP)"
+  parent: BaseMagazine45_ACP
   components:
   - type: BallisticAmmoProvider
-    capacity: 30
+    capacity: 10
+  - type: Item
+    storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine7.62x51mmSTANAGCompatible
+      - Magazine45_ACPM1911Compatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/7.62x51mm/magazine_7.62x51mm_STANAG_20rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/45_ACP/magazine_45_ACP_M1911_10rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -55,18 +56,18 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine7.62x51mmSTANAG20rdEmpty
+  id: Magazine45_ACPM1911_10rdEmpty
   suffix: Empty
-  parent: BaseMagazine7.62x51mmSTANAG20rd
+  parent: BaseMagazine45_ACPM1911_10rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine7.62x51mmSTANAG20rdFMJ
+  id: Magazine45_ACPM1911_10rdFMJ
   suffix: FMJ
-  parent: BaseMagazine7.62x51mmSTANAG20rd
+  parent: BaseMagazine45_ACPM1911_10rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmFMJ
+    proto: Cartridge45_ACPFMJ

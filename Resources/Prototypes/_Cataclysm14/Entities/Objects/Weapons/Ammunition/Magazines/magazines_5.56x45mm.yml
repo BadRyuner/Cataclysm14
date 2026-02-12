@@ -21,7 +21,7 @@
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.3,0.3
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/5.56x45mm_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/5.56x45mm_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -48,7 +48,7 @@
     tags:
       - Magazine5.56x45mmSTANAGCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_5.56x45mm_STANAG_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_5.56x45mm_STANAG_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -106,7 +106,7 @@
     tags:
       - Magazine5.56x45mmSTANAGCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_5.56x45mm_STANAG_20rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_5.56x45mm_STANAG_20rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -155,7 +155,7 @@
     tags:
       - Magazine5.56x45mmSTANAGCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_5.56x45mm_Magpul_black_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_5.56x45mm_Magpul_black_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -195,7 +195,7 @@
     tags:
       - Magazine5.56x45mmSTANAGCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_5.56x45mm_FAMAS_25rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_5.56x45mm_FAMAS_25rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -238,7 +238,7 @@
       - MagazineBox5.56x45mmLMGCompatible
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_box_5.56x45mm_100rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_box_5.56x45mm_100rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -290,7 +290,7 @@
       - MagazineBox5.56x45mmLMGCompatible
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/5.56x45mm/magazine_box_5.56x45mm_200rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_box_5.56x45mm_200rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

@@ -21,7 +21,7 @@
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.3,0.4
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/9x19mm/9x19mm_pistol_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/9x19mm_pistol_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -54,7 +54,7 @@
     tags:
       - Magazine9x19mmGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/9x19mm/magazine_9x19mm_glock_10rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_10rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -93,7 +93,7 @@
     tags:
       - Magazine9x19mmGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/9x19mm/magazine_9x19mm_glock_17rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_17rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -132,7 +132,7 @@
     tags:
       - Magazine9x19mmGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/9x19mm/magazine_9x19mm_glock_24rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_24rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -171,7 +171,7 @@
     tags:
       - Magazine9x19mmGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazine/9x19mm/magazine_9x19mm_glock_33rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_33rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

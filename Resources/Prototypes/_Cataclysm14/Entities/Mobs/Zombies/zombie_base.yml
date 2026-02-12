@@ -293,6 +293,21 @@
   - BasePrototypeSpecieZombie
   - BaseMobZombieStats
   components:
+  - type: Sprite
+    layers:
+    - map: ["enum.HumanoidVisualLayers.Handcuffs"] #spam errors if it isn't there, no clue why
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
+    - map: [ "lightning" ]
+      sprite: _Cataclysm14/Effects/electricity.rsi
+      state: lightning
+      shader: unshaded
+    - map: [ "electricity" ]
+      sprite: _Cataclysm14/Effects/electrified.rsi
+      state: electrified
+      shader: unshaded
   - type: Body
     prototype: BodyPartSetZombieBase
     requiredLegs: 2
@@ -320,6 +335,7 @@
         variation: 0.2
   - type: Insulated
 
+#MARK: Projectil tesla
 - type: entity
   name: ball lightning
   id: ProjectileLightningZombie
@@ -357,6 +373,7 @@
   - type: TimedDespawn
     lifetime: 0.3
 
+#MARK: Lightning effect
 - type: entity
   name: ball lightning
   id: ProjectileEffectLightning

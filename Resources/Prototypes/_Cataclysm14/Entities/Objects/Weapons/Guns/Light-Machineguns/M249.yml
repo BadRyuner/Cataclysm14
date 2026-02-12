@@ -1,7 +1,8 @@
 - type: entity
   name: M249 (5.56x45mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponLightMachinegunM249
+  id: WeaponLightMachinegunM249Base
+  suffix: No Mag
   description: A modern LMG made for use by the US army and NATO countries, Chambered in 5.56x45mm NATO .
   components:
   - type: Sprite
@@ -43,7 +44,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox5.56x45mmLMG200rdFMJ
+        startingItem: null
         insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
         ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
         priority: 2
@@ -55,7 +56,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -73,3 +74,36 @@
     rsi:
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
+
+- type: entity
+  parent: WeaponLightMachinegunM249Base
+  id: WeaponLightMachinegunM249Empty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineBox5.56x45mmLMG200rdEmpty
+
+- type: entity
+  parent: WeaponLightMachinegunM249Base
+  id: WeaponLightMachinegunM249FMJ
+  suffix: FMJ
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineBox5.56x45mmLMG200rdFMJ
+
+- type: entity
+  parent: WeaponLightMachinegunM249Base
+  id: WeaponLightMachinegunM249TracerRed
+  suffix: Tracer Red
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineBox5.56x45mmLMG200rdTracerRed

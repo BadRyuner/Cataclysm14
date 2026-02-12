@@ -1,0 +1,35 @@
+
+- type: entity
+  name: Remington M870 (12 gauge)
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunM870
+  description: An old yet faithful design, and a favorite among hunters. Uses 12 gauge shotgun shells.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,0
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/M870_64x64.rsi
+  - type: Sprite
+    slots:
+    - slingfront
+    - suitstorage
+    scale: 0.65,0.65
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/M870_64x32.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/M870_64x32.rsi
+    clothingVisuals:
+      slingfront:
+      - state: equipped-SLINGFRONT
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1.4
+  - type: GunSpreadModifier
+    spread: 0.7
+  - type: Tag
+    tags:
+    - WeaponShotgunM870
+  - type: BallisticAmmoProvider
+    capacity: 6

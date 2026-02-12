@@ -1,0 +1,72 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine7.62x51mm
+  name: "magazine (7.62x51mm NATO FMJ)"
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Magazine7.62x51mmFMJ
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge7.62x51mmFMJ
+    proto: Cartridge7.62x51mmFMJ
+    capacity: 20
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x51mm/7.62x51mm_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: STANAG 20rd
+- type: entity
+  id: BaseMagazine7.62x51mmSTANAG20rd
+  abstract: true
+  name: "STANAG 20rd magazine (7.62x51mm NATO)"
+  parent: BaseMagazine7.62x51mm
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 30
+  - type: Tag
+    tags:
+      - Magazine7.62x51mmSTANAGCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x51mm/magazine_7.62x51mm_STANAG_20rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine7.62x51mmSTANAG20rdEmpty
+  suffix: Empty
+  parent: BaseMagazine7.62x51mmSTANAG20rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine7.62x51mmSTANAG20rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine7.62x51mmSTANAG20rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x51mmFMJ

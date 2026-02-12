@@ -1,0 +1,38 @@
+- type: entity
+  name: double barrel shotgun (12 gauge)
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgun12GaugeDoubleBarrelShotgun
+  description: An immortal classic. A civilian grade shotgun. Uses 12 gauge shotgun shells.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,0
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12_gauge_64x64.rsi
+  - type: Sprite
+    slots:
+    - slingfront
+    - suitstorage
+    scale: 0.65,0.65
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12_gauge_64x32.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12_gauge_64x32.rsi
+    clothingVisuals:
+      slingfront:
+      - state: equipped-SLINGFRONT
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 3.5
+  - type: GunSpreadModifier
+    spread: 0.4
+  - type: BallisticAmmoProvider
+    soundRack: /Audio/Weapons/Guns/Cock/smg_cock.ogg
+    capacity: 2
+  - type: Construction
+    graph: ShotgunSawn
+    node: start
+    deconstructionTarget: null
+  - type: StaticPrice
+    price: 300

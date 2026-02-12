@@ -1,6 +1,7 @@
+#MARK: Base
 - type: entity
   abstract: true
-  parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
+  parent: [BaseItem, RecyclableItemCardboard]
   id: BaseAmmoBox45_ACP
   name: ammunition box (.45 ACP FMJ)
   components:
@@ -10,7 +11,7 @@
       tags:
         - Cartridge45_ACPFMJ
     proto: Cartridge45_ACPFMJ
-    capacity: 80
+    capacity: 40
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -22,9 +23,6 @@
     magState: mag
     steps: 3
     zeroVisible: false
-  - type: Tag
-    tags:
-    - Magazine45_ACPFMJBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:
@@ -36,7 +34,7 @@
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
 
-#small ammo boxes
+#MARK: FMJ
 - type: entity
   parent: BaseAmmoBox45_ACP
   id: AmmoBox45_ACPFMJ
@@ -51,21 +49,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
-- type: entity
-  parent: BaseAmmoBox45_ACP
-  id: AmmoBox45_ACPPractice
-  name: ammunition box (.45 ACP practice)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge45_ACPPractice
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: practice
-
+#MARK: Incendiary
 - type: entity
   parent: BaseAmmoBox45_ACP
   id: AmmoBox45_ACPIncendiary
@@ -81,13 +65,14 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: incendiary
 
+#MARK: Depleted Uranium
 - type: entity
-  id: AmmoBox45_ACPUranium
+  id: AmmoBox45_ACPDepletedUranium
   parent: BaseAmmoBox45_ACP
   name: ammunition box (.45 ACP uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_ACPUranium
+    proto: Cartridge45_ACPDepletedUranium
   - type: Sprite
     layers:
     - state: base
@@ -96,7 +81,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: uranium
 
-# Upstream
+#MARK: Rubber
 - type: entity
   parent: BaseAmmoBox45_ACP
   id: AmmoBox45_ACPRubber
@@ -112,24 +97,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: rubber
 
-# Frontier
-- type: entity
-  parent: BaseAmmoBox45_ACP
-  id: AmmoBox45_ACPEmp
-  name: ammunition box (.45 ACP emp)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge45_ACPEmp
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: emp
-
-# Mono AP syst
-#anti-flesh:
+#MARK: HP
 - type: entity
   parent: BaseAmmoBox45_ACP
   id: AmmoBox45_ACPHP
@@ -145,6 +113,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: HP
 
+#MARK: RIP
 - type: entity
   parent: BaseAmmoBox45_ACP
   id: AmmoBox45_ACPRIP
@@ -176,7 +145,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: plasteelAP
 
-#big ammo boxes
+#MARK: Big FMJ
 - type: entity
   parent: BaseAmmoBox45_ACP
   id: AmmoBox45_ACPBigFMJ
@@ -187,16 +156,49 @@
     shape:
     - 0,0,1,1
   - type: BallisticAmmoProvider
-    capacity: 280 # 8 mags per box similar to rifle box
+    capacity: 120
     proto: Cartridge45_ACPFMJ
   - type: Sprite
     layers:
-    - state: base-b # Frontier: base-big<base-b
+    - state: base-b
       map: ["enum.GunVisualLayers.Base"]
-    - state: magb-1 # Frontier: mag-big-1<magb-1
+    - state: magb-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
-    magState: magb # Frontier: mag-big<magb
+    magState: magb
     steps: 4
     zeroVisible: false
   - type: Appearance
+
+#MARK: Deprecated
+
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPPractice
+  name: ammunition box (.45 ACP practice)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPPractice
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice
+
+# Frontier
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPEmp
+  name: ammunition box (.45 ACP emp)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPEmp
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: emp

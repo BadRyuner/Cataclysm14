@@ -16,5 +16,5 @@
   id: LootTableWeaponGunNationalGuard
   table: !type:GroupSelector
     children:
-      - id: WeaponAssaultRifleM4A1
-      - id: WeaponLightMachinegunM249
+      - id: WeaponAssaultRifleM4A1Base
+      - id: WeaponLightMachinegunM249Base

@@ -1,7 +1,7 @@
 - type: entity
   name: Colt M4A1 (5.56x45mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponAssaultRifleM4A1
+  id: WeaponAssaultRifleM4A1Base
   description: A modern polymer assault rifle based on the M16 and XM serie of rifles. Chambered in 5.56x45mm NATO.
   components:
   - type: Sprite
@@ -39,7 +39,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFMJ
+        startingItem: null
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
@@ -49,7 +49,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -67,3 +67,36 @@
     rsi:
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
+
+- type: entity
+  parent: WeaponAssaultRifleM4A1Base
+  id: WeaponAssaultRifleM4A1Empty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.56x45mmEmpty
+
+- type: entity
+  parent: WeaponAssaultRifleM4A1Base
+  id: WeaponAssaultRifleM4A1FMJ
+  suffix: FMJ
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.56x45mmFMJ
+
+- type: entity
+  parent: WeaponAssaultRifleM4A1Base
+  id: WeaponAssaultRifleM4A1TracerRed
+  suffix: Tracer Red
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.56x45mmTracerRed
