@@ -2,6 +2,7 @@
   name: Colt M4A1 (5.56x45mm NATO)
   parent: BaseWeaponRifle
   id: WeaponAssaultRifleM4A1Base
+  abstract: true
   description: A modern polymer assault rifle based on the M16 and XM serie of rifles. Chambered in 5.56x45mm NATO.
   components:
   - type: Sprite
@@ -88,7 +89,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFMJ
+        startingItem: Magazine5.56x45mmSTANAG30rdFMJ
 
 - type: entity
   parent: WeaponAssaultRifleM4A1Base
@@ -99,4 +100,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmTracerRed
+        startingItem: Magazine5.56x45mmSTANAG30rdTracerRed

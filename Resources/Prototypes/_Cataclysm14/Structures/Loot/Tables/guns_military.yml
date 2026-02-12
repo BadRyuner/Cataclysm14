@@ -3,7 +3,7 @@
   id: LootTableLoadoutWeaponGunFAMAS
   table: !type:AllSelector
     children:
-      - id: WeaponAssaultRifleFAMASG2
+      - id: WeaponAssaultRifleFAMAS-G2
       - id: Magazine5.56x45mmFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
@@ -16,5 +16,9 @@
   id: LootTableWeaponGunNationalGuard
   table: !type:GroupSelector
     children:
-      - id: WeaponAssaultRifleM4A1Base
-      - id: WeaponLightMachinegunM249Base
+      - id: WeaponAssaultRifleM4A1Empty
+      - id: WeaponAssaultRifleM4A1FMJ
+      - id: WeaponAssaultRifleM4A1TracerRed
+      - id: WeaponLightMachinegunM249Empty
+      - id: WeaponLightMachinegunM249FMJ
+      - id: WeaponLightMachinegunM249TracerRed

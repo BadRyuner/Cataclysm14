@@ -1,7 +1,8 @@
 - type: entity
   name: Glock 17 (9x19mm)
   parent: BaseWeaponPistol
-  id: WeaponPistolGlock17
+  id: WeaponPistolGlock17Base
+  abstract: true
   description: A cheap, ubiquitous sidearm, produced by Glock and uses 9x19mm Parabellum ammunition.
   components:
   - type: Sprite
@@ -45,3 +46,25 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice # Mono
     price: 50
+
+- type: entity
+  parent: WeaponPistolGlock17Base
+  id: WeaponPistolGlock17Empty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine9x19mmGlock17rdEmpty
+
+- type: entity
+  parent: WeaponPistolGlock17Base
+  id: WeaponPistolGlock17FMJ
+  suffix: FMJ
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine9x19mmGlock17rdFMJ

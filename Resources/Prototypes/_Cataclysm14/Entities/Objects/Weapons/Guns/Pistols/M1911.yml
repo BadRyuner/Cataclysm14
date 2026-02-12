@@ -1,7 +1,7 @@
 - type: entity
   name: M1911 (.45 ACP)
   parent: BaseWeaponPistol
-  id: WeaponPistolM1911
+  id: WeaponPistolM1911Base
   description: A cheap, ubiquitous sidearm used for two world wars, uses .45 Automatic Colt Pistol (ACP) cartridge.
   components:
   - type: Sprite
@@ -45,3 +45,25 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice # Mono
     price: 50
+
+- type: entity
+  parent: WeaponPistolM1911Base
+  id: WeaponPistolM1911Empty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine45_ACPM1911_10rdEmpty
+
+- type: entity
+  parent: WeaponPistolM1911Base
+  id: WeaponPistolM1911FMJ
+  suffix: FMJ
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine45_ACPM1911_10rdFMJ

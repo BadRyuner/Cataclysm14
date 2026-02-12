@@ -2,7 +2,7 @@
   name: M249 (5.56x45mm NATO)
   parent: BaseWeaponRifle
   id: WeaponLightMachinegunM249Base
-  suffix: No Mag
+  abstract: true
   description: A modern LMG made for use by the US army and NATO countries, Chambered in 5.56x45mm NATO .
   components:
   - type: Sprite

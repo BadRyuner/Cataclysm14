@@ -2,7 +2,8 @@
 - type: entity
   name: Remington M870 (12 gauge)
   parent: [BaseWeaponShotgun, BaseGunWieldable]
-  id: WeaponShotgunM870
+  id: WeaponShotgunM870Base
+  abstract: true
   description: An old yet faithful design, and a favorite among hunters. Uses 12 gauge shotgun shells.
   components:
   - type: Item
@@ -33,3 +34,19 @@
     - WeaponShotgunM870
   - type: BallisticAmmoProvider
     capacity: 6
+
+- type: entity
+  parent: WeaponShotgunM870Base
+  id: WeaponShotgunM870Buckshot
+  suffix: Buckshot
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgun12_gaugeBuckshot
+
+- type: entity
+  parent: WeaponShotgunM870Base
+  id: WeaponShotgunM870Beanbag
+  suffix: Beanbag
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgun12_gaugeBeanbag

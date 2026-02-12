@@ -1,7 +1,8 @@
 - type: entity
   name: double barrel shotgun (12 gauge)
   parent: [BaseWeaponShotgun, BaseGunWieldable]
-  id: WeaponShotgun12GaugeDoubleBarrelShotgun
+  id: WeaponShotgun12GaugeDoubleBarrelShotgunBase
+  abstract: true
   description: An immortal classic. A civilian grade shotgun. Uses 12 gauge shotgun shells.
   components:
   - type: Item
@@ -30,9 +31,25 @@
   - type: BallisticAmmoProvider
     soundRack: /Audio/Weapons/Guns/Cock/smg_cock.ogg
     capacity: 2
-  - type: Construction
-    graph: ShotgunSawn
-    node: start
-    deconstructionTarget: null
+  # - type: Construction
+  #   graph: ShotgunSawn
+  #   node: start
+  #   deconstructionTarget: null
   - type: StaticPrice
     price: 300
+
+- type: entity
+  parent: WeaponShotgun12GaugeDoubleBarrelShotgunBase
+  id: WeaponShotgun12GaugeDoubleBarrelShotgunBuckshot
+  suffix: Buckshot
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgun12_gaugeBuckshot
+
+- type: entity
+  parent: WeaponShotgun12GaugeDoubleBarrelShotgunBase
+  id: WeaponShotgun12GaugeDoubleBarrelShotgunBeanbag
+  suffix: Beanbag
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgun12_gaugeBeanbag
