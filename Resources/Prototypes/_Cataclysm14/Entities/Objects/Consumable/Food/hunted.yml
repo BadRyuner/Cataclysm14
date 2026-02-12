@@ -1,0 +1,364 @@
+# CDDA-themed hunted game meat items
+
+# Raw
+
+- type: entity
+  parent: FoodMeatRawBase
+  id: FoodCDDAMeatVenisonRaw
+  name: raw venison
+  description: "A slab of raw deer meat. Lean, gamey, and best not eaten as-is."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - gamey
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: plain
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Fat
+          Quantity: 5
+
+- type: entity
+  parent: FoodMeatRawBase
+  id: FoodCDDAMeatRabbitRaw
+  name: raw rabbit meat
+  description: "A small portion of raw rabbit. Lean and delicate."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: cutlet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 7
+        - ReagentId: Fat
+          Quantity: 2
+
+- type: entity
+  parent: FoodMeatRawBase
+  id: FoodCDDAMeatSquirrelRaw
+  name: raw squirrel meat
+  description: "A tiny portion of raw squirrel meat. Barely a mouthful."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: cutlet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 4
+        - ReagentId: Fat
+          Quantity: 2
+
+- type: entity
+  parent: FoodMeatRawBase
+  id: FoodCDDAMeatWildBirdRaw
+  name: raw wild bird
+  description: "Raw game bird meat. Plucked and ready for cooking."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - chicken
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: bird
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 8
+        - ReagentId: Fat
+          Quantity: 4
+
+- type: entity
+  parent: FoodMeatRawBase
+  id: FoodCDDAMeatFreshFishRaw
+  name: raw freshwater fish
+  description: "A freshly caught freshwater fish fillet. Cook it before parasites cook you."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - fishy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: fish
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 8
+        - ReagentId: Fat
+          Quantity: 3
+
+- type: entity
+  parent: FoodMeatRawBase
+  id: FoodCDDAMeatMutantRaw
+  name: raw mutant meat
+  description: "Meat from a heavily mutated creature. The flesh has an unsettling iridescent sheen and an unidentifiable odor."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - bitter
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: plain
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 8
+        - ReagentId: Fat
+          Quantity: 4
+        - ReagentId: Toxin
+          Quantity: 3
+
+- type: entity
+  parent: FoodMeatRawBase
+  id: FoodCDDAMeatFrogLegsRaw
+  name: raw frog legs
+  description: "A pair of raw frog legs. They say it tastes like chicken. 'They' have never eaten frog."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: cutlet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Fat
+          Quantity: 2
+
+# Cooked
+
+- type: entity
+  parent: FoodMeatBase
+  id: FoodCDDAMeatVenisonCooked
+  name: venison steak
+  description: "A perfectly seared venison steak. Lean, slightly gamey, deeply satisfying."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - gamey
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: plain-cooked
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Protein
+          Quantity: 8
+        - ReagentId: Fat
+          Quantity: 2
+
+- type: entity
+  parent: FoodMeatBase
+  id: FoodCDDAMeatRabbitCooked
+  name: cooked rabbit
+  description: "Roasted rabbit meat, tender and mild-flavored."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: cutlet-cooked
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Fat
+          Quantity: 1
+
+- type: entity
+  parent: FoodMeatBase
+  id: FoodCDDAMeatSquirrelCooked
+  name: roasted squirrel
+  description: "Roasted squirrel. A small meal, but protein is protein."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - nutty
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: cutlet-cooked
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 4
+
+- type: entity
+  parent: FoodMeatBase
+  id: FoodCDDAMeatWildBirdCooked
+  name: roasted wild bird
+  description: "Roasted game bird. The skin is crispy and the meat is juicy."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - chicken
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: bird-cooked
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 7
+        - ReagentId: Fat
+          Quantity: 2
+
+- type: entity
+  parent: FoodMeatBase
+  id: FoodCDDAMeatFreshFishCooked
+  name: pan-fried fish
+  description: "A golden-brown fish fillet. Simple preparation, excellent results."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - savory
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: fish
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 7
+        - ReagentId: Vitamin
+          Quantity: 2
+
+- type: entity
+  parent: FoodMeatBase
+  id: FoodCDDAMeatMutantCooked
+  name: cooked mutant meat
+  description: "Cooked mutant meat. The heat has neutralized most of the toxins. Most of them."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - bitter
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: plain-cooked
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Toxin
+          Quantity: 1
+
+- type: entity
+  parent: FoodMeatBase
+  id: FoodCDDAMeatFrogLegsCooked
+  name: fried frog legs
+  description: "Fried frog legs. Crispy on the outside, tender within. Actually does taste like chicken."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - chicken
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: cutlet-cooked
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Fat
+          Quantity: 1

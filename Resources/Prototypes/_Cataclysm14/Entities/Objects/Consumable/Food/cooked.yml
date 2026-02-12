@@ -1,0 +1,479 @@
+# CDDA-themed cooked meal prototypes
+
+# Soups & Stews
+
+- type: entity
+  parent: FoodBowlBase
+  id: FoodCDDASoupBoneBroth
+  name: bone broth
+  description: "Clear, golden broth made from boiled bones. Restorative and warming. The foundation of post-apocalyptic cuisine."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - rich
+  - type: Sprite
+    sprite: Objects/Consumable/Food/bowl.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: stew
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 35
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 4
+
+- type: entity
+  parent: FoodBowlBase
+  id: FoodCDDASoupMushroomWild
+  name: wild mushroom soup
+  description: "A thick, earthy soup made from foraged mushrooms. You're fairly confident none of them were poisonous."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - mushroom
+    - earthy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/bowl.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: stew
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 35
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 5
+        - ReagentId: Flavorol
+          Quantity: 5
+
+- type: entity
+  parent: FoodBowlBase
+  id: FoodCDDASoupHunterStew
+  name: hunter's stew
+  description: "A hearty stew of game meat, root vegetables, and wild herbs. The ultimate survivor's meal."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - savory
+    - rich
+  - type: Sprite
+    sprite: Objects/Consumable/Food/bowl.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: stew
+  - type: Tag
+    tags:
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 35
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Protein
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 3
+
+- type: entity
+  parent: FoodBowlBase
+  id: FoodCDDASoupThreeSisters
+  name: three sisters stew
+  description: "A traditional stew of corn, beans, and squash. An ancient recipe that predates civilization's collapse."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - corn
+    - earthy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/bowl.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: stew
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 35
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 6
+
+- type: entity
+  parent: FoodBowlBase
+  id: FoodCDDASoupFishChowder
+  name: fish chowder
+  description: "A thick, creamy fish chowder. Chunks of freshwater fish swim in a starchy broth."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - creamy
+    - savory
+  - type: Sprite
+    sprite: Objects/Consumable/Food/bowl.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: stew
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 35
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Fat
+          Quantity: 3
+
+- type: entity
+  parent: FoodBowlBase
+  id: FoodCDDASoupHellfireStew
+  name: hellfire stew
+  description: "An old military recipe: crumbled hardtack, water, and whatever fat you can find. It's awful, but it fills you up."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bland
+    - greasy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/bowl.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: stew
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 35
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 14
+        - ReagentId: Fat
+          Quantity: 3
+
+# Plated Meals
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDAJerkyVenison
+  name: venison jerky
+  description: "Strips of salted and dried venison. Chewy, salty, and practically indestructible. Your jaw will give out before this does."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+    - smoky
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: mre-brownie
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 10
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDASmokedFish
+  name: smoked fish
+  description: "Fish fillet slow-smoked over hardwood. The preservation method of champions."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - smoky
+    - fishy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meals.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: cornedbeef
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 8
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDAScrambledEggs
+  name: scrambled eggs
+  description: "Scrambled eggs, slightly rubbery but edible. A luxury in these times."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - eggy
+    - savory
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meals.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: friedegg
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDAFlatbread
+  name: campfire flatbread
+  description: "Simple flatbread cooked on a hot stone. No yeast, no oven, no problem."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bready
+    - bland
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: nutribrick
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Sugar
+          Quantity: 1
+
+- type: entity
+  parent: FoodBowlBase
+  id: FoodCDDAPorridge
+  name: porridge
+  description: "Thick, lumpy porridge made from whatever grain was available. It sticks to your ribs."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bland
+    - starchy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/bowl.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: stew
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 35
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 14
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDABoiledPotatoes
+  name: boiled potatoes
+  description: "Simple boiled potatoes. Not exciting, but reliable."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - starchy
+    - bland
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meals.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: cornedbeef
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 2
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDARoastedRoots
+  name: roasted root vegetables
+  description: "A mix of roasted wild roots and tubers. Caramelized and surprisingly sweet."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - earthy
+    - roasted
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meals.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: eggplantparm
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 5
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDAFriedRice
+  name: fried rice
+  description: "Fried rice with whatever scraps were on hand. A universal comfort food."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - salty
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meals.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: cornedbeef
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 2
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDAAcornMeal
+  name: cooked acorn meal
+  description: "Processed acorns ground into a filling paste. The tannins have been leached out. Bland but safe."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - nutty
+    - bland
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: nutribrick
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDAGrilledVegetables
+  name: grilled vegetables
+  description: "An assortment of charred vegetables on a makeshift plate. Smoky and nutritious."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - smoky
+    - vegetal
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meals.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: eggplantparm
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 6
+        - ReagentId: Flavorol
+          Quantity: 2
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDAMeatSkewer
+  name: meat & vegetable skewer
+  description: "Chunks of game meat and wild vegetables threaded on a sharpened stick. Charred to perfection."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - smoky
+  - type: Sprite
+    sprite: Objects/Consumable/Food/skewer.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: skewer
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Vitamin
+          Quantity: 2
+        - ReagentId: Fat
+          Quantity: 2
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDABreadSimple
+  name: simple bread loaf
+  description: "A dense, heavy loaf of bread made without commercial yeast. It's not pretty, but it's bread."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bready
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Baked/bread.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: plain
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: Sugar
+          Quantity: 2

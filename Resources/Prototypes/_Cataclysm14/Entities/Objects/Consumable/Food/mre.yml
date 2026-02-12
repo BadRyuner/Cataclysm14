@@ -1,0 +1,292 @@
+# CDDA-themed MRE and ration prototypes
+
+- type: entity
+  name: military MRE pack
+  parent: BaseItem
+  id: FoodCDDAMREPack
+  description: "A sealed military Meal Ready to Eat. Contains an entree, side, and dessert. Manufactured to survive anything... including your taste buds."
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Consumable/Food/mre_package.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: Item
+    sprite: _Mono/Objects/Consumable/Food/mre_package.rsi # TODO: Replace with Cataclysm14-specific sprites
+    size: Small
+  - type: SpawnItemsOnUse
+    items:
+    - id: FoodCDDAMREBeefStroganoff
+      prob: 0.5
+      orGroup: Entree
+    - id: FoodCDDAMREChiliBeans
+      prob: 0.5
+      orGroup: Entree
+    - id: FoodCDDAMREChickenNoodle
+      prob: 0.5
+      orGroup: Entree
+    - id: FoodCDDAMREVegPasta
+      prob: 0.5
+      orGroup: Entree
+    - id: FoodCDDAMREPoundCake
+    - id: DrinkWaterBottleFull
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDAMREBeefStroganoff
+  name: MRE beef stroganoff
+  description: "Beef stroganoff in a retort pouch. The noodles are surprisingly intact."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - savory
+    - cheap
+  - type: Sprite
+    sprite: _Mono/Objects/Consumable/Food/mre_main.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Fat
+          Quantity: 2
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDAMREChiliBeans
+  name: MRE chili & beans
+  description: "Chili with beans entree. A staple of military cuisine since forever."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - spicy
+    - savory
+    - cheap
+  - type: Sprite
+    sprite: _Mono/Objects/Consumable/Food/mre_main.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 1
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDAMREChickenNoodle
+  name: MRE chicken noodle
+  description: "Chicken and noodle entree from a sealed MRE pouch. Almost tastes homemade if you squint."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - chicken
+  - type: Sprite
+    sprite: _Mono/Objects/Consumable/Food/mre_main.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 2
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDAMREVegPasta
+  name: MRE vegetarian pasta
+  description: "Vegetarian penne pasta in marinara. The least offensive MRE option."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - tomato
+  - type: Sprite
+    sprite: _Mono/Objects/Consumable/Food/mre_main.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Vitamin
+          Quantity: 3
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDAEmergencyRation
+  name: emergency ration bar
+  description: "A compressed emergency calorie bar in reflective foil packaging. Tastes like sweetened cardboard. Contains 2400 calories."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - fiber
+    - bland
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: energybar
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDAHardtack
+  name: hardtack
+  description: "Unleavened cracker bread, baked until all moisture is gone. Could survive another century. Your teeth, however, might not."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bland
+    - dry
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: nutribrick
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDASurvivalCrackers
+  name: survival crackers
+  description: "Vacuum-sealed saltine crackers. They were stale before the apocalypse."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - salty
+    - dry
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: chips
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Sugar
+          Quantity: 1
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDAProteinBar
+  name: protein bar
+  description: "A dense protein bar wrapped in foil. 'MAXIMUM GAINS' is printed on the wrapper."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - chalky
+    - sweet
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: energybar
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 10
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDAInstantCoffee
+  name: instant coffee packet
+  description: "A single-serve packet of instant coffee crystals. Just add hot water. Or cold water. Or eat it dry. Who's judging?"
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bitter
+    - coffee
+  - type: Sprite
+    sprite: _Mono/Objects/Consumable/Food/mre_side.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDAMREPoundCake
+  name: MRE pound cake
+  description: "A vacuum-sealed pound cake. Inexplicably the most sought-after MRE component."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - vanilla
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: mre-brownie
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Sugar
+          Quantity: 6
+
+- type: entity
+  parent: FoodSnackBase
+  id: FoodCDDAPemmican
+  name: pemmican
+  description: "Dried meat pounded with rendered fat and dried berries. An ancient survival food. Calorie-dense and nearly indestructible."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - berry
+    - fatty
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: mre-brownie
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Fat
+          Quantity: 4

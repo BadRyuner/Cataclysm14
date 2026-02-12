@@ -1,0 +1,259 @@
+# Cataclysm14 CDDA-themed survival drinks
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDADrinkBoiledWater
+  name: boiled water
+  description: "Water that has been boiled to kill pathogens. Safe to drink. Tastes like warm nothing."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bland
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/waterbottle.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Water
+          Quantity: 20
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDADrinkMurkyWater
+  name: murky water
+  description: "Cloudy, questionable water scooped from a puddle. Drinking this is a gamble."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bitter
+    - sickly
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/waterbottle.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Water
+          Quantity: 15
+        - ReagentId: GastroToxin
+          Quantity: 3
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDADrinkPineTea
+  name: pine needle tea
+  description: "A fragrant tea brewed from fresh pine needles. Rich in vitamin C, with a resinous, forest-like taste."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - piney
+    - herbal
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/teacup.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon-0
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Water
+          Quantity: 12
+        - ReagentId: Vitamin
+          Quantity: 5
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDADrinkDandelionTea
+  name: dandelion tea
+  description: "A golden-yellow tea made from roasted dandelion roots. Bitter but healthy."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bitter
+    - earthy
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/teacup.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon-0
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Water
+          Quantity: 12
+        - ReagentId: Vitamin
+          Quantity: 4
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDADrinkHerbalTea
+  name: herbal tea
+  description: "A calming blend of wild herbs steeped in hot water. Nature's medicine cabinet."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - herbal
+    - floral
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/teacup.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon-0
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Water
+          Quantity: 12
+        - ReagentId: Vitamin
+          Quantity: 3
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDADrinkBerryJuice
+  name: berry juice
+  description: "Crushed wild berries strained into a tart, sweet juice. A rare treat."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - berry
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/glass_clear.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: Item
+    size: Small
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Water
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 4
+        - ReagentId: Sugar
+          Quantity: 3
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDADrinkBarkTea
+  name: bark tea
+  description: "A bitter tea brewed from willow bark. A folk remedy for pain and fever."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bitter
+    - woody
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/teacup.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon-0
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Water
+          Quantity: 12
+        - ReagentId: Vitamin
+          Quantity: 2
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDADrinkKompot
+  name: kompot
+  description: "A sweet fruit drink made by boiling whatever fruit was available in water. A Slavic survival staple."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - fruity
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/glass_clear.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Water
+          Quantity: 10
+        - ReagentId: Sugar
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 2
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDADrinkDirtyCoffee
+  name: dirty coffee
+  description: "Instant coffee dissolved in lukewarm water. It barely counts, but the caffeine is real."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bitter
+    - coffee
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/coffee.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Water
+          Quantity: 12
+        - ReagentId: Nutriment
+          Quantity: 1
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCDDADrinkRehydration
+  name: rehydration drink
+  description: "Water mixed with salt and sugar. An oral rehydration solution. Tastes terrible, works great."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - salty
+    - sweet
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/glass_clear.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: Item
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Water
+          Quantity: 15
+        - ReagentId: Sugar
+          Quantity: 2
+        - ReagentId: Nutriment
+          Quantity: 1
