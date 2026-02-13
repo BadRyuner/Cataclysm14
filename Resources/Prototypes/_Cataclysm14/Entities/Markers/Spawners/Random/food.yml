@@ -1,0 +1,344 @@
+- type: entity
+  id: RandomFoodCata14Canned
+  name: random food spawner
+  suffix: Canned
+  parent: MarkerBase
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Consumable/Food/Tins/beans.rsi
+        state: icon
+  - type: RandomSpawner
+    prototypes:
+      - FoodCDDATinChickenSoup
+      - FoodCDDATinTomatoSoup
+      - FoodCDDATinBeefStew
+      - FoodCDDATinBeans
+      - FoodCDDATinCorn
+      - FoodCDDATinPears
+      - FoodCDDATinPineapple
+      - FoodCDDATinTuna
+      - FoodCDDATinSardines
+      - FoodCDDATinSpam
+      - FoodCDDATinCornedBeef
+      - FoodCDDATinChili
+      - FoodCDDATinMixedVeg
+      - FoodCDDATinRavioli
+      - FoodCDDATinCondensedMilk
+      - FoodCDDATinCranberry
+      - FoodCDDATinPickledVeg
+      - FoodCDDATinStrawberryJam
+      - FoodTinPeaches
+      - FoodTinBeans
+      - FoodTinMRE
+    chance: 0.8
+    rarePrototypes:
+      - FoodCDDATinDogFood
+    rareChance: 0.05
+
+- type: entity
+  id: RandomFoodCata14Survival
+  name: random food spawner
+  suffix: Survival
+  parent: MarkerBase
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Mono/Objects/Consumable/Food/mre_package.rsi
+        state: icon
+  - type: RandomSpawner
+    prototypes:
+      - FoodCDDAMREPack
+      - FoodCDDAEmergencyRation
+      - FoodCDDAHardtack
+      - FoodCDDASurvivalCrackers
+      - FoodCDDAProteinBar
+      - FoodCDDAMREPoundCake
+      - FoodCDDAPemmican
+      - FoodCDDAJerky
+      - FoodCDDAJerkyVenison
+      # Upstream MRE/ration items that fit the theme
+      - FoodSnackNutribrick
+      - FoodSnackEnergy
+      - FoodMREPSB
+      - FoodSnackNutribrickMRE
+      - FoodSnackEnergyMRE
+    chance: 0.8
+    rarePrototypes:
+      - FoodCDDAInstantCoffee
+    rareChance: 0.1
+
+- type: entity
+  id: RandomFoodCata14Foraged
+  name: random food spawner
+  suffix: Foraged
+  parent: MarkerBase
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Specific/Hydroponics/berries.rsi
+        state: produce
+  - type: RandomSpawner
+    prototypes:
+      - FoodCDDAWildBlackberries
+      - FoodCDDAWildBlueberries
+      - FoodCDDAWildRaspberries
+      - FoodCDDAWintergreen
+      - FoodCDDARoseHips
+      - FoodCDDAPineNuts
+      - FoodCDDAWildMushroom
+      - FoodCDDAMorelMushroom
+      - FoodCDDACattailRhizome
+      - FoodCDDADandelionGreens
+      - FoodCDDAWildGarlic
+      - FoodCDDAFiddleheads
+      - FoodCDDASarsaparillaRoot
+      # Upstream produce that fits the theme
+      - FoodApple
+      - FoodBerries
+      - FoodCarrot
+      - FoodCorn
+      - FoodGarlic
+      - FoodMushroom
+      - FoodOnion
+      - FoodPotato
+      - FoodTomato
+      - FoodPumpkin
+      - FoodChiliPepper
+      - FoodCabbage
+    chance: 0.7
+    rarePrototypes:
+      - FoodCDDADeathCap
+      - FoodCDDAElderberries
+      - FoodCDDAAcorns
+      - FoodCDDAEdibleBark
+    rareChance: 0.05
+
+- type: entity
+  id: RandomFoodCata14Hunted
+  name: random food spawner
+  suffix: Hunted
+  parent: MarkerBase
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Consumable/Food/meat.rsi
+        state: plain
+  - type: RandomSpawner
+    prototypes:
+      - FoodCDDAMeatVenisonCooked
+      - FoodCDDAMeatRabbitCooked
+      - FoodCDDAMeatSquirrelCooked
+      - FoodCDDAMeatWildBirdCooked
+      - FoodCDDAMeatFreshFishCooked
+      - FoodCDDAMeatFrogLegsCooked
+      # Upstream meats that fit the theme
+      - FoodMeatCooked
+      - FoodMeatBearCooked
+      - FoodMeatChickenCooked
+      - FoodMeatDuckCooked
+      - FoodMeatBaconCooked
+      - FoodMeatCutletCooked
+      - FoodMeatSnailCooked
+      - FoodMeatCrabCooked
+      - FoodEgg
+      - FoodEggBoiled
+    chance: 0.6
+    rarePrototypes:
+      - FoodCDDAMeatMutantCooked
+      - FoodMeatGoliathCooked
+      - FoodMeatSpiderlegCooked
+    rareChance: 0.05
+
+- type: entity
+  id: RandomFoodCata14Meal
+  name: random food spawner
+  suffix: Meal
+  parent: MarkerBase
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Consumable/Food/bowl.rsi
+        state: stew
+  - type: RandomSpawner
+    prototypes:
+      - FoodCDDASoupBoneBroth
+      - FoodCDDASoupMushroomWild
+      - FoodCDDASoupHunterStew
+      - FoodCDDASoupThreeSisters
+      - FoodCDDASoupFishChowder
+      - FoodCDDAScrambledEggs
+      - FoodCDDAFlatbread
+      - FoodCDDAPorridge
+      - FoodCDDABoiledPotatoes
+      - FoodCDDARoastedRoots
+      - FoodCDDAFriedRice
+      - FoodCDDAGrilledVegetables
+      - FoodCDDAMeatSkewer
+      - FoodCDDABreadSimple
+      # Upstream meals/soups that fit the theme
+      - FoodSoupStew
+      - FoodSoupVegetable
+      - FoodSoupTomato
+      - FoodSoupOnion
+      - FoodSoupMushroom
+      - FoodSoupPotato
+      - FoodSoupPea
+      - FoodSoupMeatball
+      - FoodSoupBeet
+      - FoodSoupBeetRed
+      - FoodSoupBisque
+      - FoodSoupMiso
+      - FoodRiceBoiled
+      - FoodRiceEgg
+      - FoodRicePork
+      - FoodOatmeal
+      - FoodBreadPlain
+      - FoodBreadCorn
+      - FoodBreadMeat
+      - FoodSaladHerb
+      - FoodSaladColeslaw
+      - FoodSaladCaesar
+      - FoodSaladKimchi
+    chance: 0.7
+    rarePrototypes:
+      - FoodCDDASoupHellfireStew
+      - FoodCDDASmokedFish
+      - FoodCDDAAcornMeal
+    rareChance: 0.05
+
+- type: entity
+  id: RandomFoodCata14Junk
+  name: random food spawner
+  suffix: Junk
+  parent: MarkerBase
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Consumable/Food/snacks.rsi
+        state: chips
+  - type: RandomSpawner
+    prototypes:
+      - FoodCDDAJunkStaleChips
+      - FoodCDDAJunkOldCandyBar
+      - FoodCDDAJunkGranola
+      - FoodCDDAJunkCrumbledCrackers
+      - FoodCDDAJunkNoodleCup
+      - FoodCDDAJunkOldJerky
+      - FoodCDDAJunkStaleCereal
+      # Upstream snacks/baked goods that fit the theme
+      - FoodSnackBoritos
+      - FoodSnackChips
+      - FoodSnackChocolate
+      - FoodSnackChocolateBar
+      - FoodBakedCookie
+      - FoodBakedCookieOatmeal
+      - FoodBakedCookieRaisin
+      - FoodBakedPretzel
+      - FoodBakedBrownie
+      - FoodBakedMuffin
+      - FoodBakedCroissant
+    chance: 0.9
+    rarePrototypes:
+      - FoodCDDAJunkMysteryCan
+      - FoodCDDAJunkExpiredSoda
+      - FoodCDDAJunkGum
+    rareChance: 0.1
+
+- type: entity
+  id: RandomFoodCata14Drink
+  name: random food spawner
+  suffix: Drink
+  parent: MarkerBase
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Consumable/Drinks/waterbottle.rsi
+        state: icon
+  - type: RandomSpawner
+    prototypes:
+      - FoodCDDADrinkBoiledWater
+      - FoodCDDADrinkPineTea
+      - FoodCDDADrinkDandelionTea
+      - FoodCDDADrinkHerbalTea
+      - FoodCDDADrinkBerryJuice
+      - FoodCDDADrinkBarkTea
+      - FoodCDDADrinkKompot
+      - FoodCDDADrinkDirtyCoffee
+      - FoodCDDADrinkRehydration
+    chance: 0.7
+    rarePrototypes:
+      - FoodCDDADrinkMurkyWater
+    rareChance: 0.1
+
+- type: entity
+  id: RandomFoodCata14Any
+  name: random food spawner
+  suffix: Any
+  parent: MarkerBase
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Consumable/Food/Tins/beans.rsi
+        state: icon
+  - type: RandomSpawner
+    prototypes:
+      # Canned
+      - FoodCDDATinChickenSoup
+      - FoodCDDATinBeans
+      - FoodCDDATinSpam
+      - FoodCDDATinCorn
+      - FoodCDDATinTuna
+      - FoodTinPeaches
+      - FoodTinBeans
+      # Junk
+      - FoodCDDAJunkStaleChips
+      - FoodCDDAJunkOldCandyBar
+      - FoodCDDAJunkNoodleCup
+      - FoodCDDAJunkOldJerky
+      - FoodSnackChips
+      - FoodSnackChocolateBar
+      # Survival
+      - FoodCDDAMREPack
+      - FoodCDDAHardtack
+      - FoodCDDAEmergencyRation
+      - FoodCDDAPemmican
+      - FoodSnackNutribrick
+      # Foraged
+      - FoodCDDAWildBlackberries
+      - FoodCDDAWildMushroom
+      - FoodApple
+      - FoodPotato
+      - FoodTomato
+      # Drinks
+      - FoodCDDADrinkBoiledWater
+    chance: 0.8
+    rarePrototypes:
+      - FoodCDDAJunkMysteryCan
+      - FoodCDDADeathCap
+      - FoodCDDAMeatMutantCooked
+    rareChance: 0.05
