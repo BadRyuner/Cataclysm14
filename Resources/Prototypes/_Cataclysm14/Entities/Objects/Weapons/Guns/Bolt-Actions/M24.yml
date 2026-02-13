@@ -15,7 +15,8 @@
     sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M24_32x32.rsi
     size: Huge
     shape:
-    - 0,0,6,0
+    - 0,0,6,1
+    storedScale: 2
   - type: Clothing
     slots:
     - slingfront

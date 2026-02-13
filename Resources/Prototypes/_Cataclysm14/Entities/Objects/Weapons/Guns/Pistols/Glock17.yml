@@ -5,6 +5,11 @@
   abstract: true
   description: A cheap, ubiquitous sidearm, produced by Glock and uses 9x19mm Parabellum ammunition.
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+    storedScale: 2
   - type: Sprite
     scale: 0.5,0.5
     sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/Glock17.rsi
@@ -49,8 +54,8 @@
 
 - type: entity
   parent: WeaponPistolGlock17Base
-  id: WeaponPistolGlock17Empty
-  suffix: Empty
+  id: WeaponPistolGlock17Filled17rdEmpty
+  suffix: Empty - 17rd
   components:
   - type: ItemSlots
     slots:
@@ -60,8 +65,8 @@
 
 - type: entity
   parent: WeaponPistolGlock17Base
-  id: WeaponPistolGlock17FMJ
-  suffix: FMJ
+  id: WeaponPistolGlock17Filled17rdFMJ
+  suffix: FMJ - 17rd
   components:
   - type: ItemSlots
     slots:

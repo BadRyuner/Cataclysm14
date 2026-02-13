@@ -1,7 +1,7 @@
 - type: entity
   name: Steyr Aug-A1 (5.56x45mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponAssaultRifleAUG-A1Base
+  id: WeaponAssaultRifleAugA1Base
   abstract: true
   description: A modern polymer bullpup assault rifle made b y Steyr and used by the austrian army. Chambered in 5.56x45mm NATO.
   components:
@@ -18,6 +18,7 @@
     size: Huge
     shape:
     - 0,0,3,1
+    storedScale: 1.6
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AUG-A1_32x32.rsi
     clothingVisuals:
@@ -70,9 +71,9 @@
       state: all
 
 - type: entity
-  parent: WeaponAssaultRifleAUG-A1Base
-  id: WeaponAssaultRifleAUG-A1Empty
-  suffix: Empty
+  parent: WeaponAssaultRifleAugA1Base
+  id: WeaponAssaultRifleAugA1FilledMagpulBlack30rdEmpty
+  suffix: Empty - Magpul Black 30rd
   components:
   - type: ItemSlots
     slots:
@@ -81,9 +82,9 @@
         startingItem: Magazine5.56x45mmMagpulBlack30rdEmpty
 
 - type: entity
-  parent: WeaponAssaultRifleAUG-A1Base
-  id: WeaponAssaultRifleAUG-A1FMJ
-  suffix: FMJ
+  parent: WeaponAssaultRifleAugA1Base
+  id: WeaponAssaultRifleAugA1FilledMagpulBlack30rdFMJ
+  suffix: FMJ - Magpul Black 30rd
   components:
   - type: ItemSlots
     slots:

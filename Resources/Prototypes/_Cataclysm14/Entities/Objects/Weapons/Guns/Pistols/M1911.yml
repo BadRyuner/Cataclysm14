@@ -4,6 +4,11 @@
   id: WeaponPistolM1911Base
   description: A cheap, ubiquitous sidearm used for two world wars, uses .45 Automatic Colt Pistol (ACP) cartridge.
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+    storedScale: 2
   - type: Sprite
     scale: 0.5,0.5
     sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/M1911.rsi
@@ -48,8 +53,8 @@
 
 - type: entity
   parent: WeaponPistolM1911Base
-  id: WeaponPistolM1911Empty
-  suffix: Empty
+  id: WeaponPistolM1911Filled10rdEmpty
+  suffix: Empty - 10rd
   components:
   - type: ItemSlots
     slots:
@@ -59,8 +64,8 @@
 
 - type: entity
   parent: WeaponPistolM1911Base
-  id: WeaponPistolM1911FMJ
-  suffix: FMJ
+  id: WeaponPistolM1911Filled10rdFMJ
+  suffix: FMJ - 10rd
   components:
   - type: ItemSlots
     slots:

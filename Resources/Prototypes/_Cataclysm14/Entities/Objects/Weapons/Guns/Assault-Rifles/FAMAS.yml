@@ -1,7 +1,7 @@
 - type: entity
   name: GIAT FAMAS-G2 (5.56x45mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponAssaultRifleFAMAS-G2Base
+  id: WeaponAssaultRifleFAMAS_G2Base
   description: A modern polymer bullpup assault rifle made by the GIAT group and used by the french army. Chambered in 5.56x45mm NATO.
   components:
   - type: Sprite
@@ -17,6 +17,7 @@
     size: Huge
     shape:
     - 0,0,3,1
+    storedScale: 1.6
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/FAMAS-G2_32x32.rsi
     clothingVisuals:
@@ -25,6 +26,7 @@
       suitstorage:
       - state: equipped-SUITSTORAGE
   - type: Gun
+    selectedMode: Burst
     availableModes:
     - Burst
     - SemiAuto
@@ -76,9 +78,9 @@
       state: all
 
 - type: entity
-  parent: WeaponAssaultRifleFAMAS-G2Base
-  id: WeaponAssaultRifleFAMAS-G2Empty
-  suffix: Empty
+  parent: WeaponAssaultRifleFAMAS_G2Base
+  id: WeaponAssaultRifleFAMAS_G2FilledFAMAS25rdEmpty
+  suffix: Empty - FAMAS 25rd
   components:
   - type: ItemSlots
     slots:
@@ -87,9 +89,9 @@
         startingItem: Magazine5.56x45mmFAMAS25rdEmpty
 
 - type: entity
-  parent: WeaponAssaultRifleFAMAS-G2Base
-  id: WeaponAssaultRifleFAMAS-G2FMJ
-  suffix: FMJ
+  parent: WeaponAssaultRifleFAMAS_G2Base
+  id: WeaponAssaultRifleFAMAS_G2FilledFAMAS25rdFMJ
+  suffix: FMJ - FAMAS 25rd
   components:
   - type: ItemSlots
     slots:

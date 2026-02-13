@@ -10,6 +10,27 @@
         Piercing: 24
     armorPenetration: 0.05
 
+#MARK: Tracer Green
+- type: entity
+  id: Bullet9x19mmTracerGreen
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 24
+    armorPenetration: 0.05
+  - type: PointLight
+    enabled: true
+    color: "#49E048"
+    radius: 1.1
+    energy: 20.0
+  - type: Tracer
+    color: "#49E048"
+    length: 15
+    lifetime: 1
+
 #MARK: +P
 - type: entity
   id: Bullet9x19mm+P

@@ -1,0 +1,24 @@
+#MARK: LoadoutFAMAS
+- type: entityTable
+  id: LootTableLoadoutWeaponGunFAMAS
+  table: !type:AllSelector
+    children:
+      - id: WeaponAssaultRifleFAMAS_G2FilledFAMAS25rdFMJ
+      - id: Magazine5.56x45mmFAMAS25rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+      - id: AmmoBox5.56x45mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,1
+
+#MARK: Guns National Guard
+- type: entityTable
+  id: LootTableWeaponGunNationalGuard
+  table: !type:GroupSelector
+    children:
+      - id: WeaponAssaultRifleM4A1FilledSTANAG30rdEmpty
+      - id: WeaponAssaultRifleM4A1FilledSTANAG30rdFMJ
+      - id: WeaponAssaultRifleM4A1FilledSTANAG30rdTracerRed
+      - id: WeaponLightMachinegunM249Filled200rdEmpty
+      - id: WeaponLightMachinegunM249Filled200rdFMJ
+      - id: WeaponLightMachinegunM249Filled200rdTracerRed

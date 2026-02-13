@@ -18,6 +18,7 @@
     size: Huge
     shape:
     - 0,0,4,1
+    storedScale: 1.8
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/M4A1_32x32.rsi
     clothingVisuals:
@@ -71,19 +72,19 @@
 
 - type: entity
   parent: WeaponAssaultRifleM4A1Base
-  id: WeaponAssaultRifleM4A1Empty
-  suffix: Empty
+  id: WeaponAssaultRifleM4A1FilledSTANAG30rdEmpty
+  suffix: Empty - STANAG 30rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmEmpty
+        startingItem: Magazine5.56x45mmSTANAG30rdEmpty
 
 - type: entity
   parent: WeaponAssaultRifleM4A1Base
-  id: WeaponAssaultRifleM4A1FMJ
-  suffix: FMJ
+  id: WeaponAssaultRifleM4A1FilledSTANAG30rdFMJ
+  suffix: FMJ - STANAG 30rd
   components:
   - type: ItemSlots
     slots:
@@ -93,8 +94,8 @@
 
 - type: entity
   parent: WeaponAssaultRifleM4A1Base
-  id: WeaponAssaultRifleM4A1TracerRed
-  suffix: Tracer Red
+  id: WeaponAssaultRifleM4A1FilledSTANAG30rdTracerRed
+  suffix: Tracer Red - STANAG 30rd
   components:
   - type: ItemSlots
     slots:

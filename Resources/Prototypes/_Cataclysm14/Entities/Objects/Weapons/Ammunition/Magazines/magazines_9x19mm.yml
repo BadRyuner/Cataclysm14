@@ -33,7 +33,7 @@
     zeroVisible: false
   - type: Appearance
 
-#MARK: Glock Mags
+#MARK: Glock Mags >
 
 
 
@@ -118,6 +118,15 @@
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
 
+#MARK: Tracer Green
+- type: entity
+  id: Magazine9x19mmGlock17rdTracerGreen
+  suffix: Tracer Green
+  parent: BaseMagazine9x19mmGlock17rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge9x19mmTracerGreen
+
 #MARK: Glock 24rd
 - type: entity
   id: BaseMagazine9x19mmGlock24rd
@@ -157,6 +166,15 @@
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
 
+#MARK: Tracer Green
+- type: entity
+  id: Magazine9x19mmGlock24rdTracerGreen
+  suffix: Tracer Green
+  parent: BaseMagazine9x19mmGlock24rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge9x19mmTracerGreen
+
 #MARK: Glock 33rd
 - type: entity
   id: BaseMagazine9x19mmGlock33rd
@@ -195,3 +213,12 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
+
+#MARK: Tracer Green
+- type: entity
+  id: Magazine9x19mmGlock33rdTracerGreen
+  suffix: Tracer Green
+  parent: BaseMagazine9x19mmGlock33rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge9x19mmTracerGreen

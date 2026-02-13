@@ -1,14 +1,15 @@
 - type: entity
   name: double barrel shotgun (12 gauge)
   parent: [BaseWeaponShotgun, BaseGunWieldable]
-  id: WeaponShotgun12GaugeDoubleBarrelShotgunBase
+  id: WeaponShotgun12GaugeDoubleBarrelBase
   abstract: true
   description: An immortal classic. A civilian grade shotgun. Uses 12 gauge shotgun shells.
   components:
   - type: Item
-    size: Normal
+    size: Huge
     shape:
-    - 0,0,4,0
+    - 0,0,7,0
+    storedScale: 2
     sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12_gauge_64x64.rsi
   - type: Sprite
     slots:
@@ -39,16 +40,16 @@
     price: 300
 
 - type: entity
-  parent: WeaponShotgun12GaugeDoubleBarrelShotgunBase
-  id: WeaponShotgun12GaugeDoubleBarrelShotgunBuckshot
+  parent: WeaponShotgun12GaugeDoubleBarrelBase
+  id: WeaponShotgun12GaugeDoubleBarrelFilledBuckshot
   suffix: Buckshot
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeBuckshot
 
 - type: entity
-  parent: WeaponShotgun12GaugeDoubleBarrelShotgunBase
-  id: WeaponShotgun12GaugeDoubleBarrelShotgunBeanbag
+  parent: WeaponShotgun12GaugeDoubleBarrelBase
+  id: WeaponShotgun12GaugeDoubleBarrelFilledBeanbag
   suffix: Beanbag
   components:
   - type: BallisticAmmoProvider

@@ -6,6 +6,11 @@
   suffix: Empty
   description: A revolver that is commonly used by american law enforcer when budget is lacking. Manufactured by Smith & Wesson and uses .38 Special ammo.
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+    storedScale: 2.25
   - type: Sprite
     scale: 0.5,0.5
     sprite: _Cataclysm14/Objects/Weapons/Guns/Revolvers/M36.rsi
@@ -35,7 +40,7 @@
 #MARK: FMJ
 - type: entity
   parent: WeaponRevolverM36
-  id: WeaponRevolverM36LoadedFMJ
+  id: WeaponRevolverM36FilledFMJ
   suffix: FMJ
   components:
   - type: RevolverAmmoProvider
@@ -46,7 +51,7 @@
 #MARK: JHP
 - type: entity
   parent: WeaponRevolverM36
-  id: WeaponRevolverM36LoadedJHP
+  id: WeaponRevolverM36FilledJHP
   suffix: JHP
   components:
   - type: RevolverAmmoProvider
@@ -57,7 +62,7 @@
 #MARK: +P
 - type: entity
   parent: WeaponRevolverM36
-  id: WeaponRevolverM36Loaded+P
+  id: WeaponRevolverM36Filled+P
   suffix: +P
   components:
   - type: RevolverAmmoProvider
@@ -68,7 +73,7 @@
 #MARK: Rubber
 - type: entity
   parent: WeaponRevolverM36
-  id: WeaponRevolverM36LoadedRubber
+  id: WeaponRevolverM36FilledRubber
   suffix: Rubber
   components:
   - type: RevolverAmmoProvider

@@ -488,6 +488,9 @@
   - type: Tag
     id: CataStructureHouseLarge39x39
 
+  - type: Tag
+    id: CataStructurePoliceStationSmall26x26
+
 #MARK: Shotguns
 
   - type: Tag

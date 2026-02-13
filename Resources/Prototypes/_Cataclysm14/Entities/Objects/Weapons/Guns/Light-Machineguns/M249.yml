@@ -18,6 +18,7 @@
     size: Huge
     shape:
     - 0,0,5,1
+    storedScale: 2
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_32x32.rsi
     clothingVisuals:
@@ -25,8 +26,15 @@
       - state: equipped-SUITSTORAGE
       slingfront:
       - state: equipped-SUITSTORAGE
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
   - type: Gun
-    fireRate: 14
+    minAngle: 21
+    maxAngle: 70
+    angleIncrease: 5
+    angleDecay: 20
+    fireRate: 9
     soundGunshot:
       path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
       params:
@@ -77,8 +85,8 @@
 
 - type: entity
   parent: WeaponLightMachinegunM249Base
-  id: WeaponLightMachinegunM249Empty
-  suffix: Empty
+  id: WeaponLightMachinegunM249Filled200rdEmpty
+  suffix: Empty - 200rd
   components:
   - type: ItemSlots
     slots:
@@ -88,8 +96,8 @@
 
 - type: entity
   parent: WeaponLightMachinegunM249Base
-  id: WeaponLightMachinegunM249FMJ
-  suffix: FMJ
+  id: WeaponLightMachinegunM249Filled200rdFMJ
+  suffix: FMJ - 200rd
   components:
   - type: ItemSlots
     slots:
@@ -99,8 +107,8 @@
 
 - type: entity
   parent: WeaponLightMachinegunM249Base
-  id: WeaponLightMachinegunM249TracerRed
-  suffix: Tracer Red
+  id: WeaponLightMachinegunM249Filled200rdTracerRed
+  suffix: Tracer Red - 200rd
   components:
   - type: ItemSlots
     slots:

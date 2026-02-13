@@ -7,9 +7,10 @@
   description: An old yet faithful design, and a favorite among hunters. Uses 12 gauge shotgun shells.
   components:
   - type: Item
-    size: Normal
+    size: Huge
     shape:
-    - 0,0,4,0
+    - 0,0,6,1
+    storedScale: 2.5
     sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/M870_64x64.rsi
   - type: Sprite
     slots:
@@ -37,7 +38,7 @@
 
 - type: entity
   parent: WeaponShotgunM870Base
-  id: WeaponShotgunM870Buckshot
+  id: WeaponShotgunM870FilledBuckshot
   suffix: Buckshot
   components:
   - type: BallisticAmmoProvider
@@ -45,7 +46,7 @@
 
 - type: entity
   parent: WeaponShotgunM870Base
-  id: WeaponShotgunM870Beanbag
+  id: WeaponShotgunM870FilledBeanbag
   suffix: Beanbag
   components:
   - type: BallisticAmmoProvider

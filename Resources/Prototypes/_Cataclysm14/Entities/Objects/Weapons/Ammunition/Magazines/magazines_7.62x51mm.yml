@@ -21,6 +21,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
+    scale: 0.35,0.35
     sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x51mm/7.62x51mm_mag.rsi
     layers:
     - state: base
@@ -42,6 +43,8 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 30
+  - type: Item
+    storedScale: 2.5
   - type: Tag
     tags:
       - Magazine7.62x51mmSTANAGCompatible
@@ -70,3 +73,12 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmFMJ
+
+#MARK: TracerYellow
+- type: entity
+  id: Magazine7.62x51mmSTANAG20rdTracerYellow
+  suffix: Tracer Yellow
+  parent: BaseMagazine7.62x51mmSTANAG20rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x51mmTracerYellow

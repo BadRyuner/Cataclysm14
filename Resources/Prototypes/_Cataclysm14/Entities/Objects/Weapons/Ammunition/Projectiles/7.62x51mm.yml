@@ -75,9 +75,15 @@
       types:
         Piercing: 36
     armorPenetration: 0.1
+  - type: PointLight
+    enabled: true
+    color: "#EDC001"
+    radius: 1.1
+    energy: 20.0
   - type: Tracer
-    color: "#c30010ff"
-    length: 6
+    color: "#EDC001"
+    length: 15
+    lifetime: 1
 
 #MARK: FMJ
 - type: entity

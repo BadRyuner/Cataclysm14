@@ -1,7 +1,7 @@
 - type: entity
   name: FN FAL (7.62x51mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponBattleRifleFN-FALBase
+  id: WeaponBattleRifleFnFalBase
   abstract: true
   description: A somewhat modern battle rifle made by the belgian company FN Herstal and used by armies throughout the world, nicknamed "the right arm of the free world". Chambered in 7.62x51mm NATO .
   components:
@@ -18,6 +18,7 @@
     size: Huge
     shape:
     - 0,0,5,1
+    storedScale: 2
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/FN-FAL_32x32.rsi
     clothingVisuals:
@@ -70,9 +71,9 @@
       state: all
 
 - type: entity
-  parent: WeaponBattleRifleFN-FALBase
-  id: WeaponBattleRifleFN-FALEmpty
-  suffix: Empty
+  parent: WeaponBattleRifleFnFalBase
+  id: WeaponBattleRifleFnFalFilledSTANAG20rdEmpty
+  suffix: Empty- STANAG 20rd
   components:
   - type: ItemSlots
     slots:
@@ -81,9 +82,9 @@
         startingItem: Magazine7.62x51mmSTANAG20rdEmpty
 
 - type: entity
-  parent: WeaponBattleRifleFN-FALBase
-  id: WeaponBattleRifleFN-FALFMJ
-  suffix: FMJ
+  parent: WeaponBattleRifleFnFalBase
+  id: WeaponBattleRifleFnFalFilledSTANAG20rdFMJ
+  suffix: FMJ - STANAG 20rd
   components:
   - type: ItemSlots
     slots:

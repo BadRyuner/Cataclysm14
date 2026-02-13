@@ -32,6 +32,15 @@
   - type: CartridgeAmmo
     proto: Bullet9x19mmFMJ
 
+#MARK: Tracer Green
+- type: entity
+  id: Cartridge9x19mmTracerGreen
+  name: cartridge (9x19mm green tracer)
+  parent: BaseCartridge9x19mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet9x19mmTracerGreen
+
 #MARK: +P
 - type: entity
   id: Cartridge9x19mm+P
