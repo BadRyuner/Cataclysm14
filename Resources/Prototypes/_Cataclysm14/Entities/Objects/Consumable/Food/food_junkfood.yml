@@ -138,19 +138,19 @@
     size: Small
   - type: SpawnItemsOnUse
     items:
-    - id: ContainerFoodTinChickenSoup
+    - id: ConsumableFoodCannedChickenSoup
       prob: 0.3
       orGroup: Contents
-    - id: ContainerFoodTinBeans
+    - id: ConsumableFoodCannedBeans
       prob: 0.3
       orGroup: Contents
-    - id: ContainerFoodTinSpam
+    - id: ConsumableFoodCannedSpam
       prob: 0.3
       orGroup: Contents
-    - id: ContainerFoodTinCorn
+    - id: ConsumableFoodCannedCorn
       prob: 0.3
       orGroup: Contents
-    - id: ContainerFoodTinDogFood
+    - id: ConsumableFoodCannedDogFood
       prob: 0.1
       orGroup: Contents
     sound:

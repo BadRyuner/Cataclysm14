@@ -20,8 +20,8 @@
     - id: ConsumableFoodCannedMixedVegetables
     - id: ConsumableFoodCannedRavioli
     - id: ConsumableFoodCannedCondensedMilk
-    - id: ConsumableFoodCannedCranberry
-    - id: ConsumableFoodCannedPickledVeg
+    - id: ConsumableFoodCannedCranberrySauce
+    - id: ConsumableFoodCannedPickledVegetables
     - id: ConsumableFoodCannedStrawberryJam
     - id: ConsumableFoodCannedDogFood
 
@@ -58,7 +58,7 @@
     - id: ConsumableFoodDandelionGreens
     - id: ConsumableFoodWildGarlic
     - id: ConsumableFoodFiddleheads
-    - id: ConsumableFoodSarsaparillaRoo
+    - id: ConsumableFoodSarsaparillaRoot
     - id: ConsumableFoodDeathCap
     - id: ConsumableFoodElderberries
     - id: ConsumableFoodAcorns
@@ -107,8 +107,6 @@
     children:
     - id: ConsumableFoodJunkStaleChips
     - id: ConsumableFoodJunkOldCandyBar
-    - id: ConsumableFoodJunkGranola
-    - id: ConsumableFoodJunkCrumbledCrackers
     - id: ConsumableFoodJunkNoodleCup
     - id: ConsumableFoodJunkOldJerky
     - id: ConsumableFoodJunkStaleCereal
