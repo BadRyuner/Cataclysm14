@@ -1,0 +1,116 @@
+#MARK: LoadoutFAMAS
+- type: entityTable
+  id: LootTableLoadoutWeaponGunFAMAS
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponAssaultRifleFAMAS_G2FilledFAMAS25rdEmpty
+          - id: WeaponAssaultRifleFAMAS_G2FilledFAMAS25rdFMJ
+      - id: Magazine5.56x45mmFAMAS25rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+      - id: AmmoBox5.56x45mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: LoadoutM4A1
+- type: entityTable
+  id: LootTableLoadoutWeaponGunM4A1
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponAssaultRifleM4A1FilledSTANAG30rdEmpty
+          - id: WeaponAssaultRifleM4A1FilledSTANAG30rdFMJ
+      - id: Magazine5.56x45mmSTANAG30rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+      - id: AmmoBox5.56x45mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: LoadoutFnFal
+- type: entityTable
+  id: LootTableLoadoutWeaponGunFnFal
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponBattleRifleFnFalFilledSTANAG20rdEmpty
+          - id: WeaponBattleRifleFnFalFilledSTANAG20rdFMJ
+      - id: Magazine7.62x51mmSTANAG20rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+      - id: AmmoBox7.62x51mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: LoadoutM249
+- type: entityTable
+  id: LootTableLoadoutWeaponGunM249
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponLightMachinegunM249Filled200rdEmpty
+          - id: WeaponLightMachinegunM249Filled200rdFMJ
+      - !type:GroupSelector
+          children:
+          - id: MagazineBox5.56x45mmLMG100rdFMJ
+            rolls: !type:RangeNumberSelector
+              range: 1,4
+          - id: MagazineBox5.56x45mmLMG200rdFMJ
+            rolls: !type:RangeNumberSelector
+              range: 1,4
+      - id: AmmoBox5.56x45mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,3
+
+#MARK: LoadoutGlock17
+- type: entityTable
+  id: LootTableLoadoutWeaponGunGlock17
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponPistolGlock17Filled17rdEmpty
+          - id: WeaponPistolGlock17Filled17rdFMJ
+      - id: Magazine9x19mmGlock17rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+      - id: AmmoBox9x19mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: LoadoutM1911
+- type: entityTable
+  id: LootTableLoadoutWeaponGunM1911
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponPistolM1911Filled10rdEmpty
+          - id: WeaponPistolM1911Filled10rdFMJ
+      - id: Magazine45_ACPM1911_10rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+      - id: AmmoBox45_ACPFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: LoadoutM36
+- type: entityTable
+  id: LootTableLoadoutWeaponGunM36
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponRevolverM36Empty
+          - id: WeaponRevolverM36FilledFMJ
+      - id: SpeedLoader38_specialFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+      - id: AmmoBox38_specialFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2

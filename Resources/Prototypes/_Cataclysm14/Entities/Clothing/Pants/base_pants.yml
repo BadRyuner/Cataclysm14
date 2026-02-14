@@ -48,6 +48,7 @@
     # - WhitelistChameleon #Cataclysm, no chameleon
   - type: Item
     size: Normal
+    storedScale: 2
     shape:
     - 0,0,1,2
 
@@ -61,8 +62,6 @@
     maxItemSize: Normal
     grid:
     - 0,0,3,1
-  - type: Item
-    size: Normal
 
 #Version with small pockets
 - type: entity
@@ -74,5 +73,3 @@
     maxItemSize: Normal
     grid:
     - 0,0,1,1
-  - type: Item
-    size: Normal

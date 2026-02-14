@@ -1,7 +1,8 @@
 - type: entity
   name: Colt M4A1 (5.56x45mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponAssaultRifleM4A1
+  id: WeaponAssaultRifleM4A1Base
+  abstract: true
   description: A modern polymer assault rifle based on the M16 and XM serie of rifles. Chambered in 5.56x45mm NATO.
   components:
   - type: Sprite
@@ -17,6 +18,7 @@
     size: Huge
     shape:
     - 0,0,4,1
+    storedScale: 1.8
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/M4A1_32x32.rsi
     clothingVisuals:
@@ -39,7 +41,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFMJ
+        startingItem: null
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
@@ -49,7 +51,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -67,3 +69,36 @@
     rsi:
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
+
+- type: entity
+  parent: WeaponAssaultRifleM4A1Base
+  id: WeaponAssaultRifleM4A1FilledSTANAG30rdEmpty
+  suffix: Empty - STANAG 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.56x45mmSTANAG30rdEmpty
+
+- type: entity
+  parent: WeaponAssaultRifleM4A1Base
+  id: WeaponAssaultRifleM4A1FilledSTANAG30rdFMJ
+  suffix: FMJ - STANAG 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.56x45mmSTANAG30rdFMJ
+
+- type: entity
+  parent: WeaponAssaultRifleM4A1Base
+  id: WeaponAssaultRifleM4A1FilledSTANAG30rdTracerRed
+  suffix: Tracer Red - STANAG 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.56x45mmSTANAG30rdTracerRed

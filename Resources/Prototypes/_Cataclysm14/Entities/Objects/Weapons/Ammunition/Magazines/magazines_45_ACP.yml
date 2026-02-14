@@ -1,0 +1,73 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine45_ACP
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Magazine45_ACPPistolFMJ
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge45_ACPFMJ
+    capacity: 17
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/45_ACP/45_ACP_pistol_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: M1911 Mag 10rd
+- type: entity
+  id: BaseMagazine45_ACPM1911_10rd
+  abstract: true
+  name: "M1911 10rd magazine (.45 ACP)"
+  parent: BaseMagazine45_ACP
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 10
+  - type: Item
+    storedScale: 2
+  - type: Tag
+    tags:
+      - Magazine45_ACPM1911Compatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/45_ACP/magazine_45_ACP_M1911_10rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine45_ACPM1911_10rdEmpty
+  suffix: Empty
+  parent: BaseMagazine45_ACPM1911_10rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine45_ACPM1911_10rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine45_ACPM1911_10rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPFMJ

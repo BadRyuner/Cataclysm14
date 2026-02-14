@@ -47,7 +47,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: SmoothFurnitureCounter
+    key: walls
     base: wood
   - type: Construction
     graph: Table
@@ -85,6 +85,6 @@
     fillBaseName: filled
     solutionName: drainBuffer
   - type: IconSmooth
-    key: SmoothFurnitureCounter
+    key: walls
     mode: NoSprite
   - type: Anchorable

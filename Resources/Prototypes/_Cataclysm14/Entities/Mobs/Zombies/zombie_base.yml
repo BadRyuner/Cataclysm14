@@ -139,6 +139,8 @@
         Base: crit
       Dead:
         Base: dead
+  - type: SSDIndicator
+    icon: ZombieSSDIcon
 
 #MARK: Dummy
 - type: entity
@@ -162,7 +164,7 @@
   description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
   categories: [ HideSpawnMenu ]
   parent:
-  - MobHumanoidHostileAISimpleMeleeZombie
+  - MobHumanoidHostileAISimpleMeleeZombieBase
   - BasePrototypeSpecieZombie
   - BaseMobZombieStats
   components:
@@ -192,7 +194,7 @@
   description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
   categories: [ HideSpawnMenu ]
   parent:
-  - MobHumanoidHostileAISimpleMeleeZombie
+  - MobHumanoidHostileAISimpleMeleeZombieReducedRange
   - BasePrototypeSpecieZombie
   - BaseMobZombieStats
   components:
@@ -215,6 +217,20 @@
         Slash: 5
   - type: HumanoidAppearance
     species: SpecieZombieHeadless
+  - type: DamageVisuals
+    thresholds: [ 10, 20, 30, 50, 70, 100 ]
+    targetLayers:
+    - "enum.HumanoidVisualLayers.Chest"
+    - "enum.HumanoidVisualLayers.LArm"
+    - "enum.HumanoidVisualLayers.LLeg"
+    - "enum.HumanoidVisualLayers.RArm"
+    - "enum.HumanoidVisualLayers.RLeg"
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#FF0000"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
 
 #MARK: Mob Crawling
 - type: entity
@@ -224,16 +240,20 @@
   description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
   categories: [ HideSpawnMenu ]
   parent:
-  - MobHumanoidHostileAISimpleMeleeZombie
+  - MobHumanoidHostileAISimpleMeleeZombieReducedRange
   - BasePrototypeSpecieZombie
   - BaseMobZombieStats
   components:
+  - type: Icon
+    rotation: -90
+  - type: Sprite
+    rotation: -90
   - type: Body
     prototype: BodyPartSetZombieCrawling
     requiredLegs: 2
   - type: MovementSpeedModifier
-    baseWalkSpeed : 4.5
-    baseSprintSpeed : 4.5
+    baseWalkSpeed : 2
+    baseSprintSpeed : 2
   - type: MeleeWeapon
     attackRate: 0.8
     altDisarm: false
@@ -247,5 +267,142 @@
         Slash: 5
   - type: HumanoidAppearance
     species: SpecieZombieCrawling
+  - type: DamageVisuals
+    thresholds: [ 10, 20, 30, 50, 70, 100 ]
+    targetLayers:
+    - "enum.HumanoidVisualLayers.Chest"
+    - "enum.HumanoidVisualLayers.Head"
+    - "enum.HumanoidVisualLayers.LArm"
+    - "enum.HumanoidVisualLayers.RArm"
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#FF0000"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
+
+#MARK: Mob Tesla
+- type: entity
+  id: BaseMobZombieTesla
+  abstract: true
+  name: tesla zombie
+  description: An undead human, a green-ish pale zombie that seems to be pulsing with electricity.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleRanged
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
   - type: Sprite
-    scale: 2,2
+    layers:
+    - map: ["enum.HumanoidVisualLayers.Handcuffs"] #spam errors if it isn't there, no clue why
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
+    - map: [ "lightning" ]
+      sprite: _Cataclysm14/Effects/electricity.rsi
+      state: lightning
+      shader: unshaded
+    - map: [ "electricity" ]
+      sprite: _Cataclysm14/Effects/electrified.rsi
+      state: electrified
+      shader: unshaded
+  - type: Body
+    prototype: BodyPartSetZombieBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+  - type: ProjectileBatteryAmmoProvider
+    proto: ProjectileLightningZombie
+    fireCost: 1
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 1
+  - type: Battery
+    maxCharge: 1
+    startingCharge: 1
+  - type: Gun
+    projectileSpeed: 20
+    showExamineText: false
+    fireRate: 1
+    minAngle: 0
+    maxAngle: 0
+    soundGunshot:
+      path: /Audio/Effects/Lightning/lightningshock.ogg
+      params:
+        variation: 0.2
+  - type: Insulated
+
+#MARK: Projectil tesla
+- type: entity
+  name: ball lightning
+  id: ProjectileLightningZombie
+  parent: BaseBullet
+  # categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Effects/electricity.rsi
+    layers:
+    - state: lightning_ball
+      shader: unshaded
+  - type: StaminaDamageOnCollide
+    damage: 35
+  - type: EmbeddableProjectile
+  - type: Projectile
+    deleteOnCollide: true
+    damage:
+      types:
+        Piercing: 0
+        Heat: 4
+        Shock: 4
+  - type: Electrified
+    requirePower: false
+  # - type: Tag
+  #   tags:
+  #     - HideContextMenu
+  - type: Timer
+  - type: TimedSpawner
+    prototypes:
+    - ProjectileEffectLightning
+    chance: 1.0
+    intervalSeconds: 0.025
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 1
+  - type: TimedDespawn
+    lifetime: 0.3
+
+#MARK: Lightning effect
+- type: entity
+  name: ball lightning
+  id: ProjectileEffectLightning
+  # categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Effects/electricity.rsi
+    layers:
+    - state: lightning
+      shader: unshaded
+  - type: StaminaDamageOnCollide
+    damage: 35
+  - type: Projectile
+    deleteOnCollide: true
+    damage:
+      types:
+        Piercing: 0
+        Heat: 4
+        Shock: 4
+  - type: Electrified
+    requirePower: false
+  # - type: Tag
+  #   tags:
+  #     - HideContextMenu
+  - type: TimedDespawn
+    lifetime: 3
+  - type: Reflective
+  - type: Clickable
+  # - type: Physics
+  #   bodyType: Dynamic
+  #   linearDamping: 0
+  #   angularDamping: 0

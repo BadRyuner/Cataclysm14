@@ -1,0 +1,9 @@
+- type: ssdIcon
+  id: ZombieSSDIcon #actually is for pulping warning
+  icon:
+    sprite: /Textures/_Cataclysm14/Effects/zombie_pulp.rsi
+    state: default0
+  locationPreference: Right
+  priority: -1
+  layer: Mod # do not increment the position, draw "on top of" the previous icon
+  offset: -30 # overlap the chat bubble

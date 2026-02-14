@@ -1,0 +1,111 @@
+#MARK: FMJ
+- type: entity
+  id: Bullet45_ACPFMJ
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+        Structural: 20
+    armorPenetration: 0.2
+
+#MARK: Rubber
+- type: entity
+  id: Bullet45_ACPRubber
+  parent: BaseBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 4
+
+#MARK: Incendiary
+- type: entity
+  id: Bullet45_ACPIncendiary
+  parent: BaseBulletIncendiary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+        Heat: 22
+    armorPenetration: -0.1
+
+#MARK: Depleted Uranium
+- type: entity
+  id: Bullet45_ACPDepletedUranium
+  parent: BaseBulletUranium
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 9
+        Piercing: 15
+        Structural: 20
+    armorPenetration: -0.075
+
+#MARK: HP
+- type: entity
+  id: Bullet45_ACPHP
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 4
+        Piercing: 32
+    armorPenetration: -0.7
+
+#MARK: RIP
+- type: entity
+  id: Bullet45_ACPRIP
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 7
+        Piercing: 42
+    armorPenetration: -0.95
+
+#MARK: Deprecated >
+
+- type: entity
+  id: Bullet45_ACPPractice
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+
+# Upstream
+- type: entity
+  id: Bullet45_ACPEmp
+  parent: BaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 2
+
+- type: entity
+  id: Bullet45_ACPPlasteelAP
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16
+        Structural: 40
+    armorPenetration: 0.7

@@ -1,0 +1,204 @@
+#MARK: Base
+- type: entity
+  abstract: true
+  parent: [BaseItem, RecyclableItemCardboard]
+  id: BaseAmmoBox45_ACP
+  name: ammunition box (.45 ACP FMJ)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge45_ACPFMJ
+    proto: Cartridge45_ACPFMJ
+    capacity: 40
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/45_ACP.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/ammobox_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
+
+#MARK: FMJ
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPFMJ
+  name: ammunition box (.45 ACP FMJ)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPFMJ
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Incendiary
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPIncendiary
+  name: ammunition box (.45 ACP incendiary)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPIncendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: incendiary
+
+#MARK: Depleted Uranium
+- type: entity
+  id: AmmoBox45_ACPDepletedUranium
+  parent: BaseAmmoBox45_ACP
+  name: ammunition box (.45 ACP uranium)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPDepletedUranium
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: uranium
+
+#MARK: Rubber
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPRubber
+  name: ammunition box (.45 ACP rubber)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPRubber
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: rubber
+
+#MARK: HP
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPHP
+  name: ammunition box (.45 ACP hollow-point)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: HP
+
+#MARK: RIP
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPRIP
+  name: ammunition box (.45 ACP RIP)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPRIP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: RIP
+
+#armor-piercing:
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPPlasteelAP
+  name: ammunition box (.45 ACP AP)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPPlasteelAP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: plasteelAP
+
+#MARK: Big FMJ
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPBigFMJ
+  name: big ammunition box (.45 ACP FMJ)
+  suffix: Big
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: BallisticAmmoProvider
+    capacity: 120
+    proto: Cartridge45_ACPFMJ
+  - type: Sprite
+    layers:
+    - state: base-b
+      map: ["enum.GunVisualLayers.Base"]
+    - state: magb-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: magb
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: Deprecated
+
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPPractice
+  name: ammunition box (.45 ACP practice)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPPractice
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice
+
+# Frontier
+- type: entity
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPEmp
+  name: ammunition box (.45 ACP emp)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPEmp
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: emp

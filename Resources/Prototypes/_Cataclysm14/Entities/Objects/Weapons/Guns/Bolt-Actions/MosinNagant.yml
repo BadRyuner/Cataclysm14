@@ -2,7 +2,8 @@
 - type: entity
   name: Mosin Nagant (7.62x54mmR)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
-  id: WeaponBoltActionMosinNagant
+  id: WeaponBoltActionRifleMosinNagantBase
+  suffix: Empty
   description: A weapon for hunting, or endless trench warfare. Uses 7.62x54mmR ammo.
   components:
   - type: Sprite
@@ -15,8 +16,12 @@
     sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/MosinNagant_32x32.rsi
     size: Huge
     shape:
-    - 0,0,6,0
+    - 0,0,6,1
+    storedScale: 2
   - type: Clothing
+    slots:
+    - slingfront
+    - suitstorage
     sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/MosinNagant_32x32.rsi
     clothingVisuals:
       slingfront:
@@ -34,8 +39,16 @@
       tags:
       - Cartridge7.62x54mmRFMJ
     capacity: 5
-    proto: Cartridge7.62x54mmRFMJ
+    proto: null
   - type: WieldedCrosshair
     rsi:
       sprite: _Cataclysm14/Scoping/reticle_PU.rsi
       state: all
+
+- type: entity
+  parent: WeaponBoltActionRifleMosinNagantBase
+  id: WeaponBoltActionRifleMosinNagantFilledFMJ
+  suffix: FMJ
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x54mmRFMJ

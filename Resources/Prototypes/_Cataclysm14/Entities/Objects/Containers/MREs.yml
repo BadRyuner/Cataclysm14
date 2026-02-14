@@ -1,0 +1,32 @@
+#MARK: US Army
+- type: entity
+  name: US Army MRE pack
+  parent: BaseStorageItem
+  id: ContainerMreUsArmyEmpty
+  suffix: Empty
+  description: "A sealed military Meal Ready to Eat. Contains an entree, side, and dessert. Manufactured to survive anything... including your taste buds."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Containers/package_MRE.rsi
+    state: icon
+    scale: 0.5,0.5
+  - type: Item
+    sprite: _Cataclysm14/Objects/Containers/package_MRE.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
+    storedScale: 2
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,2
+
+- type: entity
+  parent: ContainerMreUsArmyEmpty
+  id: ContainerMreUsArmyFilledFood
+  suffix: Food
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodMreUsArmyPack

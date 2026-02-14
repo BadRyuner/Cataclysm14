@@ -1,0 +1,154 @@
+#MARK: FMJ
+- type: entity
+  id: Bullet9x19mmFMJ
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 24
+    armorPenetration: 0.05
+
+#MARK: Tracer Green
+- type: entity
+  id: Bullet9x19mmTracerGreen
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 24
+    armorPenetration: 0.05
+  - type: PointLight
+    enabled: true
+    color: "#49E048"
+    radius: 1.1
+    energy: 20.0
+  - type: Tracer
+    color: "#49E048"
+    length: 15
+    lifetime: 1
+
+#MARK: +P
+- type: entity
+  id: Bullet9x19mm+P
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 24
+    armorPenetration: 0.05
+
+#MARK: AP6.3
+- type: entity
+  id: Bullet9x19mmAP6.3
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 24
+    armorPenetration: 0.05
+
+#MARK: Rubber
+- type: entity
+  id: Bullet9x19mmRubber
+  parent: BaseBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+
+#MARK: Incendiary
+- type: entity
+  id: Bullet9x19mmIncendiary
+  parent: BaseBulletIncendiary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 4
+        Heat: 18
+    armorPenetration: -0.15
+
+#MARK: Depleted Uranium
+- type: entity
+  id: Bullet9x19mmDepletedUranium
+  parent: BaseBulletUranium
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 8
+        Piercing: 13
+    armorPenetration: -0.1
+
+#MARK: HP
+- type: entity
+  id: Bullet9x19mmHP
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 3
+        Piercing: 26
+    armorPenetration: -0.6
+
+#MARK: RIP
+- type: entity
+  id: Bullet9x19mmRIP
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 5
+        Piercing: 35
+    armorPenetration: -0.95
+
+#MARK: Deprecated >
+
+- type: entity
+  id: Bullet9x19mmPlasteelAP
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 7
+        Structural: 25
+    armorPenetration: 0.9
+
+# Upstream
+- type: entity
+  id: Bullet9x19mmEmp
+  parent: BaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 0
+
+- type: entity
+  id: Bullet9x19mmPractice
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2

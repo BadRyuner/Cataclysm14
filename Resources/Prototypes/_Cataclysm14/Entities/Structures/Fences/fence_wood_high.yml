@@ -20,7 +20,7 @@
     sprite: _Cataclysm14/Structures/Fences/fence_wood_high.rsi
     state: fence_0
   - type: IconSmooth
-    key: Walls
+    key: walls
     base: fence_
     mode: CardinalFlags
   - type: Physics

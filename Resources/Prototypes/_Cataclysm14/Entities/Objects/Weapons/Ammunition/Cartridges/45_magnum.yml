@@ -76,12 +76,12 @@
         color: "#0a0a0a"
 
 - type: entity
-  id: Cartridge45_magnumUranium
+  id: Cartridge45_magnumDepletedUranium
   name: cartridge (.45 magnum uranium)
   parent: BaseCartridge45_magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumUranium
+    proto: Bullet45_magnumDepletedUranium
   - type: Sprite
     layers:
       - state: base

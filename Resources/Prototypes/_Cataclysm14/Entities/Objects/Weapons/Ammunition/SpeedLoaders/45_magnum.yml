@@ -106,12 +106,12 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader45_magnumUranium
+  id: SpeedLoader45_magnumDepletedUranium
   name: "speed loader (.45 magnum uranium)"
   parent: BaseSpeedLoader45_magnum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_magnumUranium
+    proto: Cartridge45_magnumDepletedUranium
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
     layers:

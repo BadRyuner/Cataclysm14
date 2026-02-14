@@ -1,5 +1,23 @@
 #MARK: Naked / no gear
 - type: entity
+  parent: BaseMobZombieHeadless
+  id: MobZombieHeadlessNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieCrawling
+  id: MobZombieCrawlingNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Naked / no gear
+- type: entity
   parent: BaseMobZombieSimple
   id: MobZombieNaked
   suffix: Naked
@@ -9,17 +27,8 @@
 
 #MARK: Naked / no gear
 - type: entity
-  parent: BaseMobZombieHeadless
-  id: MobZombieHeadless
-  suffix: Naked
-  components:
-  - type: Inventory
-    templateId: InvTemplateZombieBase
-
-#MARK: Naked / no gear
-- type: entity
-  parent: BaseMobZombieCrawling
-  id: MobZombieCrawling
+  parent: BaseMobZombieTesla
+  id: MobZombieTeslaNaked
   suffix: Naked
   components:
   - type: Inventory
@@ -86,7 +95,7 @@
   - type: EntityTableContainerFill
     containers:
       outerClothing: !type:NestedSelector
-        tableId: LootTableClothingPoliceUSBulletProofVest
+        tableId: LootTableClothingPoliceUsBulletProofVest
         prob: 0.95
       head: !type:GroupSelector
         children:
@@ -164,7 +173,7 @@
         - id: ClothingShoesTacticalSwatBlack
         prob: 0.99
 
-#MARK: UN Peacekeeper FR
+#MARK: UN Bluehem FR
 - type: entity
   parent: BaseMobZombieSimple
   id: MobZombieUNPeacekeeperFR

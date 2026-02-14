@@ -79,12 +79,12 @@
     - state: incendiary
 
 - type: entity
-  id: AmmoBox45_magnumUranium
+  id: AmmoBox45_magnumDepletedUranium
   parent: BaseAmmoBox45_magnum
   name: ammunition box (.45 magnum uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_magnumUranium
+    proto: Cartridge45_magnumDepletedUranium
   - type: Sprite
     layers:
     - state: base

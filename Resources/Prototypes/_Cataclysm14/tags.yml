@@ -172,6 +172,9 @@
   - type: Tag
     id: Cartridge45_ACPFMJ
 
+  - type: Tag
+    id: Magazine45_ACPM1911Compatible
+
     #Deprecated
   - type: Tag
     id: Magazine45_ACPPistolFMJ
@@ -485,3 +488,10 @@
   - type: Tag
     id: CataStructureHouseLarge39x39
 
+  - type: Tag
+    id: CataStructurePoliceStationSmall26x26
+
+#MARK: Shotguns
+
+  - type: Tag
+    id: WeaponShotgunM870
