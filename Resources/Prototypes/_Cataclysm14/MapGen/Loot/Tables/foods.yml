@@ -30,8 +30,8 @@
   id: LootTableFoodLongLasting
   table: !type:GroupSelector
     children:
-    - id: ConsumableFoodMREPack
-    - id: ConsumableFoodEmergencyRation
+    - id: ContainerMREUSArmyFilledFood
+    - id: ConsumableFoodEmergencyRationBar
     - id: ConsumableFoodHardtack
     - id: ConsumableFoodSurvivalCrackers
     - id: ConsumableFoodProteinBar
@@ -131,3 +131,49 @@
     - id: ConsumableFoodDrinkDirtyCoffee
     - id: ConsumableFoodDrinkRehydration
     - id: ConsumableFoodDrinkMurkyWater
+
+#MARK: US Army MRE
+- type: entityTable
+  id: LootTableFoodMREUSArmyPack
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodMREUSArmyDrink
+        rolls: !type:RangeNumberSelector
+          range: 1,2
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodMREUSArmyMeal
+        rolls: !type:RangeNumberSelector
+          range: 1,2
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodMREUSArmySide
+        rolls: !type:RangeNumberSelector
+          range: 0,3
+
+#MARK: US Army MRE Drink
+- type: entityTable
+  id: LootTableFoodMREUSArmyDrink
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodDrinkBoiledWater
+
+#MARK: US Army MRE Meal
+- type: entityTable
+  id: LootTableFoodMREUSArmyMeal
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodEmergencyRationBar
+    - id: ConsumableFoodHardtack
+    - id: ConsumableFoodSurvivalCrackers
+
+#MARK: US Army MRE Side
+- type: entityTable
+  id: LootTableFoodMREUSArmySide
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodProteinBar
+    - id: ConsumableFoodMREPoundCake
+    - id: ConsumableFoodInstantCoffee
