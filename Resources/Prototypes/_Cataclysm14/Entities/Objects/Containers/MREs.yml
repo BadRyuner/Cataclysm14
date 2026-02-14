@@ -2,7 +2,7 @@
 - type: entity
   name: US Army MRE pack
   parent: BaseStorageItem
-  id: ContainerMREUSArmyEmpty
+  id: ContainerMreUsArmyEmpty
   suffix: Empty
   description: "A sealed military Meal Ready to Eat. Contains an entree, side, and dessert. Manufactured to survive anything... including your taste buds."
   components:
@@ -22,11 +22,11 @@
     - 0,0,3,2
 
 - type: entity
-  parent: ContainerMREUSArmyEmpty
-  id: ContainerMREUSArmyFilledFood
+  parent: ContainerMreUsArmyEmpty
+  id: ContainerMreUsArmyFilledFood
   suffix: Food
   components:
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableFoodMREUSArmyPack
+        tableId: LootTableFoodMreUsArmyPack

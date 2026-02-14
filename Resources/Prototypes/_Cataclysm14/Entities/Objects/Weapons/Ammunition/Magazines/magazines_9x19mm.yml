@@ -15,6 +15,7 @@
         - Cartridge9x19mmFMJ
     capacity: 19
   - type: Item
+    storedScale: 2.5
     size: Small
   - type: ContainerContainer
     containers:

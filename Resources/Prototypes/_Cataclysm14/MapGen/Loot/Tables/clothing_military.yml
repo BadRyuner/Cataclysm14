@@ -62,14 +62,6 @@
     - id: ClothingPantsCombatOCPMulticam
     - id: ClothingPantsCombatOCPMulticamCargo
 
-#MARK: US Police vest
-- type: entityTable
-  id: LootTableClothingPoliceUSBulletProofVest
-  table: !type:GroupSelector
-    children:
-    - id: ClothingOuterBulletProofVestPoliceUSLightBlack
-    - id: ClothingOuterBulletProofVestPoliceUSLightHighVis
-
 #MARK: UN Peacekeeper vest
 - type: entityTable
   id: LootTableClothingUNPeacekeeperBulletProofVest

@@ -1,0 +1,37 @@
+#MARK: US Police Top
+- type: entityTable
+  id: LootTableClothingPoliceUsTop
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtPoliceCopUS
+
+#MARK: US Police Bottom
+- type: entityTable
+  id: LootTableClothingPoliceUsBottom
+  table: !type:GroupSelector
+    children:
+    - id: ClothingPantsPoliceCopUS
+
+#MARK: SWAT
+- type: entityTable
+  id: LootTableClothingSWATTop
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtCombatDigitalBlack
+    - id: ClothingShirtCombatDigitalBlackCargo
+
+#MARK: SWAT
+- type: entityTable
+  id: LootTableClothingSWATBottom
+  table: !type:GroupSelector
+    children:
+    - id: ClothingPantsCombatDigitalBlack
+    - id: ClothingPantsCombatDigitalBlackCargo
+
+#MARK: US Police vest
+- type: entityTable
+  id: LootTableClothingPoliceUsBulletProofVest
+  table: !type:GroupSelector
+    children:
+    - id: ClothingOuterBulletProofVestPoliceUSLightBlack
+    - id: ClothingOuterBulletProofVestPoliceUSLightHighVis

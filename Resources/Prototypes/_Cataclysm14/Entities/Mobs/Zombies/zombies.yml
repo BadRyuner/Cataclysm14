@@ -95,7 +95,7 @@
   - type: EntityTableContainerFill
     containers:
       outerClothing: !type:NestedSelector
-        tableId: LootTableClothingPoliceUSBulletProofVest
+        tableId: LootTableClothingPoliceUsBulletProofVest
         prob: 0.95
       head: !type:GroupSelector
         children:
