@@ -14,6 +14,7 @@
     capacity: 50 # more than 2 rifle mag
   - type: Item
     size: Small
+    storedScale: 1.75
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

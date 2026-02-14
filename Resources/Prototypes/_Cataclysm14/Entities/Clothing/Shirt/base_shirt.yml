@@ -2,6 +2,12 @@
   abstract: true
   parent: UnsensoredClothingUniformBase
   id: ClothingShirtBase
+  components:
+  - type: Item
+    shape:
+    - 0,0,2,1
+    size: Normal
+    storedScale: 2
 
 #Version with large pockets
 - type: entity
@@ -13,8 +19,6 @@
     maxItemSize: Normal
     grid:
     - 0,0,3,1
-  - type: Item
-    size: Normal
 
 #Version with small pockets
 - type: entity
@@ -26,5 +30,3 @@
     maxItemSize: Normal
     grid:
     - 0,0,1,1
-  - type: Item
-    size: Normal
