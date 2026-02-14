@@ -52,6 +52,36 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+#MARK: M61
+- type: entity
+  parent: BaseAmmoBox7.62x51mm
+  id: AmmoBox7.62x51mmM61
+  name: ammunition box (7.62x51mm NATO M61)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x51mmM61
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Ultra Nosler
+- type: entity
+  parent: BaseAmmoBox7.62x51mm
+  id: AmmoBox7.62x51mmUltraNosler
+  name: ammunition box (7.62x51mm NATO Ultra Nosler)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x51mmUltraNosler
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
 #MARK: Incendiary
 - type: entity
   parent: BaseAmmoBox7.62x51mm

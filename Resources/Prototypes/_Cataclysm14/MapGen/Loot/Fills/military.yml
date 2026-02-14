@@ -1,19 +1,42 @@
-- type: entity
-  id: StructureFurnitureLockerMetalThirdTripleFilledGunsMilitaryModernCommonGeneric
-  suffix: GunsMilitaryModernCommonGeneric Filled
-  parent: StructureFurnitureLockerMetalThirdTriple
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:NestedSelector
-        tableId: LootTableWeaponGunsMilitaryModernCommonGeneric
+#MARK: ArmyFrench
 
 - type: entity
-  id: StructureFurnitureLockerMetalThirdTripleFilledGunsMilitaryModernCommonGenericRandom50
-  suffix: GunsMilitaryModernCommonGeneric 50%
+  id: StructureFurnitureLockerMetalThirdTripleFilledMilitaryArmyFrench
+  suffix: French Army Filled
   parent: StructureFurnitureLockerMetalThirdTriple
   components:
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableWeaponGunsMilitaryModernCommonGenericRandom50
+        tableId: LootTableLoadoutMilitaryArmyFrench
+
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledMilitaryArmyFrenchRandom50
+  suffix: French Army 50%
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableLoadoutMilitaryArmyFrenchRandom50
+
+#MARK: National Guard
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledMilitaryNationalGuard
+  suffix: National Guard Filled
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableLoadoutMilitaryNationalGuard
+
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledMilitaryNationalGuardRandom50
+  suffix: National Guard 50%
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableLoadoutMilitaryNationalGuardRandom50

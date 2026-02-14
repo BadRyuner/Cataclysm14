@@ -402,7 +402,7 @@
     lifetime: 3
   - type: Reflective
   - type: Clickable
-  - type: Physics
-    bodyType: Dynamic
-    linearDamping: 0
-    angularDamping: 0
+  # - type: Physics
+  #   bodyType: Dynamic
+  #   linearDamping: 0
+  #   angularDamping: 0

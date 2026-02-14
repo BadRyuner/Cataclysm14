@@ -67,6 +67,21 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+#MARK: Tracer Green
+- type: entity
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmTracerGreen
+  name: ammunition box (9x19mm green tracer)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge9x19mmTracerGreen
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
 #MARK: AP6.3
 - type: entity
   parent: BaseAmmoBox9x19mm

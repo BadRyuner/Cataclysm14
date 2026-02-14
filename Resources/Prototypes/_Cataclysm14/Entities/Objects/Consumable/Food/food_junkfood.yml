@@ -1,0 +1,204 @@
+#MARK: StaleChips
+- type: entity
+  parent: FoodSnackBase
+  id: ContainerFoodJunkStaleChips
+  name: stale potato chips
+  description: "A half-crushed bag of potato chips. Stale, but the salt is still going strong."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - salty
+    - oily
+    - stale
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: chips
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Fat
+          Quantity: 3
+        - ReagentId: Sugar
+          Quantity: 1
+
+#MARK: OldCandyBar
+- type: entity
+  parent: FoodSnackBase
+  id: ContainerFoodJunkOldCandyBar
+  name: old candy bar
+  description: "A chocolate bar with white bloom on the surface. Still technically edible."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - chocolate
+    - stale
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: chocolatebar
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Sugar
+          Quantity: 8
+
+#MARK: ExpiredSoda
+- type: entity
+  parent: FoodSnackBase
+  id: ContainerFoodJunkExpiredSoda
+  name: expired soda
+  description: "A dented can of flat soda. The fizz died long ago, but the sugar lives on."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - flat
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: cnds
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Sugar
+          Quantity: 10
+        - ReagentId: Water
+          Quantity: 5
+
+#MARK: DehydratedNoodle
+- type: entity
+  parent: FoodSnackBase
+  id: ContainerFoodJunkNoodleCup
+  name: dehydrated noodle cup
+  description: "Just add water. Or eat them dry like a feral raccoon. No judgment here."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - salty
+    - cheap
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: ramen
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Fat
+          Quantity: 2
+
+#MARK: OldJerky
+- type: entity
+  parent: FoodSnackBase
+  id: ContainerFoodJunkOldJerky
+  name: ancient beef jerky
+  description: "Vacuum-sealed beef jerky of indeterminate age. Still tough, still salty, still jerky."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: Tag
+    tags:
+    - Meat
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: mre-brownie
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 8
+
+#MARK: MysteryCan
+- type: entity
+  parent: BaseItem
+  id: ContainerFoodJunkMysteryCan
+  name: mystery can
+  description: "A tin can with the label completely worn off. Could be anything from peaches to cat food. Spin the wheel."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: icon
+  - type: Item
+    size: Small
+  - type: SpawnItemsOnUse
+    items:
+    - id: ContainerFoodTinChickenSoup
+      prob: 0.3
+      orGroup: Contents
+    - id: ContainerFoodTinBeans
+      prob: 0.3
+      orGroup: Contents
+    - id: ContainerFoodTinSpam
+      prob: 0.3
+      orGroup: Contents
+    - id: ContainerFoodTinCorn
+      prob: 0.3
+      orGroup: Contents
+    - id: ContainerFoodTinDogFood
+      prob: 0.1
+      orGroup: Contents
+    sound:
+      path: /Audio/Items/can_open3.ogg
+
+#MARK: StaleCereal
+- type: entity
+  parent: FoodSnackBase
+  id: ContainerFoodJunkStaleCereal
+  name: stale cereal
+  description: "A box of breakfast cereal. The marshmallows have fused into a solid lump."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - stale
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: boritos
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Sugar
+          Quantity: 5
+
+#MARK: ChewingGum
+- type: entity
+  parent: FoodSnackBase
+  id: ContainerFoodJunkGum
+  name: packet of gum
+  description: "A few sticks of chewing gum. Won't fill you up, but it'll keep your jaw busy."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - minty
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: raisins
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Sugar
+          Quantity: 2

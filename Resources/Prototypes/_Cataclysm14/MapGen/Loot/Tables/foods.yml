@@ -1,0 +1,133 @@
+#Evil file, will have lots and lots and should be split up at some point but idk.
+
+#MARK: CannedGoods
+- type: entityTable
+  id: LootTableFoodCannedGoods
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodCannedChickenSoup
+    - id: ConsumableFoodCannedTomatoSoup
+    - id: ConsumableFoodCannedBeefStew
+    - id: ConsumableFoodCannedBeans
+    - id: ConsumableFoodCannedCorn
+    - id: ConsumableFoodCannedPears
+    - id: ConsumableFoodCannedPineapple
+    - id: ConsumableFoodCannedTuna
+    - id: ConsumableFoodCannedSardines
+    - id: ConsumableFoodCannedSpam
+    - id: ConsumableFoodCannedCornedBeef
+    - id: ConsumableFoodCannedChili
+    - id: ConsumableFoodCannedMixedVeg
+    - id: ConsumableFoodCannedRavioli
+    - id: ConsumableFoodCannedCondensedMilk
+    - id: ConsumableFoodCannedCranberry
+    - id: ConsumableFoodCannedPickledVeg
+    - id: ConsumableFoodCannedStrawberryJam
+    - id: ConsumableFoodTinDogFood
+
+#MARK: LongLasting
+- type: entityTable
+  id: LootTableFoodLongLasting
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodMREPack
+    - id: ConsumableFoodEmergencyRation
+    - id: ConsumableFoodHardtack
+    - id: ConsumableFoodSurvivalCrackers
+    - id: ConsumableFoodProteinBar
+    - id: ConsumableFoodMREPoundCake
+    - id: ConsumableFoodPemmican
+    - id: ConsumableFoodJerky
+    - id: ConsumableFoodJerkyVenison
+    - id: ConsumableFoodInstantCoffee
+
+#MARK: Foraging
+- type: entityTable
+  id: LootTableFoodForaging
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodWildBlackberries
+    - id: ConsumableFoodWildBlueberries
+    - id: ConsumableFoodWildRaspberries
+    - id: ConsumableFoodWintergreen
+    - id: ConsumableFoodRoseHips
+    - id: ConsumableFoodPineNuts
+    - id: ConsumableFoodWildMushroom
+    - id: ConsumableFoodMorelMushroom
+    - id: ConsumableFoodCattailRhizome
+    - id: ConsumableFoodDandelionGreens
+    - id: ConsumableFoodWildGarlic
+    - id: ConsumableFoodFiddleheads
+    - id: ConsumableFoodSarsaparillaRoo
+    - id: ConsumableFoodDeathCap
+    - id: ConsumableFoodElderberries
+    - id: ConsumableFoodAcorns
+    - id: ConsumableFoodEdibleBark
+
+#MARK: CookedMeat
+- type: entityTable
+  id: LootTableFoodCookedMeat
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodMeatVenisonCooked
+    - id: ConsumableFoodMeatRabbitCooked
+    - id: ConsumableFoodMeatSquirrelCooked
+    - id: ConsumableFoodMeatWildBirdCooked
+    - id: ConsumableFoodMeatFreshFishCooked
+    - id: ConsumableFoodMeatFrogLegsCooked
+    - id: ConsumableFoodMeatMutantCooked
+
+#MARK: CookedMeat
+- type: entityTable
+  id: LootTableFoodCookedMeals
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodSoupBoneBroth
+    - id: ConsumableFoodSoupMushroomWild
+    - id: ConsumableFoodSoupHunterStew
+    - id: ConsumableFoodSoupThreeSisters
+    - id: ConsumableFoodSoupFishChowder
+    - id: ConsumableFoodScrambledEggs
+    - id: ConsumableFoodFlatbread
+    - id: ConsumableFoodPorridge
+    - id: ConsumableFoodBoiledPotatoes
+    - id: ConsumableFoodRoastedRoots
+    - id: ConsumableFoodFriedRice
+    - id: ConsumableFoodGrilledVegetables
+    - id: ConsumableFoodMeatSkewer
+    - id: ConsumableFoodBreadSimple
+    - id: ConsumableFoodSoupHellfireStew
+    - id: ConsumableFoodSmokedFish
+    - id: ConsumableFoodAcornMeal
+
+#MARK: CookedMeat
+- type: entityTable
+  id: LootTableFoodJunkFood
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodJunkStaleChips
+    - id: ConsumableFoodJunkOldCandyBar
+    - id: ConsumableFoodJunkGranola
+    - id: ConsumableFoodJunkCrumbledCrackers
+    - id: ConsumableFoodJunkNoodleCup
+    - id: ConsumableFoodJunkOldJerky
+    - id: ConsumableFoodJunkStaleCereal
+    - id: ConsumableFoodJunkMysteryCan
+    - id: ConsumableFoodJunkExpiredSoda
+    - id: ConsumableFoodJunkGum
+
+#MARK: CookedMeat
+- type: entityTable
+  id: LootTableFoodDrinks
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodDrinkBoiledWater
+    - id: ConsumableFoodDrinkPineTea
+    - id: ConsumableFoodDrinkDandelionTea
+    - id: ConsumableFoodDrinkHerbalTea
+    - id: ConsumableFoodDrinkBerryJuice
+    - id: ConsumableFoodDrinkBarkTea
+    - id: ConsumableFoodDrinkKompot
+    - id: ConsumableFoodDrinkDirtyCoffee
+    - id: ConsumableFoodDrinkRehydration
+    - id: ConsumableFoodDrinkMurkyWater

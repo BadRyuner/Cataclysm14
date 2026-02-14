@@ -1,0 +1,744 @@
+#MARK: ChickenSoup
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinChickenSoup
+  name: canned chicken soup
+  description: "A dented tin of chicken noodle soup. Still sealed, still edible. Comfort food for the end of the world."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - salty
+    - chicken
+  - type: Openable
+    openableByHand: true
+    sound:
+      path: /Audio/Items/can_open3.ogg
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Food
+    trash:
+    - ConsumableFoodTinChickenSoupTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinChickenSoupTrash
+  name: canned chicken soup
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: TomatoSoup
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinTomatoSoup
+  name: canned tomato soup
+  description: "Condensed tomato soup in a pull-tab can. Just add water. Or don't."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - tomato
+  - type: Openable
+    openableByHand: true
+    sound:
+      path: /Audio/Items/can_open3.ogg
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Food
+    trash:
+    - ConsumableFoodTinTomatoSoupTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinTomatoSoupTrash
+  name: canned tomato soup
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Stew
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinBeefStew
+  name: canned beef stew
+  description: "A heavy tin of beef stew. Chunks of mystery meat float in thick brown gravy."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - savory
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Fat
+          Quantity: 2
+  - type: Food
+    trash:
+    - ConsumableFoodTinBeefStewTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinBeefStewTrash
+  name: canned beef stew
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Beans
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinBeans
+  name: canned beans
+  description: "Baked beans in a syrupy sauce. The musical fruit of the apocalypse."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - sweet
+    - cheap
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 4
+  - type: Food
+    trash:
+    - ConsumableFoodTinBeansTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinBeansTrash
+  name: canned beans
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Corn
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinCorn
+  name: canned corn
+  description: "Whole kernel sweet corn, packed before the world ended. Surprisingly good cold."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - corn
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 3
+  - type: Food
+    trash:
+    - ConsumableFoodTinCornTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinCornTrash
+  name: canned corn
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Pears
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinPears
+  name: canned pears
+  description: "Pear halves in light syrup. A rare treat in these dark days."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - fruity
+  - type: Tag
+    tags:
+    - Fruit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 2
+        - ReagentId: Sugar
+          Quantity: 4
+  - type: Food
+    trash:
+    - ConsumableFoodTinPearsTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinPearsTrash
+  name: canned pears
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Pineapple
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinPineapple
+  name: canned pineapple
+  description: "Pineapple rings in juice. Tastes like summer used to."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - sour
+    - tropical
+  - type: Tag
+    tags:
+    - Fruit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Vitamin
+          Quantity: 3
+        - ReagentId: Sugar
+          Quantity: 5
+  - type: Food
+    trash:
+    - ConsumableFoodTinPineappleTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinPineappleTrash
+  name: canned pineapple
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Tuna
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinTuna
+  name: canned tuna
+  description: "Chunk light tuna in water. High protein, low morale."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - salty
+  - type: Openable
+    openableByHand: true
+    sound:
+      path: /Audio/Items/can_open3.ogg
+  - type: Tag
+    tags:
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 8
+  - type: Food
+    trash:
+    - ConsumableFoodTinTunaTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinTunaTrash
+  name: canned tuna
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Sardines
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinSardines
+  name: canned sardines
+  description: "Tiny fish packed in oil. The label is in a language you can't read."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - oily
+    - salty
+  - type: Openable
+    openableByHand: true
+    sound:
+      path: /Audio/Items/can_open3.ogg
+  - type: Tag
+    tags:
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Fat
+          Quantity: 4
+  - type: Food
+    trash:
+    - ConsumableFoodTinSardinesTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinSardinesTrash
+  name: canned sardines
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Spam
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinSpam
+  name: canned meat
+  description: "Spiced pork and meat product. Survived nuclear wars, survived this too."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+    - cheap
+  - type: Openable
+    openableByHand: true
+    sound:
+      path: /Audio/Items/can_open3.ogg
+  - type: Tag
+    tags:
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Fat
+          Quantity: 5
+  - type: Food
+    trash:
+    - ConsumableFoodTinSpamTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinSpamTrash
+  name: canned meat
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: CornedBeef
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinCornedBeef
+  name: canned corned beef
+  description: "Salt-cured beef in a distinctive trapezoidal tin. Dense, salty, and satisfying."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: Tag
+    tags:
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 7
+        - ReagentId: Fat
+          Quantity: 3
+  - type: Food
+    trash:
+    - ConsumableFoodTinCornedBeefTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinCornedBeefTrash
+  name: canned corned beef
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Chili
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinChili
+  name: canned chili
+  description: "Spicy chili con carne. The label promises 'Texas-style'. The contents promise heartburn."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - spicy
+    - meaty
+    - savory
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Food
+    trash:
+    - ConsumableFoodTinChiliTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinChiliTrash
+  name: canned chili
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: MixedVeggies
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinMixedVegetables
+  name: canned mixed vegetables
+  description: "Carrots, peas, corn, and green beans. Barely recognizable individually, but nutritious together."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - bland
+    - vegetal
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 6
+  - type: Food
+    trash:
+    - ConsumableFoodTinMixedVegTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinMixedVegTrash
+  name: canned mixed vegetables
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Ravioli
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinRavioli
+  name: canned ravioli
+  description: "Chef Boyar-who? Doesn't matter. Pasta pockets in tomato sauce."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - savory
+    - tomato
+    - cheap
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Protein
+          Quantity: 2
+  - type: Food
+    trash:
+    - ConsumableFoodTinRavioliTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinRavioliTrash
+  name: canned ravioli
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: CondensedMilk
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinCondensedMilk
+  name: canned condensed milk
+  description: "Thick, sweet condensed milk. Great for cooking, or when you need a sugar rush."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - creamy
+    - milk
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Sugar
+          Quantity: 8
+  - type: Food
+    trash:
+    - ConsumableFoodTinCondensedMilkTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinCondensedMilkTrash
+  name: canned condensed milk
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: CranberrySauce
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinCranberrySauce
+  name: canned cranberry sauce
+  description: "Jellied cranberry sauce. Slides out in a perfect cylinder. Don't ask how."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - sour
+    - berry
+  - type: Tag
+    tags:
+    - Fruit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 2
+        - ReagentId: Sugar
+          Quantity: 6
+  - type: Food
+    trash:
+    - ConsumableFoodTinCranberryTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinCranberryTrash
+  name: canned cranberry sauce
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: PickledVeggies
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinPickledVegetables
+  name: pickled vegetables
+  description: "A sealed jar of assorted pickled vegetables. Vinegar-preserved and crunchy."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - sour
+    - salty
+    - vinegar
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Food
+    trash:
+    - ConsumableFoodTinPickledVegTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinPickledVegTrash
+  name: pickled vegetables
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: StrawberryJam
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinStrawberryJam
+  name: strawberry preserves
+  description: "A small jar of strawberry preserves. Someone's grandmother made this. Probably."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Sugar
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Food
+    trash:
+    - ConsumableFoodTinStrawberryJamTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinStrawberryJamTrash
+  name: strawberry preserves
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: DogFood
+- type: entity
+  parent: FoodTinBase
+  id: ConsumableFoodTinDogFood
+  name: canned dog food
+  description: "It says 'for pets only' on the label. Desperate times call for desperate meals."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - terrible
+    - cheap
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: GastroToxin
+          Quantity: 2
+  - type: Food
+    trash:
+    - ConsumableFoodTinDogFoodTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodTinDogFoodTrash
+  name: canned dog food
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+
+#MARK: Jerky
+- type: entity
+  parent: FoodSnackBase
+  id: ConsumableFoodJerky
+  name: dried jerky
+  description: "Vacuum-sealed strips of dried meat. Tough, salty, and practically indestructible."
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    state: mre-brownie
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 10

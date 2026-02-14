@@ -1,0 +1,558 @@
+#MARK: Blackberries
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodWildBlackberries
+  name: wild blackberries
+  description: "A handful of dark, plump berries picked from thorny brambles. Sweet and tart."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - berry
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/berries.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: produce
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 3
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: Blueberries
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodWildBlueberries
+  name: wild blueberries
+  description: "Tiny wild blueberries, smaller and more flavorful than their cultivated cousins."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - berry
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/berries.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: produce
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: Raspberries
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodWildRaspberries
+  name: wild raspberries
+  description: "Delicate red berries that fall apart at a touch. Eat them quickly."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - sour
+    - berry
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/berries.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: produce
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 3
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: Elderberries
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodElderberries
+  name: elderberries
+  description: "Small, dark berries in clusters. Toxic raw but safe when cooked. Your mother smelt of them."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bitter
+    - berry
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/berries.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: produce
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Toxin
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: Wintergreen berries
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodWintergreen
+  name: wintergreen berries
+  description: "Small, brilliant red berries with a refreshing minty taste. A rare winter find."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - minty
+    - sweet
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/berries.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: produce
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: Rosehips
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodRoseHips
+  name: rose hips
+  description: "Small, reddish-orange fruit from wild rose bushes. Extremely high in vitamin C."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sour
+    - floral
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/berries.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: produce
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 8
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: PineNuts
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodPineNuts
+  name: pine nuts
+  description: "Tiny, oily nuts extracted from pine cones. Worth the effort."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - nutty
+    - oily
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: pistachio
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Fat
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 2
+
+#MARK: RawAcorns
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodAcorns
+  name: acorns
+  description: "Raw acorns. Extremely bitter due to tannins. Must be processed before eating."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bitter
+    - nutty
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: pistachio
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Toxin
+          Quantity: 4
+
+#MARK: MushroomWild
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodWildMushroom
+  name: wild mushroom
+  description: "A wild mushroom of uncertain species. Could be delicious. Could be deadly. Only one way to find out."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - earthy
+    - mushroom
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/chanterelle.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: produce
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: MushroomMorel
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodMorelMushroom
+  name: morel mushroom
+  description: "A prized morel mushroom with its distinctive honeycomb cap. Toxic when raw, exquisite when cooked."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - earthy
+    - nutty
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/chanterelle.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: produce
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Toxin
+          Quantity: 2
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: MushroomDeathcap
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodDeathCap
+  name: death cap mushroom
+  description: "A pale, innocent-looking mushroom. The name should be warning enough."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - earthy
+    - mild
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/chanterelle.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: produce
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+        - ReagentId: Toxin
+          Quantity: 15
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: CatTailRhizome
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodCattailRhizome
+  name: cattail rhizome
+  description: "The starchy root of a cattail plant, pulled from the mud. Fibrous and bland, but filling."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bland
+    - starchy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: raisins
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: DandelionGreens
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodDandelionGreens
+  name: dandelion greens
+  description: "Bitter leaves picked from common dandelions. More nutritious than you'd think."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bitter
+    - green
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: raisins
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 5
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: GarlicWild
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodWildGarlic
+  name: wild garlic
+  description: "Pungent wild garlic bulbs dug from the forest floor. The smell keeps zombies away. Probably."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - garlic
+    - pungent
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/onion.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: produce
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: Fiddleheads
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodFiddleheads
+  name: fiddlehead ferns
+  description: "Tightly curled immature fern fronds. A springtime delicacy when cooked."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - green
+    - grassy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: raisins
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 3
+        - ReagentId: Toxin
+          Quantity: 1
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: SarsaprillaRoot
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodSarsaparillaRoot
+  name: sarsaparilla root
+  description: "An aromatic root with a pleasant, root-beer-like scent. Mildly energizing."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - earthy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: raisins
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodSpoiledMoldy
+    stage: 1
+
+#MARK: BarkEdible
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodEdibleBark
+  name: edible bark
+  description: "Inner bark stripped from a pine tree. Tastes like desperate survival, because it is."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - woody
+    - bland
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: nutribrick
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+
+#MARK: InsectsRoasted
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodRoastedInsects
+  name: roasted insects
+  description: "A handful of roasted crickets and grubs. Crunchy, protein-rich, and only slightly nauseating."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - crunchy
+    - nutty
+  - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: semki
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 6
