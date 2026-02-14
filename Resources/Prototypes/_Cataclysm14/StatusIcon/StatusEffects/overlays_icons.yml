@@ -6,4 +6,4 @@
   locationPreference: Right
   priority: -1
   layer: Mod # do not increment the position, draw "on top of" the previous icon
-  offset: -30 # overlap the chat bubble
+  offset: -30 # Bottom right corner
