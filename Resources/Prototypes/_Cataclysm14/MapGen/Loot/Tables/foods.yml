@@ -17,13 +17,13 @@
     - id: ConsumableFoodCannedSpam
     - id: ConsumableFoodCannedCornedBeef
     - id: ConsumableFoodCannedChili
-    - id: ConsumableFoodCannedMixedVeg
+    - id: ConsumableFoodCannedMixedVegetables
     - id: ConsumableFoodCannedRavioli
     - id: ConsumableFoodCannedCondensedMilk
     - id: ConsumableFoodCannedCranberry
     - id: ConsumableFoodCannedPickledVeg
     - id: ConsumableFoodCannedStrawberryJam
-    - id: ConsumableFoodTinDogFood
+    - id: ConsumableFoodCannedDogFood
 
 #MARK: LongLasting
 - type: entityTable
@@ -98,7 +98,7 @@
     - id: ConsumableFoodBreadSimple
     - id: ConsumableFoodSoupHellfireStew
     - id: ConsumableFoodSmokedFish
-    - id: ConsumableFoodAcornMeal
+    - id: ConsumableFoodAcornPaste
 
 #MARK: CookedMeat
 - type: entityTable

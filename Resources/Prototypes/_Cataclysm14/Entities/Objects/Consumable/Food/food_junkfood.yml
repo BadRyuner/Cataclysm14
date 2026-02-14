@@ -1,7 +1,7 @@
 #MARK: StaleChips
 - type: entity
   parent: FoodSnackBase
-  id: ContainerFoodJunkStaleChips
+  id: ConsumableFoodJunkStaleChips
   name: stale potato chips
   description: "A half-crushed bag of potato chips. Stale, but the salt is still going strong."
   components:
@@ -28,7 +28,7 @@
 #MARK: OldCandyBar
 - type: entity
   parent: FoodSnackBase
-  id: ContainerFoodJunkOldCandyBar
+  id: ConsumableFoodJunkOldCandyBar
   name: old candy bar
   description: "A chocolate bar with white bloom on the surface. Still technically edible."
   components:
@@ -52,7 +52,7 @@
 #MARK: ExpiredSoda
 - type: entity
   parent: FoodSnackBase
-  id: ContainerFoodJunkExpiredSoda
+  id: ConsumableFoodJunkExpiredSoda
   name: expired soda
   description: "A dented can of flat soda. The fizz died long ago, but the sugar lives on."
   components:
@@ -76,7 +76,7 @@
 #MARK: DehydratedNoodle
 - type: entity
   parent: FoodSnackBase
-  id: ContainerFoodJunkNoodleCup
+  id: ConsumableFoodJunkNoodleCup
   name: dehydrated noodle cup
   description: "Just add water. Or eat them dry like a feral raccoon. No judgment here."
   components:
@@ -100,7 +100,7 @@
 #MARK: OldJerky
 - type: entity
   parent: FoodSnackBase
-  id: ContainerFoodJunkOldJerky
+  id: ConsumableFoodJunkOldJerky
   name: ancient beef jerky
   description: "Vacuum-sealed beef jerky of indeterminate age. Still tough, still salty, still jerky."
   components:
@@ -127,7 +127,7 @@
 #MARK: MysteryCan
 - type: entity
   parent: BaseItem
-  id: ContainerFoodJunkMysteryCan
+  id: ConsumableFoodJunkMysteryCan
   name: mystery can
   description: "A tin can with the label completely worn off. Could be anything from peaches to cat food. Spin the wheel."
   components:
@@ -159,7 +159,7 @@
 #MARK: StaleCereal
 - type: entity
   parent: FoodSnackBase
-  id: ContainerFoodJunkStaleCereal
+  id: ConsumableFoodJunkStaleCereal
   name: stale cereal
   description: "A box of breakfast cereal. The marshmallows have fused into a solid lump."
   components:
@@ -183,7 +183,7 @@
 #MARK: ChewingGum
 - type: entity
   parent: FoodSnackBase
-  id: ContainerFoodJunkGum
+  id: ConsumableFoodJunkGum
   name: packet of gum
   description: "A few sticks of chewing gum. Won't fill you up, but it'll keep your jaw busy."
   components:

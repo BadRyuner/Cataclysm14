@@ -1,7 +1,7 @@
 #MARK: ChickenSoup
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinChickenSoup
+  id: ConsumableFoodCannedChickenSoup
   name: canned chicken soup
   description: "A dented tin of chicken noodle soup. Still sealed, still edible. Comfort food for the end of the world."
   components:
@@ -29,11 +29,11 @@
           Quantity: 2
   - type: Food
     trash:
-    - ConsumableFoodTinChickenSoupTrash
+    - ConsumableFoodCannedChickenSoupTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinChickenSoupTrash
+  id: ConsumableFoodCannedChickenSoupTrash
   name: canned chicken soup
   components:
   - type: Sprite
@@ -42,7 +42,7 @@
 #MARK: TomatoSoup
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinTomatoSoup
+  id: ConsumableFoodCannedTomatoSoup
   name: canned tomato soup
   description: "Condensed tomato soup in a pull-tab can. Just add water. Or don't."
   components:
@@ -67,11 +67,11 @@
           Quantity: 4
   - type: Food
     trash:
-    - ConsumableFoodTinTomatoSoupTrash
+    - ConsumableFoodCannedTomatoSoupTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinTomatoSoupTrash
+  id: ConsumableFoodCannedTomatoSoupTrash
   name: canned tomato soup
   components:
   - type: Sprite
@@ -80,7 +80,7 @@
 #MARK: Stew
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinBeefStew
+  id: ConsumableFoodCannedBeefStew
   name: canned beef stew
   description: "A heavy tin of beef stew. Chunks of mystery meat float in thick brown gravy."
   components:
@@ -104,11 +104,11 @@
           Quantity: 2
   - type: Food
     trash:
-    - ConsumableFoodTinBeefStewTrash
+    - ConsumableFoodCannedBeefStewTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinBeefStewTrash
+  id: ConsumableFoodCannedBeefStewTrash
   name: canned beef stew
   components:
   - type: Sprite
@@ -117,7 +117,7 @@
 #MARK: Beans
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinBeans
+  id: ConsumableFoodCannedBeans
   name: canned beans
   description: "Baked beans in a syrupy sauce. The musical fruit of the apocalypse."
   components:
@@ -139,11 +139,11 @@
           Quantity: 4
   - type: Food
     trash:
-    - ConsumableFoodTinBeansTrash
+    - ConsumableFoodCannedBeansTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinBeansTrash
+  id: ConsumableFoodCannedBeansTrash
   name: canned beans
   components:
   - type: Sprite
@@ -152,7 +152,7 @@
 #MARK: Corn
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinCorn
+  id: ConsumableFoodCannedCorn
   name: canned corn
   description: "Whole kernel sweet corn, packed before the world ended. Surprisingly good cold."
   components:
@@ -173,11 +173,11 @@
           Quantity: 3
   - type: Food
     trash:
-    - ConsumableFoodTinCornTrash
+    - ConsumableFoodCannedCornTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinCornTrash
+  id: ConsumableFoodCannedCornTrash
   name: canned corn
   components:
   - type: Sprite
@@ -186,7 +186,7 @@
 #MARK: Pears
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinPears
+  id: ConsumableFoodCannedPears
   name: canned pears
   description: "Pear halves in light syrup. A rare treat in these dark days."
   components:
@@ -212,11 +212,11 @@
           Quantity: 4
   - type: Food
     trash:
-    - ConsumableFoodTinPearsTrash
+    - ConsumableFoodCannedPearsTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinPearsTrash
+  id: ConsumableFoodCannedPearsTrash
   name: canned pears
   components:
   - type: Sprite
@@ -225,7 +225,7 @@
 #MARK: Pineapple
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinPineapple
+  id: ConsumableFoodCannedPineapple
   name: canned pineapple
   description: "Pineapple rings in juice. Tastes like summer used to."
   components:
@@ -252,11 +252,11 @@
           Quantity: 5
   - type: Food
     trash:
-    - ConsumableFoodTinPineappleTrash
+    - ConsumableFoodCannedPineappleTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinPineappleTrash
+  id: ConsumableFoodCannedPineappleTrash
   name: canned pineapple
   components:
   - type: Sprite
@@ -265,7 +265,7 @@
 #MARK: Tuna
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinTuna
+  id: ConsumableFoodCannedTuna
   name: canned tuna
   description: "Chunk light tuna in water. High protein, low morale."
   components:
@@ -293,11 +293,11 @@
           Quantity: 8
   - type: Food
     trash:
-    - ConsumableFoodTinTunaTrash
+    - ConsumableFoodCannedTunaTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinTunaTrash
+  id: ConsumableFoodCannedTunaTrash
   name: canned tuna
   components:
   - type: Sprite
@@ -306,7 +306,7 @@
 #MARK: Sardines
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinSardines
+  id: ConsumableFoodCannedSardines
   name: canned sardines
   description: "Tiny fish packed in oil. The label is in a language you can't read."
   components:
@@ -337,11 +337,11 @@
           Quantity: 4
   - type: Food
     trash:
-    - ConsumableFoodTinSardinesTrash
+    - ConsumableFoodCannedSardinesTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinSardinesTrash
+  id: ConsumableFoodCannedSardinesTrash
   name: canned sardines
   components:
   - type: Sprite
@@ -350,7 +350,7 @@
 #MARK: Spam
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinSpam
+  id: ConsumableFoodCannedSpam
   name: canned meat
   description: "Spiced pork and meat product. Survived nuclear wars, survived this too."
   components:
@@ -381,11 +381,11 @@
           Quantity: 5
   - type: Food
     trash:
-    - ConsumableFoodTinSpamTrash
+    - ConsumableFoodCannedSpamTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinSpamTrash
+  id: ConsumableFoodCannedSpamTrash
   name: canned meat
   components:
   - type: Sprite
@@ -394,7 +394,7 @@
 #MARK: CornedBeef
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinCornedBeef
+  id: ConsumableFoodCannedCornedBeef
   name: canned corned beef
   description: "Salt-cured beef in a distinctive trapezoidal tin. Dense, salty, and satisfying."
   components:
@@ -420,11 +420,11 @@
           Quantity: 3
   - type: Food
     trash:
-    - ConsumableFoodTinCornedBeefTrash
+    - ConsumableFoodCannedCornedBeefTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinCornedBeefTrash
+  id: ConsumableFoodCannedCornedBeefTrash
   name: canned corned beef
   components:
   - type: Sprite
@@ -433,7 +433,7 @@
 #MARK: Chili
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinChili
+  id: ConsumableFoodCannedChili
   name: canned chili
   description: "Spicy chili con carne. The label promises 'Texas-style'. The contents promise heartburn."
   components:
@@ -457,11 +457,11 @@
           Quantity: 1
   - type: Food
     trash:
-    - ConsumableFoodTinChiliTrash
+    - ConsumableFoodCannedChiliTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinChiliTrash
+  id: ConsumableFoodCannedChiliTrash
   name: canned chili
   components:
   - type: Sprite
@@ -470,7 +470,7 @@
 #MARK: MixedVeggies
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinMixedVegetables
+  id: ConsumableFoodCannedMixedVegetables
   name: canned mixed vegetables
   description: "Carrots, peas, corn, and green beans. Barely recognizable individually, but nutritious together."
   components:
@@ -491,11 +491,11 @@
           Quantity: 6
   - type: Food
     trash:
-    - ConsumableFoodTinMixedVegTrash
+    - ConsumableFoodCannedMixedVegTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinMixedVegTrash
+  id: ConsumableFoodCannedMixedVegTrash
   name: canned mixed vegetables
   components:
   - type: Sprite
@@ -504,7 +504,7 @@
 #MARK: Ravioli
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinRavioli
+  id: ConsumableFoodCannedRavioli
   name: canned ravioli
   description: "Chef Boyar-who? Doesn't matter. Pasta pockets in tomato sauce."
   components:
@@ -526,11 +526,11 @@
           Quantity: 2
   - type: Food
     trash:
-    - ConsumableFoodTinRavioliTrash
+    - ConsumableFoodCannedRavioliTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinRavioliTrash
+  id: ConsumableFoodCannedRavioliTrash
   name: canned ravioli
   components:
   - type: Sprite
@@ -539,7 +539,7 @@
 #MARK: CondensedMilk
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinCondensedMilk
+  id: ConsumableFoodCannedCondensedMilk
   name: canned condensed milk
   description: "Thick, sweet condensed milk. Great for cooking, or when you need a sugar rush."
   components:
@@ -561,11 +561,11 @@
           Quantity: 8
   - type: Food
     trash:
-    - ConsumableFoodTinCondensedMilkTrash
+    - ConsumableFoodCannedCondensedMilkTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinCondensedMilkTrash
+  id: ConsumableFoodCannedCondensedMilkTrash
   name: canned condensed milk
   components:
   - type: Sprite
@@ -574,7 +574,7 @@
 #MARK: CranberrySauce
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinCranberrySauce
+  id: ConsumableFoodCannedCranberrySauce
   name: canned cranberry sauce
   description: "Jellied cranberry sauce. Slides out in a perfect cylinder. Don't ask how."
   components:
@@ -601,11 +601,11 @@
           Quantity: 6
   - type: Food
     trash:
-    - ConsumableFoodTinCranberryTrash
+    - ConsumableFoodCannedCranberryTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinCranberryTrash
+  id: ConsumableFoodCannedCranberryTrash
   name: canned cranberry sauce
   components:
   - type: Sprite
@@ -614,7 +614,7 @@
 #MARK: PickledVeggies
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinPickledVegetables
+  id: ConsumableFoodCannedPickledVegetables
   name: pickled vegetables
   description: "A sealed jar of assorted pickled vegetables. Vinegar-preserved and crunchy."
   components:
@@ -636,11 +636,11 @@
           Quantity: 4
   - type: Food
     trash:
-    - ConsumableFoodTinPickledVegTrash
+    - ConsumableFoodCannedPickledVegTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinPickledVegTrash
+  id: ConsumableFoodCannedPickledVegTrash
   name: pickled vegetables
   components:
   - type: Sprite
@@ -649,7 +649,7 @@
 #MARK: StrawberryJam
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinStrawberryJam
+  id: ConsumableFoodCannedStrawberryJam
   name: strawberry preserves
   description: "A small jar of strawberry preserves. Someone's grandmother made this. Probably."
   components:
@@ -672,11 +672,11 @@
           Quantity: 1
   - type: Food
     trash:
-    - ConsumableFoodTinStrawberryJamTrash
+    - ConsumableFoodCannedStrawberryJamTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinStrawberryJamTrash
+  id: ConsumableFoodCannedStrawberryJamTrash
   name: strawberry preserves
   components:
   - type: Sprite
@@ -685,7 +685,7 @@
 #MARK: DogFood
 - type: entity
   parent: FoodTinBase
-  id: ConsumableFoodTinDogFood
+  id: ConsumableFoodCannedDogFood
   name: canned dog food
   description: "It says 'for pets only' on the label. Desperate times call for desperate meals."
   components:
@@ -709,11 +709,11 @@
           Quantity: 2
   - type: Food
     trash:
-    - ConsumableFoodTinDogFoodTrash
+    - ConsumableFoodCannedDogFoodTrash
 
 - type: entity
   parent: FoodTinBaseTrash
-  id: ConsumableFoodTinDogFoodTrash
+  id: ConsumableFoodCannedDogFoodTrash
   name: canned dog food
   components:
   - type: Sprite

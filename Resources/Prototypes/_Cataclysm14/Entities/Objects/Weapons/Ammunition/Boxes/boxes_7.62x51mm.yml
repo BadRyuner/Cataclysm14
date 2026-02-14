@@ -52,6 +52,21 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+#MARK: .308 Winchester
+- type: entity
+  parent: BaseAmmoBox7.62x51mm
+  id: AmmoBox7.62x51mm308Winchester
+  name: ammunition box (.308 Winchester)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x51mm308Winchester
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
 #MARK: Tracer Yellow
 - type: entity
   parent: BaseAmmoBox7.62x51mm
