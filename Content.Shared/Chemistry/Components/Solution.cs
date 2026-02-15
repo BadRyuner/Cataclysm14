@@ -36,9 +36,16 @@ namespace Content.Shared.Chemistry.Components
         ///     initialization. Note that most solution methods ignore max volume altogether, but various solution
         ///     systems use this.
         /// </remarks>
+
+        [DataField("maxVolLiter")] //Cataclysm14, maxvol, but *1000
+        [ViewVariables(VVAccess.ReadWrite)]
+        public FixedPoint2 MaxVolumeLiter { get; set; } = FixedPoint2.Zero;
+
         [DataField("maxVol")]
         [ViewVariables(VVAccess.ReadWrite)]
-        public FixedPoint2 MaxVolume { get; set; } = FixedPoint2.Zero;
+        public FixedPoint2 MaxVolumeMiliLiter { get; set; } = FixedPoint2.Zero;
+
+        public FixedPoint2 MaxVolume  { get; set; } = MaxVolumeMiliLiter + MaxVolumeLiter*1000;
 
         public float FillFraction => MaxVolume == 0 ? 1 : Volume.Float() / MaxVolume.Float();
 

@@ -97,33 +97,6 @@
         - ReagentId: Fat
           Quantity: 2
 
-#MARK: OldJerky
-- type: entity
-  parent: FoodSnackBase
-  id: ConsumableFoodJunkOldJerky
-  name: ancient beef jerky
-  description: "Vacuum-sealed beef jerky of indeterminate age. Still tough, still salty, still jerky."
-  components:
-  - type: FlavorProfile
-    flavors:
-    - meaty
-    - salty
-  - type: Tag
-    tags:
-    - Meat
-  - type: Sprite
-    sprite: Objects/Consumable/Food/snacks.rsi  # TODO: Replace with Cataclysm14-specific sprites
-    state: mre-brownie
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 15
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 4
-        - ReagentId: Protein
-          Quantity: 8
-
 #MARK: MysteryCan
 - type: entity
   parent: BaseItem

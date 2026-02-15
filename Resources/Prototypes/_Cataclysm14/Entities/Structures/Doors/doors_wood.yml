@@ -76,3 +76,8 @@
   - type: IconSmooth
     key: walls
     mode: NoSprite
+  - type: InteractionPopup
+    interactSuccessString: comp-window-knock
+    messagePerceivedByOthers: comp-window-knock
+    interactSuccessSound:
+      path: /Audio/Effects/glass_knock.ogg

@@ -1,0 +1,507 @@
+#MARK: VenisonRaw
+- type: entity
+  parent: FoodMeatRawBase
+  id: ConsumableFoodMeatVenisonRaw
+  name: raw venison
+  description: "A slab of raw deer meat. Lean, gamey, and best not eaten as-is."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - gamey
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_venison.rsi
+    state: venison-raw
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Fat
+          Quantity: 5
+
+#MARK: RabbitRaw
+- type: entity
+  parent: FoodMeatRawBase
+  id: ConsumableFoodMeatRabbitRaw
+  name: raw rabbit meat
+  description: "A small portion of raw rabbit. Lean and delicate."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_rabbit.rsi
+    state: rabbit-raw
+    scale: 0.4,0.4
+  - type: Item
+    storedScale: 2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 7
+        - ReagentId: Fat
+          Quantity: 2
+
+#MARK: SquirrelRaw
+- type: entity
+  parent: FoodMeatRawBase
+  id: ConsumableFoodMeatSquirrelRaw
+  name: raw squirrel meat
+  description: "A tiny portion of raw squirrel meat. Barely a mouthful."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_squirrel.rsi
+    state: squirrel-raw
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 4
+        - ReagentId: Fat
+          Quantity: 2
+
+#MARK: BirdRaw
+- type: entity
+  parent: FoodMeatRawBase
+  id: ConsumableFoodMeatWildBirdRaw
+  name: raw wild bird
+  description: "Raw game bird meat. Plucked and ready for cooking."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - chicken
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_bird.rsi
+    state: bird-raw
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 8
+        - ReagentId: Fat
+          Quantity: 4
+
+#MARK: FishRaw
+- type: entity
+  parent: FoodMeatRawBase
+  id: ConsumableFoodMeatFreshFishRaw
+  name: raw freshwater fish
+  description: "A freshly caught freshwater fish fillet. Cook it before parasites cook you."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - fishy
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_fish.rsi
+    state: fish-raw
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2
+    shape:
+    - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 8
+        - ReagentId: Fat
+          Quantity: 3
+
+#MARK: MutantRaw
+- type: entity
+  parent: FoodMeatRawBase
+  id: ConsumableFoodMeatMutantRaw
+  name: raw mutant meat
+  description: "Meat from a heavily mutated creature. The flesh has an unsettling iridescent sheen and an unidentifiable odor."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - bitter
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_mutant.rsi
+    state: mutant-raw
+    scale: 0.7,0.7
+  - type: Item
+    storedScale: 2
+    shape:
+    - 0,0,1,1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 8
+        - ReagentId: Fat
+          Quantity: 4
+        - ReagentId: Toxin
+          Quantity: 3
+
+#MARK: FrogRaw
+- type: entity
+  parent: FoodMeatRawBase
+  id: ConsumableFoodMeatFrogRaw
+  name: raw frog legs
+  description: "A pair of raw frog legs. They say it tastes like chicken. 'They' have never eaten frog."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_frog.rsi
+    state: frog-raw
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Fat
+          Quantity: 2
+
+#MARK: VenisonCooked
+- type: entity
+  parent: FoodMeatBase
+  id: ConsumableFoodMeatVenisonCooked
+  name: venison steak
+  description: "A perfectly seared venison steak. Lean, slightly gamey, deeply satisfying."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - gamey
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_venison.rsi
+    state: venison-cooked
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Protein
+          Quantity: 8
+        - ReagentId: Fat
+          Quantity: 2
+
+#MARK: RabbitCooked
+- type: entity
+  parent: FoodMeatBase
+  id: ConsumableFoodMeatRabbitCooked
+  name: cooked rabbit
+  description: "Roasted rabbit meat, tender and mild-flavored."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_rabbit.rsi
+    state: rabbit-cooked
+    scale: 0.4,0.4
+  - type: Item
+    storedScale: 2
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Fat
+          Quantity: 1
+
+#MARK: SquirrelCooked
+- type: entity
+  parent: FoodMeatBase
+  id: ConsumableFoodMeatSquirrelCooked
+  name: roasted squirrel
+  description: "Roasted squirrel. A small meal, but protein is protein."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - nutty
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_squirrel.rsi
+    state: squirrel-cooked
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 4
+
+#MARK: BirdCooked
+- type: entity
+  parent: FoodMeatBase
+  id: ConsumableFoodMeatWildBirdCooked
+  name: roasted wild bird
+  description: "Roasted game bird. The skin is crispy and the meat is juicy."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - chicken
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_bird.rsi
+    state: bird-cooked
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 7
+        - ReagentId: Fat
+          Quantity: 2
+
+#MARK: FishCooked
+- type: entity
+  parent: FoodMeatBase
+  id: ConsumableFoodMeatFreshFishCooked
+  name: pan-fried fish
+  description: "A golden-brown fish fillet. Simple preparation, excellent results."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - savory
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_fish.rsi
+    state: fish-cooked
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2
+    shape:
+    - 0,0,1,0
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 7
+        - ReagentId: Vitamin
+          Quantity: 2
+
+#MARK: MutantCooked
+- type: entity
+  parent: FoodMeatBase
+  id: ConsumableFoodMeatMutantCooked
+  name: cooked mutant meat
+  description: "Cooked mutant meat. The heat has neutralized most of the toxins. Most of them."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - bitter
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_mutant.rsi
+    state: mutant-cooked
+    scale: 0.7,0.7
+  - type: Item
+    storedScale: 2
+    shape:
+    - 0,0,1,1
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Toxin
+          Quantity: 1
+
+#MARK: FrogCooked
+- type: entity
+  parent: FoodMeatBase
+  id: ConsumableFoodMeatFrogCooked
+  name: fried frog legs
+  description: "Fried frog legs. Crispy on the outside, tender within. Actually does taste like chicken."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - chicken
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_frog.rsi
+    state: frog-cooked
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Fat
+          Quantity: 1
+
+#MARK: JerkyOld
+- type: entity
+  parent: FoodSnackBase
+  id: ConsumableFoodJunkOldJerky
+  name: ancient beef jerky
+  description: "Vacuum-sealed beef jerky of indeterminate age. Still tough, still salty, still jerky."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: Tag
+    tags:
+    - Meat
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_jerky.rsi
+    state: jerky-old
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 8
+
+#MARK: JerkyVenison
+- type: entity
+  parent: FoodInjectableBase
+  id: ConsumableFoodJerkyVenison
+  name: venison jerky
+  description: "Strips of salted and dried venison. Chewy, salty, and practically indestructible. Your jaw will give out before this does."
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+    - smoky
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_jerky.rsi
+    state: jerky-cooked
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 10
+
+#MARK: Jerky
+- type: entity
+  parent: FoodSnackBase
+  id: ConsumableFoodJerky
+  name: dried jerky
+  description: "Vacuum-sealed strips of dried meat. Tough, salty, and practically indestructible."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/Meat/meat_jerky.rsi
+    state: jerky-dried
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 10

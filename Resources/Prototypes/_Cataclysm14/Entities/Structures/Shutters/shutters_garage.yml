@@ -1,0 +1,123 @@
+- type: entity
+  id: StructureShutterGarageBase
+  parent: BaseShutter
+  name: garage door
+  description: Garage door to protect your vehicles.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Shutters/shutter_garage_base.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    openDrawDepth: BlastDoors
+    closedDrawDepth: BlastDoors
+    bumpOpen: false
+    clickOpen: false
+    closeTimeOne: 0.3
+    closeTimeTwo: 1.5
+    openTimeOne: 1.5
+    openTimeTwo: 0.3
+    openingAnimationTime: 1.6
+    closingAnimationTime: 1.6
+    crushDamage:
+      types:
+        Blunt: 5
+    openSound:
+      path: /Audio/Machines/shutter.ogg
+    closeSound:
+      path: /Audio/Machines/shutter.ogg
+  - type: Occluder
+  - type: Airtight
+    airBlocked: true
+  # - type: Construction
+  #   graph: Shutters
+  #   node: ShuttersRadiation
+  #   containers:
+  #   - board
+  # - type: RadiationBlocker
+  #   resistance: 4
+
+- type: entity
+  id: StructureShutterGarageBaseOpen
+  parent: StructureShutterGarageBase
+  suffix: Open
+  components:
+  - type: Airtight
+    airBlocked: false
+  - type: Door
+    state: Open
+  - type: Occluder
+    enabled: false
+  - type: Physics
+    canCollide: false
+  # - type: RadiationBlocker
+  #   enabled: false
+
+- type: entity
+  id: StructureShutterGarageReinforcedBase
+  parent: StructureShutterGarageBase
+  name: reinforced garage door
+  description: Sturdy shutters to protect a shop from thieves.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Shutters/shutter_garage_reinforced.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    openDrawDepth: BlastDoors
+    closedDrawDepth: BlastDoors
+    canPry: false
+    bumpOpen: false
+    clickOpen: false
+    closeTimeOne: 0.3
+    closeTimeTwo: 1.5
+    openTimeOne: 1.5
+    openTimeTwo: 0.3
+    openingAnimationTime: 1.6
+    closingAnimationTime: 1.6
+    crushDamage:
+      types:
+        Blunt: 5
+    openSound:
+      path: /Audio/Machines/shutter.ogg
+    closeSound:
+      path: /Audio/Machines/shutter.ogg
+  - type: Occluder
+  - type: Airtight
+    airBlocked: true
+  # - type: Construction
+  #   graph: Shutters
+  #   node: ShuttersRadiation
+  #   containers:
+  #   - board
+  # - type: RadiationBlocker
+  #   resistance: 4
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1250 #Don't really want those to be easily destroyed
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: StructureShutterGarageReinforcedBaseOpen
+  parent: StructureShutterGarageReinforcedBase
+  suffix: Open
+  components:
+  - type: Airtight
+    airBlocked: false
+  - type: Door
+    state: Open
+  - type: Occluder
+    enabled: false
+  - type: Physics
+    canCollide: false
+  # - type: RadiationBlocker
+  #   enabled: false
