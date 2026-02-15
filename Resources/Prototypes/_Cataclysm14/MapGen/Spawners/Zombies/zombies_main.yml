@@ -1,0 +1,36 @@
+- type: entity
+  name: zombie spawner
+  id: BaseEntitiesSpawnerMobZombies
+  abstract: true
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Cataclysm14/Mapping/Spawners/zombies.rsi
+        state: zombie-bodybag
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+
+- type: entity
+  name: zombie spawner
+  id: EntitiesSpawnerMobZombiesPoliceStation
+  suffix: Police Station
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableSpawnerMobZombiePoliceStation
+      prob: 0.5
+
+- type: entity
+  name: zombie spawner
+  id: EntitiesSpawnerMobZombiesBasic
+  suffix: Basic
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableMobZombieBasic
+      prob: 0.5
