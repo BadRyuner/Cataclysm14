@@ -1,0 +1,77 @@
+# EntityTableOutfitContainerFill — Example & Reference
+#
+# This component fills an entity's containers on MapInit using two fields:
+#
+#   containers:  Slots always filled, regardless of outfit selection.
+#                Works just like EntityTableContainerFill when used alone.
+#   outfits:     A list of weighted outfit sets. ONE is picked at random.
+#                Its slots are merged with containers, overriding on conflict.
+#
+# Use cases:
+#   - containers only:        Acts like EntityTableContainerFill (no coordination needed).
+#   - outfits only:           Pure random outfit selection (every slot coordinated).
+#   - containers + outfits:   Shared gear (helmet, boots, vest) + coordinated variants
+#                             (matching camo pants + shirt). Outfits override containers
+#                             if they share the same container ID.
+#
+# Outfit weight:
+#   Each outfit set has an optional "weight" field (default 1.0).
+#   Higher weight = more likely to be picked.
+#
+# ─── EXAMPLE ────────────────────────────────────────────────────────────────────
+#
+# This entity always spawns with boots and a vest (containers), then randomly picks
+# either a desert camo set OR a woodland camo set for pants + shirt.
+# The desert set is twice as likely (weight: 2).
+#
+# - type: entity
+#   parent: SomeBaseMob
+#   id: ExampleOutfitMob
+#   components:
+#   - type: EntityTableOutfitContainerFill
+#     containers:
+#       shoes: !type:GroupSelector
+#         children:
+#         - id: ClothingShoesCombatBoots
+#         prob: 0.99
+#       outerClothing: !type:GroupSelector
+#         children:
+#         - id: ClothingOuterBulletProofVest
+#         prob: 0.95
+#     outfits:
+#     - weight: 2
+#       slots:
+#         pants: !type:GroupSelector
+#           children:
+#           - id: ClothingPantsDesertCamo
+#           - id: ClothingPantsDesertCamoCargo
+#         jumpsuit: !type:GroupSelector
+#           children:
+#           - id: ClothingShirtDesertCamo
+#           prob: 0.9
+#     - slots:
+#         pants: !type:GroupSelector
+#           children:
+#           - id: ClothingPantsWoodlandCamo
+#         jumpsuit: !type:GroupSelector
+#           children:
+#           - id: ClothingShirtWoodlandCamo
+#           prob: 0.9
+#
+# ─── CONTAINERS-ONLY EXAMPLE ──────────────────────────────────────────────────
+#
+# No outfits — just fills containers like EntityTableContainerFill would.
+#
+# - type: entity
+#   parent: SomeBaseMob
+#   id: ExampleContainersOnlyMob
+#   components:
+#   - type: EntityTableOutfitContainerFill
+#     containers:
+#       shoes: !type:GroupSelector
+#         children:
+#         - id: ClothingShoesBoots
+#         prob: 0.99
+#       pants: !type:NestedSelector
+#         tableId: LootTableClothingBottomCivilian
+#         prob: 0.99

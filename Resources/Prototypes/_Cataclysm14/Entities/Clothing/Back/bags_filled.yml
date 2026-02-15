@@ -1,0 +1,19 @@
+#MARK: Filled Alice Pack (Tan) - Military
+- type: entity
+  parent: ClothingBackpackAlicePackTan
+  id: ClothingBackpackAlicePackTanFilledMilitary
+  suffix: Filled, Military
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBoxMilitaryGradeLowTier
+          prob: 0.4
+        - !type:NestedSelector
+          tableId: LootTableFoodLongLasting
+          prob: 0.3
+        - !type:NestedSelector
+          tableId: LootTableFoodCannedGoods
+          prob: 0.2
