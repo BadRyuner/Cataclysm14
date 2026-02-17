@@ -159,36 +159,6 @@
         - ReagentId: Fat
           Quantity: 3
 
-#MARK: JerkyVenison
-- type: entity
-  parent: FoodInjectableBase
-  id: ConsumableFoodJerkyVenison
-  name: venison jerky
-  description: "Strips of salted and dried venison. Chewy, salty, and practically indestructible. Your jaw will give out before this does."
-  components:
-  - type: FlavorProfile
-    flavors:
-    - meaty
-    - salty
-    - smoky
-  - type: Sprite
-    sprite: Objects/Consumable/Food/snacks.rsi # TODO: Replace with Cataclysm14-specific sprites
-    state: mre-brownie
-  - type: Item
-    size: Small
-  - type: Tag
-    tags:
-    - Meat
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 6
-        - ReagentId: Protein
-          Quantity: 10
-
 #MARK: SmokedFish
 - type: entity
   parent: FoodInjectableBase

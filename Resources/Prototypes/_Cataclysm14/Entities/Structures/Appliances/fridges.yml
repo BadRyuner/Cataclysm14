@@ -38,7 +38,7 @@
         acts: [ "Destruction" ]
   - type: Storage
     grid:
-    - 0,0,15,15
+    - 0,0,7,13
     maxItemSize: Huge
   - type: ContainerContainer
     containers:

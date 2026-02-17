@@ -718,27 +718,3 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
-
-#MARK: Jerky
-- type: entity
-  parent: FoodSnackBase
-  id: ConsumableFoodJerky
-  name: dried jerky
-  description: "Vacuum-sealed strips of dried meat. Tough, salty, and practically indestructible."
-  components:
-  - type: Sprite
-    sprite: Objects/Consumable/Food/snacks.rsi  # TODO: Replace with Cataclysm14-specific sprites
-    state: mre-brownie
-  - type: FlavorProfile
-    flavors:
-    - meaty
-    - salty
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 30
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 6
-        - ReagentId: Protein
-          Quantity: 10

@@ -1,0 +1,293 @@
+#Evil file, will have lots and lots and should be split up at some point but idk.
+
+#MARK: FridgeBasic
+- type: entityTable
+  id: LootTableFoodFridgeBasicRandom50
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodFridgeBasic
+        prob: 0.5
+
+- type: entityTable
+  id: LootTableFoodFridgeBasic
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodForaging
+        rolls: !type:RangeNumberSelector
+          range: 0,5
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodCookedMeat
+        rolls: !type:RangeNumberSelector
+          range: 0,5
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodCookedMeals
+        rolls: !type:RangeNumberSelector
+          range: 0,5
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodDrinksClean
+        rolls: !type:RangeNumberSelector
+          range: 0,5
+
+#MARK: FridgeFood
+- type: entityTable
+  id: LootTableFoodFridgeFoodRandom50
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodFridgeFood
+        prob: 0.5
+
+- type: entityTable
+  id: LootTableFoodFridgeFood
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodForaging
+        rolls: !type:RangeNumberSelector
+          range: 0,8
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodCookedMeat
+        rolls: !type:RangeNumberSelector
+          range: 0,8
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodCookedMeals
+        rolls: !type:RangeNumberSelector
+          range: 0,8
+
+#MARK: FridgeDrinks
+- type: entityTable
+  id: LootTableFoodFridgeDrinksRandom50
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodFridgeDrinks
+        prob: 0.5
+
+- type: entityTable
+  id: LootTableFoodFridgeDrinks
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodDrinksClean
+        rolls: !type:RangeNumberSelector
+          range: 0,20
+
+#MARK: ShelfLongLasting
+- type: entityTable
+  id: LootTableFoodShelfLongLastingRandom50
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodShelfLongLasting
+        prob: 0.5
+
+- type: entityTable
+  id: LootTableFoodShelfLongLasting
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodCannedGoods
+        rolls: !type:RangeNumberSelector
+          range: 0,10
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodLongLasting
+        rolls: !type:RangeNumberSelector
+          range: 0,10
+
+#MARK: CannedGoods
+- type: entityTable
+  id: LootTableFoodCannedGoods
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodCannedChickenSoup
+    - id: ConsumableFoodCannedTomatoSoup
+    - id: ConsumableFoodCannedBeefStew
+    - id: ConsumableFoodCannedBeans
+    - id: ConsumableFoodCannedCorn
+    - id: ConsumableFoodCannedPears
+    - id: ConsumableFoodCannedPineapple
+    - id: ConsumableFoodCannedTuna
+    - id: ConsumableFoodCannedSardines
+    - id: ConsumableFoodCannedSpam
+    - id: ConsumableFoodCannedCornedBeef
+    - id: ConsumableFoodCannedChili
+    - id: ConsumableFoodCannedMixedVegetables
+    - id: ConsumableFoodCannedRavioli
+    - id: ConsumableFoodCannedCondensedMilk
+    - id: ConsumableFoodCannedCranberrySauce
+    - id: ConsumableFoodCannedPickledVegetables
+    - id: ConsumableFoodCannedStrawberryJam
+    - id: ConsumableFoodCannedDogFood
+
+#MARK: LongLasting
+- type: entityTable
+  id: LootTableFoodLongLasting
+  table: !type:GroupSelector
+    children:
+    - id: ContainerMreUsArmyFilledFood
+    - id: ConsumableFoodEmergencyRationBar
+    - id: ConsumableFoodHardtack
+    - id: ConsumableFoodSurvivalCrackers
+    - id: ConsumableFoodProteinBar
+    - id: ConsumableFoodMREPoundCake
+    - id: ConsumableFoodPemmican
+    - id: ConsumableFoodJerky
+    - id: ConsumableFoodJerkyVenison
+    - id: ConsumableFoodInstantCoffee
+
+#MARK: Foraging
+- type: entityTable
+  id: LootTableFoodForaging
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodWildBlackberries
+    - id: ConsumableFoodWildBlueberries
+    - id: ConsumableFoodWildRaspberries
+    - id: ConsumableFoodWintergreen
+    - id: ConsumableFoodRoseHips
+    - id: ConsumableFoodPineNuts
+    - id: ConsumableFoodWildMushroom
+    - id: ConsumableFoodMorelMushroom
+    - id: ConsumableFoodCattailRhizome
+    - id: ConsumableFoodDandelionGreens
+    - id: ConsumableFoodWildGarlic
+    - id: ConsumableFoodFiddleheads
+    - id: ConsumableFoodSarsaparillaRoot
+    - id: ConsumableFoodDeathCap
+    - id: ConsumableFoodElderberries
+    - id: ConsumableFoodAcorns
+    - id: ConsumableFoodEdibleBark
+
+#MARK: CookedMeat
+- type: entityTable
+  id: LootTableFoodCookedMeat
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodMeatVenisonCooked
+    - id: ConsumableFoodMeatRabbitCooked
+    - id: ConsumableFoodMeatSquirrelCooked
+    - id: ConsumableFoodMeatWildBirdCooked
+    - id: ConsumableFoodMeatFreshFishCooked
+    - id: ConsumableFoodMeatFrogCooked
+    - id: ConsumableFoodMeatMutantCooked
+
+#MARK: CookedMeals
+- type: entityTable
+  id: LootTableFoodCookedMeals
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodSoupBoneBroth
+    - id: ConsumableFoodSoupMushroomWild
+    - id: ConsumableFoodSoupHunterStew
+    - id: ConsumableFoodSoupThreeSisters
+    - id: ConsumableFoodSoupFishChowder
+    - id: ConsumableFoodScrambledEggs
+    - id: ConsumableFoodFlatbread
+    - id: ConsumableFoodPorridge
+    - id: ConsumableFoodBoiledPotatoes
+    - id: ConsumableFoodRoastedRoots
+    - id: ConsumableFoodFriedRice
+    - id: ConsumableFoodGrilledVegetables
+    - id: ConsumableFoodMeatSkewer
+    - id: ConsumableFoodBreadSimple
+    - id: ConsumableFoodSoupHellfireStew
+    - id: ConsumableFoodSmokedFish
+    - id: ConsumableFoodAcornPaste
+
+#MARK: FoodJunk
+- type: entityTable
+  id: LootTableFoodJunk
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodJunkStaleChips
+    - id: ConsumableFoodJunkOldCandyBar
+    - id: ConsumableFoodJunkNoodleCup
+    - id: ConsumableFoodJunkOldJerky
+    - id: ConsumableFoodJunkStaleCereal
+    - id: ConsumableFoodJunkMysteryCan
+    - id: ConsumableFoodJunkExpiredSoda
+    - id: ConsumableFoodJunkGum
+
+#MARK: Drinks
+- type: entityTable
+  id: LootTableFoodDrinksClean
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodDrinkWaterClean
+    - id: ConsumableFoodDrinkPineTea
+    - id: ConsumableFoodDrinkDandelionTea
+    - id: ConsumableFoodDrinkHerbalTea
+    - id: ConsumableFoodDrinkBerryJuice
+    - id: ConsumableFoodDrinkBarkTea
+    - id: ConsumableFoodDrinkKompot
+    - id: ConsumableFoodDrinkRehydration
+
+#MARK: Drinks
+- type: entityTable
+  id: LootTableFoodDrinksDirty
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodDrinkDirtyCoffee
+    - id: ConsumableFoodDrinkMurkyWater
+
+#MARK: US Army MRE
+- type: entityTable
+  id: LootTableFoodMreUsArmyPack
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodMreUsArmyDrink
+        rolls: !type:RangeNumberSelector
+          range: 1,2
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodMreUsArmyMeal
+        rolls: !type:RangeNumberSelector
+          range: 1,2
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableFoodMreUsArmySide
+        rolls: !type:RangeNumberSelector
+          range: 0,3
+
+#MARK: US Army MRE Drink
+- type: entityTable
+  id: LootTableFoodMreUsArmyDrink
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodDrinkWaterClean
+
+#MARK: US Army MRE Meal
+- type: entityTable
+  id: LootTableFoodMreUsArmyMeal
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodEmergencyRationBar
+    - id: ConsumableFoodHardtack
+    - id: ConsumableFoodSurvivalCrackers
+
+#MARK: US Army MRE Side
+- type: entityTable
+  id: LootTableFoodMreUsArmySide
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableFoodProteinBar
+    - id: ConsumableFoodMREPoundCake
+    - id: ConsumableFoodInstantCoffee

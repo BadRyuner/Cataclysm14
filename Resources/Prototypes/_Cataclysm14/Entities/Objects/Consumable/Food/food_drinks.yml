@@ -1,18 +1,20 @@
-#MARK: WaterBoiled
+#MARK: WaterClean
 - type: entity
   parent: FoodInjectableBase
-  id: ConsumableFoodDrinkBoiledWater
-  name: boiled water
+  id: ConsumableFoodDrinkWaterClean
+  name: clean water
   description: "Water that has been boiled to kill pathogens. Safe to drink. Tastes like warm nothing."
   components:
   - type: FlavorProfile
     flavors:
     - bland
   - type: Sprite
+    scale: 0.6,0.6
     sprite: Objects/Consumable/Drinks/waterbottle.rsi  # TODO: Replace with Cataclysm14-specific sprites
     state: icon
   - type: Item
     size: Small
+    storedScale: 3
   - type: SolutionContainerManager
     solutions:
       food:
@@ -33,10 +35,12 @@
     - bitter
     - sickly
   - type: Sprite
+    scale: 0.6,0.6
     sprite: Objects/Consumable/Drinks/waterbottle.rsi  # TODO: Replace with Cataclysm14-specific sprites
     state: icon
   - type: Item
     size: Small
+    storedScale: 3
   - type: SolutionContainerManager
     solutions:
       food:

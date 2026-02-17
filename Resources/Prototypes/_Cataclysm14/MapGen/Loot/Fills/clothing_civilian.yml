@@ -1,3 +1,4 @@
+#MARK: DresserWood
 - type: entity
   id: StructureFurnitureDresserWoodFilledClothingCivilian
   suffix: CivClothing Filled
@@ -18,6 +19,7 @@
       storagebase: !type:NestedSelector
         tableId: LootTableClothingCivilianGenericRandom50
 
+#MARK: ShelfWood
 - type: entity
   id: StructureFurnitureShelfWoodFilledClothingCivilian
   suffix: CivClothing Filled
@@ -38,6 +40,7 @@
       storagebase: !type:NestedSelector
         tableId: LootTableClothingCivilianGenericRandom50
 
+#MARK: ShelfWoodStorage
 - type: entity
   id: StructureFurnitureShelfWoodStorageFilledClothingCivilian
   suffix: CivClothing Filled
@@ -58,6 +61,7 @@
       storagebase: !type:NestedSelector
         tableId: LootTableClothingCivilianGenericRandom50
 
+#MARK: Wardrobe
 - type: entity
   id: StructureFurnitureWardrobeWoodFilledClothingCivilian
   suffix: CivClothing Filled

@@ -18,3 +18,51 @@
         - LargeMobMask
         layer:
         - WallLayer
+
+#Starts unanchored, cannot be rotated while anchored
+- type: entity
+  name: chair
+  id: BaseFurnitureChairUnanchoredUnrotate
+  parent: SeatBase
+  abstract: true
+  components:
+  - type: Anchorable
+  - type: Rotatable
+
+#Start anchored, cannot be rotated while anchored
+- type: entity
+  name: chair
+  id: BaseFurnitureChairAnchoredUnrotate
+  abstract: true
+  parent: BaseFurnitureChairUnanchoredUnrotate
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+
+#Starts unanchored, can be rotated while anchored
+- type: entity
+  name: chair
+  id: BaseFurnitureChairUnanchoredRotate
+  parent: BaseFurnitureChairUnanchoredUnrotate
+  abstract: true
+  components:
+  - type: Rotatable
+    rotateWhileAnchored: true
+
+#Starts anchored, can be rotated while anchored
+- type: entity
+  name: stool
+  id: BaseFurnitureChairAnchoredRotate
+  parent: BaseFurnitureChairUnanchoredRotate
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true

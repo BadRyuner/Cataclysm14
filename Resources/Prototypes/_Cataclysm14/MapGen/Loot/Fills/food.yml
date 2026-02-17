@@ -1,0 +1,104 @@
+#MARK: FridgeBasic
+- type: entity
+  id: StructureApplianceFridgeOldFilledBasic
+  suffix: Basic Filled
+  parent: StructureApplianceFridgeOld
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeBasic
+
+- type: entity
+  id: StructureApplianceFridgeOldFilledBasicRandom50
+  suffix: Basic 50%
+  parent: StructureApplianceFridgeOld
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeBasicRandom50
+
+#MARK: FridgeFood
+- type: entity
+  id: StructureApplianceFridgeOldFilledFood
+  suffix: Food Filled
+  parent: StructureApplianceFridgeOld
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeFood
+
+- type: entity
+  id: StructureApplianceFridgeOldFilledFoodRandom50
+  suffix: Food 50%
+  parent: StructureApplianceFridgeOld
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeFoodRandom50
+
+#MARK: FridgeDrinks
+- type: entity
+  id: StructureApplianceFridgeOldFilledDrinks
+  suffix: Drinks Filled
+  parent: StructureApplianceFridgeOld
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeDrinks
+
+- type: entity
+  id: StructureApplianceFridgeOldFilledDrinksRandom50
+  suffix: Drinks 50%
+  parent: StructureApplianceFridgeOld
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeDrinksRandom50
+
+#MARK: ShelfWood
+- type: entity
+  id: StructureFurnitureShelfWoodFilledFoodLongLasting
+  suffix: Food Longlasting Filled
+  parent: StructureFurnitureShelfWood
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodShelfLongLasting
+
+- type: entity
+  id: StructureFurnitureShelfWoodFilledFoodLongLastingRandom50
+  suffix: Food Longlasting 50%
+  parent: StructureFurnitureShelfWood
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodShelfLongLastingRandom50
+
+#MARK: ShelfWoodStorage
+- type: entity
+  id: StructureFurnitureShelfWoodStorageFilledFoodLongLasting
+  suffix: Food Longlasting Filled
+  parent: StructureFurnitureShelfWoodStorage
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodShelfLongLasting
+
+- type: entity
+  id: StructureFurnitureShelfWoodStorageFilledFoodLongLastingRandom50
+  suffix: Food Longlasting 50%
+  parent: StructureFurnitureShelfWoodStorage
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodShelfLongLastingRandom50

@@ -1,0 +1,93 @@
+#MARK: Spawners >
+
+
+
+
+
+
+#MARK: ZombieBasic
+- type: entityTable
+  id: LootTableSpawnerMobZombieBasic
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableMobZombieCivilianBasic
+      - !type:NestedSelector
+        weight: 30
+        tableId: LootTableMobZombieSpecialBasic
+      - !type:NestedSelector
+        weight: 15
+        tableId: LootTableMobZombiePoliceUs
+      - !type:NestedSelector
+        weight: 5
+        tableId: LootTableMobZombieMilitaryGeneric
+
+#MARK: PoliceStation
+- type: entityTable
+  id: LootTableSpawnerMobZombiePoliceStation
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 25
+        tableId: LootTableMobZombieCivilianBasic
+      - !type:NestedSelector
+        weight: 25
+        tableId: LootTableMobZombieSpecialBasic
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableMobZombiePoliceUs
+      - !type:NestedSelector
+        weight: 25
+        tableId: LootTableMobZombieMilitaryGeneric
+
+#MARK: Tables >
+
+
+
+
+
+
+#MARK: CivilianBasic
+- type: entityTable
+  id: LootTableMobZombieCivilianBasic
+  table: !type:GroupSelector
+    children:
+      - id: MobZombieCivilianBasic
+        rolls: !type:RangeNumberSelector
+
+#MARK: SpecialBasic
+- type: entityTable
+  id: LootTableMobZombieSpecialBasic
+  table: !type:GroupSelector
+    children:
+      - id: MobZombieHeadlessNaked
+        rolls: !type:RangeNumberSelector
+      - id: MobZombieCrawlingNaked
+        rolls: !type:RangeNumberSelector
+      - id: MobZombieNaked
+        rolls: !type:RangeNumberSelector
+      - id: MobZombieTeslaNaked
+        rolls: !type:RangeNumberSelector
+
+#MARK: PoliceUs
+- type: entityTable
+  id: LootTableMobZombiePoliceUs
+  table: !type:GroupSelector
+    children:
+      - id: MobZombiePoliceOfficerUS
+        rolls: !type:RangeNumberSelector
+        weight: 75
+      - id: MobZombieSWATOfficer
+        rolls: !type:RangeNumberSelector
+        weight: 25
+
+#MARK: MilitaryGeneric
+- type: entityTable
+  id: LootTableMobZombieMilitaryGeneric
+  table: !type:GroupSelector
+    children:
+      - id: MobZombieNationalGuard
+        rolls: !type:RangeNumberSelector
+      - id: MobZombieUNPeacekeeperFR
+        rolls: !type:RangeNumberSelector

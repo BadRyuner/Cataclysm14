@@ -318,9 +318,10 @@
 - type: damageModifierSet
   id: PartDamage
   coefficients:
-    Blunt: 0.8
-    Slash: 1.2
-    Piercing: 0.5
-    Cold: 0.5
-    Heat: 0.8
-    Shock: 0.5
+    #Cataclysm14, delimb is my passion
+    Blunt: 1
+    Slash: 1
+    Piercing: 1.5 #More dangerous guns
+    Cold: 1
+    Heat: 1
+    Shock: 1
