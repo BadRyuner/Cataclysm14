@@ -1,0 +1,144 @@
+#MARK: PoppyPainkiller
+- type: entity
+  parent: Pill
+  id: MedicalItemHerbalPoppyPainkiller
+  name: poppy painkiller
+  description: A refined opioid analgesic derived from mutant poppies. Effective pain relief with mild sedative properties.
+  components:
+  - type: Pill
+    pillType: 7
+  - type: Sprite
+    state: pill8
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 5
+        - ReagentId: Inaprovaline
+          Quantity: 3
+
+#MARK: CattailJelly
+- type: entity
+  parent: Pill
+  id: MedicalItemHerbalCattailJelly
+  name: cattail jelly
+  description: A clear protective jelly harvested from cattail stalks. Applied to wounds to prevent contamination and promote healing.
+  components:
+  - type: Pill
+    pillType: 3
+  - type: Sprite
+    state: pill4
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Dermaline
+          Quantity: 4
+        - ReagentId: Kelotane
+          Quantity: 4
+
+#MARK: WintergreenOil
+- type: entity
+  parent: Pill
+  id: MedicalItemHerbalWintergreenOil
+  name: wintergreen oil
+  description: An oil-based ointment made from wintergreen berries. Has mild antiseptic and analgesic properties.
+  components:
+  - type: Pill
+    pillType: 9
+  - type: Sprite
+    state: pill10
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 4
+        - ReagentId: Kelotane
+          Quantity: 4
+
+#MARK: ThymeOil
+- type: entity
+  parent: Pill
+  id: MedicalItemHerbalThymeOil
+  name: thyme oil
+  description: An aromatic essential oil with natural antiseptic properties. Used topically to treat minor infections.
+  components:
+  - type: Pill
+    pillType: 2
+  - type: Sprite
+    state: pill3
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Tricordrazine
+          Quantity: 4
+        - ReagentId: Dylovene
+          Quantity: 4
+
+#MARK: MugwortOil
+- type: entity
+  parent: Pill
+  id: MedicalItemHerbalMugwortOil
+  name: mugwort oil
+  description: A pungent essential oil derived from mugwort. Traditionally used as an antiparasitic and digestive aid.
+  components:
+  - type: Pill
+    pillType: 9
+  - type: Sprite
+    state: pill10
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 6
+        - ReagentId: Charcoal
+          Quantity: 2
+
+#MARK: PoppySyrup
+- type: entity
+  parent: Pill
+  id: MedicalItemHerbalPoppySyrup
+  name: poppy cough syrup
+  description: A thick syrup brewed from mutant poppy pods. Suppresses cough and relieves pain, but may cause drowsiness.
+  components:
+  - type: Pill
+    pillType: 7
+  - type: Sprite
+    state: pill8
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Inaprovaline
+          Quantity: 5
+        - ReagentId: Bicaridine
+          Quantity: 3
+
+#MARK: CharcoalPurified
+- type: entity
+  parent: Pill
+  id: MedicalItemHerbalCharcoalPurified
+  name: purified charcoal
+  description: Hardwood charcoal that has been crushed, washed, and purified. Ingested to absorb toxins and poisons.
+  components:
+  - type: Pill
+    pillType: 20
+  - type: Sprite
+    state: pill21
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Charcoal
+          Quantity: 8

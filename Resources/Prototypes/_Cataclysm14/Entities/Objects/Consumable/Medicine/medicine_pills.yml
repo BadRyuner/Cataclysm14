@@ -1,0 +1,295 @@
+#MARK: Aspirin
+- type: entity
+  parent: Pill
+  id: MedicalItemPillAspirin
+  name: aspirin
+  description: Medication to reduce pain, inflammation, and fever.
+  components:
+  - type: Pill
+    pillType: 4
+  - type: Sprite
+    state: pill5
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 10
+
+- type: entity
+  parent: PillCanister
+  id: MedicalItemPillCanisterAspirin
+  name: pill canister
+  suffix: aspirin, 5
+  components:
+  - type: Label
+    currentLabel: aspirin
+  - type: StorageFill
+    contents:
+    - id: MedicalItemPillAspirin
+      amount: 5
+
+#MARK: Ibuprofen
+- type: entity
+  parent: Pill
+  id: MedicalItemPillIbuprofen
+  name: ibuprofen
+  description: A non-steroidal anti-inflammatory for moderate pain relief.
+  components:
+  - type: Pill
+    pillType: 2
+  - type: Sprite
+    state: pill3
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 6
+        - ReagentId: Tricordrazine
+          Quantity: 4
+
+- type: entity
+  parent: PillCanister
+  id: MedicalItemPillCanisterIbuprofen
+  name: pill canister
+  suffix: ibuprofen, 5
+  components:
+  - type: Label
+    currentLabel: ibuprofen
+  - type: StorageFill
+    contents:
+    - id: MedicalItemPillIbuprofen
+      amount: 5
+
+#MARK: Acetaminophen
+- type: entity
+  parent: Pill
+  id: MedicalItemPillAcetaminophen
+  name: acetaminophen
+  description: A mild over-the-counter painkiller. Effective for minor aches.
+  components:
+  - type: Pill
+    pillType: 3
+  - type: Sprite
+    state: pill4
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Tricordrazine
+          Quantity: 10
+
+- type: entity
+  parent: PillCanister
+  id: MedicalItemPillCanisterAcetaminophen
+  name: pill canister
+  suffix: acetaminophen, 5
+  components:
+  - type: Label
+    currentLabel: acetaminophen
+  - type: StorageFill
+    contents:
+    - id: MedicalItemPillAcetaminophen
+      amount: 5
+
+#MARK: Codeine
+- type: entity
+  parent: Pill
+  id: MedicalItemPillCodeine
+  name: codeine
+  description: A mild opiate analgesic for moderate to severe pain.
+  components:
+  - type: Pill
+    pillType: 7
+  - type: Sprite
+    state: pill8
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 8
+        - ReagentId: Inaprovaline
+          Quantity: 2
+
+- type: entity
+  parent: PillCanister
+  id: MedicalItemPillCanisterCodeine
+  name: pill canister
+  suffix: codeine, 5
+  components:
+  - type: Label
+    currentLabel: codeine
+  - type: StorageFill
+    contents:
+    - id: MedicalItemPillCodeine
+      amount: 5
+
+#MARK: Antibiotics
+- type: entity
+  parent: Pill
+  id: MedicalItemPillAntibiotics
+  name: antibiotics
+  description: A broad-spectrum antibacterial medication designed to prevent or stop the spread of infection.
+  components:
+  - type: Pill
+    pillType: 9
+  - type: Sprite
+    state: pill10
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Tricordrazine
+          Quantity: 6
+        - ReagentId: Dylovene
+          Quantity: 4
+
+- type: entity
+  parent: PillCanister
+  id: MedicalItemPillCanisterAntibiotics
+  name: pill canister
+  suffix: antibiotics, 5
+  components:
+  - type: Label
+    currentLabel: antibiotics
+  - type: StorageFill
+    contents:
+    - id: MedicalItemPillAntibiotics
+      amount: 5
+
+#MARK: Antihistamine
+- type: entity
+  parent: Pill
+  id: MedicalItemPillAntihistamine
+  name: antihistamine
+  description: An antihistamine tablet for allergy relief. May cause drowsiness.
+  components:
+  - type: Pill
+    pillType: 8
+  - type: Sprite
+    state: pill9
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Diphenhydramine
+          Quantity: 10
+
+- type: entity
+  parent: PillCanister
+  id: MedicalItemPillCanisterAntihistamine
+  name: pill canister
+  suffix: antihistamine, 5
+  components:
+  - type: Label
+    currentLabel: antihistamine
+  - type: StorageFill
+    contents:
+    - id: MedicalItemPillAntihistamine
+      amount: 5
+
+#MARK: Potassium Iodide
+- type: entity
+  parent: Pill
+  id: MedicalItemPillIodine
+  name: potassium iodide
+  description: Potassium iodide tablet. Saturates the thyroid to prevent radioactive iodine uptake.
+  components:
+  - type: Pill
+    pillType: 16
+  - type: Sprite
+    state: pill17
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: PotassiumIodide
+          Quantity: 10
+
+- type: entity
+  parent: PillCanister
+  id: MedicalItemPillCanisterIodine
+  name: pill canister
+  suffix: potassium iodide, 5
+  components:
+  - type: Label
+    currentLabel: potassium iodide
+  - type: StorageFill
+    contents:
+    - id: MedicalItemPillIodine
+      amount: 5
+
+#MARK: Prussian Blue
+- type: entity
+  parent: Pill
+  id: MedicalItemPillPrussianBlue
+  name: prussian blue
+  description: A chelating agent that binds radioactive contaminants for excretion. For post-exposure radiation treatment.
+  components:
+  - type: Pill
+    pillType: 15
+  - type: Sprite
+    state: pill16
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Hyronalin
+          Quantity: 8
+        - ReagentId: Arithrazine
+          Quantity: 2
+
+- type: entity
+  parent: PillCanister
+  id: MedicalItemPillCanisterPrussianBlue
+  name: pill canister
+  suffix: prussian blue, 5
+  components:
+  - type: Label
+    currentLabel: prussian blue
+  - type: StorageFill
+    contents:
+    - id: MedicalItemPillPrussianBlue
+      amount: 5
+
+#MARK: Activated Charcoal
+- type: entity
+  parent: Pill
+  id: MedicalItemPillCharcoal
+  name: activated charcoal
+  description: Activated charcoal capsule. Absorbs toxins and poisons in the gastrointestinal tract.
+  components:
+  - type: Pill
+    pillType: 20
+  - type: Sprite
+    state: pill21
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Charcoal
+          Quantity: 10
+
+- type: entity
+  parent: PillCanister
+  id: MedicalItemPillCanisterCharcoal
+  name: pill canister
+  suffix: activated charcoal, 3
+  components:
+  - type: Label
+    currentLabel: activated charcoal
+  - type: StorageFill
+    contents:
+    - id: MedicalItemPillCharcoal
+      amount: 3
