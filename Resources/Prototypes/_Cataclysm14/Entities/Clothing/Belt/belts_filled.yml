@@ -1,0 +1,30 @@
+#MARK: Filled Duty Belt (Tan) - Military
+- type: entity
+  parent: ClothingBeltDutyBeltTan
+  id: ClothingBeltDutyBeltTanFilledMilitary
+  suffix: Filled, Military
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBox9x19mmMilitaryGradeLowTier
+          prob: 0.3
+        - !type:NestedSelector
+          tableId: LootTableFoodLongLasting
+          prob: 0.2
+
+#MARK: Filled Duty Belt (Police)
+- type: entity
+  parent: ClothingBeltDutyBeltPolice
+  id: ClothingBeltDutyBeltPoliceFilledPolice
+  suffix: Filled, Police
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBox9x19mmMilitaryGradeLowTier
+          prob: 0.3

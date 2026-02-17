@@ -1,14 +1,17 @@
 using System.Numerics;
+using Content.Shared._Cataclysm14.Containers;
 using Content.Shared.EntityTable;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
+using Robust.Shared.Random;
 
 namespace Content.Shared.Containers;
 
-public sealed class ContainerFillSystem : EntitySystem
+public sealed partial class ContainerFillSystem : EntitySystem
 {
     [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
     [Dependency] private readonly EntityTableSystem _entityTable = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
 
     public override void Initialize()
@@ -16,6 +19,7 @@ public sealed class ContainerFillSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<ContainerFillComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<EntityTableContainerFillComponent, MapInitEvent>(OnTableMapInit);
+        SubscribeLocalEvent<EntityTableOutfitContainerFillComponent, MapInitEvent>(OnOutfitMapInit);
     }
 
     private void OnMapInit(EntityUid uid, ContainerFillComponent component, MapInitEvent args)
