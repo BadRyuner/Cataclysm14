@@ -1,0 +1,191 @@
+#MARK: Epinephrine Autoinjector
+- type: entity
+  parent: ChemicalMedipen
+  id: MedicalItemInjectorEpinephrine
+  name: epinephrine autoinjector
+  description: An emergency epinephrine autoinjector. Stabilizes patients in anaphylactic shock or cardiac arrest.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi # TODO: Replace with Cataclysm14-specific sprites
+    layers:
+    - state: medipen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: medipen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 12
+        - ReagentId: TranexamicAcid
+          Quantity: 3
+  - type: Tag
+    tags: []
+
+#MARK: Morphine Syrette
+- type: entity
+  parent: ChemicalMedipen
+  id: MedicalItemInjectorMorphine
+  name: morphine syrette
+  description: A military-issue morphine syrette. A strong narcotic painkiller in a squeezable tube with attached needle.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi # TODO: Replace with Cataclysm14-specific sprites
+    layers:
+    - state: medipen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: medipen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 10
+        - ReagentId: Inaprovaline
+          Quantity: 5
+  - type: Tag
+    tags: []
+
+#MARK: Antivenom Injector
+- type: entity
+  parent: ChemicalMedipen
+  id: MedicalItemInjectorAntidote
+  name: antivenom injector
+  description: An injectable prophylactic antivenom. Provides broad-spectrum protection against organic toxins.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi # TODO: Replace with Cataclysm14-specific sprites
+    layers:
+    - state: penacid
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: penacid_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Ultravasculine
+          Quantity: 10
+        - ReagentId: Epinephrine
+          Quantity: 5
+  - type: Tag
+    tags: []
+
+#MARK: Stimulant Injector
+- type: entity
+  parent: ChemicalMedipen
+  id: MedicalItemInjectorStimulant
+  name: stimulant injector
+  description: A military-grade stimulant injector. Increases alertness and reaction time. Side effects include irritability and insomnia.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi # TODO: Replace with Cataclysm14-specific sprites
+    layers:
+    - state: medipen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: medipen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 15
+  - type: Tag
+    tags: []
+
+#MARK: Rad Treatment Injector
+- type: entity
+  parent: ChemicalMedipen
+  id: MedicalItemInjectorRadTreatment
+  name: rad treatment injector
+  description: An emergency radiation treatment injector. For acute radiation exposure. Aggressively chelates radioactive particles.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi # TODO: Replace with Cataclysm14-specific sprites
+    layers:
+    - state: arithpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: arithpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Arithrazine
+          Quantity: 10
+        - ReagentId: Bicaridine
+          Quantity: 5
+  - type: Tag
+    tags: []
+
+#MARK: Combat Trauma Pen
+- type: entity
+  parent: ChemicalMedipen
+  id: MedicalItemInjectorCombat
+  name: combat trauma pen
+  description: A combat medical auto-injector loaded with broad-spectrum trauma medication. Designed to get a wounded soldier back in the fight.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi # TODO: Replace with Cataclysm14-specific sprites
+    layers:
+    - state: bicpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: bicpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Omnizine
+          Quantity: 10
+        - ReagentId: TranexamicAcid
+          Quantity: 5
+  - type: Tag
+    tags: []
+
+#MARK: Saline Injector
+- type: entity
+  parent: ChemicalMedipen
+  id: MedicalItemInjectorSaline
+  name: saline injector
+  description: A pre-filled saline syringe for fluid resuscitation. Restores blood volume in hemorrhagic shock.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi # TODO: Replace with Cataclysm14-specific sprites
+    layers:
+    - state: medipen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: medipen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Saline
+          Quantity: 15
+  - type: Tag
+    tags: []

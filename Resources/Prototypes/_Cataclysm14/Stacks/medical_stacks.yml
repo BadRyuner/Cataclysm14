@@ -1,0 +1,57 @@
+# Stack types for Cataclysm14 medical bandage/wound care items
+
+- type: stack
+  id: MedicalItemBandageMakeshift
+  name: makeshift bandage
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
+  spawn: MedicalItemBandageMakeshift
+  maxCount: 10
+
+- type: stack
+  id: MedicalItemBandageBoiled
+  name: boiled bandage
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
+  spawn: MedicalItemBandageBoiled
+  maxCount: 10
+
+- type: stack
+  id: MedicalItemBandageMedicalGauze
+  name: medical gauze
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: gauze }
+  spawn: MedicalItemBandageMedicalGauze
+  maxCount: 10
+
+- type: stack
+  id: MedicalItemBandageProper
+  name: bandage
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: gauze }
+  spawn: MedicalItemBandageProper
+  maxCount: 10
+
+- type: stack
+  id: MedicalItemHemostaticPowder
+  name: hemostatic powder
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
+  spawn: MedicalItemHemostaticPowder
+  maxCount: 5
+
+- type: stack
+  id: MedicalItemAntiseptic
+  name: antiseptic
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
+  spawn: MedicalItemAntiseptic
+  maxCount: 10
+
+- type: stack
+  id: MedicalItemAntisepticMakeshift
+  name: makeshift antiseptic
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
+  spawn: MedicalItemAntisepticMakeshift
+  maxCount: 10
+
+- type: stack
+  id: MedicalItemAntisepticPowder
+  name: antiseptic powder
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
+  spawn: MedicalItemAntisepticPowder
+  maxCount: 8
