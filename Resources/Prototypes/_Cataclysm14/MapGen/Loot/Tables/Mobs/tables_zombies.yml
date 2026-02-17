@@ -77,8 +77,10 @@
     children:
       - id: MobZombiePoliceOfficerUS
         rolls: !type:RangeNumberSelector
+        weight: 75
       - id: MobZombieSWATOfficer
         rolls: !type:RangeNumberSelector
+        weight: 25
 
 #MARK: MilitaryGeneric
 - type: entityTable
