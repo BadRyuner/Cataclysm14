@@ -18,6 +18,9 @@
     shape:
     - 0,0,4,1
   - type: Clothing
+    slots:
+    - slingfront
+    - suitstorage
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AKM_32x32.rsi
     clothingVisuals:
       slingfront:

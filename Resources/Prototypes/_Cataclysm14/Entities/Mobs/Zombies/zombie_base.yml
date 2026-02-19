@@ -340,7 +340,7 @@
   name: ball lightning
   id: ProjectileLightningZombie
   parent: BaseBullet
-  # categories: [ HideSpawnMenu ]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Cataclysm14/Effects/electricity.rsi
@@ -377,7 +377,7 @@
 - type: entity
   name: ball lightning
   id: ProjectileEffectLightning
-  # categories: [ HideSpawnMenu ]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Cataclysm14/Effects/electricity.rsi

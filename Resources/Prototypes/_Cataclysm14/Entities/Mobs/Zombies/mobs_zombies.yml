@@ -49,7 +49,7 @@
         prob: 0.95
       head: !type:GroupSelector
         children:
-        - id: ClothingHeadBulletproofHelmetACHOCPMulticam
+        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
         prob: 0.8
       belt: !type:GroupSelector
         children:
@@ -74,7 +74,7 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesTacticalSwatTan
+        - id: ClothingShoesBootsSWATTan
         prob: 0.99
       back: !type:GroupSelector
         children:
@@ -144,7 +144,7 @@
         prob: 0.99
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesTacticalSwatBlack
+        - id: ClothingShoesBootsSWATBlack
         - id: ClothingShoesSneakersBlack
         prob: 0.99
 
@@ -163,7 +163,7 @@
         - id: ClothingOuterBulletProofVestPoliceUSLightBlack
       head: !type:GroupSelector
         children:
-        - id: ClothingHeadBulletproofHelmetM88SWAT
+        - id: ClothingHeadHelmetBulletproofM88SWAT
         prob: 0.95
       belt: !type:GroupSelector
         children:
@@ -182,7 +182,7 @@
         prob: 0.5
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesTacticalSwatBlack
+        - id: ClothingShoesBootsSWATBlack
         prob: 0.99
       pants: !type:GroupSelector
         children:
@@ -209,7 +209,7 @@
         prob: 0.95
       head: !type:GroupSelector
         children:
-        - id: ClothingHeadBulletproofHelmetM88UN
+        - id: ClothingHeadHelmetBulletproofM88UN
         - id: ClothingHeadHatBeretUN
         - id: ClothingHeadHatCapUN
         prob: 0.95
@@ -229,7 +229,7 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesTacticalSwatBlack
+        - id: ClothingShoesBootsSWATBlack
         prob: 0.99
     outfits:
     - slots:

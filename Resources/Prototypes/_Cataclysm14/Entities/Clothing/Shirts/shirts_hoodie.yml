@@ -1,27 +1,27 @@
-#MARK: -Sweaters-
-  #MARK: Sweater - white
+#MARK: -Hoodies-
+  #MARK: Hoodie - white
     - type: entity
       parent: ClothingShirtBase
-      id: ClothingShirtSweaterWhite
-      name: white sweater
-      description: A warm sweater, this one is colored in white.
+      id: ClothingShirtHoodieWhite
+      name: white hoodie
+      description: A warm hoodie, this one is colored in white.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
-  #MARK: Sweater - red
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+  #MARK: Hoodie - red
     - type: entity
       parent: ClothingShirtBase
-      id: ClothingShirtSweaterRed
-      name: red sweater
-      description: A warm sweater, this one is colored in red.
+      id: ClothingShirtHoodieRed
+      name: red hoodie
+      description: A warm hoodie, this one is colored in red.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         color: "#9E1A1A"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         clothingVisuals:
           jumpsuit:
           - state: equipped-INNERCLOTHING
@@ -34,18 +34,18 @@
           right:
           - state: inhand-right
             color: "#9E1A1A"
-  #MARK: Sweater - blue
+  #MARK: Hoodie - blue
     - type: entity
       parent: ClothingShirtBase
-      id: ClothingShirtSweaterBlue
-      name: blue sweater
-      description: A warm sweater, this one is colored in blue.
+      id: ClothingShirtHoodieBlue
+      name: blue hoodie
+      description: A warm hoodie, this one is colored in blue.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         color: "#2832C2"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         clothingVisuals:
           jumpsuit:
           - state: equipped-INNERCLOTHING
@@ -58,18 +58,18 @@
           right:
           - state: inhand-right
             color: "#2832C2"
-  #MARK: Sweater - green
+  #MARK: Hoodie - green
     - type: entity
       parent: ClothingShirtBase
-      id: ClothingShirtSweaterGreen
-      name: green sweater
-      description: A warm sweater, this one is colored in green.
+      id: ClothingShirtHoodieGreen
+      name: green hoodie
+      description: A warm hoodie, this one is colored in green.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         color: "#3d8c40"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         clothingVisuals:
           jumpsuit:
           - state: equipped-INNERCLOTHING
@@ -82,18 +82,18 @@
           right:
           - state: inhand-right
             color: "#3d8c40"
-  #MARK: Sweater - yellow
+  #MARK: Hoodie - yellow
     - type: entity
       parent: ClothingShirtBase
-      id: ClothingShirtSweaterYellow
-      name: yellow sweater
-      description: A warm sweater, this one is colored in yellow.
+      id: ClothingShirtHoodieYellow
+      name: yellow hoodie
+      description: A warm hoodie, this one is colored in yellow.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         color: "#E4CD05"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         clothingVisuals:
           jumpsuit:
           - state: equipped-INNERCLOTHING
@@ -106,18 +106,18 @@
           right:
           - state: inhand-right
             color: "#E4CD05"
-  #MARK: Sweater - purple
+  #MARK: Hoodie - purple
     - type: entity
       parent: ClothingShirtBase
-      id: ClothingShirtSweaterPurple
-      name: purple sweater
-      description: A warm sweater, this one is colored in purple.
+      id: ClothingShirtHoodiePurple
+      name: purple hoodie
+      description: A warm hoodie, this one is colored in purple.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         color: "#702963"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         clothingVisuals:
           jumpsuit:
           - state: equipped-INNERCLOTHING
@@ -130,18 +130,18 @@
           right:
           - state: inhand-right
             color: "#702963"
-  #MARK: Sweater - black
+  #MARK: Hoodie - black
     - type: entity
       parent: ClothingShirtBase
-      id: ClothingShirtSweaterBlack
-      name: black sweater
-      description: A warm sweater, this one is colored in black.
+      id: ClothingShirtHoodieBlack
+      name: black hoodie
+      description: A warm hoodie, this one is colored in black.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         color: "#444444"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         clothingVisuals:
           jumpsuit:
           - state: equipped-INNERCLOTHING
@@ -154,18 +154,18 @@
           right:
           - state: inhand-right
             color: "#444444"
-  #MARK: TShirt - beige
+  #MARK: Hoodie - beige
     - type: entity
       parent: ClothingShirtBase
-      id: ClothingShirtSweaterBeige
-      name: beige t-shirt
-      description: A warm sweater, this one is colored in beige.
+      id: ClothingShirtHoodieBeige
+      name: beige hoodie
+      description: A warm hoodie, this one is colored in beige.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         color: "#CDBEA1"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
         clothingVisuals:
           jumpsuit:
           - state: equipped-INNERCLOTHING

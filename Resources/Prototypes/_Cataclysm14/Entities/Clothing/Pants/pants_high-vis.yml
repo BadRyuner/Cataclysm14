@@ -1,0 +1,10 @@
+    - type: entity
+      parent: ClothingPantsPocketBase
+      id: ClothingPantsWorkpantsHighVisOrangeYellow
+      name: workpants (high-vis)(orange, yellow)
+      description: A warm pair of pants with high visibility markings for safety, this one is colored in orange and has yellow reflective strips.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_workpants_high-vis_orange_yellow.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_workpants_high-vis_orange_yellow.rsi

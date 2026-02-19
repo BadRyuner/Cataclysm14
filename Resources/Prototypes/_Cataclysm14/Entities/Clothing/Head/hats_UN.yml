@@ -9,6 +9,7 @@
         sprite: _Cataclysm14/Clothing/Head/hat_cap_UN.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Head/hat_cap_UN.rsi
+
 #MARK: UN beret
     - type: entity
       parent: ClothingHeadBase

@@ -20,6 +20,9 @@
     - 0,0,4,1
     storedScale: 1.8
   - type: Clothing
+    slots:
+    - slingfront
+    - suitstorage
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/M4A1_32x32.rsi
     clothingVisuals:
       slingfront:
