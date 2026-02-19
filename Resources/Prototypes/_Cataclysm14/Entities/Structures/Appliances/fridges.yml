@@ -2,7 +2,7 @@
   id: StructureApplianceFridgeOld
   parent: StructureFurnitureBaseLarge
   name: old fridge
-  description: An large fridge, can store things inside itself and make them not rot.
+  description: A large fridge, can store things inside itself and make them not rot.
   components:
   - type: Fixtures
     fixtures:
@@ -54,9 +54,18 @@
     - Wooden
   - type: Anchorable
   - type: Rotatable
-  - type: Construction
-    graph: Dresser
-    node: dresser
+  # - type: Construction
+  #   graph: Dresser
+  #   node: dresser
   - type: Transform
     anchored: true
   - type: AntiRottingContainer
+
+- type: entity
+  id: StructureApplianceFridgeStore
+  parent: StructureApplianceFridgeOld
+  name: store fridge
+  description: An large fridge to store goods for a shop, can store things inside itself and make them not rot.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Appliances/fridge_store.rsi

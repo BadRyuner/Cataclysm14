@@ -2,7 +2,7 @@
   id: StructureFurnitureToolchestMobileCompact
   parent: [StructureFurnitureBaseLarge, StructureWheeled]
   name: compact tool chest
-  description: Metal shelves, can store things inside itself.
+  description: Tool chest for mechanic shops, can store things inside itself.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/tool_chest_mobile.rsi
@@ -42,9 +42,9 @@
     - Wooden
   - type: Anchorable
   - type: Rotatable
-  - type: Construction
-    graph: Dresser
-    node: dresser
+  # - type: Construction
+  #   graph: Dresser
+  #   node: dresser
   - type: Transform
     anchored: true
     noRot: true
@@ -53,7 +53,7 @@
   id: StructureFurnitureToolchestMobileLarge
   parent: [StructureFurnitureBaseLarge, StructureWheeled]
   name: large tool chest
-  description: Metal shelves, can store things inside itself.
+  description: Large tool chest for mechanic shops, can store things inside itself.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/tool_chest_mobile.rsi
@@ -93,9 +93,9 @@
     - Wooden
   - type: Anchorable
   - type: Rotatable
-  - type: Construction
-    graph: Dresser
-    node: dresser
+  # - type: Construction
+  #   graph: Dresser
+  #   node: dresser
   - type: Transform
     anchored: true
     noRot: true
@@ -104,7 +104,7 @@
   id: StructureFurnitureToolchestMobileWorkstation
   parent: [StructureFurnitureBaseLarge, StructureWheeled]
   name: tool chest mounted workstation
-  description: Metal shelves, can store things inside itself.
+  description: Tool chest mounted workstation for mechanic shops, can store things inside itself.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/tool_chest_mobile.rsi
@@ -144,9 +144,9 @@
     - Wooden
   - type: Anchorable
   - type: Rotatable
-  - type: Construction
-    graph: Dresser
-    node: dresser
+  # - type: Construction
+  #   graph: Dresser
+  #   node: dresser
   - type: Transform
     anchored: true
     noRot: true
@@ -154,9 +154,8 @@
 - type: entity
   id: StructureFurnitureToolchestCounters1
   parent: TableBase
-  # parent: [TableBase, StructureFurnitureBaseLarge, StructureWheeled]
   name: tool chest counter
-  description: Metal shelves, can store things inside itself.
+  description: Tool chest counter for mechanic shops, can store things inside itself.
   components:
   - type: Icon
     sprite: _Cataclysm14/Structures/Furnitures/tool_chest_counter.rsi
@@ -194,9 +193,9 @@
         type: StorageBoundUserInterface
   - type: Anchorable
   - type: Rotatable
-  - type: Construction
-    graph: Dresser
-    node: dresser
+  # - type: Construction
+  #   graph: Dresser
+  #   node: dresser
   - type: Fixtures
     fixtures:
       fix1:

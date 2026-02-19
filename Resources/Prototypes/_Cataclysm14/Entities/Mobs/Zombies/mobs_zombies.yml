@@ -184,25 +184,15 @@
         children:
         - id: ClothingShoesTacticalSwatBlack
         prob: 0.99
-    outfits:
-    - slots:
-        pants: !type:GroupSelector
-          children:
-          - id: ClothingPantsPoliceCopUS
-          prob: 0.99
-        jumpsuit: !type:GroupSelector
-          children:
-          - id: ClothingShirtPoliceCopUS
-          prob: 0.99
-    - slots:
-        pants: !type:GroupSelector
-          children:
-          - id: ClothingPantsCombatDigitalBlack
-          prob: 0.99
-        jumpsuit: !type:GroupSelector
-          children:
-          - id: ClothingShirtCombatDigitalBlack
-          prob: 0.99
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+        - id: ClothingPantsCombatDigitalBlack
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+        prob: 0.99
 
 #MARK: UN Bluehem FR
 - type: entity
@@ -246,19 +236,23 @@
         pants: !type:GroupSelector
           children:
           - id: ClothingPantsCombatCCEDesert
-          prob: 0.99
-        jumpsuit: !type:GroupSelector
-          children:
-          - id: ClothingShirtCombatCCEDesert
-          prob: 0.99
-    - slots:
-        pants: !type:GroupSelector
-          children:
           - id: ClothingPantsCombatCCEDesertCargo
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
+          - id: ClothingShirtCombatCCEDesert
           - id: ClothingShirtCombatCCEDesertCargo
+          prob: 0.99
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatCCE
+          - id: ClothingPantsCombatCCECargo
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatCCE
+          - id: ClothingShirtCombatCCECargo
           prob: 0.99
 
 #MARK: Civilian Basic

@@ -42,9 +42,9 @@
     - Wooden
   - type: Anchorable
   - type: Rotatable
-  - type: Construction
-    graph: Dresser
-    node: dresser
+  # - type: Construction
+  #   graph: Dresser
+  #   node: dresser
   - type: Transform
     anchored: true
     noRot: true

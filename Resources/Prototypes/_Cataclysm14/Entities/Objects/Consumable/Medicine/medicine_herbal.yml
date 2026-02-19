@@ -1,7 +1,7 @@
 #MARK: PoppyPainkiller
 - type: entity
   parent: Pill
-  id: MedicalItemHerbalPoppyPainkiller
+  id: ConsumableMedicineHerbalPoppyPainkiller
   name: poppy painkiller
   description: A refined opioid analgesic derived from mutant poppies. Effective pain relief with mild sedative properties.
   components:
@@ -22,7 +22,7 @@
 #MARK: CattailJelly
 - type: entity
   parent: Pill
-  id: MedicalItemHerbalCattailJelly
+  id: ConsumableMedicineHerbalCattailJelly
   name: cattail jelly
   description: A clear protective jelly harvested from cattail stalks. Applied to wounds to prevent contamination and promote healing.
   components:
@@ -43,7 +43,7 @@
 #MARK: WintergreenOil
 - type: entity
   parent: Pill
-  id: MedicalItemHerbalWintergreenOil
+  id: ConsumableMedicineHerbalWintergreenOil
   name: wintergreen oil
   description: An oil-based ointment made from wintergreen berries. Has mild antiseptic and analgesic properties.
   components:
@@ -64,7 +64,7 @@
 #MARK: ThymeOil
 - type: entity
   parent: Pill
-  id: MedicalItemHerbalThymeOil
+  id: ConsumableMedicineHerbalThymeOil
   name: thyme oil
   description: An aromatic essential oil with natural antiseptic properties. Used topically to treat minor infections.
   components:
@@ -85,7 +85,7 @@
 #MARK: MugwortOil
 - type: entity
   parent: Pill
-  id: MedicalItemHerbalMugwortOil
+  id: ConsumableMedicineHerbalMugwortOil
   name: mugwort oil
   description: A pungent essential oil derived from mugwort. Traditionally used as an antiparasitic and digestive aid.
   components:
@@ -106,7 +106,7 @@
 #MARK: PoppySyrup
 - type: entity
   parent: Pill
-  id: MedicalItemHerbalPoppySyrup
+  id: ConsumableMedicineHerbalPoppySyrup
   name: poppy cough syrup
   description: A thick syrup brewed from mutant poppy pods. Suppresses cough and relieves pain, but may cause drowsiness.
   components:
@@ -127,7 +127,7 @@
 #MARK: CharcoalPurified
 - type: entity
   parent: Pill
-  id: MedicalItemHerbalCharcoalPurified
+  id: ConsumableMedicineHerbalCharcoalPurified
   name: purified charcoal
   description: Hardwood charcoal that has been crushed, washed, and purified. Ingested to absorb toxins and poisons.
   components:
