@@ -938,11 +938,11 @@
   - type: Sprite
     sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_unlabelled.rsi
     scale: 0.5,0.5
+    state: icon
   - type: Item
     storedScale: 2.5
     shape:
     - 0,0,1,1
-    state: icon
   - type: SpawnItemsOnUse
     items:
     - id: ConsumableFoodCannedChickenSoup

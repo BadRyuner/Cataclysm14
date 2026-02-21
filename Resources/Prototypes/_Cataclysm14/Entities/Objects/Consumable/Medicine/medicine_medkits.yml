@@ -10,7 +10,6 @@
     state: icon
   - type: Item
     sprite: _Cataclysm14/Objects/Containers/medkit_box_medium_red.rsi
-    state: icon
 
 - type: entity
   parent: ContainerMedicalPouchFirstAid
@@ -36,7 +35,6 @@
     state: icon
   - type: Item
     sprite: _Cataclysm14/Objects/Containers/medkit_IFAK.rsi
-    state: icon
 
 - type: entity
   parent: ContainerMedicalKitIFAK
@@ -62,7 +60,6 @@
     state: icon
   - type: Item
     sprite: _Cataclysm14/Objects/Containers/medkit_AFAK.rsi
-    state: icon
 
 - type: entity
   parent: ContainerMedicalKitAFAK
@@ -89,7 +86,6 @@
     state: icon
   - type: Item
     sprite: _Cataclysm14/Objects/Containers/sack_leather.rsi
-    state: icon
 
 - type: entity
   parent: ContainerMedicalSackHerbalist
@@ -117,7 +113,6 @@
     state: icon
   - type: Item
     sprite: _Cataclysm14/Objects/Containers/medkit_box_medium_red.rsi
-    state: icon
 
 - type: entity
   parent: ContainerMedicalKitTrauma
