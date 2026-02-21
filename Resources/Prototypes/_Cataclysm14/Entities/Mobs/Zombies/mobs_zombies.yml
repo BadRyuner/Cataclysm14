@@ -1,3 +1,9 @@
+#MARK: Headless >
+
+
+
+
+
 #MARK: Naked / no gear
 - type: entity
   parent: BaseMobZombieHeadless
@@ -5,7 +11,13 @@
   suffix: Naked
   components:
   - type: Inventory
-    templateId: InvTemplateZombieBase
+    templateId: InvTemplateZombieHeadless
+
+#MARK: Crawling >
+
+
+
+
 
 #MARK: Naked / no gear
 - type: entity
@@ -14,21 +26,63 @@
   suffix: Naked
   components:
   - type: Inventory
-    templateId: InvTemplateZombieBase
+    templateId: InvTemplateZombieCrawling
+
+#MARK: Runner >
+
+
+
+
 
 #MARK: Naked / no gear
 - type: entity
-  parent: BaseMobZombieSimple
-  id: MobZombieNaked
+  parent: BaseMobZombieRunner
+  id: MobZombieRunnerNaked
   suffix: Naked
   components:
   - type: Inventory
     templateId: InvTemplateZombieBase
 
+#MARK: Sprinter >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieSprinter
+  id: MobZombieSprinterNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Tesla >
+
+
+
+
+
 #MARK: Naked / no gear
 - type: entity
   parent: BaseMobZombieTesla
   id: MobZombieTeslaNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Normal >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieNaked
   suffix: Naked
   components:
   - type: Inventory
@@ -194,7 +248,7 @@
         - id: ClothingShirtPoliceCopUS
         prob: 0.99
 
-#MARK: UN Bluehem FR
+#MARK: UN Bluehelm FR
 - type: entity
   parent: BaseMobZombieSimple
   id: MobZombieUNPeacekeeperFR

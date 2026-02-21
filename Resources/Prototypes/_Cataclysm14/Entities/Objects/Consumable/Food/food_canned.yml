@@ -6,7 +6,12 @@
   description: "A dented tin of chicken noodle soup. Still sealed, still edible. Comfort food for the end of the world."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - savory
@@ -35,9 +40,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedChickenSoupTrash
   name: canned chicken soup
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: TomatoSoup
 - type: entity
@@ -47,7 +58,12 @@
   description: "Condensed tomato soup in a pull-tab can. Just add water. Or don't."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - savory
@@ -73,9 +89,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedTomatoSoupTrash
   name: canned tomato soup
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: Stew
 - type: entity
@@ -85,7 +107,12 @@
   description: "A heavy tin of beef stew. Chunks of mystery meat float in thick brown gravy."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - meaty
@@ -110,9 +137,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedBeefStewTrash
   name: canned beef stew
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: Beans
 - type: entity
@@ -122,7 +155,12 @@
   description: "Baked beans in a syrupy sauce. The musical fruit of the apocalypse."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_beans.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - savory
@@ -145,9 +183,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedBeansTrash
   name: canned beans
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_beans.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: Corn
 - type: entity
@@ -157,7 +201,12 @@
   description: "Whole kernel sweet corn, packed before the world ended. Surprisingly good cold."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - sweet
@@ -179,9 +228,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedCornTrash
   name: canned corn
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: Pears
 - type: entity
@@ -191,7 +246,12 @@
   description: "Pear halves in light syrup. A rare treat in these dark days."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - sweet
@@ -218,9 +278,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedPearsTrash
   name: canned pears
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: Pineapple
 - type: entity
@@ -230,7 +296,12 @@
   description: "Pineapple rings in juice. Tastes like summer used to."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - sweet
@@ -258,9 +329,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedPineappleTrash
   name: canned pineapple
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: Tuna
 - type: entity
@@ -270,7 +347,12 @@
   description: "Chunk light tuna in water. High protein, low morale."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - fishy
@@ -299,9 +381,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedTunaTrash
   name: canned tuna
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: Sardines
 - type: entity
@@ -311,7 +399,12 @@
   description: "Tiny fish packed in oil. The label is in a language you can't read."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - fishy
@@ -343,9 +436,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedSardinesTrash
   name: canned sardines
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: Spam
 - type: entity
@@ -355,7 +454,12 @@
   description: "Spiced pork and meat product. Survived nuclear wars, survived this too."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_spam.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - meaty
@@ -387,9 +491,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedSpamTrash
   name: canned meat
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_spam.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: CornedBeef
 - type: entity
@@ -399,7 +509,12 @@
   description: "Salt-cured beef in a distinctive trapezoidal tin. Dense, salty, and satisfying."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - meaty
@@ -426,9 +541,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedCornedBeefTrash
   name: canned corned beef
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: Chili
 - type: entity
@@ -438,7 +559,12 @@
   description: "Spicy chili con carne. The label promises 'Texas-style'. The contents promise heartburn."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - spicy
@@ -463,9 +589,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedChiliTrash
   name: canned chili
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: MixedVeggies
 - type: entity
@@ -475,7 +607,12 @@
   description: "Carrots, peas, corn, and green beans. Barely recognizable individually, but nutritious together."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - bland
@@ -497,9 +634,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedMixedVegTrash
   name: canned mixed vegetables
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: Ravioli
 - type: entity
@@ -509,7 +652,12 @@
   description: "Chef Boyar-who? Doesn't matter. Pasta pockets in tomato sauce."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - savory
@@ -532,9 +680,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedRavioliTrash
   name: canned ravioli
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: CondensedMilk
 - type: entity
@@ -544,7 +698,12 @@
   description: "Thick, sweet condensed milk. Great for cooking, or when you need a sugar rush."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_condensed_milk.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - sweet
@@ -567,9 +726,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedCondensedMilkTrash
   name: canned condensed milk
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_condensed_milk.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: CranberrySauce
 - type: entity
@@ -579,7 +744,12 @@
   description: "Jellied cranberry sauce. Slides out in a perfect cylinder. Don't ask how."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_cranberry_sauce.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - sweet
@@ -607,9 +777,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedCranberryTrash
   name: canned cranberry sauce
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_cranberry_sauce.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: PickledVeggies
 - type: entity
@@ -619,7 +795,12 @@
   description: "A sealed jar of assorted pickled vegetables. Vinegar-preserved and crunchy."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - sour
@@ -642,9 +823,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedPickledVegTrash
   name: pickled vegetables
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: StrawberryJam
 - type: entity
@@ -654,7 +841,12 @@
   description: "A small jar of strawberry preserves. Someone's grandmother made this. Probably."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_strawberry_jam.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - sweet
@@ -678,9 +870,15 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedStrawberryJamTrash
   name: strawberry preserves
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_strawberry_jam.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
 
 #MARK: DogFood
 - type: entity
@@ -690,7 +888,12 @@
   description: "It says 'for pets only' on the label. Desperate times call for desperate meals."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_dog_food.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
   - type: FlavorProfile
     flavors:
     - meaty
@@ -715,6 +918,64 @@
   parent: FoodTinBaseTrash
   id: ConsumableFoodCannedDogFoodTrash
   name: canned dog food
+  suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi  # TODO: Replace with Cataclysm14-specific sprites
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_dog_food.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
+
+#MARK: MysteryCan
+- type: entity
+  parent: BaseItem
+  id: ConsumableFoodJunkMysteryCan
+  name: unlabelled can
+  description: "A tin can with the label completely worn off. Could be anything from peaches to cat food. Spin the wheel."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_unlabelled.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1
+    state: icon
+  - type: SpawnItemsOnUse
+    items:
+    - id: ConsumableFoodCannedChickenSoup
+      prob: 0.3
+      orGroup: Contents
+    - id: ConsumableFoodCannedBeans
+      prob: 0.3
+      orGroup: Contents
+    - id: ConsumableFoodCannedSpam
+      prob: 0.3
+      orGroup: Contents
+    - id: ConsumableFoodCannedCorn
+      prob: 0.3
+      orGroup: Contents
+    - id: ConsumableFoodCannedDogFood
+      prob: 0.1
+      orGroup: Contents
+    sound:
+      path: /Audio/Items/can_open3.ogg
+  - type: Food
+    trash:
+    - ConsumableFoodJunkMysteryCanTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: ConsumableFoodJunkMysteryCanTrash
+  name: unlabelled can
+  suffix: Trash
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_unlabelled.rsi
+    scale: 0.5,0.5
+  - type: Item
+    storedScale: 2.5
+    shape:
+    - 0,0,1,1

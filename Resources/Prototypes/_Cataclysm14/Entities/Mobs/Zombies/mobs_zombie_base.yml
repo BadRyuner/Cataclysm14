@@ -141,6 +141,18 @@
         Base: dead
   - type: SSDIndicator
     icon: ZombieSSDIcon
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0 #make zombies block each other way less
+        density: 220
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
 
 #MARK: Dummy
 - type: entity
@@ -172,6 +184,7 @@
     prototype: BodyPartSetZombieBase
     requiredLegs: 2
   - type: MovementSpeedModifier
+#Praise shitmed, this dont do shit, edit the legs inside parts_zombie.yml and specie_zombie.yml
     baseWalkSpeed : 4.5
     baseSprintSpeed : 4.5
   - type: MeleeWeapon
@@ -202,8 +215,9 @@
     prototype: BodyPartSetZombieHeadless
     requiredLegs: 2
   - type: MovementSpeedModifier
-    baseWalkSpeed : 4.5
-    baseSprintSpeed : 4.5
+#Praise shitmed, this dont do shit, edit the legs inside parts_zombie.yml and specie_zombie.yml
+    baseWalkSpeed : 1
+    baseSprintSpeed : 1
   - type: MeleeWeapon
     attackRate: 0.8
     altDisarm: false
@@ -240,7 +254,7 @@
   description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
   categories: [ HideSpawnMenu ]
   parent:
-  - MobHumanoidHostileAISimpleMeleeZombieReducedRange
+  - MobHumanoidHostileAISimpleMeleeZombieBase
   - BasePrototypeSpecieZombie
   - BaseMobZombieStats
   components:
@@ -251,7 +265,7 @@
   - type: Body
     prototype: BodyPartSetZombieCrawling
     requiredLegs: 2
-  - type: MovementSpeedModifier
+  - type: MovementSpeedModifier #has no legs thus it actually works
     baseWalkSpeed : 2
     baseSprintSpeed : 2
   - type: MeleeWeapon
@@ -312,6 +326,7 @@
     prototype: BodyPartSetZombieBase
     requiredLegs: 2
   - type: MovementSpeedModifier
+#Praise shitmed, this dont do shit, edit the legs inside parts_zombie.yml and specie_zombie.yml
     baseWalkSpeed : 4.5
     baseSprintSpeed : 4.5
   - type: ProjectileBatteryAmmoProvider
@@ -335,7 +350,7 @@
         variation: 0.2
   - type: Insulated
 
-#MARK: Projectil tesla
+#MARK: Projectile tesla
 - type: entity
   name: ball lightning
   id: ProjectileLightningZombie
@@ -406,3 +421,99 @@
   #   bodyType: Dynamic
   #   linearDamping: 0
   #   angularDamping: 0
+
+#MARK: Mob Runner
+- type: entity
+  id: BaseMobZombieRunner
+  abstract: true
+  name: runner zombie
+  description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombieBase
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieRunner
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+#Praise shitmed, this dont do shit, edit the legs inside parts_zombie.yml and specie_zombie.yml
+    baseWalkSpeed : 1
+    baseSprintSpeed : 1
+  - type: MeleeWeapon
+    attackRate: 0.8
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5
+  # nah
+  # - type: HumanoidAppearance
+  #   species: SpecieZombieRunner
+  - type: DamageVisuals
+    thresholds: [ 10, 20, 30, 50, 70, 100 ]
+    targetLayers:
+    - "enum.HumanoidVisualLayers.Chest"
+    - "enum.HumanoidVisualLayers.LArm"
+    - "enum.HumanoidVisualLayers.LLeg"
+    - "enum.HumanoidVisualLayers.RArm"
+    - "enum.HumanoidVisualLayers.RLeg"
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#FF0000"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
+
+#MARK: Mob Sprinter
+- type: entity
+  id: BaseMobZombieSprinter
+  abstract: true
+  name: sprinter zombie
+  description: An undead human, a green-ish pale zombie, and it's coming for your flesh.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombieBase
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieSprinter
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+#Praise shitmed, this dont do shit, edit the legs inside parts_zombie.yml and specie_zombie.yml
+    baseWalkSpeed : 1
+    baseSprintSpeed : 1
+  - type: MeleeWeapon
+    attackRate: 0.8
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5
+  # nah
+  # - type: HumanoidAppearance
+  #   species: SpecieZombieSprinter
+  - type: DamageVisuals
+    thresholds: [ 10, 20, 30, 50, 70, 100 ]
+    targetLayers:
+    - "enum.HumanoidVisualLayers.Chest"
+    - "enum.HumanoidVisualLayers.LArm"
+    - "enum.HumanoidVisualLayers.LLeg"
+    - "enum.HumanoidVisualLayers.RArm"
+    - "enum.HumanoidVisualLayers.RLeg"
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#FF0000"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi

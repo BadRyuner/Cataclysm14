@@ -36,9 +36,8 @@
   - type: Speech # Frontier
     allowedEmotes: ['Belch'] # Frontier
   - type: MovementSpeedModifier
-    baseWalkSpeed: 2.5 # Cataclysm14
-    baseSprintSpeed: 5 # Cataclysm14
-  #Cataclysm14, bigger hitbox and sprite
+    baseWalkSpeed: 2.5 # Cataclysm14, shitmed overrides anyway
+    baseSprintSpeed: 5 # Cataclysm14, shitmed overrides anyway
   - type: Fixtures
     fixtures:
       fix1:

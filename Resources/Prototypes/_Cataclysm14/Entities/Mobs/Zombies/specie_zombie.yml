@@ -38,11 +38,11 @@
     left hand:
       part: LeftHandZombie
     right leg:
-      part: RightLegZombie
+      part: RightLegZombieNormal
       connections:
       - right foot
     left leg:
-      part: LeftLegZombie
+      part: LeftLegZombieNormal
       connections:
       - left foot
     right foot:
@@ -82,11 +82,11 @@
     left hand:
       part: LeftHandZombie
     right leg:
-      part: RightLegZombie
+      part: RightLegZombieSlow
       connections:
       - right foot
     left leg:
-      part: LeftLegZombie
+      part: LeftLegZombieSlow
       connections:
       - left foot
     right foot:
@@ -131,6 +131,110 @@
       part: RightHandZombie
     left hand:
       part: LeftHandZombie
+
+#MARK: body: Runner
+- type: body
+  id: BodyPartSetZombieRunner
+  name: "runner zombie"
+  root: torso
+  slots:
+    head:
+      part: HeadZombie
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoHuman
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmZombie
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmZombie
+      connections:
+      - left hand
+    right hand:
+      part: RightHandZombie
+    left hand:
+      part: LeftHandZombie
+    right leg:
+      part: RightLegZombieFast
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegZombieFast
+      connections:
+      - left foot
+    right foot:
+      part: RightFootZombie
+    left foot:
+      part: LeftFootZombie
+
+#MARK: body: Sprinter
+- type: body
+  id: BodyPartSetZombieSprinter
+  name: "sprinter zombie"
+  root: torso
+  slots:
+    head:
+      part: HeadZombie
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoHuman
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmZombie
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmZombie
+      connections:
+      - left hand
+    right hand:
+      part: RightHandZombie
+    left hand:
+      part: LeftHandZombie
+    right leg:
+      part: RightLegZombieFastVery
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegZombieFastVery
+      connections:
+      - left foot
+    right foot:
+      part: RightFootZombie
+    left foot:
+      part: LeftFootZombie
 
 #MARK: species: Base
 - type: species

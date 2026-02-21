@@ -1,7 +1,7 @@
 #MARK: FirstAidKit
 - type: entity
   parent: Medkit
-  id: ContainerMedicineKitFirstAid
+  id: ContainerMedicalPouchFirstAid
   name: first aid kit
   description: A standard first aid kit containing bandages, painkillers, and antiseptic. Basic but reliable.
   components:
@@ -13,8 +13,8 @@
     state: icon
 
 - type: entity
-  parent: ContainerMedicineKitFirstAid
-  id: ContainerMedicineKitFirstAidFilled
+  parent: ContainerMedicalPouchFirstAid
+  id: ContainerMedicalPouchFirstAidFilled
   suffix: Filled
   components:
   - type: StorageFill
@@ -27,7 +27,7 @@
 #MARK: IFAK
 - type: entity
   parent: Medkit
-  id: ContainerMedicineKitIFAK
+  id: ContainerMedicalKitIFAK
   name: IFAK
   description: An Individual First Aid Kit issued to military personnel. Contains supplies for treating combat trauma.
   components:
@@ -39,8 +39,34 @@
     state: icon
 
 - type: entity
-  parent: ContainerMedicineKitIFAK
-  id: ContainerMedicineKitIFAKFilled
+  parent: ContainerMedicalKitIFAK
+  id: ContainerMedicalKitIFAKFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ConsumableMedicineHemostaticPowder
+    - id: ConsumableMedicineBandageProper
+    - id: ConsumableMedicineInjectorEpinephrine
+    - id: ConsumableMedicinePillCanisterCodeine
+
+#MARK: AFAK
+- type: entity
+  parent: Medkit
+  id: ContainerMedicalKitAFAK
+  name: AFAK
+  description: An Advanced First Aid Kit issued to military personnel. Contains supplies for treating combat trauma.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Containers/medkit_AFAK.rsi
+    state: icon
+  - type: Item
+    sprite: _Cataclysm14/Objects/Containers/medkit_AFAK.rsi
+    state: icon
+
+- type: entity
+  parent: ContainerMedicalKitAFAK
+  id: ContainerMedicalKitAFAKFilled
   suffix: Filled
   components:
   - type: StorageFill
@@ -53,21 +79,21 @@
 #MARK: HerbalistPouch
 - type: entity
   parent: Medkit
-  id: ContainerMedicineKitHerbalist
+  id: ContainerMedicalSackHerbalist
   name: herbalist's pouch
   description: A leather pouch containing various herbal remedies. Smells of dried herbs and essential oils.
   components:
   #missing proper sprite
   - type: Sprite
-    sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi
-    state: firstaid
+    sprite: _Cataclysm14/Objects/Containers/sack_leather.rsi
+    state: icon
   - type: Item
-    sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi
-    heldPrefix: firstaid
+    sprite: _Cataclysm14/Objects/Containers/sack_leather.rsi
+    state: icon
 
 - type: entity
-  parent: ContainerMedicineKitHerbalist
-  id: ContainerMedicineKitHerbalistFilled
+  parent: ContainerMedicalSackHerbalist
+  id: ContainerMedicalSackHerbalistFilled
   suffix: Filled
   components:
   - type: StorageFill
@@ -82,7 +108,7 @@
 #MARK: TraumaKit
 - type: entity
   parent: Medkit
-  id: ContainerMedicineKitTrauma
+  id: ContainerMedicalKitTrauma
   name: trauma kit
   description: A trauma kit designed for treating catastrophic hemorrhage and severe injuries in the field.
   components:
@@ -94,8 +120,8 @@
     state: icon
 
 - type: entity
-  parent: ContainerMedicineKitTrauma
-  id: ContainerMedicineKitTraumaFilled
+  parent: ContainerMedicalKitTrauma
+  id: ContainerMedicalKitTraumaFilled
   suffix: Filled
   components:
   - type: StorageFill

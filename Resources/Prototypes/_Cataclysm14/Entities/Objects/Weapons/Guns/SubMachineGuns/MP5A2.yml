@@ -1,26 +1,26 @@
 - type: entity
-  name: M249 (5.56x45mm NATO)
+  name: HK MP5A2 (9x19mm)
   parent: BaseWeaponRifle
-  id: WeaponLightMachinegunM249Base
+  id: WeaponSubMachineGunMP5A2Base
   abstract: true
-  description: A modern LMG made for use by the US army and NATO countries, Chambered in 5.56x45mm NATO .
+  description: A timeless classic used by forces throughout the world, the Heckler and Koch MachinePistol 5, Chambered in 9x19mm Parabellum.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_64x32.rsi
-    scale: 0.75, 0.75
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5A2_64x32.rsi
+    scale: 0.6, 0.6
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5A2_32x32.rsi
     size: Huge
     shape:
     - 0,0,5,1
     storedScale: 2
   - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5A2_32x32.rsi
     clothingVisuals:
       suitstorage:
       - state: equipped-SUITSTORAGE
@@ -84,8 +84,8 @@
       state: all
 
 - type: entity
-  parent: WeaponLightMachinegunM249Base
-  id: WeaponLightMachinegunM249Filled200rdEmpty
+  parent: WeaponSubMachineGunMP5A2Base
+  id: WeaponSubMachineGunMP5A2Filled200rdEmpty
   suffix: Empty - 200rd
   components:
   - type: ItemSlots
@@ -95,8 +95,8 @@
         startingItem: MagazineBox5.56x45mmLMG200rdEmpty
 
 - type: entity
-  parent: WeaponLightMachinegunM249Base
-  id: WeaponLightMachinegunM249Filled200rdFMJ
+  parent: WeaponSubMachineGunMP5A2Base
+  id: WeaponSubMachineGunMP5A2Filled200rdFMJ
   suffix: FMJ - 200rd
   components:
   - type: ItemSlots
@@ -106,8 +106,8 @@
         startingItem: MagazineBox5.56x45mmLMG200rdFMJ
 
 - type: entity
-  parent: WeaponLightMachinegunM249Base
-  id: WeaponLightMachinegunM249Filled200rdTracerRed
+  parent: WeaponSubMachineGunMP5A2Base
+  id: WeaponSubMachineGunMP5A2Filled200rdTracerRed
   suffix: Tracer Red - 200rd
   components:
   - type: ItemSlots
