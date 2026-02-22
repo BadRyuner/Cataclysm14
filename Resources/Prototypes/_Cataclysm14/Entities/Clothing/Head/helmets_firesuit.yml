@@ -27,3 +27,6 @@
         - Snout
         - HeadTop
         - HeadSide
+      - type: ImageOverlay
+        pathToOverlayImage: "/Textures/_Cataclysm14/Overlays/overlay_firehelm.png"
+        additionalColorOverlay: "#cbc84210"
