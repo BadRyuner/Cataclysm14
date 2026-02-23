@@ -146,7 +146,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0 #make zombies block each other way less
+          radius: 0.35 #make zombies block each other way less
         density: 220
         restitution: 0.0
         mask:

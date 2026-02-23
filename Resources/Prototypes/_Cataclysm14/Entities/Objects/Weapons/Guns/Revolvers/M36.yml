@@ -12,8 +12,8 @@
     - 0,0,1,1
     storedScale: 2.25
   - type: Sprite
-    scale: 0.5,0.5
     sprite: _Cataclysm14/Objects/Weapons/Guns/Revolvers/M36.rsi
+    scale: 0.4,0.4
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/Revolvers/M36.rsi
   - type: Gun

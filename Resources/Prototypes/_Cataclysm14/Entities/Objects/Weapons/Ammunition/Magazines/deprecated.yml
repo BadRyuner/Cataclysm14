@@ -611,7 +611,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge9x19mmFMJ
+        - Cartridges9x19mm
     capacity: 34
   - type: Item
     size: Small
@@ -704,7 +704,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge9x19mmFMJ
+        - Cartridges9x19mm
     capacity: 35
   - type: Item
     size: Small
@@ -733,7 +733,7 @@
     proto: Cartridge9x19mmFMJ
     whitelist:
       tags:
-        - Cartridge9x19mmFMJ
+        - Cartridges9x19mm
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
   - type: Sprite
@@ -895,7 +895,7 @@
     proto: Cartridge9x19mmFMJ
     whitelist:
       tags:
-      - Cartridge9x19mmFMJ
+      - Cartridges9x19mm
     capacity: 30
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/9x19mm_smg_mag_top_mounted.rsi

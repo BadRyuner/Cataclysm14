@@ -1,13 +1,13 @@
 - type: entity
   name: M1 Carbine (.45 magnum)
   parent: BaseWeaponRifle
-  id: WeaponBattleRifleM1CarbineBase
+  id: WeaponCarbineM1CarbineBase
   abstract: true
   description: A small combat rifle made for the US Army during WW2, originally in .30 Caliber (7.62x33mm). Modified to be chambered in .45 magnum.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/Carbines/M1Carbine_64x32.rsi
-    scale: 0.75, 0.75
+    scale: 0.60, 0.60
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -74,8 +74,8 @@
       state: all
 
 - type: entity
-  parent: WeaponBattleRifleM1CarbineBase
-  id: WeaponBattleRifleM1CarbineFilledSTANAG20rdEmpty
+  parent: WeaponCarbineM1CarbineBase
+  id: WeaponCarbineM1CarbineFilledSTANAG20rdEmpty
   suffix: Empty- STANAG 20rd
   components:
   - type: ItemSlots
@@ -85,8 +85,8 @@
         startingItem: Magazine5.56x45mmSTANAG20rdEmpty
 
 - type: entity
-  parent: WeaponBattleRifleM1CarbineBase
-  id: WeaponBattleRifleM1CarbineFilledSTANAG20rdFMJ
+  parent: WeaponCarbineM1CarbineBase
+  id: WeaponCarbineM1CarbineFilledSTANAG20rdFMJ
   suffix: FMJ - STANAG 20rd
   components:
   - type: ItemSlots

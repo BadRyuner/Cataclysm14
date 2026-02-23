@@ -230,9 +230,11 @@
   - type: Tag
     id: Magazine9x19mmGlockCompatible
 
-    #Deprecated
   - type: Tag
-    id: Cartridge9x19mmFMJ
+    id: Magazine9x19mmMP5Compatible
+
+  - type: Tag
+    id: Cartridges9x19mm
 
     #Deprecated
   - type: Tag
