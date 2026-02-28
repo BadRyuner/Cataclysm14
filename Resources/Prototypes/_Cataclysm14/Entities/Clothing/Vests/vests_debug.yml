@@ -7,11 +7,11 @@
   description: A heavily armored hardsuit designed for work in "very special" operations. Property of Gorlex Ravers.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Debug/RGBullshit.rsi
+    sprite: _Cataclysm14/Clothing/DebugClothings/RGBullshit.rsi
   - type: Item
     size: Huge
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Debug/RGBullshit.rsi
+    sprite: _Cataclysm14/Clothing/DebugClothings/RGBullshit.rsi
     clothingVisuals:
       outerClothing:
       - state: equipped-OUTERCLOTHING_RGB
