@@ -38,7 +38,14 @@
   - type: Tag
     id: ToolCrowbar
 
+
 #MARK: Ammo >
+
+
+
+
+
+
   #MARK: 7.62x51mm
   - type: Tag
     id: Magazine7.62x51mmSTANAGCompatible
@@ -109,6 +116,9 @@
 
   - type: Tag
     id: MagazineBox5.56x45mmLMGCompatible
+
+  - type: Tag
+    id: MagazineBox7.62x51mmLMGCompatible
 
     #Deprecated
   - type: Tag
