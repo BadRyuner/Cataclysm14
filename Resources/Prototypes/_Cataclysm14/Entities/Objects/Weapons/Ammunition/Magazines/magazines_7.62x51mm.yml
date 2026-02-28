@@ -44,7 +44,7 @@
   - type: BallisticAmmoProvider
     capacity: 20
   - type: Item
-    stoYellowScale: 2.5
+    storedScale: 2.5
   - type: Tag
     tags:
       - Magazine7.62x51mmSTANAGCompatible
@@ -93,7 +93,7 @@
   - type: BallisticAmmoProvider
     capacity: 20
   - type: Item
-    stoYellowScale: 2.5
+    storedScale: 2.5
   - type: Tag
     tags:
       - Magazine7.62x51mmSTANAGCompatible
@@ -142,7 +142,7 @@
   - type: BallisticAmmoProvider
     capacity: 100
   - type: Item
-    stoYellowScale: 2.5
+    storedScale: 2.5
     shape:
     - 0,0,1,1
   - type: Tag
@@ -194,7 +194,7 @@
   - type: BallisticAmmoProvider
     capacity: 200
   - type: Item
-    stoYellowScale: 2.5
+    storedScale: 2.5
     shape:
     - 0,0,1,1
   - type: Tag
