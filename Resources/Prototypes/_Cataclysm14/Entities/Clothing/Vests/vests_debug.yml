@@ -1,47 +1,48 @@
+#Commented out because RSI broken and can't figure out
 
-- type: entity
-  parent: ClothingOuterArmorBase
-  id: ClothingOuterHardsuitRGBullshit
-  name: RGBullshit
-  suffix: DEBUG
-  description: A heavily armored hardsuit designed for work in "very special" operations. Property of Gorlex Ravers.
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Debug/RGBullshit.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Debug/RGBullshit.rsi
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING_RGB
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0
-        Slash: 0
-        Piercing: 0
-        Heat: 0
-        Radiation: 0
-        Caustic: 0
-  - type: ClothingSpeedModifier
-    walkModifier: 2
-    sprintModifier: 5
-  - type: HeldSpeedModifier
-  - type: Tag
-    tags:
-    - MonkeyWearable
-    - Hardsuit
-    - WhitelistChameleon
-  - type: StaminaDamageResistance
-    coefficient: 0
-  - type: RgbLightController
-    cycleRate: 10
-  - type: PointLight
-    radius: 5
-    energy: 10
+# - type: entity
+#   parent: ClothingOuterArmorBase
+#   id: ClothingOuterHardsuitRGBullshit
+#   name: RGBullshit
+#   suffix: DEBUG
+#   description: A heavily armored hardsuit designed for work in "very special" operations. Property of Gorlex Ravers.
+#   components:
+#   - type: Sprite
+#     sprite: _Cataclysm14/Clothing/Debug/RGBullshit.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Cataclysm14/Clothing/Debug/RGBullshit.rsi
+#     clothingVisuals:
+#       outerClothing:
+#       - state: equipped-OUTERCLOTHING_RGB
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0
+#         Slash: 0
+#         Piercing: 0
+#         Heat: 0
+#         Radiation: 0
+#         Caustic: 0
+#   - type: ClothingSpeedModifier
+#     walkModifier: 2
+#     sprintModifier: 5
+#   - type: HeldSpeedModifier
+#   - type: Tag
+#     tags:
+#     - MonkeyWearable
+#     - Hardsuit
+#     - WhitelistChameleon
+#   - type: StaminaDamageResistance
+#     coefficient: 0
+#   - type: RgbLightController
+#     cycleRate: 10
+#   - type: PointLight
+#     radius: 5
+#     energy: 10
