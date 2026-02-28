@@ -1,0 +1,128 @@
+#MARK: FirstAidKit
+- type: entity
+  parent: Medkit
+  id: ContainerMedicalPouchFirstAid
+  name: first aid kit
+  description: A standard first aid kit containing bandages, painkillers, and antiseptic. Basic but reliable.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Containers/medkit_box_medium_red.rsi
+    state: icon
+  - type: Item
+    sprite: _Cataclysm14/Objects/Containers/medkit_box_medium_red.rsi
+
+- type: entity
+  parent: ContainerMedicalPouchFirstAid
+  id: ContainerMedicalPouchFirstAidFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ConsumableMedicineBandageMedicalGauze
+    - id: ConsumableMedicineBandageProper
+    - id: ConsumableMedicinePillCanisterAspirin
+    - id: ConsumableMedicineAntiseptic
+
+#MARK: IFAK
+- type: entity
+  parent: Medkit
+  id: ContainerMedicalKitIFAK
+  name: IFAK
+  description: An Individual First Aid Kit issued to military personnel. Contains supplies for treating combat trauma.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Containers/medkit_IFAK.rsi
+    state: icon
+  - type: Item
+    sprite: _Cataclysm14/Objects/Containers/medkit_IFAK.rsi
+
+- type: entity
+  parent: ContainerMedicalKitIFAK
+  id: ContainerMedicalKitIFAKFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ConsumableMedicineHemostaticPowder
+    - id: ConsumableMedicineBandageProper
+    - id: ConsumableMedicineInjectorEpinephrine
+    - id: ConsumableMedicinePillCanisterCodeine
+
+#MARK: AFAK
+- type: entity
+  parent: Medkit
+  id: ContainerMedicalKitAFAK
+  name: AFAK
+  description: An Advanced First Aid Kit issued to military personnel. Contains supplies for treating combat trauma.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Containers/medkit_AFAK.rsi
+    state: icon
+  - type: Item
+    sprite: _Cataclysm14/Objects/Containers/medkit_AFAK.rsi
+
+- type: entity
+  parent: ContainerMedicalKitAFAK
+  id: ContainerMedicalKitAFAKFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ConsumableMedicineHemostaticPowder
+    - id: ConsumableMedicineBandageProper
+    - id: ConsumableMedicineInjectorEpinephrine
+    - id: ConsumableMedicinePillCanisterCodeine
+
+#MARK: HerbalistPouch
+- type: entity
+  parent: Medkit
+  id: ContainerMedicalSackHerbalist
+  name: herbalist's pouch
+  description: A leather pouch containing various herbal remedies. Smells of dried herbs and essential oils.
+  components:
+  #missing proper sprite
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Containers/sack_leather.rsi
+    state: icon
+  - type: Item
+    sprite: _Cataclysm14/Objects/Containers/sack_leather.rsi
+
+- type: entity
+  parent: ContainerMedicalSackHerbalist
+  id: ContainerMedicalSackHerbalistFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ConsumableMedicineHerbalPoppyPainkiller
+      amount: 2
+    - id: ConsumableMedicineHerbalCattailJelly
+      amount: 2
+    - id: ConsumableMedicineHerbalWintergreenOil
+    - id: ConsumableMedicineHerbalThymeOil
+
+#MARK: TraumaKit
+- type: entity
+  parent: Medkit
+  id: ContainerMedicalKitTrauma
+  name: trauma kit
+  description: A trauma kit designed for treating catastrophic hemorrhage and severe injuries in the field.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Containers/medkit_box_medium_red.rsi
+    state: icon
+  - type: Item
+    sprite: _Cataclysm14/Objects/Containers/medkit_box_medium_red.rsi
+
+- type: entity
+  parent: ContainerMedicalKitTrauma
+  id: ContainerMedicalKitTraumaFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ConsumableMedicineHemostaticPowder
+    - id: ConsumableMedicineBandageProper
+    - id: ConsumableMedicineInjectorMorphine
+    - id: ConsumableMedicineInjectorSaline
+    - id: ConsumableMedicineAntisepticPowder

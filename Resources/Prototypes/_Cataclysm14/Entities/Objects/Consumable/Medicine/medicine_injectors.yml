@@ -1,7 +1,7 @@
 #MARK: Epinephrine Autoinjector
 - type: entity
   parent: ChemicalMedipen
-  id: MedicalItemInjectorEpinephrine
+  id: ConsumableMedicineInjectorEpinephrine
   name: epinephrine autoinjector
   description: An emergency epinephrine autoinjector. Stabilizes patients in anaphylactic shock or cardiac arrest.
   components:
@@ -29,7 +29,7 @@
 #MARK: Morphine Syrette
 - type: entity
   parent: ChemicalMedipen
-  id: MedicalItemInjectorMorphine
+  id: ConsumableMedicineInjectorMorphine
   name: morphine syrette
   description: A military-issue morphine syrette. A strong narcotic painkiller in a squeezable tube with attached needle.
   components:
@@ -57,7 +57,7 @@
 #MARK: Antivenom Injector
 - type: entity
   parent: ChemicalMedipen
-  id: MedicalItemInjectorAntidote
+  id: ConsumableMedicineInjectorAntidote
   name: antivenom injector
   description: An injectable prophylactic antivenom. Provides broad-spectrum protection against organic toxins.
   components:
@@ -85,7 +85,7 @@
 #MARK: Stimulant Injector
 - type: entity
   parent: ChemicalMedipen
-  id: MedicalItemInjectorStimulant
+  id: ConsumableMedicineInjectorStimulant
   name: stimulant injector
   description: A military-grade stimulant injector. Increases alertness and reaction time. Side effects include irritability and insomnia.
   components:
@@ -111,7 +111,7 @@
 #MARK: Rad Treatment Injector
 - type: entity
   parent: ChemicalMedipen
-  id: MedicalItemInjectorRadTreatment
+  id: ConsumableMedicineInjectorRadTreatment
   name: rad treatment injector
   description: An emergency radiation treatment injector. For acute radiation exposure. Aggressively chelates radioactive particles.
   components:
@@ -139,7 +139,7 @@
 #MARK: Combat Trauma Pen
 - type: entity
   parent: ChemicalMedipen
-  id: MedicalItemInjectorCombat
+  id: ConsumableMedicineInjectorCombat
   name: combat trauma pen
   description: A combat medical auto-injector loaded with broad-spectrum trauma medication. Designed to get a wounded soldier back in the fight.
   components:
@@ -167,7 +167,7 @@
 #MARK: Saline Injector
 - type: entity
   parent: ChemicalMedipen
-  id: MedicalItemInjectorSaline
+  id: ConsumableMedicineInjectorSaline
   name: saline injector
   description: A pre-filled saline syringe for fluid resuscitation. Restores blood volume in hemorrhagic shock.
   components:

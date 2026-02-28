@@ -13,6 +13,7 @@
       size: Normal
       shape:
       - 0,0,1,1
+      storedScale: 2
     - type: Damageable
       damageContainer: Inorganic
 
@@ -30,6 +31,7 @@
       size: Normal
       shape:
       - 0,0,1,2
+      storedScale: 2.5
     - type: Damageable
       damageContainer: Inorganic
 

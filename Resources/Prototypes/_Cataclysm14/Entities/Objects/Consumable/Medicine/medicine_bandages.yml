@@ -1,7 +1,7 @@
 #MARK: MakeshiftBandage
 - type: entity
   parent: BaseHealingItem
-  id: MedicalItemBandageMakeshift
+  id: ConsumableMedicineBandageMakeshift
   name: makeshift bandage
   description: A makeshift bandage fashioned from a torn piece of cloth. Not sterile, but better than nothing.
   components:
@@ -31,13 +31,13 @@
         volume: 1.0
         variation: 0.125
   - type: Stack
-    stackType: MedicalItemBandageMakeshift
+    stackType: ConsumableMedicineBandageMakeshift
     count: 10
 
 #MARK: BoiledBandage
 - type: entity
   parent: BaseHealingItem
-  id: MedicalItemBandageBoiled
+  id: ConsumableMedicineBandageBoiled
   name: boiled bandage
   description: A cloth bandage that has been boiled for sterilization. More effective than a raw makeshift bandage.
   components:
@@ -67,13 +67,13 @@
         volume: 1.0
         variation: 0.125
   - type: Stack
-    stackType: MedicalItemBandageBoiled
+    stackType: ConsumableMedicineBandageBoiled
     count: 10
 
 #MARK: MedicalGauze
 - type: entity
   parent: BaseHealingItem
-  id: MedicalItemBandageMedicalGauze
+  id: ConsumableMedicineBandageMedicalGauze
   name: medical gauze
   description: Sterile medical gauze for wound dressing. Effective at controlling bleeding from cuts and punctures.
   components:
@@ -104,13 +104,13 @@
         volume: 1.0
         variation: 0.125
   - type: Stack
-    stackType: MedicalItemBandageMedicalGauze
+    stackType: ConsumableMedicineBandageMedicalGauze
     count: 10
 
 #MARK: ProperBandage
 - type: entity
   parent: BaseHealingItem
-  id: MedicalItemBandageProper
+  id: ConsumableMedicineBandageProper
   name: bandage
   description: A proper adhesive bandage with antiseptic padding. Standard medical supply.
   components:
@@ -140,13 +140,13 @@
         volume: 1.0
         variation: 0.125
   - type: Stack
-    stackType: MedicalItemBandageProper
+    stackType: ConsumableMedicineBandageProper
     count: 10
 
 #MARK: HemostaticPowder
 - type: entity
   parent: BaseHealingItem
-  id: MedicalItemHemostaticPowder
+  id: ConsumableMedicineHemostaticPowder
   name: hemostatic powder
   description: A packet of hemostatic granules designed to rapidly control bleeding. Stings on application.
   components:
@@ -177,13 +177,13 @@
         volume: 1.0
         variation: 0.125
   - type: Stack
-    stackType: MedicalItemHemostaticPowder
+    stackType: ConsumableMedicineHemostaticPowder
     count: 5
 
 #MARK: Antiseptic
 - type: entity
   parent: BaseHealingItem
-  id: MedicalItemAntiseptic
+  id: ConsumableMedicineAntiseptic
   name: antiseptic
   description: Isopropyl alcohol solution for cleaning and disinfecting wounds. Prevents infection.
   components:
@@ -215,13 +215,13 @@
         volume: 1.0
         variation: 0.125
   - type: Stack
-    stackType: MedicalItemAntiseptic
+    stackType: ConsumableMedicineAntiseptic
     count: 10
 
 #MARK: MakeshiftAntiseptic
 - type: entity
   parent: BaseHealingItem
-  id: MedicalItemAntisepticMakeshift
+  id: ConsumableMedicineAntisepticMakeshift
   name: makeshift antiseptic
   description: An improvised antiseptic made from ethanol. Less effective than proper disinfectant, but serviceable.
   components:
@@ -253,13 +253,13 @@
         volume: 1.0
         variation: 0.125
   - type: Stack
-    stackType: MedicalItemAntisepticMakeshift
+    stackType: ConsumableMedicineAntisepticMakeshift
     count: 10
 
 #MARK: AntisepticPowder
 - type: entity
   parent: BaseHealingItem
-  id: MedicalItemAntisepticPowder
+  id: ConsumableMedicineAntisepticPowder
   name: antiseptic powder
   description: Bismuth formic iodide in powder form. An effective chemical wound cleanser.
   components:
@@ -290,5 +290,5 @@
         volume: 1.0
         variation: 0.125
   - type: Stack
-    stackType: MedicalItemAntisepticPowder
+    stackType: ConsumableMedicineAntisepticPowder
     count: 8

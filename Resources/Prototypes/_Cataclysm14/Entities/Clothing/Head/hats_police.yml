@@ -10,6 +10,7 @@
         sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
+
 #MARK: US cop cap
     - type: entity
       parent: ClothingHeadBase
@@ -22,6 +23,7 @@
         sprite: _Cataclysm14/Clothing/Head/hat_cap_police_US.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Head/hat_cap_police_US.rsi
+
 #MARK: French cop beret
     - type: entity
       parent: ClothingHeadBase

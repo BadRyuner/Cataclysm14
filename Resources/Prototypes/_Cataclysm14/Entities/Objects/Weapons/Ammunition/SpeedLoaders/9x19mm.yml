@@ -11,7 +11,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - Cartridge9x19mmFMJ
+        - Cartridges9x19mm
     capacity: 8
   - type: Sprite
   - type: ContainerContainer

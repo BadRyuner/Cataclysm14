@@ -1,0 +1,96 @@
+- type: entity
+  name: Ruger Mini-14 (5.56x45mm NATO)
+  parent: BaseWeaponRifle
+  id: WeaponCarbineMini14Base
+  abstract: true
+  description: A scaled down version of the M14 used mainly but law enforcment and civilians. Chambered in 5.56x45mm NATO .
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Carbines/Mini14_64x32.rsi
+    scale: 0.60, 0.60
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Carbines/Mini14_32x32.rsi
+    size: Huge
+    shape:
+    - 0,0,5,1
+    storedScale: 2
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Carbines/Mini14_32x32.rsi
+    clothingVisuals:
+      slingfront:
+      - state: equipped-SLINGFRONT
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    fireRate: 9
+    soundGunshot:
+      path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg
+      params:
+        volume: 15
+        variation: 0.1
+        pitch: 2.2
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.56x45mmSTANAG20rdEmpty
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine5.56x45mmSTANAGCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge5.56x45mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge5.56x45mmFMJ
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
+      state: all
+
+- type: entity
+  parent: WeaponCarbineMini14Base
+  id: WeaponCarbineMini14FilledSTANAG20rdEmpty
+  suffix: Empty- STANAG 20rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.56x45mmSTANAG20rdEmpty
+
+- type: entity
+  parent: WeaponCarbineMini14Base
+  id: WeaponCarbineMini14FilledSTANAG20rdFMJ
+  suffix: FMJ - STANAG 20rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.56x45mmSTANAG20rdFMJ

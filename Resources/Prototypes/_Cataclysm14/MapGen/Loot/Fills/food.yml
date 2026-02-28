@@ -1,4 +1,4 @@
-#MARK: FridgeBasic
+#MARK: FridgeOldBasic
 - type: entity
   id: StructureApplianceFridgeOldFilledBasic
   suffix: Basic Filled
@@ -19,7 +19,7 @@
       storagebase: !type:NestedSelector
         tableId: LootTableFoodFridgeBasicRandom50
 
-#MARK: FridgeFood
+#MARK: FridgeOldFood
 - type: entity
   id: StructureApplianceFridgeOldFilledFood
   suffix: Food Filled
@@ -40,7 +40,7 @@
       storagebase: !type:NestedSelector
         tableId: LootTableFoodFridgeFoodRandom50
 
-#MARK: FridgeDrinks
+#MARK: FridgeOldDrinks
 - type: entity
   id: StructureApplianceFridgeOldFilledDrinks
   suffix: Drinks Filled
@@ -102,3 +102,66 @@
     containers:
       storagebase: !type:NestedSelector
         tableId: LootTableFoodShelfLongLastingRandom50
+
+#MARK: FridgeStoreBasic
+- type: entity
+  id: StructureApplianceFridgeStoreFilledBasic
+  suffix: Basic Filled
+  parent: StructureApplianceFridgeStore
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeBasic
+
+- type: entity
+  id: StructureApplianceFridgeStoreFilledBasicRandom50
+  suffix: Basic 50%
+  parent: StructureApplianceFridgeStore
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeBasicRandom50
+
+#MARK: FridgeStoreFood
+- type: entity
+  id: StructureApplianceFridgeStoreFilledFood
+  suffix: Food Filled
+  parent: StructureApplianceFridgeStore
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeFood
+
+- type: entity
+  id: StructureApplianceFridgeStoreFilledFoodRandom50
+  suffix: Food 50%
+  parent: StructureApplianceFridgeStore
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeFoodRandom50
+
+#MARK: FridgeStoreDrinks
+- type: entity
+  id: StructureApplianceFridgeStoreFilledDrinks
+  suffix: Drinks Filled
+  parent: StructureApplianceFridgeStore
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeDrinks
+
+- type: entity
+  id: StructureApplianceFridgeStoreFilledDrinksRandom50
+  suffix: Drinks 50%
+  parent: StructureApplianceFridgeStore
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeDrinksRandom50

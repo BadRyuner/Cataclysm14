@@ -97,38 +97,6 @@
         - ReagentId: Fat
           Quantity: 2
 
-#MARK: MysteryCan
-- type: entity
-  parent: BaseItem
-  id: ConsumableFoodJunkMysteryCan
-  name: mystery can
-  description: "A tin can with the label completely worn off. Could be anything from peaches to cat food. Spin the wheel."
-  components:
-  - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi  # TODO: Replace with Cataclysm14-specific sprites
-    state: icon
-  - type: Item
-    size: Small
-  - type: SpawnItemsOnUse
-    items:
-    - id: ConsumableFoodCannedChickenSoup
-      prob: 0.3
-      orGroup: Contents
-    - id: ConsumableFoodCannedBeans
-      prob: 0.3
-      orGroup: Contents
-    - id: ConsumableFoodCannedSpam
-      prob: 0.3
-      orGroup: Contents
-    - id: ConsumableFoodCannedCorn
-      prob: 0.3
-      orGroup: Contents
-    - id: ConsumableFoodCannedDogFood
-      prob: 0.1
-      orGroup: Contents
-    sound:
-      path: /Audio/Items/can_open3.ogg
-
 #MARK: StaleCereal
 - type: entity
   parent: FoodSnackBase

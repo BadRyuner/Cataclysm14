@@ -53,8 +53,8 @@
     children:
       - !type:GroupSelector
           children:
-          - id: WeaponLightMachinegunM249Filled200rdEmpty
-          - id: WeaponLightMachinegunM249Filled200rdFMJ
+          - id: WeaponLightMachineGunM249Filled200rdEmpty
+          - id: WeaponLightMachineGunM249Filled200rdFMJ
       - !type:GroupSelector
           children:
           - id: MagazineBox5.56x45mmLMG100rdFMJ

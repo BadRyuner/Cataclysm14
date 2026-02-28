@@ -1,57 +1,57 @@
 # Stack types for Cataclysm14 medical bandage/wound care items
 
 - type: stack
-  id: MedicalItemBandageMakeshift
+  id: ConsumableMedicineBandageMakeshift
   name: makeshift bandage
   icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
-  spawn: MedicalItemBandageMakeshift
+  spawn: ConsumableMedicineBandageMakeshift
   maxCount: 10
 
 - type: stack
-  id: MedicalItemBandageBoiled
+  id: ConsumableMedicineBandageBoiled
   name: boiled bandage
   icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
-  spawn: MedicalItemBandageBoiled
+  spawn: ConsumableMedicineBandageBoiled
   maxCount: 10
 
 - type: stack
-  id: MedicalItemBandageMedicalGauze
+  id: ConsumableMedicineBandageMedicalGauze
   name: medical gauze
   icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: gauze }
-  spawn: MedicalItemBandageMedicalGauze
+  spawn: ConsumableMedicineBandageMedicalGauze
   maxCount: 10
 
 - type: stack
-  id: MedicalItemBandageProper
+  id: ConsumableMedicineBandageProper
   name: bandage
   icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: gauze }
-  spawn: MedicalItemBandageProper
+  spawn: ConsumableMedicineBandageProper
   maxCount: 10
 
 - type: stack
-  id: MedicalItemHemostaticPowder
+  id: ConsumableMedicineHemostaticPowder
   name: hemostatic powder
   icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
-  spawn: MedicalItemHemostaticPowder
+  spawn: ConsumableMedicineHemostaticPowder
   maxCount: 5
 
 - type: stack
-  id: MedicalItemAntiseptic
+  id: ConsumableMedicineAntiseptic
   name: antiseptic
   icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
-  spawn: MedicalItemAntiseptic
+  spawn: ConsumableMedicineAntiseptic
   maxCount: 10
 
 - type: stack
-  id: MedicalItemAntisepticMakeshift
+  id: ConsumableMedicineAntisepticMakeshift
   name: makeshift antiseptic
   icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
-  spawn: MedicalItemAntisepticMakeshift
+  spawn: ConsumableMedicineAntisepticMakeshift
   maxCount: 10
 
 - type: stack
-  id: MedicalItemAntisepticPowder
+  id: ConsumableMedicineAntisepticPowder
   name: antiseptic powder
   icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
-  spawn: MedicalItemAntisepticPowder
+  spawn: ConsumableMedicineAntisepticPowder
   maxCount: 8
