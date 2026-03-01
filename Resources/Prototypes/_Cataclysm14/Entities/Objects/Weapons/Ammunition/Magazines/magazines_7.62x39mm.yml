@@ -1,4 +1,4 @@
-# Empty mags
+#MARK: Base
 - type: entity
   id: BaseMagazine7.62x39mm
   name: "magazine (7.62x39mm FMJ)"
@@ -12,7 +12,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x39mmFMJ
+        - Cartridge7.62x39mm
     proto: Cartridge7.62x39mmFMJ
     capacity: 30
   - type: Item

@@ -8,7 +8,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge4.6x30mmFMJ
+        - Cartridge4.6x30mm
     proto: Cartridge4.6x30mmFMJ
     capacity: 80
   - type: Item

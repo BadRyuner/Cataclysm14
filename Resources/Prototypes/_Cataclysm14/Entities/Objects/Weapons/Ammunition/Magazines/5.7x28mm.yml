@@ -11,7 +11,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.7x28mmFMJ
+        - Cartridge5.7x28mm
     capacity: 17
   - type: Item
     size: Small
@@ -183,7 +183,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.7x28mmFMJ
+        - Cartridge5.7x28mm
     capacity: 34
   - type: Item
     size: Small
@@ -276,7 +276,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.7x28mmFMJ
+        - Cartridge5.7x28mm
     capacity: 30
   - type: Item
     size: Small
@@ -305,7 +305,7 @@
     proto: Cartridge5.7x28mmFMJ
     whitelist:
       tags:
-        - Cartridge5.7x28mmFMJ
+        - Cartridge5.7x28mm
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
   - type: Sprite
@@ -467,7 +467,7 @@
     proto: Cartridge5.7x28mmFMJ
     whitelist:
       tags:
-      - Cartridge5.7x28mmFMJ
+      - Cartridge5.7x28mm
     capacity: 30
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/5.7x28mm/5.7x28mm_smg_mag_top_mounted.rsi

@@ -8,7 +8,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun12_gaugeBuckshot
+    - ShellShotgun12_gauge
   - type: CartridgeAmmo
     soundEject:
       collection: ShellEject
@@ -38,7 +38,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun12_gaugeBuckshot
+    - ShellShotgun12_gauge
     - ShellShotgun12_gaugeLight
   - type: Sprite
     layers:
@@ -71,7 +71,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun12_gaugeBuckshot
+    - ShellShotgun12_gauge
     - ShellShotgun12_gaugeLight
   - type: Sprite
     layers:
@@ -130,7 +130,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun12_gaugeBuckshot
+    - ShellShotgun12_gauge
     - ShellShotgun12_gaugeLight
   - type: Sprite
     layers:
@@ -159,7 +159,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun12_gaugeBuckshot
+    - ShellShotgun12_gauge
     - ShellShotgun12_gaugeLight
   - type: Sprite
     layers:

@@ -11,7 +11,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_ACPFMJ
+        - Cartridge45_ACP
     capacity: 17
   - type: Item
     size: Small
@@ -68,6 +68,45 @@
   id: Magazine45_ACPM1911_10rdFMJ
   suffix: FMJ
   parent: BaseMagazine45_ACPM1911_10rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPFMJ
+
+#MARK: UMP45 30rd
+- type: entity
+  id: BaseMagazine45_ACPUMP45_30rd
+  abstract: true
+  name: "UMP45 30rd magazine (.45 ACP)"
+  parent: BaseMagazine45_ACP
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_ACPFMJ
+    capacity: 30
+  - type: Tag
+    tags:
+      - Magazine45_ACPUMP45Compatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/45_ACP/magazine_45_ACP_UMP45_30rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine45_ACPUMP45_30rdEmpty
+  suffix: Empty
+  parent: BaseMagazine45_ACPUMP45_30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine45_ACPUMP45_30rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine45_ACPUMP45_30rd
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPFMJ

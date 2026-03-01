@@ -8,7 +8,7 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge4.6x30mmFMJ
+      - Cartridge4.6x30mm
   - type: CartridgeAmmo
     proto: Bullet4.6x30mm
   - type: Sprite

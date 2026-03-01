@@ -8,7 +8,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x54mmRFMJ
+        - Cartridge7.62x54mmR
     proto: Cartridge7.62x54mmRFMJ
     capacity: 60 # 3 full power mags
   - type: Item

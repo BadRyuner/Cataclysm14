@@ -8,7 +8,7 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge45_magnumFMJ
+      - Cartridge45_magnum
   - type: CartridgeAmmo
     proto: Bullet45_magnumFMJ
   - type: Sprite

@@ -1,12 +1,12 @@
 - type: entity
   name: Izhmash PP-19-01 "Vityaz" (9x19mm)
   parent: BaseWeaponRifle
-  id: WeaponSubMachineGunPP19Base
+  id: WeaponSubMachineGunPP19VityazBase
   abstract: true
-  description: A timeless classic used by forces throughout the world, the Heckler and Koch MachinePistol 5, Chambered in 9x19mm Parabellum.
+  description: The Izhmash PP19 "Vityaz-SN" (brave warrior) created from the PP19 Bizon and using regular vertical magazines and shares parts with the AK family, Chambered in 9x19mm Parabellum.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-viyaz_64x32.rsi
     scale: 0.50, 0.50
     layers:
       - state: base
@@ -14,13 +14,13 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-viyaz_32x32.rsi
     size: Huge
     shape:
-    - 0,0,5,1
+    - 0,0,2,1
     storedScale: 2
   - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-viyaz_32x32.rsi
     clothingVisuals:
       suitstorage:
       - state: equipped-SUITSTORAGE
@@ -58,7 +58,7 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine9x19mmMP5Compatible
+            - Magazine9x19mmPP19VityazCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -82,34 +82,34 @@
       state: all
 
 - type: entity
-  parent: WeaponSubMachineGunPP19Base
-  id: WeaponSubMachineGunPP19Filled30rdEmpty
+  parent: WeaponSubMachineGunPP19VityazBase
+  id: WeaponSubMachineGunPP19VityazFilled30rdEmpty
   suffix: Empty - 30rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmMP5_30rdEmpty
+        startingItem: Magazine9x19mmPP19Vityaz_30rdEmpty
 
 - type: entity
-  parent: WeaponSubMachineGunPP19Base
-  id: WeaponSubMachineGunPP19Filled30rdFMJ
+  parent: WeaponSubMachineGunPP19VityazBase
+  id: WeaponSubMachineGunPP19VityazFilled30rdFMJ
   suffix: FMJ - 30rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmMP5_30rdFMJ
+        startingItem: Magazine9x19mmPP19Vityaz_30rdFMJ
 
 - type: entity
-  parent: WeaponSubMachineGunPP19Base
-  id: WeaponSubMachineGunPP19Filled30rdTracerRed
+  parent: WeaponSubMachineGunPP19VityazBase
+  id: WeaponSubMachineGunPP19VityazFilled30rdTracerRed
   suffix: Tracer Green - 30rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmMP5_30rdTracerGreen
+        startingItem: Magazine9x19mmPP19Vityaz_30rdTracerGreen

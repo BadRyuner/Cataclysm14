@@ -12,7 +12,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x51mmFMJ
+        - Cartridge7.62x51mm
     proto: Cartridge7.62x51mmFMJ
     capacity: 20
   - type: Item

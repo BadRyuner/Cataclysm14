@@ -111,7 +111,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.56x45mmFMJ
+        - Cartridge5.56x45mm
     capacity: 25
   - type: ContainerContainer
     containers:
@@ -1077,7 +1077,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_ACPFMJ
+        - Cartridge45_ACP
     capacity: 30
   - type: Item
     size: Small
@@ -1170,7 +1170,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_ACPFMJ
+        - Cartridge45_ACP
     capacity: 30
   - type: Item
     size: Small
@@ -1199,7 +1199,7 @@
     proto: Cartridge45_ACPFMJ
     whitelist:
       tags:
-        - Cartridge45_ACPFMJ
+        - Cartridge45_ACP
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
   - type: Sprite
@@ -1361,7 +1361,7 @@
     proto: Cartridge45_ACPFMJ
     whitelist:
       tags:
-      - Cartridge45_ACPFMJ
+      - Cartridge45_ACP
     capacity: 30
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/45_ACP/45_ACP_smg_mag_top_mounted.rsi

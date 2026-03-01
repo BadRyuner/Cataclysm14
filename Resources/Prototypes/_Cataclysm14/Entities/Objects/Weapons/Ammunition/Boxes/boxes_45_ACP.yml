@@ -9,7 +9,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_ACPFMJ
+        - Cartridge45_ACP
     proto: Cartridge45_ACPFMJ
     capacity: 40
   - type: Item

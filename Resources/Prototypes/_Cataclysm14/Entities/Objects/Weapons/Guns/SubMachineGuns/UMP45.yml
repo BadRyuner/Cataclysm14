@@ -68,7 +68,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mmFMJ
+            - Cartridge5.56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -85,33 +85,22 @@
 
 - type: entity
   parent: WeaponSubMachineGunUMP45Base
-  id: WeaponSubMachineGunUMP45Filled200rdEmpty
-  suffix: Empty - 200rd
+  id: WeaponSubMachineGunUMP45Filled30rdEmpty
+  suffix: Empty - 30rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox5.56x45mmLMG200rdEmpty
+        startingItem: Magazine45_ACPUMP45_30rdEmpty
 
 - type: entity
   parent: WeaponSubMachineGunUMP45Base
-  id: WeaponSubMachineGunUMP45Filled200rdFMJ
-  suffix: FMJ - 200rd
+  id: WeaponSubMachineGunUMP45Filled30rdFMJ
+  suffix: FMJ - 30rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox5.56x45mmLMG200rdFMJ
-
-- type: entity
-  parent: WeaponSubMachineGunUMP45Base
-  id: WeaponSubMachineGunUMP45Filled200rdTracerRed
-  suffix: Tracer Red - 200rd
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineBox5.56x45mmLMG200rdTracerRed
+        startingItem: Magazine45_ACPUMP45_30rdFMJ

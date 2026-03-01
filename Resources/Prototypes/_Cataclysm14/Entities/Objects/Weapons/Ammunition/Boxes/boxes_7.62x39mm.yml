@@ -9,7 +9,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x39mmFMJ
+        - Cartridge7.62x39mm
     proto: Cartridge7.62x39mmFMJ
     capacity: 70 # more than 2 rifle mag
   - type: Item

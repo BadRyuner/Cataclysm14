@@ -14,7 +14,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.56x45mmFMJ
+        - Cartridge5.56x45mm
     capacity: 30
   - type: ContainerContainer
     containers:

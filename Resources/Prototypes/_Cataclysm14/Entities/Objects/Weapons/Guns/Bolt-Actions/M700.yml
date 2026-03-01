@@ -36,7 +36,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge7.62x51mmFMJ
+      - Cartridge7.62x51mm
     capacity: 5
     proto: null
   - type: WieldedCrosshair

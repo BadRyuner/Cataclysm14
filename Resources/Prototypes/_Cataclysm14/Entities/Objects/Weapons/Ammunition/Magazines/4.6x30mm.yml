@@ -11,7 +11,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge4.6x30mmFMJ
+        - Cartridge4.6x30mm
     capacity: 21
   - type: Item
     size: Small
@@ -183,7 +183,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge4.6x30mmFMJ
+        - Cartridge4.6x30mm
     capacity: 38
   - type: Item
     size: Small
@@ -276,7 +276,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge4.6x30mmFMJ
+        - Cartridge4.6x30mm
     capacity: 40
   - type: Item
     size: Small
@@ -305,7 +305,7 @@
     proto: Cartridge4.6x30mmFMJ
     whitelist:
       tags:
-        - Cartridge4.6x30mmFMJ
+        - Cartridge4.6x30mm
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
   - type: Sprite
@@ -467,7 +467,7 @@
     proto: Cartridge4.6x30mmFMJ
     whitelist:
       tags:
-      - Cartridge4.6x30mmFMJ
+      - Cartridge4.6x30mm
     capacity: 42
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/4.6x30mm/4.6x30mm_smg_mag_top_mounted.rsi

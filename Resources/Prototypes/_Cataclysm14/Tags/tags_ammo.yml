@@ -1,0 +1,129 @@
+  #MARK: 7.62x51mm
+  - type: Tag
+    id: Magazine7.62x51mmSTANAGCompatible
+
+  - type: Tag
+    id: Cartridge7.62x51mm
+
+  #MARK: 7.62x54mmR
+
+  - type: Tag
+    id: Cartridge7.62x54mmR
+
+  #MARK: 6.8x52mm
+    #Deprecated-ish, unless implemented
+  - type: Tag
+    id: Cartridge6.8x52mmCaseless
+
+  #MARK: 5.56x45mm
+
+  - type: Tag
+    id: Cartridge5.56x45mm
+
+  - type: Tag
+    id: Magazine5.56x45mmSTANAGCompatible
+
+  - type: Tag
+    id: AmmoBelt5.56x45mm
+
+  - type: Tag
+    id: MagazineBox5.56x45mmLMGCompatible
+
+  - type: Tag
+    id: MagazineBox7.62x51mmLMGCompatible
+
+  #MARK: 7.62x39mm
+
+  - type: Tag
+    id: Cartridge7.62x39mm
+
+  #MARK: 4.6x30mm
+
+  - type: Tag
+    id: Cartridge4.6x30mm
+
+    #Deprecated
+  - type: Tag
+    id: Magazine4.6x30mmPistolFMJ
+
+  #MARK:.45 ACP
+
+  - type: Tag
+    id: Cartridge45_ACP
+
+  - type: Tag
+    id: Magazine45_ACPM1911Compatible
+
+  #MARK:.38 Special
+
+  - type: Tag
+    id: Cartridge38_special
+
+  - type: Tag
+    id: SpeedLoader38_special
+
+  #MARK:.45 magnum
+
+  - type: Tag
+    id: Cartridge45_magnum
+
+  #MARK:9x19mm
+
+  - type: Tag
+    id: Magazine9x19mmGlockCompatible
+
+  - type: Tag
+    id: Magazine9x19mmMP5Compatible
+
+  - type: Tag
+    id: Magazine9x19mmPP19VityazCompatible
+
+  - type: Tag
+    id: Cartridges9x19mm
+
+  #MARK: 5.7x28mm
+
+  - type: Tag
+    id: Cartridge5.7x28mm
+
+  #MARK: 8x65mm SKR
+
+  - type: Tag
+    id: Cartridge8x65mmSKR
+
+  - type: Tag
+    id: Magazine8x65mmSKR
+
+  - type: Tag
+    id: MagazineBox8x65mmSKR
+
+  #MARK: .55 SAM
+
+  - type: Tag
+    id: Cartridge55_SAM
+
+  - type: Tag
+    id: Magazine55_SAMPistol
+
+  - type: Tag
+    id: Magazine55_SAMPistolHighCapacity
+
+  #MARK: 12 gauge
+
+  - type: Tag
+    id: ShellShotgun12_gaugeBuckshot
+
+  #MARK: 4 gauge
+
+  - type: Tag
+    id: ShellShotgun23x75mm
+
+  #MARK: 14.5x114mm
+
+  - type: Tag
+    id: Cartridge14.5x114mm
+
+  #MARK: 6.35x40mm
+    #Deprecated-ish, unless implemented
+  - type: Tag
+    id: Cartridge6.35x40mmCaseless

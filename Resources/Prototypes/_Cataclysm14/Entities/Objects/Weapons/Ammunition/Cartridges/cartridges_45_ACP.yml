@@ -8,7 +8,7 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge45_ACPFMJ
+      - Cartridge45_ACP
   - type: CartridgeAmmo
     proto: Bullet45_ACPFMJ
   - type: Sprite
