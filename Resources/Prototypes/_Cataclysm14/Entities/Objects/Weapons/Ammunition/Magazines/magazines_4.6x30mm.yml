@@ -1,0 +1,33 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine4.6x30mm
+  name: pistol magazine (4.6x30mm FMJ)
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Magazine4.6x30mmPistolFMJ
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge4.6x30mm
+    capacity: 21
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/4.6x30mm/4.6x30mm_pistol_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
