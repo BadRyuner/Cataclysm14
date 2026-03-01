@@ -134,7 +134,7 @@
 - type: entity
   id: AmmoBox5.56x45mmDepletedUranium
   parent: BaseAmmoBox5.56x45mm
-  name: ammunition box (5.56x45mm NATO uranium)
+  name: ammunition box (5.56x45mm NATO depleted uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.56x45mmDepletedUranium

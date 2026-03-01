@@ -62,7 +62,7 @@
 
 - type: entity
   id: Cartridge4.6x30mmDepletedUranium
-  name: cartridge (4.6x30mm uranium)
+  name: cartridge (4.6x30mm depleted uranium)
   parent: BaseCartridge4.6x30mm
   components:
   - type: CartridgeAmmo

@@ -175,7 +175,7 @@
 
 - type: entity
   id: ShellShotgun12_gaugeUranium
-  name: shotgun shell (12 gauge uranium)
+  name: shotgun shell (12 gauge depleted uranium)
   parent: BaseShellShotgun12_gauge
   components:
     - type: Sprite

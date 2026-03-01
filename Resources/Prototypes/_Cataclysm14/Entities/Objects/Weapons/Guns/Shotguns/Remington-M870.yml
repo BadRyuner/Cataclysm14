@@ -1,0 +1,64 @@
+#MARK: Base
+- type: entity
+  name: Remington M870 (12 gauge)
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunRemingtonM870Base
+  abstract: true
+  description: An old yet faithful design, and a favorite among hunters. Uses 12 gauge shotgun shells.
+  components:
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,6,1
+    storedScale: 2.5
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Remington-M870_64x64.rsi
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Remington-M870_64x32.rsi
+    scale: 0.55,0.55
+  - type: Clothing
+    slots:
+    - slingfront
+    - suitstorage
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Remington-M870_64x32.rsi
+    clothingVisuals:
+      slingfront:
+      - state: equipped-SLINGFRONT
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1.4
+  - type: GunSpreadModifier
+    spread: 0.7
+  - type: Tag
+    tags:
+    - WeaponShotgunRemingtonM870
+  - type: BallisticAmmoProvider
+    capacity: 6
+
+#MARK: Empty
+- type: entity
+  parent: WeaponShotgunRemingtonM870Base
+  id: WeaponShotgunRemingtonM870Empty
+  suffix: Empty
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: Buckshot
+- type: entity
+  parent: WeaponShotgunRemingtonM870Base
+  id: WeaponShotgunRemingtonM870FilledBuckshot
+  suffix: Buckshot
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgun12_gaugeBuckshot
+
+#MARK: Beanbag
+- type: entity
+  parent: WeaponShotgunRemingtonM870Base
+  id: WeaponShotgunRemingtonM870FilledBeanbag
+  suffix: Beanbag
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgun12_gaugeBeanbag

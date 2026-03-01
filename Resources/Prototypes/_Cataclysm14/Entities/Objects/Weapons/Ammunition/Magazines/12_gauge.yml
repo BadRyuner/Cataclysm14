@@ -100,7 +100,7 @@
 
 - type: entity
   id: Magazine12_gaugeUranium
-  name: ammo drum (12 gauge uranium)
+  name: ammo drum (12 gauge depleted uranium)
   parent: BaseMagazine12_gauge
   components:
   - type: BallisticAmmoProvider

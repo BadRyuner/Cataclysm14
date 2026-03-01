@@ -107,7 +107,7 @@
 
 - type: entity
   id: SpeedLoader45_magnumDepletedUranium
-  name: "speed loader (.45 magnum uranium)"
+  name: "speed loader (.45 magnum depleted uranium)"
   parent: BaseSpeedLoader45_magnum
   components:
   - type: BallisticAmmoProvider

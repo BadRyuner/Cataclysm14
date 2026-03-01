@@ -78,7 +78,7 @@
 #MARK: Depleted Uranium
 - type: entity
   id: Cartridge9x19mmDepletedUranium
-  name: cartridge (9x19mm uranium)
+  name: cartridge (9x19mm depleted uranium)
   parent: BaseCartridge9x19mm
   components:
   - type: CartridgeAmmo

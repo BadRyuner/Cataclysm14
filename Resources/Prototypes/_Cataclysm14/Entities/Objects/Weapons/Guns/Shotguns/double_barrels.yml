@@ -16,9 +16,9 @@
     - slingfront
     - suitstorage
     scale: 0.65,0.65
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12_gauge_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12_gauge_64x32.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12_gauge_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12_gauge_64x32.rsi
     clothingVisuals:
       slingfront:
       - state: equipped-SLINGFRONT

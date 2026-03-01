@@ -136,7 +136,7 @@
 
 - type: entity
   id: ShellShotgun23x75mmDepletedUranium
-  name: shotgun shell (4 gauge uranium)
+  name: shotgun shell (4 gauge depleted uranium)
   parent: BaseShellShotgun23x75mm
   components:
     - type: Sprite

@@ -91,7 +91,7 @@
 
 - type: entity
   id: Magazine5.7x28mmPistolUranium
-  name: pistol magazine (5.7x28mm uranium)
+  name: pistol magazine (5.7x28mm depleted uranium)
   parent: BaseMagazine5.7x28mm
   components:
   - type: BallisticAmmoProvider
@@ -346,7 +346,7 @@
 
 - type: entity
   id: Magazine5.7x28mmSubMachineGunUranium
-  name: SMG magazine (5.7x28mm uranium)
+  name: SMG magazine (5.7x28mm depleted uranium)
   parent: BaseMagazine5.7x28mmSubMachineGunFMJ
   components:
   - type: BallisticAmmoProvider

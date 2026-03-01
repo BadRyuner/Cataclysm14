@@ -1,8 +1,8 @@
-
+#MARK: Base
 - type: entity
-  name: Remington M870 (12 gauge)
+  name: Mossberg 590 tactical (12 gauge)
   parent: [BaseWeaponShotgun, BaseGunWieldable]
-  id: WeaponShotgunM870Base
+  id: WeaponShotgunMossberg590TacticalBase
   abstract: true
   description: An old yet faithful design, and a favorite among hunters. Uses 12 gauge shotgun shells.
   components:
@@ -11,15 +11,15 @@
     shape:
     - 0,0,6,1
     storedScale: 2.5
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/M870_64x64.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Mossberg-590-tactical_64x64.rsi
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/M870_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Mossberg-590-tactical_64x32.rsi
     scale: 0.55,0.55
   - type: Clothing
     slots:
     - slingfront
     - suitstorage
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/M870_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Mossberg-590-tactical_64x32.rsi
     clothingVisuals:
       slingfront:
       - state: equipped-SLINGFRONT
@@ -32,21 +32,32 @@
     spread: 0.7
   - type: Tag
     tags:
-    - WeaponShotgunM870
+    - WeaponShotgunMossberg590Tactical
   - type: BallisticAmmoProvider
     capacity: 6
 
+#MARK: Empty
 - type: entity
-  parent: WeaponShotgunM870Base
-  id: WeaponShotgunM870FilledBuckshot
+  parent: WeaponShotgunMossberg590TacticalBase
+  id: WeaponShotgunMossberg590TacticalEmpty
+  suffix: Empty
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: Buckshot
+- type: entity
+  parent: WeaponShotgunMossberg590TacticalBase
+  id: WeaponShotgunMossberg590TacticalFilledBuckshot
   suffix: Buckshot
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeBuckshot
 
+#MARK: Beanbag
 - type: entity
-  parent: WeaponShotgunM870Base
-  id: WeaponShotgunM870FilledBeanbag
+  parent: WeaponShotgunMossberg590TacticalBase
+  id: WeaponShotgunMossberg590TacticalFilledBeanbag
   suffix: Beanbag
   components:
   - type: BallisticAmmoProvider

@@ -91,7 +91,7 @@
 
 - type: entity
   id: Magazine45_magnumPistolUranium
-  name: pistol magazine (.45 magnum uranium)
+  name: pistol magazine (.45 magnum depleted uranium)
   parent: BaseMagazine45_magnum
   components:
   - type: BallisticAmmoProvider
@@ -361,7 +361,7 @@
 
 - type: entity
   id: Magazine45_magnumSubMachineGunUranium
-  name: SMG magazine (.45 magnum uranium)
+  name: SMG magazine (.45 magnum depleted uranium)
   parent: BaseMagazine45_magnumSubMachineGunFMJ
   components:
   - type: BallisticAmmoProvider

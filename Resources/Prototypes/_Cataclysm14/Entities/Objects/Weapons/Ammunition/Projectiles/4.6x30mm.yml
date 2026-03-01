@@ -50,7 +50,7 @@
 - type: entity
   id: Bullet4.6x30mmDepletedUranium
   parent: BaseBulletUranium
-  name: bullet (4.6x30mm uranium)
+  name: bullet (4.6x30mm depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

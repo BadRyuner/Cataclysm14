@@ -50,7 +50,7 @@
 #MARK: Depleted Uranium
 - type: entity
   id: Cartridge45_ACPDepletedUranium
-  name: cartridge (.45 ACP uranium)
+  name: cartridge (.45 ACP depleted uranium)
   parent: BaseCartridge45_ACP
   components:
   - type: CartridgeAmmo

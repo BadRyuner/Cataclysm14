@@ -1,7 +1,6 @@
 
 - type: entity
   name: Izhmash Saiga-12 (12 gauge)
-  # Don't parent to BaseWeaponShotgun because it differs significantly
   parent: [BaseItem, BaseGunWieldable]
   id: WeaponShotgunSaiga12
   description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Uses 12 gauge shotgun shells.

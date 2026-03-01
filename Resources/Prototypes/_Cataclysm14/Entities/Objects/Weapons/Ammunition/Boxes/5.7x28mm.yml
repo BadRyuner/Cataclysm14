@@ -84,7 +84,7 @@
 - type: entity
   id: AmmoBox5.7x28mmDepletedUranium
   parent: BaseAmmoBox5.7x28mm
-  name: ammunition box (5.7x28mm uranium)
+  name: ammunition box (5.7x28mm depleted uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.7x28mmDepletedUranium

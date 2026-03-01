@@ -105,7 +105,7 @@
 #MARK: Depleted Uranium
 - type: entity
   id: Cartridge7.62x51mmDepletedUranium
-  name: cartridge (7.62x51mm NATO uranium)
+  name: cartridge (7.62x51mm NATO depleted uranium)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo

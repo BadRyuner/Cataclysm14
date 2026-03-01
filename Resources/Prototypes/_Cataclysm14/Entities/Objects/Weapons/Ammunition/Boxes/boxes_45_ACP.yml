@@ -69,7 +69,7 @@
 - type: entity
   id: AmmoBox45_ACPDepletedUranium
   parent: BaseAmmoBox45_ACP
-  name: ammunition box (.45 ACP uranium)
+  name: ammunition box (.45 ACP depleted uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPDepletedUranium
@@ -170,7 +170,7 @@
     zeroVisible: false
   - type: Appearance
 
-#MARK: Deprecated
+#MARK: Deprecated >
 
 - type: entity
   parent: BaseAmmoBox45_ACP

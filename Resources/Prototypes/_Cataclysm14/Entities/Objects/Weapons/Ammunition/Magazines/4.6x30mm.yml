@@ -91,7 +91,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolUranium
-  name: pistol magazine (4.6x30mm uranium)
+  name: pistol magazine (4.6x30mm depleted uranium)
   parent: BaseMagazine4.6x30mm
   components:
   - type: BallisticAmmoProvider
@@ -346,7 +346,7 @@
 
 - type: entity
   id: Magazine4.6x30mmSubMachineGunUranium
-  name: SMG magazine (4.6x30mm uranium)
+  name: SMG magazine (4.6x30mm depleted uranium)
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   components:
   - type: BallisticAmmoProvider

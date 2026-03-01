@@ -105,7 +105,7 @@
 
 - type: entity
   id: SpeedLoader9x19mmDepletedUranium
-  name: "speed loader (9x19mm uranium)"
+  name: "speed loader (9x19mm depleted uranium)"
   parent: BaseSpeedLoader9x19mm
   components:
   - type: BallisticAmmoProvider

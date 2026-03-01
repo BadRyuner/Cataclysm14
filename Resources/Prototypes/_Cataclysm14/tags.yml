@@ -506,4 +506,10 @@
 #MARK: Shotguns
 
   - type: Tag
-    id: WeaponShotgunM870
+    id: WeaponShotgunRemingtonM870
+
+  - type: Tag
+    id: WeaponShotgunMossberg500
+
+  - type: Tag
+    id: WeaponShotgunMossberg590Tactical

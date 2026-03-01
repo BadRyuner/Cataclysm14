@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
@@ -36,7 +37,7 @@
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
 
-#small ammo boxes
+#MARK: FMJ
 - type: entity
   parent: BaseAmmoBox7.62x39mm
   id: AmmoBox7.62x39mmFMJ
@@ -51,21 +52,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
-- type: entity
-  parent: BaseAmmoBox7.62x39mm
-  id: AmmoBox7.62x39mmPractice
-  name: ammunition box (7.62x39mm practice)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge7.62x39mmPractice
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: practice
-
+#MARK: Incendiary
 - type: entity
   parent: BaseAmmoBox7.62x39mm
   id: AmmoBox7.62x39mmIncendiary
@@ -81,10 +68,11 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: incendiary
 
+#MARK: Depleted Uranium
 - type: entity
   id: AmmoBox7.62x39mmDepletedUranium
   parent: BaseAmmoBox7.62x39mm
-  name: ammunition box (7.62x39mm uranium)
+  name: ammunition box (7.62x39mm depleted uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x39mmDepletedUranium
@@ -96,7 +84,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: uranium
 
-# Upstream
+#MARK: Rubber
 - type: entity
   parent: BaseAmmoBox7.62x39mm
   id: AmmoBox7.62x39mmRubber
@@ -112,8 +100,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: rubber
 
-# Mono AP syst
-#anti-flesh:
+#MARK: HP
 - type: entity
   parent: BaseAmmoBox7.62x39mm
   id: AmmoBox7.62x39mmHP
@@ -129,6 +116,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: HP
 
+#MARK: RIP
 - type: entity
   parent: BaseAmmoBox7.62x39mm
   id: AmmoBox7.62x39mmRIP
@@ -143,6 +131,33 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: RIP
+
+#MARK: Big FMJ
+- type: entity
+  parent: BaseAmmoBox7.62x39mm
+  id: AmmoBox7.62x39mmBigFMJ
+  name: big ammunition box (7.62x39mm FMJ)
+  suffix: Big
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: BallisticAmmoProvider
+    capacity: 210 # 7 rifle mags
+    proto: Cartridge7.62x39mmFMJ
+  - type: Sprite
+    layers:
+    - state: base-b # Frontier: base-big<base-b
+      map: ["enum.GunVisualLayers.Base"]
+    - state: magb-1 # Frontier: mag-big-1<magb-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: magb # Frontier: mag-big<magb
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: Deprecated >
 
 #armor-piercing:
 
@@ -180,27 +195,17 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
-#big ammo boxes
 - type: entity
   parent: BaseAmmoBox7.62x39mm
-  id: AmmoBox7.62x39mmBigFMJ
-  name: big ammunition box (7.62x39mm FMJ)
-  suffix: Big
+  id: AmmoBox7.62x39mmPractice
+  name: ammunition box (7.62x39mm practice)
   components:
-  - type: Item
-    shape:
-    - 0,0,1,1
   - type: BallisticAmmoProvider
-    capacity: 210 # 7 rifle mags
-    proto: Cartridge7.62x39mmFMJ
+    proto: Cartridge7.62x39mmPractice
   - type: Sprite
     layers:
-    - state: base-b # Frontier: base-big<base-b
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: magb-1 # Frontier: mag-big-1<magb-1
+    - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: magb # Frontier: mag-big<magb
-    steps: 4
-    zeroVisible: false
-  - type: Appearance
+    - state: practice
