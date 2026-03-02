@@ -72,7 +72,7 @@
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPFMJ
 
-#MARK: UMP45 30rd
+#MARK: UMP45 Mag 30rd
 - type: entity
   id: BaseMagazine45_ACPUMP45_30rd
   abstract: true
