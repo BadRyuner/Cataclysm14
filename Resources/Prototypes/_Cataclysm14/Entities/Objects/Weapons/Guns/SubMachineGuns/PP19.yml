@@ -6,7 +6,7 @@
   description: The Izhmash PP19 "Vityaz-SN" (brave warrior) created from the PP19 Bizon and using regular vertical magazines and shares parts with the AK family, Chambered in 9x19mm Parabellum.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-viyaz_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-vityaz_64x32.rsi
     scale: 0.50, 0.50
     layers:
       - state: base
@@ -14,13 +14,13 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-viyaz_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-vityaz_32x32.rsi
     size: Huge
     shape:
     - 0,0,2,1
     storedScale: 2
   - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-viyaz_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-vityaz_32x32.rsi
     clothingVisuals:
       suitstorage:
       - state: equipped-SUITSTORAGE
