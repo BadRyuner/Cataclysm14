@@ -37,6 +37,11 @@
   - type: Tag
     id: Cartridge7.62x39mm
 
+  #MARK: 5.45x39mm
+
+  - type: Tag
+    id: Cartridge5.45x39mm
+
   #MARK: 4.6x30mm
 
   - type: Tag
@@ -111,7 +116,7 @@
   #MARK: 12 gauge
 
   - type: Tag
-    id: ShellShotgun12_gaugeBuckshot
+    id: ShellShotgun12_gauge
 
   #MARK: 4 gauge
 
