@@ -83,7 +83,7 @@
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Eyes/eyes_ballistic_glasses_green.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Eyes/eyes_ballistic_goggles_green.rsi
+        sprite: _Cataclysm14/Clothing/Eyes/eyes_ballistic_glasses_green.rsi
       - type: Armor
         modifiers:
           coefficients:

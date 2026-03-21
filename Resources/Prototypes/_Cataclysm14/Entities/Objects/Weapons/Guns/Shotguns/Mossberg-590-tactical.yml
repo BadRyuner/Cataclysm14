@@ -7,9 +7,9 @@
   description: An old yet faithful design, and a favorite among hunters. Uses 12 gauge shotgun shells.
   components:
   - type: Item
-    size: Huge
+    size: Large
     shape:
-    - 0,0,6,1
+    - 0,0,5,1
     storedScale: 2.5
     sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Mossberg-590-tactical_64x64.rsi
   - type: Sprite

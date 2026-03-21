@@ -1,0 +1,93 @@
+#MARK: Base
+- type: entity
+  name: AK74 (5.45x39mm)
+  parent: BaseWeaponRifle
+  id: WeaponAssaultRifleAK74Base
+  abstract: true
+  description: An old Soviet Era rifle. Uses 5.45x39mm ammo. When the chaos began to spread across the Earth, few weapons were as reliable as the AK74.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AK74_64x32.rsi
+    scale: 0.60, 0.60
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AK74_32x32.rsi
+    size: Large
+    shape:
+    - 0,0,4,1
+  - type: Clothing
+    slots:
+    - slingfront
+    - suitstorage
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AK74_32x32.rsi
+    clothingVisuals:
+      slingfront:
+      - state: equipped-SLINGFRONT
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+  - type: Gun
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine5.45x39mmAKCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge5.45x39mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge5.45x39mm
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Cataclysm14/Scoping/reticle_okp.rsi
+      state: all
+
+#MARK: 6L20 30rd Empty
+- type: entity
+  parent: WeaponAssaultRifleAK74Base
+  id: WeaponAssaultRifleAK74Filled6L20_30rdEmpty
+  suffix: Empty - 6L20 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.45x39mm6L20_30rdEmpty
+
+#MARK: 6L20 30rd FMJ
+- type: entity
+  parent: WeaponAssaultRifleAK74Base
+  id: WeaponAssaultRifleAK74Filled6L20_30rdFMJ
+  suffix: FMJ - 6L20 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.45x39mm6L20_30rdFMJ

@@ -463,6 +463,7 @@
 #Start Pistol mags
 - type: entity
   id: Magazine9x19mmPistolFMJ
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (9x19mm FMJ)
   parent: BaseMagazine9x19mm
   components:
@@ -477,6 +478,7 @@
 
 - type: entity
   id: Magazine9x19mmPistolEmpty
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (9x19mm any)
   suffix: empty
   parent: Magazine9x19mmPistolFMJ
@@ -492,6 +494,7 @@
 
 - type: entity
   id: Magazine9x19mmPistolIncendiary
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (9x19mm incendiary)
   parent: Magazine9x19mmPistolFMJ
   components:
@@ -506,6 +509,7 @@
 
 - type: entity
   id: Magazine9x19mmPistolPractice
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (9x19mm practice)
   parent: BaseMagazine9x19mm
   components:
@@ -520,6 +524,7 @@
 
 - type: entity
   id: Magazine9x19mmPistolUranium
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (9x19mm depleted uranium)
   parent: BaseMagazine9x19mm
   components:
@@ -535,6 +540,7 @@
 #Upstream
 - type: entity
   id: Magazine9x19mmPistolRubber
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (9x19mm rubber)
   parent: BaseMagazine9x19mm
   components:
@@ -552,6 +558,7 @@
 #anti-flesh ammo
 - type: entity
   id: Magazine9x19mmPistolHP
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (9x19mm hollow-point)
   parent: BaseMagazine9x19mm
   components:
@@ -567,6 +574,7 @@
 
 - type: entity
   id: Magazine9x19mmPistolRIP
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (9x19mm RIP)
   parent: BaseMagazine9x19mm
   components:
@@ -584,6 +592,7 @@
 
 - type: entity
   id: Magazine9x19mmPistolPlasteelAP
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (9x19mm AP)
   parent: BaseMagazine9x19mm
   components:
@@ -601,6 +610,7 @@
 #Start HighCapacity mags
 - type: entity
   id: BaseMagazine9x19mmPistolHighCapacityFMJ
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (9x19mm FMJ)
   parent: [BaseItem, RecyclableItemSteelTiny]
   abstract: true
@@ -634,6 +644,7 @@
 
 - type: entity
   id: Magazine9x19mmPistolHighCapacityEmpty
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (9x19mm any)
   suffix: empty
   parent: BaseMagazine9x19mmPistolHighCapacityFMJ
@@ -649,6 +660,7 @@
 
 - type: entity
   id: Magazine9x19mmPistolHighCapacityFMJ
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (9x19mm FMJ)
   parent: BaseMagazine9x19mmPistolHighCapacityFMJ
   components:
@@ -663,6 +675,7 @@
 
 - type: entity
   id: Magazine9x19mmPistolHighCapacityPractice
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (9x19mm practice)
   parent: BaseMagazine9x19mmPistolHighCapacityFMJ
   components:
@@ -677,6 +690,7 @@
 
 - type: entity
   id: Magazine9x19mmPistolHighCapacityRubber
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (9x19mm rubber)
   parent: BaseMagazine9x19mmPistolHighCapacityFMJ
   components:
@@ -694,6 +708,7 @@
 #Start SubMachineGun mags
 - type: entity
   id: BaseMagazine9x19mmSubMachineGunFMJ
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm FMJ)
   parent: [BaseItem, RecyclableItemSteelTiny]
   abstract: true
@@ -727,6 +742,7 @@
 
 - type: entity
   id: Magazine9x19mmSubMachineGunFMJ
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm FMJ)
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   components:
@@ -746,6 +762,7 @@
 
 - type: entity
   id: Magazine9x19mmSubMachineGunEmpty
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm any)
   suffix: empty
   parent: BaseMagazine9x19mmSubMachineGunFMJ
@@ -761,6 +778,7 @@
 
 - type: entity
   id: Magazine9x19mmSubMachineGunPractice
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm practice)
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   components:
@@ -775,6 +793,7 @@
 
 - type: entity
   id: Magazine9x19mmSubMachineGunUranium
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm depleted uranium)
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   components:
@@ -790,6 +809,7 @@
 - type: entity
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   id: Magazine9x19mmSubMachineGunIncendiary
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm incendiary)
   components:
   - type: BallisticAmmoProvider
@@ -803,6 +823,7 @@
 
 - type: entity
   id: Magazine9x19mmSubMachineGunRubber
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm rubber)
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   components:
@@ -819,6 +840,7 @@
 # Frontier
 - type: entity
   id: Magazine9x19mmSubMachineGunEmp
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm emp)
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   components:
@@ -836,6 +858,7 @@
 #anti-flesh ammo
 - type: entity
   id: Magazine9x19mmSubMachineGunHP
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm hollow-point)
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   components:
@@ -851,6 +874,7 @@
 
 - type: entity
   id: Magazine9x19mmSubMachineGunRIP
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm RIP)
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   components:
@@ -868,6 +892,7 @@
 
 - type: entity
   id: Magazine9x19mmSubMachineGunPlasteelAP
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (9x19mm AP)
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   components:
@@ -885,6 +910,7 @@
 #Start TopMounted mags
 - type: entity
   id: Magazine9x19mmSubMachineGunTopMountedFMJ
+  categories: [ HideSpawnMenu ]
   name: top-mounted magazine (9x19mm top-mounted)
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   components:
@@ -917,6 +943,7 @@
 
 - type: entity
   id: Magazine9x19mmSubMachineGunTopMountedEmpty
+  categories: [ HideSpawnMenu ]
   name: top-mounted magazine (9x19mm top-mounted any)
   parent: Magazine9x19mmSubMachineGunTopMountedFMJ
   components:
@@ -929,6 +956,7 @@
 #Start Pistol mags
 - type: entity
   id: Magazine45_ACPPistolFMJ
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (.45 ACP FMJ)
   parent: BaseMagazine45_ACP
   components:
@@ -943,6 +971,7 @@
 
 - type: entity
   id: Magazine45_ACPPistolEmpty
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (.45 ACP any)
   suffix: empty
   parent: Magazine45_ACPPistolFMJ
@@ -958,6 +987,7 @@
 
 - type: entity
   id: Magazine45_ACPPistolIncendiary
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (.45 ACP incendiary)
   parent: Magazine45_ACPPistolFMJ
   components:
@@ -972,6 +1002,7 @@
 
 - type: entity
   id: Magazine45_ACPPistolPractice
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (.45 ACP practice)
   parent: BaseMagazine45_ACP
   components:
@@ -986,6 +1017,7 @@
 
 - type: entity
   id: Magazine45_ACPPistolUranium
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (.45 ACP depleted uranium)
   parent: BaseMagazine45_ACP
   components:
@@ -1001,6 +1033,7 @@
 #Upstream
 - type: entity
   id: Magazine45_ACPPistolRubber
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (.45 ACP rubber)
   parent: BaseMagazine45_ACP
   components:
@@ -1018,6 +1051,7 @@
 #anti-flesh ammo
 - type: entity
   id: Magazine45_ACPPistolHP
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (.45 ACP hollow-point)
   parent: BaseMagazine45_ACP
   components:
@@ -1033,6 +1067,7 @@
 
 - type: entity
   id: Magazine45_ACPPistolRIP
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (.45 ACP RIP)
   parent: BaseMagazine45_ACP
   components:
@@ -1050,6 +1085,7 @@
 
 - type: entity
   id: Magazine45_ACPPistolPlasteelAP
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (.45 ACP AP)
   parent: BaseMagazine45_ACP
   components:
@@ -1067,6 +1103,7 @@
 #Start HighCapacity mags
 - type: entity
   id: BaseMagazine45_ACPPistolHighCapacityFMJ
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (.45 ACP FMJ)
   parent: [BaseItem, RecyclableItemSteelTiny]
   abstract: true
@@ -1100,6 +1137,7 @@
 
 - type: entity
   id: Magazine45_ACPPistolHighCapacityEmpty
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (.45 ACP any)
   suffix: empty
   parent: BaseMagazine45_ACPPistolHighCapacityFMJ
@@ -1115,6 +1153,7 @@
 
 - type: entity
   id: Magazine45_ACPPistolHighCapacityFMJ
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (.45 ACP FMJ)
   parent: BaseMagazine45_ACPPistolHighCapacityFMJ
   components:
@@ -1129,6 +1168,7 @@
 
 - type: entity
   id: Magazine45_ACPPistolHighCapacityPractice
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (.45 ACP practice)
   parent: BaseMagazine45_ACPPistolHighCapacityFMJ
   components:
@@ -1143,6 +1183,7 @@
 
 - type: entity
   id: Magazine45_ACPPistolHighCapacityRubber
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (.45 ACP rubber)
   parent: BaseMagazine45_ACPPistolHighCapacityFMJ
   components:
@@ -1160,6 +1201,7 @@
 #Start SubMachineGun mags
 - type: entity
   id: BaseMagazine45_ACPSubMachineGunFMJ
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP FMJ)
   parent: [BaseItem, RecyclableItemSteelTiny]
   abstract: true
@@ -1193,6 +1235,7 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunFMJ
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP FMJ)
   parent: BaseMagazine45_ACPSubMachineGunFMJ
   components:
@@ -1212,6 +1255,7 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunEmpty
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP any)
   suffix: empty
   parent: BaseMagazine45_ACPSubMachineGunFMJ
@@ -1227,6 +1271,7 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunPractice
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP practice)
   parent: BaseMagazine45_ACPSubMachineGunFMJ
   components:
@@ -1241,6 +1286,7 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunUranium
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP depleted uranium)
   parent: BaseMagazine45_ACPSubMachineGunFMJ
   components:
@@ -1256,6 +1302,7 @@
 - type: entity
   parent: BaseMagazine45_ACPSubMachineGunFMJ
   id: Magazine45_ACPSubMachineGunIncendiary
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP incendiary)
   components:
   - type: BallisticAmmoProvider
@@ -1269,6 +1316,7 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunRubber
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP rubber)
   parent: BaseMagazine45_ACPSubMachineGunFMJ
   components:
@@ -1285,6 +1333,7 @@
 # Frontier
 - type: entity
   id: Magazine45_ACPSubMachineGunEmp
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP emp)
   parent: BaseMagazine45_ACPSubMachineGunFMJ
   components:
@@ -1302,6 +1351,7 @@
 #anti-flesh ammo
 - type: entity
   id: Magazine45_ACPSubMachineGunHP
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP hollow-point)
   parent: BaseMagazine45_ACPSubMachineGunFMJ
   components:
@@ -1317,6 +1367,7 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunRIP
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP RIP)
   parent: BaseMagazine45_ACPSubMachineGunFMJ
   components:
@@ -1334,6 +1385,7 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunPlasteelAP
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (.45 ACP AP)
   parent: BaseMagazine45_ACPSubMachineGunFMJ
   components:
@@ -1351,6 +1403,7 @@
 #Start TopMounted mags
 - type: entity
   id: Magazine45_ACPSubMachineGunTopMountedFMJ
+  categories: [ HideSpawnMenu ]
   name: top-mounted magazine (.45 ACP top-mounted)
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   components:
@@ -1383,6 +1436,7 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunTopMountedEmpty
+  categories: [ HideSpawnMenu ]
   name: top-mounted magazine (.45 ACP top-mounted any)
   parent: Magazine45_ACPSubMachineGunTopMountedFMJ
   components:
@@ -1395,6 +1449,7 @@
 # Magazines
 - type: entity
   id: Magazine7.62x39mmBox
+  categories: [ HideSpawnMenu ]
   name: "L6 SAW magazine box (7.62x39mm FMJ)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1415,6 +1470,7 @@
 
 - type: entity
   id: Magazine7.62x39mmFMJ
+  categories: [ HideSpawnMenu ]
   name: "magazine (7.62x39mm FMJ)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1429,6 +1485,7 @@
 
 - type: entity
   id: Magazine7.62x39mmEmpty
+  categories: [ HideSpawnMenu ]
   name: "magazine (7.62x39mm any)"
   suffix: empty
   parent: Magazine7.62x39mmFMJ
@@ -1444,6 +1501,7 @@
 
 - type: entity
   id: Magazine7.62x39mmPractice
+  categories: [ HideSpawnMenu ]
   name: "magazine (7.62x39mm practice)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1458,6 +1516,7 @@
 
 - type: entity
   id: Magazine7.62x39mmDepletedUranium
+  categories: [ HideSpawnMenu ]
   name: "magazine (7.62x39mm depleted uranium)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1472,6 +1531,7 @@
 
 - type: entity
   id: Magazine7.62x39mmIncendiary
+  categories: [ HideSpawnMenu ]
   name: "magazine (7.62x39mm incendiary)"
   parent: Magazine7.62x39mmFMJ
   components:
@@ -1486,6 +1546,7 @@
 
 - type: entity
   id: Magazine7.62x39mmMaxim
+  categories: [ HideSpawnMenu ]
   name: "pan magazine (7.62x39mm FMJ)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1500,6 +1561,7 @@
 
 - type: entity
   id: Magazine7.62x39mmPkBox
+  categories: [ HideSpawnMenu ]
   name: "PK munitions box (7.62x39mm FMJ)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1519,6 +1581,7 @@
 
 - type: entity
   id: Magazine7.62x39mmRubber
+  categories: [ HideSpawnMenu ]
   name: "magazine (7.62x39mm rubber)"
   parent: Magazine7.62x39mmFMJ
   components:
@@ -1534,6 +1597,7 @@
 
 - type: entity
   id: Magazine7.62x39mmLowCapacityEmpty
+  categories: [ HideSpawnMenu ]
   name: "low cap magazine (7.62x39mm any)"
   suffix: empty
   parent: Magazine7.62x39mmLowCapacityFMJ
@@ -1555,6 +1619,7 @@
 
 - type: entity
   id: Magazine7.62x39mmLowCapacityFMJ
+  categories: [ HideSpawnMenu ]
   name: "low cap magazine (7.62x39mm FMJ)"
   parent: Magazine7.62x39mmFMJ
   components:
@@ -1575,6 +1640,7 @@
 
 - type: entity
   id: Magazine7.62x39mmLowCapacityPractice
+  categories: [ HideSpawnMenu ]
   name: "low cap magazine (7.62x39mm practice)"
   parent: Magazine7.62x39mmLowCapacityFMJ
   components:
@@ -1589,6 +1655,7 @@
 
 - type: entity
   id: Magazine7.62x39mmLowCapacityRubber
+  categories: [ HideSpawnMenu ]
   name: "low cap magazine (7.62x39mm rubber)"
   parent: Magazine7.62x39mmLowCapacityFMJ
   components:
@@ -1603,6 +1670,7 @@
 
 - type: entity
   id: Magazine7.62x39mmLowCapacityUranium
+  categories: [ HideSpawnMenu ]
   name: "low cap magazine (7.62x39mm depleted uranium)"
   parent: Magazine7.62x39mmLowCapacityFMJ
   components:
@@ -1617,6 +1685,7 @@
 
 - type: entity
   id: Magazine7.62x39mmLowCapacityIncendiary
+  categories: [ HideSpawnMenu ]
   name: "low cap magazine (7.62x39mm incendiary)"
   parent: Magazine7.62x39mmLowCapacityFMJ
   components:
@@ -1631,6 +1700,7 @@
 
 - type: entity
   id: Magazine7.62x39mmSubsonic
+  categories: [ HideSpawnMenu ]
   name: "magazine (7.62x39mm subsonic)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1654,6 +1724,7 @@
 
 - type: entity
   id: MagazineDP29
+  categories: [ HideSpawnMenu ]
   name: "DP-29 magazine (7.62x39mm)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1678,6 +1749,7 @@
 #anti-flesh:
 - type: entity
   id: Magazine7.62x39mmHP
+  categories: [ HideSpawnMenu ]
   name: "magazine (7.62x39mm hollow-point)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1692,6 +1764,7 @@
 
 - type: entity
   id: Magazine7.62x39mmRIP
+  categories: [ HideSpawnMenu ]
   name: "magazine (7.62x39mm RIP)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1708,6 +1781,7 @@
 
 - type: entity
   id: Magazine7.62x39mmPlasteelAP
+  categories: [ HideSpawnMenu ]
   name: "magazine (7.62x39mm AP)"
   parent: BaseMagazine7.62x39mm
   components:
@@ -1725,6 +1799,7 @@
 #Start Pistol mags
 - type: entity
   id: Magazine4.6x30mmPistolFMJ
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (4.6x30mm FMJ)
   parent: BaseMagazine4.6x30mm
   components:
@@ -1739,6 +1814,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolEmpty
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (4.6x30mm any)
   suffix: empty
   parent: Magazine4.6x30mmPistolFMJ
@@ -1754,6 +1830,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolIncendiary
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (4.6x30mm incendiary)
   parent: Magazine4.6x30mmPistolFMJ
   components:
@@ -1768,6 +1845,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolPractice
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (4.6x30mm practice)
   parent: BaseMagazine4.6x30mm
   components:
@@ -1782,6 +1860,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolUranium
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (4.6x30mm depleted uranium)
   parent: BaseMagazine4.6x30mm
   components:
@@ -1797,6 +1876,7 @@
 #Upstream
 - type: entity
   id: Magazine4.6x30mmPistolRubber
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (4.6x30mm rubber)
   parent: BaseMagazine4.6x30mm
   components:
@@ -1814,6 +1894,7 @@
 #anti-flesh ammo
 - type: entity
   id: Magazine4.6x30mmPistolHP
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (4.6x30mm hollow-point)
   parent: BaseMagazine4.6x30mm
   components:
@@ -1829,6 +1910,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolRIP
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (4.6x30mm RIP)
   parent: BaseMagazine4.6x30mm
   components:
@@ -1846,6 +1928,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolPlasteelAP
+  categories: [ HideSpawnMenu ]
   name: pistol magazine (4.6x30mm AP)
   parent: BaseMagazine4.6x30mm
   components:
@@ -1863,6 +1946,7 @@
 #Start HighCapacity mags
 - type: entity
   id: BaseMagazine4.6x30mmPistolHighCapacityFMJ
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (4.6x30mm FMJ)
   parent: [BaseItem, RecyclableItemSteelTiny]
   abstract: true
@@ -1896,6 +1980,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolHighCapacityEmpty
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (4.6x30mm any)
   suffix: empty
   parent: BaseMagazine4.6x30mmPistolHighCapacityFMJ
@@ -1911,6 +1996,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolHighCapacityFMJ
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (4.6x30mm FMJ)
   parent: BaseMagazine4.6x30mmPistolHighCapacityFMJ
   components:
@@ -1925,6 +2011,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolHighCapacityPractice
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (4.6x30mm practice)
   parent: BaseMagazine4.6x30mmPistolHighCapacityFMJ
   components:
@@ -1939,6 +2026,7 @@
 
 - type: entity
   id: Magazine4.6x30mmPistolHighCapacityRubber
+  categories: [ HideSpawnMenu ]
   name: machine pistol magazine (4.6x30mm rubber)
   parent: BaseMagazine4.6x30mmPistolHighCapacityFMJ
   components:
@@ -1956,6 +2044,7 @@
 #Start SubMachineGun mags
 - type: entity
   id: BaseMagazine4.6x30mmSubMachineGunFMJ
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm FMJ)
   parent: [BaseItem, RecyclableItemSteelTiny]
   abstract: true
@@ -1989,6 +2078,7 @@
 
 - type: entity
   id: Magazine4.6x30mmSubMachineGunFMJ
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm FMJ)
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   components:
@@ -2008,6 +2098,7 @@
 
 - type: entity
   id: Magazine4.6x30mmSubMachineGunEmpty
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm any)
   suffix: empty
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
@@ -2023,6 +2114,7 @@
 
 - type: entity
   id: Magazine4.6x30mmSubMachineGunPractice
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm practice)
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   components:
@@ -2037,6 +2129,7 @@
 
 - type: entity
   id: Magazine4.6x30mmSubMachineGunUranium
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm depleted uranium)
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   components:
@@ -2052,6 +2145,7 @@
 - type: entity
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   id: Magazine4.6x30mmSubMachineGunIncendiary
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm incendiary)
   components:
   - type: BallisticAmmoProvider
@@ -2065,6 +2159,7 @@
 
 - type: entity
   id: Magazine4.6x30mmSubMachineGunRubber
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm rubber)
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   components:
@@ -2081,6 +2176,7 @@
 # Frontier
 - type: entity
   id: Magazine4.6x30mmSubMachineGunEmp
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm emp)
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   components:
@@ -2098,6 +2194,7 @@
 #anti-flesh ammo
 - type: entity
   id: Magazine4.6x30mmSubMachineGunHP
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm hollow-point)
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   components:
@@ -2113,6 +2210,7 @@
 
 - type: entity
   id: Magazine4.6x30mmSubMachineGunRIP
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm RIP)
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   components:
@@ -2130,6 +2228,7 @@
 
 - type: entity
   id: Magazine4.6x30mmSubMachineGunPlasteelAP
+  categories: [ HideSpawnMenu ]
   name: SMG magazine (4.6x30mm AP)
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   components:
@@ -2147,6 +2246,7 @@
 #Start TopMounted mags
 - type: entity
   id: Magazine4.6x30mmSubMachineGunTopMountedFMJ
+  categories: [ HideSpawnMenu ]
   name: WT550 magazine (4.6x30mm top-mounted)
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   components:
@@ -2179,6 +2279,7 @@
 
 - type: entity
   id: Magazine4.6x30mmSubMachineGunTopMountedEmpty
+  categories: [ HideSpawnMenu ]
   name: WT550 magazine (4.6x30mm top-mounted any)
   parent: Magazine4.6x30mmSubMachineGunTopMountedFMJ
   components:

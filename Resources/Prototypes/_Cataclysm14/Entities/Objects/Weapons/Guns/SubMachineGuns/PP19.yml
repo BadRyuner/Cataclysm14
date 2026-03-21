@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: Izhmash PP-19-01 "Vityaz" (9x19mm)
   parent: BaseWeaponRifle
@@ -15,9 +16,9 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-vityaz_32x32.rsi
-    size: Huge
+    size: Normal
     shape:
-    - 0,0,2,1
+    - 0,0,3,1
     storedScale: 2
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-vityaz_32x32.rsi
@@ -81,6 +82,7 @@
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
 
+#MARK: PP19 30rd Empty
 - type: entity
   parent: WeaponSubMachineGunPP19VityazBase
   id: WeaponSubMachineGunPP19VityazFilled30rdEmpty
@@ -92,6 +94,7 @@
         name: Magazine
         startingItem: Magazine9x19mmPP19Vityaz_30rdEmpty
 
+#MARK: PP19 30rd FMJ
 - type: entity
   parent: WeaponSubMachineGunPP19VityazBase
   id: WeaponSubMachineGunPP19VityazFilled30rdFMJ
@@ -103,9 +106,10 @@
         name: Magazine
         startingItem: Magazine9x19mmPP19Vityaz_30rdFMJ
 
+#MARK: PP19 30rd Tracer Green
 - type: entity
   parent: WeaponSubMachineGunPP19VityazBase
-  id: WeaponSubMachineGunPP19VityazFilled30rdTracerRed
+  id: WeaponSubMachineGunPP19VityazFilled30rdTracerGreen
   suffix: Tracer Green - 30rd
   components:
   - type: ItemSlots

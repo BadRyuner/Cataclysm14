@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: Remington M700 (7.62x51mm NATO)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
@@ -13,7 +14,7 @@
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/Remington-M700_32x32.rsi
-    size: Huge
+    size: Large
     shape:
     - 0,0,6,1
     storedScale: 2
@@ -44,6 +45,7 @@
       sprite: _Cataclysm14/Scoping/reticle_PU.rsi
       state: all
 
+#MARK: .308 Winchester
 - type: entity
   parent: WeaponBoltActionRifleRemingtonM700Base
   id: WeaponBoltActionRifleRemingtonM700Filled308Winchester

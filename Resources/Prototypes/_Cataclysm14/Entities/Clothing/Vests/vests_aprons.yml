@@ -1,0 +1,137 @@
+#MARK: Canvas Aprons >>
+    - type: entity
+      parent: ClothingOuterArmorBase
+      id: BaweClothingOuterApronCanvas
+      abstract: true
+      name: canvas apron
+      description: A simple cloth apron of decent quality. Can't handle much on its own.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/Aprons/vest_apron_canvas.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/Aprons/vest_apron_canvas.rsi
+      - type: Armor
+        modifiers:
+          coefficients:
+            Slash: 0.95
+            Piercing: 0.95
+            Heat: 0.80
+            Caustic: 0.80
+
+#MARK: Black
+    - type: entity
+      parent: BaweClothingOuterApronCanvas
+      id: ClothingOuterApronCanvasBlack
+      name: black canvas apron
+      components:
+      - type: Sprite
+        color: "#444444"
+      - type: Clothing
+        clothingVisuals:
+          outerClothing:
+          - state: equipped-OUTERCLOTHING
+            color: "#444444"
+
+#MARK: White
+    - type: entity
+      parent: BaweClothingOuterApronCanvas
+      id: ClothingOuterApronCanvasWhite
+      name: white canvas apron
+
+#MARK: Green
+    - type: entity
+      parent: BaweClothingOuterApronCanvas
+      id: ClothingOuterApronCanvasGreen
+      name: green canvas apron
+      components:
+      - type: Sprite
+        color: "#3d8c40"
+      - type: Clothing
+        clothingVisuals:
+          outerClothing:
+          - state: equipped-OUTERCLOTHING
+            color: "#3d8c40"
+
+#MARK: Light Green
+    - type: entity
+      parent: BaweClothingOuterApronCanvas
+      id: ClothingOuterApronCanvasLightGreen
+      name: light green canvas apron
+      components:
+      - type: Sprite
+        color: "#609e62"
+      - type: Clothing
+        clothingVisuals:
+          outerClothing:
+          - state: equipped-OUTERCLOTHING
+            color: "#609e62"
+
+#MARK: Blue
+    - type: entity
+      parent: BaweClothingOuterApronCanvas
+      id: ClothingOuterApronCanvasBlue
+      name: blue canvas apron
+      components:
+      - type: Sprite
+        color: "#2286bd"
+      - type: Clothing
+        clothingVisuals:
+          outerClothing:
+          - state: equipped-OUTERCLOTHING
+            color: "#2286bd"
+
+#MARK: Leather apron
+    - type: entity
+      parent: ClothingOuterArmorBase
+      id: ClothingOuterApronLeather
+      name: leather apron
+      description: A good quality leather apron that can handle somewhat less than a kevlar one but is still pretty tough.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/Aprons/vest_apron_leather.rsi
+        color: "#532E21"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/Aprons/vest_apron_leather.rsi
+        clothingVisuals:
+          outerClothing:
+          - state: equipped-OUTERCLOTHING
+            color: "#532E21"
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.95
+            Slash: 0.70
+            Piercing: 0.90
+            Heat: 0.7
+            Caustic: 0.5
+      - type: StaminaDamageResistance
+        coefficient: 0.85
+      - type: ExplosionResistance
+        damageCoefficient: 0.90
+
+#MARK: Kevlar Apron
+    - type: entity
+      parent: ClothingOuterArmorBase
+      id: ClothingOuterApronKevlar
+      name: kevlar apron
+      description: An heavy kevlar apron that can handle caustic chemicals and high heat as well as decent protection against slashing attacks.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/Aprons/vest_apron_kevlar.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/Aprons/vest_apron_kevlar.rsi
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.90
+            Slash: 0.50
+            Piercing: 0.90
+            Heat: 0.60
+            Caustic: 0.40
+      - type: Tag
+        tags:
+        - Kevlar
+      - type: StaminaDamageResistance
+        coefficient: 0.95
+      - type: ExplosionResistance
+        damageCoefficient: 0.65

@@ -20,6 +20,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
+    scale: 0.30,0.30
     sprite: _Cataclysm14/Objects/Weapons/Magazines/4.6x30mm/4.6x30mm_pistol_mag.rsi
     layers:
     - state: base
@@ -28,6 +29,84 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 6
+    steps: 2
     zeroVisible: false
   - type: Appearance
+
+#MARK: MP7 30rd
+- type: entity
+  id: BaseMagazine4.6x30mmMP7_30rd
+  abstract: true
+  name: "MP7 30rd magazine (4.6x30mm)"
+  parent: BaseMagazine4.6x30mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge4.6x30mmFMJ
+    capacity: 30
+  - type: Tag
+    tags:
+      - Magazine4.6x30mmMP7Compatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/4.6x30mm/magazine_4.6x30mm_MP7_30rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine4.6x30mmMP7_30rdEmpty
+  suffix: Empty
+  parent: BaseMagazine4.6x30mmMP7_30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine4.6x30mmMP7_30rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine4.6x30mmMP7_30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge4.6x30mmFMJ
+
+#MARK: MP7 40rd
+- type: entity
+  id: BaseMagazine4.6x30mmMP7_40rd
+  abstract: true
+  name: "MP7 40rd magazine (4.6x30mm)"
+  parent: BaseMagazine4.6x30mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge4.6x30mmFMJ
+    capacity: 40
+  - type: Tag
+    tags:
+      - Magazine4.6x30mmMP7Compatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/4.6x30mm/magazine_4.6x30mm_MP7_40rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine4.6x30mmMP7_40rdEmpty
+  suffix: Empty
+  parent: BaseMagazine4.6x30mmMP7_40rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine4.6x30mmMP7_40rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine4.6x30mmMP7_40rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge4.6x30mmFMJ

@@ -21,6 +21,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
+    scale: 0.30,0.30
     sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x39mm/7.62x39mm_mag.rsi
     layers:
     - state: base
@@ -32,3 +33,163 @@
     steps: 2
     zeroVisible: false
   - type: Appearance
+
+#MARK: 6L10 30rd
+- type: entity
+  id: BaseMagazine7.62x39mm6L10_30rd
+  abstract: true
+  name: "6L10 30rd magazine (7.62x39mm)"
+  parent: BaseMagazine7.62x39mm
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 30
+  - type: Item
+    storedScale: 2.5
+  - type: Tag
+    tags:
+      - Magazine7.62x39mm6L10Compatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x39mm/magazine_7.62x39mm_6L10_30rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine7.62x39mm6L10_30rdEmpty
+  suffix: Empty
+  parent: BaseMagazine7.62x39mm6L10_30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine7.62x39mm6L10_30rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine7.62x39mm6L10_30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x39mmFMJ
+
+#MARK: steel 30rd
+- type: entity
+  id: BaseMagazine7.62x39mmSteel30rd
+  abstract: true
+  name: "steel 30rd magazine (7.62x39mm)"
+  parent: BaseMagazine7.62x39mm
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 30
+  - type: Item
+    storedScale: 2.5
+  - type: Tag
+    tags:
+      - Magazine7.62x39mmsteelCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x39mm/magazine_7.62x39mm_steel_30rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine7.62x39mmSteel30rdEmpty
+  suffix: Empty
+  parent: BaseMagazine7.62x39mmSteel30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine7.62x39mmSteel30rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine7.62x39mmSteel30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x39mmFMJ
+
+#MARK: aluminium 30rd
+- type: entity
+  id: BaseMagazine7.62x39mmAluminium30rd
+  abstract: true
+  name: "aluminium 30rd magazine (7.62x39mm)"
+  parent: BaseMagazine7.62x39mm
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 30
+  - type: Item
+    storedScale: 2.5
+  - type: Tag
+    tags:
+      - Magazine7.62x39mmaluminiumCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x39mm/magazine_7.62x39mm_aluminium_30rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine7.62x39mmAluminium30rdEmpty
+  suffix: Empty
+  parent: BaseMagazine7.62x39mmAluminium30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine7.62x39mmAluminium30rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine7.62x39mmAluminium30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x39mmFMJ
+
+#MARK: MagpulPMAG30rd
+- type: entity
+  id: BaseMagazine7.62x39mmMagpulPMAG30rd
+  abstract: true
+  name: "Magpul black 30rd magazine (7.62x39mm)"
+  parent: BaseMagazine7.62x39mm
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 30
+  - type: Item
+    storedScale: 2.5
+  - type: Tag
+    tags:
+      - Magazine7.62x39mmSTANAGCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x39mm/magazine_7.62x39mm_Magpul_PMAG_30rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine7.62x39mmMagpulPMAG30rdEmpty
+  suffix: Empty
+  parent: BaseMagazine7.62x39mmMagpulPMAG30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine7.62x39mmMagpulPMAG30rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine7.62x39mmMagpulPMAG30rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x39mmFMJ

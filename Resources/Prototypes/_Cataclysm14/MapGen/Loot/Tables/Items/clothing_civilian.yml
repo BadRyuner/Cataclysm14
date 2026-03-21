@@ -49,38 +49,45 @@
   id: LootTableClothingTShirt
   table: !type:GroupSelector
     children:
-    - id: ClothingShirtTShirtWhite
     - id: ClothingShirtTShirtRed
     - id: ClothingShirtTShirtBlue
     - id: ClothingShirtTShirtGreen
     - id: ClothingShirtTShirtYellow
     - id: ClothingShirtTShirtPurple
+    - id: ClothingShirtTShirtWhite
+      weight: 2
     - id: ClothingShirtTShirtBlack
+      weight: 3
     - id: ClothingShirtTShirtBeige
+      weight: 2
 
 #MARK: Sweater
 - type: entityTable
   id: LootTableClothingSweater
   table: !type:GroupSelector
     children:
-    - id: ClothingShirtSweaterWhite
     - id: ClothingShirtSweaterRed
     - id: ClothingShirtSweaterBlue
     - id: ClothingShirtSweaterGreen
     - id: ClothingShirtSweaterYellow
     - id: ClothingShirtSweaterPurple
+    - id: ClothingShirtSweaterWhite
+      weight: 3
     - id: ClothingShirtSweaterBlack
+      weight: 3
     - id: ClothingShirtSweaterBeige
+      weight: 2
 
 #MARK: Jeans
 - type: entityTable
   id: LootTableClothingJeans
   table: !type:GroupSelector
     children:
-    - id: ClothingPantsJeansBlue
     - id: ClothingPantsJeansPurple
     - id: ClothingPantsJeansBlack
     - id: ClothingPantsJeansBrown
+    - id: ClothingPantsJeansBlue
+      weight: 5
 
 #MARK: Joggings
 - type: entityTable
@@ -92,19 +99,32 @@
     - id: ClothingPantsJoggingsGreen
     - id: ClothingPantsJoggingsYellow
     - id: ClothingPantsJoggingsPurple
+    - id: ClothingPantsJoggingsWhite
+      weight: 3
     - id: ClothingPantsJoggingsBlack
+      weight: 3
 
 #MARK: Sneakers
 - type: entityTable
   id: LootTableClothingSneakers
   table: !type:GroupSelector
     children:
-    - id: ClothingShoesSneakersWhite
     - id: ClothingShoesSneakersRed
     - id: ClothingShoesSneakersBlue
     - id: ClothingShoesSneakersGreen
     - id: ClothingShoesSneakersYellow
     - id: ClothingShoesSneakersPurple
+    - id: ClothingShoesSneakersWhite
+      weight: 3
+    - id: ClothingShoesSneakersBlack
+      weight: 3
+
+#MARK: Sneakers
+- type: entityTable
+  id: LootTableClothingSneakersGreyscale
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShoesSneakersWhite
     - id: ClothingShoesSneakersBlack
 
 #MARK: DuffelSport
@@ -124,10 +144,47 @@
   table: !type:GroupSelector
     children:
     - id: ClothingBackpackSchoolBagWhite
-    - id: ClothingBackpackSchoolBagRed
-    - id: ClothingBackpackSchoolBagBlue
     - id: ClothingBackpackSchoolBagGreen
     - id: ClothingBackpackSchoolBagYellow
     - id: ClothingBackpackSchoolBagPurple
-    - id: ClothingBackpackSchoolBagBlack
     - id: ClothingBackpackSchoolBagBeige
+    - id: ClothingBackpackSchoolBagRed
+      weight: 2
+    - id: ClothingBackpackSchoolBagBlue
+      weight: 2
+    - id: ClothingBackpackSchoolBagBlack
+      weight: 3
+
+#MARK: TopHighVis
+- type: entityTable
+  id: LootTableClothingTopHighVis
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtHoodieHighVisOrangeYellow
+    - id: ClothingShirtCoatHighVisOrangeBlueWhite
+
+#MARK: BottomHighVis
+- type: entityTable
+  id: LootTableClothingBottomHighVis
+  table: !type:GroupSelector
+    children:
+    - id: ClothingPantsWorkpantsHighVisOrangeYellow
+
+#MARK: HardHat
+- type: entityTable
+  id: LootTableClothingHatHardHat
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHeadHelmetHardhatPlasticBase
+    - id: ClothingHeadHelmetHardhatPlasticYellow
+    - id: ClothingHeadHelmetHardhatPlasticBlue
+    - id: ClothingHeadHelmetHardhatPlasticRed
+    - id: ClothingHeadHelmetHardhatPlasticBlack
+
+#MARK: HardHat Miner
+- type: entityTable
+  id: LootTableClothingHatHardHatMiner
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHeadHelmetHardhatPlasticBase
+    - id: ClothingHeadHelmetHardhatPlasticBlue

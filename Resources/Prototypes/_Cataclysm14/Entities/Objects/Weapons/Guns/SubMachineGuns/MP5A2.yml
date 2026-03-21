@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: HK MP5A2 (9x19mm)
   parent: BaseWeaponRifle
@@ -15,9 +16,9 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5A2_32x32.rsi
-    size: Huge
+    size: Normal
     shape:
-    - 0,0,5,1
+    - 0,0,3,1
     storedScale: 2
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5A2_32x32.rsi
@@ -81,6 +82,7 @@
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
 
+#MARK: MP5 30rd Empty
 - type: entity
   parent: WeaponSubMachineGunMP5A2Base
   id: WeaponSubMachineGunMP5A2Filled30rdEmpty
@@ -92,6 +94,7 @@
         name: Magazine
         startingItem: Magazine9x19mmMP5_30rdEmpty
 
+#MARK: MP5 30rd FMJ
 - type: entity
   parent: WeaponSubMachineGunMP5A2Base
   id: WeaponSubMachineGunMP5A2Filled30rdFMJ
@@ -103,6 +106,7 @@
         name: Magazine
         startingItem: Magazine9x19mmMP5_30rdFMJ
 
+#MARK: MP5 30rd Tracer Red
 - type: entity
   parent: WeaponSubMachineGunMP5A2Base
   id: WeaponSubMachineGunMP5A2Filled30rdTracerRed

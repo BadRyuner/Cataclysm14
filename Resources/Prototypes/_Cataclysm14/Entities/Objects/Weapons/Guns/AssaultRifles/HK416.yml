@@ -1,42 +1,43 @@
+#MARK: Base
 - type: entity
-  name: Steyr Aug-A1 (5.56x45mm NATO)
+  name: HK416 (5.56x45mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponAssaultRifleAugA1Base
+  id: WeaponAssaultRifleHK416Base
   abstract: true
-  description: A modern polymer bullpup assault rifle made b y Steyr and used by the austrian army. Chambered in 5.56x45mm NATO.
+  description: A modern polymer assault rifle based on the AR serie of rifles and made by the german company Heckler & Koch. Chambered in 5.56x45mm NATO.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AUG-A1_64x32.rsi
-    scale: 0.65, 0.65
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/HK416_64x32.rsi
+    scale: 0.55, 0.55
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AUG-A1_32x32.rsi
-    size: Huge
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/HK416_32x32.rsi
+    size: Large
     shape:
-    - 0,0,3,1
-    storedScale: 1.6
+    - 0,0,4,1
+    storedScale: 1.8
   - type: Clothing
     slots:
     - slingfront
     - suitstorage
-    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AUG-A1_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/HK416_32x32.rsi
     clothingVisuals:
       slingfront:
       - state: equipped-SLINGFRONT
       suitstorage:
       - state: equipped-SUITSTORAGE
   - type: Gun
-    fireRate: 9
+    fireRate: 8
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mk_fire.ogg
+      path: /Audio/_NF/Weapons/Guns/Gunshots/rifle.ogg
       params:
         volume: 10
         variation: 0.1
-        pitch: 1.2
+        pitch: 1.8
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
@@ -44,7 +45,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFMJ
+        startingItem: null
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
@@ -54,7 +55,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -73,24 +74,38 @@
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
 
+#MARK: STANAG 30rd Empty
 - type: entity
-  parent: WeaponAssaultRifleAugA1Base
-  id: WeaponAssaultRifleAugA1FilledMagpulBlack30rdEmpty
-  suffix: Empty - Magpul Black 30rd
+  parent: WeaponAssaultRifleHK416Base
+  id: WeaponAssaultRifleHK416FilledSTANAG30rdEmpty
+  suffix: Empty - STANAG 30rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmMagpulBlack30rdEmpty
+        startingItem: Magazine5.56x45mmSTANAG30rdEmpty
 
+#MARK: STANAG 30rd FMJ
 - type: entity
-  parent: WeaponAssaultRifleAugA1Base
-  id: WeaponAssaultRifleAugA1FilledMagpulBlack30rdFMJ
-  suffix: FMJ - Magpul Black 30rd
+  parent: WeaponAssaultRifleHK416Base
+  id: WeaponAssaultRifleHK416FilledSTANAG30rdFMJ
+  suffix: FMJ - STANAG 30rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmMagpulBlack30rdFMJ
+        startingItem: Magazine5.56x45mmSTANAG30rdFMJ
+
+#MARK: STANAG 30rd Tracer Red
+- type: entity
+  parent: WeaponAssaultRifleHK416Base
+  id: WeaponAssaultRifleHK416FilledSTANAG30rdTracerRed
+  suffix: Tracer Red - STANAG 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5.56x45mmSTANAG30rdTracerRed

@@ -6,9 +6,9 @@
       description: A simple kevlar vest of decent quality. This one is a simple bulletproof vest made to resist low caliber rounds.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_PACA.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_PACA.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_PACA.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_PACA.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -36,9 +36,9 @@
       description: A simple kevlar vest made out of titanium. Capable of whistanding pistol calibers.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B2_flora.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B2_flora.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B2_flora.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B2_flora.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -64,9 +64,9 @@
       name: 6B2 body armor (brown)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B2_brown.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B2_brown.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B2_brown.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B2_brown.rsi
   #MARK: 6B2 - grey
     - type: entity
       parent: ClothingOuterArmorBase
@@ -74,9 +74,9 @@
       name: 6B2 body armor (grey)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B2_grey.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B2_grey.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B2_grey.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B2_grey.rsi
 #MARK: -BNTIZhuk Press-
     - type: entity
       parent: [ClothingBallisticPlateFrontBackHeavy, ClothingOuterArmorBase]
@@ -85,9 +85,9 @@
       description: A simple kevlar vest of decent quality with press markings. This one is a simple bulletproof vest made to resist low caliber rounds.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_BNTI-zhuk_press.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_BNTI-zhuk_press.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_BNTI-zhuk_press.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_BNTI-zhuk_press.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -129,9 +129,9 @@
       description: An high quality armor vest out of high quality materials. Can handle armor piercing pistol calibers.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Highcom_tan.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Highcom_tan.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Highcom_tan.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Highcom_tan.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -179,9 +179,9 @@
       description: An LBT-6094A milspec standard quality armor vest. Can handle low power intermediate calibers.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_LBT-6094A-slick_coyote.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_LBT-6094A-slick_coyote.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_LBT-6094A-slick_coyote.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_LBT-6094A-slick_coyote.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -227,9 +227,9 @@
       name: LBT slick armor vest (olive)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_LBT-6094A-slick_olive.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_LBT-6094A-slick_olive.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_LBT-6094A-slick_olive.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_LBT-6094A-slick_olive.rsi
 
     - type: entity
       parent: ClothingOuterBulletProofVestSlickOlive
@@ -247,9 +247,9 @@
       name: LBT slick armor vest (black)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_LBT-6094A-slick_black.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_LBT-6094A-slick_black.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_LBT-6094A-slick_black.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_LBT-6094A-slick_black.rsi
 
     - type: entity
       parent: ClothingOuterBulletProofVestSlickBlack
@@ -268,9 +268,9 @@
       description: An above average armor vest out of quality materials. Can handle armor piercing pistol calibers.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Interceptor-OTV.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Interceptor-OTV.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Interceptor-OTV.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Interceptor-OTV.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -317,9 +317,9 @@
       description: A simple kevlar vest of decent quality. This one is a simple bulletproof vest made to resist low caliber rounds.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_police_USA_small_black.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_police_USA_small_black.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_police_USA_small_black.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_police_USA_small_black.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -345,6 +345,6 @@
       name: high-vis US police light body armor
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_police_USA_small_high-vis.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_police_USA_small_high-vis.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_police_USA_small_high-vis.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_police_USA_small_high-vis.rsi

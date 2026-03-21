@@ -8,9 +8,9 @@
       description: A medium kevlar vest made out of titanium. Capable of whistanding fairly large pistol calibers.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B13_flora.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B13_flora.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B13_flora.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B13_flora.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -52,9 +52,9 @@
       name: 6B13 body armor (police)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B13_police.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B13_police.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_6B13_police.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B13_police.rsi
 
     - type: entity
       parent: ClothingOuterBulletProofVest6B13Police
@@ -74,9 +74,9 @@
       description: An high quality russian armor vest used by special forces and members of the GRU.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Korund-VM.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Korund-VM.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Korund-VM.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Korund-VM.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -121,9 +121,9 @@
       description: The BNTI Kirasa-N, a decent armor vest made for the russian police.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Kirasa-N.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Kirasa-N.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_Kirasa-N.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Kirasa-N.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -171,9 +171,9 @@
       description: An high quality vest part of the IOTV modular kit. Can handle weak fully powered rounds.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_IOTV-Gen4.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV-Gen4.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_IOTV-Gen4.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV-Gen4.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -222,9 +222,9 @@
       description: An standard quality armor vest made for UN forces. Can resist a whole lot of pistol caliber rounds.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_ANA_UN.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_ANA_UN.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_ANA_UN.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_ANA_UN.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -251,9 +251,9 @@
       description: An standard quality armor vest made for the United Nation peace keeping forces. Can resist a whole lot of pistol caliber rounds.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_OTV_UN.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_OTV_UN.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_OTV_UN.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_OTV_UN.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -281,9 +281,9 @@
       description: An high quality vest part of the IOTV modular kit. Can handle weak fully powered rounds.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_IOTV_tan.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_tan.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_IOTV_tan.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_tan.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -333,9 +333,9 @@
       name: IOTV armor vest (OCP Multicam)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_IOTV_OCP_multicam.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_OCP_multicam.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_IOTV_OCP_multicam.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_OCP_multicam.rsi
 
     - type: entity
       parent: ClothingOuterBulletProofVestIOTVOCPMulticam
@@ -356,9 +356,9 @@
       name: IOTV armor vest (US National guard)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_IOTV_US_national_guard.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_US_national_guard.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_IOTV_US_national_guard.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_US_national_guard.rsi
 
     - type: entity
       parent: ClothingOuterBulletProofVestIOTVNationalGuard

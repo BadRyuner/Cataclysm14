@@ -1,3 +1,4 @@
+#MARK: Basic - Base / white
     - type: entity
       parent: ClothingHeadBase
       id: ClothingHeadHelmetHardhatPlasticBase
@@ -23,6 +24,7 @@
         - HeadTop
         - HeadSide
 
+#MARK: Yellow
     - type: entity
       parent: ClothingHeadHelmetHardhatPlasticBase
       id: ClothingHeadHelmetHardhatPlasticYellow
@@ -44,3 +46,72 @@
           right:
           - state: inhand-right
             color: "#FFDE21"
+
+#MARK: Blue
+    - type: entity
+      parent: ClothingHeadHelmetHardhatPlasticBase
+      id: ClothingHeadHelmetHardhatPlasticBlue
+      name: plastic hardhat (blue)
+      components:
+      - type: Sprite
+        color: "#0047AB"
+      - type: Clothing
+        clothingVisuals:
+          head:
+          - state: equipped-STRAP
+          - state: equipped-HELMET
+            color: "#0047AB"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#0047AB"
+          right:
+          - state: inhand-right
+            color: "#0047AB"
+
+#MARK: Red
+    - type: entity
+      parent: ClothingHeadHelmetHardhatPlasticBase
+      id: ClothingHeadHelmetHardhatPlasticRed
+      name: plastic hardhat (red)
+      components:
+      - type: Sprite
+        color: "#C23B1D"
+      - type: Clothing
+        clothingVisuals:
+          head:
+          - state: equipped-STRAP
+          - state: equipped-HELMET
+            color: "#C23B1D"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#C23B1D"
+          right:
+          - state: inhand-right
+            color: "#C23B1D"
+
+#MARK: Black
+    - type: entity
+      parent: ClothingHeadHelmetHardhatPlasticBase
+      id: ClothingHeadHelmetHardhatPlasticBlack
+      name: plastic hardhat (black)
+      components:
+      - type: Sprite
+        color: "#333333"
+      - type: Clothing
+        clothingVisuals:
+          head:
+          - state: equipped-STRAP
+          - state: equipped-HELMET
+            color: "#333333"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#333333"
+          right:
+          - state: inhand-right
+            color: "#333333"

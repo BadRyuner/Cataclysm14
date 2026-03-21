@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: Colt M4A1 (5.56x45mm NATO)
   parent: BaseWeaponRifle
@@ -15,7 +16,7 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/M4A1_32x32.rsi
-    size: Huge
+    size: Large
     shape:
     - 0,0,4,1
     storedScale: 1.8
@@ -73,6 +74,7 @@
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
 
+#MARK: STANAG 30rd Empty
 - type: entity
   parent: WeaponAssaultRifleM4A1Base
   id: WeaponAssaultRifleM4A1FilledSTANAG30rdEmpty
@@ -84,6 +86,7 @@
         name: Magazine
         startingItem: Magazine5.56x45mmSTANAG30rdEmpty
 
+#MARK: STANAG 30rd FMJ
 - type: entity
   parent: WeaponAssaultRifleM4A1Base
   id: WeaponAssaultRifleM4A1FilledSTANAG30rdFMJ
@@ -95,6 +98,7 @@
         name: Magazine
         startingItem: Magazine5.56x45mmSTANAG30rdFMJ
 
+#MARK: STANAG 30rd Tracer Red
 - type: entity
   parent: WeaponAssaultRifleM4A1Base
   id: WeaponAssaultRifleM4A1FilledSTANAG30rdTracerRed

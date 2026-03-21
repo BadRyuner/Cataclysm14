@@ -19,7 +19,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    scale: 0.5,0.5
+    scale: 0.30,0.30
     sprite: _Cataclysm14/Objects/Weapons/Magazines/45_ACP/45_ACP_pistol_mag.rsi
     layers:
     - state: base

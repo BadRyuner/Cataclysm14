@@ -7,9 +7,9 @@
       description: A heavy armor vest colored in tan. Made to resist intermediate calibers.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_NFM-THOR.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_NFM-THOR.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/vest_bulletproof_NFM-THOR.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_NFM-THOR.rsi
       - type: Armor
         modifiers:
           coefficients:

@@ -1,7 +1,9 @@
+#MARK: Base
 - type: entity
   name: AKM (7.62x39mm)
   parent: BaseWeaponRifle
-  id: WeaponAssaultRifleAKM
+  id: WeaponAssaultRifleAKMBase
+  abstract: true
   description: An old Soviet Era rifle. Uses 7.62x39mm ammo. When the chaos began to spread across the Earth, few weapons were as reliable as the AKM.
   components:
   - type: Sprite
@@ -14,7 +16,7 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AKM_32x32.rsi
-    size: Huge
+    size: Large
     shape:
     - 0,0,4,1
   - type: Clothing
@@ -44,8 +46,7 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x39mmFMJ
-            - Magazine7.62x39mmLowCapacityFMJ
+            - Magazine7.62x39mmAKCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -67,3 +68,27 @@
     rsi:
       sprite: _Cataclysm14/Scoping/reticle_okp.rsi
       state: all
+
+#MARK: Steel 30rd Empty
+- type: entity
+  parent: WeaponAssaultRifleAKMBase
+  id: WeaponAssaultRifleAKMFilledSteel30rdEmpty
+  suffix: Empty - Steel 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine7.62x39mmSteel30rdEmpty
+
+#MARK: Steel 30rd FMJ
+- type: entity
+  parent: WeaponAssaultRifleAKMBase
+  id: WeaponAssaultRifleAKMFilledSteel30rdFMJ
+  suffix: FMJ - Steel 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine7.62x39mmSteel30rdFMJ

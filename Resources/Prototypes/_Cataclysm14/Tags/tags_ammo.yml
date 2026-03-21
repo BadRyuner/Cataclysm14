@@ -37,15 +37,30 @@
   - type: Tag
     id: Cartridge7.62x39mm
 
+  - type: Tag
+    id: Magazine7.62x39mmAKCompatible
+
+  - type: Tag
+    id: AmmoBelt7.62x39mm
+
+  - type: Tag
+    id: Magazine7.62x39mmRPDCompatible
+
   #MARK: 5.45x39mm
 
   - type: Tag
     id: Cartridge5.45x39mm
 
+  - type: Tag
+    id: Magazine5.45x39mmAKCompatible
+
   #MARK: 4.6x30mm
 
   - type: Tag
     id: Cartridge4.6x30mm
+
+  - type: Tag
+    id: Magazine4.6x30mmMP7Compatible
 
     #Deprecated
   - type: Tag

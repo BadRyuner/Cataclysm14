@@ -1,4 +1,4 @@
-
+#MARK: Base
 - type: entity
   name: Izhmash Saiga-12 (12 gauge)
   parent: [BaseItem, BaseGunWieldable]
@@ -16,6 +16,9 @@
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Saiga-12_32x32.rsi
     size: Large
+    shape:
+    - 0,0,5,1
+    storedScale: 2.5
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Saiga-12_32x32.rsi
     quickEquip: false

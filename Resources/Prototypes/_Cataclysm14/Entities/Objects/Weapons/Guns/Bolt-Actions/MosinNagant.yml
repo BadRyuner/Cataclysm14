@@ -1,4 +1,4 @@
-
+#MARK: Base
 - type: entity
   name: Mosin Nagant (7.62x54mmR)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
@@ -45,6 +45,7 @@
       sprite: _Cataclysm14/Scoping/reticle_PU.rsi
       state: all
 
+#MARK: FMJ
 - type: entity
   parent: WeaponBoltActionRifleMosinNagantBase
   id: WeaponBoltActionRifleMosinNagantFilledFMJ
