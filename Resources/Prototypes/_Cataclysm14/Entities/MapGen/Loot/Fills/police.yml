@@ -2,7 +2,7 @@
 #MARK: US Police Armory
 - type: entity
   id: StructureFurnitureLockerMetalThirdTripleFilledPoliceUsArmory
-  suffix: National Guard Filled
+  suffix: Police US Armory Filled
   parent: StructureFurnitureLockerMetalThirdTriple
   components:
   - type: EntityTableContainerFill
@@ -12,7 +12,7 @@
 
 - type: entity
   id: StructureFurnitureLockerMetalThirdTripleFilledPoliceUsArmoryRandom50
-  suffix: National Guard 50%
+  suffix: Police US Armory 50%
   parent: StructureFurnitureLockerMetalThirdTriple
   components:
   - type: EntityTableContainerFill

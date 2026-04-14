@@ -7,14 +7,14 @@
   tags:
   - CataStructurePoliceStationSmall26x26
 
-# - type: dungeonRoom
-#   id: StructureSpawnerPoliceStationSmall26x26b
-#   size: 27,27
-#   atlas: /Maps/_Cataclysm14/Structures/PoliceStations/SmallPoliceStations/structure_police_station_26x26_b.yml
-#   offset: 0,0
-#   ignoreTile: FloorShuttleOrange
-#   tags:
-#   - CataStructurePoliceStationSmall26x26
+- type: dungeonRoom
+  id: StructureSpawnerPoliceStationSmall26x26b
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/PoliceStations/SmallPoliceStations/structure_police_station_26x26_b.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructurePoliceStationSmall26x26
 
 - type: entity
   parent: BaseStructureSpawner
