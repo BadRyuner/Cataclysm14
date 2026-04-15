@@ -106,9 +106,14 @@
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
-            - material: Steel
-              amount: 2
+            - material: MaterialWoodPlank
+              amount: 6
               doAfter: 1
+            - material: MaterialNail
+              amount: 16
+              doAfter: 1
+            - tool: HammeringT1
+              doAfter: 3
 
     - node: StructureWallCataWoodPlankBase
       entity: StructureWallCataWoodPlankBase
@@ -116,15 +121,15 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetConcrete1
-              amount: 2
+              prototype: MaterialWoodPlank1
+              amount: 6
             - !type:DeleteEntity {}
           conditions:
             - !type:EntityAnchored
               anchored: false
           steps:
-            - tool: Screwing
-              doAfter: 2
+            - tool: PryingT1
+              doAfter: 10
 
 #MARK: Logs
 - type: constructionGraph
@@ -138,8 +143,11 @@
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
-            - material: Steel
-              amount: 2
+            - material: MaterialWoodLog
+              amount: 4
+              doAfter: 1
+            - material: MaterialRopeShort
+              amount: 4
               doAfter: 1
 
     - node: StructureWallCataWoodLogBase
@@ -148,12 +156,17 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetConcrete1
-              amount: 2
+              prototype: MaterialWoodLog1
+              amount: 4
+            - !type:SpawnPrototype
+              prototype: MaterialRopeShort1
+              amount: 4
             - !type:DeleteEntity {}
           conditions:
             - !type:EntityAnchored
               anchored: false
           steps:
-            - tool: Screwing
-              doAfter: 2
+            - tool: CuttingT1
+              doAfter: 5
+            - tool: PryingT1
+              doAfter: 15

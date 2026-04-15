@@ -64,7 +64,7 @@ tool-quality-fine-cutting-tool-name = Scalpel
 tool-quality-fabric-cutting-name-T1 = Fabric cutting: 1
 # kevlar cutting tools / kevlar scisors
 tool-quality-fabric-cutting-name-T2 = [color=orange] Fabric cutting: 2 [/color]
-tool-quality-fabric-cutting-tool-name = Scalpel
+tool-quality-fabric-cutting-tool-name = Kevlar scissors
 
 # sandpaper
 tool-quality-filing-name-T1 = Filing: 1
