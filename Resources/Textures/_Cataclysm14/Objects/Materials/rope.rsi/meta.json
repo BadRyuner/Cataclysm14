@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "By avtomata (disc:core_mene) from wizden cloth sprite shape",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "rope_1"
+    },
+    {
+      "name": "rope_2"
+    },
+    {
+      "name": "rope_3"
+    },
+    {
+      "name": "rope-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "rope-inhand-right",
+      "directions": 4
+    }
+  ]
+}

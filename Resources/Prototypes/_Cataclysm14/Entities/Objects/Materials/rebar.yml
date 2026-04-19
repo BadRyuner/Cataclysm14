@@ -1,19 +1,24 @@
-
-# MaterialRebar - self explanatory
+- type: stack
+  id: StackRebar
+  name: rebar pole
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/rebar_poles.rsi, state: rebar_1 }
+  spawn: MaterialObjectRebarStack1
+  maxCount: 100
 
 - type: material
-  id: StackRebar
-  stackEntity: MaterialRebarStack1
-  name: materials-rebar
+  id: MaterialRebar
+  stackEntity: MaterialObjectRebarStack1
+  name: materials-wood-plank
   unit: materials-unit-sheet
   icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/rebar_poles.rsi, state: rebar_1 }
   color: "#000000"
   price: 0.1 # 10/sheet
 
 - type: entity
+  abstract: true
   parent: MaterialBase
-  id: MaterialMaterialRebar
-  name: MaterialRebar
+  id: MaterialMaterialObjectRebar
+  name: rebar pole
   description: A strong structural rebar metallic rod. Used for reinforced structures, as well as bashing heads with enough strength.
   suffix: Full
   components:
@@ -28,7 +33,7 @@
     - Sheet
   - type: Item
     sprite: _Cataclysm14/Objects/Materials/rebar_poles.rsi
-    heldPrefix: MaterialRebar
+    heldPrefix: MaterialObjectRebar
   - type: Stack
     stackType: StackRebar
     count: 100
@@ -44,24 +49,24 @@
       MaterialRebar: 100
 
 - type: entity
-  parent: MaterialMaterialRebar
-  id: MaterialRebarStack1
+  parent: MaterialMaterialObjectRebar
+  id: MaterialObjectRebarStack1
   suffix: 1
   components:
   - type: Stack
     count: 1
 
 - type: entity
-  parent: MaterialMaterialRebar
-  id: MaterialRebarStack10
+  parent: MaterialMaterialObjectRebar
+  id: MaterialObjectRebarStack10
   suffix: 10
   components:
   - type: Stack
     count: 10
 
 - type: entity
-  parent: MaterialMaterialRebar
-  id: MaterialRebarStack50
+  parent: MaterialMaterialObjectRebar
+  id: MaterialObjectRebarStack50
   suffix: 50
   components:
   - type: Stack

@@ -121,14 +121,17 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
+              prototype: MaterialObjectWoodPlankStack1
               amount: 6
+            - !type:SpawnPrototype
+              prototype: MaterialObjectNailStack1
+              amount: 16
             - !type:DeleteEntity {}
           conditions:
             - !type:EntityAnchored
               anchored: false
           steps:
-            - tool: PryingT1
+            - tool: PryingT2
               doAfter: 10
 
 #MARK: Logs
@@ -156,10 +159,10 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodLog1
+              prototype: MaterialObjectWoodLogStack1
               amount: 4
             - !type:SpawnPrototype
-              prototype: MaterialRopeShort1
+              prototype: MaterialObjectRopeShortStack1
               amount: 4
             - !type:DeleteEntity {}
           conditions:

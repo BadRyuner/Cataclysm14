@@ -1,0 +1,108 @@
+- type: stack
+  id: StackNail
+  name: nail
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/nails.rsi, state: nail_1 }
+  spawn: MaterialObjectNailStack1
+  maxCount: 100
+
+- type: material
+  id: MaterialNail
+  stackEntity: MaterialObjectNailStack1
+  name: materials-wood-plank
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/nails.rsi, state: nail_1 }
+  color: "#000000"
+  price: 0.1 # 10/sheet
+
+- type: entity
+  abstract: true
+  parent: MaterialBase
+  id: MaterialObjectNail
+  name: nail
+  description: A simple wooden plank, could be used as a weapon if you hit hard enough.
+  suffix: Full
+  components:
+  - type: Sprite
+    scale: 0.6,0.6
+    sprite: _Cataclysm14/Objects/Materials/nails.rsi
+    state: nail_100
+    layers:
+    - state: nail_100
+      map: ["base"]
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Item
+    sprite: _Cataclysm14/Objects/Materials/nails.rsi
+    heldPrefix: nail
+  - type: Stack
+    stackType: StackNail
+    count: 100
+    baseLayer: base
+    layerStates:
+    - nail_1
+    - nail_2
+    - nail_20
+    - nail_40
+    - nail_70
+    - nail_100
+    layerFunction: Threshold
+  - type: StackLayerThreshold
+    thresholds: [1, 2, 20, 40, 70, 100]
+  - type: Material
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      MaterialNail: 1
+  - type: UserInterface
+    interfaces:
+      enum.StackCustomSplitUiKey.Key:
+        type: StackCustomSplitBoundUserInterface
+
+- type: entity
+  parent: MaterialObjectNail
+  id: MaterialObjectNailStack1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialObjectNail
+  id: MaterialObjectNailStack10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MaterialObjectNail
+  id: MaterialObjectNailStack25
+  suffix: 25
+  components:
+  - type: Stack
+    count: 25
+
+- type: entity
+  parent: MaterialObjectNail
+  id: MaterialObjectNailStack50
+  suffix: 50
+  components:
+  - type: Stack
+    count: 50
+
+- type: entity
+  parent: MaterialObjectNail
+  id: MaterialObjectNailStack75
+  suffix: 75
+  components:
+  - type: Stack
+    count: 75
+
+- type: entity
+  parent: MaterialObjectNail
+  id: MaterialObjectNailStack100
+  suffix: 100
+  components:
+  - type: Stack
+    count: 100
