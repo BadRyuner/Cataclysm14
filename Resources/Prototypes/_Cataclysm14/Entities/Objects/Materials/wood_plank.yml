@@ -1,0 +1,68 @@
+
+# WoodPlank - self explanatory
+
+- type: material
+  id: StackWoodenPlank
+  stackEntity: MaterialWoodenPlankStack1
+  name: materials-wood-plank
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_plank_1 }
+  color: "#000000"
+  price: 0.1 # 10/sheet
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialWoodenPlank #Wooden instead of Wood for upstream conflict
+  name: wooden plank
+  description: A simple wooden plank, could be used as a weapon if you hit hard enough.
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Materials/wood_plank.rsi
+    state: wood_plank_3
+    layers:
+    - state: wood_plank_3
+      map: ["base"]
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Item
+    sprite: _Cataclysm14/Objects/Materials/wood_plank.rsi
+    heldPrefix: wooden plank
+  - type: Stack
+    stackType: StackWoodenPlank
+    count: 100
+    baseLayer: base
+    layerStates:
+    - wood_plank_1
+    - wood_plank_2
+    - wood_plank_3
+  - type: Material
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      WoodPlank: 100
+
+- type: entity
+  parent: MaterialWoodenPlank
+  id: MaterialWoodenPlankStack1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialWoodenPlank
+  id: MaterialWoodenPlankStack10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MaterialWoodenPlank
+  id: MaterialWoodenPlankStack50
+  suffix: 50
+  components:
+  - type: Stack
+    count: 50

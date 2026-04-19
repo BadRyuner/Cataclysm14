@@ -47,7 +47,7 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine7.62x39mm6L10Compatible
+      - Magazine7.62x39mmAKCompatible
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x39mm/magazine_7.62x39mm_6L10_30rd.rsi
     layers:
@@ -87,7 +87,7 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine7.62x39mmsteelCompatible
+      - Magazine7.62x39mmAKCompatible
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x39mm/magazine_7.62x39mm_steel_30rd.rsi
     layers:
@@ -127,7 +127,7 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine7.62x39mmaluminiumCompatible
+      - Magazine7.62x39mmAKCompatible
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x39mm/magazine_7.62x39mm_aluminium_30rd.rsi
     layers:
@@ -167,7 +167,7 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine7.62x39mmSTANAGCompatible
+      - Magazine7.62x39mmAKCompatible
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x39mm/magazine_7.62x39mm_Magpul_PMAG_30rd.rsi
     layers:

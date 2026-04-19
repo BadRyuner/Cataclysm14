@@ -46,7 +46,7 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine5.45x39mm6L20Compatible
+    - Magazine5.45x39mmAKCompatible
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/5.45x39mm/magazine_5.45x39mm_6L20_30rd.rsi
     layers:
@@ -86,7 +86,7 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine5.45x39mm6L23Compatible
+    - Magazine5.45x39mmAKCompatible
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/5.45x39mm/magazine_5.45x39mm_6L23_30rd.rsi
     layers:
@@ -126,7 +126,7 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine5.45x39mm6L18Compatible
+    - Magazine5.45x39mmAKCompatible
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Magazines/5.45x39mm/magazine_5.45x39mm_6L18_45rd.rsi
     layers:

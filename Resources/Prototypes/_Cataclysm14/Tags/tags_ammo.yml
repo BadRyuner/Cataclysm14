@@ -74,6 +74,9 @@
   - type: Tag
     id: Magazine45_ACPM1911Compatible
 
+  - type: Tag
+    id: Magazine45_ACPUMP45Compatible
+
   #MARK:.38 Special
 
   - type: Tag
