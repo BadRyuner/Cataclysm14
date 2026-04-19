@@ -20,7 +20,7 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetRebar1
+              prototype: MaterialObjectRebarStack1
               amount: 2
             - !type:DeleteEntity {}
           conditions:
@@ -108,7 +108,7 @@
         - to: Rebar
           completed:
             - !type:GivePrototype
-              prototype: SheetBrick1
+              prototype: MaterialObjectBrickStack1
               amount: 5
           steps:
             - tool: Welding
@@ -123,7 +123,7 @@
         - to: Rebar
           completed:
             - !type:GivePrototype
-              prototype: SheetConcrete1
+              prototype: MaterialObjectConcretePowderStack1
               amount: 5
           steps:
             - tool: Welding
@@ -138,7 +138,7 @@
         - to: Rebar
           completed:
             - !type:GivePrototype
-              prototype: SheetConcrete1
+              prototype: MaterialObjectConcretePowderStack1
               amount: 5
           steps:
             - tool: Welding

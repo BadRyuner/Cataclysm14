@@ -52,7 +52,7 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetConcrete1
+              prototype: MaterialObjectConcretePowderStack1
               amount: 2
             - !type:DeleteEntity {}
           conditions:
@@ -84,7 +84,7 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetConcrete1
+              prototype: MaterialObjectConcretePowderStack1
               amount: 2
             - !type:DeleteEntity {}
           conditions:
@@ -106,10 +106,10 @@
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
-            - material: MaterialWoodPlank
+            - material: MaterialObjectWoodPlankStack1
               amount: 6
               doAfter: 1
-            - material: MaterialNail
+            - material: MaterialObjectNailStack1
               amount: 16
               doAfter: 1
             - tool: HammeringT1
@@ -146,10 +146,10 @@
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
-            - material: MaterialWoodLog
+            - material: MaterialObjectWoodLogStack1
               amount: 4
               doAfter: 1
-            - material: MaterialRopeShort
+            - material: MaterialObjectRopeShortStack1
               amount: 4
               doAfter: 1
 

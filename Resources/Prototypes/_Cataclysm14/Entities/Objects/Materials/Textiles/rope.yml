@@ -1,7 +1,7 @@
 - type: stack
   id: StackRope
-  name: wood plank
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/rope.rsi, state: rope_1 }
+  name: rope
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/rope.rsi, state: rope_1 }
   spawn: MaterialObjectRopeStack1
   maxCount: 10
 
@@ -10,7 +10,7 @@
   stackEntity: MaterialObjectRopeStack1
   name: materials-wood-plank
   unit: materials-unit-sheet
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/rope.rsi, state: rope_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/rope.rsi, state: rope_1 }
   color: "#000000"
   price: 0.1 # 10/sheet
 
@@ -18,13 +18,13 @@
   abstract: true
   parent: MaterialBase
   id: MaterialObjectRope
-  name: wood plank
-  description: A simple wood plank, could be used as a weapon if you hit hard enough.
+  name: rope
+  description: A simple rope.
   suffix: Full
   components:
   - type: Sprite
     scale: 0.7,0.7
-    sprite: _Cataclysm14/Objects/Materials/rope.rsi
+    sprite: _Cataclysm14/Objects/Materials/Textiles/rope.rsi
     state: rope_3
     layers:
     - state: rope_3
@@ -33,7 +33,7 @@
     tags:
     - Sheet
   - type: Item
-    sprite: _Cataclysm14/Objects/Materials/rope.rsi
+    sprite: _Cataclysm14/Objects/Materials/Textiles/rope.rsi
     heldPrefix: wood plank
   - type: Stack
     stackType: StackRope
