@@ -1,7 +1,7 @@
 - type: stack
   id: StackKevlarSheet
   name: kevlar sheet
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/kevlar_sheet.rsi, state: kevlar_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/kevlar_sheet.rsi, state: stack_1 }
   spawn: MaterialObjectKevlarSheetStack1
   maxCount: 100
 
@@ -10,7 +10,7 @@
   stackEntity: MaterialObjectKevlarSheetStack1
   name: materials-kevlar
   unit: materials-unit-sheet
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/kevlar_sheet.rsi, state: kevlar_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/kevlar_sheet.rsi, state: stack_1 }
   color: "#000000"
   price: 0.1 # 10/sheet
 
@@ -25,9 +25,9 @@
   - type: Sprite
     scale: 0.7,0.7
     sprite: _Cataclysm14/Objects/Materials/Textiles/kevlar_sheet.rsi
-    state: kevlar_3
+    state: stack_3
     layers:
-    - state: kevlar_3
+    - state: stack_3
       map: ["base"]
   - type: Tag
     tags:
@@ -40,9 +40,9 @@
     count: 100
     baseLayer: base
     layerStates:
-    - kevlar_1
-    - kevlar_2
-    - kevlar_3
+    - stack_1
+    - stack_2
+    - stack_3
   - type: Material
   - type: Appearance
   - type: PhysicalComposition
