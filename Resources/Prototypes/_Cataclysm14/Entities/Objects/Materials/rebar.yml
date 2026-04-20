@@ -3,7 +3,7 @@
   name: rebar pole
   icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/rebar_poles.rsi, state: rebar_1 }
   spawn: MaterialObjectRebarStack1
-  maxCount: 100
+  maxCount: 50
 
 - type: material
   id: MaterialRebar
@@ -23,6 +23,7 @@
   suffix: Full
   components:
   - type: Sprite
+    scale: 0.6,0.6
     sprite: _Cataclysm14/Objects/Materials/rebar_poles.rsi
     state: rebar_3
     layers:
@@ -63,6 +64,14 @@
   components:
   - type: Stack
     count: 10
+
+- type: entity
+  parent: MaterialMaterialObjectRebar
+  id: MaterialObjectRebarStack25
+  suffix: 25
+  components:
+  - type: Stack
+    count: 25
 
 - type: entity
   parent: MaterialMaterialObjectRebar

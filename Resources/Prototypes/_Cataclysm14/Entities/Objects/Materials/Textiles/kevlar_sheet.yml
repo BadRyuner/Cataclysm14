@@ -23,7 +23,7 @@
   suffix: Full
   components:
   - type: Sprite
-    scale: 0.7,0.7
+    scale: 0.6,0.6
     sprite: _Cataclysm14/Objects/Materials/Textiles/kevlar_sheet.rsi
     state: stack_3
     layers:
@@ -67,8 +67,24 @@
 
 - type: entity
   parent: MaterialObjectKevlarSheet
+  id: MaterialObjectKevlarSheetStack25
+  suffix: 25
+  components:
+  - type: Stack
+    count: 25
+
+- type: entity
+  parent: MaterialObjectKevlarSheet
   id: MaterialObjectKevlarSheetStack50
   suffix: 50
   components:
   - type: Stack
     count: 50
+
+- type: entity
+  parent: MaterialObjectKevlarSheet
+  id: MaterialObjectKevlarSheetStack100
+  suffix: 100
+  components:
+  - type: Stack
+    count: 100

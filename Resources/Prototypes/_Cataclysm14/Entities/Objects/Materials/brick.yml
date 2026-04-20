@@ -3,7 +3,7 @@
   name: brick
   icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/bricks.rsi, state: brick_1 }
   spawn: MaterialObjectBrickStack1
-  maxCount: 100
+  maxCount: 50
 
 - type: material
   id: MaterialBrick
@@ -64,6 +64,14 @@
   components:
   - type: Stack
     count: 10
+
+- type: entity
+  parent: MaterialObjectBrick
+  id: MaterialObjectBrickStack25
+  suffix: 25
+  components:
+  - type: Stack
+    count: 25
 
 - type: entity
   parent: MaterialObjectBrick

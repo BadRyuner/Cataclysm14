@@ -3,7 +3,7 @@
   name: wood log
   icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_log.rsi, state: log_1 }
   spawn: MaterialObjectWoodLogStack1
-  maxCount: 50
+  maxCount: 10
 
 - type: material
   id: MaterialWoodLog
@@ -59,16 +59,16 @@
 
 - type: entity
   parent: MaterialObjectWoodLog
+  id: MaterialObjectWoodLogStack5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: MaterialObjectWoodLog
   id: MaterialObjectWoodLogStack10
   suffix: 10
   components:
   - type: Stack
     count: 10
-
-- type: entity
-  parent: MaterialObjectWoodLog
-  id: MaterialObjectWoodLogStack50
-  suffix: 50
-  components:
-  - type: Stack
-    count: 50

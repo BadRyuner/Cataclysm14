@@ -23,6 +23,7 @@
   suffix: Full
   components:
   - type: Sprite
+    scale: 0.6,0.6
     sprite: _Cataclysm14/Objects/Materials/bolts.rsi
     state: bolt_100
     layers:
