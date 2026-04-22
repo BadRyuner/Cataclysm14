@@ -20,7 +20,7 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetBrick1
+              prototype: MaterialObjectBrickStack1
               amount: 2
             - !type:DeleteEntity {}
           conditions:
