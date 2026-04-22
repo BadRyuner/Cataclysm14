@@ -261,3 +261,42 @@
   itemDrop: FloorTileItemDirt # Delta V
   heatCapacity: 10000
   weather: true
+
+#Red grass
+- type: tile
+  id: FloorCataGrassRed
+  name: Cata-tiles-grass-red
+  sprite: /Textures/_Cataclysm14/Tiles/grass_red/grass.png
+  variants: 13
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true

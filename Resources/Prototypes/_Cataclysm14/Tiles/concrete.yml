@@ -42,6 +42,25 @@
   # isSubfloor: true
   # weather: true
 
+- type: tile
+  id: FloorCataConcreteSlabOld
+  name: Cata-tiles-concrete-slab-old
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab_old.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCataRockBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
 #MARK: Hex concrete tiles
 
 - type: tile
@@ -64,7 +83,6 @@
   heatCapacity: 10000
   # isSubfloor: true
   # weather: true
-
 
 # MARK: Sidewalk
 
@@ -121,6 +139,26 @@
     East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+  baseTurf: FloorCataRockBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+#Tiles
+- type: tile
+  id: FloorCataConcreteTilesOld
+  name: Cata-tiles-concrete-tiles-old
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_tiles_old.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: FloorCataRockBase
   deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
   footstepSounds:
