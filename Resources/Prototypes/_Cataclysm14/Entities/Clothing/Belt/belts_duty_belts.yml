@@ -1,0 +1,51 @@
+#MARK: Base Duty Belt
+  - type: entity
+    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+    id: BaseClothingBeltDutyBelt
+    components:
+    - type: StaticPrice
+      price: 3000
+      vendPrice: 5500
+    - type: Sprite
+      scale: 0.7,0.7
+    - type: ExplosionResistance
+      damageCoefficient: 0.9
+    - type: Storage
+      grid:
+      - 0,0,7,1
+
+#MARK: Duty Belt Police
+  - type: entity
+    parent: BaseClothingBeltDutyBelt
+    id: ClothingBeltDutyBeltPolice
+    name: police duty belt (police)
+    description: A belt with plenty of attach for equipment and pockets, used by law enforcement.
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_police.rsi
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_police.rsi
+
+#MARK: Duty Belt Tan
+  - type: entity
+    parent: BaseClothingBeltDutyBelt
+    id: ClothingBeltDutyBeltTan
+    name: duty belt (tan)
+    description: A belt with plenty of attach for equipment and pockets, used by soldiers.
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_tan.rsi
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_tan.rsi
+
+#MARK: Duty Belt Black
+  - type: entity
+    parent: BaseClothingBeltDutyBelt
+    id: ClothingBeltDutyBeltBlack
+    name: duty belt (black)
+    description: A belt with plenty of attach for equipment and pockets, used by various militias and special forces, and mall ninjas.
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_black.rsi
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_black.rsi

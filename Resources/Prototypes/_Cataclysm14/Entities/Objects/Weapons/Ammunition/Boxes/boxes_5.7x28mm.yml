@@ -141,6 +141,22 @@
     zeroVisible: false
   - type: Appearance
 
+#MARK: HP
+- type: entity
+  parent: BaseAmmoBox5.7x28mm
+  id: AmmoBox5.7x28mmHP
+  name: ammunition box (5.7x28mm hollow-point)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.7x28mmHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: HP
+
 #MARK: Deprecated >
 
 #armor-piercing:
@@ -159,22 +175,6 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: plasteelAP
-
-#MARK: HP
-- type: entity
-  parent: BaseAmmoBox5.7x28mm
-  id: AmmoBox5.7x28mmHP
-  name: ammunition box (5.7x28mm hollow-point)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmHP
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: HP
 
 # Frontier
 - type: entity

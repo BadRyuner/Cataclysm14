@@ -1,4 +1,4 @@
-#MARK: LoadoutFAMAS
+#MARK: Loadout FAMAS
 - type: entityTable
   id: LootTableLoadoutWeaponGunFAMAS
   table: !type:AllSelector
@@ -14,7 +14,7 @@
         rolls: !type:RangeNumberSelector
           range: 0,2
 
-#MARK: LoadoutM4A1
+#MARK: Loadout M4A1
 - type: entityTable
   id: LootTableLoadoutWeaponGunM4A1
   table: !type:AllSelector
@@ -30,7 +30,7 @@
         rolls: !type:RangeNumberSelector
           range: 0,2
 
-#MARK: LoadoutFnFal
+#MARK: Loadout FN FAL
 - type: entityTable
   id: LootTableLoadoutWeaponGunFnFal
   table: !type:AllSelector
@@ -46,7 +46,7 @@
         rolls: !type:RangeNumberSelector
           range: 0,2
 
-#MARK: LoadoutM249
+#MARK: Loadout M249
 - type: entityTable
   id: LootTableLoadoutWeaponGunM249
   table: !type:AllSelector
@@ -67,7 +67,7 @@
         rolls: !type:RangeNumberSelector
           range: 0,3
 
-#MARK: LoadoutGlock17
+#MARK: Loadout Glock 17
 - type: entityTable
   id: LootTableLoadoutWeaponGunGlock17
   table: !type:AllSelector
@@ -83,7 +83,7 @@
         rolls: !type:RangeNumberSelector
           range: 0,2
 
-#MARK: LoadoutM1911
+#MARK: Loadout M1911
 - type: entityTable
   id: LootTableLoadoutWeaponGunM1911
   table: !type:AllSelector
@@ -99,7 +99,7 @@
         rolls: !type:RangeNumberSelector
           range: 0,2
 
-#MARK: LoadoutM36
+#MARK: Loadout M36
 - type: entityTable
   id: LootTableLoadoutWeaponGunM36
   table: !type:AllSelector
@@ -112,5 +112,21 @@
         rolls: !type:RangeNumberSelector
           range: 1,4
       - id: AmmoBox38_specialFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: Loadout FN 5.7
+- type: entityTable
+  id: LootTableLoadoutWeaponGunFN5.7
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponPistolFN5.7Filled20rdEmpty
+          - id: WeaponPistolFN5.7Filled20rdFMJ
+      - id: Magazine5.7x28mmFN5.7_20rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+      - id: AmmoBox5.7x28mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2

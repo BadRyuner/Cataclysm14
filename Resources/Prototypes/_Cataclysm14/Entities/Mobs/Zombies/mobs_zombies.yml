@@ -247,7 +247,7 @@
         prob: 0.8
       belt: !type:GroupSelector
         children:
-        - id: ClothingBeltDutyBeltTanFilledMilitary
+        - id: ClothingBeltDutyBeltTanFilledNationalGuard
           weight: 2
         - id: ClothingBeltDutyBeltTan
         prob: 0.8
@@ -794,8 +794,8 @@
         prob: 0.9
       belt: !type:GroupSelector
         children:
-        - id: ClothingBeltDutyBeltPoliceFilledPolice
-        - id: ClothingBeltDutyBeltPolice
+        - id: ClothingBeltDutyBeltBlackFilledSierra
+        - id: ClothingBeltDutyBeltBlack
         prob: 0.8
       balaclava: !type:GroupSelector
         children:
@@ -859,8 +859,8 @@
         prob: 0.8
       belt: !type:GroupSelector
         children:
-        - id: ClothingBeltDutyBeltPoliceFilledPolice
-        - id: ClothingBeltDutyBeltPolice
+        - id: ClothingBeltDutyBeltBlackFilledSierra
+        - id: ClothingBeltDutyBeltBlack
         prob: 0.5
       balaclava: !type:GroupSelector
         children:
