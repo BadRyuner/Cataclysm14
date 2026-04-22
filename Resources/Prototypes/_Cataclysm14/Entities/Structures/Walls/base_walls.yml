@@ -5,7 +5,7 @@
   parent: BaseWall
   id: BaseStructureWallCataTierOne
   name: default wall
-  description: Keeps the air in and the chimera out.
+  description: Keeps the air in and the infection out.
   components:
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -42,7 +42,7 @@
   parent: BaseWall
   id: BaseStructureWallCataTierTwo
   name: reinforced wall
-  description: Keeps the air in and the chimera out.
+  description: Keeps the air in and the infection out.
   components:
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -79,7 +79,7 @@
   parent: BaseWall
   id: BaseStructureWallCataTierThree
   name: super reinforced wall
-  description: Keeps the air in and the chimera out.
+  description: Keeps the air in and the infection out.
   components:
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -115,7 +115,7 @@
   parent: BaseWall
   id: BaseStructureWallCataTierFour
   name: super ultra giga reinforced wall
-  description: Keeps the air in and the chimera out.
+  description: Keeps the air in and the infection out.
   components:
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -151,7 +151,7 @@
   parent: BaseWall
   id: BaseStructureWallCataSafezone
   name: super ultra giga mega deluxe reinforced wall
-  description: Keeps the air in and the chimera out.
+  description: Keeps the air in and the infection out.
   suffix: SAFEZONE
   components:
   - type: Damageable
