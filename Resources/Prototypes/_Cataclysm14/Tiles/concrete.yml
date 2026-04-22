@@ -46,7 +46,7 @@
   id: FloorCataConcreteSlabOld
   name: Cata-tiles-concrete-slab-old
   sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab_old.png
-  variants: 6
+  variants: 4
   placementVariants:
   - 1.0
   - 1.0
@@ -153,7 +153,7 @@
   id: FloorCataConcreteTilesOld
   name: Cata-tiles-concrete-tiles-old
   sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_tiles_old.png
-  variants: 6
+  variants: 4
   placementVariants:
   - 1.0
   - 1.0
