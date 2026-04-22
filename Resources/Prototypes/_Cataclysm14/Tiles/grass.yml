@@ -267,21 +267,12 @@
   id: FloorCataGrassRed
   name: Cata-tiles-grass-red
   sprite: /Textures/_Cataclysm14/Tiles/grass_red/grass.png
-  variants: 13
+  variants: 4
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
-  - 1.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
   edgeSpritePriority: 2
   edgeSprites:
     SouthEast: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
