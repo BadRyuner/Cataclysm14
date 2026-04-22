@@ -109,6 +109,9 @@
   - type: Tag
     id: Cartridge5.7x28mm
 
+  - type: Tag
+    id: Magazine5.7x28mmFN5.7Compatible
+
   #MARK: 8x65mm SKR
 
   - type: Tag
