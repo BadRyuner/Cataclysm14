@@ -1,0 +1,173 @@
+#MARK: Brick
+- type: constructionGraph
+  id: StructureWallCataBrickRedRedBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: StructureWallCataBrickRedRedBase
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: StackBrick
+              amount: 2
+              doAfter: 1
+
+    - node: StructureWallCataBrickRedRedBase
+      entity: StructureWallCataBrickRedRedBase
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialObjectBrickStack1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Concrete
+- type: constructionGraph
+  id: StructureWallCataConcreteSolidWhite
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: StructureWallCataConcreteSolidWhite
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: StackConcretePowder
+              amount: 2
+              doAfter: 1
+
+    - node: StructureWallCataConcreteSolidWhite
+      entity: StructureWallCataConcreteSolidWhite
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialObjectConcretePowderStack1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Concrete
+- type: constructionGraph
+  id: StructureWallCataMetalSimpleBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: StructureWallCataMetalSimpleBase
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
+    - node: StructureWallCataMetalSimpleBase
+      entity: StructureWallCataMetalSimpleBase
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialObjectConcretePowderStack1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+#MARK: Planks
+- type: constructionGraph
+  id: StructureWallCataWoodPlankBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: StructureWallCataWoodPlankBase
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: StackWoodPlank
+              amount: 6
+              doAfter: 1
+            - material: StackNail
+              amount: 16
+              doAfter: 1
+
+    - node: StructureWallCataWoodPlankBase
+      entity: StructureWallCataWoodPlankBase
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialObjectWoodPlankStack1
+              amount: 6
+            - !type:SpawnPrototype
+              prototype: MaterialObjectNailStack1
+              amount: 16
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: PryingT2
+              doAfter: 10
+
+#MARK: Logs
+- type: constructionGraph
+  id: StructureWallCataWoodLogBase
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: StructureWallCataWoodLogBase
+          completed:
+            - !type:SnapToGrid {}
+              # southRotation: true # Frontier
+          steps:
+            - material: StackWoodLog
+              amount: 4
+              doAfter: 1
+            - material: StackRopeShort
+              amount: 4
+              doAfter: 1
+
+    - node: StructureWallCataWoodLogBase
+      entity: StructureWallCataWoodLogBase
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialObjectWoodLogStack1
+              amount: 4
+            - !type:SpawnPrototype
+              prototype: MaterialObjectRopeShortStack1
+              amount: 4
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: CuttingT1
+              doAfter: 5
+            - tool: PryingT1
+              doAfter: 15

@@ -60,7 +60,7 @@
 
 - type: entity
   id: Bullet45_magnumDepletedUranium
-  name: bullet (.45 magnum uranium)
+  name: bullet (.45 magnum depleted uranium)
   parent: BaseBulletUranium
   categories: [ HideSpawnMenu ]
   components:

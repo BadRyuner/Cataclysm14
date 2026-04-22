@@ -8,7 +8,7 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge5.7x28mmFMJ
+      - Cartridge5.7x28mm
   - type: CartridgeAmmo
     proto: Bullet5.7x28mmFMJ
   - type: Sprite
@@ -62,7 +62,7 @@
 
 - type: entity
   id: Cartridge5.7x28mmDepletedUranium
-  name: cartridge (5.7x28mm uranium)
+  name: cartridge (5.7x28mm depleted uranium)
   parent: BaseCartridge5.7x28mm
   components:
   - type: CartridgeAmmo

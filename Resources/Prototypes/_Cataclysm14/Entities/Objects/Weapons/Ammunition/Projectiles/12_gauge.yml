@@ -210,7 +210,7 @@
 
 - type: entity
   id: Pellet12_gaugeUranium
-  name: Pellet12_gauge (12 gauge uranium)
+  name: Pellet12_gauge (12 gauge depleted uranium)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:

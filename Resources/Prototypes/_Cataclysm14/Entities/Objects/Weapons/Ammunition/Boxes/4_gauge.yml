@@ -126,7 +126,7 @@
       - state: incendiary
 
 - type: entity
-  name: shotgun shell box (4 gauge uranium)
+  name: shotgun shell box (4 gauge depleted uranium)
   parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmDepletedUranium
   components:

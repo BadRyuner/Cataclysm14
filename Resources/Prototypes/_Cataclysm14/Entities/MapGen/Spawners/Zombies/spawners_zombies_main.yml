@@ -1,0 +1,108 @@
+#MARK: Base
+- type: entity
+  name: zombie spawner
+  id: BaseEntitiesSpawnerMobZombies
+  abstract: true
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Cataclysm14/Mapping/Spawners/zombies.rsi
+        state: zombie-bodybag
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+
+#MARK: Basic
+- type: entity
+  id: EntitiesSpawnerMobZombiesBasic
+  suffix: Basic][100%
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableSpawnerMobZombieBasic
+      prob: 1
+
+- type: entity
+  id: EntitiesSpawnerMobZombiesBasicRandom25
+  suffix: Basic][25%
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableSpawnerMobZombieBasic
+      prob: 0.25
+
+- type: entity
+  id: EntitiesSpawnerMobZombiesBasicRandom10
+  suffix: Basic][10%
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableSpawnerMobZombieBasic
+      prob: 0.10
+
+#MARK: Police Station
+- type: entity
+  id: EntitiesSpawnerMobZombiesPoliceStation
+  suffix: Police Station][100%
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableSpawnerMobZombiePoliceStation
+      prob: 1
+
+- type: entity
+  id: EntitiesSpawnerMobZombiesPoliceStationRandom25
+  suffix: Police Station][25%
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableSpawnerMobZombiePoliceStation
+      prob: 0.25
+
+- type: entity
+  id: EntitiesSpawnerMobZombiesPoliceStationRandom10
+  suffix: Police Station][10%
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableSpawnerMobZombiePoliceStation
+      prob: 0.10
+
+#MARK: National Guard
+- type: entity
+  id: EntitiesSpawnerMobZombiesNationalGuard
+  suffix: National Guard][100%
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableSpawnerMobZombieNationalGuard
+      prob: 1
+
+- type: entity
+  id: EntitiesSpawnerMobZombiesNationalGuardRandom25
+  suffix: National Guard][25%
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableSpawnerMobZombieNationalGuard
+      prob: 0.25
+
+- type: entity
+  id: EntitiesSpawnerMobZombiesNationalGuardRandom10
+  suffix: National Guard][10%
+  parent: BaseEntitiesSpawnerMobZombies
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LootTableSpawnerMobZombieNationalGuard
+      prob: 0.10

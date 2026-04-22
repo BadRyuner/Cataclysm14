@@ -1,0 +1,25 @@
+#MARK: Sierra beret
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadHatBeretSierra
+      name: taskforce sierra beret
+      description: Donning the colours of the Superstructure Taskforce Sierra.
+      components:
+      - type: Sprite
+        scale: 0.65,0.65
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_sierra.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_sierra.rsi
+
+#MARK: Sierra commandant beret
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadHatBeretSierraCommandant
+      name: taskforce sierra commandant beret
+      description: Donning the colours of the Superstructure Taskforce Sierra and a fancy little feather on top, made for high ranking officers.
+      components:
+      - type: Sprite
+        scale: 0.65,0.65
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_sierra_commandant.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_sierra_commandant.rsi

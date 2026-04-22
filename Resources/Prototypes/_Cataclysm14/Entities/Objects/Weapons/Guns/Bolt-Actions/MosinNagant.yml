@@ -1,4 +1,4 @@
-
+#MARK: Base
 - type: entity
   name: Mosin Nagant (7.62x54mmR)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
@@ -37,7 +37,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge7.62x54mmRFMJ
+      - Cartridge7.62x54mmR
     capacity: 5
     proto: null
   - type: WieldedCrosshair
@@ -45,6 +45,7 @@
       sprite: _Cataclysm14/Scoping/reticle_PU.rsi
       state: all
 
+#MARK: FMJ
 - type: entity
   parent: WeaponBoltActionRifleMosinNagantBase
   id: WeaponBoltActionRifleMosinNagantFilledFMJ

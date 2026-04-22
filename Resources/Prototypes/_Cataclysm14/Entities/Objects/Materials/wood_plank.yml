@@ -1,0 +1,102 @@
+- type: stack
+  id: StackWoodPlank
+  name: wood plank
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_3 }
+  spawn: MaterialObjectWoodPlankStack1
+  maxCount: 50
+
+- type: material
+  id: MaterialWoodPlank
+  stackEntity: MaterialObjectWoodPlankStack1
+  name: materials-wood-plank
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_3 }
+  color: "#000000"
+  price: 0.1 # 10/sheet
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MaterialBase
+  id: MaterialObjectWoodPlank
+  name: wood plank
+  description: A simple wood plank, could be used as a weapon if you hit hard enough.
+  suffix: Full
+  components:
+  - type: Sprite
+    scale: 0.7,0.7
+    sprite: _Cataclysm14/Objects/Materials/wood_plank.rsi
+    state: wood_3
+    layers:
+    - state: wood_3
+      map: ["base"]
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Item
+    sprite: _Cataclysm14/Objects/Materials/wood_plank.rsi
+    heldPrefix: wood plank
+  - type: Stack
+    stackType: StackWoodPlank
+    count: 100
+    baseLayer: base
+    layerStates:
+    - wood_1
+    - wood_2
+    - wood_3
+  - type: Material
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      MaterialWoodPlank: 100
+
+- type: entity
+  parent: MaterialObjectWoodPlank
+  id: MaterialObjectWoodPlankStack1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialObjectWoodPlank
+  id: MaterialObjectWoodPlankStack5
+  suffix: 5
+  components:
+  - type: Construction
+    graph: GraphMaterialWoodPlank
+    node: MaterialObjectWoodPlankStack5
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: MaterialObjectWoodPlank
+  id: MaterialObjectWoodPlankStack10
+  suffix: 10
+  components:
+  - type: Construction
+    graph: GraphMaterialWoodPlank
+    node: MaterialObjectWoodPlankStack10
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MaterialObjectWoodPlank
+  id: MaterialObjectWoodPlankStack25
+  suffix: 25
+  components:
+  - type: Construction
+    graph: GraphMaterialWoodPlank
+    node: MaterialObjectWoodPlankStack25
+  - type: Stack
+    count: 25
+
+- type: entity
+  parent: MaterialObjectWoodPlank
+  id: MaterialObjectWoodPlankStack50
+  suffix: 50
+  components:
+  - type: Construction
+    graph: GraphMaterialWoodPlank
+    node: MaterialObjectWoodPlankStack50
+  - type: Stack
+    count: 50

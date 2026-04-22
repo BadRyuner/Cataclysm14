@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: HK UMP45 (.45 ACP)
   parent: BaseWeaponRifle
@@ -15,9 +16,9 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_32x32.rsi
-    size: Huge
+    size: Normal
     shape:
-    - 0,0,5,1
+    - 0,0,3,1
     storedScale: 2
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_32x32.rsi
@@ -68,7 +69,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mmFMJ
+            - Cartridge5.56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -83,35 +84,26 @@
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
 
+#MARK: UMP45 30rd Empty
 - type: entity
   parent: WeaponSubMachineGunUMP45Base
-  id: WeaponSubMachineGunUMP45Filled200rdEmpty
-  suffix: Empty - 200rd
+  id: WeaponSubMachineGunUMP45Filled30rdEmpty
+  suffix: Empty - 30rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox5.56x45mmLMG200rdEmpty
+        startingItem: Magazine45_ACPUMP45_30rdEmpty
 
+#MARK: UMP45 30rd FMJ
 - type: entity
   parent: WeaponSubMachineGunUMP45Base
-  id: WeaponSubMachineGunUMP45Filled200rdFMJ
-  suffix: FMJ - 200rd
+  id: WeaponSubMachineGunUMP45Filled30rdFMJ
+  suffix: FMJ - 30rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox5.56x45mmLMG200rdFMJ
-
-- type: entity
-  parent: WeaponSubMachineGunUMP45Base
-  id: WeaponSubMachineGunUMP45Filled200rdTracerRed
-  suffix: Tracer Red - 200rd
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineBox5.56x45mmLMG200rdTracerRed
+        startingItem: Magazine45_ACPUMP45_30rdFMJ

@@ -9,7 +9,7 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge5.56x45mmFMJ
+      - Cartridge5.56x45mm
   - type: CartridgeAmmo
     proto: Bullet5.56x45mmFMJ
   - type: Sprite
@@ -114,7 +114,7 @@
 #MARK: Depleted Uranium
 - type: entity
   id: Cartridge5.56x45mmDepletedUranium
-  name: cartridge (5.56x45mm NATO uranium)
+  name: cartridge (5.56x45mm NATO depleted uranium)
   parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo

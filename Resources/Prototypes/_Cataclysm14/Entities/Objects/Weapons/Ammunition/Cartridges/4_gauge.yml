@@ -8,7 +8,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun23x75mmBuckshot
+    - ShellShotgun23x75mm
   - type: CartridgeAmmo
     soundEject:
       collection: ShellEject
@@ -38,7 +38,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun23x75mmBuckshot
+    - ShellShotgun23x75mm
   - type: Sprite
     layers:
       - state: beanbag
@@ -84,7 +84,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun23x75mmBuckshot
+    - ShellShotgun23x75mm
   - type: Sprite
     layers:
       - state: flare
@@ -136,7 +136,7 @@
 
 - type: entity
   id: ShellShotgun23x75mmDepletedUranium
-  name: shotgun shell (4 gauge uranium)
+  name: shotgun shell (4 gauge depleted uranium)
   parent: BaseShellShotgun23x75mm
   components:
     - type: Sprite
@@ -156,7 +156,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun23x75mmBuckshot
+    - ShellShotgun23x75mm
   - type: Sprite
     layers:
       - state: flashbang

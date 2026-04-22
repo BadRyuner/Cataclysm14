@@ -8,7 +8,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.7x28mmFMJ
+        - Cartridge5.7x28mm
     proto: Cartridge5.7x28mmFMJ
     capacity: 80
   - type: Item
@@ -84,7 +84,7 @@
 - type: entity
   id: AmmoBox5.7x28mmDepletedUranium
   parent: BaseAmmoBox5.7x28mm
-  name: ammunition box (5.7x28mm uranium)
+  name: ammunition box (5.7x28mm depleted uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.7x28mmDepletedUranium

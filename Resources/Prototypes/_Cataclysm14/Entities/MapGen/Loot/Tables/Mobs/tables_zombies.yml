@@ -1,0 +1,116 @@
+#MARK: Spawners >
+
+
+
+
+#MARK: ZombieBasic
+- type: entityTable
+  id: LootTableSpawnerMobZombieBasic
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableZombieSetCivilians
+      - !type:NestedSelector
+        weight: 5
+        tableId: LootTableZombieSetPoliceUs
+      - !type:NestedSelector
+        weight: 5
+        tableId: LootTableZombieSetMilitaryGeneric
+
+#MARK: PoliceStation
+- type: entityTable
+  id: LootTableSpawnerMobZombiePoliceStation
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 15
+        tableId: LootTableZombieSetCivilians
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableZombieSetPoliceUs
+      - !type:NestedSelector
+        weight: 10
+        tableId: LootTableZombieSetMilitaryGeneric
+
+#MARK: NationalGuard
+- type: entityTable
+  id: LootTableSpawnerMobZombieNationalGuard
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 15
+        tableId: LootTableMobZombieCivilianBasic
+      - !type:NestedSelector
+        weight: 10
+        tableId: LootTableZombieSetPoliceUs
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableZombieSetMilitaryGeneric
+
+#MARK: Zombie Sets >
+
+
+
+
+#MARK: Police US
+- type: entityTable
+  id: LootTableZombieSetPoliceUs
+  table: !type:GroupSelector
+    children:
+      - id: MobZombiePoliceOfficerUS
+        weight: 75
+      - id: MobZombieSWATOfficer
+        weight: 25
+
+#MARK: Civilians
+- type: entityTable
+  id: LootTableZombieSetCivilians
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableMobZombieCivilianBasic
+      - id: MobZombieConstructionWorker
+        weight: 5
+      - id: MobZombieGardener
+        weight: 5
+      - id: MobZombieCashier
+        weight: 5
+      - id: MobZombieButcher
+        weight: 5
+      - id: MobZombiePhysician
+        weight: 5
+
+#MARK: MilitaryGeneric
+- type: entityTable
+  id: LootTableZombieSetMilitaryGeneric
+  table: !type:GroupSelector
+    children:
+      - id: MobZombieNationalGuard
+        weight: 100
+      - id: MobZombieUNPeacekeeperFR
+        weight: 20
+
+#MARK: Zombies + Variants >
+
+
+
+
+#MARK: CivilianBasic
+- type: entityTable
+  id: LootTableMobZombieCivilianBasic
+  table: !type:GroupSelector
+    children:
+      - id: MobZombieCivilianBasic
+        weight: 15
+      - id: MobZombieHeadlessCivilianBasic
+        weight: 4
+      - id: MobZombieCrawlingCivilianBasic
+        weight: 3
+      - id: MobZombieRunnerCivilianBasic
+        weight: 2
+      - id: MobZombieSprinterCivilianBasic
+        weight: 1
+      - id: MobZombieTeslaCivilianBasic
+        weight: 2

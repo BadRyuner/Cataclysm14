@@ -44,6 +44,14 @@
     spawn: ToolCrowbar
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
+#MARK: Fine hammering
+  - type: tool
+    id: FineHammeringT1
+    name: tool-quality-fine-hammering-name-T1
+    toolName: tool-quality-fine-hammering-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
 #MARK: Nail prying
   - type: tool
     id: NailPryingT1
@@ -81,6 +89,21 @@
     spawn: ToolCrowbar
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
+#MARK: Fine metal sawing
+  - type: tool
+    id: FineMetalSawingT1
+    name: tool-quality-fine-metal-sawing-name-T1
+    toolName: tool-quality-fine-metal-sawing-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FineMetalSawingT2
+    name: tool-quality-fine-metal-sawing-name-T2
+    toolName: tool-quality-fine-metal-sawing-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
 #MARK: Digging
   - type: tool
     id: DiggingT1
@@ -100,5 +123,95 @@
     id: DiggingT3
     name: tool-quality-digging-name-T3
     toolName: tool-quality-digging-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Screwdriving
+  - type: tool
+    id: ScrewdrivingT1
+    name: tool-quality-screwdriving-name-T1
+    toolName: tool-quality-screwdriving-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Cutting
+  - type: tool
+    id: CuttingT1
+    name: tool-quality-cutting-name-T1
+    toolName: tool-quality-cutting-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: CuttingT2
+    name: tool-quality-cutting-name-T2
+    toolName: tool-quality-cutting-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Fine cutting
+  - type: tool
+    id: FineCuttingT1
+    name: tool-quality-fine-cutting-name-T1
+    toolName: tool-quality-fine-cutting-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FineCuttingT2
+    name: tool-quality-fine-cutting-name-T2
+    toolName: tool-quality-fine-cutting-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FineCuttingT3
+    name: tool-quality-fine-cutting-name-T3
+    toolName: tool-quality-fine-cutting-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Fabric cutting
+  - type: tool
+    id: FabricCuttingT1
+    name: tool-quality-fabric-cutting-name-T1
+    toolName: tool-quality-fabric-cutting-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FabricCuttingT2
+    name: tool-quality-fabric-cutting-name-T2
+    toolName: tool-quality-fabric-cutting-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Filing
+  - type: tool
+    id: FilingT1
+    name: tool-quality-filing-name-T1
+    toolName: tool-quality-filing-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FilingT2
+    name: tool-quality-filing-name-T2
+    toolName: tool-quality-filing-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Wood sawing
+  - type: tool
+    id: WoodSawingT1
+    name: tool-quality-wood-sawing-name-T1
+    toolName: tool-quality-wood-sawing-tool-name
+    spawn: ToolCrowbar
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: WoodSawingT2
+    name: tool-quality-wood-sawing-name-T2
+    toolName: tool-quality-wood-sawing-tool-name
     spawn: ToolCrowbar
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }

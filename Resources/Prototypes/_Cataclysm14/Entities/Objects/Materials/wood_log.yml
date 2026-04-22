@@ -1,0 +1,77 @@
+- type: stack
+  id: StackWoodLog
+  name: wood log
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_log.rsi, state: log_3 }
+  spawn: MaterialObjectWoodLogStack1
+  maxCount: 10
+
+- type: material
+  id: MaterialWoodLog
+  stackEntity: MaterialObjectWoodLogStack1
+  name: materials-wood-log
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_log.rsi, state: log_3 }
+  color: "#000000"
+  price: 0.1 # 10/sheet
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MaterialBase
+  id: MaterialObjectWoodLog
+  name: wood log
+  description: A simple wooden log, could be used as a weapon if you hit hard enough.
+  suffix: Full
+  components:
+  - type: Sprite
+    scale: 0.7,0.7
+    sprite: _Cataclysm14/Objects/Materials/wood_log.rsi
+    state: log_3
+    layers:
+    - state: log_3
+      map: ["base"]
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Item
+    sprite: _Cataclysm14/Objects/Materials/wood_log.rsi
+    heldPrefix: wood log
+  - type: Stack
+    stackType: StackWoodLog
+    count: 100
+    baseLayer: base
+    layerStates:
+    - log_1
+    - log_2
+    - log_3
+  - type: Material
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      MaterialWoodLog: 100
+  - type: Construction
+    graph: GraphMaterialWoodPlank
+    node: start
+
+- type: entity
+  parent: MaterialObjectWoodLog
+  id: MaterialObjectWoodLogStack1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialObjectWoodLog
+  id: MaterialObjectWoodLogStack5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: MaterialObjectWoodLog
+  id: MaterialObjectWoodLogStack10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10

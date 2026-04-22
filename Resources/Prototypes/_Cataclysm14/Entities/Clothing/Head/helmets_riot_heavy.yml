@@ -1,0 +1,50 @@
+#MARK: Security Armored
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadHelmetRiotSecurityArmored
+      name: armored security riot helmet (black)
+      description: A heavy riot security helmet made from combined ceramic, aramid, polymers and steel. Extremly tough against small fries.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored.rsi
+      - type: ExplosionResistance
+        damageCoefficient: 0.8
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.85
+            Slash: 0.85
+            Piercing: 0.85
+      - type: HideLayerClothing
+        slots:
+        - Hair
+        - Snout
+        - HeadTop
+        - HeadSide
+      - type: StaticPrice
+        price: 12000
+        vendPrice: 20000
+#MARK: Security Armored - Sierra
+    - type: entity
+      parent: ClothingHeadHelmetRiotSecurityArmored
+      id: ClothingHeadHelmetRiotSecurityArmoredSierra
+      name: armored security riot helmet (sierra)
+      description: A heavy riot security helmet donning the colors of the Superstructure Taskforce Sierra, made from combined ceramic, aramid, polymers and steel. Extremly tough against small fries.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored_sierra.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored_sierra.rsi
+#MARK: Security Armored - Sierra
+    - type: entity
+      parent: ClothingHeadHelmetRiotSecurityArmored
+      id: ClothingHeadHelmetRiotSecurityArmoredSierraOfficer
+      name: armored security riot helmet (sierra officer)
+      description: A heavy riot security helmet donning the colors of the Superstructure Taskforce Sierra and officer markings, made from combined ceramic, aramid, polymers and steel. Extremly tough against small fries.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored_sierra_officer.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored_sierra_officer.rsi

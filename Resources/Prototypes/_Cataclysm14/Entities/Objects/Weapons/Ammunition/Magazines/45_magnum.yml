@@ -11,7 +11,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_magnumFMJ
+        - Cartridge45_magnum
     capacity: 8
   - type: Item
     size: Small
@@ -91,7 +91,7 @@
 
 - type: entity
   id: Magazine45_magnumPistolUranium
-  name: pistol magazine (.45 magnum uranium)
+  name: pistol magazine (.45 magnum depleted uranium)
   parent: BaseMagazine45_magnum
   components:
   - type: BallisticAmmoProvider
@@ -198,7 +198,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_magnumFMJ
+        - Cartridge45_magnum
     capacity: 16
   - type: Item
     size: Small
@@ -291,7 +291,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_magnumFMJ
+        - Cartridge45_magnum
     capacity: 29
   - type: Item
     size: Small
@@ -320,7 +320,7 @@
     proto: Cartridge45_magnumFMJ
     whitelist:
       tags:
-        - Cartridge45_magnumFMJ
+        - Cartridge45_magnum
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
   - type: Sprite
@@ -361,7 +361,7 @@
 
 - type: entity
   id: Magazine45_magnumSubMachineGunUranium
-  name: SMG magazine (.45 magnum uranium)
+  name: SMG magazine (.45 magnum depleted uranium)
   parent: BaseMagazine45_magnumSubMachineGunFMJ
   components:
   - type: BallisticAmmoProvider

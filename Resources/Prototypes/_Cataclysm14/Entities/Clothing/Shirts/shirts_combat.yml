@@ -94,7 +94,7 @@
     - type: entity
       parent: ClothingShirtBase
       id: ClothingShirtCombatDigitalBlack
-      name: OCP multicam combat shirt
+      name: black digital combat shirt
       description: Ripstop combat shirt. It has a black digital camo patern for covert operations and larpers.
       components:
       - type: Sprite
@@ -105,7 +105,7 @@
     - type: entity
       parent: ClothingShirtCargoBase
       id: ClothingShirtCombatDigitalBlackCargo
-      name: OCP multicam cargo combat shirt
+      name: black digital cargo combat shirt
       description: Ripstop combat shirt with large pockets. It has a black digital camo patern for covert operations and larpers.
       components:
       - type: Sprite

@@ -1,0 +1,108 @@
+- type: stack
+  id: StackBolt
+  name: bolt
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/bolts.rsi, state: bolt_100 }
+  spawn: MaterialObjectBoltStack1
+  maxCount: 100
+
+- type: material
+  id: MaterialBolt
+  stackEntity: MaterialObjectBoltStack1
+  name: materials-wood-plank
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/bolts.rsi, state: bolt_100 }
+  color: "#000000"
+  price: 0.1 # 10/sheet
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MaterialBase
+  id: MaterialObjectBolt
+  name: bolt
+  description: A simple wooden plank, could be used as a weapon if you hit hard enough.
+  suffix: Full
+  components:
+  - type: Sprite
+    scale: 0.6,0.6
+    sprite: _Cataclysm14/Objects/Materials/bolts.rsi
+    state: bolt_100
+    layers:
+    - state: bolt_100
+      map: ["base"]
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Item
+    sprite: _Cataclysm14/Objects/Materials/bolts.rsi
+    heldPrefix: bolt
+  - type: Stack
+    stackType: StackBolt
+    count: 100
+    baseLayer: base
+    layerStates:
+    - bolt_1
+    - bolt_2
+    - bolt_20
+    - bolt_40
+    - bolt_70
+    - bolt_100
+    layerFunction: Threshold
+  - type: StackLayerThreshold
+    thresholds: [1, 2, 20, 40, 70, 100]
+  - type: Material
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      MaterialBolt: 1
+  - type: UserInterface
+    interfaces:
+      enum.StackCustomSplitUiKey.Key:
+        type: StackCustomSplitBoundUserInterface
+
+- type: entity
+  parent: MaterialObjectBolt
+  id: MaterialObjectBoltStack1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialObjectBolt
+  id: MaterialObjectBoltStack10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MaterialObjectBolt
+  id: MaterialObjectBoltStack25
+  suffix: 25
+  components:
+  - type: Stack
+    count: 25
+
+- type: entity
+  parent: MaterialObjectBolt
+  id: MaterialObjectBoltStack50
+  suffix: 50
+  components:
+  - type: Stack
+    count: 50
+
+- type: entity
+  parent: MaterialObjectBolt
+  id: MaterialObjectBoltStack75
+  suffix: 75
+  components:
+  - type: Stack
+    count: 75
+
+- type: entity
+  parent: MaterialObjectBolt
+  id: MaterialObjectBoltStack100
+  suffix: 100
+  components:
+  - type: Stack
+    count: 100

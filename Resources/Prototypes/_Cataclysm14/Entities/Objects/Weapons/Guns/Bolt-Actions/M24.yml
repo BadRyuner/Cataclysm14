@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: Remington M24 (7.62x51mm NATO)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
@@ -13,7 +14,7 @@
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M24_32x32.rsi
-    size: Huge
+    size: Large
     shape:
     - 0,0,6,1
     storedScale: 2
@@ -36,7 +37,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge7.62x51mmFMJ
+      - Cartridge7.62x51mm
     capacity: 5
     proto: null
   - type: WieldedCrosshair
@@ -44,6 +45,7 @@
       sprite: _Cataclysm14/Scoping/reticle_PU.rsi
       state: all
 
+#MARK: .308 Winchester
 - type: entity
   parent: WeaponBoltActionRifleM24Base
   id: WeaponBoltActionRifleM24Filled308Winchester

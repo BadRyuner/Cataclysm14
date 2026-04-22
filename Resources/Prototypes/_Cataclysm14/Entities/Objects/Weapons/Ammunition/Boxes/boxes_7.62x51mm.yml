@@ -9,7 +9,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x51mmFMJ
+        - Cartridge7.62x51mm
     proto: Cartridge7.62x51mmFMJ
     capacity: 60 # 3 full power mags
   - type: Item
@@ -132,7 +132,7 @@
 - type: entity
   id: AmmoBox7.62x51mmDepletedUranium
   parent: BaseAmmoBox7.62x51mm
-  name: ammunition box (7.62x51mm NATO uranium)
+  name: ammunition box (7.62x51mm NATO depleted uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmDepletedUranium

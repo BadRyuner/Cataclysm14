@@ -1,0 +1,21 @@
+
+#MARK: US Police Armory
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledPoliceUsArmory
+  suffix: Police US Armory Filled
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableLoadoutPoliceUsArmory
+
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledPoliceUsArmoryRandom50
+  suffix: Police US Armory 50%
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableLoadoutPoliceUsArmoryRandom50

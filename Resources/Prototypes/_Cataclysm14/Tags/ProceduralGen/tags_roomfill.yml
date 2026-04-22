@@ -1,0 +1,70 @@
+#MARK: Bedrooms
+  - type: Tag
+    id: CataStructureSpawnerBedroomBase3x3
+
+  - type: Tag
+    id: CataStructureSpawnerBedroomBase4x3
+
+  - type: Tag
+    id: CataStructureSpawnerBedroomBase4x4
+
+  - type: Tag
+    id: CataStructureSpawnerBedroomBase5x4
+
+  - type: Tag
+    id: CataStructureSpawnerBedroomBase5x5
+
+#MARK: Living rooms
+  - type: Tag
+    id: CataStructureSpawnerLivingRoomBase4x4
+
+  - type: Tag
+    id: CataStructureSpawnerLivingRoomBase5x4
+
+  - type: Tag
+    id: CataStructureSpawnerLivingRoomBase5x5
+
+  - type: Tag
+    id: CataStructureSpawnerLivingRoomBase6x5
+
+#MARK: Garages
+  - type: Tag
+    id: CataRoomSpawnerHouseGarageBase5x6
+
+  - type: Tag
+    id: CataRoomSpawnerHouseGarageBase6x6
+
+#MARK: Pantries
+  - type: Tag
+    id: CataRoomSpawnerHousePantryBase3x3
+
+  - type: Tag
+    id: CataRoomSpawnerHousePantryBase3x4
+
+#MARK: Toilets
+  - type: Tag
+    id: CataRoomSpawnerHouseToiletBase2x1
+
+  - type: Tag
+    id: CataRoomSpawnerHouseToiletBase1x2
+
+#MARK: Bathroom
+  - type: Tag
+    id: CataRoomSpawnerHouseBathroomBase3x3
+
+# #MARK: City Block
+#   - type: Tag
+#     id: CataStructureSmallNeighborhood91x91
+
+#MARK: Houses
+  - type: Tag
+    id: CataStructureHouseSmall13x13
+
+  - type: Tag
+    id: CataStructureHouseSmall26x26
+
+  - type: Tag
+    id: CataStructureHouseLarge39x39
+
+  - type: Tag
+    id: CataStructurePoliceStationSmall26x26

@@ -12,7 +12,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x54mmRFMJ
+        - Cartridge7.62x54mmR
     proto: Cartridge7.62x54mmRFMJ
     capacity: 10
   - type: Item
@@ -79,7 +79,7 @@
 
 - type: entity
   id: Magazine7.62x54mmRUranium
-  name: "magazine (7.62x54mmR uranium)"
+  name: "magazine (7.62x54mmR depleted uranium)"
   parent: BaseMagazine7.62x54mmR
   components:
   - type: BallisticAmmoProvider

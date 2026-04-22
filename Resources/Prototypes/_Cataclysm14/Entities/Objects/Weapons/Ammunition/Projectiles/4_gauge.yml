@@ -175,7 +175,7 @@
 
 - type: entity
   id: Pellet23x75mmDepletedUranium
-  name: pellet (4 gauge uranium)
+  name: pellet (4 gauge depleted uranium)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:

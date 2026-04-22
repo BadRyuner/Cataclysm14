@@ -143,3 +143,14 @@
           right:
           - state: inhand-right
             color: "#444444"
+  #MARK: TShirt - white
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsJoggingsWhite
+      name: white joggings
+      description: A plain colored joggings, this one is colored in white.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi

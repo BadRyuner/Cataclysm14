@@ -127,7 +127,7 @@
 - type: entity
   id: Bullet7.62x51mmDepletedUranium
   parent: BaseBulletUranium
-  name: bullet (7.62x51mm NATO uranium)
+  name: bullet (7.62x51mm NATO depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Resprited wizden plank sprite by avtomata (disc:core_mene)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "wood_1"
+    },
+    {
+      "name": "wood_2"
+    },
+    {
+      "name": "wood_3"
+    },
+    {
+      "name": "wood-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "wood-inhand-right",
+      "directions": 4
+    }
+  ]
+}

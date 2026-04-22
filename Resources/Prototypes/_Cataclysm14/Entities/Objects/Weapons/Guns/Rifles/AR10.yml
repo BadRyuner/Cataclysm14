@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: ArmaLite AR-10 (7.62x51mm NATO)
   parent: BaseWeaponRifle
@@ -15,7 +16,7 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/AR10_32x32.rsi
-    size: Huge
+    size: Large
     shape:
     - 0,0,5,1
     storedScale: 2
@@ -58,7 +59,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mmFMJ
+            - Cartridge7.62x51mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -73,6 +74,7 @@
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
 
+#MARK: STANAG 20rd Empty
 - type: entity
   parent: WeaponRifleAR10Base
   id: WeaponRifleAR10FilledSTANAG20rdEmpty
@@ -84,6 +86,7 @@
         name: Magazine
         startingItem: Magazine7.62x51mmSTANAG20rdEmpty
 
+#MARK: STANAG 20rd FMJ
 - type: entity
   parent: WeaponRifleAR10Base
   id: WeaponRifleAR10FilledSTANAG20rdFMJ

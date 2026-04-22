@@ -213,7 +213,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_ACPFMJ
+            - Cartridge45_ACP
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -269,7 +269,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_magnumFMJ
+            - Cartridge45_magnum
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -329,7 +329,7 @@
         priority: 1
         whitelist:
           tags:
-          - Cartridge45_ACPFMJ
+          - Cartridge45_ACP
           - Cartridges9x19mm
   - type: MagazineVisuals
     magState: mag
@@ -405,7 +405,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_ACPFMJ
+            - Cartridge45_ACP
   - type: MagazineVisuals
     magState: mag
     steps: 1

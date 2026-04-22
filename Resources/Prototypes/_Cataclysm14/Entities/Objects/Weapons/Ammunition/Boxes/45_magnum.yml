@@ -8,7 +8,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_magnumFMJ
+        - Cartridge45_magnum
     proto: Cartridge45_magnumFMJ
     capacity: 32
   - type: Item
@@ -81,7 +81,7 @@
 - type: entity
   id: AmmoBox45_magnumDepletedUranium
   parent: BaseAmmoBox45_magnum
-  name: ammunition box (.45 magnum uranium)
+  name: ammunition box (.45 magnum depleted uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumDepletedUranium

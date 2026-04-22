@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: M1 Carbine (.45 magnum)
   parent: BaseWeaponRifle
@@ -15,7 +16,7 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/Carbines/M1Carbine_32x32.rsi
-    size: Huge
+    size: Large
     shape:
     - 0,0,5,1
     storedScale: 2
@@ -58,7 +59,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_magnumFMJ
+            - Cartridge45_magnum
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

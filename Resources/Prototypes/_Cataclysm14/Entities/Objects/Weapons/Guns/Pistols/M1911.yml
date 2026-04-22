@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: M1911 (.45 ACP)
   parent: BaseWeaponPistol
@@ -51,6 +52,7 @@
   - type: StaticPrice # Mono
     price: 50
 
+#MARK: M1911 10rd Empty
 - type: entity
   parent: WeaponPistolM1911Base
   id: WeaponPistolM1911Filled10rdEmpty
@@ -62,6 +64,7 @@
         name: Magazine
         startingItem: Magazine45_ACPM1911_10rdEmpty
 
+#MARK: M1911 10rd FMJ
 - type: entity
   parent: WeaponPistolM1911Base
   id: WeaponPistolM1911Filled10rdFMJ

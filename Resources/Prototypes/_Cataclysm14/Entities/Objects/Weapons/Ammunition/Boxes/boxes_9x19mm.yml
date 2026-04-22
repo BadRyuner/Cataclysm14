@@ -117,7 +117,7 @@
 - type: entity
   id: AmmoBox9x19mmDepletedUranium
   parent: BaseAmmoBox9x19mm
-  name: ammunition box (9x19mm uranium)
+  name: ammunition box (9x19mm depleted uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmDepletedUranium

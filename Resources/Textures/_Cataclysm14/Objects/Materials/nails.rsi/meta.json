@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "By avtomata (disc:core_mene) from wizden fully powered ammo box",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "nail_1"
+    },
+    {
+      "name": "nail_2"
+    },
+    {
+      "name": "nail_20"
+    },
+    {
+      "name": "nail_40"
+    },
+    {
+      "name": "nail_70"
+    },
+    {
+      "name": "nail_100"
+    },
+    {
+      "name": "nail-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "nail-inhand-right",
+      "directions": 4
+    }
+  ]
+}

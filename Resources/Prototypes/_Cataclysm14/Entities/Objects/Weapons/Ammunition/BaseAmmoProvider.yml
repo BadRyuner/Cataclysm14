@@ -31,7 +31,7 @@
       mayTransfer: true
       whitelist:
         tags:
-        - ShellShotgun12_gaugeBuckshot
+        - ShellShotgun12_gauge
       capacity: 32 # Mono 16->32
     - type: MagazineVisuals
       magState: mag
@@ -50,7 +50,7 @@
       mayTransfer: true
       whitelist:
         tags:
-        - ShellShotgun23x75mmBuckshot
+        - ShellShotgun23x75mm
       capacity: 32 # Mono 16->32
     - type: MagazineVisuals
       magState: mag

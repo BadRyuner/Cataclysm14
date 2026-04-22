@@ -1,19 +1,20 @@
+#MARK: Base
 - type: entity
   name: Remington M700 (7.62x51mm NATO)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
-  id: WeaponBoltActionRifleM700Base
+  id: WeaponBoltActionRifleRemingtonM700Base
   suffix: Empty
   description: A weapon for hunting. Uses 7.62x51mm NATO ammo.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M700_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/Remington-M700_64x32.rsi
     scale: 0.55, 0.55
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M700_32x32.rsi
-    size: Huge
+    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/Remington-M700_32x32.rsi
+    size: Large
     shape:
     - 0,0,6,1
     storedScale: 2
@@ -21,7 +22,7 @@
     slots:
     - slingfront
     - suitstorage
-    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M700_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/Remington-M700_32x32.rsi
     clothingVisuals:
       slingfront:
       - state: equipped-SLINGFRONT
@@ -36,7 +37,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge7.62x51mmFMJ
+      - Cartridge7.62x51mm
     capacity: 5
     proto: null
   - type: WieldedCrosshair
@@ -44,9 +45,10 @@
       sprite: _Cataclysm14/Scoping/reticle_PU.rsi
       state: all
 
+#MARK: .308 Winchester
 - type: entity
-  parent: WeaponBoltActionRifleM700Base
-  id: WeaponBoltActionRifleM700Filled308Winchester
+  parent: WeaponBoltActionRifleRemingtonM700Base
+  id: WeaponBoltActionRifleRemingtonM700Filled308Winchester
   suffix: .308 Winchester
   components:
   - type: BallisticAmmoProvider

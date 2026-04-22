@@ -1,0 +1,42 @@
+- type: constructionGraph
+  id: GraphMaterialWoodPlank
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: MaterialObjectWoodPlankStack5
+          steps:
+            - material: StackWoodLog
+              amount: 1
+            - tool: PryingT1
+              doAfter: 2
+        - to: MaterialObjectWoodPlankStack10
+          steps:
+            - material: StackWoodLog
+              amount: 2
+            - tool: PryingT1
+              doAfter: 15
+        - to: MaterialObjectWoodPlankStack25
+          steps:
+            - material: StackWoodLog
+              amount: 5
+            - tool: PryingT1
+              doAfter: 30
+        - to: MaterialObjectWoodPlankStack50
+          steps:
+            - material: StackWoodLog
+              amount: 10
+            - tool: PryingT1
+              doAfter: 50
+
+    - node: MaterialObjectWoodPlankStack5
+      entity: MaterialObjectWoodPlankStack5
+
+    - node: MaterialObjectWoodPlankStack10
+      entity: MaterialObjectWoodPlankStack10
+
+    - node: MaterialObjectWoodPlankStack25
+      entity: MaterialObjectWoodPlankStack25
+
+    - node: MaterialObjectWoodPlankStack50
+      entity: MaterialObjectWoodPlankStack50

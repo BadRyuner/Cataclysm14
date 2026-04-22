@@ -12,5 +12,7 @@ construction-category-misc = Misc
 construction-category-clothing = Clothing
 construction-category-favorites = Favorites
 
-construction-category-structures-cata = Structures
+construction-category-structures-walls-cata = Structures/Walls
+construction-category-structures-doors-cata = Structures/Doors
+construction-category-materials-cata = Materials
 construction-category-deprecated = deprecated

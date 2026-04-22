@@ -11,7 +11,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x39mmFMJ
+        - Cartridge7.62x39mm
     capacity: 5
     proto: Cartridge7.62x39mmFMJ
   - type: Sprite

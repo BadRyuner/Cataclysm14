@@ -12,7 +12,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x51mmFMJ
+        - Cartridge7.62x51mm
     proto: Cartridge7.62x51mmFMJ
     capacity: 20
   - type: Item
@@ -21,7 +21,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    scale: 0.35,0.35
+    scale: 0.30,0.30
     sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x51mm/7.62x51mm_mag.rsi
     layers:
     - state: base

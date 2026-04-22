@@ -1,0 +1,32 @@
+#MARK: Structures
+
+  - type: Tag
+    id: CataStructureTestSmall
+
+  - type: Tag
+    id: CataStructureTestRecursive
+
+  - type: Tag
+    id: CataStructureHouseSmall20x20
+
+#MARK: Roads
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseStraight13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseFourway13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseThreeway13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseCornerSharp13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseCornerLong26x26
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBase13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseFourway13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseThreeway13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerSharp13x13
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong26x26

@@ -2,7 +2,7 @@
   name: nightstick
   parent: BaseItem
   id: WeaponMeleeNightstick
-  description: A nightstick for hitting incapacitating people with. Actively harming with this is considered bad tone.
+  description: A nightstick for hitting and incapacitating people with. Actively harming with this is considered bad tone.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Melee/nighstick.rsi

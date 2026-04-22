@@ -1,12 +1,11 @@
 #MARK: Rebar
-
 - type: construction
   name: rebar assembly
-  id: StructureWallCataRebar
+  id: CraftStructureWallCataRebar
   graph: Rebar
   startNode: start
   targetNode: Rebar
-  category: construction-category-structures-cata
+  category: construction-category-structures-walls-cata
   description: A large structural assembly made out of metal.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/rebar.rsi
@@ -18,13 +17,14 @@
   conditions:
     - !type:TileNotBlocked
 
+#MARK: MetalReinforced
 - type: construction
   name: reinforced metal wall
-  id: StructureWallCataMetalReinforced
+  id: CraftStructureWallCataMetalReinforced
   graph: Rebar
   startNode: start
   targetNode: StructureWallCataMetalReinforced
-  category: construction-category-structures-cata
+  category: construction-category-structures-walls-cata
   description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/metal_reinforced.rsi
@@ -36,13 +36,14 @@
   conditions:
     - !type:TileNotBlocked
 
+#MARK: BrickRedRedReinforced
 - type: construction
   name: reinforced red brick wall
-  id: StructureWallCataBrickRedRedReinforced
+  id: CraftStructureWallCataBrickRedRedReinforced
   graph: Rebar
   startNode: start
   targetNode: StructureWallCataBrickRedRedReinforced
-  category: construction-category-structures-cata
+  category: construction-category-structures-walls-cata
   description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/brick_red_red.rsi
@@ -54,13 +55,14 @@
   conditions:
     - !type:TileNotBlocked
 
+#MARK: ConcreteReinforcedWhite
 - type: construction
   name: white reinforced concrete wall
-  id: StructureWallCataConcreteReinforcedWhite
+  id: CraftStructureWallCataConcreteReinforcedWhite
   graph: Rebar
   startNode: start
   targetNode: StructureWallCataConcreteReinforcedWhite
-  category: construction-category-structures-cata
+  category: construction-category-structures-walls-cata
   description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
@@ -72,15 +74,14 @@
   conditions:
     - !type:TileNotBlocked
 
-#MARK: Non-Rebar
-
+#MARK: BrickRedRedBase
 - type: construction
   name: red brick wall
-  id: StructureWallCataBrickRedRedBase
+  id: CraftStructureWallCataBrickRedRedBase
   graph: StructureWallCataBrickRedRedBase
   startNode: start
   targetNode: StructureWallCataBrickRedRedBase
-  category: construction-category-structures-cata
+  category: construction-category-structures-walls-cata
   description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/brick_red_red.rsi
@@ -92,13 +93,14 @@
   conditions:
     - !type:TileNotBlocked
 
+#MARK: ConcreteSolidWhite
 - type: construction
   name: white solid concrete wall
-  id: StructureWallCataConcreteSolidWhite
+  id: CraftStructureWallCataConcreteSolidWhite
   graph: StructureWallCataConcreteSolidWhite
   startNode: start
   targetNode: StructureWallCataConcreteSolidWhite
-  category: construction-category-structures-cata
+  category: construction-category-structures-walls-cata
   description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/concrete_solid_base.rsi
@@ -110,13 +112,14 @@
   conditions:
     - !type:TileNotBlocked
 
+#MARK: MetalSimpleBase
 - type: construction
   name: simple metal wall
-  id: StructureWallCataMetalSimpleBase
+  id: CraftStructureWallCataMetalSimpleBase
   graph: StructureWallCataMetalSimpleBase
   startNode: start
   targetNode: StructureWallCataMetalSimpleBase
-  category: construction-category-structures-cata
+  category: construction-category-structures-walls-cata
   description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/metal_simple.rsi
@@ -128,13 +131,14 @@
   conditions:
     - !type:TileNotBlocked
 
+#MARK: WoodPlankBase
 - type: construction
   name: wooden plank wall
-  id: StructureWallCataWoodPlankBase
+  id: CraftStructureWallCataWoodPlankBase
   graph: StructureWallCataWoodPlankBase
   startNode: start
   targetNode: StructureWallCataWoodPlankBase
-  category: construction-category-structures-cata
+  category: construction-category-structures-walls-cata
   description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/wood_plank_base.rsi
@@ -146,13 +150,14 @@
   conditions:
     - !type:TileNotBlocked
 
+#MARK: WoodLogBase
 - type: construction
   name: wooden log wall
-  id: StructureWallCataWoodLogBase
+  id: CraftStructureWallCataWoodLogBase
   graph: StructureWallCataWoodLogBase
   startNode: start
   targetNode: StructureWallCataWoodLogBase
-  category: construction-category-structures-cata
+  category: construction-category-structures-walls-cata
   description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Walls/wood_log.rsi
@@ -164,14 +169,14 @@
   conditions:
     - !type:TileNotBlocked
 
-#MARK: Doors
+#MARK: WoodHouse
 - type: construction
   name: wooden residential door
-  id: DoorCataWoodHouse
+  id: CraftDoorCataWoodHouse
   graph: DoorCataWoodHouse
   startNode: start
   targetNode: DoorCataWoodHouse
-  category: construction-category-structures-cata
+  category: construction-category-structures-doors-cata
   description: A sturdy solid wall.
   icon:
     sprite: /Textures/_Cataclysm14/Structures/Doors/wood_house.rsi

@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: Glock 17 (9x19mm)
   parent: BaseWeaponPistol
@@ -52,6 +53,7 @@
   - type: StaticPrice # Mono
     price: 50
 
+#MARK: Glock 17rd Empty
 - type: entity
   parent: WeaponPistolGlock17Base
   id: WeaponPistolGlock17Filled17rdEmpty
@@ -63,6 +65,7 @@
         name: Magazine
         startingItem: Magazine9x19mmGlock17rdEmpty
 
+#MARK: Glock 17rd FMJ
 - type: entity
   parent: WeaponPistolGlock17Base
   id: WeaponPistolGlock17Filled17rdFMJ

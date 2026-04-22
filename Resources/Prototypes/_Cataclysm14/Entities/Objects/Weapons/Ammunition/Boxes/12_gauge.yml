@@ -90,7 +90,7 @@
       - state: incendiary
 
 - type: entity
-  name: shotgun shell box (12 gauge uranium)
+  name: shotgun shell box (12 gauge depleted uranium)
   parent: AmmoProvider12_gaugeShotgunShell
   id: AmmoBox12_gaugeUranium
   components:

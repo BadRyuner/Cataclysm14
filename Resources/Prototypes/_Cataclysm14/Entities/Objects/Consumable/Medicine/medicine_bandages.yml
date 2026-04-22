@@ -34,6 +34,13 @@
     stackType: ConsumableMedicineBandageMakeshift
     count: 10
 
+- type: stack
+  id: ConsumableMedicineBandageMakeshift
+  name: makeshift bandage
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
+  spawn: ConsumableMedicineBandageMakeshift
+  maxCount: 10
+
 #MARK: BoiledBandage
 - type: entity
   parent: BaseHealingItem
@@ -69,6 +76,13 @@
   - type: Stack
     stackType: ConsumableMedicineBandageBoiled
     count: 10
+
+- type: stack
+  id: ConsumableMedicineBandageBoiled
+  name: boiled bandage
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
+  spawn: ConsumableMedicineBandageBoiled
+  maxCount: 10
 
 #MARK: MedicalGauze
 - type: entity
@@ -107,6 +121,13 @@
     stackType: ConsumableMedicineBandageMedicalGauze
     count: 10
 
+- type: stack
+  id: ConsumableMedicineBandageMedicalGauze
+  name: medical gauze
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: gauze }
+  spawn: ConsumableMedicineBandageMedicalGauze
+  maxCount: 10
+
 #MARK: ProperBandage
 - type: entity
   parent: BaseHealingItem
@@ -142,6 +163,13 @@
   - type: Stack
     stackType: ConsumableMedicineBandageProper
     count: 10
+
+- type: stack
+  id: ConsumableMedicineBandageProper
+  name: bandage
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: gauze }
+  spawn: ConsumableMedicineBandageProper
+  maxCount: 10
 
 #MARK: HemostaticPowder
 - type: entity
@@ -179,6 +207,13 @@
   - type: Stack
     stackType: ConsumableMedicineHemostaticPowder
     count: 5
+
+- type: stack
+  id: ConsumableMedicineHemostaticPowder
+  name: hemostatic powder
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
+  spawn: ConsumableMedicineHemostaticPowder
+  maxCount: 5
 
 #MARK: Antiseptic
 - type: entity
@@ -218,6 +253,13 @@
     stackType: ConsumableMedicineAntiseptic
     count: 10
 
+- type: stack
+  id: ConsumableMedicineAntiseptic
+  name: antiseptic
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
+  spawn: ConsumableMedicineAntiseptic
+  maxCount: 10
+
 #MARK: MakeshiftAntiseptic
 - type: entity
   parent: BaseHealingItem
@@ -256,6 +298,13 @@
     stackType: ConsumableMedicineAntisepticMakeshift
     count: 10
 
+- type: stack
+  id: ConsumableMedicineAntisepticMakeshift
+  name: makeshift antiseptic
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
+  spawn: ConsumableMedicineAntisepticMakeshift
+  maxCount: 10
+
 #MARK: AntisepticPowder
 - type: entity
   parent: BaseHealingItem
@@ -292,3 +341,10 @@
   - type: Stack
     stackType: ConsumableMedicineAntisepticPowder
     count: 8
+
+- type: stack
+  id: ConsumableMedicineAntisepticPowder
+  name: antiseptic powder
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
+  spawn: ConsumableMedicineAntisepticPowder
+  maxCount: 8

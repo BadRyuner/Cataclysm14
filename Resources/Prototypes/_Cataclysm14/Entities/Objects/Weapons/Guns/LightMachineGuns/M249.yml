@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   name: M249 (5.56x45mm NATO)
   parent: BaseWeaponRifle
@@ -15,7 +16,7 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_32x32.rsi
-    size: Huge
+    size: Large
     shape:
     - 0,0,5,1
     storedScale: 2
@@ -68,7 +69,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mmFMJ
+            - Cartridge5.56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -83,6 +84,7 @@
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
 
+#MARK: Box 200rd Empty
 - type: entity
   parent: WeaponLightMachineGunM249Base
   id: WeaponLightMachineGunM249Filled200rdEmpty
@@ -94,6 +96,7 @@
         name: Magazine
         startingItem: MagazineBox5.56x45mmLMG200rdEmpty
 
+#MARK: Box 200rd FMJ
 - type: entity
   parent: WeaponLightMachineGunM249Base
   id: WeaponLightMachineGunM249Filled200rdFMJ
@@ -105,6 +108,7 @@
         name: Magazine
         startingItem: MagazineBox5.56x45mmLMG200rdFMJ
 
+#MARK: Box 200rd Tracer Red
 - type: entity
   parent: WeaponLightMachineGunM249Base
   id: WeaponLightMachineGunM249Filled200rdTracerRed

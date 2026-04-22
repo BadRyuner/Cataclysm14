@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "By wassuy/Peter Poley",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "log_1"
+    },
+    {
+      "name": "log_2"
+    },
+    {
+      "name": "log_3"
+    },
+    {
+      "name": "log-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "log-inhand-right",
+      "directions": 4
+    }
+  ]
+}

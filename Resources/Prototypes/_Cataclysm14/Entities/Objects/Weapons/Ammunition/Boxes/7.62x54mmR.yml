@@ -8,7 +8,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x54mmRFMJ
+        - Cartridge7.62x54mmR
     proto: Cartridge7.62x54mmRFMJ
     capacity: 60 # 3 full power mags
   - type: Item
@@ -84,7 +84,7 @@
 - type: entity
   id: AmmoBox7.62x54mmRUranium
   parent: BaseAmmoBox7.62x54mmR
-  name: ammunition box (7.62x54mmR uranium)
+  name: ammunition box (7.62x54mmR depleted uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x54mmRUranium
