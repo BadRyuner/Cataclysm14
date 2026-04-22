@@ -32,12 +32,12 @@
     maxAngle: -30
   - type: Gun
     minAngle: 21
-    maxAngle: 70
+    maxAngle: 40
     angleIncrease: 5
     angleDecay: 20
     fireRate: 9
     soundGunshot:
-      path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
       params:
         pitch: 1.2
         volume: 15

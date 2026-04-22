@@ -1,0 +1,64 @@
+- type: entity
+  name: meatrat
+  id: MobMonsterMeatrat
+  parent: SimpleSpaceMobBase
+  description: A small fleshy rat, and it's trying to bite yo..YEOUCH.
+  components:
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      sprite: _Cataclysm14/Mobs/meat_rat.rsi
+      scale: 0.8, 0.8
+  - type: Physics
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 3
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.20
+        density: 20
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      15: Dead
+  - type: Stamina
+    critThreshold: 15
+  - type: MovementAlwaysTouching
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: Bloodstream
+    bloodMaxVolume: 50
+  - type: CombatMode
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Effects/bite.ogg
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      groups:
+        Brute: 2

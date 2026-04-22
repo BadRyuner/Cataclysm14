@@ -1,6 +1,6 @@
 #MARK: Thunderbolt 4x4
   - type: entity
-    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband]
+    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
     id: ClothingBeltChestRigThunderbolt
     name: Thunderbolt comapct chest rig
     description: the Direct Action Thunderbolt compact chest rig, this one is colored in shadow grey.

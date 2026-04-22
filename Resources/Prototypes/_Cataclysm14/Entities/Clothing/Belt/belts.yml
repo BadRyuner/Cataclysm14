@@ -1,6 +1,6 @@
 #MARK: Duty belt
   - type: entity
-    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband]
+    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
     id: ClothingBeltDutyBeltPolice
     name: police duty belt
     description: A belt with plenty of attach for equipment and pockets, used by law enforcement.
@@ -21,7 +21,7 @@
 
 #MARK: Duty belt
   - type: entity
-    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband]
+    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
     id: ClothingBeltDutyBeltTan
     name: duty belt
     description: A belt with plenty of attach for equipment and pockets, used by soldiers.

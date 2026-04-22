@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesCorrectiveGlasses
+  name: corrective glasses
+  description: A pair of glasses with prescription lenses.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Eyes/eyes_glasses_corrective.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Eyes/eyes_glasses_corrective.rsi
+  - type: VisionCorrection
