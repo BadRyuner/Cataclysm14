@@ -1,0 +1,47 @@
+#MARK: WoodPlank
+- type: construction
+  name: wood plank (x5)
+  id: CraftMaterialObjectWoodPlankStack5
+  graph: GraphMaterialWoodPlank
+  startNode: start
+  targetNode: MaterialObjectWoodPlankStack5
+  category: construction-category-materials-cata
+  description: A sturdy wooden plank, perfect for construction or bashing heads.
+  icon: { sprite: _Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_1 }
+  objectType: Item
+
+#MARK: WoodPlank
+- type: construction
+  name: wood plank (x10)
+  id: CraftMaterialObjectWoodPlankStack10
+  graph: GraphMaterialWoodPlank
+  startNode: start
+  targetNode: MaterialObjectWoodPlankStack10
+  category: construction-category-materials-cata
+  description: A sturdy wooden plank, perfect for construction or bashing heads.
+  icon: { sprite: _Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_2 }
+  objectType: Item
+
+#MARK: WoodPlank
+- type: construction
+  name: wood plank (x25)
+  id: CraftMaterialObjectWoodPlankStack25
+  graph: GraphMaterialWoodPlank
+  startNode: start
+  targetNode: MaterialObjectWoodPlankStack25
+  category: construction-category-materials-cata
+  description: A sturdy wooden plank, perfect for construction or bashing heads.
+  icon: { sprite: _Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_2 }
+  objectType: Item
+
+#MARK: WoodPlank
+- type: construction
+  name: wood plank (x50)
+  id: CraftMaterialObjectWoodPlankStack50
+  graph: GraphMaterialWoodPlank
+  startNode: start
+  targetNode: MaterialObjectWoodPlankStack50
+  category: construction-category-materials-cata
+  description: A sturdy wooden plank, perfect for construction or bashing heads.
+  icon: { sprite: _Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_3 }
+  objectType: Item

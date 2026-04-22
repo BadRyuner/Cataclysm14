@@ -10,7 +10,7 @@
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
-            - material: Brick
+            - material: StackBrick
               amount: 2
               doAfter: 1
 
@@ -42,7 +42,7 @@
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
-            - material: Concrete
+            - material: StackConcretePowder
               amount: 2
               doAfter: 1
 
@@ -106,14 +106,12 @@
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
-            - material: MaterialObjectWoodPlankStack1
+            - material: StackWoodPlank
               amount: 6
               doAfter: 1
-            - material: MaterialObjectNailStack1
+            - material: StackNail
               amount: 16
               doAfter: 1
-            - tool: HammeringT1
-              doAfter: 3
 
     - node: StructureWallCataWoodPlankBase
       entity: StructureWallCataWoodPlankBase
@@ -146,10 +144,10 @@
             - !type:SnapToGrid {}
               # southRotation: true # Frontier
           steps:
-            - material: MaterialObjectWoodLogStack1
+            - material: StackWoodLog
               amount: 4
               doAfter: 1
-            - material: MaterialObjectRopeShortStack1
+            - material: StackRopeShort
               amount: 4
               doAfter: 1
 

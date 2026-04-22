@@ -1,7 +1,7 @@
 - type: stack
   id: StackNail
   name: nail
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/nails.rsi, state: nail_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/nails.rsi, state: nail_100 }
   spawn: MaterialObjectNailStack1
   maxCount: 100
 
@@ -10,12 +10,12 @@
   stackEntity: MaterialObjectNailStack1
   name: materials-wood-plank
   unit: materials-unit-sheet
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/nails.rsi, state: nail_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/nails.rsi, state: nail_100 }
   color: "#000000"
   price: 0.1 # 10/sheet
 
 - type: entity
-  abstract: true
+  categories: [ HideSpawnMenu ]
   parent: MaterialBase
   id: MaterialObjectNail
   name: nail

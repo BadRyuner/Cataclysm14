@@ -1,0 +1,82 @@
+- type: stack
+  id: StackWoodBeam
+  name: nail
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_beam.rsi, state: stack_25 }
+  spawn: MaterialObjectWoodBeamStack1
+  maxCount: 25
+
+- type: material
+  id: MaterialWoodBeam
+  stackEntity: MaterialObjectWoodBeamStack1
+  name: materials-polymer-reinforced
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_beam.rsi, state: stack_25 }
+  color: "#000000"
+  price: 0.1 # 10/sheet
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MaterialBase
+  id: MaterialObjectWoodBeam
+  name: wood beam
+  description: Strong wood beams for construction.
+  suffix: Full
+  components:
+  - type: Sprite
+    scale: 0.85,0.7
+    sprite: _Cataclysm14/Objects/Materials/wood_beam.rsi
+    state: state
+    layers:
+    - state: stack_25
+      map: ["base"]
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Item
+    sprite: _Cataclysm14/Objects/Materials/wood_beam.rsi
+    heldPrefix: nail
+  - type: Stack
+    stackType: StackWoodBeam
+    count: 100
+    baseLayer: base
+    layerStates:
+    - stack_1
+    - stack_2
+    - stack_10
+    - stack_25
+    layerFunction: Threshold
+  - type: StackLayerThreshold
+    thresholds: [1, 2, 10, 25]
+  - type: Material
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      MaterialWoodBeam: 1
+  - type: UserInterface
+    interfaces:
+      enum.StackCustomSplitUiKey.Key:
+        type: StackCustomSplitBoundUserInterface
+
+- type: entity
+  parent: MaterialObjectWoodBeam
+  id: MaterialObjectWoodBeamStack1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialObjectWoodBeam
+  id: MaterialObjectWoodBeamStack10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MaterialObjectWoodBeam
+  id: MaterialObjectWoodBeamStack25
+  suffix: 25
+  components:
+  - type: Stack
+    count: 25

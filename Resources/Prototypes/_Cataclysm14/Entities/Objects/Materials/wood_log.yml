@@ -1,7 +1,7 @@
 - type: stack
   id: StackWoodLog
   name: wood log
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_log.rsi, state: log_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_log.rsi, state: log_3 }
   spawn: MaterialObjectWoodLogStack1
   maxCount: 10
 
@@ -10,12 +10,12 @@
   stackEntity: MaterialObjectWoodLogStack1
   name: materials-wood-log
   unit: materials-unit-sheet
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_log.rsi, state: log_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_log.rsi, state: log_3 }
   color: "#000000"
   price: 0.1 # 10/sheet
 
 - type: entity
-  abstract: true
+  categories: [ HideSpawnMenu ]
   parent: MaterialBase
   id: MaterialObjectWoodLog
   name: wood log
@@ -48,6 +48,9 @@
   - type: PhysicalComposition
     materialComposition:
       MaterialWoodLog: 100
+  - type: Construction
+    graph: GraphMaterialWoodPlank
+    node: start
 
 - type: entity
   parent: MaterialObjectWoodLog

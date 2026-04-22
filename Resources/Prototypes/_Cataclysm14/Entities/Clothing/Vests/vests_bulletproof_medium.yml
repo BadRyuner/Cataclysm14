@@ -348,7 +348,7 @@
         - id: BallisticPlateFrontESAPILevel6
         - id: BallisticPlateFrontESAPILevel6
         - id: BallisticPlateSidesESBILevel6
-  #MARK: IOSP - National Guard
+  #MARK: IOTV - National Guard
     - type: entity
       parent: ClothingOuterBulletProofVestIOTVTan
       id: ClothingOuterBulletProofVestIOTVNationalGuard
@@ -363,6 +363,30 @@
     - type: entity
       parent: ClothingOuterBulletProofVestIOTVNationalGuard
       id: ClothingOuterBulletProofVestIOTVNationalGuardFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateSidesESBILevel6
+        - id: BallisticPlateFrontESAPILevel6
+        - id: BallisticPlateFrontESAPILevel6
+        - id: BallisticPlateSidesESBILevel6
+  #MARK: IOTV - Sierra
+    - type: entity
+      parent: ClothingOuterBulletProofVestIOTVTan
+      id: ClothingOuterBulletProofVestIOTVSierra
+      suffix: Empty
+      name: IOTV armor vest (sierra)
+      description: An high quality vest part of the IOTV modular kit. Can handle weak fully powered rounds. Donnes the color of the Superstructure Taskforce Sierra.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_sierra.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_sierra.rsi
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestIOTVSierra
+      id: ClothingOuterBulletProofVestIOTVSierraFilled
       suffix: Filled
       components:
       - type: StorageFill

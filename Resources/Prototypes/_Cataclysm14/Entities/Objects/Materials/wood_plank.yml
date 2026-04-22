@@ -1,7 +1,7 @@
 - type: stack
   id: StackWoodPlank
   name: wood plank
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_3 }
   spawn: MaterialObjectWoodPlankStack1
   maxCount: 50
 
@@ -10,12 +10,12 @@
   stackEntity: MaterialObjectWoodPlankStack1
   name: materials-wood-plank
   unit: materials-unit-sheet
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_plank.rsi, state: wood_3 }
   color: "#000000"
   price: 0.1 # 10/sheet
 
 - type: entity
-  abstract: true
+  categories: [ HideSpawnMenu ]
   parent: MaterialBase
   id: MaterialObjectWoodPlank
   name: wood plank
@@ -59,16 +59,44 @@
 
 - type: entity
   parent: MaterialObjectWoodPlank
+  id: MaterialObjectWoodPlankStack5
+  suffix: 5
+  components:
+  - type: Construction
+    graph: GraphMaterialWoodPlank
+    node: MaterialObjectWoodPlankStack5
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: MaterialObjectWoodPlank
   id: MaterialObjectWoodPlankStack10
   suffix: 10
   components:
+  - type: Construction
+    graph: GraphMaterialWoodPlank
+    node: MaterialObjectWoodPlankStack10
   - type: Stack
     count: 10
+
+- type: entity
+  parent: MaterialObjectWoodPlank
+  id: MaterialObjectWoodPlankStack25
+  suffix: 25
+  components:
+  - type: Construction
+    graph: GraphMaterialWoodPlank
+    node: MaterialObjectWoodPlankStack25
+  - type: Stack
+    count: 25
 
 - type: entity
   parent: MaterialObjectWoodPlank
   id: MaterialObjectWoodPlankStack50
   suffix: 50
   components:
+  - type: Construction
+    graph: GraphMaterialWoodPlank
+    node: MaterialObjectWoodPlankStack50
   - type: Stack
     count: 50

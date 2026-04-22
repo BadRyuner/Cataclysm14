@@ -1,0 +1,32 @@
+#MARK: trafic sign armor
+  - type: entity
+    parent: ClothingOuterArmorBase
+    id: ClothingOuterMakeshiftArmorTraficSign
+    name: trafiic sign armor
+    description: A trafic sign held up with some ropes, can handle a beating but is unwieldy and barley does anything against small calibers.
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Clothing/Vests/Makeshift/vest_armor_trafic_sign_stop.rsi
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Vests/Makeshift/vest_armor_trafic_sign_stop.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.55
+          Slash: 0.55
+          Piercing: 0.85
+          Heat: 0.85
+          Caustic: 0.9 # Frontier
+    - type: Tag  # Mono
+      tags:
+      - Kevlar
+    - type: StaminaDamageResistance # Mono - Stamres
+      coefficient: 0.8
+    - type: ExplosionResistance
+      damageCoefficient: 0.90
+    - type: StaticPrice
+      price: 6500
+      vendPrice: 9000
+    - type: ClothingSpeedModifier
+      walkModifier: 0.8
+      sprintModifier: 0.8

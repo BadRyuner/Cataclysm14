@@ -1,7 +1,7 @@
 - type: stack
   id: StackBolt
   name: bolt
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/bolts.rsi, state: bolt_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/bolts.rsi, state: bolt_100 }
   spawn: MaterialObjectBoltStack1
   maxCount: 100
 
@@ -10,12 +10,12 @@
   stackEntity: MaterialObjectBoltStack1
   name: materials-wood-plank
   unit: materials-unit-sheet
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/bolts.rsi, state: bolt_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/bolts.rsi, state: bolt_100 }
   color: "#000000"
   price: 0.1 # 10/sheet
 
 - type: entity
-  abstract: true
+  categories: [ HideSpawnMenu ]
   parent: MaterialBase
   id: MaterialObjectBolt
   name: bolt

@@ -1,4 +1,4 @@
-## T1 = yellow, T2 = [color=orange] orange, T3 = [color=red] red, T4 = [color=purple] purple
+## T1 = yellow (already shown as), T2 = [color=orange], T3 = [color=red], T4 = [color=purple]
 
 # hammer / makeshift crowbar
 tool-quality-prying-name-T1 = Prying: 1

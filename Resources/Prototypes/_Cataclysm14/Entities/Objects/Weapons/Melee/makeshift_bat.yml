@@ -1,0 +1,36 @@
+- type: entity
+  name: makeshift bat
+  parent: BaseItem
+  id: WeaponMeleeBatMakeshift
+  description: A robust bat made from a carved 2x4 plank.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Melee/makeshift_bat.rsi
+    state: icon
+  - type: MeleeWeapon
+    heavyStaminaCost: 15
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 15
+        Structural: 5
+    soundHit:
+      collection: MetalThud
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 10
+        Structural: 10
+  - type: Item
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+  - type: UseDelay
+    delay: 1
+  - type: PhysicalComposition
+    materialComposition:
+      Wood: 250

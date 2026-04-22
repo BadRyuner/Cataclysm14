@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "By Wassuy / Peter Pollay",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "stack_1"
+    },
+    {
+      "name": "stack_2"
+    },
+    {
+      "name": "stack_10"
+    },
+    {
+      "name": "stack_25"
+    },
+    {
+      "name": "state-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "state-inhand-right",
+      "directions": 4
+    }
+  ]
+}

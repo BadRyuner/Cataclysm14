@@ -1,7 +1,7 @@
 - type: stack
   id: StackRopeShort
   name: short rope
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/rope_short.rsi, state: rope_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/rope_short.rsi, state: rope_3 }
   spawn: MaterialObjectRopeShortStack1
   maxCount: 10
 
@@ -10,12 +10,12 @@
   stackEntity: MaterialObjectRopeShortStack1
   name: materials-wood-plank
   unit: materials-unit-sheet
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/rope_short.rsi, state: rope_1 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/rope_short.rsi, state: rope_3 }
   color: "#000000"
   price: 0.1 # 10/sheet
 
 - type: entity
-  abstract: true
+  categories: [ HideSpawnMenu ]
   parent: MaterialBase
   id: MaterialObjectRopeShort
   name: short rope

@@ -309,6 +309,28 @@
         contents:
         - id: BallisticPlateFrontMonocletePELevel4
         - id: BallisticPlateFrontMonocletePELevel4
+  #MARK: Interceptor OTV - Sierra
+    - type: entity
+      parent: ClothingOuterBulletProofVestInterceptorOTV
+      id: ClothingOuterBulletProofVestInterceptorOTVSierra
+      suffix: Empty
+      name: Interceptor OTV armor vest (sierra)
+      description: An above average armor vest out of quality materials. Can handle armor piercing pistol calibers. Donnes the color of the Superstructure Taskforce Sierra.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Interceptor-OTV_sierra.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Interceptor-OTV_sierra.rsi
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestInterceptorOTVSierra
+      id: ClothingOuterBulletProofVestInterceptorOTVSierraFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateFrontMonocletePELevel4
+        - id: BallisticPlateFrontMonocletePELevel4
 #MARK: Police US light
     - type: entity
       parent: ClothingOuterArmorBase
