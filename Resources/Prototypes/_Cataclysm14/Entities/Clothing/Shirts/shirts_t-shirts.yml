@@ -1,7 +1,7 @@
 #MARK: -TShirts-
   #MARK: TShirt - white
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtTShirtWhite
       name: white t-shirt
       description: A plain colored t-white, this one is colored in white.
@@ -12,7 +12,7 @@
         sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
   #MARK: TShirt - red
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtTShirtRed
       name: red t-shirt
       description: A plain colored t-shirt, this one is colored in red.
@@ -36,7 +36,7 @@
             color: "#9E1A1A"
   #MARK: TShirt - blue
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtTShirtBlue
       name: blue t-shirt
       description: A plain colored t-shirt, this one is colored in blue.
@@ -60,7 +60,7 @@
             color: "#2832C2"
   #MARK: TShirt - green
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtTShirtGreen
       name: green t-shirt
       description: A plain colored t-shirt, this one is colored in green.
@@ -84,7 +84,7 @@
             color: "#3d8c40"
   #MARK: TShirt - yellow
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtTShirtYellow
       name: yellow t-shirt
       description: A plain colored t-shirt, this one is colored in yellow.
@@ -108,7 +108,7 @@
             color: "#E4CD05"
   #MARK: TShirt - purple
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtTShirtPurple
       name: purple t-shirt
       description: A plain colored t-shirt, this one is colored in purple.
@@ -132,7 +132,7 @@
             color: "#702963"
   #MARK: TShirt - black
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtTShirtBlack
       name: black t-shirt
       description: A plain colored t-shirt, this one is colored in black.
@@ -156,7 +156,7 @@
             color: "#444444"
   #MARK: TShirt - beige
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtTShirtBeige
       name: beige t-shirt
       description: A plain colored t-beige, this one is colored in beige.

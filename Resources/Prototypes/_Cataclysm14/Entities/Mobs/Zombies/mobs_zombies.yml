@@ -272,7 +272,7 @@
         prob: 0.99
       back: !type:GroupSelector
         children:
-        - id: ClothingBackpackAlicePackTanFilledMilitary
+        - id: ClothingBackpackAlicePackTanFilledNationalGuard
           weight: 2
         - id: ClothingBackpackAlicePackTan
         prob: 0.99
@@ -815,12 +815,11 @@
         children:
         - id: ClothingShoesBootsSWATBlack
         prob: 0.99
-      # back: !type:GroupSelector
-      #   children:
-      #   - id: ClothingBackpackAlicePackTanFilledMilitary
-      #     weight: 2
-      #   - id: ClothingBackpackAlicePackTan
-      #   prob: 0.99
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackBlackFilledSierra
+        - id: ClothingBackpackAlicePackBlack
+        prob: 0.5
       pants: !type:GroupSelector
         children:
         - id: ClothingPantsCombatSierraDuty
@@ -882,7 +881,7 @@
         prob: 0.99
       # back: !type:GroupSelector
       #   children:
-      #   - id: ClothingBackpackAlicePackTanFilledMilitary
+      #   - id: ClothingBackpackAlicePackTanFilledNationalGuard
       #     weight: 2
       #   - id: ClothingBackpackAlicePackTan
       #   prob: 0.99
@@ -940,12 +939,11 @@
         children:
         - id: ClothingShoesSneakersWhite
         prob: 0.99
-      # back: !type:GroupSelector
-      #   children:
-      #   - id: ClothingBackpackAlicePackTanFilledMilitary
-      #     weight: 2
-      #   - id: ClothingBackpackAlicePackTan
-      #   prob: 0.99
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackSatchelLeatherBrown
+        - id: ClothingBackpackSatchelLeatherBlack
+        prob: 0.4
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopCivilian
         prob: 0.95

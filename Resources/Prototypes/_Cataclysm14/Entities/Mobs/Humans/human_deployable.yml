@@ -1,0 +1,68 @@
+
+#MARK: Sierra Trooper
+- type: entity
+  parent: MobHuman
+  id: MobHumanDeployableSierraTrooper
+  suffix: Sierra Trooper
+  components:
+  #Worn armor isn't effective enough to be a real threat
+  # - type: MobThresholds
+  #   thresholds:
+  #     0: Alive
+  #     300: Critical
+  #     500: Dead
+  # - type: Stamina
+  #   critThreshold: 250
+  - type: Inventory
+    templateId: human
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestInterceptorOTVSierra
+        - id: ClothingOuterBulletProofVestInterceptorOTVSierraFilled
+        - id: ClothingOuterBulletProofVestIOTVSierra
+        - id: ClothingOuterBulletProofVestIOTVSierraFilled
+        prob: 0.9
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetRiotSecurityArmoredSierra
+        - id: ClothingHeadHelmetRiotSecurityArmoredSierraOfficer
+        - id: ClothingHeadHatBeretSierra
+        prob: 0.9
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltBlackFilledSierra
+        - id: ClothingBeltDutyBeltBlack
+        prob: 0.8
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskBlack
+        prob: 0.4
+      slingfront: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      suitstorage: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+        prob: 0.99
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackBlackFilledSierra
+        - id: ClothingBackpackAlicePackBlack
+        prob: 0.5
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsCombatSierraDuty
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtCombatSierraDuty
+        prob: 0.99

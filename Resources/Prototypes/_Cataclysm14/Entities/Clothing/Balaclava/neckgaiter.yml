@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingBalaclavaBase
+  parent: BaseClothingBalaclava
   id: ClothingBalaclavaNeckGaiterBlack
   name: neck gaiter (black)
   description: Stylish neck gaiter for your neck, can protect from the cosmic wind?...

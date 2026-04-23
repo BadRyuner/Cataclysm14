@@ -1,7 +1,7 @@
 #MARK: -TShirts-
   #MARK: TShirt - red
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJoggingsRed
       name: red joggings
       description: A plain colored joggings, this one is colored in red.
@@ -25,7 +25,7 @@
             color: "#9E1A1A"
   #MARK: TShirt - blue
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJoggingsBlue
       name: blue joggings
       description: A plain colored joggings, this one is colored in blue.
@@ -49,7 +49,7 @@
             color: "#2832C2"
   #MARK: TShirt - green
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJoggingsGreen
       name: green joggings
       description: A plain colored joggings, this one is colored in green.
@@ -73,7 +73,7 @@
             color: "#3d8c40"
   #MARK: TShirt - yellow
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJoggingsYellow
       name: yellow joggings
       description: A plain colored joggings, this one is colored in yellow.
@@ -97,7 +97,7 @@
             color: "#E4CD05"
   #MARK: TShirt - purple
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJoggingsPurple
       name: purple joggings
       description: A plain colored joggings, this one is colored in purple.
@@ -121,7 +121,7 @@
             color: "#702963"
   #MARK: TShirt - black
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJoggingsBlack
       name: black joggings
       description: A plain colored joggings, this one is colored in black.
@@ -145,7 +145,7 @@
             color: "#444444"
   #MARK: TShirt - white
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJoggingsWhite
       name: white joggings
       description: A plain colored joggings, this one is colored in white.

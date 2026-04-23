@@ -1,5 +1,5 @@
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtHoodieHighVisOrangeYellow
       name: hoodie (high-vis)(orange, yellow)
       description: A warm hoodie with high visibility markings for safety, this one is colored in orange and has yellow reflective strips.
@@ -10,7 +10,7 @@
         sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_high-vis_orange_yellow.rsi
 
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtCoatHighVisOrangeBlueWhite
       name: coat (high-vis)(orange/blue, white)
       description: A warm hoodie with high visibility markings for safety, this one is colored in orange and blue and has white reflective strips.

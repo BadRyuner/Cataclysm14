@@ -1,7 +1,7 @@
 #MARK: -Jeans-
   #MARK: Jeans - blue
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJeansBlue
       name: blue jeans
       description: A warm jeans, this one is colored in blue.
@@ -25,7 +25,7 @@
             color: "#6F8FAF"
   #MARK: Jeans - purple
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJeansPurple
       name: purple jeans
       description: A warm jeans, this one is colored in purple.
@@ -49,7 +49,7 @@
             color: "#89839C"
   #MARK: Jeans - black
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJeansBlack
       name: black jeans
       description: A warm jeans, this one is colored in black.
@@ -73,7 +73,7 @@
             color: "#444444"
   #MARK: Jeans - brown
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsJeansBrown
       name: brown jeans
       description: A warm jeans, this one is colored in brown.

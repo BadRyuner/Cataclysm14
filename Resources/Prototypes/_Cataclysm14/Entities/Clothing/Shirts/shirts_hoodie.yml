@@ -1,7 +1,7 @@
 #MARK: -Hoodies-
   #MARK: Hoodie - white
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtHoodieWhite
       name: white hoodie
       description: A warm hoodie, this one is colored in white.
@@ -12,7 +12,7 @@
         sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
   #MARK: Hoodie - red
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtHoodieRed
       name: red hoodie
       description: A warm hoodie, this one is colored in red.
@@ -36,7 +36,7 @@
             color: "#9E1A1A"
   #MARK: Hoodie - blue
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtHoodieBlue
       name: blue hoodie
       description: A warm hoodie, this one is colored in blue.
@@ -60,7 +60,7 @@
             color: "#2832C2"
   #MARK: Hoodie - green
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtHoodieGreen
       name: green hoodie
       description: A warm hoodie, this one is colored in green.
@@ -84,7 +84,7 @@
             color: "#3d8c40"
   #MARK: Hoodie - yellow
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtHoodieYellow
       name: yellow hoodie
       description: A warm hoodie, this one is colored in yellow.
@@ -108,7 +108,7 @@
             color: "#E4CD05"
   #MARK: Hoodie - purple
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtHoodiePurple
       name: purple hoodie
       description: A warm hoodie, this one is colored in purple.
@@ -132,7 +132,7 @@
             color: "#702963"
   #MARK: Hoodie - black
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtHoodieBlack
       name: black hoodie
       description: A warm hoodie, this one is colored in black.
@@ -156,7 +156,7 @@
             color: "#444444"
   #MARK: Hoodie - beige
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtHoodieBeige
       name: beige hoodie
       description: A warm hoodie, this one is colored in beige.

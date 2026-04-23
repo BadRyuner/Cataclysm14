@@ -1,7 +1,7 @@
 #MARK: -CCE camos-
   #MARK: CCE base
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsCombatCCE
       name: CCE combat pants
       description: Ripstop combat pants. It has the CCE central europe camo of the french army.
@@ -12,7 +12,7 @@
         sprite: _Cataclysm14/Clothing/Pants/pants_CCE.rsi
 
     - type: entity
-      parent: ClothingPantsCargoBase
+      parent: BaseClothingPantsCargo
       id: ClothingPantsCombatCCECargo
       name: CCE cargo combat pants
       description: Ripstop combat pants with large pockets. It has the CCE central europe camo of the french army.
@@ -23,7 +23,7 @@
         sprite: _Cataclysm14/Clothing/Pants/pants_CCE_cargo.rsi
   #MARK: CCE desert
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsCombatCCEDesert
       name: CCE combat pants (desert)
       description: Ripstop combat pants. It has a CCE camo variant made for the african theater like Mali.
@@ -34,7 +34,7 @@
         sprite: _Cataclysm14/Clothing/Pants/pants_CCE_desert.rsi
 
     - type: entity
-      parent: ClothingPantsCargoBase
+      parent: BaseClothingPantsCargo
       id: ClothingPantsCombatCCEDesertCargo
       name: CCE cargo combat pants (desert)
       description: Ripstop combat pants with large pockets. It has a CCE camo variant made for the african theater like Mali.
@@ -46,7 +46,7 @@
 
   #MARK: UCP
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsCombatUCP
       name: UCP combat pants (desert)
       description: Ripstop combat pants. It has a UCP (Universal Combat Patern) camo variant made for the US army.
@@ -57,7 +57,7 @@
         sprite: _Cataclysm14/Clothing/Pants/pants_UCP.rsi
 
     - type: entity
-      parent: ClothingPantsCargoBase
+      parent: BaseClothingPantsCargo
       id: ClothingPantsCombatUCPCargo
       name: UCP cargo combat pants (desert)
       description: Ripstop combat pants with large pockets. It has a UCP (Universal Combat Patern) camo variant made for the US army.
@@ -69,7 +69,7 @@
 
   #MARK: OCP Multicam
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsCombatOCPMulticam
       name: OCP multicam combat pants
       description: Ripstop combat pants. It has a OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
@@ -80,7 +80,7 @@
         sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
 
     - type: entity
-      parent: ClothingPantsCargoBase
+      parent: BaseClothingPantsCargo
       id: ClothingPantsCombatOCPMulticamCargo
       name: OCP multicam cargo combat pants
       description: Ripstop combat pants with large pockets. It has a OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
@@ -92,7 +92,7 @@
 
   #MARK: Digital Black
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsCombatDigitalBlack
       name: black digital combat Pants
       description: Ripstop combat Pants. It has a black digital camo patern for covert operations and larpers.
@@ -103,7 +103,7 @@
         sprite: _Cataclysm14/Clothing/Pants/pants_digital_black.rsi
 
     - type: entity
-      parent: ClothingPantsCargoBase
+      parent: BaseClothingPantsCargo
       id: ClothingPantsCombatDigitalBlackCargo
       name: black digital cargo combat Pants
       description: Ripstop combat Pants with large pockets. It has a black digital camo patern for covert operations and larpers.

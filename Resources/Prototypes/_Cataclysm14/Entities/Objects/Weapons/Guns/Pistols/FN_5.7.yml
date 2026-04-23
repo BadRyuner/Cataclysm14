@@ -4,7 +4,7 @@
   parent: BaseWeaponPistol
   id: WeaponPistolFN5.7Base
   abstract: true
-  description: A trully expensive gun in an even more expensinve caliber, made by the FN Herstal. Chambered in 5.7x28mm.
+  description: A trully expensive gun in an even more expensive caliber, made by the FN Herstal. Used by private militaries and security companies. Chambered in 5.7x28mm.
   components:
   - type: Item
     size: Normal

@@ -1,8 +1,8 @@
-#MARK: Filled Alice Pack (Tan) - Military
+#MARK: Filled Alice Pack (tan) - National Guard
 - type: entity
   parent: ClothingBackpackAlicePackTan
-  id: ClothingBackpackAlicePackTanFilledMilitary
-  suffix: Filled, Military
+  id: ClothingBackpackAlicePackTanFilledNationalGuard
+  suffix: Filled National Guard
   components:
   - type: EntityTableContainerFill
     containers:
@@ -17,3 +17,43 @@
         - !type:NestedSelector
           tableId: LootTableFoodCannedGoods
           prob: 0.2
+
+#MARK: Filled Alice Pack (black) - Sierra
+- type: entity
+  parent: ClothingBackpackAlicePackBlack
+  id: ClothingBackpackAlicePackBlackFilledSierra
+  suffix: Filled Sierra
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBox9x19mmCivilianGradeHighTier
+          rolls: !type:RangeNumberSelector
+            range: 0,2
+          prob: 0.8
+        - !type:NestedSelector
+          tableId: LootTableFoodLongLasting
+          rolls: !type:RangeNumberSelector
+            range: 0,3
+          prob: 0.8
+        - !type:NestedSelector
+          tableId: LootTableFoodDrinksClean
+          rolls: !type:RangeNumberSelector
+            range: 0,3
+          prob: 0.8
+        - !type:GroupSelector
+            children:
+            - id: Magazine9x19mmMP5_30rdFMJ
+              rolls: !type:RangeNumberSelector
+                range: 0,3
+            - id: Magazine9x19mmMP5_30rdTracerGreen
+              rolls: !type:RangeNumberSelector
+                range: 0,3
+            prob: 0.8
+        - !type:GroupSelector
+            children:
+            - id: WeaponSubMachineGunMP5SDModSierraFilled30rdEmpty
+            - id: WeaponSubMachineGunMP5SDModSierraFilled30rdFMJ
+            prob: 0.4
