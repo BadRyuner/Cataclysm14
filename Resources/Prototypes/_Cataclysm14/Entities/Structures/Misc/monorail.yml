@@ -61,7 +61,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.40,-1.00,0.40,1.00"
+          bounds: "-0.40,-1.50,0.40,1.50"
         density: 80
         mask:
         - TableMask
@@ -70,7 +70,7 @@
       fix2:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.80,-0.40,0.80,0.40"
+          bounds: "-1.30,-0.40,1.30,0.40"
         density: 80
         mask:
         - TableMask
