@@ -1,0 +1,31 @@
+
+- type: gameMap
+  id: SubStructure
+  mapName: 'Substructure [Difficulty: Hard]'
+  mapPath: /Maps/_Cataclysm14/substructure.yml
+  minPlayers: 0
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    SubStructure:
+      stationProto: SubStructureStationProto
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Substructure'
+        - type: StationJobs
+          availableJobs:
+            Passenger: [ -1, -1 ]
+
+- type: entity
+  id: SubStructureStationProto
+  parent:
+  - BaseStation
+  - BaseStationNews
+  - BaseStationJobsSpawning
+  - BaseStationGateway
+  - BaseStationAlertLevels
+  - BaseStationAllEventsEligible
+  - BaseStationNanotrasen
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Transform

@@ -6,7 +6,10 @@
   components:
   - type: AccessReader
     containerAccessProvider: board
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Structures/Shutters/shutter_hermetic_blastdoor.rsi
     layers:
     - state: closed
@@ -76,3 +79,28 @@
     airBlocked: false
   - type: RadiationBlocker
     enabled: false
+
+- type: entity
+  parent: BaseStructureWallCataTierThree
+  id: StructureShutterBlastDoorSealed
+  name: sealed hermetic blast door
+  description: Two vertical monolith of heavy duty steel that have been sealed hermetically, doubt it will budge much.
+  suffix: Sealed
+  components:
+  - type: Transform
+    noRot: true
+  - type: Sprite
+    noRot: true
+    sprite: _Cataclysm14/Structures/Shutters/shutter_hermetic_blastdoor.rsi
+    state: closed
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Shutters/shutter_hermetic_blastdoor.rsi
+    state: closed
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+  - type: InteractionPopup
+    interactSuccessString: comp-window-knock
+    messagePerceivedByOthers: comp-window-knock
+    interactSuccessSound:
+      path: /Audio/Effects/glass_knock.ogg

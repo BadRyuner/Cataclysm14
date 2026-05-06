@@ -1,7 +1,7 @@
 ﻿[game]
 # Straight in-game baby
 lobbyenabled = false
-map = "NFDev"
+map = "CataDev"
 role_timers = false
 
 [ghost]

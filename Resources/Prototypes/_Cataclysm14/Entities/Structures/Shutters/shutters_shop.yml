@@ -4,7 +4,10 @@
   name: commercial shutters
   description: Sturdy shutters to protect a shop from thieves.
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Structures/Shutters/shutter_commercial_base.rsi
     layers:
     - state: closed
@@ -59,7 +62,10 @@
   name: sheet metal commercial shutters
   description: Sturdy shutters to protect a shop from thieves.
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Structures/Shutters/shutter_commercial_sheet_metal.rsi
     layers:
     - state: closed

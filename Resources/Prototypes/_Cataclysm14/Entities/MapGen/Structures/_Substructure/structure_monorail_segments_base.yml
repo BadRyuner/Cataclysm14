@@ -1,0 +1,108 @@
+#MARK: Straight13x13
+- type: dungeonRoom
+  id: StructureSpawnerMonorailBaseStraight13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_base_straight_13x13_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailBaseStraight13x13
+
+- type: dungeonRoom
+  id: StructureSpawnerMonorailBaseStraight13x13b
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_base_straight_13x13_b.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailBaseStraight13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMonorailBaseStraight13x13
+  name: structure spawner monorail base
+  suffix: Straight][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    layers:
+    - state: structure_border_road_asphalt_gray_straight
+    - state: structure_border_road_line_white_straight
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureMonorailBaseStraight13x13
+
+#MARK: Corner13x13
+- type: dungeonRoom
+  id: StructureSpawnerMonorailBaseCorner13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_base_corner_13x13_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailBaseCorner13x13
+
+- type: dungeonRoom
+  id: StructureSpawnerMonorailBaseCorner13x13b
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_base_corner_13x13_b.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailBaseCorner13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMonorailBaseCorner13x13
+  name: structure spawner monorail base
+  suffix: Corner][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    layers:
+    - state: structure_border_road_asphalt_gray_straight
+    - state: structure_border_road_line_white_straight
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureMonorailBaseCorner13x13
+
+#MARK: StraightDouble26x26
+- type: dungeonRoom
+  id: StructureSpawnerMonorailBaseStraight26x26a
+  size: 27,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_double_base_straight_26x13_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailDoubleBaseStraight26x13
+
+- type: dungeonRoom
+  id: StructureSpawnerMonorailBaseStraight26x26b
+  size: 27,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_double_base_straight_26x13_b.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailDoubleBaseStraight26x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMonorailBaseStraight26x26
+  name: structure spawner monorail base
+  suffix: Double][Straight][2x2 Chunk][26x26
+  components:
+  - type: Sprite
+    scale: 26,13
+    offset: -0.5,0
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    layers:
+    - state: structure_border_road_asphalt_gray_straight
+    - state: structure_border_road_line_white_straight
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureMonorailDoubleBaseStraight26x13

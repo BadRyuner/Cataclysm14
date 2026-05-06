@@ -1,9 +1,9 @@
 
 - type: entity
   parent: BaseMobFlesh
-  id: MobMonsterBushman
-  name: bushman
-  description: A small tree with leaves and bra.. is it moving?
+  id: MobMonsterBushling
+  name: bushling
+  description: A small bush with leaves and bra.. is it moving?
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -11,6 +11,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
+      scale: 0.5,0.5
   - type: DamageStateVisuals
     states:
       Alive:

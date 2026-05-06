@@ -1,20 +1,21 @@
 
 - type: entity
   parent: BaseMobFlesh
-  id: MobMonsterBushman
-  name: bushman
-  description: A small tree with leaves and bra.. is it moving?
+  id: MobMonsterAbominationGaia
+  name: Gaïa abomination
+  description: A large tree with leaves and bra.. is it moving, and glowing? OH GOD!
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Cataclysm14/Mobs/bushman.rsi
+    sprite: _Cataclysm14/Mobs/abomination_gaia.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
+      scale: 2,2
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: alive
+        Base: abomination
       Dead:
         Base: dead
   - type: MobState
@@ -24,10 +25,10 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Dead
+      2000: Dead
   - type: MovementSpeedModifier
-    baseWalkSpeed: 1.5
-    baseSprintSpeed: 2.5
+    baseWalkSpeed: 2
+    baseSprintSpeed: 2
   - type: MeleeWeapon
     attackRate: 2
     soundHit:
@@ -42,3 +43,21 @@
         Heat: 20
         Piercing: 20
         Radiation: 10
+  - type: Fixtures
+    fixtures:
+      flammable:
+        shape:
+          !type:PhysShapeCircle
+          radius: 1
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepThud
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - FootstepSound

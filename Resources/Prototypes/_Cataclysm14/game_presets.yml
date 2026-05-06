@@ -1,0 +1,22 @@
+- type: gamePreset
+  id: CataclysmStandardSubstructure
+  alias:
+    - standard
+    - monostandard
+  name: mono-standard-title
+  description: mono-standard-description
+  showInVote: true
+  rules:
+    - PlanetaryStationGameRule
+
+#Credit to TC14, i ripped it from there, may remove if BS locker end up being BS
+- type: entity
+  parent: BaseGameRule
+  id: PlanetaryStationGameRule
+  components:
+  - type: BluespaceLockerRule
+
+- type: weightedRandom
+  id: GamemodeCataclysm
+  weights:
+    CataclysmStandardSubstructure: 1.00 #no other gamemodes yet

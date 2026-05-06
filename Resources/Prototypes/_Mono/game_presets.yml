@@ -85,7 +85,7 @@
   id: MonoChimera
   name: mono-chimera-title
   description: mono-chimera-description
-  showInVote: true
+  showInVote: false #Cataclysm14, begone
   rules:
   - NFAdventure
   - BasicStationEventScheduler
