@@ -1,6 +1,6 @@
 #MARK: Base
 - type: entity
-  id: BaseCartridge45_ACP
+  id: BaseCartridge45_Acp
   parent: BaseCartridge
   description: Heavier alternative to 9x19mm for handguns and SMGs.
   abstract: true
@@ -8,12 +8,12 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge45_ACP
+      - Cartridge45_Acp
   - type: CartridgeAmmo
-    proto: Bullet45_ACPFMJ
+    proto: Bullet45_AcpFMJ
   - type: Sprite
     scale: 0.2,0.2
-    sprite: _Cataclysm14/Objects/Weapons/Casings/45_ACP_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/45_Acp_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -24,21 +24,21 @@
 
 #MARK: FMJ
 - type: entity
-  id: Cartridge45_ACPFMJ
+  id: Cartridge45_AcpFMJ
   name: cartridge (.45 ACP FMJ)
-  parent: BaseCartridge45_ACP
+  parent: BaseCartridge45_Acp
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACPFMJ
+    proto: Bullet45_AcpFMJ
 
 #MARK: Incendiary
 - type: entity
-  id: Cartridge45_ACPIncendiary
+  id: Cartridge45_AcpIncendiary
   name: cartridge (.45 ACP incendiary)
-  parent: BaseCartridge45_ACP
+  parent: BaseCartridge45_Acp
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACPIncendiary
+    proto: Bullet45_AcpIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -49,12 +49,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Cartridge45_ACPDepletedUranium
+  id: Cartridge45_AcpDepletedUranium
   name: cartridge (.45 ACP depleted uranium)
-  parent: BaseCartridge45_ACP
+  parent: BaseCartridge45_Acp
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACPDepletedUranium
+    proto: Bullet45_AcpDepletedUranium
   - type: Sprite
     layers:
       - state: base
@@ -65,12 +65,12 @@
 
 #MARK: Rubber
 - type: entity
-  id: Cartridge45_ACPRubber
+  id: Cartridge45_AcpRubber
   name: cartridge (.45 ACP rubber)
-  parent: BaseCartridge45_ACP
+  parent: BaseCartridge45_Acp
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACPRubber
+    proto: Bullet45_AcpRubber
   - type: Sprite
     layers:
       - state: base
@@ -81,12 +81,12 @@
 
 #MARK: HP
 - type: entity
-  id: Cartridge45_ACPHP
+  id: Cartridge45_AcpHP
   name: cartridge (.45 ACP hollow-point)
-  parent: BaseCartridge45_ACP
+  parent: BaseCartridge45_Acp
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACPHP
+    proto: Bullet45_AcpHP
   - type: Sprite
     layers:
       - state: base
@@ -97,12 +97,12 @@
 
 #MARK: RIP
 - type: entity
-  id: Cartridge45_ACPRIP
+  id: Cartridge45_AcpRIP
   name: cartridge (.45 ACP RIP)
-  parent: BaseCartridge45_ACP
+  parent: BaseCartridge45_Acp
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACPRIP
+    proto: Bullet45_AcpRIP
   - type: Sprite
     layers:
       - state: base
@@ -116,12 +116,12 @@
 #armor-piercing:
 
 - type: entity
-  id: Cartridge45_ACPPlasteelAP
+  id: Cartridge45_AcpPlasteelAP
   name: cartridge (.45 ACP AP)
-  parent: BaseCartridge45_ACP
+  parent: BaseCartridge45_Acp
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACPPlasteelAP
+    proto: Bullet45_AcpPlasteelAP
   - type: Sprite
     layers:
       - state: base
@@ -132,24 +132,24 @@
 
 # Frontier
 - type: entity
-  id: Cartridge45_ACPEmp
+  id: Cartridge45_AcpEmp
   name: cartridge (.45 ACP emp)
-  parent: BaseCartridge45_ACP
+  parent: BaseCartridge45_Acp
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACPEmp
+    proto: Bullet45_AcpEmp
   - type: EmpDescription
     range: 0.3
     energyConsumption: 2700000
     disableDuration: 10
 
 - type: entity
-  id: Cartridge45_ACPPractice
+  id: Cartridge45_AcpPractice
   name: cartridge (.45 ACP practice)
-  parent: BaseCartridge45_ACP
+  parent: BaseCartridge45_Acp
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACPPractice
+    proto: Bullet45_AcpPractice
   -  type: Sprite
      layers:
        - state: base

@@ -55,11 +55,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge45_magnumFMJ
+        startingItem: Cartridge45_MagnumFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_magnum
+            - Cartridge45_Magnum
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

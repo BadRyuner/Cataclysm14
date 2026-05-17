@@ -69,13 +69,13 @@
   #MARK:.45 ACP
 
   - type: Tag
-    id: Cartridge45_ACP
+    id: Cartridge45_Acp
 
   - type: Tag
-    id: Magazine45_ACPM1911Compatible
+    id: Magazine45_AcpM1911Compatible
 
   - type: Tag
-    id: Magazine45_ACPUMP45Compatible
+    id: Magazine45_AcpUMP45Compatible
 
   #MARK:.38 Special
 
@@ -88,7 +88,7 @@
   #MARK:.45 magnum
 
   - type: Tag
-    id: Cartridge45_magnum
+    id: Cartridge45_Magnum
 
   #MARK:9x19mm
 
@@ -134,12 +134,12 @@
   #MARK: 12 gauge
 
   - type: Tag
-    id: ShellShotgun12_gauge
+    id: ShellShotgun12_Gauge
 
   #MARK: 4 gauge
 
   - type: Tag
-    id: ShellShotgun23x75mm
+    id: ShellShotgun4_Gauge
 
   #MARK: 14,5x114mm
 

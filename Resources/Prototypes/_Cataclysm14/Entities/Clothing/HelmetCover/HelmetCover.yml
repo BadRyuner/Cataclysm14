@@ -7,9 +7,9 @@
   description: A CCE central european camouflage helmet cover for your tactical fashion needs or to mount attachments.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/faceshield/cover_CCE_base.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_CCE_base.rsi
   - type: Clothing
-    sprite: _Mono/Clothing/faceshield/cover_CCE_base.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_CCE_base.rsi
     clothingVisuals:
       faceshield:
       - state: equipped-faceshield
@@ -29,9 +29,9 @@
   description: A Desert CCE central european camouflage helmet cover for your tactical fashion needs or to mount attachments.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/faceshield/cover_CCE_desert.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_CCE_desert.rsi
   - type: Clothing
-    sprite: _Mono/Clothing/faceshield/cover_CCE_desert.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_CCE_desert.rsi
     clothingVisuals:
       faceshield:
       - state: equipped-faceshield
@@ -51,9 +51,9 @@
   description: A red digital camouflage helmet cover for your tactical fashion needs or to mount attachments.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/faceshield/cover_digital_red.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_digital_red.rsi
   - type: Clothing
-    sprite: _Mono/Clothing/faceshield/cover_digital_red.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_digital_red.rsi
     clothingVisuals:
       faceshield:
       - state: equipped-faceshield
@@ -73,7 +73,7 @@
   description: A simple helmet mount to put attachment on your helmet.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/faceshield/attachment_mount.rsi
+    sprite: _Mono/Clothing/HelmetCover/attachment_mount.rsi
     color: "#2F2F2F"
     scale: 1.3,1.3
   - type: StaticPrice
@@ -89,10 +89,10 @@
   description: A colored helmet cover for your tactical fashion needs or to mount attachments.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/faceshield/cover_any.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_any.rsi
     color: "#2F2F2F"
   - type: Clothing
-    sprite: _Mono/Clothing/faceshield/cover_any.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_any.rsi
     clothingVisuals:
       faceshield:
       - state: equipped-faceshield
@@ -113,10 +113,10 @@
   description: A colored helmet cover for your tactical fashion needs or to mount attachments.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/faceshield/cover_any.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_any.rsi
     color: "#d2B48C"
   - type: Clothing
-    sprite: _Mono/Clothing/faceshield/cover_any.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_any.rsi
     clothingVisuals:
       faceshield:
       - state: equipped-faceshield
@@ -137,10 +137,10 @@
   description: A colored helmet cover for your tactical fashion needs or to mount attachments.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/faceshield/cover_any.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_any.rsi
     color: "#4A5A49"
   - type: Clothing
-    sprite: _Mono/Clothing/faceshield/cover_any.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_any.rsi
     clothingVisuals:
       faceshield:
       - state: equipped-faceshield
@@ -161,10 +161,10 @@
   description: A colored helmet cover for your tactical fashion needs or to mount attachments.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/faceshield/cover_any.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_any.rsi
     color: "#636B2F"
   - type: Clothing
-    sprite: _Mono/Clothing/faceshield/cover_any.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_any.rsi
     clothingVisuals:
       faceshield:
       - state: equipped-faceshield
@@ -185,9 +185,9 @@
   description: A colored helmet cover for your tactical fashion needs or to mount attachments.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/faceshield/cover_any.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_any.rsi
   - type: Clothing
-    sprite: _Mono/Clothing/faceshield/cover_any.rsi
+    sprite: _Mono/Clothing/HelmetCover/cover_any.rsi
     clothingVisuals:
       faceshield:
       - state: equipped-faceshield

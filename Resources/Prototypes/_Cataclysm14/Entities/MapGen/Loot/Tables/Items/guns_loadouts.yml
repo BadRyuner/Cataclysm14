@@ -92,10 +92,10 @@
           children:
           - id: WeaponPistolM1911Filled10rdEmpty
           - id: WeaponPistolM1911Filled10rdFMJ
-      - id: Magazine45_ACPM1911_10rdFMJ
+      - id: Magazine45_AcpM1911_10rdFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
-      - id: AmmoBox45_ACPFMJ
+      - id: AmmoBox45_AcpFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
 

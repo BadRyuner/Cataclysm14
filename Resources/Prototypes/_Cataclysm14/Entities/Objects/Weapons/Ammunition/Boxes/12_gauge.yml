@@ -1,10 +1,10 @@
 - type: entity
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeBeanbag
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeBeanbag
   name: shotgun shell box (12 gauge beanbag)
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeBeanbag
+      proto: ShellShotgun12_GaugeBeanbag
     - type: MagazineVisuals
       magState: mag-beanbag
       steps: 5
@@ -19,11 +19,11 @@
 
 - type: entity
   name: shotgun shell box (12 gauge buckshot)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeBuckshot
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeBuckshot
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeBuckshot
+      proto: ShellShotgun12_GaugeBuckshot
     - type: Sprite
       layers:
       - state: base
@@ -34,11 +34,11 @@
 
 - type: entity
   name: shotgun shell box (12 gauge slug)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeSlug
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeSlug
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeSlug
+      proto: ShellShotgun12_GaugeSlug
     - type: MagazineVisuals
       magState: mag-slug
       steps: 5
@@ -53,11 +53,11 @@
 
 - type: entity
   name: flare shell box (12 gauge flare)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeFlare
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeFlare
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeFlare
+      proto: ShellShotgun12_GaugeFlare
     - type: MagazineVisuals
       magState: mag-flare
       steps: 5
@@ -72,11 +72,11 @@
 
 - type: entity
   name: shotgun shell box (12 gauge incendiary)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeIncendiary
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeIncendiary
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeIncendiary
+      proto: ShellShotgun12_GaugeIncendiary
     - type: MagazineVisuals
       magState: mag-incend
       steps: 5
@@ -91,11 +91,11 @@
 
 - type: entity
   name: shotgun shell box (12 gauge depleted uranium)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeUranium
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeUranium
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeUranium
+      proto: ShellShotgun12_GaugeUranium
     - type: MagazineVisuals
       magState: mag-uranium
       steps: 5
@@ -110,11 +110,11 @@
 
 - type: entity
   name: shotgun shell box (12 gauge practice)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugePractice
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugePractice
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugePractice
+      proto: ShellShotgun12_GaugePractice
     - type: MagazineVisuals
       magState: mag-practice
       steps: 5
@@ -129,11 +129,11 @@
 
 - type: entity
   name: shotgun shell box (12 gauge tranquilizer)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeTranquilizer
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeTranquilizer
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeTranquilizer
+      proto: ShellShotgun12_GaugeTranquilizer
     - type: MagazineVisuals
       magState: mag-tranq
       steps: 5
@@ -150,11 +150,11 @@
 #anti-flesh:
 - type: entity
   name: shotgun shell box (12 gauge OO magnum buckshot)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeOOBuckshot
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeOOBuckshot
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeOOBuckshot
+      proto: ShellShotgun12_GaugeOOBuckshot
     - type: Sprite
       layers:
       - state: base
@@ -165,11 +165,11 @@
 
 - type: entity
   name: shotgun shell box (12 gauge RIP)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeSlugRIP
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeSlugRIP
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeSlugRIP
+      proto: ShellShotgun12_GaugeSlugRIP
     - type: MagazineVisuals
       magState: mag-slugRIP
       steps: 5
@@ -185,11 +185,11 @@
 #armor-piercing:
 - type: entity
   name: shotgun shell box (12 gauge armor-piercing slug)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeSlugAP
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeSlugAP
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeSlugAP
+      proto: ShellShotgun12_GaugeSlugAP
     - type: MagazineVisuals
       magState: mag-slugAP
       steps: 5
@@ -204,11 +204,11 @@
 
 - type: entity
   name: shotgun shell box (12 gauge flechette)
-  parent: AmmoProvider12_gaugeShotgunShell
-  id: AmmoBox12_gaugeFlechette
+  parent: AmmoProvider12_GaugeShotgunShell
+  id: AmmoBox12_GaugeFlechette
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12_gaugeFlechette
+      proto: ShellShotgun12_GaugeFlechette
     - type: MagazineVisuals
       magState: mag-flechette
       steps: 5
