@@ -21,7 +21,7 @@
   - type: Speech
     speechSounds: Vulpkanin
     speechVerb: Vulpkanin
-    allowedEmotes: ['Bark', 'Snarl', 'Whine', 'Howl', 'Awoo', 'Growl']
+    allowedEmotes: ['Bark', 'Snarl', 'Whine', 'Howl', 'Awoo', 'Growl', 'Yip', 'Whimper'] # Starlight / Monolith: Add yip, whine; rename old whine to whimper
   - type: LanguageKnowledge # Einstein Engines - Languages
     speaks:
     - TauCetiBasic
@@ -79,7 +79,7 @@
       - map: [ "enum.HumanoidVisualLayers.Tail" ]
       - map: [ "mask" ]
       - map: [ "head" ]
-      - map: [ "faceshield" ]
+      - map: [ "helmetcover" ]
       - map: [ "helmetattachment" ]
       - map: [ "pocket1" ]
       - map: [ "pocket2" ]

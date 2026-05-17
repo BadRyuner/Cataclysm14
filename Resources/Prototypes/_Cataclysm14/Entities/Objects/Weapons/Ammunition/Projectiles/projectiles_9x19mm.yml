@@ -43,9 +43,9 @@
         Piercing: 24
     armorPenetration: 0.05
 
-#MARK: AP6.3
+#MARK: AP6,3
 - type: entity
-  id: Bullet9x19mmAP6.3
+  id: Bullet9x19mmAP6,3
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:

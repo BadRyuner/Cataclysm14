@@ -40,7 +40,6 @@
   - AirTank
 # Mercenary techfab
 ## Clothing / Armor
-  - ArmorPlateLight #Mono
   - RiotShield
   - ClothingNeckIFFNeutral
   - ClothingNeckIFFGreen
@@ -73,6 +72,7 @@
   - WeaponCaseShort
   - WeaponCaseLong
   - WeaponCaseHeavy
+  - WeaponCaseHeavyAmmo #Mono
   - WeaponCaseShortAmmo
   - WeaponCaseShortExplosives
 ## Weapons
@@ -89,8 +89,12 @@
   - BaseBallBatNF
   - CrossbowModern
   - WeaponPistolPollock
+  - WeaponRifleSVSUSSP #Mono
+  - WeaponSniperMosinUSSP #Mono
+  - WeaponSubMachineGunAK220USSP #Mono
   ## Cyborg Modules
   - BorgModuleMercenary # mono
+
 
 - type: latheRecipePack
   id: NFMercenaryTechfabDeprecated
@@ -107,8 +111,10 @@
   - PowerCellMicroreactor
 # Mercenary techfab
 ## Armor
-  - ArmorPlateMedium #Mono
-  - ArmorPlateTactical #Mono
+  - ArmorPlateBlunt_Slash #Mono
+  - ArmorPlatePierce #Mono
+  - ArmorPlateHeat #Mono
+  - ArmorPlateSpeed #Mono
   - TelescopicShield
   - ClothingOuterArmorBulletproofNF
   - ClothingOuterCoatBHTrench
@@ -185,6 +191,7 @@
   - WeaponRifleNtsfLtr
   - WeaponSubMachineGunVectorNtsfHclm
   - WeaponRadAx
+  - WeaponShockMaul
   - HardlightShield
   - WeaponRifleAk
   - UllmanHardsuitPilot
@@ -196,6 +203,8 @@
   - UllmanWeaponPulseRifle
   - UllmanWeaponPulseSniper
   - UllmanMeleePlasmaBlade
+  ## LPC
+  - BalorDroneVoucherMerc
 #Mono end
 
 - type: latheRecipePack

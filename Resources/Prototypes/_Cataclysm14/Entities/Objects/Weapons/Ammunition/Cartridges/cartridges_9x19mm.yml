@@ -9,7 +9,7 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridges9x19mm
+      - Cartridge9x19mm
   - type: CartridgeAmmo
     proto: Bullet9x19mmFMJ
   - type: Sprite
@@ -50,14 +50,14 @@
   - type: CartridgeAmmo
     proto: Bullet9x19mm+P
 
-#MARK: AP6.3
+#MARK: AP6,3
 - type: entity
-  id: Cartridge9x19mmAP6.3
-  name: cartridge (9x19mm AP6.3)
+  id: Cartridge9x19mmAP6,3
+  name: cartridge (9x19mm AP6,3)
   parent: BaseCartridge9x19mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet9x19mmAP6.3
+    proto: Bullet9x19mmAP6,3
 
 #MARK: Incendiary
 - type: entity

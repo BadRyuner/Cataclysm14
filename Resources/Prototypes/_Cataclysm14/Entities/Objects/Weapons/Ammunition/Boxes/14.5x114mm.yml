@@ -1,14 +1,14 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox14.5x114mm
+  id: BaseAmmoBox14,5x114mm
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge14.5x114mm
-    proto: Cartridge14.5x114mm
+        - Cartridge14,5x114mm
+    proto: Cartridge14,5x114mm
     capacity: 10
   - type: Item
     size: Small
@@ -16,7 +16,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/14.5x114mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/14,5x114mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -34,12 +34,12 @@
 
 # Boxes
 - type: entity
-  parent: BaseAmmoBox14.5x114mm
-  id: AmmoBox14.5x114mm
-  name: ammunition box (14.5x114mm)
+  parent: BaseAmmoBox14,5x114mm
+  id: AmmoBox14,5x114mm
+  name: ammunition box (14,5x114mm)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge14.5x114mm
+    proto: Cartridge14,5x114mm
   - type: Sprite
     layers:
     - state: base
@@ -48,9 +48,9 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseAmmoBox14.5x114mm
-  id: AmmoBox14.5x114mmBig
-  name: big ammunition box (14.5x114mm)
+  parent: BaseAmmoBox14,5x114mm
+  id: AmmoBox14,5x114mmBig
+  name: big ammunition box (14,5x114mm)
   suffix: Big (30)
   components:
   - type: Item
@@ -58,9 +58,9 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 30
-    proto: Cartridge14.5x114mm
+    proto: Cartridge14,5x114mm
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/14.5x114mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/14,5x114mm.rsi
     layers:
     - state: base-b
       map: ["enum.GunVisualLayers.Base"]

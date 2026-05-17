@@ -9,7 +9,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridges9x19mm
+        - Cartridge9x19mm
     proto: Cartridge9x19mmFMJ
     capacity: 80
   - type: Item
@@ -82,14 +82,14 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
-#MARK: AP6.3
+#MARK: AP6,3
 - type: entity
   parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmAP6.3
-  name: ammunition box (9x19mm AP6.3)
+  id: AmmoBox9x19mmAP6,3
+  name: ammunition box (9x19mm AP6,3)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmAP6.3
+    proto: Cartridge9x19mmAP6,3
   - type: Sprite
     layers:
     - state: base
