@@ -40,11 +40,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge9x19mmFMJ
+        startingItem: Cartridge9x19mmParabellumFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge9x19mm
+            - Cartridge9x19mmParabellum
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

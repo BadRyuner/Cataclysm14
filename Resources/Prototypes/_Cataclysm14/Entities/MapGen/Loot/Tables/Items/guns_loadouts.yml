@@ -76,10 +76,10 @@
           children:
           - id: WeaponPistolGlock17Filled17rdEmpty
           - id: WeaponPistolGlock17Filled17rdFMJ
-      - id: Magazine9x19mmGlock17rdFMJ
+      - id: Magazine9x19mmParabellumGlock17rdFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
-      - id: AmmoBox9x19mmFMJ
+      - id: AmmoBox9x19mmParabellumFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
 

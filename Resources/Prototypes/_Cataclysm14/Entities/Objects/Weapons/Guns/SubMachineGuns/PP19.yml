@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: Izhmash PP-19-01 "Vityaz" (9x19mm)
+  name: Izhmash PP-19-01 "Vityaz" (9x19mmParabellum)
   parent: BaseWeaponRifle
   id: WeaponSubMachineGunPP19VityazBase
   abstract: true
-  description: The Izhmash PP19 "Vityaz-SN" (brave warrior) created from the PP19 Bizon and using regular vertical magazines and shares parts with the AK family, Chambered in 9x19mm Parabellum.
+  description: The Izhmash PP19 "Vityaz-SN" (brave warrior) created from the PP19 Bizon and using regular vertical magazines and shares parts with the AK family, Chambered in 9x19mmParabellum Parabellum.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PP-19-vityaz_64x32.rsi
@@ -59,7 +59,7 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine9x19mmPP19VityazCompatible
+            - Magazine9x19mmParabellumPP19VityazCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -67,7 +67,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge9x19mm
+            - Cartridge9x19mmParabellum
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -92,7 +92,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmPP19Vityaz_30rdEmpty
+        startingItem: Magazine9x19mmParabellumPP19Vityaz_30rdEmpty
 
 #MARK: PP19 30rd FMJ
 - type: entity
@@ -104,7 +104,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmPP19Vityaz_30rdFMJ
+        startingItem: Magazine9x19mmParabellumPP19Vityaz_30rdFMJ
 
 #MARK: PP19 30rd Tracer Green
 - type: entity
@@ -116,4 +116,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmPP19Vityaz_30rdTracerGreen
+        startingItem: Magazine9x19mmParabellumPP19Vityaz_30rdTracerGreen

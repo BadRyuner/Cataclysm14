@@ -1,6 +1,6 @@
 #MARK: FMJ
 - type: entity
-  id: Bullet9x19mmFMJ
+  id: Bullet9x19mmParabellumFMJ
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -12,7 +12,7 @@
 
 #MARK: Tracer Green
 - type: entity
-  id: Bullet9x19mmTracerGreen
+  id: Bullet9x19mmParabellumTracerGreen
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -33,7 +33,7 @@
 
 #MARK: +P
 - type: entity
-  id: Bullet9x19mm+P
+  id: Bullet9x19mmParabellum+P
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -45,7 +45,7 @@
 
 #MARK: AP6,3
 - type: entity
-  id: Bullet9x19mmAP6,3
+  id: Bullet9x19mmParabellumAP6,3
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -57,7 +57,7 @@
 
 #MARK: Rubber
 - type: entity
-  id: Bullet9x19mmRubber
+  id: Bullet9x19mmParabellumRubber
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -68,7 +68,7 @@
 
 #MARK: Incendiary
 - type: entity
-  id: Bullet9x19mmIncendiary
+  id: Bullet9x19mmParabellumIncendiary
   parent: BaseBulletIncendiary
   categories: [ HideSpawnMenu ]
   components:
@@ -81,7 +81,7 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Bullet9x19mmDepletedUranium
+  id: Bullet9x19mmParabellumDepletedUranium
   parent: BaseBulletUranium
   categories: [ HideSpawnMenu ]
   components:
@@ -94,7 +94,7 @@
 
 #MARK: HP
 - type: entity
-  id: Bullet9x19mmHP
+  id: Bullet9x19mmParabellumHP
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -107,7 +107,7 @@
 
 #MARK: RIP
 - type: entity
-  id: Bullet9x19mmRIP
+  id: Bullet9x19mmParabellumRIP
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -121,7 +121,7 @@
 #MARK: Deprecated >
 
 - type: entity
-  id: Bullet9x19mmPlasteelAP
+  id: Bullet9x19mmParabellumPlasteelAP
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -134,7 +134,7 @@
 
 # Upstream
 - type: entity
-  id: Bullet9x19mmEmp
+  id: Bullet9x19mmParabellumEmp
   parent: BaseBulletEmp
   categories: [ HideSpawnMenu ]
   components:
@@ -144,7 +144,7 @@
         Shock: 0
 
 - type: entity
-  id: Bullet9x19mmPractice
+  id: Bullet9x19mmParabellumPractice
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:

@@ -1,18 +1,18 @@
 #MARK: Base
 - type: entity
-  id: BaseMagazine9x19mm
-  name: pistol magazine (9x19mm FMJ)
+  id: BaseMagazine9x19mmParabellum
+  name: pistol magazine (9x19mmParabellum FMJ)
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine9x19mmPistolFMJ
+      - Magazine9x19mmParabellumPistolFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge9x19mm
+        - Cartridge9x19mmParabellum
     capacity: 19
   - type: Item
     storedScale: 2.5
@@ -22,7 +22,7 @@
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.30,0.30
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/9x19mm_pistol_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/9x19mmParabellum_pistol_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -43,19 +43,19 @@
 
 #MARK: Glock 10rd
 - type: entity
-  id: BaseMagazine9x19mmGlock10rd
+  id: BaseMagazine9x19mmParabellumGlock10rd
   abstract: true
-  name: "Glock 10rd magazine (9x19mm)"
-  parent: BaseMagazine9x19mm
+  name: "Glock 10rd magazine (9x19mmParabellum)"
+  parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
     capacity: 10
   - type: Tag
     tags:
-      - Magazine9x19mmGlockCompatible
+      - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_10rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_10rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -64,37 +64,37 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine9x19mmGlock10rdEmpty
+  id: Magazine9x19mmParabellumGlock10rdEmpty
   suffix: Empty
-  parent: BaseMagazine9x19mmGlock10rd
+  parent: BaseMagazine9x19mmParabellumGlock10rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine9x19mmGlock10rdFMJ
+  id: Magazine9x19mmParabellumGlock10rdFMJ
   suffix: FMJ
-  parent: BaseMagazine9x19mmGlock10rd
+  parent: BaseMagazine9x19mmParabellumGlock10rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
 
 #MARK: Glock 17rd
 - type: entity
-  id: BaseMagazine9x19mmGlock17rd
+  id: BaseMagazine9x19mmParabellumGlock17rd
   abstract: true
-  name: "Glock 17rd magazine (9x19mm)"
-  parent: BaseMagazine9x19mm
+  name: "Glock 17rd magazine (9x19mmParabellum)"
+  parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
     capacity: 17
   - type: Tag
     tags:
-      - Magazine9x19mmGlockCompatible
+      - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_17rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_17rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -103,46 +103,46 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine9x19mmGlock17rdEmpty
+  id: Magazine9x19mmParabellumGlock17rdEmpty
   suffix: Empty
-  parent: BaseMagazine9x19mmGlock17rd
+  parent: BaseMagazine9x19mmParabellumGlock17rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine9x19mmGlock17rdFMJ
+  id: Magazine9x19mmParabellumGlock17rdFMJ
   suffix: FMJ
-  parent: BaseMagazine9x19mmGlock17rd
+  parent: BaseMagazine9x19mmParabellumGlock17rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
 
 #MARK: Tracer Green
 - type: entity
-  id: Magazine9x19mmGlock17rdTracerGreen
+  id: Magazine9x19mmParabellumGlock17rdTracerGreen
   suffix: Tracer Green
-  parent: BaseMagazine9x19mmGlock17rd
+  parent: BaseMagazine9x19mmParabellumGlock17rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmTracerGreen
+    proto: Cartridge9x19mmParabellumTracerGreen
 
 #MARK: Glock 24rd
 - type: entity
-  id: BaseMagazine9x19mmGlock24rd
+  id: BaseMagazine9x19mmParabellumGlock24rd
   abstract: true
-  name: "Glock 24rd magazine (9x19mm)"
-  parent: BaseMagazine9x19mm
+  name: "Glock 24rd magazine (9x19mmParabellum)"
+  parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
     capacity: 24
   - type: Tag
     tags:
-      - Magazine9x19mmGlockCompatible
+      - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_24rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_24rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -151,46 +151,46 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine9x19mmGlock24rdEmpty
+  id: Magazine9x19mmParabellumGlock24rdEmpty
   suffix: Empty
-  parent: BaseMagazine9x19mmGlock24rd
+  parent: BaseMagazine9x19mmParabellumGlock24rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine9x19mmGlock24rdFMJ
+  id: Magazine9x19mmParabellumGlock24rdFMJ
   suffix: FMJ
-  parent: BaseMagazine9x19mmGlock24rd
+  parent: BaseMagazine9x19mmParabellumGlock24rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
 
 #MARK: Tracer Green
 - type: entity
-  id: Magazine9x19mmGlock24rdTracerGreen
+  id: Magazine9x19mmParabellumGlock24rdTracerGreen
   suffix: Tracer Green
-  parent: BaseMagazine9x19mmGlock24rd
+  parent: BaseMagazine9x19mmParabellumGlock24rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmTracerGreen
+    proto: Cartridge9x19mmParabellumTracerGreen
 
 #MARK: Glock 33rd
 - type: entity
-  id: BaseMagazine9x19mmGlock33rd
+  id: BaseMagazine9x19mmParabellumGlock33rd
   abstract: true
-  name: "Glock 33rd magazine (9x19mm)"
-  parent: BaseMagazine9x19mm
+  name: "Glock 33rd magazine (9x19mmParabellum)"
+  parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
     capacity: 33
   - type: Tag
     tags:
-      - Magazine9x19mmGlockCompatible
+      - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_33rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_33rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -199,47 +199,47 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine9x19mmGlock33rdEmpty
+  id: Magazine9x19mmParabellumGlock33rdEmpty
   suffix: Empty
-  parent: BaseMagazine9x19mmGlock33rd
+  parent: BaseMagazine9x19mmParabellumGlock33rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine9x19mmGlock33rdFMJ
+  id: Magazine9x19mmParabellumGlock33rdFMJ
   suffix: FMJ
-  parent: BaseMagazine9x19mmGlock33rd
+  parent: BaseMagazine9x19mmParabellumGlock33rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
 
 #MARK: Tracer Green
 - type: entity
-  id: Magazine9x19mmGlock33rdTracerGreen
+  id: Magazine9x19mmParabellumGlock33rdTracerGreen
   suffix: Tracer Green
-  parent: BaseMagazine9x19mmGlock33rd
+  parent: BaseMagazine9x19mmParabellumGlock33rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmTracerGreen
+    proto: Cartridge9x19mmParabellumTracerGreen
 
 #MARK: MP5 30rd
 - type: entity
-  id: BaseMagazine9x19mmMP5_30rd
+  id: BaseMagazine9x19mmParabellumMP5_30rd
   abstract: true
-  name: "MP5 30rd magazine (9x19mm)"
-  parent: BaseMagazine9x19mm
+  name: "MP5 30rd magazine (9x19mmParabellum)"
+  parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
     capacity: 30
   - type: Tag
     tags:
-      - Magazine9x19mmMP5Compatible
+      - Magazine9x19mmParabellumMP5Compatible
   - type: Sprite
     scale: 0.25,0.25
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_MP5_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_MP5_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -248,47 +248,47 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine9x19mmMP5_30rdEmpty
+  id: Magazine9x19mmParabellumMP5_30rdEmpty
   suffix: Empty
-  parent: BaseMagazine9x19mmMP5_30rd
+  parent: BaseMagazine9x19mmParabellumMP5_30rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine9x19mmMP5_30rdFMJ
+  id: Magazine9x19mmParabellumMP5_30rdFMJ
   suffix: FMJ
-  parent: BaseMagazine9x19mmMP5_30rd
+  parent: BaseMagazine9x19mmParabellumMP5_30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
 
 #MARK: Tracer Green
 - type: entity
-  id: Magazine9x19mmMP5_30rdTracerGreen
+  id: Magazine9x19mmParabellumMP5_30rdTracerGreen
   suffix: Tracer Green
-  parent: BaseMagazine9x19mmMP5_30rd
+  parent: BaseMagazine9x19mmParabellumMP5_30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmTracerGreen
+    proto: Cartridge9x19mmParabellumTracerGreen
 
 #MARK: PP19 Vityaz 30rd
 - type: entity
-  id: BaseMagazine9x19mmPP19Vityaz_30rd
+  id: BaseMagazine9x19mmParabellumPP19Vityaz_30rd
   abstract: true
-  name: PP-19-01 "Vityaz" 30rd magazine (9x19mm)
-  parent: BaseMagazine9x19mm
+  name: PP-19-01 "Vityaz" 30rd magazine (9x19mmParabellum)
+  parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
     capacity: 30
   - type: Tag
     tags:
-      - Magazine9x19mmPP19VityazCompatible
+      - Magazine9x19mmParabellumPP19VityazCompatible
   - type: Sprite
     scale: 0.25,0.25
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_PP19_vityaz_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_PP19_vityaz_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -297,28 +297,28 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine9x19mmPP19Vityaz_30rdEmpty
+  id: Magazine9x19mmParabellumPP19Vityaz_30rdEmpty
   suffix: Empty
-  parent: BaseMagazine9x19mmPP19Vityaz_30rd
+  parent: BaseMagazine9x19mmParabellumPP19Vityaz_30rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine9x19mmPP19Vityaz_30rdFMJ
+  id: Magazine9x19mmParabellumPP19Vityaz_30rdFMJ
   suffix: FMJ
-  parent: BaseMagazine9x19mmPP19Vityaz_30rd
+  parent: BaseMagazine9x19mmParabellumPP19Vityaz_30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
 
 #MARK: Tracer Green
 - type: entity
-  id: Magazine9x19mmPP19Vityaz_30rdTracerGreen
+  id: Magazine9x19mmParabellumPP19Vityaz_30rdTracerGreen
   suffix: Tracer Green
-  parent: BaseMagazine9x19mmPP19Vityaz_30rd
+  parent: BaseMagazine9x19mmParabellumPP19Vityaz_30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmTracerGreen
+    proto: Cartridge9x19mmParabellumTracerGreen
 

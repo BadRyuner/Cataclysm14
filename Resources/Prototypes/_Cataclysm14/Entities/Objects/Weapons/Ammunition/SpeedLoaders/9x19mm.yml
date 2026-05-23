@@ -1,17 +1,17 @@
 - type: entity
-  id: BaseSpeedLoader9x19mm
-  name: "speed loader (9x19mm FMJ)"
+  id: BaseSpeedLoader9x19mmParabellum
+  name: "speed loader (9x19mmParabellum FMJ)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - SpeedLoader9x19mmFMJ
+      - SpeedLoader9x19mmParabellumFMJ
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - Cartridge9x19mm
+        - Cartridge9x19mmParabellum
     capacity: 8
   - type: Sprite
   - type: ContainerContainer
@@ -20,17 +20,17 @@
         ents: []
 
 - type: entity
-  id: SpeedLoader9x19mmFMJ
-  name: "speed loader (9x19mm FMJ)"
-  parent: BaseSpeedLoader9x19mm
+  id: SpeedLoader9x19mmParabellumFMJ
+  name: "speed loader (9x19mmParabellum FMJ)"
+  parent: BaseSpeedLoader9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     state: icon
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -43,17 +43,17 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader9x19mmEmpty
-  name: "speed loader (9x19mm any)"
-  parent: SpeedLoader9x19mmFMJ
+  id: SpeedLoader9x19mmParabellumEmpty
+  name: "speed loader (9x19mmParabellum any)"
+  parent: SpeedLoader9x19mmParabellumFMJ
   components:
   - type: BallisticAmmoProvider
     proto: null
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     state: base
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -61,14 +61,14 @@
         map: [ "enum.GunVisualLayers.Mag" ]
 
 - type: entity
-  id: SpeedLoader9x19mmIncendiary
-  name: "speed loader (9x19mm incendiary)"
-  parent: BaseSpeedLoader9x19mm
+  id: SpeedLoader9x19mmParabellumIncendiary
+  name: "speed loader (9x19mmParabellum incendiary)"
+  parent: BaseSpeedLoader9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmIncendiary
+    proto: Cartridge9x19mmParabellumIncendiary
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -81,17 +81,17 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader9x19mmPractice
-  name: "speed loader (9x19mm practice)"
-  parent: BaseSpeedLoader9x19mm
+  id: SpeedLoader9x19mmParabellumPractice
+  name: "speed loader (9x19mmParabellum practice)"
+  parent: BaseSpeedLoader9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmPractice
+    proto: Cartridge9x19mmParabellumPractice
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     state: practice-icon
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -104,17 +104,17 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader9x19mmDepletedUranium
-  name: "speed loader (9x19mm depleted uranium)"
-  parent: BaseSpeedLoader9x19mm
+  id: SpeedLoader9x19mmParabellumDepletedUranium
+  name: "speed loader (9x19mmParabellum depleted uranium)"
+  parent: BaseSpeedLoader9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmDepletedUranium
+    proto: Cartridge9x19mmParabellumDepletedUranium
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     state: uranium-icon
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -127,17 +127,17 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader9x19mmRubber
-  name: "speed loader (9x19mm rubber)"
-  parent: BaseSpeedLoader9x19mm
+  id: SpeedLoader9x19mmParabellumRubber
+  name: "speed loader (9x19mmParabellum rubber)"
+  parent: BaseSpeedLoader9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmRubber
+    proto: Cartridge9x19mmParabellumRubber
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     state: rubber-icon
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mm/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/9x19mmParabellum/9x19mmParabellum.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]

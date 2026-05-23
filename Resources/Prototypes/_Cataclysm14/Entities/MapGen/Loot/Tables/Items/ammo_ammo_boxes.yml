@@ -12,7 +12,7 @@
     children:
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableAmmunitionAmmoBox9x19mmMilitaryGradeLowTier
+        tableId: LootTableAmmunitionAmmoBox9x19mmParabellumMilitaryGradeLowTier
       - !type:NestedSelector
         weight: 100
         tableId: LootTableAmmunitionAmmoBox5,56x45mmMilitaryGradeLowTier
@@ -154,7 +154,7 @@
         rolls: !type:RangeNumberSelector
           range: 0,2
 
-#MARK: 9x19mm >
+#MARK: 9x19mmParabellum >
 
 
 
@@ -163,57 +163,57 @@
 
 #MARK: AmmoBoxMilLow
 - type: entityTable
-  id: LootTableAmmunitionAmmoBox9x19mmMilitaryGradeLowTier
+  id: LootTableAmmunitionAmmoBox9x19mmParabellumMilitaryGradeLowTier
   table: !type:GroupSelector
     children:
-      - id: AmmoBox9x19mmFMJ
+      - id: AmmoBox9x19mmParabellumFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox9x19mmTracerGreen
+      - id: AmmoBox9x19mmParabellumTracerGreen
         rolls: !type:RangeNumberSelector
           range: 0,2
 
 #MARK: AmmoBoxCivHigh
 - type: entityTable
-  id: LootTableAmmunitionAmmoBox9x19mmCivilianGradeHighTier
+  id: LootTableAmmunitionAmmoBox9x19mmParabellumCivilianGradeHighTier
   table: !type:GroupSelector
     children:
-      - id: AmmoBox9x19mmRIP
+      - id: AmmoBox9x19mmParabellumRIP
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox9x19mmFMJ
+      - id: AmmoBox9x19mmParabellumFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox9x19mmTracerGreen
+      - id: AmmoBox9x19mmParabellumTracerGreen
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox9x19mmAP6,3
+      - id: AmmoBox9x19mmParabellumAP6,3
         rolls: !type:RangeNumberSelector
           range: 0,2
 
 #MARK: AmmoBoxCivMid
 - type: entityTable
-  id: LootTableAmmunitionAmmoBox9x19mmCivilianGradeMediumTier
+  id: LootTableAmmunitionAmmoBox9x19mmParabellumCivilianGradeMediumTier
   table: !type:GroupSelector
     children:
-      - id: AmmoBox9x19mmHP
+      - id: AmmoBox9x19mmParabellumHP
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox9x19mmFMJ
+      - id: AmmoBox9x19mmParabellumFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox9x19mmTracerGreen
+      - id: AmmoBox9x19mmParabellumTracerGreen
         rolls: !type:RangeNumberSelector
           range: 0,2
 
 #MARK: AmmoBoxCivLow
 - type: entityTable
-  id: LootTableAmmunitionAmmoBox9x19mmCivilianGradeLowTier
+  id: LootTableAmmunitionAmmoBox9x19mmParabellumCivilianGradeLowTier
   table: !type:GroupSelector
     children:
-      - id: AmmoBox9x19mmHP
+      - id: AmmoBox9x19mmParabellumHP
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox9x19mm+P
+      - id: AmmoBox9x19mmParabellum+P
         rolls: !type:RangeNumberSelector
           range: 0,2

@@ -2,15 +2,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox9x19mm
-  name: ammunition box (9x19mm FMJ)
+  id: BaseAmmoBox9x19mmParabellum
+  name: ammunition box (9x19mmParabellum FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge9x19mm
-    proto: Cartridge9x19mmFMJ
+        - Cartridge9x19mmParabellum
+    proto: Cartridge9x19mmParabellumFMJ
     capacity: 80
   - type: Item
     size: Small
@@ -18,14 +18,14 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/9x19mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/9x19mmParabellum.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3
     zeroVisible: false
   - type: Tag
     tags:
-    - Magazine9x19mmFMJBox
+    - Magazine9x19mmParabellumFMJBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:
@@ -39,12 +39,12 @@
 
 #MARK: FMJ
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmFMJ
-  name: ammunition box (9x19mm FMJ)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumFMJ
+  name: ammunition box (9x19mmParabellum FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
   - type: Sprite
     layers:
     - state: base
@@ -54,12 +54,12 @@
 
 #MARK: +P
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mm+P
-  name: ammunition box (9x19mm +P)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellum+P
+  name: ammunition box (9x19mmParabellum +P)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mm+P
+    proto: Cartridge9x19mmParabellum+P
   - type: Sprite
     layers:
     - state: base
@@ -69,12 +69,12 @@
 
 #MARK: Tracer Green
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmTracerGreen
-  name: ammunition box (9x19mm green tracer)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumTracerGreen
+  name: ammunition box (9x19mmParabellum green tracer)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmTracerGreen
+    proto: Cartridge9x19mmParabellumTracerGreen
   - type: Sprite
     layers:
     - state: base
@@ -84,12 +84,12 @@
 
 #MARK: AP6,3
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmAP6,3
-  name: ammunition box (9x19mm AP6,3)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumAP6,3
+  name: ammunition box (9x19mmParabellum AP6,3)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmAP6,3
+    proto: Cartridge9x19mmParabellumAP6,3
   - type: Sprite
     layers:
     - state: base
@@ -99,12 +99,12 @@
 
 #MARK: Incendiary
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmIncendiary
-  name: ammunition box (9x19mm incendiary)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumIncendiary
+  name: ammunition box (9x19mmParabellum incendiary)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmIncendiary
+    proto: Cartridge9x19mmParabellumIncendiary
   - type: Sprite
     layers:
     - state: base
@@ -115,12 +115,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: AmmoBox9x19mmDepletedUranium
-  parent: BaseAmmoBox9x19mm
-  name: ammunition box (9x19mm depleted uranium)
+  id: AmmoBox9x19mmParabellumDepletedUranium
+  parent: BaseAmmoBox9x19mmParabellum
+  name: ammunition box (9x19mmParabellum depleted uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmDepletedUranium
+    proto: Cartridge9x19mmParabellumDepletedUranium
   - type: Sprite
     layers:
     - state: base
@@ -131,12 +131,12 @@
 
 #MARK: Rubber
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmRubber
-  name: ammunition box (9x19mm rubber)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumRubber
+  name: ammunition box (9x19mmParabellum rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmRubber
+    proto: Cartridge9x19mmParabellumRubber
   - type: Sprite
     layers:
     - state: base
@@ -147,12 +147,12 @@
 
 #MARK: HP
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmHP
-  name: ammunition box (9x19mm hollow-point)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumHP
+  name: ammunition box (9x19mmParabellum hollow-point)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmHP
+    proto: Cartridge9x19mmParabellumHP
   - type: Sprite
     layers:
     - state: base
@@ -163,12 +163,12 @@
 
 #MARK: RIP
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmRIP
-  name: ammunition box (9x19mm RIP)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumRIP
+  name: ammunition box (9x19mmParabellum RIP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmRIP
+    proto: Cartridge9x19mmParabellumRIP
   - type: Sprite
     layers:
     - state: base
@@ -179,9 +179,9 @@
 
 #MARK: Big FMJ
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmBigFMJ
-  name: big ammunition box (9x19mm FMJ)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumBigFMJ
+  name: big ammunition box (9x19mmParabellum FMJ)
   suffix: Big
   components:
   - type: Item
@@ -189,7 +189,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 280 # 8 mags per box similar to rifle box
-    proto: Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmParabellumFMJ
   - type: Sprite
     layers:
     - state: base-b # Frontier: base-big<base-b
@@ -207,12 +207,12 @@
 #armor-piercing:
 
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmPlasteelAP
-  name: ammunition box (9x19mm AP)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumPlasteelAP
+  name: ammunition box (9x19mmParabellum AP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmPlasteelAP
+    proto: Cartridge9x19mmParabellumPlasteelAP
   - type: Sprite
     layers:
     - state: base
@@ -222,12 +222,12 @@
     - state: plasteelAP
 
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmPractice
-  name: ammunition box (9x19mm practice)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumPractice
+  name: ammunition box (9x19mmParabellum practice)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmPractice
+    proto: Cartridge9x19mmParabellumPractice
   - type: Sprite
     layers:
     - state: base
@@ -238,12 +238,12 @@
 
 # Frontier
 - type: entity
-  parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmEmp
-  name: ammunition box (9x19mm emp)
+  parent: BaseAmmoBox9x19mmParabellum
+  id: AmmoBox9x19mmParabellumEmp
+  name: ammunition box (9x19mmParabellum emp)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmEmp
+    proto: Cartridge9x19mmParabellumEmp
   - type: Sprite
     layers:
     - state: base
