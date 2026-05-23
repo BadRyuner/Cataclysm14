@@ -5,9 +5,6 @@
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
-  - type: Tag
-    tags:
-      - Magazine7,62x39mmFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:

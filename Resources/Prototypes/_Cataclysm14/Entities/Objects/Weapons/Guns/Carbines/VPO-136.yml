@@ -43,7 +43,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7,62x39mmFMJ
+        startingItem: Magazine7,62x39mmSteel30rdFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2

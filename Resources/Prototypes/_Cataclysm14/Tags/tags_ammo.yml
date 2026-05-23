@@ -119,6 +119,10 @@
   - type: Tag
     id: ShellShotgun4_Gauge
 
+  #MARK: 12,7x99mm
+  - type: Tag
+    id: Cartridge12,7x99mm
+
   #MARK: 14,5x114mm
 
   - type: Tag

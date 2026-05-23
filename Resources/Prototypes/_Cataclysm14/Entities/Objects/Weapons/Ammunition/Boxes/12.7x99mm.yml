@@ -41,12 +41,3 @@
 - type: entity
   parent: BaseAmmoBox12,7x99mm
   id: AmmoBox12,7x99mm
-
-- type: entity
-  parent: BaseAmmoBox12,7x99mm
-  id: AmmoBox12,7x99mmExplosive
-  name: ammunition box (12,7x99mm high-explosive)
-  components:
-  - type: BallisticAmmoProvider
-    capacity: 30
-    proto: Cartridge12,7x99mmExplosive

@@ -39,7 +39,6 @@
     tags:
     - Cartridge
     - ShellShotgun12_Gauge
-    - ShellShotgun12_GaugeLight
   - type: Sprite
     layers:
       - state: beanbag
@@ -72,7 +71,6 @@
     tags:
     - Cartridge
     - ShellShotgun12_Gauge
-    - ShellShotgun12_GaugeLight
   - type: Sprite
     layers:
       - state: flare
@@ -131,7 +129,6 @@
     tags:
     - Cartridge
     - ShellShotgun12_Gauge
-    - ShellShotgun12_GaugeLight
   - type: Sprite
     layers:
       - state: tranquilizer
@@ -160,7 +157,6 @@
     tags:
     - Cartridge
     - ShellShotgun12_Gauge
-    - ShellShotgun12_GaugeLight
   - type: Sprite
     layers:
       - state: improvised
