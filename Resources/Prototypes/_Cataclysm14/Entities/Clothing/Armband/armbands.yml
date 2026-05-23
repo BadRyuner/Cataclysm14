@@ -1,8 +1,8 @@
 #custom armbands
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandUNSA
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandUNSA
   name: UNSA vanguard armband
   description: An armband bearing the flag of the Universal States of America, worn by Vanguards for indentification.
   components:
@@ -17,8 +17,8 @@
       - state: equipped-ARMBANDRIGHT
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandUSA
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandUSA
   name: USA armband
   description: An armband bearing the flag of the United States of America, worn by true patriots.
   components:
@@ -35,8 +35,8 @@
 #colored armbands
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandWhite
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandWhite
   name: white armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -54,8 +54,8 @@
         color: "#f8f8ff"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandGray
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandGray
   name: gray armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -73,8 +73,8 @@
         color: "#6F6F6F"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandBlack
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandBlack
   name: black armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -92,8 +92,8 @@
         color: "#131313"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandDarkRed
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandDarkRed
   name: dark red armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -111,8 +111,8 @@
         color: "#9E1A1A"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandRed
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandRed
   name: red armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -130,8 +130,8 @@
         color: "#ff2c2c"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandDarkGreen
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandDarkGreen
   name: dark green armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -149,8 +149,8 @@
         color: "#3d8c40"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandGreen
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandGreen
   name: green armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -168,8 +168,8 @@
         color: "#4CBB17"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandDarkBlue
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandDarkBlue
   name: dark blue armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -187,8 +187,8 @@
         color: "#0A1172"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandBlue
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandBlue
   name: blue armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -206,8 +206,8 @@
         color: "#2832C2"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandDarkPurple
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandDarkPurple
   name: dark purple armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -225,8 +225,8 @@
         color: "#702963"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandPurple
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandPurple
   name: purple armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -244,8 +244,8 @@
         color: "#B200ED"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandDarkYellow
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandDarkYellow
   name: dark yellow armband
   description: A basic colored armband for tactical or fashion purpose.
   components:
@@ -263,8 +263,8 @@
         color: "#E4CD05"
 
 - type: entity
-  parent: ClothingArmbandBase
-  id: ClothingArmbandYellow
+  parent: ClothingArmArmbandBase
+  id: ClothingArmArmbandYellow
   name: yellow armband
   description: A basic colored armband for tactical or fashion purpose.
   components:

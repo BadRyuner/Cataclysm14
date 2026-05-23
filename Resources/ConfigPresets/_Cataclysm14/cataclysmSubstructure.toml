@@ -1,0 +1,91 @@
+[game]
+hostname = "[EN][MRP] Cataclysm14 - Substructure early playtest [EU]"
+desc = "Cataclysm14 playtest. Inspired by games such as CDDA, Project Zomboid and tarkov. Early in dev may be very buggy."
+soft_max_players = 100
+lobbyduration = 180
+lobbyenabled = true
+panic_bunker.enabled = false
+panic_bunker.disable_with_admins = false
+panic_bunker.enable_without_admins = false
+panic_bunker.custom_reason = ""
+
+[chat]
+motd = "Welcome to Cataclysm14. Your starts here, and ends soon. Be sure to join our Discord."
+
+[console]
+login_host_user = "STALKER ARENA"
+
+[infolinks]
+discord = "https://discord.gg/vHeEaJ3WHF"
+github = "https://github.com/Cataclysm14/Cataclysm14"
+appeal = "https://discord.gg/vHeEaJ3WHF"
+
+[admin]
+new_player_join_sound = true
+deadmin_on_join = true
+new_player_threshold = 600
+alert.min_players_sharing_connection = 2
+server_ban_erase_player = true
+see_own_notes = true
+show_pii_onban = true
+admins_count_in_playercount = true
+chat_discord_channel_id = 1379587459838640260
+ahelp_discord_channel_id = 1379587501185962084
+dead_chat_discord_channel_id = 1387956269351960726
+
+[ahelp]
+admin_prefix = true
+admin_prefix_webhook = true
+
+[biomass]
+easy_mode = false
+
+[ooc]
+show_ooc_patron_color = false
+discord_channel_id = 1331042209172164639
+
+[shuttle]
+auto_call_time = 360
+mass_limit = 0
+
+[surgery]
+can_operate_on_self = true
+
+[nf14.respawn]
+time = 600
+
+# [hub]
+# advertise = 1
+# tags = "lang:en, rp:med, region:eu_w"
+# hub_urls = "https://hub.spacestation14.com/,https://hub.singularity14.co.uk/"
+
+[auth]
+mode = 1
+
+[net]
+tickrate = 30
+max_connections = 2000
+lidgren_log_warning = false
+lidgren_log_error = false
+log_late_msg = false
+
+[log]
+path = "logs"
+format = "log_%(date)s-%(time)s.txt"
+level = 2
+enabled = 0
+
+[events]
+# Annoying
+enabled = false
+
+[movement]
+mob_pushing = true
+
+[control]
+storage_limit = 10
+storage_window_title = true
+
+[hub]
+tags = "lang:en,region:eu_w,rp:med"
+

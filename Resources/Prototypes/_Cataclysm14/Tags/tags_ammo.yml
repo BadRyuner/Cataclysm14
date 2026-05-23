@@ -90,46 +90,24 @@
   - type: Tag
     id: Cartridge45_Magnum
 
-  #MARK:9x19mm
+  #MARK:9x19mmParabellumParabellum
 
   - type: Tag
-    id: Magazine9x19mmGlockCompatible
+    id: Magazine9x19mmParabellumParabellumGlockCompatible
 
   - type: Tag
-    id: Magazine9x19mmMP5Compatible
+    id: Magazine9x19mmParabellumParabellumMP5Compatible
 
   - type: Tag
-    id: Magazine9x19mmPP19VityazCompatible
+    id: Magazine9x19mmParabellumParabellumPP19VityazCompatible
 
   - type: Tag
-    id: Cartridge9x19mm
+    id: Cartridge9x19mmParabellumParabellum
 
   #MARK: 5,7x28mm
 
   - type: Tag
     id: Cartridge5,7x28mm
-
-  #MARK: 8x65mm SKR
-
-  - type: Tag
-    id: Cartridge8x65mmSKR
-
-  - type: Tag
-    id: Magazine8x65mmSKR
-
-  - type: Tag
-    id: MagazineBox8x65mmSKR
-
-  #MARK: .55 SAM
-
-  - type: Tag
-    id: Cartridge55_SAM
-
-  - type: Tag
-    id: Magazine55_SAMPistol
-
-  - type: Tag
-    id: Magazine55_SAMPistolHighCapacity
 
   #MARK: 12 gauge
 

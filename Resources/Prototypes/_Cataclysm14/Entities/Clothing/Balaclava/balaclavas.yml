@@ -11,7 +11,7 @@
 #MARK: Black
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskBlack
+  id: ClothingBalaclavaBalaclavaSkiMaskBlack
   name: black ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -36,7 +36,7 @@
 #MARK: Gray
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskGray
+  id: ClothingBalaclavaBalaclavaSkiMaskGray
   name: gray ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -61,7 +61,7 @@
 #MARK: White
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskWhite
+  id: ClothingBalaclavaBalaclavaSkiMaskWhite
   name: white ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -82,7 +82,7 @@
 #MARK: Red
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskRed
+  id: ClothingBalaclavaBalaclavaSkiMaskRed
   name: red ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -107,7 +107,7 @@
 #MARK: Green
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskGreen
+  id: ClothingBalaclavaBalaclavaSkiMaskGreen
   name: green ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -132,7 +132,7 @@
 #MARK: Blue
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskBlue
+  id: ClothingBalaclavaBalaclavaSkiMaskBlue
   name: blue ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -157,7 +157,7 @@
 #MARK: Purple
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskPurple
+  id: ClothingBalaclavaBalaclavaSkiMaskPurple
   name: purple ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -182,7 +182,7 @@
 #MARK: Yellow
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskYellow
+  id: ClothingBalaclavaBalaclavaSkiMaskYellow
   name: yellow ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -207,7 +207,7 @@
 #MARK: Tan
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskTan
+  id: ClothingBalaclavaBalaclavaSkiMaskTan
   name: tan ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -232,7 +232,7 @@
 #MARK: Ranger Green
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskRangerGreen
+  id: ClothingBalaclavaBalaclavaSkiMaskRangerGreen
   name: ranger green ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -257,7 +257,7 @@
 #MARK: Coyote Brown
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskCoyoteBrown
+  id: ClothingBalaclavaBalaclavaSkiMaskCoyoteBrown
   name: coyote brown ski mask balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -289,7 +289,7 @@
 #MARK: Black
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthBlack
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthBlack
   name: black ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -314,7 +314,7 @@
 #MARK: Gray
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthGray
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthGray
   name: gray ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -339,7 +339,7 @@
 #MARK: White
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthWhite
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthWhite
   name: white ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -360,7 +360,7 @@
 #MARK: Red
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthRed
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthRed
   name: red ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -385,7 +385,7 @@
 #MARK: Green
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthGreen
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthGreen
   name: green ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -410,7 +410,7 @@
 #MARK: Blue
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthBlue
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthBlue
   name: blue ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -435,7 +435,7 @@
 #MARK: Purple
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthPurple
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthPurple
   name: purple ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -460,7 +460,7 @@
 #MARK: Yellow
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthYellow
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthYellow
   name: yellow ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -485,7 +485,7 @@
 #MARK: Tan
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthTan
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthTan
   name: tan ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -510,7 +510,7 @@
 #MARK: Ranger Green
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthRangerGreen
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthRangerGreen
   name: ranger green ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -535,7 +535,7 @@
 #MARK: Coyote Brown
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaSkiMaskMouthCoyoteBrown
+  id: ClothingBalaclavaBalaclavaSkiMaskMouthCoyoteBrown
   name: coyote brown ski mask balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -567,7 +567,7 @@
 #MARK: Black
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicBlack
+  id: ClothingBalaclavaBalaclavaClassicBlack
   name: black classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -592,7 +592,7 @@
 #MARK: Gray
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicGray
+  id: ClothingBalaclavaBalaclavaClassicGray
   name: gray classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -617,7 +617,7 @@
 #MARK: White
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicWhite
+  id: ClothingBalaclavaBalaclavaClassicWhite
   name: white classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -638,7 +638,7 @@
 #MARK: Red
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicRed
+  id: ClothingBalaclavaBalaclavaClassicRed
   name: red classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -663,7 +663,7 @@
 #MARK: Green
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicGreen
+  id: ClothingBalaclavaBalaclavaClassicGreen
   name: green classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -688,7 +688,7 @@
 #MARK: Blue
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicBlue
+  id: ClothingBalaclavaBalaclavaClassicBlue
   name: blue classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -713,7 +713,7 @@
 #MARK: Purple
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicPurple
+  id: ClothingBalaclavaBalaclavaClassicPurple
   name: purple classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -738,7 +738,7 @@
 #MARK: Yellow
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicYellow
+  id: ClothingBalaclavaBalaclavaClassicYellow
   name: yellow classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -763,7 +763,7 @@
 #MARK: Tan
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicTan
+  id: ClothingBalaclavaBalaclavaClassicTan
   name: tan classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -788,7 +788,7 @@
 #MARK: Ranger Green
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicRangerGreen
+  id: ClothingBalaclavaBalaclavaClassicRangerGreen
   name: ranger green classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -813,7 +813,7 @@
 #MARK: Coyote Brown
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicCoyoteBrown
+  id: ClothingBalaclavaBalaclavaClassicCoyoteBrown
   name: coyote brown classic balaclava
   description: A colored balaclava to make you look menacing.
   components:
@@ -845,7 +845,7 @@
 #MARK: Black
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthBlack
+  id: ClothingBalaclavaBalaclavaClassicMouthBlack
   name: black classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -870,7 +870,7 @@
 #MARK: Gray
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthGray
+  id: ClothingBalaclavaBalaclavaClassicMouthGray
   name: gray classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -895,7 +895,7 @@
 #MARK: White
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthWhite
+  id: ClothingBalaclavaBalaclavaClassicMouthWhite
   name: white classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -916,7 +916,7 @@
 #MARK: Red
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthRed
+  id: ClothingBalaclavaBalaclavaClassicMouthRed
   name: red classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -941,7 +941,7 @@
 #MARK: Green
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthGreen
+  id: ClothingBalaclavaBalaclavaClassicMouthGreen
   name: green classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -966,7 +966,7 @@
 #MARK: Blue
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthBlue
+  id: ClothingBalaclavaBalaclavaClassicMouthBlue
   name: blue classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -991,7 +991,7 @@
 #MARK: Purple
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthPurple
+  id: ClothingBalaclavaBalaclavaClassicMouthPurple
   name: purple classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -1016,7 +1016,7 @@
 #MARK: Yellow
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthYellow
+  id: ClothingBalaclavaBalaclavaClassicMouthYellow
   name: yellow classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -1041,7 +1041,7 @@
 #MARK: Tan
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthTan
+  id: ClothingBalaclavaBalaclavaClassicMouthTan
   name: tan classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -1066,7 +1066,7 @@
 #MARK: Ranger Green
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthRangerGreen
+  id: ClothingBalaclavaBalaclavaClassicMouthRangerGreen
   name: ranger green classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
@@ -1091,7 +1091,7 @@
 #MARK: Coyote Brown
 - type: entity
   parent: ClothingBalaclavaBase
-  id: ClothingBalaclavaClassicMouthCoyoteBrown
+  id: ClothingBalaclavaBalaclavaClassicMouthCoyoteBrown
   name: coyote brown classic balaclava (mouth)
   description: A colored balaclava to make you look menacing.
   components:
