@@ -24,9 +24,6 @@
     steps: 4
     zeroVisible: false
   - type: Appearance
-  - type: Tag
-    tags:
-    - Magazine7,62x51mmBoxSmall
   - type: EmitSoundOnPickup
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_pickup.ogg
@@ -216,9 +213,6 @@
     steps: 4
     zeroVisible: false
   - type: Appearance
-  - type: Tag
-    tags:
-    - Magazine7,62x51mmBoxBig
 
 #MARK: Deprecated >
 

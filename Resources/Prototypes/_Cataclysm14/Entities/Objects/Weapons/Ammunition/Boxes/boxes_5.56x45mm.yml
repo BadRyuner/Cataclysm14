@@ -25,9 +25,6 @@
     magState: mag
     steps: 4
     zeroVisible: false
-  - type: Tag
-    tags:
-    - Magazine5,56x45mmBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:

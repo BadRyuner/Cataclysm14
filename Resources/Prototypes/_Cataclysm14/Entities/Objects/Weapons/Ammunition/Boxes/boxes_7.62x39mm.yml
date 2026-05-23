@@ -23,9 +23,6 @@
     magState: mag
     steps: 4
     zeroVisible: false
-  - type: Tag
-    tags:
-    - Magazine7,62x39mmBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:
@@ -175,25 +172,6 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: plasteelAP
-
-- type: entity
-  parent: BaseAmmoBox7,62x39mm
-  id: AmmoBox7,62x39mmSubsonic
-  name: ammunition box (7,62x39mm subsonic)
-  components:
-  - type: BallisticAmmoProvider
-    capacity: 70
-    proto: Cartridge7,62x39mmSubsonic
-    mayTransfer: true
-    whitelist:
-      tags:
-        - Cartridge7,62x39mmSubsonic
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   parent: BaseAmmoBox7,62x39mm

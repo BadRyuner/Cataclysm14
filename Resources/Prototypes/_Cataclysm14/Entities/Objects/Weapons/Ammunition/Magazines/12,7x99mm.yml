@@ -1,25 +1,26 @@
 - type: entity
-  id: BaseMagazine5,7x28mm
-  name: pistol magazine (5,7x28mm FMJ)
-  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  id: BaseMagazine12,7x99mm
+  name: "magazine (12,7x99mm)"
+  parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine5,7x28mmPistolFMJ
+      - Magazine12,7x99mm
+  - type: Item
+    size: Small
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5,7x28mm
-    capacity: 17
-  - type: Item
-    size: Small
+        - Cartridge12,7x99mm
+    proto: Cartridge12,7x99mm
+    capacity: 10
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,7x28mm/5,7x28mm_pistol_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/12,7x99mm/12,7x99mm_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -27,6 +28,6 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 6
+    steps: 2
     zeroVisible: false
   - type: Appearance

@@ -23,9 +23,6 @@
     magState: mag
     steps: 3
     zeroVisible: false
-  - type: Tag
-    tags:
-    - Magazine4,6x30mmFMJBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:

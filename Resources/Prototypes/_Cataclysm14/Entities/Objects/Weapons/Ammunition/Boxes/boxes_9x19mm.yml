@@ -23,9 +23,6 @@
     magState: mag
     steps: 3
     zeroVisible: false
-  - type: Tag
-    tags:
-    - Magazine9x19mmParabellumFMJBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:
