@@ -47,7 +47,7 @@
         priority: 2
         whitelist:
           tags:
-          - Magazine12_GaugeBuckshot
+          - Magazine12_GaugeSaiga12Compatible
         whitelistFailPopup: gun-magazine-whitelist-fail
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg

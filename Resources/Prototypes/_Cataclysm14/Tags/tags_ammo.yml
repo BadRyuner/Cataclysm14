@@ -114,6 +114,9 @@
   - type: Tag
     id: ShellShotgun12_Gauge
 
+  - type: Tag
+    id: Magazine12_GaugeSaiga12Compatible
+
   #MARK: 4 gauge
 
   - type: Tag
