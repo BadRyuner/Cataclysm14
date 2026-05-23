@@ -1,7 +1,7 @@
 #MARK: Base
 - type: entity
   id: BaseMagazine9x19mmParabellum
-  name: pistol magazine (9x19mmParabellum FMJ)
+  name: pistol magazine (9x19mm parabellum FMJ)
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
@@ -22,7 +22,7 @@
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.30,0.30
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/9x19mmParabellum_pistol_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/9x19mm_pistol_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -45,7 +45,7 @@
 - type: entity
   id: BaseMagazine9x19mmParabellumGlock10rd
   abstract: true
-  name: "Glock 10rd magazine (9x19mmParabellum)"
+  name: "Glock 10rd magazine (9x19mm parabellum)"
   parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
@@ -55,7 +55,7 @@
     tags:
       - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_10rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_10rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -84,7 +84,7 @@
 - type: entity
   id: BaseMagazine9x19mmParabellumGlock17rd
   abstract: true
-  name: "Glock 17rd magazine (9x19mmParabellum)"
+  name: "Glock 17rd magazine (9x19mm parabellum)"
   parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
@@ -94,7 +94,7 @@
     tags:
       - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_17rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_17rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -132,7 +132,7 @@
 - type: entity
   id: BaseMagazine9x19mmParabellumGlock24rd
   abstract: true
-  name: "Glock 24rd magazine (9x19mmParabellum)"
+  name: "Glock 24rd magazine (9x19mm parabellum)"
   parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
@@ -142,7 +142,7 @@
     tags:
       - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_24rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_24rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -180,7 +180,7 @@
 - type: entity
   id: BaseMagazine9x19mmParabellumGlock33rd
   abstract: true
-  name: "Glock 33rd magazine (9x19mmParabellum)"
+  name: "Glock 33rd magazine (9x19mm parabellum)"
   parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
@@ -190,7 +190,7 @@
     tags:
       - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_33rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_33rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -228,7 +228,7 @@
 - type: entity
   id: BaseMagazine9x19mmParabellumMP5_30rd
   abstract: true
-  name: "MP5 30rd magazine (9x19mmParabellum)"
+  name: "MP5 30rd magazine (9x19mm parabellum)"
   parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
@@ -239,7 +239,7 @@
       - Magazine9x19mmParabellumMP5Compatible
   - type: Sprite
     scale: 0.25,0.25
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_MP5_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_MP5_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -277,7 +277,7 @@
 - type: entity
   id: BaseMagazine9x19mmParabellumPP19Vityaz_30rd
   abstract: true
-  name: PP-19-01 "Vityaz" 30rd magazine (9x19mmParabellum)
+  name: PP-19-01 "Vityaz" 30rd magazine (9x19mm parabellum)
   parent: BaseMagazine9x19mmParabellum
   components:
   - type: BallisticAmmoProvider
@@ -288,7 +288,7 @@
       - Magazine9x19mmParabellumPP19VityazCompatible
   - type: Sprite
     scale: 0.25,0.25
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_PP19_vityaz_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_PP19_vityaz_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

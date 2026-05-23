@@ -1,6 +1,6 @@
 #MARK: Base
 - type: entity
-  name: Glock 17 (9x19mmParabellum)
+  name: Glock 17 (9x19mm parabellum)
   parent: BaseWeaponPistol
   id: WeaponPistolGlock17Base
   abstract: true

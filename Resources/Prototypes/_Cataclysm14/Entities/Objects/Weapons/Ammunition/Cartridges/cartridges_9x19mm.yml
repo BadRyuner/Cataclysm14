@@ -1,7 +1,7 @@
 #MARK: Base
 - type: entity
   id: BaseCartridge9x19mmParabellum
-  name: cartridge (9x19mmParabellum FMJ)
+  name: cartridge (9x19mm parabellum FMJ)
   parent: BaseCartridge
   description: Generic pistol round. Easy to handle, with a decent effect on unarmored flesh.
   abstract: true
@@ -14,7 +14,7 @@
     proto: Bullet9x19mmParabellumFMJ
   - type: Sprite
     scale: 0.3,0.3
-    sprite: _Cataclysm14/Objects/Weapons/Casings/9x19mmParabellum_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/9x19mm_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -26,7 +26,7 @@
 #MARK: FMJ
 - type: entity
   id: Cartridge9x19mmParabellumFMJ
-  name: cartridge (9x19mmParabellum FMJ)
+  name: cartridge (9x19mm parabellum FMJ)
   parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
@@ -35,7 +35,7 @@
 #MARK: Tracer Green
 - type: entity
   id: Cartridge9x19mmParabellumTracerGreen
-  name: cartridge (9x19mmParabellum green tracer)
+  name: cartridge (9x19mm parabellum green tracer)
   parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
@@ -44,7 +44,7 @@
 #MARK: +P
 - type: entity
   id: Cartridge9x19mmParabellum+P
-  name: cartridge (9x19mmParabellum +P)
+  name: cartridge (9x19mm parabellum +P)
   parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
@@ -53,7 +53,7 @@
 #MARK: AP6,3
 - type: entity
   id: Cartridge9x19mmParabellumAP6,3
-  name: cartridge (9x19mmParabellum AP6,3)
+  name: cartridge (9x19mm parabellum AP6,3)
   parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
@@ -62,7 +62,7 @@
 #MARK: Incendiary
 - type: entity
   id: Cartridge9x19mmParabellumIncendiary
-  name: cartridge (9x19mmParabellum incendiary)
+  name: cartridge (9x19mm parabellum incendiary)
   parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
@@ -78,7 +78,7 @@
 #MARK: Depleted Uranium
 - type: entity
   id: Cartridge9x19mmParabellumDepletedUranium
-  name: cartridge (9x19mmParabellum depleted uranium)
+  name: cartridge (9x19mm parabellum depleted uranium)
   parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
@@ -94,7 +94,7 @@
 #MARK: Rubber
 - type: entity
   id: Cartridge9x19mmParabellumRubber
-  name: cartridge (9x19mmParabellum rubber)
+  name: cartridge (9x19mm parabellum rubber)
   parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
@@ -110,7 +110,7 @@
 #MARK: HP
 - type: entity
   id: Cartridge9x19mmParabellumHP
-  name: cartridge (9x19mmParabellum hollow-point)
+  name: cartridge (9x19mm parabellum hollow-point)
   parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
@@ -126,7 +126,7 @@
 #MARK: RIP
 - type: entity
   id: Cartridge9x19mmParabellumRIP
-  name: cartridge (9x19mmParabellum RIP)
+  name: cartridge (9x19mm parabellum RIP)
   parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo

@@ -1,6 +1,6 @@
 #MARK: Base
 - type: entity
-  name: HK MP5A2 (9x19mmParabellum)
+  name: HK MP5A2 (9x19mm parabellum)
   parent: BaseWeaponRifle
   id: WeaponSubMachineGunMP5A2Base
   abstract: true

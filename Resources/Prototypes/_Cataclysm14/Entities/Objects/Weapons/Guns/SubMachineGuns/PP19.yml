@@ -1,6 +1,6 @@
 #MARK: Base
 - type: entity
-  name: Izhmash PP-19-01 "Vityaz" (9x19mmParabellum)
+  name: Izhmash PP-19-01 "Vityaz" (9x19mm parabellum)
   parent: BaseWeaponRifle
   id: WeaponSubMachineGunPP19VityazBase
   abstract: true

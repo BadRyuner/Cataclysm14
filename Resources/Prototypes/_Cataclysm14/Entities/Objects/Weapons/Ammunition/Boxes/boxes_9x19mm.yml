@@ -3,7 +3,7 @@
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
   id: BaseAmmoBox9x19mmParabellum
-  name: ammunition box (9x19mmParabellum FMJ)
+  name: ammunition box (9x19mm parabellum FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -18,7 +18,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/9x19mmParabellum.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/9x19mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -38,7 +38,7 @@
 - type: entity
   parent: BaseAmmoBox9x19mmParabellum
   id: AmmoBox9x19mmParabellumFMJ
-  name: ammunition box (9x19mmParabellum FMJ)
+  name: ammunition box (9x19mm parabellum FMJ)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmParabellumFMJ
@@ -53,7 +53,7 @@
 - type: entity
   parent: BaseAmmoBox9x19mmParabellum
   id: AmmoBox9x19mmParabellum+P
-  name: ammunition box (9x19mmParabellum +P)
+  name: ammunition box (9x19mm parabellum +P)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmParabellum+P
@@ -68,7 +68,7 @@
 - type: entity
   parent: BaseAmmoBox9x19mmParabellum
   id: AmmoBox9x19mmParabellumTracerGreen
-  name: ammunition box (9x19mmParabellum green tracer)
+  name: ammunition box (9x19mm parabellum green tracer)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmParabellumTracerGreen
@@ -83,7 +83,7 @@
 - type: entity
   parent: BaseAmmoBox9x19mmParabellum
   id: AmmoBox9x19mmParabellumAP6,3
-  name: ammunition box (9x19mmParabellum AP6,3)
+  name: ammunition box (9x19mm parabellum AP6,3)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmParabellumAP6,3
@@ -98,7 +98,7 @@
 - type: entity
   parent: BaseAmmoBox9x19mmParabellum
   id: AmmoBox9x19mmParabellumIncendiary
-  name: ammunition box (9x19mmParabellum incendiary)
+  name: ammunition box (9x19mm parabellum incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmParabellumIncendiary
@@ -114,7 +114,7 @@
 - type: entity
   id: AmmoBox9x19mmParabellumDepletedUranium
   parent: BaseAmmoBox9x19mmParabellum
-  name: ammunition box (9x19mmParabellum depleted uranium)
+  name: ammunition box (9x19mm parabellum depleted uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmParabellumDepletedUranium
@@ -130,7 +130,7 @@
 - type: entity
   parent: BaseAmmoBox9x19mmParabellum
   id: AmmoBox9x19mmParabellumRubber
-  name: ammunition box (9x19mmParabellum rubber)
+  name: ammunition box (9x19mm parabellum rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmParabellumRubber
@@ -146,7 +146,7 @@
 - type: entity
   parent: BaseAmmoBox9x19mmParabellum
   id: AmmoBox9x19mmParabellumHP
-  name: ammunition box (9x19mmParabellum hollow-point)
+  name: ammunition box (9x19mm parabellum hollow-point)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmParabellumHP
@@ -162,7 +162,7 @@
 - type: entity
   parent: BaseAmmoBox9x19mmParabellum
   id: AmmoBox9x19mmParabellumRIP
-  name: ammunition box (9x19mmParabellum RIP)
+  name: ammunition box (9x19mm parabellum RIP)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmParabellumRIP
@@ -178,7 +178,7 @@
 - type: entity
   parent: BaseAmmoBox9x19mmParabellum
   id: AmmoBox9x19mmParabellumBigFMJ
-  name: big ammunition box (9x19mmParabellum FMJ)
+  name: big ammunition box (9x19mm parabellum FMJ)
   suffix: Big
   components:
   - type: Item
