@@ -82,10 +82,6 @@ enabled = false
 [movement]
 mob_pushing = true
 
-[control]
-storage_limit = 10
-storage_window_title = true
-
 [hub]
 tags = "lang:en,region:eu_w,rp:med"
 
