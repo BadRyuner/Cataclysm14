@@ -18,7 +18,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/9x19mmParabellum.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/9x19mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3

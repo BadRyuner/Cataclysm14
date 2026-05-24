@@ -22,7 +22,7 @@
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.30,0.30
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/9x19mmParabellum_pistol_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/9x19mm_pistol_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -55,7 +55,7 @@
     tags:
       - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_10rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_10rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -94,7 +94,7 @@
     tags:
       - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_17rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_17rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -142,7 +142,7 @@
     tags:
       - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_24rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_24rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -190,7 +190,7 @@
     tags:
       - Magazine9x19mmParabellumGlockCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_glock_33rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_glock_33rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -239,7 +239,7 @@
       - Magazine9x19mmParabellumMP5Compatible
   - type: Sprite
     scale: 0.25,0.25
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_MP5_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_MP5_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -288,7 +288,7 @@
       - Magazine9x19mmParabellumPP19VityazCompatible
   - type: Sprite
     scale: 0.25,0.25
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mmParabellum/magazine_9x19mmParabellum_PP19_vityaz_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/magazine_9x19mm_PP19_vityaz_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

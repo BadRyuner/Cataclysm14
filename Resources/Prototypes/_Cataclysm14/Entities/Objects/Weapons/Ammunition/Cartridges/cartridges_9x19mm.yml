@@ -14,7 +14,7 @@
     proto: Bullet9x19mmParabellumFMJ
   - type: Sprite
     scale: 0.3,0.3
-    sprite: _Cataclysm14/Objects/Weapons/Casings/9x19mmParabellum_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/9x19mm_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
