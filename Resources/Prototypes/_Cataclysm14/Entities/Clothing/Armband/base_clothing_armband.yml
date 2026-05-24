@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: [Clothing, RecyclableItemClothSmall] # Frontier: added RecyclableItemClothSmall
-  id: ClothingArmArmbandBase
+  id: BaseClothingArmArmband
   components:
   - type: Item
     size: Small
