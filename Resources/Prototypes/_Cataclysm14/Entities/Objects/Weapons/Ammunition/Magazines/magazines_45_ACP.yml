@@ -102,11 +102,11 @@
   - type: BallisticAmmoProvider
     proto: null
 
-#MARK: FMJ
-- type: entity
-  id: Magazine45_AcpUMP45_30rdFMJ
-  suffix: FMJ
-  parent: BaseMagazine45_AcpUMP45_30rd
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge45_AcpFMJ
+# #MARK: FMJ
+# - type: entity
+#   id: Magazine45_AcpUMP45_30rdFMJ
+#   suffix: FMJ
+#   parent: BaseMagazine45_AcpUMP45_30rd
+#   components:
+#   - type: BallisticAmmoProvider
+#     proto: Cartridge45_AcpFMJ
