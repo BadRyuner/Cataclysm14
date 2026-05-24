@@ -1,6 +1,6 @@
 #MARK: FMJ
 - type: entity
-  id: Bullet45_ACPFMJ
+  id: Bullet45_AcpFMJ
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -13,7 +13,7 @@
 
 #MARK: Rubber
 - type: entity
-  id: Bullet45_ACPRubber
+  id: Bullet45_AcpRubber
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -24,7 +24,7 @@
 
 #MARK: Incendiary
 - type: entity
-  id: Bullet45_ACPIncendiary
+  id: Bullet45_AcpIncendiary
   parent: BaseBulletIncendiary
   categories: [ HideSpawnMenu ]
   components:
@@ -37,7 +37,7 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Bullet45_ACPDepletedUranium
+  id: Bullet45_AcpDepletedUranium
   parent: BaseBulletUranium
   categories: [ HideSpawnMenu ]
   components:
@@ -51,7 +51,7 @@
 
 #MARK: HP
 - type: entity
-  id: Bullet45_ACPHP
+  id: Bullet45_AcpHP
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -64,7 +64,7 @@
 
 #MARK: RIP
 - type: entity
-  id: Bullet45_ACPRIP
+  id: Bullet45_AcpRIP
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -78,7 +78,7 @@
 #MARK: Deprecated >
 
 - type: entity
-  id: Bullet45_ACPPractice
+  id: Bullet45_AcpPractice
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:
@@ -89,7 +89,7 @@
 
 # Upstream
 - type: entity
-  id: Bullet45_ACPEmp
+  id: Bullet45_AcpEmp
   parent: BaseBulletEmp
   categories: [ HideSpawnMenu ]
   components:
@@ -99,7 +99,7 @@
         Shock: 2
 
 - type: entity
-  id: Bullet45_ACPPlasteelAP
+  id: Bullet45_AcpPlasteelAP
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:

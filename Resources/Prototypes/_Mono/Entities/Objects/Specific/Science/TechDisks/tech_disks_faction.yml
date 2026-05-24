@@ -2,25 +2,6 @@
 
 - type: entity
   parent: TechDiskBase
-  id: TechDiskSynthalloy
-  name: pre-fracture synthalloy faction tech disk
-  description: A disk capable of adding early synthalloy production processes to a server's recipes. Less efficient than modern synthalloy methods.
-  components:
-  - type: Sprite
-    layers:
-    - state: icon
-      map: ["enum.DamageStateVisualLayers.Base"]
-      color: "#d4d4d4"
-    - state: label
-    - state: protect
-    - state: dna
-      shader: unshaded
-  - type: TechnologyDisk
-    recipes:
-    - SynthalloyProductionTechDisk
-
-- type: entity
-  parent: TechDiskBase
   id: TechDiskEnergyWeapons
   name: pre-fracture energy weapon faction tech disk
   description: A disk capable of adding energy weapons and shields to a server's recipes, for faction techfabs.
@@ -59,9 +40,9 @@
   - type: TechnologyDisk
     recipes:
     - WeaponRifleAnnieTSF
-    - Magazine7.62x39mmFMJ
-    - Magazine7.62x39mmEmpty
-    - AmmoBox7.62x39mmFMJ
+    - Magazine762x39mmFMJ
+    - Magazine762x39mmEmpty
+    - AmmoBox762x39mmFMJ
 
 - type: entity
   parent: TechDiskBase
@@ -141,9 +122,9 @@
   - type: TechnologyDisk
     recipes:
     - WeaponRifleXlr556Tsf
-    - Magazine5.56x45mmFMJ
-    - Magazine5.56x45mmEmpty
-    - AmmoBox5.56x45mmFMJ
+    - Magazine556x45mmFMJ
+    - Magazine556x45mmEmpty
+    - AmmoBox556x45mmFMJ
 
 # universal stuff
 
@@ -277,9 +258,9 @@
   - type: TechnologyDisk
     recipes:
     - WeaponRifleM90Rogue
-    - Magazine7.62x51mmFMJ
-    - Magazine7.62x51mmEmpty
-    - AmmoBox7.62x51mmFMJ
+    - Magazine762x51mmFMJ
+    - Magazine762x51mmEmpty
+    - AmmoBox762x51mmFMJ
 
 - type: entity
   parent: TechDiskBase
@@ -321,7 +302,7 @@
   - type: TechnologyDisk
     recipes:
     - WeaponSniperHristovRogue
-    - AmmoBox14.5x114mmBig
+    - AmmoBox145x114mmBig
 
 - type: entity
   parent: TechDiskBase
@@ -340,6 +321,6 @@
   - type: TechnologyDisk
     recipes:
     - WeaponSubMachineGunMla73Rogue
-    - Magazine6.35x40mmCaseless
-    - AmmoBox6.35x40mmCaseless
-    - MagazineAsmgtUniversal6.35x40mm
+    - Magazine635x40mmCaseless
+    - AmmoBox635x40mmCaseless
+    - MagazineAsmgtUniversal635x40mm

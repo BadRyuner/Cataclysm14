@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: HK MP5A2 (9x19mm)
+  name: HK MP5A2 (9x19mm parabellum)
   parent: BaseWeaponRifle
   id: WeaponSubMachineGunMP5A2Base
   abstract: true
-  description: A timeless classic used by forces throughout the world, the Heckler and Koch MachinePistol 5, Chambered in 9x19mm Parabellum.
+  description: A timeless classic used by forces throughout the world, the Heckler and Koch MachinePistol 5, Chambered in 9x19mmParabellum Parabellum.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5A2_64x32.rsi
@@ -59,7 +59,7 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine9x19mmMP5Compatible
+            - Magazine9x19mmParabellumMP5Compatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -67,7 +67,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridges9x19mm
+            - Cartridge9x19mmParabellum
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -92,7 +92,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmMP5_30rdEmpty
+        startingItem: Magazine9x19mmParabellumMP5_30rdEmpty
 
 #MARK: MP5 30rd FMJ
 - type: entity
@@ -104,7 +104,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmMP5_30rdFMJ
+        startingItem: Magazine9x19mmParabellumMP5_30rdFMJ
 
 #MARK: MP5 30rd Tracer Red
 - type: entity
@@ -116,4 +116,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmMP5_30rdTracerGreen
+        startingItem: Magazine9x19mmParabellumMP5_30rdTracerGreen

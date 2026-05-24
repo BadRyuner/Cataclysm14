@@ -35,4 +35,4 @@
       storagebase: !type:AllSelector
         children:
         - !type:NestedSelector
-          tableId: LootTableLoadoutWeaponGunFN5.7
+          tableId: LootTableLoadoutWeaponGunFN5,7

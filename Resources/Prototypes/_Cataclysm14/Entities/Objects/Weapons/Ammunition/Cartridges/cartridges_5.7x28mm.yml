@@ -1,7 +1,6 @@
-#MARK: Base
 - type: entity
-  id: BaseCartridge5.7x28mm
-  name: cartridge (5.7x28mm FMJ)
+  id: BaseCartridge5,7x28mm
+  name: cartridge (5,7x28mm FMJ)
   description: A small PDW cartridge. More internal damage than 4.6, but less armor-piercing capabilities. Formerly infamous for its high cost.
   parent: BaseCartridge
   abstract: true
@@ -9,12 +8,12 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge5.7x28mm
+      - Cartridge5,7x28mm
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mmFMJ
+    proto: Bullet5,7x28mmFMJ
   - type: Sprite
     scale: 0.4, 0.2
-    sprite: _Cataclysm14/Objects/Weapons/Casings/5.7x28mm_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/5,7x28mm_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -23,23 +22,36 @@
   - type: StaticPrice
     price: 1
 
-#MARK: FMJ
 - type: entity
-  id: Cartridge5.7x28mmFMJ
-  name: cartridge (5.7x28mm FMJ)
-  parent: BaseCartridge5.7x28mm
+  id: Cartridge5,7x28mmFMJ
+  name: cartridge (5,7x28mm FMJ)
+  parent: BaseCartridge5,7x28mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mmFMJ
+    proto: Bullet5,7x28mmFMJ
 
-#MARK: Incendiary
 - type: entity
-  id: Cartridge5.7x28mmIncendiary
-  name: cartridge (5.7x28mm incendiary)
-  parent: BaseCartridge5.7x28mm
+  id: Cartridge5,7x28mmPractice
+  name: cartridge (5,7x28mm practice)
+  parent: BaseCartridge5,7x28mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mmIncendiary
+    proto: Bullet5,7x28mmPractice
+  -  type: Sprite
+     layers:
+       - state: base
+         map: [ "enum.AmmoVisualLayers.Base" ]
+       - state: tip
+         map: [ "enum.AmmoVisualLayers.Tip" ]
+         color: "#dbdbdb"
+
+- type: entity
+  id: Cartridge5,7x28mmIncendiary
+  name: cartridge (5,7x28mm incendiary)
+  parent: BaseCartridge5,7x28mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5,7x28mmIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -48,14 +60,13 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#ff6e52"
 
-#MARK: Depleted Uranium
 - type: entity
-  id: Cartridge5.7x28mmDepletedUranium
-  name: cartridge (5.7x28mm depleted uranium)
-  parent: BaseCartridge5.7x28mm
+  id: Cartridge5,7x28mmDepletedUranium
+  name: cartridge (5,7x28mm depleted uranium)
+  parent: BaseCartridge5,7x28mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mmDepletedUranium
+    proto: Bullet5,7x28mmDepletedUranium
   - type: Sprite
     layers:
       - state: base
@@ -64,14 +75,14 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#65fe08"
 
-#MARK: Rubber
+# Upstream
 - type: entity
-  id: Cartridge5.7x28mmRubber
-  name: cartridge (5.7x28mm rubber)
-  parent: BaseCartridge5.7x28mm
+  id: Cartridge5,7x28mmRubber
+  name: cartridge (5,7x28mm rubber)
+  parent: BaseCartridge5,7x28mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mmRubber
+    proto: Bullet5,7x28mmRubber
   - type: Sprite
     layers:
       - state: base
@@ -80,14 +91,28 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#43c4f7"
 
-#MARK: HP
+# Frontier
 - type: entity
-  id: Cartridge5.7x28mmHP
-  name: cartridge (5.7x28mm hollow-point)
-  parent: BaseCartridge5.7x28mm
+  id: Cartridge5,7x28mmEmp
+  name: cartridge (5,7x28mm emp)
+  parent: BaseCartridge5,7x28mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mmHP
+    proto: Bullet5,7x28mmEmp
+  - type: EmpDescription
+    range: 0.3
+    energyConsumption: 2700000
+    disableDuration: 10
+
+# Mono AP syst
+#anti-flesh:
+- type: entity
+  id: Cartridge5,7x28mmHP
+  name: cartridge (5,7x28mm hollow-point)
+  parent: BaseCartridge5,7x28mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet5,7x28mmHP
   - type: Sprite
     layers:
       - state: base
@@ -96,14 +121,13 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#90EE90"
 
-#MARK: RIP
 - type: entity
-  id: Cartridge5.7x28mmRIP
-  name: cartridge (5.7x28mm RIP)
-  parent: BaseCartridge5.7x28mm
+  id: Cartridge5,7x28mmRIP
+  name: cartridge (5,7x28mm RIP)
+  parent: BaseCartridge5,7x28mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mmRIP
+    proto: Bullet5,7x28mmRIP
   - type: Sprite
     layers:
       - state: base
@@ -112,17 +136,15 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#C04000"
 
-#MARK: Deprecated >
-
 #armor-piercing:
 
 - type: entity
-  id: Cartridge5.7x28mmPlasteelAP
-  name: cartridge (5.7x28mm AP)
-  parent: BaseCartridge5.7x28mm
+  id: Cartridge5,7x28mmPlasteelAP
+  name: cartridge (5,7x28mm AP)
+  parent: BaseCartridge5,7x28mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mmPlasteelAP
+    proto: Bullet5,7x28mmPlasteelAP
   - type: Sprite
     layers:
       - state: base
@@ -130,31 +152,3 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#888888"
-
-# Frontier
-- type: entity
-  id: Cartridge5.7x28mmEmp
-  name: cartridge (5.7x28mm emp)
-  parent: BaseCartridge5.7x28mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet5.7x28mmEmp
-  - type: EmpDescription
-    range: 0.3
-    energyConsumption: 2700000
-    disableDuration: 10
-
-- type: entity
-  id: Cartridge5.7x28mmPractice
-  name: cartridge (5.7x28mm practice)
-  parent: BaseCartridge5.7x28mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet5.7x28mmPractice
-  -  type: Sprite
-     layers:
-       - state: base
-         map: [ "enum.AmmoVisualLayers.Base" ]
-       - state: tip
-         map: [ "enum.AmmoVisualLayers.Tip" ]
-         color: "#dbdbdb"

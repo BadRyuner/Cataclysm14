@@ -1,6 +1,6 @@
 - type: entity
-  id: Pellet12_gaugeSlug
-  name: Pellet12_gauge (12 gauge slug)
+  id: Pellet12_GaugeSlug
+  name: Pellet12_Gauge (12 gauge slug)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
@@ -15,7 +15,7 @@
     armorPenetration: -0.2
 
 - type: entity
-  id: Pellet12_gaugeBeanbag
+  id: Pellet12_GaugeBeanbag
   name: beanbag (12 gauge)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
@@ -32,8 +32,8 @@
     damage: 30 # 4 hits to stun
 
 - type: entity
-  id: Pellet12_gauge
-  name: Pellet12_gauge (12 gauge)
+  id: Pellet12_Gauge
+  name: Pellet12_Gauge (12 gauge)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
@@ -47,18 +47,18 @@
     armorPenetration: -0.5
 
 - type: entity
-  id: Pellet12_gaugeSpread
+  id: Pellet12_GaugeSpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet12_gauge
+  parent: Pellet12_Gauge
   components:
   - type: ProjectileSpread
-    proto: Pellet12_gauge
+    proto: Pellet12_Gauge
     count: 6
     spread: 15
 
 - type: entity
-  id: Pellet12_gaugeIncendiary
-  name: Pellet12_gauge (12 gauge incendiary)
+  id: Pellet12_GaugeIncendiary
+  name: Pellet12_Gauge (12 gauge incendiary)
   categories: [ HideSpawnMenu ]
   parent: BaseBulletIncendiary
   components:
@@ -75,18 +75,18 @@
     ignited: true
 
 - type: entity
-  id: Pellet12_gaugeIncendiarySpread
+  id: Pellet12_GaugeIncendiarySpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet12_gaugeIncendiary
+  parent: Pellet12_GaugeIncendiary
   components:
   - type: ProjectileSpread
-    proto: Pellet12_gaugeIncendiary
+    proto: Pellet12_GaugeIncendiary
     count: 6
     spread: 15
 
 - type: entity
-  id: Pellet12_gaugePractice
-  name: Pellet12_gauge (12 gauge practice)
+  id: Pellet12_GaugePractice
+  name: Pellet12_Gauge (12 gauge practice)
   categories: [ HideSpawnMenu ]
   parent: BaseBulletPractice
   components:
@@ -99,18 +99,18 @@
         Blunt: 1
 
 - type: entity
-  id: Pellet12_gaugePracticeSpread
+  id: Pellet12_GaugePracticeSpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet12_gaugePractice
+  parent: Pellet12_GaugePractice
   components:
   - type: ProjectileSpread
-    proto: Pellet12_gaugePractice
+    proto: Pellet12_GaugePractice
     count: 6
     spread: 15
 
 - type: entity
-  id: Pellet12_gaugeImprovised
-  name: improvised Pellet12_gauge
+  id: Pellet12_GaugeImprovised
+  name: improvised Pellet12_Gauge
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
@@ -125,18 +125,18 @@
     armorPenetration: -0.2
 
 - type: entity
-  id: Pellet12_gaugeImprovisedSpread
+  id: Pellet12_GaugeImprovisedSpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet12_gaugeImprovised
+  parent: Pellet12_GaugeImprovised
   components:
   - type: ProjectileSpread
-    proto: Pellet12_gaugeImprovised
+    proto: Pellet12_GaugeImprovised
     count: 10
     spread: 45
 
 - type: entity
-  id: Pellet12_gaugeTranquilizer
-  name: Pellet12_gauge (12 gauge tranquilizer)
+  id: Pellet12_GaugeTranquilizer
+  name: Pellet12_Gauge (12 gauge tranquilizer)
   categories: [ HideSpawnMenu ]
   parent: BaseBulletPractice
   components:
@@ -162,8 +162,8 @@
     solution: ammo
 
 - type: entity
-  id: Pellet12_gaugeFlare
-  name: Pellet12_gauge (12 gauge flare)
+  id: Pellet12_GaugeFlare
+  name: Pellet12_Gauge (12 gauge flare)
   categories: [ HideSpawnMenu ]
   components:
   - type: Physics
@@ -209,8 +209,8 @@
         Heat: 5
 
 - type: entity
-  id: Pellet12_gaugeUranium
-  name: Pellet12_gauge (12 gauge depleted uranium)
+  id: Pellet12_GaugeUranium
+  name: Pellet12_Gauge (12 gauge depleted uranium)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
@@ -225,18 +225,18 @@
     armorPenetration: -0.1
 
 - type: entity
-  id: Pellet12_gaugeUraniumSpread
+  id: Pellet12_GaugeUraniumSpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet12_gaugeUranium
+  parent: Pellet12_GaugeUranium
   components:
   - type: ProjectileSpread
-    proto: Pellet12_gaugeUranium
+    proto: Pellet12_GaugeUranium
     count: 5
     spread: 6
 
 - type: entity
-  id: Pellet12_gaugeGrapeshot #tally fucking ho
-  name: grapeshot Pellet12_gauge
+  id: Pellet12_GaugeGrapeshot #tally fucking ho
+  name: grapeshot Pellet12_Gauge
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
@@ -253,17 +253,17 @@
         Structural: 5
 
 - type: entity
-  id: Pellet12_gaugeGrapeshotSpread
+  id: Pellet12_GaugeGrapeshotSpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet12_gaugeGrapeshot
+  parent: Pellet12_GaugeGrapeshot
   components:
   - type: ProjectileSpread
-    proto: Pellet12_gaugeGrapeshot
+    proto: Pellet12_GaugeGrapeshot
     count: 5
     spread: 40
 
 - type: entity
-  id: Pellet12_gaugeGlass
+  id: Pellet12_GaugeGlass
   name: glass shard
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -284,20 +284,20 @@
     armorPenetration: -0.2
 
 - type: entity
-  id: Pellet12_gaugeGlassSpread
-  parent: Pellet12_gaugeGlass
+  id: Pellet12_GaugeGlassSpread
+  parent: Pellet12_GaugeGlass
   categories: [ HideSpawnMenu ]
   components:
   - type: ProjectileSpread
-    proto: Pellet12_gaugeGlass
+    proto: Pellet12_GaugeGlass
     count: 5
     spread: 10
 
 #Mono AP system
 #anti-flesh ammo
 - type: entity
-  id: Pellet12_gaugeOOBuckshot
-  name: Pellet12_gauge (12 gauge OO magnum buckshot)
+  id: Pellet12_GaugeOOBuckshot
+  name: Pellet12_Gauge (12 gauge OO magnum buckshot)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -311,18 +311,18 @@
     armorPenetration: -0.2
 
 - type: entity
-  id: Pellet12_gaugeOOBuckshotSpread
-  parent: Pellet12_gaugeOOBuckshot
+  id: Pellet12_GaugeOOBuckshotSpread
+  parent: Pellet12_GaugeOOBuckshot
   categories: [ HideSpawnMenu ]
   components:
   - type: ProjectileSpread
-    proto: Pellet12_gaugeOOBuckshot
+    proto: Pellet12_GaugeOOBuckshot
     count: 3
     spread: 6
 
 - type: entity
-  id: Pellet12_gaugeSlugRIP
-  name: Pellet12_gauge (12 gauge RIP)
+  id: Pellet12_GaugeSlugRIP
+  name: Pellet12_Gauge (12 gauge RIP)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
@@ -338,8 +338,8 @@
 
 #armor-piercing ammo
 - type: entity
-  id: Pellet12_gaugeSlugAP
-  name: Pellet12_gauge (12 gauge armor-piercing slug)
+  id: Pellet12_GaugeSlugAP
+  name: Pellet12_Gauge (12 gauge armor-piercing slug)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
@@ -357,8 +357,8 @@
     length: 3
 
 - type: entity
-  id: Pellet12_gaugeFlechette
-  name: Pellet12_gauge (12 gauge flechette)
+  id: Pellet12_GaugeFlechette
+  name: Pellet12_Gauge (12 gauge flechette)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -375,11 +375,11 @@
     length: 3
 
 - type: entity
-  id: Pellet12_gaugeFlechetteSpread
-  parent: Pellet12_gaugeFlechette
+  id: Pellet12_GaugeFlechetteSpread
+  parent: Pellet12_GaugeFlechette
   categories: [ HideSpawnMenu ]
   components:
   - type: ProjectileSpread
-    proto: Pellet12_gaugeFlechette
+    proto: Pellet12_GaugeFlechette
     count: 6
     spread: 12

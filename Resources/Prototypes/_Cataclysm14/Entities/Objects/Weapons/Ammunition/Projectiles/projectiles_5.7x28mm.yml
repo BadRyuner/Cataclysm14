@@ -1,7 +1,6 @@
-#MARK: FMJ
 - type: entity
-  id: Bullet5.7x28mmFMJ
-  name: bullet (5.7x28mm FMJ)
+  id: Bullet5,7x28mmFMJ
+  name: bullet (5,7x28mm FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -11,10 +10,20 @@
         Piercing: 20
     armorPenetration: 0.075
 
-#MARK: Rubber
 - type: entity
-  id: Bullet5.7x28mmRubber
-  name: bullet (5.7x28mm rubber)
+  id: Bullet5,7x28mmPractice
+  name: bullet (5,7x28mm practice)
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+
+- type: entity
+  id: Bullet5,7x28mmRubber
+  name: bullet (5,7x28mm rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -23,11 +32,10 @@
       types:
         Blunt: 3
 
-#MARK: Incendiary
 - type: entity
-  id: Bullet5.7x28mmIncendiary
+  id: Bullet5,7x28mmIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (5.7x28mm incendiary)
+  name: bullet (5,7x28mm incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -36,11 +44,10 @@
         Blunt: 3
         Heat: 17
 
-#MARK: Depleted Uranium
 - type: entity
-  id: Bullet5.7x28mmDepletedUranium
+  id: Bullet5,7x28mmDepletedUranium
   parent: BaseBulletUranium
-  name: bullet (5.7x28mm depleted uranium)
+  name: bullet (5,7x28mm depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -49,11 +56,25 @@
         Radiation: 8
         Piercing: 12
 
-#MARK: HP
+# Upstream
 - type: entity
-  id: Bullet5.7x28mmHP
+  id: Bullet5,7x28mmEmp
+  name: bullet (5,7x28mm emp)
+  parent: BaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 0
+
+# Mono AP syst
+# + 0.05 base AP
+#anti-flesh:
+- type: entity
+  id: Bullet5,7x28mmHP
   parent: BaseBullet
-  name: bullet (5.7x28mm hollow-point)
+  name: bullet (5,7x28mm hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -63,11 +84,10 @@
         Piercing: 26
     armorPenetration: -0.55
 
-#MARK: RIP
 - type: entity
-  id: Bullet5.7x28mmRIP
+  id: Bullet5,7x28mmRIP
   parent: BaseBullet
-  name: bullet (5.7x28mm RIP)
+  name: bullet (5,7x28mm RIP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -77,24 +97,12 @@
         Piercing: 32
     armorPenetration: -0.9
 
-#MARK: Deprecated >
-- type: entity
-  id: Bullet5.7x28mmPractice
-  name: bullet (5.7x28mm practice)
-  parent: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 2
-
 #armor-piercing:
 
 - type: entity
-  id: Bullet5.7x28mmPlasteelAP
+  id: Bullet5,7x28mmPlasteelAP
   parent: BaseBullet
-  name: bullet (5.7x28mm AP)
+  name: bullet (5,7x28mm AP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -103,15 +111,3 @@
         Piercing: 7
         Structural: 40
     armorPenetration: 0.7
-
-# Upstream
-- type: entity
-  id: Bullet5.7x28mmEmp
-  name: bullet (5.7x28mm emp)
-  parent: BaseBulletEmp
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Shock: 0

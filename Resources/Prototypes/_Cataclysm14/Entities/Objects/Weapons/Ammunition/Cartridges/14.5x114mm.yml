@@ -1,18 +1,18 @@
 - type: entity
   parent: BaseCartridge
-  id: Cartridge14.5x114mm
-  name: cartridge (14.5x114mm)
+  id: Cartridge14,5x114mm
+  name: cartridge (14,5x114mm)
   description: Even larger anti-material round, capable of punching through any armor and barriers without difficulty.
   components:
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge14.5x114mm
+    - Cartridge14,5x114mm
   - type: CartridgeAmmo
-    proto: Bullet14.5x114mm
+    proto: Bullet14,5x114mm
   - type: Sprite
     scale: 0.4,0.4
-    sprite: _Cataclysm14/Objects/Weapons/Casings/14.5x114mm_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/14,5x114mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
