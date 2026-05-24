@@ -115,18 +115,18 @@
         rolls: !type:RangeNumberSelector
           range: 0,2
 
-#MARK: Loadout FN 5.7
+#MARK: Loadout FN 5,7
 - type: entityTable
-  id: LootTableLoadoutWeaponGunFN5.7
+  id: LootTableLoadoutWeaponGunFN5,7
   table: !type:AllSelector
     children:
       - !type:GroupSelector
           children:
-          - id: WeaponPistolFN5.7Filled20rdEmpty
-          - id: WeaponPistolFN5.7Filled20rdFMJ
-      - id: Magazine5.7x28mmFN5.7_20rdFMJ
+          - id: WeaponPistolFN5,7Filled20rdEmpty
+          - id: WeaponPistolFN5,7Filled20rdFMJ
+      - id: Magazine5,7x28mmFN5,7_20rdFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
-      - id: AmmoBox5.7x28mmFMJ
+      - id: AmmoBox5,7x28mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
