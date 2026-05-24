@@ -1,5 +1,5 @@
 - type: entity
-  id: Bullet45_MagnumFMJ
+  id: Bullet45MagnumFMJ
   name: bullet (.45 magnum)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -11,7 +11,7 @@
     armorPenetration: 0.1
 
 - type: entity
-  id: Bullet45_MagnumPractice
+  id: Bullet45MagnumPractice
   name: bullet (.45 magnum practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
@@ -22,7 +22,7 @@
         Blunt: 1
 
 - type: entity
-  id: Bullet45_MagnumRubber
+  id: Bullet45MagnumRubber
   name: bullet (.45 magnum rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
@@ -35,7 +35,7 @@
     damage: 35 # 3 hits to stun cuz revolver
 
 - type: entity
-  id: Bullet45_MagnumIncendiary
+  id: Bullet45MagnumIncendiary
   parent: BaseBulletIncendiary
   name: bullet (.45 magnum incendiary)
   categories: [ HideSpawnMenu ]
@@ -47,7 +47,7 @@
         Heat: 32
 
 - type: entity
-  id: Bullet45_MagnumAP
+  id: Bullet45MagnumAP
   name: bullet (.45 magnum armor-piercing)
   parent: BaseBulletAP
   categories: [ HideSpawnMenu ]
@@ -59,7 +59,7 @@
     ignoreResistances: true
 
 - type: entity
-  id: Bullet45_MagnumDepletedUranium
+  id: Bullet45MagnumDepletedUranium
   name: bullet (.45 magnum depleted uranium)
   parent: BaseBulletUranium
   categories: [ HideSpawnMenu ]
@@ -74,7 +74,7 @@
 # + 0.05 base AP
 #anti-flesh:
 - type: entity
-  id: Bullet45_MagnumHP
+  id: Bullet45MagnumHP
   parent: BaseBullet
   name: bullet (.45 magnum hollow-point)
   categories: [ HideSpawnMenu ]
@@ -87,7 +87,7 @@
     armorPenetration: -0.5
 
 - type: entity
-  id: Bullet45_MagnumRIP
+  id: Bullet45MagnumRIP
   parent: BaseBullet
   name: bullet (.45 magnum RIP)
   categories: [ HideSpawnMenu ]
@@ -101,7 +101,7 @@
 
 #armor-piercing:
 - type: entity
-  id: Bullet45_MagnumPlasteelAP
+  id: Bullet45MagnumPlasteelAP
   parent: BaseBullet
   name: bullet (.45 magnum AP)
   categories: [ HideSpawnMenu ]

@@ -1,5 +1,5 @@
 - type: entity
-  id: BaseCartridge45_Magnum
+  id: BaseCartridge45Magnum
   name: cartridge (.45 magnum)
   parent: BaseCartridge
   description: Heavy magnum round, usually only seen in magnums or manually-cycled rifles.
@@ -8,12 +8,12 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge45_Magnum
+      - Cartridge45Magnum
   - type: CartridgeAmmo
-    proto: Bullet45_MagnumFMJ
+    proto: Bullet45MagnumFMJ
   - type: Sprite
     scale: 0.25,0.25
-    sprite: _Cataclysm14/Objects/Weapons/Casings/45_Magnum_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/45Magnum_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -23,20 +23,20 @@
     price: 1
 
 - type: entity
-  id: Cartridge45_MagnumFMJ
+  id: Cartridge45MagnumFMJ
   name: cartridge (.45 magnum)
-  parent: BaseCartridge45_Magnum
+  parent: BaseCartridge45Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_MagnumFMJ
+    proto: Bullet45MagnumFMJ
 
 - type: entity
-  id: Cartridge45_MagnumPractice
+  id: Cartridge45MagnumPractice
   name: cartridge (.45 magnum practice)
-  parent: BaseCartridge45_Magnum
+  parent: BaseCartridge45Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_MagnumPractice
+    proto: Bullet45MagnumPractice
   - type: Sprite
     layers:
       - state: base
@@ -46,12 +46,12 @@
         color: "#dbdbdb"
 
 - type: entity
-  id: Cartridge45_MagnumIncendiary
+  id: Cartridge45MagnumIncendiary
   name: cartridge (.45 magnum incendiary)
-  parent: BaseCartridge45_Magnum
+  parent: BaseCartridge45Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_MagnumIncendiary
+    proto: Bullet45MagnumIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -61,12 +61,12 @@
         color: "#ff6e52"
 
 - type: entity
-  id: Cartridge45_MagnumAP
+  id: Cartridge45MagnumAP
   name: cartridge (.45 magnum armor-piercing)
-  parent: BaseCartridge45_Magnum
+  parent: BaseCartridge45Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_MagnumAP
+    proto: Bullet45MagnumAP
   - type: Sprite
     layers:
       - state: base
@@ -76,12 +76,12 @@
         color: "#0a0a0a"
 
 - type: entity
-  id: Cartridge45_MagnumDepletedUranium
+  id: Cartridge45MagnumDepletedUranium
   name: cartridge (.45 magnum depleted uranium)
-  parent: BaseCartridge45_Magnum
+  parent: BaseCartridge45Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_MagnumDepletedUranium
+    proto: Bullet45MagnumDepletedUranium
   - type: Sprite
     layers:
       - state: base
@@ -91,12 +91,12 @@
         color: "#65fe08"
 
 - type: entity
-  id: Cartridge45_MagnumRubber
+  id: Cartridge45MagnumRubber
   name: cartridge (.45 magnum rubber)
-  parent: BaseCartridge45_Magnum
+  parent: BaseCartridge45Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_MagnumRubber
+    proto: Bullet45MagnumRubber
   - type: Sprite
     layers:
       - state: base
@@ -108,12 +108,12 @@
 # Mono AP syst
 #anti-flesh:
 - type: entity
-  id: Cartridge45_MagnumHP
+  id: Cartridge45MagnumHP
   name: cartridge (.45 magnum hollow-point)
-  parent: BaseCartridge45_Magnum
+  parent: BaseCartridge45Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_MagnumHP
+    proto: Bullet45MagnumHP
   - type: Sprite
     layers:
       - state: base
@@ -123,12 +123,12 @@
         color: "#90EE90"
 
 - type: entity
-  id: Cartridge45_MagnumRIP
+  id: Cartridge45MagnumRIP
   name: cartridge (.45 magnum RIP)
-  parent: BaseCartridge45_Magnum
+  parent: BaseCartridge45Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_MagnumRIP
+    proto: Bullet45MagnumRIP
   - type: Sprite
     layers:
       - state: base
@@ -140,12 +140,12 @@
 #armor-piercing:
 
 - type: entity
-  id: Cartridge45_MagnumPlasteelAP
+  id: Cartridge45MagnumPlasteelAP
   name: cartridge (.45 magnum AP)
-  parent: BaseCartridge45_Magnum
+  parent: BaseCartridge45Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_MagnumPlasteelAP
+    proto: Bullet45MagnumPlasteelAP
   - type: Sprite
     layers:
       - state: base

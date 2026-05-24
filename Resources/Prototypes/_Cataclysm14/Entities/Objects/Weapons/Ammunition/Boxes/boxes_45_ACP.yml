@@ -2,15 +2,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard]
-  id: BaseAmmoBox45_Acp
+  id: BaseAmmoBox45Acp
   name: ammunition box (.45 ACP FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_Acp
-    proto: Cartridge45_AcpFMJ
+        - Cartridge45Acp
+    proto: Cartridge45AcpFMJ
     capacity: 40
   - type: Item
     size: Small
@@ -18,7 +18,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/45_Acp.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/45Acp.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -36,12 +36,12 @@
 
 #MARK: FMJ
 - type: entity
-  parent: BaseAmmoBox45_Acp
-  id: AmmoBox45_AcpFMJ
+  parent: BaseAmmoBox45Acp
+  id: AmmoBox45AcpFMJ
   name: ammunition box (.45 ACP FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_AcpFMJ
+    proto: Cartridge45AcpFMJ
   - type: Sprite
     layers:
     - state: base
@@ -51,12 +51,12 @@
 
 #MARK: Incendiary
 - type: entity
-  parent: BaseAmmoBox45_Acp
-  id: AmmoBox45_AcpIncendiary
+  parent: BaseAmmoBox45Acp
+  id: AmmoBox45AcpIncendiary
   name: ammunition box (.45 ACP incendiary)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_AcpIncendiary
+    proto: Cartridge45AcpIncendiary
   - type: Sprite
     layers:
     - state: base
@@ -67,12 +67,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: AmmoBox45_AcpDepletedUranium
-  parent: BaseAmmoBox45_Acp
+  id: AmmoBox45AcpDepletedUranium
+  parent: BaseAmmoBox45Acp
   name: ammunition box (.45 ACP depleted uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_AcpDepletedUranium
+    proto: Cartridge45AcpDepletedUranium
   - type: Sprite
     layers:
     - state: base
@@ -83,12 +83,12 @@
 
 #MARK: Rubber
 - type: entity
-  parent: BaseAmmoBox45_Acp
-  id: AmmoBox45_AcpRubber
+  parent: BaseAmmoBox45Acp
+  id: AmmoBox45AcpRubber
   name: ammunition box (.45 ACP rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_AcpRubber
+    proto: Cartridge45AcpRubber
   - type: Sprite
     layers:
     - state: base
@@ -99,12 +99,12 @@
 
 #MARK: HP
 - type: entity
-  parent: BaseAmmoBox45_Acp
-  id: AmmoBox45_AcpHP
+  parent: BaseAmmoBox45Acp
+  id: AmmoBox45AcpHP
   name: ammunition box (.45 ACP hollow-point)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_AcpHP
+    proto: Cartridge45AcpHP
   - type: Sprite
     layers:
     - state: base
@@ -115,12 +115,12 @@
 
 #MARK: RIP
 - type: entity
-  parent: BaseAmmoBox45_Acp
-  id: AmmoBox45_AcpRIP
+  parent: BaseAmmoBox45Acp
+  id: AmmoBox45AcpRIP
   name: ammunition box (.45 ACP RIP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_AcpRIP
+    proto: Cartridge45AcpRIP
   - type: Sprite
     layers:
     - state: base
@@ -131,8 +131,8 @@
 
 #MARK: Big FMJ
 - type: entity
-  parent: BaseAmmoBox45_Acp
-  id: AmmoBox45_AcpBigFMJ
+  parent: BaseAmmoBox45Acp
+  id: AmmoBox45AcpBigFMJ
   name: big ammunition box (.45 ACP FMJ)
   suffix: Big
   components:
@@ -141,7 +141,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 120
-    proto: Cartridge45_AcpFMJ
+    proto: Cartridge45AcpFMJ
   - type: Sprite
     layers:
     - state: base-b

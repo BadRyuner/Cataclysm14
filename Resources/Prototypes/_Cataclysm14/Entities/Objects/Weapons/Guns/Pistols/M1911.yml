@@ -30,13 +30,13 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine45_AcpM1911_10rdFMJ
+        startingItem: Magazine45AcpM1911_10rdFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine45_AcpM1911Compatible
+            - Magazine45AcpM1911Compatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -62,7 +62,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine45_AcpM1911_10rdEmpty
+        startingItem: Magazine45AcpM1911_10rdEmpty
 
 #MARK: M1911 10rd FMJ
 - type: entity
@@ -74,4 +74,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine45_AcpM1911_10rdFMJ
+        startingItem: Magazine45AcpM1911_10rdFMJ

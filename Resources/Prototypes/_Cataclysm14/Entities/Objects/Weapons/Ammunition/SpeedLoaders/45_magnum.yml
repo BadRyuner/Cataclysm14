@@ -1,17 +1,17 @@
 - type: entity
-  id: BaseSpeedLoader45_Magnum
+  id: BaseSpeedLoader45Magnum
   name: "speed loader (.45 magnum)"
   parent: BaseItem
   abstract: true
   components:
   # - type: Tag
   #   tags:
-  #     - SpeedLoader45_MagnumFMJ
+  #     - SpeedLoader45MagnumFMJ
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - Cartridge45_Magnum
+        - Cartridge45Magnum
     capacity: 6
   - type: Sprite
   - type: ContainerContainer

@@ -69,13 +69,13 @@
   #MARK:.45 ACP
 
   - type: Tag
-    id: Cartridge45_Acp
+    id: Cartridge45Acp
 
   - type: Tag
-    id: Magazine45_AcpM1911Compatible
+    id: Magazine45AcpM1911Compatible
 
   - type: Tag
-    id: Magazine45_AcpUMP45Compatible
+    id: Magazine45AcpUMP45Compatible
 
   #MARK:.38 Special
 
@@ -88,7 +88,7 @@
   #MARK:.45 magnum
 
   - type: Tag
-    id: Cartridge45_Magnum
+    id: Cartridge45Magnum
 
   #MARK:9x19mmParabellum
 

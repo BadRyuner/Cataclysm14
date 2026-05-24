@@ -94,16 +94,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine45_AcpUMP45_30rdEmpty
+        startingItem: Magazine45AcpUMP45_30rdEmpty
 
-# #MARK: UMP45 30rd FMJ
-# - type: entity
-#   parent: WeaponSubMachineGunUMP45Base
-#   id: WeaponSubMachineGunUMP45Filled30rdFMJ
-#   suffix: FMJ - 30rd
-#   components:
-#   - type: ItemSlots
-#     slots:
-#       gun_magazine:
-#         name: Magazine
-#         startingItem: Magazine45_AcpUMP45_30rdFMJ
+#MARK: UMP45 30rd FMJ
+- type: entity
+  parent: WeaponSubMachineGunUMP45Base
+  id: WeaponSubMachineGunUMP45Filled30rdFMJ
+  suffix: FMJ - 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine45AcpUMP45_30rdFMJ
