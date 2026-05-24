@@ -1,17 +1,17 @@
 - type: entity
-  id: BaseMagazine12_Gauge
+  id: BaseMagazine12Gauge
   name: ammo drum (12 gauge shells)
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
     tags:
-    - Magazine12_GaugeSaiga12Compatible
+    - Magazine12GaugeSaiga12Compatible
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - ShellShotgun12_Gauge
+        - ShellShotgun12Gauge
     capacity: 8
     soundRack:
       path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
@@ -34,12 +34,12 @@
   - type: Appearance
 
 - type: entity
-  id: Magazine12_GaugeBuckshot
+  id: Magazine12GaugeBuckshot
   name: ammo drum (12 gauge buckshot)
-  parent: BaseMagazine12_Gauge
+  parent: BaseMagazine12Gauge
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgun12_GaugeBuckshot
+    proto: ShellShotgun12GaugeBuckshot
   - type: Sprite
     layers:
     - state: pellets

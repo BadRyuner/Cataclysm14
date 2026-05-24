@@ -1,6 +1,6 @@
 #MARK: FMJ
 - type: entity
-  id: Bullet38_specialFMJ
+  id: Bullet38SpecialFMJ
   name: bullet (.38 Special FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -14,7 +14,7 @@
 
 #MARK: JHP
 - type: entity
-  id: Bullet38_specialJHP
+  id: Bullet38SpecialJHP
   name: bullet (.38 Special JHP)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -28,7 +28,7 @@
 
 #MARK: +P
 - type: entity
-  id: Bullet38_special+P
+  id: Bullet38Special+P
   name: bullet (.38 Special +P)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -42,7 +42,7 @@
 
 #MARK: Rubber
 - type: entity
-  id: Bullet38_specialRubber
+  id: Bullet38SpecialRubber
   name: bullet (.38 Special rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]

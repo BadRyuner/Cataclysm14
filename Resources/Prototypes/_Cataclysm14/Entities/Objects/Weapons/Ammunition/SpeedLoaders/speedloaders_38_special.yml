@@ -1,18 +1,18 @@
 #MARK: Base
 - type: entity
   name: "speed loader (.38 Special)"
-  id: BaseSpeedLoader38_special
+  id: BaseSpeedLoader38Special
   parent: BaseItem
   abstract: true
   components:
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/38_special/speedloader_38_special_6rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/38Special/speedloader_38Special_6rd.rsi
     state: icon
   - type: Item
     storedScale: 2.5
   - type: Sprite
     scale: 0.25,0.25
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/38_special/speedloader_38_special_6rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/38Special/speedloader_38Special_6rd.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -24,12 +24,12 @@
     zeroVisible: false
   - type: Tag
     tags:
-      - SpeedLoader38_special
+      - SpeedLoader38Special
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - Cartridge38_special
+        - Cartridge38Special
     capacity: 6
   - type: ContainerContainer
     containers:
@@ -39,45 +39,45 @@
 
 #MARK: FMJ
 - type: entity
-  id: SpeedLoader38_specialFMJ
+  id: SpeedLoader38SpecialFMJ
   suffix: FMJ
-  parent: BaseSpeedLoader38_special
+  parent: BaseSpeedLoader38Special
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge38_specialFMJ
+    proto: Cartridge38SpecialFMJ
 
 #MARK: JHP
 - type: entity
-  id: SpeedLoader38_specialJHP
+  id: SpeedLoader38SpecialJHP
   suffix: JHP
-  parent: BaseSpeedLoader38_special
+  parent: BaseSpeedLoader38Special
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge38_specialJHP
+    proto: Cartridge38SpecialJHP
 
 #MARK: +P
 - type: entity
-  id: SpeedLoader38_special+P
+  id: SpeedLoader38Special+P
   suffix: +P
-  parent: BaseSpeedLoader38_special
+  parent: BaseSpeedLoader38Special
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge38_special+P
+    proto: Cartridge38Special+P
 
 #MARK: Empty
 - type: entity
-  id: SpeedLoader38_specialEmpty
+  id: SpeedLoader38SpecialEmpty
   suffix: Empty
-  parent: BaseSpeedLoader38_special
+  parent: BaseSpeedLoader38Special
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: Rubber
 - type: entity
-  id: SpeedLoader38_specialRubber
+  id: SpeedLoader38SpecialRubber
   suffix: Rubber
-  parent: BaseSpeedLoader38_special
+  parent: BaseSpeedLoader38Special
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge38_specialRubber
+    proto: Cartridge38SpecialRubber

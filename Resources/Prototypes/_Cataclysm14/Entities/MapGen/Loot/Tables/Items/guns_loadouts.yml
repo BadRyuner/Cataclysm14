@@ -108,10 +108,10 @@
           children:
           - id: WeaponRevolverM36Empty
           - id: WeaponRevolverM36FilledFMJ
-      - id: SpeedLoader38_specialFMJ
+      - id: SpeedLoader38SpecialFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
-      - id: AmmoBox38_specialFMJ
+      - id: AmmoBox38SpecialFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
 

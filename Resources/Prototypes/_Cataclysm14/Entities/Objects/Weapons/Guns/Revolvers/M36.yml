@@ -30,10 +30,10 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-        - Cartridge38_special
-        - SpeedLoader38_special
+        - Cartridge38Special
+        - SpeedLoader38Special
     capacity: 6
-    proto: Cartridge38_specialFMJ
+    proto: Cartridge38SpecialFMJ
     chambers: [ true, true, true, true, true, true ]
     ammoSlots: [ null, null, null, null, null, null ]
 
@@ -55,7 +55,7 @@
   suffix: FMJ
   components:
   - type: RevolverAmmoProvider
-    proto: Cartridge38_specialFMJ
+    proto: Cartridge38SpecialFMJ
 
 #MARK: JHP
 - type: entity
@@ -64,7 +64,7 @@
   suffix: JHP
   components:
   - type: RevolverAmmoProvider
-    proto: Cartridge38_specialJHP
+    proto: Cartridge38SpecialJHP
 
 #MARK: +P
 - type: entity
@@ -73,7 +73,7 @@
   suffix: +P
   components:
   - type: RevolverAmmoProvider
-    proto: Cartridge38_special+P
+    proto: Cartridge38Special+P
 
 #MARK: Rubber
 - type: entity
@@ -82,4 +82,4 @@
   suffix: Rubber
   components:
   - type: RevolverAmmoProvider
-    proto: Cartridge38_specialRubber
+    proto: Cartridge38SpecialRubber

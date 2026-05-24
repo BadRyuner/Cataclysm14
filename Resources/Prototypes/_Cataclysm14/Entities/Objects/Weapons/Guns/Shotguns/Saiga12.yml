@@ -43,11 +43,11 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine12_GaugeBuckshot
+        startingItem: Magazine12GaugeBuckshot
         priority: 2
         whitelist:
           tags:
-          - Magazine12_GaugeSaiga12Compatible
+          - Magazine12GaugeSaiga12Compatible
         whitelistFailPopup: gun-magazine-whitelist-fail
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg

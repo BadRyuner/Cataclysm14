@@ -2,15 +2,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox38_special
+  id: BaseAmmoBox38Special
   name: ammunition box (.38 Special FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge38_special
-    proto: Cartridge38_specialFMJ
+        - Cartridge38Special
+    proto: Cartridge38SpecialFMJ
     capacity: 40
   - type: Item
     size: Small
@@ -19,7 +19,7 @@
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/38_special.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/38Special.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -37,12 +37,12 @@
 
 #MARK: FMJ
 - type: entity
-  parent: BaseAmmoBox38_special
-  id: AmmoBox38_specialFMJ
+  parent: BaseAmmoBox38Special
+  id: AmmoBox38SpecialFMJ
   name: ammunition box (.38 Special FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge38_specialFMJ
+    proto: Cartridge38SpecialFMJ
   - type: Sprite
     layers:
     - state: base
@@ -52,12 +52,12 @@
 
 #MARK: JHP
 - type: entity
-  parent: BaseAmmoBox38_special
-  id: AmmoBox38_specialJHP
+  parent: BaseAmmoBox38Special
+  id: AmmoBox38SpecialJHP
   name: ammunition box (.38 Special JHP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge38_specialJHP
+    proto: Cartridge38SpecialJHP
   - type: Sprite
     layers:
     - state: base
@@ -68,12 +68,12 @@
 
 #MARK: +P
 - type: entity
-  parent: BaseAmmoBox38_special
-  id: AmmoBox38_special+P
+  parent: BaseAmmoBox38Special
+  id: AmmoBox38Special+P
   name: ammunition box (.38 Special +P)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge38_special+P
+    proto: Cartridge38Special+P
   - type: Sprite
     layers:
     - state: base
@@ -84,12 +84,12 @@
 
 #MARK: Rubber
 - type: entity
-  parent: BaseAmmoBox38_special
-  id: AmmoBox38_specialRubber
+  parent: BaseAmmoBox38Special
+  id: AmmoBox38SpecialRubber
   name: ammunition box (.38 Special rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge38_specialRubber
+    proto: Cartridge38SpecialRubber
   - type: Sprite
     layers:
     - state: base
@@ -100,8 +100,8 @@
 
 #MARK: Big FMJ
 - type: entity
-  parent: BaseAmmoBox38_special
-  id: AmmoBox38_specialBigFMJ
+  parent: BaseAmmoBox38Special
+  id: AmmoBox38SpecialBigFMJ
   name: big ammunition box (.38 Special FMJ)
   suffix: Big
   components:
@@ -110,7 +110,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 150
-    proto: Cartridge38_specialFMJ
+    proto: Cartridge38SpecialFMJ
   - type: Sprite
     layers:
     - state: base-b

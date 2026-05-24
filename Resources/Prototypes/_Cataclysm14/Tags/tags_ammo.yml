@@ -80,10 +80,10 @@
   #MARK:.38 Special
 
   - type: Tag
-    id: Cartridge38_special
+    id: Cartridge38Special
 
   - type: Tag
-    id: SpeedLoader38_special
+    id: SpeedLoader38Special
 
   #MARK:.45 magnum
 
@@ -115,15 +115,15 @@
   #MARK: 12 gauge
 
   - type: Tag
-    id: ShellShotgun12_Gauge
+    id: ShellShotgun12Gauge
 
   - type: Tag
-    id: Magazine12_GaugeSaiga12Compatible
+    id: Magazine12GaugeSaiga12Compatible
 
   #MARK: 4 gauge
 
   - type: Tag
-    id: ShellShotgun4_Gauge
+    id: ShellShotgun4Gauge
 
   #MARK: 12,7x99mm
   - type: Tag
