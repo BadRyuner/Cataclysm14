@@ -40,16 +40,16 @@
         - id: ClothingShirtCombatSierraDuty
       pocket1: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
       pocket2: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
       pocket3: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
       pocket4: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
 
 #MARK: Sierra Trooper Heavy
 - type: entity
@@ -93,16 +93,16 @@
         - id: ClothingShirtCombatSierraDuty
       pocket1: !type:GroupSelector
         children:
-        - id: MagazineBox5.56x45mmLMG200rdFMJ
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
       pocket2: !type:GroupSelector
         children:
-        - id: MagazineBox5.56x45mmLMG200rdFMJ
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
       pocket3: !type:GroupSelector
         children:
-        - id: MagazineBox5.56x45mmLMG200rdFMJ
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
       pocket4: !type:GroupSelector
         children:
-        - id: MagazineBox5.56x45mmLMG200rdFMJ
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
 
 #MARK: Sierra Officer
 - type: entity
@@ -146,16 +146,16 @@
         - id: ClothingShirtCombatSierraDuty
       pocket1: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
       pocket2: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
       pocket3: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
       pocket4: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
 
 #MARK: Sierra Commandant
 - type: entity
@@ -199,13 +199,13 @@
         - id: ClothingShirtCombatSierraCommandant
       pocket1: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
       pocket2: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
       pocket3: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
       pocket4: !type:GroupSelector
         children:
-        - id: Magazine9x19mmMP5_30rdFMJ
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ

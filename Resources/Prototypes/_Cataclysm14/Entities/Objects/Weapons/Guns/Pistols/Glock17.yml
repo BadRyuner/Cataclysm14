@@ -4,7 +4,7 @@
   parent: BaseWeaponPistol
   id: WeaponPistolGlock17Base
   abstract: true
-  description: A cheap, ubiquitous sidearm, produced by Glock and uses 9x19mmParabellum Parabellum ammunition.
+  description: A cheap, ubiquitous sidearm, produced by Glock and uses 9x19mmparabellum ammunition.
   components:
   - type: Item
     size: Normal
