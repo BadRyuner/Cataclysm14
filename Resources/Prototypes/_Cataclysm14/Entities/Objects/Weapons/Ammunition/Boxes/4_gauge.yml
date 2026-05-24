@@ -1,11 +1,11 @@
 # Shotgun Shells
 - type: entity
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmBeanbag
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeBeanbag
   name: shotgun shell box (4 gauge beanbag)
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmBeanbag
+      proto: ShellShotgun4_GaugeBeanbag
     - type: MagazineVisuals
       magState: mag-beanbag
       steps: 5
@@ -20,11 +20,11 @@
 
 - type: entity
   name: shotgun shell box (4 gauge buckshot)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmBuckshot
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeBuckshot
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmBuckshot
+      proto: ShellShotgun4_GaugeBuckshot
     - type: Sprite
       layers:
       - state: base
@@ -35,11 +35,11 @@
 
 - type: entity
   name: shotgun shell box (4 gauge Dozd)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmDozd
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeDozd
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmDozd
+      proto: ShellShotgun4_GaugeDozd
     - type: Sprite
       layers:
       - state: base
@@ -50,11 +50,11 @@
 
 - type: entity
   name: shotgun shell box (4 gauge slug)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmSlug
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeSlug
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmSlug
+      proto: ShellShotgun4_GaugeSlug
     - type: MagazineVisuals
       magState: mag-slug
       steps: 5
@@ -69,11 +69,11 @@
 
 - type: entity
   name: flare shell box (4 gauge flare)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmFlare
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeFlare
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmFlare
+      proto: ShellShotgun4_GaugeFlare
     - type: MagazineVisuals
       magState: mag-flare
       steps: 5
@@ -88,11 +88,11 @@
 
 - type: entity
   name: shotgun shell box (4 gauge incendiary)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmIncendiary
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeIncendiary
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmIncendiary
+      proto: ShellShotgun4_GaugeIncendiary
     - type: MagazineVisuals
       magState: mag-incend
       steps: 5
@@ -108,11 +108,11 @@
 
 - type: entity
   name: shotgun shell box (4 gauge flashbang)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmFlashbang
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeFlashbang
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmFlashbang
+      proto: ShellShotgun4_GaugeFlashbang
     - type: MagazineVisuals
       magState: mag-incend
       steps: 5
@@ -127,11 +127,11 @@
 
 - type: entity
   name: shotgun shell box (4 gauge depleted uranium)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmDepletedUranium
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeDepletedUranium
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmDepletedUranium
+      proto: ShellShotgun4_GaugeDepletedUranium
     - type: MagazineVisuals
       magState: mag-uranium
       steps: 5
@@ -146,11 +146,11 @@
 
 - type: entity
   name: shotgun shell box (4 gauge practice)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmPractice
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugePractice
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmPractice
+      proto: ShellShotgun4_GaugePractice
     - type: MagazineVisuals
       magState: mag-practice
       steps: 5
@@ -167,11 +167,11 @@
 #anti-flesh:
 - type: entity
   name: shotgun shell box (4 gauge OO magnum buckshot)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmOOBuckshot
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeOOBuckshot
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmOOBuckshot
+      proto: ShellShotgun4_GaugeOOBuckshot
     - type: Sprite
       layers:
       - state: base
@@ -182,11 +182,11 @@
 
 - type: entity
   name: shotgun shell box (4 gauge RIP)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmSlugRIP
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeSlugRIP
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmSlugRIP
+      proto: ShellShotgun4_GaugeSlugRIP
     - type: MagazineVisuals
       magState: mag-slugRIP
       steps: 5
@@ -202,11 +202,11 @@
 #armor-piercing:
 - type: entity
   name: shotgun shell box (4 gauge armor-piercing slug)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmSlugAP
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeSlugAP
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmSlugAP
+      proto: ShellShotgun4_GaugeSlugAP
     - type: MagazineVisuals
       magState: mag-slugAP
       steps: 5
@@ -221,11 +221,11 @@
 
 - type: entity
   name: shotgun shell box (4 gauge flechette)
-  parent: AmmoProvider23x75mmShotgunShell
-  id: AmmoBox23x75mmFlechette
+  parent: AmmoProvider4_GaugeShotgunShell
+  id: AmmoBox4_GaugeFlechette
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun23x75mmFlechette
+      proto: ShellShotgun4_GaugeFlechette
     - type: MagazineVisuals
       magState: mag-flechette
       steps: 5

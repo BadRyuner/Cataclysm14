@@ -9,7 +9,7 @@
       storagebase: !type:AllSelector
         children:
         - !type:NestedSelector
-          tableId: LootTableAmmunitionAmmoBox9x19mmMilitaryGradeLowTier
+          tableId: LootTableAmmunitionAmmoBox9x19mmParabellumMilitaryGradeLowTier
           prob: 0.3
         - !type:NestedSelector
           tableId: LootTableFoodLongLasting
@@ -26,5 +26,5 @@
       storagebase: !type:AllSelector
         children:
         - !type:NestedSelector
-          tableId: LootTableAmmunitionAmmoBox9x19mmMilitaryGradeLowTier
+          tableId: LootTableAmmunitionAmmoBox9x19mmParabellumMilitaryGradeLowTier
           prob: 0.3

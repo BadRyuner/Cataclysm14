@@ -1,7 +1,7 @@
 #MARK: Base
 - type: entity
-  id: BaseCartridge9x19mm
-  name: cartridge (9x19mm FMJ)
+  id: BaseCartridge9x19mmParabellum
+  name: cartridge (9x19mm parabellum FMJ)
   parent: BaseCartridge
   description: Generic pistol round. Easy to handle, with a decent effect on unarmored flesh.
   abstract: true
@@ -9,9 +9,9 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridges9x19mm
+      - Cartridge9x19mmParabellum
   - type: CartridgeAmmo
-    proto: Bullet9x19mmFMJ
+    proto: Bullet9x19mmParabellumFMJ
   - type: Sprite
     scale: 0.3,0.3
     sprite: _Cataclysm14/Objects/Weapons/Casings/9x19mm_casing.rsi
@@ -25,48 +25,48 @@
 
 #MARK: FMJ
 - type: entity
-  id: Cartridge9x19mmFMJ
-  name: cartridge (9x19mm FMJ)
-  parent: BaseCartridge9x19mm
+  id: Cartridge9x19mmParabellumFMJ
+  name: cartridge (9x19mm parabellum FMJ)
+  parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
-    proto: Bullet9x19mmFMJ
+    proto: Bullet9x19mmParabellumFMJ
 
 #MARK: Tracer Green
 - type: entity
-  id: Cartridge9x19mmTracerGreen
-  name: cartridge (9x19mm green tracer)
-  parent: BaseCartridge9x19mm
+  id: Cartridge9x19mmParabellumTracerGreen
+  name: cartridge (9x19mm parabellum green tracer)
+  parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
-    proto: Bullet9x19mmTracerGreen
+    proto: Bullet9x19mmParabellumTracerGreen
 
 #MARK: +P
 - type: entity
-  id: Cartridge9x19mm+P
-  name: cartridge (9x19mm +P)
-  parent: BaseCartridge9x19mm
+  id: Cartridge9x19mmParabellum+P
+  name: cartridge (9x19mm parabellum +P)
+  parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
-    proto: Bullet9x19mm+P
+    proto: Bullet9x19mmParabellum+P
 
-#MARK: AP6.3
+#MARK: AP6,3
 - type: entity
-  id: Cartridge9x19mmAP6.3
-  name: cartridge (9x19mm AP6.3)
-  parent: BaseCartridge9x19mm
+  id: Cartridge9x19mmParabellumAP6,3
+  name: cartridge (9x19mm parabellum AP6,3)
+  parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
-    proto: Bullet9x19mmAP6.3
+    proto: Bullet9x19mmParabellumAP6,3
 
 #MARK: Incendiary
 - type: entity
-  id: Cartridge9x19mmIncendiary
-  name: cartridge (9x19mm incendiary)
-  parent: BaseCartridge9x19mm
+  id: Cartridge9x19mmParabellumIncendiary
+  name: cartridge (9x19mm parabellum incendiary)
+  parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
-    proto: Bullet9x19mmIncendiary
+    proto: Bullet9x19mmParabellumIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -77,12 +77,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Cartridge9x19mmDepletedUranium
-  name: cartridge (9x19mm depleted uranium)
-  parent: BaseCartridge9x19mm
+  id: Cartridge9x19mmParabellumDepletedUranium
+  name: cartridge (9x19mm parabellum depleted uranium)
+  parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
-    proto: Bullet9x19mmDepletedUranium
+    proto: Bullet9x19mmParabellumDepletedUranium
   - type: Sprite
     layers:
       - state: base
@@ -93,12 +93,12 @@
 
 #MARK: Rubber
 - type: entity
-  id: Cartridge9x19mmRubber
-  name: cartridge (9x19mm rubber)
-  parent: BaseCartridge9x19mm
+  id: Cartridge9x19mmParabellumRubber
+  name: cartridge (9x19mm parabellum rubber)
+  parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
-    proto: Bullet9x19mmRubber
+    proto: Bullet9x19mmParabellumRubber
   - type: Sprite
     layers:
       - state: base
@@ -109,12 +109,12 @@
 
 #MARK: HP
 - type: entity
-  id: Cartridge9x19mmHP
-  name: cartridge (9x19mm hollow-point)
-  parent: BaseCartridge9x19mm
+  id: Cartridge9x19mmParabellumHP
+  name: cartridge (9x19mm parabellum hollow-point)
+  parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
-    proto: Bullet9x19mmHP
+    proto: Bullet9x19mmParabellumHP
   - type: Sprite
     layers:
       - state: base
@@ -125,12 +125,12 @@
 
 #MARK: RIP
 - type: entity
-  id: Cartridge9x19mmRIP
-  name: cartridge (9x19mm RIP)
-  parent: BaseCartridge9x19mm
+  id: Cartridge9x19mmParabellumRIP
+  name: cartridge (9x19mm parabellum RIP)
+  parent: BaseCartridge9x19mmParabellum
   components:
   - type: CartridgeAmmo
-    proto: Bullet9x19mmRIP
+    proto: Bullet9x19mmParabellumRIP
   - type: Sprite
     layers:
       - state: base
@@ -138,48 +138,3 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#C04000"
-
-#MARK: Deprecated >
-
-- type: entity
-  id: Cartridge9x19mmPlasteelAP
-  name: cartridge (9x19mm AP)
-  parent: BaseCartridge9x19mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet9x19mmPlasteelAP
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#888888"
-
-- type: entity
-  id: Cartridge9x19mmPractice
-  name: cartridge (9x19mm practice)
-  parent: BaseCartridge9x19mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet9x19mmPractice
-  -  type: Sprite
-     layers:
-       - state: base
-         map: [ "enum.AmmoVisualLayers.Base" ]
-       - state: tip
-         map: [ "enum.AmmoVisualLayers.Tip" ]
-         color: "#dbdbdb"
-
-# Frontier
-- type: entity
-  id: Cartridge9x19mmEmp
-  name: cartridge (9x19mm emp)
-  parent: BaseCartridge9x19mm
-  components:
-  - type: CartridgeAmmo
-    proto: Bullet9x19mmEmp
-  - type: EmpDescription
-    range: 0.3
-    energyConsumption: 2700000
-    disableDuration: 10

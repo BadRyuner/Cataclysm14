@@ -1,5 +1,5 @@
 - type: entity
-  id: BaseCartridge45_magnum
+  id: BaseCartridge45_Magnum
   name: cartridge (.45 magnum)
   parent: BaseCartridge
   description: Heavy magnum round, usually only seen in magnums or manually-cycled rifles.
@@ -8,12 +8,12 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge45_magnum
+      - Cartridge45_Magnum
   - type: CartridgeAmmo
-    proto: Bullet45_magnumFMJ
+    proto: Bullet45_MagnumFMJ
   - type: Sprite
     scale: 0.25,0.25
-    sprite: _Cataclysm14/Objects/Weapons/Casings/45_magnum_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/45_Magnum_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -23,20 +23,20 @@
     price: 1
 
 - type: entity
-  id: Cartridge45_magnumFMJ
+  id: Cartridge45_MagnumFMJ
   name: cartridge (.45 magnum)
-  parent: BaseCartridge45_magnum
+  parent: BaseCartridge45_Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumFMJ
+    proto: Bullet45_MagnumFMJ
 
 - type: entity
-  id: Cartridge45_magnumPractice
+  id: Cartridge45_MagnumPractice
   name: cartridge (.45 magnum practice)
-  parent: BaseCartridge45_magnum
+  parent: BaseCartridge45_Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumPractice
+    proto: Bullet45_MagnumPractice
   - type: Sprite
     layers:
       - state: base
@@ -46,12 +46,12 @@
         color: "#dbdbdb"
 
 - type: entity
-  id: Cartridge45_magnumIncendiary
+  id: Cartridge45_MagnumIncendiary
   name: cartridge (.45 magnum incendiary)
-  parent: BaseCartridge45_magnum
+  parent: BaseCartridge45_Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumIncendiary
+    proto: Bullet45_MagnumIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -61,12 +61,12 @@
         color: "#ff6e52"
 
 - type: entity
-  id: Cartridge45_magnumAP
+  id: Cartridge45_MagnumAP
   name: cartridge (.45 magnum armor-piercing)
-  parent: BaseCartridge45_magnum
+  parent: BaseCartridge45_Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumAP
+    proto: Bullet45_MagnumAP
   - type: Sprite
     layers:
       - state: base
@@ -76,12 +76,12 @@
         color: "#0a0a0a"
 
 - type: entity
-  id: Cartridge45_magnumDepletedUranium
+  id: Cartridge45_MagnumDepletedUranium
   name: cartridge (.45 magnum depleted uranium)
-  parent: BaseCartridge45_magnum
+  parent: BaseCartridge45_Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumDepletedUranium
+    proto: Bullet45_MagnumDepletedUranium
   - type: Sprite
     layers:
       - state: base
@@ -91,12 +91,12 @@
         color: "#65fe08"
 
 - type: entity
-  id: Cartridge45_magnumRubber
+  id: Cartridge45_MagnumRubber
   name: cartridge (.45 magnum rubber)
-  parent: BaseCartridge45_magnum
+  parent: BaseCartridge45_Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumRubber
+    proto: Bullet45_MagnumRubber
   - type: Sprite
     layers:
       - state: base
@@ -108,12 +108,12 @@
 # Mono AP syst
 #anti-flesh:
 - type: entity
-  id: Cartridge45_magnumHP
+  id: Cartridge45_MagnumHP
   name: cartridge (.45 magnum hollow-point)
-  parent: BaseCartridge45_magnum
+  parent: BaseCartridge45_Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumHP
+    proto: Bullet45_MagnumHP
   - type: Sprite
     layers:
       - state: base
@@ -123,12 +123,12 @@
         color: "#90EE90"
 
 - type: entity
-  id: Cartridge45_magnumRIP
+  id: Cartridge45_MagnumRIP
   name: cartridge (.45 magnum RIP)
-  parent: BaseCartridge45_magnum
+  parent: BaseCartridge45_Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumRIP
+    proto: Bullet45_MagnumRIP
   - type: Sprite
     layers:
       - state: base
@@ -140,12 +140,12 @@
 #armor-piercing:
 
 - type: entity
-  id: Cartridge45_magnumPlasteelAP
+  id: Cartridge45_MagnumPlasteelAP
   name: cartridge (.45 magnum AP)
-  parent: BaseCartridge45_magnum
+  parent: BaseCartridge45_Magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumPlasteelAP
+    proto: Bullet45_MagnumPlasteelAP
   - type: Sprite
     layers:
       - state: base

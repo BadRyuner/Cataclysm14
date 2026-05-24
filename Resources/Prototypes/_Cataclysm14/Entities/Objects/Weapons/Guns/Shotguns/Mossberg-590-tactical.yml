@@ -52,7 +52,7 @@
   suffix: Buckshot
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgun12_gaugeBuckshot
+    proto: ShellShotgun12_GaugeBuckshot
 
 #MARK: Beanbag
 - type: entity
@@ -61,4 +61,4 @@
   suffix: Beanbag
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgun12_gaugeBeanbag
+    proto: ShellShotgun12_GaugeBeanbag

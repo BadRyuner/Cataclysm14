@@ -22,16 +22,16 @@
 
 - type: entity
   parent: [BaseAmmoProvider, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: AmmoProvider12_gaugeShotgunShell
+  id: AmmoProvider12_GaugeShotgunShell
   abstract: true
   components:
     - type: Sprite
-      sprite: _Cataclysm14/Objects/Weapons/Boxes/12_gauge.rsi
+      sprite: _Cataclysm14/Objects/Weapons/Boxes/12_Gauge.rsi
     - type: BallisticAmmoProvider
       mayTransfer: true
       whitelist:
         tags:
-        - ShellShotgun12_gauge
+        - ShellShotgun12_Gauge
       capacity: 32 # Mono 16->32
     - type: MagazineVisuals
       magState: mag
@@ -41,7 +41,7 @@
 
 - type: entity
   parent: [BaseAmmoProvider, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: AmmoProvider23x75mmShotgunShell
+  id: AmmoProvider4_GaugeShotgunShell
   abstract: true
   components:
     - type: Sprite
@@ -50,7 +50,7 @@
       mayTransfer: true
       whitelist:
         tags:
-        - ShellShotgun23x75mm
+        - ShellShotgun4_Gauge
       capacity: 32 # Mono 16->32
     - type: MagazineVisuals
       magState: mag

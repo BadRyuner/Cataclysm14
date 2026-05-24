@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: Glock 17 (9x19mm)
+  name: Glock 17 (9x19mm parabellum)
   parent: BaseWeaponPistol
   id: WeaponPistolGlock17Base
   abstract: true
-  description: A cheap, ubiquitous sidearm, produced by Glock and uses 9x19mm Parabellum ammunition.
+  description: A cheap, ubiquitous sidearm, produced by Glock and uses 9x19mmParabellum Parabellum ammunition.
   components:
   - type: Item
     size: Normal
@@ -31,21 +31,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmGlock17rdFMJ
+        startingItem: Magazine9x19mmParabellumGlock17rdFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine9x19mmGlockCompatible
+            - Magazine9x19mmParabellumGlockCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge9x19mmFMJ
+        startingItem: Cartridge9x19mmParabellumFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridges9x19mm
+            - Cartridge9x19mmParabellum
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -63,7 +63,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmGlock17rdEmpty
+        startingItem: Magazine9x19mmParabellumGlock17rdEmpty
 
 #MARK: Glock 17rd FMJ
 - type: entity
@@ -75,4 +75,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmGlock17rdFMJ
+        startingItem: Magazine9x19mmParabellumGlock17rdFMJ
