@@ -1,121 +1,120 @@
-#MARK: Base
 - type: entity
-  name: M249 (5,56x45mm NATO)
-  parent: BaseWeaponRifle
   id: WeaponLightMachineGunM249Base
-  abstract: true
+  name: M249 (5,56x45mm NATO)
   description: A modern LMG made for use by the US army and NATO countries, Chambered in 5,56x45mm NATO .
+  parent: BaseWeaponRifle
+  abstract: true
   components:
-  - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_64x32.rsi
-    scale: 0.55, 0.55
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
-  - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_32x32.rsi
-    size: Large
-    shape:
-    - 0,0,5,1
-    storedScale: 2
-  - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_32x32.rsi
-    clothingVisuals:
-      suitstorage:
-      - state: equipped-SUITSTORAGE
-      slingfront:
-      - state: equipped-SUITSTORAGE
-  - type: GunWieldBonus
-    minAngle: -20
-    maxAngle: -30
-  - type: Gun
-    minAngle: 21
-    maxAngle: 70
-    angleIncrease: 5
-    angleDecay: 20
-    fireRate: 9
-    soundGunshot:
-      path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
-      params:
-        pitch: 1.2
-        volume: 15
-        variation: 0.15
-  - type: ChamberMagazineAmmoProvider
-    soundRack:
-      path: /Audio/_Cataclysm14/Weapons/Guns/Cocking/cata_heavy_1.ogg
-    soundBoltClosed:
-      path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_closing.ogg
-    soundBoltOpened:
-      path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_opening.ogg
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: null
-        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
-        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - Magazine5,56x45mmSTANAGCompatible
-            - AmmoBelt5,56x45mm
-            - MagazineBox5,56x45mmLMGCompatible
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: null
-        priority: 1
-        whitelist:
-          tags:
-            - Cartridge5,56x45mm
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
-  - type: WieldedCrosshair
-    rsi:
-      sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
-      state: all
+    - type: Sprite
+      scale: 0.55, 0.55
+      sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_64x32.rsi
+      layers:
+        - state: base
+          map:
+            - enum.GunVisualLayers.Base
+        - state: mag-0
+          map:
+            - enum.GunVisualLayers.Mag
+    - type: Item
+      size: Large
+      sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_32x32.rsi
+      shape:
+        - 0,0,5,1
+      storedScale: 2
+    - type: Clothing
+      clothingVisuals:
+        suitstorage:
+          - state: equipped-SUITSTORAGE
+        slingfront:
+          - state: equipped-SUITSTORAGE
+      sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_32x32.rsi
+    - type: GunWieldBonus
+      minAngle: -20
+      maxAngle: -30
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
+        params:
+          pitch: 1.2
+          volume: 15
+          variation: 0.15
+          playOffsetSeconds: 0.05
+      angleIncrease: 5
+      angleDecay: 20
+      maxAngle: 70
+      minAngle: 21
+      fireRate: 9
+    - type: ChamberMagazineAmmoProvider
+      soundBoltClosed:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_closing.ogg
+      soundBoltOpened:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_opening.ogg
+      soundRack:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Cocking/cata_heavy_1.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: null
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine5,56x45mmSTANAGCompatible
+              - AmmoBelt5,56x45mm
+              - MagazineBox5,56x45mmLMGCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge5,56x45mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot {}
+        gun_chamber: !type:ContainerSlot {}
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Appearance
+    - type: WieldedCrosshair
+      rsi:
+        sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
+        state: all
 
-#MARK: Box 200rd Empty
 - type: entity
-  parent: WeaponLightMachineGunM249Base
   id: WeaponLightMachineGunM249Filled200rdEmpty
   suffix: Empty - 200rd
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineBox5,56x45mmLMG200rdEmpty
-
-#MARK: Box 200rd FMJ
-- type: entity
   parent: WeaponLightMachineGunM249Base
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineBox5,56x45mmLMG200rdEmpty
+
+- type: entity
   id: WeaponLightMachineGunM249Filled200rdFMJ
   suffix: FMJ - 200rd
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineBox5,56x45mmLMG200rdFMJ
-
-#MARK: Box 200rd Tracer Red
-- type: entity
   parent: WeaponLightMachineGunM249Base
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineBox5,56x45mmLMG200rdFMJ
+
+- type: entity
   id: WeaponLightMachineGunM249Filled200rdTracerRed
   suffix: Tracer Red - 200rd
+  parent: WeaponLightMachineGunM249Base
   components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineBox5,56x45mmLMG200rdTracerRed
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineBox5,56x45mmLMG200rdTracerRed

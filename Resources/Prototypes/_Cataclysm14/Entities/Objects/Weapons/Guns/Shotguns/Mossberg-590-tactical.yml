@@ -1,64 +1,68 @@
-#MARK: Base
 - type: entity
-  name: Mossberg 590 tactical (12 gauge)
-  parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: WeaponShotgunMossberg590TacticalBase
-  abstract: true
+  name: Mossberg 590 tactical (12 gauge)
   description: An old yet faithful design, and a favorite among hunters. Uses 12 gauge shotgun shells.
+  parent:
+    - BaseWeaponShotgun
+    - BaseGunWieldable
+  abstract: true
   components:
-  - type: Item
-    size: Large
-    shape:
-    - 0,0,5,1
-    storedScale: 2.5
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Mossberg-590-tactical_64x64.rsi
-  - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Mossberg-590-tactical_64x32.rsi
-    scale: 0.55,0.55
-  - type: Clothing
-    slots:
-    - slingfront
-    - suitstorage
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Mossberg-590-tactical_64x32.rsi
-    clothingVisuals:
-      slingfront:
-      - state: equipped-SLINGFRONT
-      suitstorage:
-      - state: equipped-SUITSTORAGE
-  - type: GunRequiresWield
-  - type: Gun
-    fireRate: 1.4
-  - type: GunSpreadModifier
-    spread: 0.7
-  - type: Tag
-    tags:
-    - WeaponShotgunMossberg590Tactical
-  - type: BallisticAmmoProvider
-    capacity: 6
+    - type: Item
+      size: Large
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Mossberg-590-tactical_64x64.rsi
+      shape:
+        - 0,0,5,1
+      storedScale: 2.5
+    - type: Sprite
+      scale: 0.55,0.55
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Mossberg-590-tactical_64x32.rsi
+    - type: Clothing
+      clothingVisuals:
+        slingfront:
+          - state: equipped-SLINGFRONT
+        suitstorage:
+          - state: equipped-SUITSTORAGE
+      slots:
+        - slingfront
+        - suitstorage
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Mossberg-590-tactical_64x32.rsi
+    - type: GunRequiresWield
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+        params:
+          pitch: 0.9
+          volume: 15
+          variation: 0.1
+      fireRate: 1.4
+    - type: GunSpreadModifier
+      spread: 0.7
+    - type: Tag
+      tags:
+        - WeaponShotgunMossberg590Tactical
+    - type: BallisticAmmoProvider
+      capacity: 6
 
-#MARK: Empty
 - type: entity
-  parent: WeaponShotgunMossberg590TacticalBase
   id: WeaponShotgunMossberg590TacticalEmpty
   suffix: Empty
-  components:
-  - type: BallisticAmmoProvider
-    proto: null
-
-#MARK: Buckshot
-- type: entity
   parent: WeaponShotgunMossberg590TacticalBase
+  components:
+    - type: BallisticAmmoProvider
+      proto: null
+
+- type: entity
   id: WeaponShotgunMossberg590TacticalFilledBuckshot
   suffix: Buckshot
-  components:
-  - type: BallisticAmmoProvider
-    proto: ShellShotgun12GaugeBuckshot
-
-#MARK: Beanbag
-- type: entity
   parent: WeaponShotgunMossberg590TacticalBase
+  components:
+    - type: BallisticAmmoProvider
+      proto: ShellShotgun12GaugeBuckshot
+
+- type: entity
   id: WeaponShotgunMossberg590TacticalFilledBeanbag
   suffix: Beanbag
+  parent: WeaponShotgunMossberg590TacticalBase
   components:
-  - type: BallisticAmmoProvider
-    proto: ShellShotgun12GaugeBeanbag
+    - type: BallisticAmmoProvider
+      proto: ShellShotgun12GaugeBeanbag

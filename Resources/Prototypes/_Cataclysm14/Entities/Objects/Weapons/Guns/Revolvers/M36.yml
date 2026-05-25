@@ -1,85 +1,106 @@
-#MARK: Base
 - type: entity
-  name: S&W M36 (.38 Special)
-  parent: BaseWeaponRevolver
   id: WeaponRevolverM36Base
-  suffix: Empty
+  name: S&W M36 (.38 Special)
   description: A revolver that is commonly used by american law enforcer when budget is lacking. Manufactured by Smith & Wesson and uses .38 Special ammo.
+  suffix: Empty
+  parent: BaseWeaponRevolver
   components:
-  - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedScale: 2.25
-  - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Revolvers/M36.rsi
-    scale: 0.4,0.4
-  - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Revolvers/M36.rsi
-  - type: Gun
-    selectedMode: SemiAuto
-    fireRate: 2
-    availableModes:
-    - SemiAuto
-    soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/python_fire.ogg
-      params:
-        volume: 2.25
-  - type: StaticPrice
-    price: 1
-  - type: RevolverAmmoProvider
-    whitelist:
-      tags:
-        - Cartridge38Special
-        - SpeedLoader38Special
-    capacity: 6
-    proto: Cartridge38SpecialFMJ
-    chambers: [ true, true, true, true, true, true ]
-    ammoSlots: [ null, null, null, null, null, null ]
+    - type: Item
+      size: Normal
+      shape:
+        - 0,0,1,1
+      storedScale: 2.25
+    - type: Sprite
+      scale: 0.4,0.4
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Revolvers/M36.rsi
+    - type: Clothing
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Revolvers/M36.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/python_fire.ogg
+        params:
+          volume: 13
+          pitch: 1.5
+          playOffsetSeconds: 0.05
+          variation: 0.1
+      fireRate: 2
+      availableModes:
+        - SemiAuto
+      selectedMode: SemiAuto
+    - type: StaticPrice
+      price: 1
+    - type: RevolverAmmoProvider
+      whitelist:
+        tags:
+          - Cartridge38Special
+          - SpeedLoader38Special
+      capacity: 6
+      ammoSlots:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      chambers:
+        - true
+        - true
+        - true
+        - true
+        - true
+        - true
+      proto: Cartridge38SpecialFMJ
 
-#MARK: Empty
 - type: entity
-  parent: WeaponRevolverM36Base
   id: WeaponRevolverM36Empty
-  suffix: FMJ
-  components:
-  - type: RevolverAmmoProvider
-    proto: null
-    chambers: [ null, null, null, null, null, null ]
-    ammoSlots: [ null, null, null, null, null, null ]
-
-#MARK: FMJ
-- type: entity
+  suffix: Empty
   parent: WeaponRevolverM36Base
+  components:
+    - type: RevolverAmmoProvider
+      ammoSlots:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      chambers:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      proto: null
+
+- type: entity
   id: WeaponRevolverM36FilledFMJ
   suffix: FMJ
-  components:
-  - type: RevolverAmmoProvider
-    proto: Cartridge38SpecialFMJ
-
-#MARK: JHP
-- type: entity
   parent: WeaponRevolverM36Base
+  components:
+    - type: RevolverAmmoProvider
+      proto: Cartridge38SpecialFMJ
+
+- type: entity
   id: WeaponRevolverM36FilledJHP
   suffix: JHP
-  components:
-  - type: RevolverAmmoProvider
-    proto: Cartridge38SpecialJHP
-
-#MARK: +P
-- type: entity
   parent: WeaponRevolverM36Base
+  components:
+    - type: RevolverAmmoProvider
+      proto: Cartridge38SpecialJHP
+
+- type: entity
   id: WeaponRevolverM36Filled+P
   suffix: +P
-  components:
-  - type: RevolverAmmoProvider
-    proto: Cartridge38Special+P
-
-#MARK: Rubber
-- type: entity
   parent: WeaponRevolverM36Base
+  components:
+    - type: RevolverAmmoProvider
+      proto: Cartridge38Special+P
+
+- type: entity
   id: WeaponRevolverM36FilledRubber
   suffix: Rubber
+  parent: WeaponRevolverM36Base
   components:
-  - type: RevolverAmmoProvider
-    proto: Cartridge38SpecialRubber
+    - type: RevolverAmmoProvider
+      proto: Cartridge38SpecialRubber

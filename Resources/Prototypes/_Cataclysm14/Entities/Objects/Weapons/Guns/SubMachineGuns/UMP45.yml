@@ -1,109 +1,108 @@
-#MARK: Base
 - type: entity
-  name: HK UMP45 (.45 ACP)
-  parent: BaseWeaponRifle
   id: WeaponSubMachineGunUMP45Base
-  abstract: true
+  name: HK UMP45 (.45 ACP)
   description: A compact SMG that pack quite a punch, the Heckler and Koch Universal MachinePistol .45 Caliber, ordered by the US forces as replacement for the MP5 it ended up not being chosen. Chambered in .45 ACP.
+  parent: BaseWeaponRifle
+  abstract: true
   components:
-  - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_64x32.rsi
-    scale: 0.50, 0.50
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
-  - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_32x32.rsi
-    size: Normal
-    shape:
-    - 0,0,3,1
-    storedScale: 2
-  - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_32x32.rsi
-    clothingVisuals:
-      suitstorage:
-      - state: equipped-SUITSTORAGE
-      slingfront:
-      - state: equipped-SUITSTORAGE
-  - type: GunWieldBonus
-    minAngle: -20
-    maxAngle: -30
-  - type: Gun
-    minAngle: 21
-    maxAngle: 70
-    angleIncrease: 5
-    angleDecay: 20
-    fireRate: 9
-    soundGunshot:
-      path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
-      params:
-        pitch: 1.2
-        volume: 15
-        variation: 0.15
-  - type: ChamberMagazineAmmoProvider
-    soundRack:
-      path: /Audio/_Cataclysm14/Weapons/Guns/Cocking/cata_heavy_1.ogg
-    soundBoltClosed:
-      path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_closing.ogg
-    soundBoltOpened:
-      path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_opening.ogg
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: null
-        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
-        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - Magazine5,56x45mmSTANAGCompatible
-            - AmmoBelt5,56x45mm
-            - MagazineBox5,56x45mmLMGCompatible
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: null
-        priority: 1
-        whitelist:
-          tags:
-            - Cartridge5,56x45mm
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
-  - type: WieldedCrosshair
-    rsi:
-      sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
-      state: all
+    - type: Sprite
+      scale: 0.50, 0.50
+      sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_64x32.rsi
+      layers:
+        - state: base
+          map:
+            - enum.GunVisualLayers.Base
+        - state: mag-0
+          map:
+            - enum.GunVisualLayers.Mag
+    - type: Item
+      size: Normal
+      sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_32x32.rsi
+      shape:
+        - 0,0,3,1
+      storedScale: 2
+    - type: Clothing
+      clothingVisuals:
+        suitstorage:
+          - state: equipped-SUITSTORAGE
+        slingfront:
+          - state: equipped-SUITSTORAGE
+      sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_32x32.rsi
+    - type: GunWieldBonus
+      minAngle: -20
+      maxAngle: -30
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
+        params:
+          pitch: 0.9
+          volume: 15
+          variation: 0.15
+      angleIncrease: 5
+      angleDecay: 20
+      maxAngle: 70
+      minAngle: 21
+      fireRate: 9
+    - type: ChamberMagazineAmmoProvider
+      soundBoltClosed:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_closing.ogg
+      soundBoltOpened:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_opening.ogg
+      soundRack:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Cocking/cata_heavy_1.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: null
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine5,56x45mmSTANAGCompatible
+              - AmmoBelt5,56x45mm
+              - MagazineBox5,56x45mmLMGCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge5,56x45mm
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot {}
+        gun_chamber: !type:ContainerSlot {}
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Appearance
+    - type: WieldedCrosshair
+      rsi:
+        sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
+        state: all
 
-#MARK: UMP45 30rd Empty
 - type: entity
-  parent: WeaponSubMachineGunUMP45Base
   id: WeaponSubMachineGunUMP45Filled30rdEmpty
   suffix: Empty - 30rd
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine45AcpUMP45_30rdEmpty
-
-#MARK: UMP45 30rd FMJ
-- type: entity
   parent: WeaponSubMachineGunUMP45Base
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine45AcpUMP45_30rdEmpty
+
+- type: entity
   id: WeaponSubMachineGunUMP45Filled30rdFMJ
   suffix: FMJ - 30rd
+  parent: WeaponSubMachineGunUMP45Base
   components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine45AcpUMP45_30rdFMJ
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine45AcpUMP45_30rdFMJ

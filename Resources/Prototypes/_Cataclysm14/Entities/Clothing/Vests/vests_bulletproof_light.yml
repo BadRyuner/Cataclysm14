@@ -1,6 +1,6 @@
 #MARK: -PACA-
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: ClothingOuterArmorBasic
       id: ClothingOuterBulletProofVestPACA
       name: PACA soft body armor
       description: A simple kevlar vest of decent quality. This one is a simple bulletproof vest made to resist low caliber rounds.
@@ -30,7 +30,7 @@
 #MARK: -6B2-
   #MARK: 6B2 - flora
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: ClothingOuterArmorBasic
       id: ClothingOuterBulletProofVest6B2Flora
       name: 6B2 body armor (flora)
       description: A simple kevlar vest made out of titanium. Capable of whistanding pistol calibers.
@@ -59,7 +59,7 @@
         vendPrice: 12000
   #MARK: 6B2 - brown
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: ClothingOuterArmorBasic
       id: ClothingOuterBulletProofVest6B2Brown
       name: 6B2 body armor (brown)
       components:
@@ -69,7 +69,7 @@
         sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B2_brown.rsi
   #MARK: 6B2 - grey
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: ClothingOuterArmorBasic
       id: ClothingOuterBulletProofVest6B2Grey
       name: 6B2 body armor (grey)
       components:
@@ -79,7 +79,7 @@
         sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_6B2_grey.rsi
 #MARK: -BNTIZhuk Press-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackHeavy, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackHeavy, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestBNTIZhukPress
       name: BNTI zhuk press body armor
       description: A simple kevlar vest of decent quality with press markings. This one is a simple bulletproof vest made to resist low caliber rounds.
@@ -123,7 +123,7 @@
         - id: BallisticPlateFrontZhuk3Level3
 #MARK: -Highcom toroper-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestHighcomTrooperTan
       name: Highcom Trooper body armor (tan)
       description: An high quality armor vest out of high quality materials. Can handle armor piercing pistol calibers.
@@ -173,7 +173,7 @@
 #MARK: -Slick-
   #MARK: Slick - coyote
     - type: entity
-      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestSlickCoyote
       name: LBT slick armor vest (coyote)
       description: An LBT-6094A milspec standard quality armor vest. Can handle low power intermediate calibers.
@@ -262,7 +262,7 @@
         - id: BallisticPlateFrontNESCO4400Level6
 #MARK: -Interceptor OTV-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestInterceptorOTV
       name: Interceptor OTV armor vest
       description: An above average armor vest out of quality materials. Can handle armor piercing pistol calibers.
@@ -333,7 +333,7 @@
         - id: BallisticPlateFrontMonocletePELevel4
 #MARK: Police US light
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: ClothingOuterArmorBasic
       id: ClothingOuterBulletProofVestPoliceUSLightBlack
       name: US police light body armor
       description: A simple kevlar vest of decent quality. This one is a simple bulletproof vest made to resist low caliber rounds.

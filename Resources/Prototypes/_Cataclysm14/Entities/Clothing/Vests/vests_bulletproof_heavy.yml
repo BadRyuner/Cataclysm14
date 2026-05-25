@@ -1,6 +1,6 @@
 #MARK: -THOR-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestTHOR
       name: NFM-THOR heavy ballistic vest
       suffix: Empty

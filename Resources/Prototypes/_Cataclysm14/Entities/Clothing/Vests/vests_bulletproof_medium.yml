@@ -1,7 +1,7 @@
 #MARK: -6B13-
   #MARK: 6B13 - flora
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackHeavy, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackHeavy, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVest6B13Flora
       suffix: Empty
       name: 6B13 body armor (flora)
@@ -67,7 +67,7 @@
         - id: BallisticPlateFront6B33Level4
 #MARK: -Korund VM-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackHeavySides, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackHeavySides, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestKorundVM
       suffix: Empty
       name: Korund-VM armor vest
@@ -114,7 +114,7 @@
         - id: BallisticPlateSidesKorundVMLevel5
 #MARK: -Kirasa-N-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestKirasaN
       suffix: Empty
       name: Kirasa-N armor vest
@@ -164,7 +164,7 @@
         - id: BallisticPlateFrontAR500Level3
 #MARK: -IOTV-Gen4-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestIOTVGen4
       suffix: Empty
       name: IOTV Gen4 armor vest
@@ -216,7 +216,7 @@
         - id: BallisticPlateSidesSSAPILevel5
 #MARK: -ANA UnNations-
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: ClothingOuterArmorBasic
       id: ClothingOuterBulletProofVestANAModularUN
       name: ANA modular armor vest (UN)
       description: An standard quality armor vest made for UN forces. Can resist a whole lot of pistol caliber rounds.
@@ -245,7 +245,7 @@
         vendPrice: 9000
 #MARK: -OTV UnNations-
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: ClothingOuterArmorBasic
       id: ClothingOuterBulletProofVestOTVUN
       name: OTV medium armor vest (UN)
       description: An standard quality armor vest made for the United Nation peace keeping forces. Can resist a whole lot of pistol caliber rounds.
@@ -274,7 +274,7 @@
         vendPrice: 9000
 #MARK: -IOTV- US forces tan
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBasic]
       id: ClothingOuterBulletProofVestIOTVTan
       suffix: Empty
       name: IOTV armor vest (tan)
