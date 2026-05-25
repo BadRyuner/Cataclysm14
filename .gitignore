@@ -313,3 +313,5 @@ Resources/MapImages
 # Link Files
 *.lnk
 
+# SS14 prototype editor metadata
+Redactor/metadata.json
