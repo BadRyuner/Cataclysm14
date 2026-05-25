@@ -2,6 +2,7 @@
   - type: entity
     parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
     id: BaseClothingBeltDutyBelt
+    abstract: true
     components:
     - type: StaticPrice
       price: 3000
