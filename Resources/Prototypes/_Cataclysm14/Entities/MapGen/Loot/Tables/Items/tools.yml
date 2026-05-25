@@ -1,0 +1,9 @@
+- type: entityTable
+  id: LootTableToolsCrowbarsMetal
+  table: !type:GroupSelector
+    children:
+    - id: ToolCrowbarMetal
+    - id: ToolCrowbarMetalRed
+    - id: ToolCrowbarMetalGreen
+    - id: ToolCrowbarMetalOrange
+    - id: ToolCrowbarMetalYellow

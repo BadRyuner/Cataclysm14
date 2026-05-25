@@ -67,6 +67,7 @@
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_grey_paper.rsi
       state: icon
@@ -97,6 +98,7 @@
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black_tall.rsi
       state: icon
@@ -128,6 +130,7 @@
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black_tall.rsi
       state: icon
@@ -158,6 +161,7 @@
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black.rsi
       state: icon
@@ -182,13 +186,14 @@
     name: Korund-VM side ballistic plate (Level V)
     components:
     - type: ArmorPlateItem
-      maxDurability: 50
+      maxDurability: 20
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_side_green_flat.rsi
       state: icon
@@ -198,7 +203,7 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 50
+          damage: 20
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -219,6 +224,7 @@
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black_two_piece.rsi
       state: icon
@@ -242,13 +248,14 @@
     name: SSAPI side ballistic plate (Level V)
     components:
     - type: ArmorPlateItem
-      maxDurability: 50
+      maxDurability: 20
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_side_green.rsi
       state: icon
@@ -258,7 +265,7 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 50
+          damage: 20
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -279,6 +286,7 @@
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_grey_paper.rsi
       state: icon
@@ -309,6 +317,7 @@
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_grey_paper.rsi
       state: icon
@@ -318,7 +327,7 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 175
+          damage: 50
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -339,6 +348,7 @@
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_grey_paper.rsi
       state: icon
@@ -362,13 +372,14 @@
     name: ESBI side ballistic plate (Level VI)
     components:
     - type: ArmorPlateItem
-      maxDurability: 50
+      maxDurability: 20
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
       absorptionRatios:
         Blunt: 0.9
         Slash: 0.9
+        Piercing: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_side_green.rsi
       state: icon
@@ -378,7 +389,7 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 50
+          damage: 20
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]

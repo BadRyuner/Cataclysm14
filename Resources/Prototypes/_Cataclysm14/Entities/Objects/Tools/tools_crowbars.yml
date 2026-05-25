@@ -1,6 +1,5 @@
 #MARK: Base
   - type: entity
-    name: metal crowbar
     parent: BaseItem
     id: BaseToolCrowbar
     abstract: true
@@ -18,10 +17,6 @@
     - type: EmitSoundOnLand
       sound:
         path: /Audio/Items/crowbar_drop.ogg
-    # Used for whitelists but not needed by us
-    # - type: Tag
-    #   tags:
-    #   - ToolCrowbar
     - type: MeleeWeapon
       wideAnimationRotation: -135
       damage:
@@ -42,15 +37,15 @@
     - type: UseDelay
       delay: 1
     - type: Sprite
-      sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
+      sprite: _Cataclysm14/Objects/Tools/tool_crowbar.rsi
       scale: 0.75,0.75
     - type: Clothing
-      sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
+      sprite: _Cataclysm14/Objects/Tools/tool_crowbar.rsi
       quickEquip: false
       slots:
       - Belt
     - type: Item
-      sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
+      sprite: _Cataclysm14/Objects/Tools/tool_crowbar.rsi
       size: Normal
       shape:
       - 0,0,0,1
@@ -60,10 +55,11 @@
     # - type: SurgeryTool # Shitmed
       # startSound: /Audio/Items/crowbar.ogg
 
-#MARK: regular crowbars
+#MARK: Metal Crowbar
   - type: entity
     parent: BaseToolCrowbar
-    id: ToolCrowbar
+    id: ToolCrowbarMetal
+    name: metal crowbar
     description: A multipurpose tool to pry open doors.
     components:
     - type: MeleeWeapon
@@ -73,8 +69,12 @@
     - type: Sprite
       state: icon
     - type: Item
+      storedScale: 1.3
+      storedRotation: -8
+      shape: 
+      - 0,0,0,2
       storedSprite:
-        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/tool_crowbar.rsi
         state: storage
     - type: Tool
       qualities:
@@ -83,9 +83,11 @@
       - HammeringT1
       - NailPryingT1
 
+#MARK: Red Metal Crowbar
   - type: entity
-    parent: ToolCrowbar
-    id: ToolCrowbarRed
+    parent: ToolCrowbarMetal
+    id: ToolCrowbarMetalRed
+    name: metal crowbar (red)
     description: A multipurpose tool to pry open doors and fight interdimensional invaders.
     components:
     - type: Tag
@@ -99,7 +101,7 @@
     - type: Item
       storedSprite:
         state: red-storage
-        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/tool_crowbar.rsi
       inhandVisuals:
         left:
         - state: inhand-left
@@ -116,9 +118,11 @@
         - state: cover-equipped-BELT
           color: "#990000"
 
+#MARK: Green Metal Crowbar
   - type: entity
-    parent: ToolCrowbar
-    id: ToolCrowbarGreen
+    parent: ToolCrowbarMetal
+    id: ToolCrowbarMetalGreen
+    name: metal crowbar (green)
     description: A multipurpose tool to pry open doors.
     components:
     - type: Sprite
@@ -129,7 +133,7 @@
     - type: Item
       storedSprite:
         state: green-storage
-        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/tool_crowbar.rsi
       inhandVisuals:
         left:
         - state: inhand-left
@@ -146,9 +150,11 @@
         - state: cover-equipped-BELT
           color: "#00621c"
 
+#MARK: Orange Metal Crowbar
   - type: entity
-    parent: ToolCrowbar
-    id: ToolCrowbarOrange
+    parent: ToolCrowbarMetal
+    id: ToolCrowbarMetalOrange
+    name: metal crowbar (orange)
     description: A multipurpose tool to pry open doors.
     components:
     - type: Sprite
@@ -159,7 +165,7 @@
     - type: Item
       storedSprite:
         state: orange-storage
-        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/tool_crowbar.rsi
       inhandVisuals:
         left:
         - state: inhand-left
@@ -176,9 +182,11 @@
         - state: cover-equipped-BELT
           color: "#673800"
 
+#MARK: Yellow Metal Crowbar
   - type: entity
-    parent: ToolCrowbar
-    id: ToolCrowbarYellow
+    parent: ToolCrowbarMetal
+    id: ToolCrowbarMetalYellow
+    name: metal crowbar (yellow)
     description: A multipurpose tool to pry open doors.
     components:
     - type: Sprite
@@ -189,7 +197,7 @@
     - type: Item
       storedSprite:
         state: yellow-storage
-        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/tool_crowbar.rsi
       inhandVisuals:
         left:
         - state: inhand-left
@@ -206,7 +214,7 @@
         - state: cover-equipped-BELT
           color: "#968000"
 
-#MARK: makeshift crowbars
+#MARK: Makeshift Crowbar
   - type: entity
     parent: BaseToolCrowbar
     id: ToolCrowbarMakeshift
@@ -224,9 +232,13 @@
       - PryingT1
       - HammeringT1
     - type: Item
+      storedScale: 1.3
+      storedRotation: -8
+      shape: 
+      - 0,0,0,2
       storedSprite:
         state: makeshift-storage
-        sprite: _Cataclysm14/Objects/Tools/crowbar.rsi
+        sprite: _Cataclysm14/Objects/Tools/tool_crowbar.rsi
       inhandVisuals:
         left:
         - state: inhand-left-grey
@@ -247,14 +259,19 @@
     name: halligan bar
     description: A tool used to pry open doors and used by firefighter for breaching.
     components:
+    - type: Item
+      storedScale: 2
+      storedRotation: -45
+      shape: 
+      - 0,0,1,2
     - type: MeleeWeapon
       damage:
         types:
           Blunt: 24
     - type: Sprite
-      sprite: _Cataclysm14/Objects/Tools/halligan_bar.rsi
+      sprite: _Cataclysm14/Objects/Tools/tool_halligan_bar.rsi
       state: icon
-      scale: 0.9,0.9
+      scale: 0.7,0.7
     - type: Tool
       qualities:
       - PryingT1

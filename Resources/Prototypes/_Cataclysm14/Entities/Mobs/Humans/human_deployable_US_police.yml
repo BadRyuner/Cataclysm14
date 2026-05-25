@@ -1,0 +1,82 @@
+#MARK: US Police Officer
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployablePoliceUsOfficer
+  suffix: US Police Officer
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingPoliceUsBulletProofVest
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHatCapPoliceUS
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPoliceFilledPolice
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaNeckGaiterBlack
+        - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+
+#MARK: SWAT Officer
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployablePoliceUsSWATOfficer
+  suffix: SWAT Officer
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestPoliceUSLightBlack
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofM88SWAT
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPoliceFilledPolice
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponRifleAR15FilledSTANAG30rdFMJ
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaNeckGaiterBlack
+        - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+        - id: ClothingPantsCombatDigitalBlack
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+      pocket1: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdFMJ
+      pocket2: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdFMJ
+      pocket3: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdFMJ
+      pocket4: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdFMJ

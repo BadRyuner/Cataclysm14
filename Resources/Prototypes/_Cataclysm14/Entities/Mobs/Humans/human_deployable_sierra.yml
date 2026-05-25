@@ -1,11 +1,9 @@
 #MARK: Sierra Trooper Light
 - type: entity
-  parent: MobHuman
+  parent: BaseMobHumanDeployable
   id: MobHumanDeployableSierraTrooperLight
   suffix: Sierra Light Trooper
   components:
-  - type: Inventory
-    templateId: human
   - type: EntityTableOutfitContainerFill
     containers:
       outerClothing: !type:GroupSelector
@@ -53,12 +51,10 @@
 
 #MARK: Sierra Trooper Heavy
 - type: entity
-  parent: MobHuman
+  parent: BaseMobHumanDeployable
   id: MobHumanDeployableSierraTrooperHeavy
   suffix: Sierra Heavy Trooper
   components:
-  - type: Inventory
-    templateId: human
   - type: EntityTableOutfitContainerFill
     containers:
       outerClothing: !type:GroupSelector
@@ -106,12 +102,10 @@
 
 #MARK: Sierra Officer
 - type: entity
-  parent: MobHuman
+  parent: BaseMobHumanDeployable
   id: MobHumanDeployableSierraOfficer
   suffix: Sierra Officer
   components:
-  - type: Inventory
-    templateId: human
   - type: EntityTableOutfitContainerFill
     containers:
       outerClothing: !type:GroupSelector
@@ -159,12 +153,10 @@
 
 #MARK: Sierra Commandant
 - type: entity
-  parent: MobHuman
+  parent: BaseMobHumanDeployable
   id: MobHumanDeployableSierraCommandant
   suffix: Sierra Commandant
   components:
-  - type: Inventory
-    templateId: human
   - type: EntityTableOutfitContainerFill
     containers:
       outerClothing: !type:GroupSelector
