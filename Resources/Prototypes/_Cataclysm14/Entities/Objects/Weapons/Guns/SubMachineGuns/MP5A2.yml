@@ -4,7 +4,7 @@
   parent: BaseWeaponRifle
   id: WeaponSubMachineGunMP5A2Base
   abstract: true
-  description: A timeless classic used by forces throughout the world, the Heckler and Koch MachinePistol 5, Chambered in 9x19mmparabellum.
+  description: A timeless classic used by forces throughout the world, the Heckler and Koch MachinePistol 5, Chambered in 9x19mm parabellum.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5A2_64x32.rsi

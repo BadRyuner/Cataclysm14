@@ -4,7 +4,7 @@
   parent: BaseWeaponRifle
   id: WeaponSubMachineGunMP5SDModSierraBase
   abstract: true
-  description: A timeless classic used by forces throughout the world, the Heckler and Koch MachinePistol 5 SD "Schalldämpfer" silenced, Chambered in 9x19mmparabellum. Donning the colors of the Superstructure Taskforce Sierra.
+  description: A timeless classic used by forces throughout the world, the Heckler and Koch MachinePistol 5 SD "Schalldämpfer" silenced, Chambered in 9x19mm parabellum. Donning the colors of the Superstructure Taskforce Sierra.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5SD_mod_sierra_64x32.rsi
