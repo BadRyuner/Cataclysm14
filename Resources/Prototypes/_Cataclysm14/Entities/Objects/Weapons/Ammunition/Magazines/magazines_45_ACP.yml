@@ -1,17 +1,17 @@
 #MARK: Base
 - type: entity
-  id: BaseMagazine45_Acp
+  id: BaseMagazine45Acp
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine45_AcpPistolFMJ
+      - Magazine45AcpPistolFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_Acp
+        - Cartridge45Acp
     capacity: 17
   - type: Item
     size: Small
@@ -20,7 +20,7 @@
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.30,0.30
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/45_Acp/45_Acp_pistol_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/45Acp/45Acp_pistol_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -34,10 +34,10 @@
 
 #MARK: M1911 Mag 10rd
 - type: entity
-  id: BaseMagazine45_AcpM1911_10rd
+  id: BaseMagazine45AcpM1911_10rd
   abstract: true
   name: "M1911 10rd magazine (.45 ACP)"
-  parent: BaseMagazine45_Acp
+  parent: BaseMagazine45Acp
   components:
   - type: BallisticAmmoProvider
     capacity: 10
@@ -45,9 +45,9 @@
     storedScale: 2
   - type: Tag
     tags:
-      - Magazine45_AcpM1911Compatible
+      - Magazine45AcpM1911Compatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/45_Acp/magazine_45_Acp_M1911_10rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/45Acp/magazine_45Acp_M1911_10rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -56,37 +56,37 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine45_AcpM1911_10rdEmpty
+  id: Magazine45AcpM1911_10rdEmpty
   suffix: Empty
-  parent: BaseMagazine45_AcpM1911_10rd
+  parent: BaseMagazine45AcpM1911_10rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine45_AcpM1911_10rdFMJ
+  id: Magazine45AcpM1911_10rdFMJ
   suffix: FMJ
-  parent: BaseMagazine45_AcpM1911_10rd
+  parent: BaseMagazine45AcpM1911_10rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_AcpFMJ
+    proto: Cartridge45AcpFMJ
 
 #MARK: UMP45 Mag 30rd
 - type: entity
-  id: BaseMagazine45_AcpUMP45_30rd
+  id: BaseMagazine45AcpUMP45_30rd
   abstract: true
   name: "UMP45 30rd magazine (.45 ACP)"
-  parent: BaseMagazine45_Acp
+  parent: BaseMagazine45Acp
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_AcpFMJ
+    proto: Cartridge45AcpFMJ
     capacity: 30
   - type: Tag
     tags:
-      - Magazine45_AcpUMP45Compatible
+      - Magazine45AcpUMP45Compatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/45_Acp/magazine_45_Acp_UMP45_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/45Acp/magazine_45Acp_UMP45_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -95,18 +95,18 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine45_AcpUMP45_30rdEmpty
+  id: Magazine45AcpUMP45_30rdEmpty
   suffix: Empty
-  parent: BaseMagazine45_AcpUMP45_30rd
+  parent: BaseMagazine45AcpUMP45_30rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine45_AcpUMP45_30rdFMJ
+  id: Magazine45AcpUMP45_30rdFMJ
   suffix: FMJ
-  parent: BaseMagazine45_AcpUMP45_30rd
+  parent: BaseMagazine45AcpUMP45_30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_AcpFMJ
+    proto: Cartridge45AcpFMJ

@@ -1,7 +1,7 @@
 #MARK: -Sweaters-
   #MARK: Sweater - white
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtSweaterWhite
       name: white sweater
       description: A warm sweater, this one is colored in white.
@@ -12,7 +12,7 @@
         sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
   #MARK: Sweater - red
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtSweaterRed
       name: red sweater
       description: A warm sweater, this one is colored in red.
@@ -36,7 +36,7 @@
             color: "#9E1A1A"
   #MARK: Sweater - blue
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtSweaterBlue
       name: blue sweater
       description: A warm sweater, this one is colored in blue.
@@ -60,7 +60,7 @@
             color: "#2832C2"
   #MARK: Sweater - green
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtSweaterGreen
       name: green sweater
       description: A warm sweater, this one is colored in green.
@@ -84,7 +84,7 @@
             color: "#3d8c40"
   #MARK: Sweater - yellow
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtSweaterYellow
       name: yellow sweater
       description: A warm sweater, this one is colored in yellow.
@@ -108,7 +108,7 @@
             color: "#E4CD05"
   #MARK: Sweater - purple
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtSweaterPurple
       name: purple sweater
       description: A warm sweater, this one is colored in purple.
@@ -132,7 +132,7 @@
             color: "#702963"
   #MARK: Sweater - black
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtSweaterBlack
       name: black sweater
       description: A warm sweater, this one is colored in black.
@@ -156,7 +156,7 @@
             color: "#444444"
   #MARK: Sweater - beige
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtSweaterBeige
       name: beige sweater
       description: A warm sweater, this one is colored in beige.

@@ -1,7 +1,7 @@
 #MARK: Tactical duffel
 - type: entity
   parent: ClothingBackpackDuffel
-  id: ClothingBackpackDuffelTacticalBase
+  id: BaseClothingBackpackDuffelTactical
   abstract: true
   components:
   - type: Storage
@@ -20,7 +20,7 @@
 #MARK: Sports duffel
 - type: entity
   parent: ClothingBackpackDuffel
-  id: ClothingBackpackDuffelSportBase
+  id: BaseClothingBackpackDuffelSport
   abstract: true
   components:
   - type: Storage
@@ -39,7 +39,7 @@
 #MARK: School bag
 - type: entity
   parent: ClothingBackpackDuffel
-  id: ClothingBackpackSchoolBagBase
+  id: BaseClothingBackpackSchoolBag
   abstract: true
   components:
   - type: Storage
@@ -58,7 +58,7 @@
 #MARK: Rucksac
 - type: entity
   parent: ClothingBackpackDuffel
-  id: ClothingBackpackRucksackBase
+  id: BaseClothingBackpackRucksack
   abstract: true
   components:
   - type: Storage
@@ -78,7 +78,7 @@
 #MARK: Alice Pack
 - type: entity
   parent: ClothingBackpackDuffel
-  id: ClothingBackpackAlicePackBase
+  id: BaseClothingBackpackAlicePack
   abstract: true
   components:
   - type: Storage
@@ -96,3 +96,22 @@
   - type: StaticPrice
     price: 25750
     vendPrice: 45000
+
+#MARK: Leather Satchel
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: BaseClothingBackpackLeatherSatchel
+  abstract: true
+  components:
+  - type: Storage
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,5,3
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,2,3
+  - type: StaticPrice
+    price: 9000
+    vendPrice: 14000

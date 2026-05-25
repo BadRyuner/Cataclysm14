@@ -1,0 +1,76 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine5,7x28mm
+  name: pistol magazine (5,7x28mm FMJ)
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Magazine5,7x28mmPistolFMJ
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge5,7x28mm
+    capacity: 17
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.30,0.30
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,7x28mm/5,7x28mm_pistol_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+
+#MARK: FN 5,7 20rd
+- type: entity
+  id: BaseMagazine5,7x28mmFN5,7_20rd
+  abstract: true
+  name: "FN 5,7 20rd magazine (5,7x28mm)"
+  parent: BaseMagazine5,7x28mm
+  components:
+  - type: Item
+    storedScale: 2.5
+  - type: BallisticAmmoProvider
+    proto: Cartridge5,7x28mmFMJ
+    capacity: 20
+  - type: Tag
+    tags:
+      - Magazine5,7x28mmFN5,7Compatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,7x28mm/magazine_5,7x28mm_FN5,7_20rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine5,7x28mmFN5,7_20rdEmpty
+  suffix: Empty
+  parent: BaseMagazine5,7x28mmFN5,7_20rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine5,7x28mmFN5,7_20rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine5,7x28mmFN5,7_20rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5,7x28mmFMJ

@@ -1,7 +1,7 @@
 #MARK: -Sport duffels-
   #MARK: Sport duffel - red
     - type: entity
-      parent: ClothingBackpackDuffelSportBase
+      parent: BaseClothingBackpackDuffelSport
       id: ClothingBackpackDuffelSportRed
       name: red sports duffelbag
       description: A plain colored sports duffelbag, this one is colored in red.
@@ -25,7 +25,7 @@
             color: "#9E1A1A"
   #MARK: Sport duffel - blue
     - type: entity
-      parent: ClothingBackpackDuffelSportBase
+      parent: BaseClothingBackpackDuffelSport
       id: ClothingBackpackDuffelSportBlue
       name: blue sports duffelbag
       description: A plain colored sports duffelbag, this one is colored in blue.
@@ -49,7 +49,7 @@
             color: "#2832C2"
   #MARK: Sport duffel - green
     - type: entity
-      parent: ClothingBackpackDuffelSportBase
+      parent: BaseClothingBackpackDuffelSport
       id: ClothingBackpackDuffelSportGreen
       name: green sports duffelbag
       description: A plain colored sports duffelbag, this one is colored in green.
@@ -73,7 +73,7 @@
             color: "#3d8c40"
   #MARK: Sport duffel - yellow
     - type: entity
-      parent: ClothingBackpackDuffelSportBase
+      parent: BaseClothingBackpackDuffelSport
       id: ClothingBackpackDuffelSportYellow
       name: yellow sports duffelbag
       description: A plain colored sports duffelbag, this one is colored in yellow.
@@ -97,7 +97,7 @@
             color: "#E4CD05"
   #MARK: Sport duffel - purple
     - type: entity
-      parent: ClothingBackpackDuffelSportBase
+      parent: BaseClothingBackpackDuffelSport
       id: ClothingBackpackDuffelSportPurple
       name: purple sports duffelbag
       description: A plain colored sports duffelbag, this one is colored in purple.

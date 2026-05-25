@@ -1,0 +1,111 @@
+#MARK: RightRail26x13
+- type: dungeonRoom
+  id: StructureSpawnerMonorailCheckpointRightRail26x13a
+  size: 27,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_checkpoint_26x13_rightrail_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailCheckpointRightRail26x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMonorailCheckpointRightRail26x13
+  name: structure spawner monorail checkpoint
+  suffix: RightRail][2x1 Chunk][26x13
+  components:
+  - type: Sprite
+    scale: 26,13
+    offset: -0.5,0
+    layers:
+      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
+        state: structure_border_house_small
+  - type: RoomFill
+    rotation: false
+    roomWhitelist:
+      tags:
+      - CataStructureMonorailCheckpointRightRail26x13
+
+#MARK: LeftRail26x13
+- type: dungeonRoom
+  id: StructureSpawnerMonorailCheckpointLeftRail26x13a
+  size: 27,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_checkpoint_26x13_leftrail_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailCheckpointLeftRail26x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMonorailCheckpointLeftRail26x13
+  name: structure spawner monorail checkpoint
+  suffix: LeftRail][2x1 Chunk][26x13
+  components:
+  - type: Sprite
+    scale: 26,13
+    offset: -0.5,0
+    layers:
+      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
+        state: structure_border_house_small
+  - type: RoomFill
+    rotation: false
+    roomWhitelist:
+      tags:
+      - CataStructureMonorailCheckpointLeftRail26x13
+
+#MARK: 39x13
+- type: dungeonRoom
+  id: StructureSpawnerMonorailCheckpoint39x13a
+  size: 39,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_checkpoint_39x13_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailCheckpoint39x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMonorailCheckpoint39x13
+  name: structure spawner monorail checkpoint
+  suffix: 3x1 Chunk][39x13
+  components:
+  - type: Sprite
+    scale: 39,13
+    offset: -0.5,0
+    layers:
+      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
+        state: structure_border_house_small
+  - type: RoomFill
+    rotation: false
+    roomWhitelist:
+      tags:
+      - CataStructureMonorailCheckpoint39x13
+
+#MARK: Double26x26
+- type: dungeonRoom
+  id: StructureSpawnerMonorailCheckpointDouble26x26
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_double_checkpoint_26x26_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailCheckpointDouble26x26
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMonorailCheckpointDouble26x26
+  name: structure spawner monorail checkpoint
+  suffix: Double][2x2 Chunk][26x26
+  components:
+  - type: Sprite
+    scale: 26,26
+    offset: -0.5,-0.5
+    layers:
+      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
+        state: structure_border_house_small
+  - type: RoomFill
+    rotation: false
+    roomWhitelist:
+      tags:
+      - CataStructureMonorailCheckpointDouble26x26

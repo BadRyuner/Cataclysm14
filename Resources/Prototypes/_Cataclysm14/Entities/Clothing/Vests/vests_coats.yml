@@ -1,0 +1,18 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatLabCoat
+  name: lab coat
+  description: A durable thick lab coat.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Vests/Coats/coat_labcoat.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Vests/Coats/coat_labcoat.rsi
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Caustic: 0.60

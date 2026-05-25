@@ -1,7 +1,7 @@
 #MARK: -police pants-
   #MARK: RU police
     - type: entity
-      parent: ClothingPantsPocketBase
+      parent: BaseClothingPantsPocket
       id: ClothingPantsPoliceCopRU
       name: russian police pants
       description: An above average pair of pants made for use by russian police officers.
@@ -13,7 +13,7 @@
 
   #MARK: US police
     - type: entity
-      parent: ClothingPantsPocketBase
+      parent: BaseClothingPantsPocket
       id: ClothingPantsPoliceCopUS
       name: US police pants
       description: An above average pair of pants made for use by US police officers.
@@ -25,7 +25,7 @@
 
   #MARK: FR police municipale
     - type: entity
-      parent: ClothingPantsPocketBase
+      parent: BaseClothingPantsPocket
       id: ClothingPantsPoliceMunicipaleFR
       name: french municipale police pants
       description: An above average pair of pants made for use by french municipale police officers.

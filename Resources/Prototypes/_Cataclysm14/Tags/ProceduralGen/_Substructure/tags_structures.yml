@@ -1,0 +1,31 @@
+#MARK: Monorail-Straight
+  - type: Tag
+    id: CataStructureMonorailBaseStraight13x13
+  - type: Tag
+    id: CataStructureMonorailSidewalkStraight13x13
+
+#MARK: Monorail-Double-Straight
+  - type: Tag
+    id: CataStructureMonorailDoubleBaseStraight26x13
+  - type: Tag
+    id: CataStructureMonorailDoubleSidewalkStraight26x13
+
+#MARK: Monorail-Corner
+  - type: Tag
+    id: CataStructureMonorailBaseCorner13x13
+  - type: Tag
+    id: CataStructureMonorailSidewalkCorner13x13
+
+#MARK: Monorail-Checkpoints
+  - type: Tag
+    id: CataStructureMonorailCheckpointRightRail26x13
+  - type: Tag
+    id: CataStructureMonorailCheckpointLeftRail26x13
+  - type: Tag
+    id: CataStructureMonorailCheckpoint39x13
+  - type: Tag
+    id: CataStructureMonorailCheckpointDouble26x26
+
+#MARK: Misc
+  - type: Tag
+    id: CataStructureWallFull13x13

@@ -1,17 +1,17 @@
 - type: entity
-  id: BaseMagazine45_Magnum
+  id: BaseMagazine45Magnum
   name: pistol magazine (.45 magnum FMJ)
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine45_MagnumPistolFMJ
+      - Magazine45MagnumPistolFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_Magnum
+        - Cartridge45Magnum
     capacity: 8
   - type: Item
     size: Small
@@ -19,7 +19,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/45_Magnum/45_Magnum_pistol_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/45Magnum/45Magnum_pistol_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

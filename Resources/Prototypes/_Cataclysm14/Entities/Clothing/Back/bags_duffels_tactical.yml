@@ -1,6 +1,6 @@
 #MARK: Tac duffel Tan
   - type: entity
-    parent: ClothingBackpackDuffelTacticalBase
+    parent: BaseClothingBackpackDuffelTactical
     id: ClothingBackpackDuffelTacticalTan
     name: tan tactical duffel
     description: One heavy sack. Some effort was put in to make it lighter to no avail.
@@ -24,7 +24,7 @@
           color: "#cdac7f"
 #MARK: Tac duffel Olive
   - type: entity
-    parent: ClothingBackpackDuffelTacticalBase
+    parent: BaseClothingBackpackDuffelTactical
     id: ClothingBackpackDuffelTacticalOlive
     name: olive tactical duffel
     description: One heavy sack. Some effort was put in to make it lighter to no avail.
@@ -48,7 +48,7 @@
           color: "#5e662d"
 #MARK: Tac duffel Black
   - type: entity
-    parent: ClothingBackpackDuffelTacticalBase
+    parent: BaseClothingBackpackDuffelTactical
     id: ClothingBackpackDuffelTacticalBlack
     name: black tactical duffel
     description: One heavy sack. Some effort was put in to make it lighter to no avail.
@@ -72,7 +72,7 @@
           color: "#2F2F2F"
 #MARK: Tac duffel Ranger
   - type: entity
-    parent: ClothingBackpackDuffelTacticalBase
+    parent: BaseClothingBackpackDuffelTactical
     id: ClothingBackpackDuffelTacticalRangerGreen
     name: ranger green tactical duffel
     description: One heavy sack. Some effort was put in to make it lighter to no avail.
@@ -96,7 +96,7 @@
           color: "#465545"
 #MARK: Tac duffel Brown
   - type: entity
-    parent: ClothingBackpackDuffelTacticalBase
+    parent: BaseClothingBackpackDuffelTactical
     id: ClothingBackpackDuffelTacticalCoyoteBrown
     name: coyote brown tactical duffel
     description: One heavy sack. Some effort was put in to make it lighter to no avail.
@@ -120,7 +120,7 @@
           color: "#7b5c39"
 #MARK: Tac duffel White
   - type: entity
-    parent: ClothingBackpackDuffelTacticalBase
+    parent: BaseClothingBackpackDuffelTactical
     id: ClothingBackpackDuffelTacticalWhite
     name: white tactical duffel
     description: One heavy sack. Some effort was put in to make it lighter to no avail.

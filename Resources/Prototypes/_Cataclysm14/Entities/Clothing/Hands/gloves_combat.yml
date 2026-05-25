@@ -1,0 +1,155 @@
+
+#tactical gloves
+
+- type: entity
+  parent: [ ClothingHandsGlovesCombat]
+  id: ClothingHandsGlovesCombatTan
+  name: tan combat gloves
+  description: These combat gloves are fireproof and shock resistant.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    color: "#d2B48C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+        color: "#d2B48C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#d2B48C"
+      right:
+      - state: inhand-right
+        color: "#d2B48C"
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 1950
+
+- type: entity
+  parent: [ ClothingHandsGlovesCombat]
+  id: ClothingHandsGlovesCombatBlack
+  name: black combat gloves
+  description: These combat gloves are fireproof and shock resistant.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    color: "#2F2F2F"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+        color: "#2F2F2F"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#2F2F2F"
+      right:
+      - state: inhand-right
+        color: "#2F2F2F"
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 1950
+
+- type: entity
+  parent: [ ClothingHandsGlovesCombat]
+  id: ClothingHandsGlovesCombatRangerGreen
+  name: ranger green combat gloves
+  description: These combat gloves are fireproof and shock resistant.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    color: "#4A5A49"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+        color: "#4A5A49"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#4A5A49"
+      right:
+      - state: inhand-right
+        color: "#4A5A49"
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 1950
+
+- type: entity
+  parent: [ ClothingHandsGlovesCombat]
+  id: ClothingHandsGlovesCombatOlive
+  name: olive combat gloves
+  description: These combat gloves are fireproof and shock resistant.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    color: "#636B2F"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+        color: "#636B2F"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#636B2F"
+      right:
+      - state: inhand-right
+        color: "#636B2F"
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 1950
+
+- type: entity
+  parent: [ ClothingHandsGlovesCombat]
+  id: ClothingHandsGlovesCombatCoyoteBrown
+  name: coyote brown combat gloves
+
+  description: These combat gloves are fireproof and shock resistant.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    color: "#81613C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+        color: "#81613C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#81613C"
+      right:
+      - state: inhand-right
+        color: "#81613C"
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 1950
+
+- type: entity
+  parent: [ ClothingHandsGlovesCombat]
+  id: ClothingHandsGlovesCombatWhite
+  name: white combat gloves
+  description: These combat gloves are fireproof and shock resistant.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Hands/gloves_combat_any.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 1950

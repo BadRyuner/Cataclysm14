@@ -94,7 +94,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine45_AcpUMP45_30rdEmpty
+        startingItem: Magazine45AcpUMP45_30rdEmpty
 
 #MARK: UMP45 30rd FMJ
 - type: entity
@@ -106,4 +106,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine45_AcpUMP45_30rdFMJ
+        startingItem: Magazine45AcpUMP45_30rdFMJ

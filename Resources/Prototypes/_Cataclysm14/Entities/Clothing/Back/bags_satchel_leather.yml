@@ -1,0 +1,22 @@
+#MARK: Leather Satchel
+    - type: entity
+      parent: BaseClothingBackpackLeatherSatchel
+      id: ClothingBackpackSatchelLeatherBrown
+      name: brown leather satchel
+      description: A trendy and ergonomic leather bag that goes on the side. This one is made out of brown leather.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_satchel_leather_brown.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_satchel_leather_brown.rsi
+#MARK: Black Leather Satchel
+    - type: entity
+      parent: BaseClothingBackpackLeatherSatchel
+      id: ClothingBackpackSatchelLeatherBlack
+      name: black leather satchel
+      description: A trendy and ergonomic leather bag that goes on the side. This one is made out of black leather.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_satchel_leather_black.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_satchel_leather_black.rsi

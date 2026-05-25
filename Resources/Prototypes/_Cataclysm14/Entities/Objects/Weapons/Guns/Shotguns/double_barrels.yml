@@ -2,7 +2,7 @@
 - type: entity
   name: double barrel shotgun (12 gauge)
   parent: [BaseWeaponShotgun, BaseGunWieldable]
-  id: WeaponShotgun12_GaugeDoubleBarrelBase
+  id: WeaponShotgun12GaugeDoubleBarrelBase
   suffix: Empty
   description: An immortal classic. A civilian grade shotgun. Uses 12 gauge shotgun shells.
   components:
@@ -11,15 +11,15 @@
     shape:
     - 0,0,6,0
     storedScale: 2
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12_Gauge_64x64.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12Gauge_64x64.rsi
   - type: Sprite
     slots:
     - slingfront
     - suitstorage
     scale: 0.65,0.65
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12_Gauge_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12Gauge_64x32.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12_Gauge_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12Gauge_64x32.rsi
     clothingVisuals:
       slingfront:
       - state: equipped-SLINGFRONT
@@ -42,18 +42,18 @@
 
 #MARK: Buckshot
 - type: entity
-  parent: WeaponShotgun12_GaugeDoubleBarrelBase
-  id: WeaponShotgun12_GaugeDoubleBarrelFilledBuckshot
+  parent: WeaponShotgun12GaugeDoubleBarrelBase
+  id: WeaponShotgun12GaugeDoubleBarrelFilledBuckshot
   suffix: Buckshot
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgun12_GaugeBuckshot
+    proto: ShellShotgun12GaugeBuckshot
 
 #MARK: Beanbag
 - type: entity
-  parent: WeaponShotgun12_GaugeDoubleBarrelBase
-  id: WeaponShotgun12_GaugeDoubleBarrelFilledBeanbag
+  parent: WeaponShotgun12GaugeDoubleBarrelBase
+  id: WeaponShotgun12GaugeDoubleBarrelFilledBeanbag
   suffix: Beanbag
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgun12_GaugeBeanbag
+    proto: ShellShotgun12GaugeBeanbag

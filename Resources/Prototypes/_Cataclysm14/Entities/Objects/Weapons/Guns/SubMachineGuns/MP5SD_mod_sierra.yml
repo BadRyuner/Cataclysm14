@@ -1,0 +1,119 @@
+#MARK: Base
+- type: entity
+  name: sierra HK MP5SD mod (9x19mm parabellum)
+  parent: BaseWeaponRifle
+  id: WeaponSubMachineGunMP5SDModSierraBase
+  abstract: true
+  description: A timeless classic used by forces throughout the world, the Heckler and Koch MachinePistol 5 SD "Schalldämpfer" silenced, Chambered in 9x19mm parabellum. Donning the colors of the Superstructure Taskforce Sierra.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5SD_mod_sierra_64x32.rsi
+    scale: 0.50, 0.50
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5SD_mod_sierra_32x32.rsi
+    size: Normal
+    shape:
+    - 0,0,3,1
+    storedScale: 2
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/MP5SD_mod_sierra_32x32.rsi
+    clothingVisuals:
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+      slingfront:
+      - state: equipped-SUITSTORAGE
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 21
+    maxAngle: 40
+    angleIncrease: 5
+    angleDecay: 20
+    fireRate: 9
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      params:
+        pitch: 1.2
+        volume: 15
+        variation: 0.15
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Cataclysm14/Weapons/Guns/Cocking/cata_heavy_1.ogg
+    soundBoltClosed:
+      path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_closing.ogg
+    soundBoltOpened:
+      path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_opening.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: null
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine9x19mmParabellumMP5Compatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridges9x19mmParabellum
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
+      state: all
+
+#MARK: MP5 30rd Empty
+- type: entity
+  parent: WeaponSubMachineGunMP5SDModSierraBase
+  id: WeaponSubMachineGunMP5SDModSierraFilled30rdEmpty
+  suffix: Empty - 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine9x19mmParabellumMP5_30rdEmpty
+
+#MARK: MP5 30rd FMJ
+- type: entity
+  parent: WeaponSubMachineGunMP5SDModSierraBase
+  id: WeaponSubMachineGunMP5SDModSierraFilled30rdFMJ
+  suffix: FMJ - 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine9x19mmParabellumMP5_30rdFMJ
+
+#MARK: MP5 30rd Tracer Red
+- type: entity
+  parent: WeaponSubMachineGunMP5SDModSierraBase
+  id: WeaponSubMachineGunMP5SDModSierraFilled30rdTracerRed
+  suffix: Tracer Green - 30rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine9x19mmParabellumMP5_30rdTracerGreen

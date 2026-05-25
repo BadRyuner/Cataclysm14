@@ -69,26 +69,26 @@
   #MARK:.45 ACP
 
   - type: Tag
-    id: Cartridge45_Acp
+    id: Cartridge45Acp
 
   - type: Tag
-    id: Magazine45_AcpM1911Compatible
+    id: Magazine45AcpM1911Compatible
 
   - type: Tag
-    id: Magazine45_AcpUMP45Compatible
+    id: Magazine45AcpUMP45Compatible
 
   #MARK:.38 Special
 
   - type: Tag
-    id: Cartridge38_special
+    id: Cartridge38Special
 
   - type: Tag
-    id: SpeedLoader38_special
+    id: SpeedLoader38Special
 
   #MARK:.45 magnum
 
   - type: Tag
-    id: Cartridge45_Magnum
+    id: Cartridge45Magnum
 
   #MARK:9x19mmParabellum
 
@@ -109,18 +109,21 @@
   - type: Tag
     id: Cartridge5,7x28mm
 
+  - type: Tag
+    id: Magazine5,7x28mmFN5,7Compatible
+
   #MARK: 12 gauge
 
   - type: Tag
-    id: ShellShotgun12_Gauge
+    id: ShellShotgun12Gauge
 
   - type: Tag
-    id: Magazine12_GaugeSaiga12Compatible
+    id: Magazine12GaugeSaiga12Compatible
 
   #MARK: 4 gauge
 
   - type: Tag
-    id: ShellShotgun4_Gauge
+    id: ShellShotgun4Gauge
 
   #MARK: 12,7x99mm
   - type: Tag

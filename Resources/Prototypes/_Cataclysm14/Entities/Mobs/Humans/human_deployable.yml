@@ -1,0 +1,211 @@
+#MARK: Sierra Trooper Light
+- type: entity
+  parent: MobHuman
+  id: MobHumanDeployableSierraTrooperLight
+  suffix: Sierra Light Trooper
+  components:
+  - type: Inventory
+    templateId: human
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestInterceptorOTVSierraFilled
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofM88Black
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltBlackFilledSierra
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskBlack
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponSubMachineGunMP5SDModSierraFilled30rdFMJ
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackBlackFilledSierra
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsCombatSierraDuty
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtCombatSierraDuty
+      pocket1: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+      pocket2: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+      pocket3: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+      pocket4: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+
+#MARK: Sierra Trooper Heavy
+- type: entity
+  parent: MobHuman
+  id: MobHumanDeployableSierraTrooperHeavy
+  suffix: Sierra Heavy Trooper
+  components:
+  - type: Inventory
+    templateId: human
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestIOTVSierraFilled
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetRiotSecurityArmoredSierra
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltBlackFilledSierra
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskBlack
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponLightMachineGunM249Filled200rdFMJ
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackBlackFilledSierra
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsCombatSierraDuty
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtCombatSierraDuty
+      pocket1: !type:GroupSelector
+        children:
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
+      pocket2: !type:GroupSelector
+        children:
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
+      pocket3: !type:GroupSelector
+        children:
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
+      pocket4: !type:GroupSelector
+        children:
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
+
+#MARK: Sierra Officer
+- type: entity
+  parent: MobHuman
+  id: MobHumanDeployableSierraOfficer
+  suffix: Sierra Officer
+  components:
+  - type: Inventory
+    templateId: human
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestInterceptorOTVSierraFilled
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHatBeretSierra
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltBlackFilledSierra
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskBlack
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponSubMachineGunMP5SDModSierraFilled30rdFMJ
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackBlackFilledSierra
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsCombatSierraDuty
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtCombatSierraDuty
+      pocket1: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+      pocket2: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+      pocket3: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+      pocket4: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+
+#MARK: Sierra Commandant
+- type: entity
+  parent: MobHuman
+  id: MobHumanDeployableSierraCommandant
+  suffix: Sierra Commandant
+  components:
+  - type: Inventory
+    templateId: human
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestInterceptorOTVSierraFilled
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHatBeretSierraCommandant
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltBlackFilledSierra
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskBlack
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponSubMachineGunMP5SDModSierraFilled30rdFMJ
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackBlackFilledSierra
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsCombatSierraCommandant
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtCombatSierraCommandant
+      pocket1: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+      pocket2: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+      pocket3: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ
+      pocket4: !type:GroupSelector
+        children:
+        - id: Magazine9x19mmParabellumMP5_30rdFMJ

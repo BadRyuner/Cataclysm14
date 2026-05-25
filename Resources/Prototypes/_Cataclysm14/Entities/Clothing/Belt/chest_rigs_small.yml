@@ -1,6 +1,6 @@
 #MARK: Scav 2x3 * 2 + 2x1 µ 2
   - type: entity
-    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband]
+    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
     id: ClothingBeltChestRigScavenger
     name: scavenger vest
     description: A basic vests made for hunters, now used by scavengers.
@@ -22,7 +22,7 @@
       - 3,4,4,4
 #MARK: Security 2x3 * 3
   - type: entity
-    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband]
+    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
     id: ClothingBeltChestRigSecurity
     name: security vest
     description: A basic vests made for security agents, now used by scavengers.

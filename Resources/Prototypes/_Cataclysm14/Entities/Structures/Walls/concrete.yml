@@ -1,4 +1,4 @@
-#MARK: Reinfor concrete
+#MARK: Reinforced concrete white
   - type: entity
     parent: BaseStructureWallCataTierThree
     id: StructureWallCataConcreteReinforcedWhite
@@ -6,6 +6,24 @@
     components:
     - type: Sprite
       sprite: _Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: Rebar
+      node: StructureWallCataConcreteReinforcedWhite
+
+#MARK: Reinforced concrete grey
+  - type: entity
+    parent: BaseStructureWallCataTierThree
+    id: StructureWallCataConcreteReinforcedGrey
+    name: grey reinforced concrete wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
+      color: "#AAAAAA"
     - type: Icon
       sprite: _Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
     - type: IconSmooth
@@ -157,3 +175,21 @@
     - type: Construction
       graph: StructureWallCataConcreteSolidWhite
       node: StructureWallCataConcreteSolidWhite
+
+#MARK:
+  - type: entity
+    parent: BaseStructureWallCataTierFour
+    id: StructureWallCataConcreteReinforcedHeavy
+    name: heavy reinforced concrete high wall
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/concrete_reinforced_heavy.rsi
+      color: "#AAAAAA"
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/concrete_reinforced_heavy.rsi
+    - type: IconSmooth
+      key: walls
+      base: concrete
+    - type: Construction
+      graph: Rebar
+      node: StructureWallCataConcreteReinforcedWhite

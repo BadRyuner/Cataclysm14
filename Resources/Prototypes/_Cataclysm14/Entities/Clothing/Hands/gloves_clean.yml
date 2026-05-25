@@ -1,0 +1,14 @@
+
+- type: entity
+  parent: ClothingHandsButcherable
+  id: ClothingHandsGlovesSterileLatex
+  name: latex gloves
+  description: Thin sterile latex gloves. Basic PPE for any clean environnment.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Hands/gloves_latex.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Hands/gloves_latex.rsi
+  - type: Fiber
+    fiberMaterial: fibers-latex
+  - type: FingerprintMask

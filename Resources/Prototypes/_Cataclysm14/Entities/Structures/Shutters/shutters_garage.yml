@@ -4,7 +4,10 @@
   name: garage door
   description: Garage door to protect your vehicles.
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Structures/Shutters/shutter_garage_base.rsi
     layers:
     - state: closed
@@ -60,7 +63,10 @@
   name: reinforced garage door
   description: Sturdy shutters to protect a shop from thieves.
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Structures/Shutters/shutter_garage_reinforced.rsi
     layers:
     - state: closed

@@ -1,0 +1,75 @@
+#MARK: Sodium
+- type: entity
+  parent: PoweredlightSodium
+  id: StructureLightingIndustrialLightTubeSodium
+  name: industrial tube light
+  description: A sturdy industrial wall mounted tube light.
+  suffix: Sodium
+  components:
+  - type: Sprite
+    sprite:  _Cataclysm14/Structures/Lighting/lighting_tubes_industrial.rsi
+
+- type: entity
+  parent: AlwaysPoweredWallLight
+  id: StructureLightingIndustrialLightTubeSodiumInternalPower
+  name: industrial tube light
+  description: A sturdy industrial wall mounted tube light. This one has an internal battery and a locked in place light tube.
+  suffix: Sodium, Powered
+  components:
+  - type: Sprite
+    sprite:  _Cataclysm14/Structures/Lighting/lighting_tubes_industrial.rsi
+  - type: PointLight
+    radius: 10
+    energy: 4
+    softness: 0.5
+    color: "#FFAF38"
+
+#MARK: LED
+- type: entity
+  parent: PoweredlightLED
+  id: StructureLightingIndustrialLightTubeLED
+  name: industrial tube light
+  description: A sturdy industrial wall mounted tube light.
+  suffix: LED
+  components:
+  - type: Sprite
+    sprite:  _Cataclysm14/Structures/Lighting/lighting_tubes_industrial.rsi
+
+- type: entity
+  parent: AlwaysPoweredWallLight
+  id: StructureLightingIndustrialLightTubeLEDInternalPower
+  name: industrial tube light
+  description: A sturdy industrial wall mounted tube light. This one has an internal battery and a locked in place light tube.
+  suffix: LED, Powered
+  components:
+  - type: Sprite
+    sprite:  _Cataclysm14/Structures/Lighting/lighting_tubes_industrial.rsi
+  - type: PointLight
+    radius: 15
+    energy: 1
+    softness: 0.9
+    color: "#EEEEFF"
+
+#MARK: Service
+- type: entity
+  parent: AlwaysPoweredWallLight
+  id: StructureLightingIndustrialLightTubeServiceInternalPower
+  name: service industrial tube light
+  description: A sturdy low power industrial wall mounted tube light with an internal battery and a locked in place light tube.
+  suffix: Service, Powered
+  components:
+  - type: Sprite
+    sprite:  _Cataclysm14/Structures/Lighting/lighting_tubes_industrial.rsi
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: base
+    - map: ["enum.PoweredLightLayers.Glow"]
+      state: glow
+      shader: unshaded
+      color: "#8a1f17"
+  - type: PointLight
+    enabled: true
+    radius: 5
+    energy: 0.3
+    softness: 3
+    color: "#b03027"

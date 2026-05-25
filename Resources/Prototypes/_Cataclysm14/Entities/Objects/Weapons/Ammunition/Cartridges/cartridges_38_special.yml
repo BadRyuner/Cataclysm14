@@ -1,6 +1,6 @@
 #MARK: Base
 - type: entity
-  id: BaseCartridge38_special
+  id: BaseCartridge38Special
   name: cartridge (.38 Special FMJ)
   parent: BaseCartridge
   description: Heavier alternative to 9x19mmParabellum for handguns and SMGs.
@@ -9,12 +9,12 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge38_special
+      - Cartridge38Special
   - type: CartridgeAmmo
-    proto: Bullet38_specialFMJ
+    proto: Bullet38SpecialFMJ
   - type: Sprite
     scale: 0.2, 0.2
-    sprite: _Cataclysm14/Objects/Weapons/Casings/38_special_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/38Special_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -25,36 +25,36 @@
 
 #MARK: FMJ
 - type: entity
-  id: Cartridge38_specialFMJ
+  id: Cartridge38SpecialFMJ
   name: cartridge (.38 Special FMJ)
-  parent: BaseCartridge38_special
+  parent: BaseCartridge38Special
   components:
   - type: CartridgeAmmo
-    proto: Bullet38_specialFMJ
+    proto: Bullet38SpecialFMJ
 
 #MARK: JHP
 - type: entity
-  id: Cartridge38_specialJHP
+  id: Cartridge38SpecialJHP
   name: cartridge (.38 Special JHP)
-  parent: BaseCartridge38_special
+  parent: BaseCartridge38Special
   components:
   - type: CartridgeAmmo
-    proto: Bullet38_specialJHP
+    proto: Bullet38SpecialJHP
 
 #MARK: +P
 - type: entity
-  id: Cartridge38_special+P
+  id: Cartridge38Special+P
   name: cartridge (.38 Special +P)
-  parent: BaseCartridge38_special
+  parent: BaseCartridge38Special
   components:
   - type: CartridgeAmmo
-    proto: Bullet38_special+P
+    proto: Bullet38Special+P
 
 #MARK: Rubber
 - type: entity
-  id: Cartridge38_specialRubber
+  id: Cartridge38SpecialRubber
   name: cartridge (.38 Special rubber)
-  parent: BaseCartridge38_special
+  parent: BaseCartridge38Special
   components:
   - type: CartridgeAmmo
-    proto: Bullet38_specialRubber
+    proto: Bullet38SpecialRubber

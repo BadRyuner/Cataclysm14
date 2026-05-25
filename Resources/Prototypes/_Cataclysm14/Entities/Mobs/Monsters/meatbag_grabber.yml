@@ -1,0 +1,44 @@
+
+- type: entity
+  parent: BaseMobFlesh
+  id: MobMonsterMeatbagGrabber
+  name: grabber meatbag
+  description: A fleshy hunk covered in eyes. This one has a set of tentacles reaching out.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Cataclysm14/Mobs/meatbag_grabber.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: meat
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: meat
+      Dead:
+        Base: dead
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1.5
+    baseSprintSpeed: 2.5
+  - type: MeleeWeapon
+    attackRate: 2
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Structural: 150
+        Slash: 20 #Horror
+        Blunt: 20
+        Heat: 20
+        Piercing: 20
+        Radiation: 10

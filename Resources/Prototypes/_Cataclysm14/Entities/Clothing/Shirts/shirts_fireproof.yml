@@ -1,7 +1,7 @@
 #MARK: -fire suits-
   #MARK: firefighter brown
     - type: entity
-      parent: ClothingShirtBase
+      parent: BaseClothingShirt
       id: ClothingShirtFireSuitFireFighterTopBrown
       name: fire fighter suit top (brown)
       description: A strong and thick jacket made of fire resistant materials, offers slight protection against physical damages and good ones against caustic and heat.

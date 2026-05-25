@@ -1,7 +1,7 @@
 #MARK: -fire suits-
   #MARK: firefighter brown
     - type: entity
-      parent: ClothingPantsBase
+      parent: BaseClothingPants
       id: ClothingPantsFireSuitFireFighterBottomBrown
       name: fire fighter suit bottom (brown)
       description: A strong and thick pair of pants made of fire resistant materials, offers slight protection against physical damages and good ones against caustic and heat.
