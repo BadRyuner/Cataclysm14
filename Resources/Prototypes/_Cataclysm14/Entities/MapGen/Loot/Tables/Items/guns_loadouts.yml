@@ -10,9 +10,6 @@
       - id: Magazine5,56x45mmFAMAS25rdFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
-      - id: AmmoBox5,56x45mmFMJ
-        rolls: !type:RangeNumberSelector
-          range: 0,2
 
 #MARK: Loadout M4A1
 - type: entityTable
@@ -26,9 +23,6 @@
       - id: Magazine5,56x45mmSTANAG30rdFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
-      - id: AmmoBox5,56x45mmFMJ
-        rolls: !type:RangeNumberSelector
-          range: 0,2
 
 #MARK: Loadout FN FAL
 - type: entityTable
@@ -41,10 +35,7 @@
           - id: WeaponBattleRifleFnFalFilledSTANAG20rdFMJ
       - id: Magazine7,62x51mmSTANAG20rdFMJ
         rolls: !type:RangeNumberSelector
-          range: 1,4
-      - id: AmmoBox7,62x51mmFMJ
-        rolls: !type:RangeNumberSelector
-          range: 0,2
+          range: 1,3
 
 #MARK: Loadout M249
 - type: entityTable
@@ -55,17 +46,14 @@
           children:
           - id: WeaponLightMachineGunM249Filled200rdEmpty
           - id: WeaponLightMachineGunM249Filled200rdFMJ
-      - !type:GroupSelector
+      - !type:AllSelector
           children:
           - id: MagazineBox5,56x45mmLMG100rdFMJ
-            rolls: !type:RangeNumberSelector
-              range: 1,4
           - id: MagazineBox5,56x45mmLMG200rdFMJ
-            rolls: !type:RangeNumberSelector
-              range: 1,4
-      - id: AmmoBox5,56x45mmFMJ
-        rolls: !type:RangeNumberSelector
-          range: 0,3
+          - id: MagazineBox5,56x45mmLMG100rdEmpty
+          - id: MagazineBox5,56x45mmLMG200rdEmpty
+          rolls: !type:RangeNumberSelector
+            range: 1,2
 
 #MARK: Loadout Glock 17
 - type: entityTable
@@ -78,10 +66,7 @@
           - id: WeaponPistolGlock17Filled17rdFMJ
       - id: Magazine9x19mmParabellumGlock17rdFMJ
         rolls: !type:RangeNumberSelector
-          range: 1,4
-      - id: AmmoBox9x19mmParabellumFMJ
-        rolls: !type:RangeNumberSelector
-          range: 0,2
+          range: 1,3
 
 #MARK: Loadout M1911
 - type: entityTable
@@ -94,10 +79,7 @@
           - id: WeaponPistolM1911Filled10rdFMJ
       - id: Magazine45AcpM1911_10rdFMJ
         rolls: !type:RangeNumberSelector
-          range: 1,4
-      - id: AmmoBox45AcpFMJ
-        rolls: !type:RangeNumberSelector
-          range: 0,2
+          range: 1,3
 
 #MARK: Loadout M36
 - type: entityTable
@@ -110,10 +92,10 @@
           - id: WeaponRevolverM36FilledFMJ
       - id: SpeedLoader38SpecialFMJ
         rolls: !type:RangeNumberSelector
-          range: 1,4
+          range: 1,3
       - id: AmmoBox38SpecialFMJ
         rolls: !type:RangeNumberSelector
-          range: 0,2
+          range: 0,1
 
 #MARK: Loadout FN 5,7
 - type: entityTable
@@ -126,7 +108,4 @@
           - id: WeaponPistolFN5,7Filled20rdFMJ
       - id: Magazine5,7x28mmFN5,7_20rdFMJ
         rolls: !type:RangeNumberSelector
-          range: 1,4
-      - id: AmmoBox5,7x28mmFMJ
-        rolls: !type:RangeNumberSelector
-          range: 0,2
+          range: 1,3

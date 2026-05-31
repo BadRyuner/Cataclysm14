@@ -1,0 +1,138 @@
+#MARK: Base
+- type: entity
+  id: PartFeral
+  parent: [BaseItem, BaseFeralPart]
+  name: "feral body part"
+  abstract: true
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+  - type: BodyPart
+    species: SpecieFeralBase
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: Blood
+        Quantity: 10
+
+#MARK: Torsos
+- type: entity
+  id: TorsoFeral
+  name: "feral torso"
+  parent: [PartFeral, BaseFeralTorso]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: "torso_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
+
+#MARK: Heads
+- type: entity
+  id: HeadFeral
+  name: "feral head"
+  parent: [PartFeral, BaseFeralHead]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: "head_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 5
+      - ReagentId: Blood
+        Quantity: 10
+
+#MARK: Arms
+- type: entity
+  id: LeftArmFeral
+  name: "left feral arm"
+  parent: [PartFeral, BaseFeralLeftArm]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: "l_arm"
+
+- type: entity
+  id: RightArmFeral
+  name: "right feral arm"
+  parent: [PartFeral, BaseFeralRightArm]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: "r_arm"
+
+#MARK: Hands
+- type: entity
+  id: LeftHandFeral
+  name: "left feral hand"
+  parent: [PartFeral, BaseFeralLeftHand]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: "l_hand"
+  - type: DoAfterDelayMultiplier # Goobstation
+    multiplier: 0.9
+
+- type: entity
+  id: RightHandFeral
+  name: "right feral hand"
+  parent: [PartFeral, BaseFeralRightHand]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: "r_hand"
+  - type: DoAfterDelayMultiplier # Goobstation
+    multiplier: 0.9
+
+#MARK: Legs
+- type: entity
+  id: LeftLegFeralNormal
+  name: "left feral leg"
+  parent: [PartFeral, BaseFeralLeftLeg]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: "l_leg"
+  - type: MovementBodyPart
+    walkSpeed: 2
+    sprintSpeed: 4
+
+- type: entity
+  id: RightLegFeralNormal
+  name: "right feral leg"
+  parent: [PartFeral, BaseFeralRightLeg]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: "r_leg"
+  - type: MovementBodyPart
+    walkSpeed: 2
+    sprintSpeed: 4
+
+#MARK: Feets
+- type: entity
+  id: LeftFootFeral
+  name: "left feral foot"
+  parent: [PartFeral, BaseFeralLeftFoot]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: "l_foot"
+
+- type: entity
+  id: RightFootFeral
+  name: "right feral foot"
+  parent: [PartFeral, BaseFeralRightFoot]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: "r_foot"

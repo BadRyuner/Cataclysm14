@@ -1,0 +1,78 @@
+#MARK: body: Base
+- type: body
+  id: BodyPartSetFeralBase
+  name: "feral"
+  root: torso
+  slots:
+    head:
+      part: HeadFeral
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoHuman
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmFeral
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmFeral
+      connections:
+      - left hand
+    right hand:
+      part: RightHandFeral
+    left hand:
+      part: LeftHandFeral
+    right leg:
+      part: RightLegFeralNormal
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegFeralNormal
+      connections:
+      - left foot
+    right foot:
+      part: RightFootFeral
+    left foot:
+      part: LeftFootFeral
+
+- type: species
+  id: SpecieFeralBase
+  name: species-name-feral-base
+  roundStart: false
+  prototype: MobFeralNaked #Not really important
+  sprites: MobFeralSpritesBase
+  defaultSkinTone: "#ffffff"
+  markingLimits: MobFeralMarkingLimits
+  dollPrototype: MobFeralDummy  #Not really important either
+  skinColoration: HumanToned
+
+#MARK: sprite: Base
+- type: speciesBaseSprites
+  id: MobFeralSpritesBase
+  sprites:
+    Head: MobFeralHead
+    Chest: MobFeralTorso
+    Eyes: MobHumanoidEyes
+    LArm: MobFeralLArm
+    RArm: MobFeralRArm
+    LHand: MobFeralLHand
+    RHand: MobFeralRHand
+    LLeg: MobFeralLLeg
+    RLeg: MobFeralRLeg
+    LFoot: MobFeralLFoot
+    RFoot: MobFeralRFoot

@@ -7,7 +7,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Cataclysm14/Mobs/bushman.rsi
+    sprite: _Cataclysm14/Mobs/Mob/bushman.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive

@@ -19,12 +19,6 @@
     - type: Tag
       tags:
       - Screwdriver
-    - type: Sprite
-      sprite: Objects/Tools/screwdriver.rsi
-      layers:
-      - state: screwdriver
-        map: [ "enum.DamageStateVisualLayers.Base" ]
-      - state: screwdriver-screwybits
     - type: Item
       sprite: Objects/Tools/screwdriver.rsi
       storedRotation: -90
@@ -48,17 +42,6 @@
     - type: PhysicalComposition
       materialComposition:
         Steel: 100
-    - type: StaticPrice
-      price: 15 # Frontier 30<15
-    - type: Retractor # Shitmed
-      speed: 0.45
-    - type: Tending # Shitmed
-      speed: 0.65
-    - type: SurgeryTool # Shitmed
-      startSound:
-        collection: Screwdriver
-      endSound:
-        path: /Audio/_Shitmed/Medical/Surgery/retractor2.ogg
 
   - type: entity
     name: screwdriver
@@ -68,13 +51,21 @@
     components:
     - type: Sprite
       scale: 0.5,0.5
+      sprite: _Cataclysm14/Objects/Tools/tool_screwdriver.rsi
+      layers:
+      - state: screwdriver
+        map: [ "enum.DamageStateVisualLayers.Base" ]
+      - state: screwdriver-screwybits
     - type: Item
       storedScale: 2.3
+    - type: Tool
+      qualities:
+      - ScrewdrivingT1
 
   - type: entity
-    name: screwdriver
+    name: socket screwdriver set
     parent: BaseToolScrewdriver
-    id: ToolScrewdriverSet
+    id: ToolScrewdriverSocketSet
     description: Industrial grade torque in a small screwdriving package.
     components:
     - type: Item
@@ -85,5 +76,8 @@
       sprite: _Cataclysm14/Objects/Tools/tool_screwdriver_socket_set.rsi
       scale: 0.7,0.7
       state: icon
-      layers:
-      - state: icon
+    - type: Tool
+      qualities:
+      - ScrewdrivingT1
+      - BoltTurningT1
+      - FineBoltTurningT1

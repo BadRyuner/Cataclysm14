@@ -1,6 +1,6 @@
 #MARK: UN cap
     - type: entity
-      parent: ClothingHeadBase
+      parent: BaseClothingHead
       id: ClothingHeadHatCapUN
       name: cap (UN)
       description: Donning the colours of the UN and in the form of a cap.
@@ -12,7 +12,7 @@
 
 #MARK: UN beret
     - type: entity
-      parent: ClothingHeadBase
+      parent: BaseClothingHead
       id: ClothingHeadHatBeretUN
       name: beret (UN)
       description: Donning the colours of the UN and in the form of a beret.

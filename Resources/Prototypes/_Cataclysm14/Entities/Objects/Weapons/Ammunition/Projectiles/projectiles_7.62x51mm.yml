@@ -163,29 +163,3 @@
         Slash: 10
         Piercing: 50
     armorPenetration: -0.9
-
-#MARK: Deprecated >
-
-- type: entity
-  id: Bullet7,62x51mmPlasteelAP
-  parent: BaseBullet
-  name: bullet (7,62x51mm NATO AP)
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 13
-        Structural: 40
-    armorPenetration: 0.8
-
-- type: entity
-  id: Bullet7,62x51mmPractice
-  name: bullet (7,62x51mm NATO practice)
-  parent: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 4

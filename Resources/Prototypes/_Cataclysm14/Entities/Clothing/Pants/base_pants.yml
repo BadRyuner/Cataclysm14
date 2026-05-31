@@ -48,7 +48,7 @@
     # - WhitelistChameleon #Cataclysm, no chameleon
   - type: Item
     size: Normal
-    storedScale: 2
+    storedScale: 2.6
     shape:
     - 0,0,1,2
 

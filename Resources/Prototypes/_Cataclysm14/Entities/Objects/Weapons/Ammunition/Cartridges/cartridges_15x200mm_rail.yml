@@ -1,0 +1,43 @@
+- type: entity
+  id: BaseCartridge15x200mmRail
+  name: cartridge (15x200mm rail)
+  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  description: A small metal rod, originally intended as construction component. Its ballistic capabilities and low cost made it a favorite for makeshift and certain commercial railguns.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge15x200mmRail
+  - type: HitscanAmmo
+  - type: Sprite
+    scale: 0.3,0.3
+    sprite: _Cataclysm14/Objects/Weapons/Casings/15x200mm_rail.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge15x200mmRailSteel
+  name: cartridge (15x200mm rail steel)
+  parent: [BaseCartridge15x200mmRail, BasicHitscan]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Piercing: 45
+        Structural: 50
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: muzzle
+    travelFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: trail
+    impactFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: impact

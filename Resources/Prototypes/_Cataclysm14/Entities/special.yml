@@ -1,0 +1,17 @@
+- type: entity
+  id: TempEntity
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.1
+  - type: Item
+
+- type: entity
+  parent: BaseBullet
+  id: PseudoNPCBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 1

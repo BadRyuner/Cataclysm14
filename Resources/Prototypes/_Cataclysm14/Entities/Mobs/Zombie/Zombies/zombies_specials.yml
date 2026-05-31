@@ -1,0 +1,268 @@
+#MARK: Headless >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieHeadless
+  id: MobZombieHeadlessNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieHeadless
+
+#MARK: Civilian Basic
+- type: entity
+  parent: BaseMobZombieHeadless
+  id: MobZombieHeadlessCivilianBasic
+  suffix: Civilian Basic
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      shoes: !type:NestedSelector
+        tableId: LootTableClothingShoesCivilian
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.95
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomCivilian
+        prob: 0.99
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4
+
+#MARK: Crawling >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieCrawling
+  id: MobZombieCrawlingNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieCrawling
+
+#MARK: Civilian Basic
+- type: entity
+  parent: BaseMobZombieCrawling
+  id: MobZombieCrawlingCivilianBasic
+  suffix: Civilian Basic
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.95
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4
+
+#MARK: Runner >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieRunner
+  id: MobZombieRunnerNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Civilian Basic
+- type: entity
+  parent: BaseMobZombieRunner
+  id: MobZombieRunnerCivilianBasic
+  suffix: Civilian Basic
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      shoes: !type:NestedSelector
+        tableId: LootTableClothingShoesCivilian
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.95
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomCivilian
+        prob: 0.99
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4
+
+#MARK: Sprinter >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieSprinter
+  id: MobZombieSprinterNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Civilian Basic
+- type: entity
+  parent: BaseMobZombieSprinter
+  id: MobZombieSprinterCivilianBasic
+  suffix: Civilian Basic
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      shoes: !type:NestedSelector
+        tableId: LootTableClothingShoesCivilian
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.95
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomCivilian
+        prob: 0.99
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4
+
+#MARK: Tesla >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieTesla
+  id: MobZombieTeslaNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Civilian Basic
+- type: entity
+  parent: BaseMobZombieTesla
+  id: MobZombieTeslaCivilianBasic
+  suffix: Civilian Basic
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      shoes: !type:NestedSelector
+        tableId: LootTableClothingShoesCivilian
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.95
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomCivilian
+        prob: 0.99
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4
+
+#MARK: Acid Spitter >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieSpitterAcid
+  id: MobZombieSpitterAcidNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Civilian Basic
+- type: entity
+  parent: BaseMobZombieSpitterAcid
+  id: MobZombieSpitterAcidCivilianBasic
+  suffix: Civilian Basic
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      shoes: !type:NestedSelector
+        tableId: LootTableClothingShoesCivilian
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.95
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomCivilian
+        prob: 0.99
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4
+
+#MARK: Normal >
+
+
+
+
+
+#MARK: Survivor
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieSurvivor
+  suffix: Survivor
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableOutfitContainerFill
+    containers:
+      # outerClothing: !type:NestedSelector
+      #   tableId: LootTableClothingUNPeacekeeperBulletProofVest
+      #   prob: 0.95
+      # head: !type:NestedSelector
+      #   tableId: LootTableClothingHatHardHat
+      #   prob: 0.95
+      # belt: !type:GroupSelector
+      #   children:
+      #   - id: ClothingBeltDutyBeltPoliceFilledPolice
+      #     weight: 2
+      #   - id: ClothingBeltDutyBeltPolice
+      #   prob: 0.9
+      # gloves: !type:GroupSelector
+      #   children:
+      #   - id: ClothingHandsGlovesTacticalCombatBlack
+      #   prob: 0.5
+      # balaclava: !type:GroupSelector
+      #   children:
+      #   - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+      #   prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+        prob: 0.99
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomHighVis
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopHighVis
+        prob: 0.99

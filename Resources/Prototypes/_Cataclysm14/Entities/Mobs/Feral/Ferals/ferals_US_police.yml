@@ -1,0 +1,174 @@
+#MARK: US Police officer
+- type: entity
+  parent: BaseMobFeralRanged
+  id: MobFeralPoliceOfficerUS
+  suffix: US Police officer
+  components:
+  #Worn armor isn't effective enough to be a real threat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      300: Dead
+  - type: Stamina
+    critThreshold: 150
+  - type: EntityTableContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingPoliceUsBulletProofVest
+        prob: 0.95
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHatCapPoliceUS
+        prob: 0.5
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.5
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaNeckGaiterBlack
+        - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+        prob: 0.4
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+        prob: 0.99
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesSneakersBlack
+        prob: 0.99
+
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.1
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: PseudoNPCBullet
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mk_fire.ogg
+      params:
+        variation: 0.1
+        volume: 13
+        pitch: 1.5
+        playOffsetSeconds: 0.15
+    angleIncrease: 10
+    angleDecay: 1
+    maxAngle: 30
+    minAngle: 10
+    shotsPerBurst: 3
+    burstCooldown: 2
+    burstFireRate: 2
+    fireRate: 4
+    availableModes:
+    - Burst
+    selectedMode:
+    - Burst
+    showExamineText: false
+    damageModifier: 20
+  - type: Loadout
+    prototypes:
+    - LoadoutInhandMobFeralPoliceOfficerUS
+- type: startingGear
+  id: LoadoutInhandMobFeralPoliceOfficerUS
+  inhand:
+    - TempEntity
+    - WeaponPistolGlock17Filled17rdFMJ
+
+#MARK: SWAT officer
+- type: entity
+  parent: BaseMobFeralRanged
+  id: MobFeralSWATOfficer
+  suffix: SWAT officer
+  components:
+  #Worn armor isn't effective enough to be a real threat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Critical
+      500: Dead
+  - type: Stamina
+    critThreshold: 250
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestPoliceUSLightBlack
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofM88SWAT
+        prob: 0.95
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPoliceFilledPolice
+          weight: 2
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.5
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaNeckGaiterBlack
+        - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+        prob: 0.5
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+        prob: 0.99
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+        - id: ClothingPantsCombatDigitalBlack
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+        prob: 0.99
+
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.1
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: PseudoNPCBullet
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
+      params:
+        pitch: 1.2
+        volume: 15
+        variation: 0.15
+    angleIncrease: 15
+    angleDecay: 4
+    maxAngle: 60
+    minAngle: 15
+    shotsPerBurst: 5
+    burstCooldown: 1
+    burstFireRate: 7
+    fireRate: 3
+    availableModes:
+    - Burst
+    selectedMode:
+    - Burst
+    showExamineText: false
+    damageModifier: 20
+  - type: Loadout
+    prototypes:
+    - LoadoutInhandMobFeralSWATOfficer
+- type: startingGear
+  id: LoadoutInhandMobFeralSWATOfficer
+  inhand:
+    - TempEntity
+    - WeaponSubMachineGunMP5A2Filled30rdFMJ

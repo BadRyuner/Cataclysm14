@@ -1,6 +1,6 @@
 #MARK: Security Armored
     - type: entity
-      parent: ClothingHeadBase
+      parent: BaseClothingHead
       id: ClothingHeadHelmetRiotSecurityArmored
       name: armored security riot helmet (black)
       description: A heavy riot security helmet made from combined ceramic, aramid, polymers and steel. Extremly tough against small fries.

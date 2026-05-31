@@ -1,0 +1,10 @@
+#Standard armor vest, allowed for security and bartenders
+- type: entity
+  parent: [ClothingOuterArmorBase, ClothingArmorPlate] # Mono - armor plates
+  id: BaseClothingOuterBulletProofVest
+  components:
+  - type: Tag  # Mono
+    tags:
+    - Kevlar
+  - type: Item
+    storedScale: 3.5

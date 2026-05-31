@@ -1,0 +1,112 @@
+#MARK: National Guard
+- type: entity
+  id: MobFeralNationalGuard
+  suffix: National Guard
+  parent: BaseMobFeralRanged
+  components:
+  #Worn armor isn't effective enough to be a real threat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Critical
+      500: Dead
+  - type: Stamina
+    critThreshold: 250
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardBulletProofVest
+        prob: 0.95
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+        prob: 0.8
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltTanFilledNationalGuard
+          weight: 2
+        - id: ClothingBeltDutyBeltTan
+        prob: 0.8
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaBalaclavaSkiMaskTan
+        - id: ClothingBalaclavaBalaclavaSkiMaskCoyoteBrown
+        prob: 0.2
+      slingfront: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      suitstorage: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatTan
+        prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATTan
+        prob: 0.99
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackTanFilledNationalGuard
+          weight: 2
+        - id: ClothingBackpackAlicePackTan
+        prob: 0.99
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatUCP
+          - id: ClothingPantsCombatUCPCargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatUCP
+          - id: ClothingShirtCombatUCPCargo
+          prob: 0.9
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatOCPMulticam
+          - id: ClothingPantsCombatOCPMulticamCargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatOCPMulticam
+          - id: ClothingShirtCombatOCPMulticamCargo
+          prob: 0.9
+
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.1
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: PseudoNPCBullet
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_NF/Weapons/Guns/Gunshots/rifle.ogg
+      params:
+        volume: 10
+        variation: 0.1
+        pitch: 1.8
+    angleIncrease: 10
+    angleDecay: 1
+    maxAngle: 40
+    minAngle: 10
+    shotsPerBurst: 3
+    burstCooldown: 1
+    burstFireRate: 3
+    fireRate: 3
+    availableModes:
+    - Burst
+    selectedMode:
+    - Burst
+    showExamineText: false
+    damageModifier: 20
+  - type: Loadout
+    prototypes:
+    - LoadoutInhandMobFeralNationalGuard
+
+- type: startingGear
+  id: LoadoutInhandMobFeralNationalGuard
+  inhand:
+    - TempEntity
+    - WeaponAssaultRifleM4A1FilledSTANAG30rdFMJ

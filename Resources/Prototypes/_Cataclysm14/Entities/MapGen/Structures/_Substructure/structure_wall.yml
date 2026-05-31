@@ -1,26 +1,27 @@
-#MARK: Straight13x13
 - type: dungeonRoom
   id: StructureSpawnerWallFull13x13a
+  tags:
+    - CataStructureWallFull13x13
   size: 13,13
   atlas: /Maps/_Cataclysm14/Structures/_Substructure/structure_wall_full_13x13_a.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
-  tags:
-  - CataStructureWallFull13x13
 
 - type: entity
-  parent: BaseStructureSpawner
   id: StructureSpawnerWallFull13x13
   name: structure spawner full wall
   suffix: 1x1 Chunk][13x13
+  placement:
+    mode: SnapgridCenter
+  parent: BaseStructureSpawner
   components:
-  - type: Sprite
-    scale: 13,13
-    sprite: _Cataclysm14/Mapping/structure_road.rsi
-    layers:
-    - state: structure_border_road_asphalt_gray_straight
-    - state: structure_border_road_line_white_straight
-  - type: RoomFill
-    roomWhitelist:
-      tags:
-      - CataStructureWallFull13x13
+    - type: Sprite
+      scale: 13,13
+      sprite: _Cataclysm14/Mapping/structure_wall.rsi
+      layers:
+        - state: structure_border_wall
+      noRot: true
+    - type: RoomFill
+      roomWhitelist:
+        tags:
+          - CataStructureWallFull13x13

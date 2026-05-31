@@ -1,0 +1,73 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine15x200mmRail
+  name: pistol magazine (15x200mmRail FMJ)
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge15x200mmRail
+    capacity: 17
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.30,0.30
+    # sprite: _Cataclysm14/Objects/Weapons/Magazines/15x200mmRail/15x200mmRail_pistol_mag.rsi
+    # layers:
+    # - state: base
+    #   map: ["enum.GunVisualLayers.Base"]
+    # - state: mag-1
+    #   map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+
+#MARK: 5rd Rail Magazine
+- type: entity
+  id: BaseMagazine15x200mmRail5rd
+  abstract: true
+  name: "5rd rail magazine (15x200mm rail)"
+  parent: BaseMagazine15x200mmRail
+  components:
+  - type: Item
+    storedScale: 2.5
+  - type: BallisticAmmoProvider
+    proto: Cartridge15x200mmRailFMJ
+    capacity: 5
+  - type: Tag
+    tags:
+      - Magazine15x200mmRailCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/15x200mm_rail/magazine_15x200mm_rail_5rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine15x200mmRail5rdEmpty
+  suffix: Empty
+  parent: BaseMagazine15x200mmRail5rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: Steel Rod
+- type: entity
+  id: Magazine15x200mmRail5rdSteel
+  suffix: FMJ
+  parent: BaseMagazine15x200mmRail5rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge15x200mmRailSteel

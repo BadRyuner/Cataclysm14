@@ -25,10 +25,10 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    sprite: _Cataclysm14/Mapping/structure_monorail.rsi
     layers:
-    - state: structure_border_road_asphalt_gray_straight
-    - state: structure_border_road_line_white_straight
+    - state: structure_border_monorail_straight
+    - state: structure_border_monorail_sidewalk_straight
   - type: RoomFill
     roomWhitelist:
       tags:
@@ -61,10 +61,12 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    sprite: _Cataclysm14/Mapping/structure_monorail.rsi
     layers:
-    - state: structure_border_road_asphalt_gray_straight
-    - state: structure_border_road_line_white_straight
+    - state: structure_border_monorail_corner_sharp
+      rotation: 90
+    - state: structure_border_monorail_sidewalk_corner_sharp
+      rotation: 90
   - type: RoomFill
     roomWhitelist:
       tags:
@@ -98,10 +100,10 @@
   - type: Sprite
     scale: 26,13
     offset: -0.5,0
-    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    sprite: _Cataclysm14/Mapping/structure_monorail.rsi
     layers:
-    - state: structure_border_road_asphalt_gray_straight
-    - state: structure_border_road_line_white_straight
+    - state: structure_border_monorail_straight
+    - state: structure_border_monorail_sidewalk_straight
   - type: RoomFill
     roomWhitelist:
       tags:

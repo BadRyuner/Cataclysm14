@@ -17,7 +17,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
-      sprite: _Cataclysm14/Mobs/meat_rat.rsi
+      sprite: _Cataclysm14/Mobs/Mob/meat_rat.rsi
       scale: 0.8, 0.8
   - type: Physics
   - type: MovementSpeedModifier

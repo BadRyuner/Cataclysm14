@@ -1,6 +1,6 @@
 #MARK: RU cop cap
     - type: entity
-      parent: ClothingHeadBase
+      parent: BaseClothingHead
       id: ClothingHeadHatCapPoliceRU
       name: russian police cap
       description: Donning the colours of the russian police and made for russian police officers.
@@ -13,7 +13,7 @@
 
 #MARK: US cop cap
     - type: entity
-      parent: ClothingHeadBase
+      parent: BaseClothingHead
       id: ClothingHeadHatCapPoliceUS
       name: US police cap
       description: Donning the colours of the US police force and made for american police officers.
@@ -26,7 +26,7 @@
 
 #MARK: French cop beret
     - type: entity
-      parent: ClothingHeadBase
+      parent: BaseClothingHead
       id: ClothingHeadHatBeretPoliceFR
       name: french police beret
       description: Donning the colours of the french police and made for french police officers.

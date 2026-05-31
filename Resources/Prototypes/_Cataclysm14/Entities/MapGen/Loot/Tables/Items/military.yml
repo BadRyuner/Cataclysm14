@@ -25,12 +25,22 @@
         weight: 100
         tableId: LootTableLoadoutWeaponGunFAMAS
         rolls: !type:RangeNumberSelector
-          range: 1,2
+          range: 0,3
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableClothingCombatCCE
+        tableId: LootTableClothingPantsCombatCCE
         rolls: !type:RangeNumberSelector
-          range: 1,5
+          range: 0,4
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingShirtCombatCCE
+        rolls: !type:RangeNumberSelector
+          range: 0,4
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBoxMilitaryGradeLowTier
+        rolls: !type:RangeNumberSelector
+          range: 0,6
 
 #MARK: National Guard
 - type: entityTable
@@ -59,7 +69,7 @@
         weight: 100
         tableId: LootTableLoadoutWeaponGunM4A1
         rolls: !type:RangeNumberSelector
-          range: 1,3
+          range: 0,3
       - !type:NestedSelector
         weight: 100
         tableId: LootTableLoadoutWeaponGunM249
@@ -84,4 +94,4 @@
         weight: 100
         tableId: LootTableAmmunitionAmmoBoxMilitaryGradeLowTier
         rolls: !type:RangeNumberSelector
-          range: 0,4
+          range: 0,6

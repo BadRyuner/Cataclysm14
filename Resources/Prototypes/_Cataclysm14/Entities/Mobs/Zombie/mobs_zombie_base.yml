@@ -129,7 +129,7 @@
   - type: Zombie
   - type: NpcFactionMember
     factions:
-      - Zombie
+      - NpcFactionZombies
   - type: AutoWakeUp
   - type: DamageStateVisuals
     states:
@@ -140,7 +140,7 @@
       Dead:
         Base: dead
   - type: SSDIndicator
-    icon: ZombieSSDIcon
+    icon: PulpingSSDIcon
   - type: Fixtures
     fixtures:
       fix1:
@@ -184,8 +184,7 @@
     prototype: BodyPartSetZombieBase
     requiredLegs: 2
   - type: MovementSpeedModifier
-#Praise shitmed, this dont do shit, edit the legs inside parts_zombie.yml and specie_zombie.yml
-    baseWalkSpeed : 4.5
+#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 4.5
     baseSprintSpeed : 4.5
   - type: MeleeWeapon
     attackRate: 0.8
@@ -215,8 +214,7 @@
     prototype: BodyPartSetZombieHeadless
     requiredLegs: 2
   - type: MovementSpeedModifier
-#Praise shitmed, this dont do shit, edit the legs inside parts_zombie.yml and specie_zombie.yml
-    baseWalkSpeed : 1
+#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 1
     baseSprintSpeed : 1
   - type: MeleeWeapon
     attackRate: 0.8
@@ -316,6 +314,7 @@
       visible: false
     - map: [ "lightning" ]
       sprite: _Cataclysm14/Effects/electricity.rsi
+      scale: 1.5,1.5
       state: lightning
       shader: unshaded
     - map: [ "electricity" ]
@@ -326,8 +325,7 @@
     prototype: BodyPartSetZombieBase
     requiredLegs: 2
   - type: MovementSpeedModifier
-#Praise shitmed, this dont do shit, edit the legs inside parts_zombie.yml and specie_zombie.yml
-    baseWalkSpeed : 4.5
+#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 4.5
     baseSprintSpeed : 4.5
   - type: ProjectileBatteryAmmoProvider
     proto: ProjectileLightningZombie
@@ -349,6 +347,13 @@
       params:
         variation: 0.2
   - type: Insulated
+  - type: PointLight
+    enabled: true
+    color: "#187da2"
+    radius: 1.4
+    energy: 100.0
+  - type: RandomHumanoidAppearance
+    randomizeName: false
 
 #MARK: Projectile tesla
 - type: entity
@@ -363,17 +368,14 @@
     - state: lightning_ball
       shader: unshaded
   - type: StaminaDamageOnCollide
-    damage: 35
+    damage: 5
   - type: EmbeddableProjectile
   - type: Projectile
-    deleteOnCollide: true
     damage:
       types:
         Piercing: 0
         Heat: 4
         Shock: 4
-  - type: Electrified
-    requirePower: false
   # - type: Tag
   #   tags:
   #     - HideContextMenu
@@ -387,6 +389,9 @@
     maximumEntitiesSpawned: 1
   - type: TimedDespawn
     lifetime: 0.3
+  - type: Ammo
+    muzzleFlash: null
+  - type: Transform
 
 #MARK: Lightning effect
 - type: entity
@@ -400,16 +405,13 @@
     - state: lightning
       shader: unshaded
   - type: StaminaDamageOnCollide
-    damage: 35
+    damage: 5
   - type: Projectile
-    deleteOnCollide: true
     damage:
       types:
         Piercing: 0
-        Heat: 4
-        Shock: 4
-  - type: Electrified
-    requirePower: false
+        Heat: 3
+        Shock: 2
   # - type: Tag
   #   tags:
   #     - HideContextMenu
@@ -421,6 +423,7 @@
   #   bodyType: Dynamic
   #   linearDamping: 0
   #   angularDamping: 0
+  - type: Transform
 
 #MARK: Mob Runner
 - type: entity
@@ -438,8 +441,7 @@
     prototype: BodyPartSetZombieRunner
     requiredLegs: 2
   - type: MovementSpeedModifier
-#Praise shitmed, this dont do shit, edit the legs inside parts_zombie.yml and specie_zombie.yml
-    baseWalkSpeed : 1
+#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 1
     baseSprintSpeed : 1
   - type: MeleeWeapon
     attackRate: 0.8
@@ -486,8 +488,7 @@
     prototype: BodyPartSetZombieSprinter
     requiredLegs: 2
   - type: MovementSpeedModifier
-#Praise shitmed, this dont do shit, edit the legs inside parts_zombie.yml and specie_zombie.yml
-    baseWalkSpeed : 1
+#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 1
     baseSprintSpeed : 1
   - type: MeleeWeapon
     attackRate: 0.8
@@ -517,3 +518,91 @@
         color: "#FF0000"
       Burn:
         sprite: Mobs/Effects/burn_damage.rsi
+
+#MARK: Mob Acid Spitter
+- type: entity
+  id: BaseMobZombieSpitterAcid
+  abstract: true
+  name: acid spitter zombie
+  description: An undead human, a bright green zombie that seems to be leaking an acidic fluid.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleRanged
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  # No custom spitter things yet
+  # - type: Sprite
+  #   layers:
+  #   - map: ["enum.HumanoidVisualLayers.Handcuffs"] #spam errors if it isn't there, no clue why
+  #     color: "#ffffff"
+  #     sprite: Objects/Misc/handcuffs.rsi
+  #     state: body-overlay-2
+  #     visible: false
+  #   - map: [ "lightning" ]
+  #     sprite: _Cataclysm14/Effects/electricity.rsi
+  #     state: lightning
+  #     shader: unshaded
+  #   - map: [ "electricity" ]
+  #     sprite: _Cataclysm14/Effects/electrified.rsi
+  #     state: electrified
+  #     shader: unshaded
+  - type: Body
+    prototype: BodyPartSetZombieBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+  - type: ProjectileBatteryAmmoProvider
+    proto: ProjectileAcidZombie
+    fireCost: 1
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 1
+  - type: Battery
+    maxCharge: 1
+    startingCharge: 1
+  - type: Gun
+    projectileSpeed: 10
+    showExamineText: false
+    fireRate: 1
+    minAngle: 0
+    maxAngle: 0
+    soundGunshot:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+      params:
+        variation: 0.2
+  - type: Insulated
+  - type: PointLight
+    enabled: true
+    color: "#18a234b3"
+    radius: 1.3
+    energy: 100.0
+
+#MARK: Projectile Acid Spit
+- type: entity
+  name: acid spit
+  id: ProjectileAcidZombie
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Caustic: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/xeno_toxic.rsi
+    layers:
+    - state: xeno_toxic
+  - type: Ammo
+    muzzleFlash: null
+  - type: Tracer
+    color: "#18a233"
+    length: 5
+    lifetime: 1
+  - type: PointLight
+    enabled: true
+    color: "#18a233"
+    radius: 1.2
+    energy: 100.0
+  - type: Transform

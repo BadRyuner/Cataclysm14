@@ -1,0 +1,65 @@
+#MARK: Base
+  - type: entity
+    parent: BaseItem
+    abstract: true
+    id: BaseToolSaw
+    description: Made to cut various things, and people.
+    components:
+    # Goobstation edit start
+    - type: EmitSoundOnPickup
+      sound:
+        path: /Audio/_Goobstation/Items/handling/screwdriver_pickup.ogg
+    - type: EmitSoundOnDrop
+      sound:
+        path: /Audio/Items/screwdriver_drop.ogg
+    # Goobstation edit end
+    - type: EmitSoundOnLand
+      sound:
+        path: /Audio/Items/screwdriver_drop.ogg
+    - type: Item
+      storedRotation: -90
+      useSound:
+        collection: Screwdriver
+    - type: PhysicalComposition
+      materialComposition:
+        Steel: 100
+
+  - type: entity
+    name: hacksaw
+    parent: BaseToolSaw
+    id: ToolSawHacksaw
+    description: Made to cut metal, and bones.
+    components:
+    - type: Item
+      storedScale: 2
+      shape: 
+      - 0,0,1,1
+    - type: Sprite
+      sprite: _Cataclysm14/Objects/Tools/tool_hacksaw.rsi
+      scale: 0.7,0.7
+      state: icon
+    - type: Tool
+      qualities:
+      - MetalSawingT1
+      - MetalSawingT2
+      - WoodSawingT1
+      - FineMetalSawingT1
+
+  - type: entity
+    name: wood saw
+    parent: BaseToolSaw
+    id: ToolSawWoodSaw
+    description: Made to cut wood.
+    components:
+    - type: Item
+      storedScale: 2
+      shape: 
+      - 0,0,1,1
+    - type: Sprite
+      sprite: _Cataclysm14/Objects/Tools/tool_woodsaw.rsi
+      scale: 0.7,0.7
+      state: icon
+    - type: Tool
+      qualities:
+      - WoodSawingT1
+      - WoodSawingT2

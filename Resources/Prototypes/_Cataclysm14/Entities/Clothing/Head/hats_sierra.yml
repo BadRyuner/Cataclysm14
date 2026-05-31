@@ -1,6 +1,6 @@
 #MARK: Sierra beret
     - type: entity
-      parent: ClothingHeadBase
+      parent: BaseClothingHead
       id: ClothingHeadHatBeretSierra
       name: taskforce sierra beret
       description: Donning the colours of the Superstructure Taskforce Sierra.
@@ -13,7 +13,7 @@
 
 #MARK: Sierra commandant beret
     - type: entity
-      parent: ClothingHeadBase
+      parent: BaseClothingHead
       id: ClothingHeadHatBeretSierraCommandant
       name: taskforce sierra commandant beret
       description: Donning the colours of the Superstructure Taskforce Sierra and a fancy little feather on top, made for high ranking officers.

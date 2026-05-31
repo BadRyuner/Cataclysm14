@@ -7,7 +7,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Cataclysm14/Mobs/abomination_sharp.rsi
+    sprite: _Cataclysm14/Mobs/Mob/abomination_sharp.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: abomination
