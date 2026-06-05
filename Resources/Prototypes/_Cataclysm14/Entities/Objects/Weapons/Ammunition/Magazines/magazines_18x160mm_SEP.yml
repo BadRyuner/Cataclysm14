@@ -1,0 +1,142 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine18x160mmSEP
+  name: "magazine (18x160mm SEP)"
+  description: "An heavy duty magazine for 18x160mm SEP self-energized projectiles."
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Sprite
+    scale: 0.30,0.30
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge18x160mmSEP
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: 16rd Gauss Magazine
+- type: entity
+  id: BaseMagazine18x160mmSEP16rd
+  abstract: true
+  name: "16rd gauss magazine (18x160mm SEP)"
+  parent: BaseMagazine18x160mmSEP
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 16
+  - type: Item
+    storedScale: 2.5
+  - type: Tag
+    tags:
+      - Magazine18x160mmSEPCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/18x160mm_SEP/magazine_18x160mm_SEP_16rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine18x160mmSEP16rdEmpty
+  suffix: Empty
+  parent: BaseMagazine18x160mmSEP16rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: SEP Steel
+- type: entity
+  id: Magazine18x160mmSEP16rdSteel
+  suffix: SEP Steel
+  parent: BaseMagazine18x160mmSEP16rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge18x160mmSEPSteel
+
+#MARK: SEP HE
+- type: entity
+  id: Magazine18x160mmSEP16rdHE
+  suffix: SEP HE
+  parent: BaseMagazine18x160mmSEP16rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge18x160mmSEPHE
+
+#MARK: SEP APFSD
+- type: entity
+  id: Magazine18x160mmSEP16rdAPFSD
+  suffix: SEP APFSD
+  parent: BaseMagazine18x160mmSEP16rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge18x160mmSEPAPFSD
+
+#MARK: 8rd Gauss Magazine
+- type: entity
+  id: BaseMagazine18x160mmSEP8rd
+  abstract: true
+  name: "8rd gauss magazine (18x160mm SEP)"
+  parent: BaseMagazine18x160mmSEP
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 8
+  - type: Item
+    storedScale: 2.5
+  - type: Tag
+    tags:
+      - Magazine18x160mmSEPCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/18x160mm_SEP/magazine_18x160mm_SEP_8rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine18x160mmSEP8rdEmpty
+  suffix: Empty
+  parent: BaseMagazine18x160mmSEP8rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: SEP Steel
+- type: entity
+  id: Magazine18x160mmSEP8rdSteel
+  suffix: SEP Steel
+  parent: BaseMagazine18x160mmSEP8rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge18x160mmSEPSteel
+
+#MARK: SEP HE
+- type: entity
+  id: Magazine18x160mmSEP8rdHE
+  suffix: SEP HE
+  parent: BaseMagazine18x160mmSEP8rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge18x160mmSEPHE
+
+#MARK: SEP APFSD
+- type: entity
+  id: Magazine18x160mmSEP8rdAPFSD
+  suffix: SEP APFSD
+  parent: BaseMagazine18x160mmSEP8rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge18x160mmSEPAPFSD

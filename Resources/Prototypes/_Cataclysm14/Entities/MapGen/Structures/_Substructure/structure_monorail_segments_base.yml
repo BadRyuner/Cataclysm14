@@ -104,3 +104,30 @@
     roomWhitelist:
       tags:
       - CataStructureMonorailDoubleBaseStraight26x13
+
+#MARK: StraightOpen13x13
+- type: dungeonRoom
+  id: StructureSpawnerMonorailBaseStraightOpen13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_base_straight_open_13x13_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailBaseStraightOpen13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMonorailBaseStraightOpen13x13
+  name: structure spawner monorail base
+  suffix: Straight-Open][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_monorail.rsi
+    layers:
+    - state: structure_border_monorail_straight
+    - state: structure_border_monorail_railing_straight
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureMonorailBaseStraightOpen13x13

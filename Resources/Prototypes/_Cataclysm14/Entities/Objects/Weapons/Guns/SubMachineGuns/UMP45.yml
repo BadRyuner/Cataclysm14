@@ -71,6 +71,7 @@
           whitelist:
             tags:
               - Cartridge5,56x45mm
+          whitelistFailPopup: gun-magazine-whitelist-fail
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot {}
@@ -85,6 +86,7 @@
         sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
         state: all
 
+#MARK: 30rd Empty
 - type: entity
   id: WeaponSubMachineGunUMP45Filled30rdEmpty
   suffix: Empty - 30rd
@@ -95,7 +97,25 @@
         gun_magazine:
           name: Magazine
           startingItem: Magazine45AcpUMP45_30rdEmpty
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine5,56x45mmSTANAGCompatible
+              - AmmoBelt5,56x45mm
+              - MagazineBox5,56x45mmLMGCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge5,56x45mm
+          whitelistFailPopup: gun-magazine-whitelist-fail
 
+#MARK: 30rd FMJ
 - type: entity
   id: WeaponSubMachineGunUMP45Filled30rdFMJ
   suffix: FMJ - 30rd
@@ -106,3 +126,20 @@
         gun_magazine:
           name: Magazine
           startingItem: Magazine45AcpUMP45_30rdFMJ
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine5,56x45mmSTANAGCompatible
+              - AmmoBelt5,56x45mm
+              - MagazineBox5,56x45mmLMGCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge5,56x45mm
+          whitelistFailPopup: gun-magazine-whitelist-fail

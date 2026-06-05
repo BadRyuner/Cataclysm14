@@ -68,6 +68,7 @@
         whitelist:
           tags:
             - Cartridge9x19mmParabellum
+        whitelistFailPopup: gun-magazine-whitelist-fail
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -93,6 +94,21 @@
       gun_magazine:
         name: Magazine
         startingItem: Magazine9x19mmParabellumMP5_30rdEmpty
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine9x19mmParabellumMP5Compatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge9x19mmParabellum
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: MP5 30rd FMJ
 - type: entity
@@ -105,6 +121,21 @@
       gun_magazine:
         name: Magazine
         startingItem: Magazine9x19mmParabellumMP5_30rdFMJ
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine9x19mmParabellumMP5Compatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge9x19mmParabellum
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: MP5 30rd Tracer Red
 - type: entity
@@ -117,3 +148,18 @@
       gun_magazine:
         name: Magazine
         startingItem: Magazine9x19mmParabellumMP5_30rdTracerGreen
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine9x19mmParabellumMP5Compatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge9x19mmParabellum
+        whitelistFailPopup: gun-magazine-whitelist-fail

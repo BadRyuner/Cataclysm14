@@ -70,6 +70,7 @@
         whitelist:
           tags:
             - Cartridge7,62x51mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -95,6 +96,23 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineBox7,62x51mmLMG200rdEmpty
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine7,62x51mmSTANAGCompatible
+            - AmmoBelt7,62x51mm
+            - MagazineBox7,62x51mmLMGCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge7,62x51mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: Box 200rd FMJ
 - type: entity
@@ -107,6 +125,23 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineBox7,62x51mmLMG200rdFMJ
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine7,62x51mmSTANAGCompatible
+            - AmmoBelt7,62x51mm
+            - MagazineBox7,62x51mmLMGCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge7,62x51mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: Box 200rd Tracer Yellow
 - type: entity
@@ -119,3 +154,20 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineBox7,62x51mmLMG200rdTracerYellow
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine7,62x51mmSTANAGCompatible
+            - AmmoBelt7,62x51mm
+            - MagazineBox7,62x51mmLMGCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge7,62x51mm
+        whitelistFailPopup: gun-magazine-whitelist-fail

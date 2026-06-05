@@ -60,6 +60,7 @@
         whitelist:
           tags:
             - Cartridge7,62x51mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -78,13 +79,28 @@
 - type: entity
   parent: WeaponBattleRifleM14Base
   id: WeaponBattleRifleM14FilledSTANAG20rdEmpty
-  suffix: Empty- STANAG 20rd
+  suffix: Empty - STANAG 20rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: Magazine7,62x51mmSTANAG20rdEmpty
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine7,62x51mmSTANAGCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge7,62x51mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge7,62x51mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: STANAG 20rd FMJ
 - type: entity
@@ -97,3 +113,18 @@
       gun_magazine:
         name: Magazine
         startingItem: Magazine7,62x51mmSTANAG20rdFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine7,62x51mmSTANAGCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge7,62x51mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge7,62x51mm
+        whitelistFailPopup: gun-magazine-whitelist-fail

@@ -1,0 +1,18 @@
+- type: parallax
+  id: ParallaxSubstructureSky
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_Cataclysm14/Parallaxes/background_substructure.png"
+      slowness: 0.98
+      scale: 1,1
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_Cataclysm14/Parallaxes/fog_substructure.png"
+      slowness: 0.95
+      scale: 3,3
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_Cataclysm14/Parallaxes/fog_substructure.png"
+      slowness: 0.5
+      scale: 4,4

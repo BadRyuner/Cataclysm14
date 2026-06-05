@@ -60,6 +60,7 @@
         whitelist:
           tags:
             - Cartridge5,56x45mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -85,6 +86,21 @@
       gun_magazine:
         name: Magazine
         startingItem: Magazine5,56x45mmMagpulBlack30rdEmpty
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine5,56x45mmSTANAGCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge5,56x45mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge5,56x45mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: Magpul Black 30rd FMJ
 - type: entity
@@ -97,3 +113,18 @@
       gun_magazine:
         name: Magazine
         startingItem: Magazine5,56x45mmMagpulBlack30rdFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine5,56x45mmSTANAGCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge5,56x45mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge5,56x45mm
+        whitelistFailPopup: gun-magazine-whitelist-fail

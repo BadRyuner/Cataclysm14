@@ -52,6 +52,7 @@
           whitelist:
             tags:
               - Cartridge9x19mmParabellum
+          whitelistFailPopup: gun-magazine-whitelist-fail
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot {}
@@ -59,6 +60,7 @@
     - type: StaticPrice
       price: 50
 
+#MARK: 10rd Empty
 - type: entity
   id: WeaponPistolM1911Filled10rdEmpty
   suffix: Empty - 10rd
@@ -69,7 +71,23 @@
         gun_magazine:
           name: Magazine
           startingItem: Magazine45AcpM1911_10rdEmpty
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine45AcpM1911Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge9x19mmParabellumFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge9x19mmParabellum
+          whitelistFailPopup: gun-magazine-whitelist-fail
 
+#MARK: 10rd FMJ
 - type: entity
   id: WeaponPistolM1911Filled10rdFMJ
   suffix: FMJ - 10rd
@@ -80,3 +98,18 @@
         gun_magazine:
           name: Magazine
           startingItem: Magazine45AcpM1911_10rdFMJ
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine45AcpM1911Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge9x19mmParabellumFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge9x19mmParabellum
+          whitelistFailPopup: gun-magazine-whitelist-fail

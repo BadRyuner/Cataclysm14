@@ -154,3 +154,11 @@
 
   - type: Tag
     id: Magazine15x200mmRailCompatible
+
+  #MARK: 18x160mmSEP
+
+  - type: Tag
+    id: Cartridge18x160mmSEP
+
+  - type: Tag
+    id: Magazine18x160mmSEPCompatible

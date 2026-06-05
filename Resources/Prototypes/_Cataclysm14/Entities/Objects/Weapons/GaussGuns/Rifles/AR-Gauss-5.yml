@@ -1,0 +1,187 @@
+#MARK: Base
+- type: entity
+  name: Armalite Gauss-5 (18x160mm SEP)
+  parent: BaseWeaponRifle
+  id: WeaponGaussgunARGauss5Base
+  abstract: true
+  description: An high quality top of the line military gauss rifle manufactured by Armalite for elite units and rich civilians, this variant features an high power scope with top mounted assault scope and standard length gauss barrel. Uses 18x160mm SEP self-energized projectiles.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/GaussGuns/Rifles/AR-Gauss-5_64x32.rsi
+    scale: 0.65,0.65
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/GaussGuns/Rifles/AR-Gauss-5_32x32.rsi
+    size: Large
+    shape:
+    - 0,0,6,1
+    storedScale: 2
+  - type: Clothing
+    slots:
+    - slingfront
+    - suitstorage
+    sprite: _Cataclysm14/Objects/Weapons/GaussGuns/Rifles/AR-Gauss-5_32x32.rsi
+    clothingVisuals:
+      slingfront:
+      - state: equipped-SLINGFRONT
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    fireRate: 1.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+      params:
+        volume: 10
+        variation: 0.1
+        pitch: 1.3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: null
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine18x160mmSEPCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge18x160mmSEP
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
+      state: all
+
+#MARK: 16rd Empty
+- type: entity
+  parent: WeaponGaussgunARGauss5Base
+  id: WeaponGaussgunARGauss5Filled16rdEmpty
+  suffix: Empty - 16rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine18x160mmSEP16rdEmpty
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine18x160mmSEPCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge18x160mmSEP
+        whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: 16rd Steel Coil
+- type: entity
+  parent: WeaponGaussgunARGauss5Base
+  id: WeaponGaussgunARGauss5Filled16rdSteel
+  suffix: SEP Steel - 16rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine18x160mmSEP16rdSteel
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine18x160mmSEPCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge18x160mmSEP
+        whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: 16rd HE
+- type: entity
+  parent: WeaponGaussgunARGauss5Base
+  id: WeaponGaussgunARGauss5Filled16rdHE
+  suffix: SEP HE - 16rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine18x160mmSEP16rdHE
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine18x160mmSEPCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge18x160mmSEP
+        whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: 16rd APFSD
+- type: entity
+  parent: WeaponGaussgunARGauss5Base
+  id: WeaponGaussgunARGauss5Filled16rdAPFSD
+  suffix: SEP APFSD - 16rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine18x160mmSEP16rdAPFSD
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine18x160mmSEPCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge18x160mmSEP
+        whitelistFailPopup: gun-magazine-whitelist-fail

@@ -70,6 +70,7 @@
           whitelist:
             tags:
               - Cartridges9x19mmParabellum
+          whitelistFailPopup: gun-magazine-whitelist-fail
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot {}
@@ -84,6 +85,7 @@
         sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
         state: all
 
+#MARK: 30rd Empty
 - type: entity
   id: WeaponSubMachineGunMP5SDFilled30rdEmpty
   suffix: Empty - 30rd
@@ -94,7 +96,23 @@
         gun_magazine:
           name: Magazine
           startingItem: Magazine9x19mmParabellumMP5_30rdEmpty
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine9x19mmParabellumMP5Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridges9x19mmParabellum
+          whitelistFailPopup: gun-magazine-whitelist-fail
 
+#MARK: 30rd FMJ
 - type: entity
   id: WeaponSubMachineGunMP5SDFilled30rdFMJ
   suffix: FMJ - 30rd
@@ -105,9 +123,25 @@
         gun_magazine:
           name: Magazine
           startingItem: Magazine9x19mmParabellumMP5_30rdFMJ
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine9x19mmParabellumMP5Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridges9x19mmParabellum
+          whitelistFailPopup: gun-magazine-whitelist-fail
 
+#MARK: 30rd Green Tracer
 - type: entity
-  id: WeaponSubMachineGunMP5SDFilled30rdTracerRed
+  id: WeaponSubMachineGunMP5SDFilled30rdTracerGreen
   suffix: Tracer Green - 30rd
   parent: WeaponSubMachineGunMP5SDBase
   components:
@@ -116,3 +150,18 @@
         gun_magazine:
           name: Magazine
           startingItem: Magazine9x19mmParabellumMP5_30rdTracerGreen
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine9x19mmParabellumMP5Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridges9x19mmParabellum
+          whitelistFailPopup: gun-magazine-whitelist-fail

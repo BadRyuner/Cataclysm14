@@ -52,6 +52,7 @@
           whitelist:
             tags:
               - Cartridges5,7x28mm
+          whitelistFailPopup: gun-magazine-whitelist-fail
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot {}
@@ -59,6 +60,7 @@
     - type: StaticPrice
       price: 50
 
+#MARK: 20rd Empty
 - type: entity
   id: WeaponPistolFN5,7Filled20rdEmpty
   suffix: Empty - 20rd
@@ -69,7 +71,23 @@
         gun_magazine:
           name: Magazine
           startingItem: Magazine5,7x28mmFN5,7_20rdEmpty
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine5,7x28mmFN5,7Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge5,7x28mmFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridges5,7x28mm
+          whitelistFailPopup: gun-magazine-whitelist-fail
 
+#MARK: 20rd FMJ
 - type: entity
   id: WeaponPistolFN5,7Filled20rdFMJ
   suffix: FMJ - 20rd
@@ -80,3 +98,18 @@
         gun_magazine:
           name: Magazine
           startingItem: Magazine5,7x28mmFN5,7_20rdFMJ
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine5,7x28mmFN5,7Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge5,7x28mmFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridges5,7x28mm
+          whitelistFailPopup: gun-magazine-whitelist-fail

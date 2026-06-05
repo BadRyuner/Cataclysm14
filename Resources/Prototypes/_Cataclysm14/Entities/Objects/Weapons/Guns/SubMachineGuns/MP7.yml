@@ -68,6 +68,7 @@
         whitelist:
           tags:
             - Cartridge4,6x30mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -93,6 +94,21 @@
       gun_magazine:
         name: Magazine
         startingItem: Magazine4,6x30mmMP7_30rdEmpty
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine4,6x30mmMP7Compatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge4,6x30mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: MP7 30rd FMJ
 - type: entity
@@ -105,3 +121,18 @@
       gun_magazine:
         name: Magazine
         startingItem: Magazine4,6x30mmMP7_30rdFMJ
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine4,6x30mmMP7Compatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge4,6x30mm
+        whitelistFailPopup: gun-magazine-whitelist-fail

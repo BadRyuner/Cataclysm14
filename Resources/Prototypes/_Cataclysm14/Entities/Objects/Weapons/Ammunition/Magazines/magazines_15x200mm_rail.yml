@@ -66,8 +66,35 @@
 #MARK: Steel Rod
 - type: entity
   id: Magazine15x200mmRail5rdSteel
-  suffix: FMJ
+  suffix: Steel Rod
   parent: BaseMagazine15x200mmRail5rd
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge15x200mmRailSteel
+
+#MARK: Tungsten Rod
+- type: entity
+  id: Magazine15x200mmRail5rdTungsten
+  suffix: Tungsten Rod
+  parent: BaseMagazine15x200mmRail5rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge15x200mmRailTungsten
+
+#MARK: Copper Rod
+- type: entity
+  id: Magazine15x200mmRail5rdCopper
+  suffix: Copper Rod
+  parent: BaseMagazine15x200mmRail5rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge15x200mmRailCopper
+
+#MARK: Depleted Uranium Rod
+- type: entity
+  id: Magazine15x200mmRail5rdDepletedUranium
+  suffix: Depleted Uranium Rod
+  parent: BaseMagazine15x200mmRail5rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge15x200mmRailDepletedUranium

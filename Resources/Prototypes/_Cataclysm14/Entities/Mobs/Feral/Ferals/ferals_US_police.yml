@@ -8,8 +8,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      200: Critical
-      300: Dead
+      150: Critical
+      200: Dead
   - type: Stamina
     critThreshold: 150
   - type: EntityTableContainerFill
@@ -95,8 +95,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Critical
-      500: Dead
+      200: Critical
+      250: Dead
   - type: Stamina
     critThreshold: 250
   - type: EntityTableOutfitContainerFill

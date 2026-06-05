@@ -5,6 +5,8 @@
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
+  - type: Sprite
+    scale: 0.30,0.30
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
@@ -22,7 +24,7 @@
     zeroVisible: false
   - type: Appearance
 
-#MARK: STANAG 30rd
+#MARK: STANAG 25rd
 - type: entity
   id: BaseMagazine5,56x45mmCoil25rd
   abstract: true
@@ -31,7 +33,7 @@
   parent: BaseMagazine5,56x45mmCoil
   components:
   - type: BallisticAmmoProvider
-    capacity: 30
+    capacity: 25
   - type: Item
     storedScale: 2.5
   - type: Tag

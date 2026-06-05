@@ -72,6 +72,7 @@
           whitelist:
             tags:
               - Cartridge5,56x45mm
+          whitelistFailPopup: gun-magazine-whitelist-fail
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot {}
@@ -86,6 +87,7 @@
         sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
         state: all
 
+#MARK: 200rd Empty
 - type: entity
   id: WeaponLightMachineGunM249Filled200rdEmpty
   suffix: Empty - 200rd
@@ -96,7 +98,25 @@
         gun_magazine:
           name: Magazine
           startingItem: MagazineBox5,56x45mmLMG200rdEmpty
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine5,56x45mmSTANAGCompatible
+              - AmmoBelt5,56x45mm
+              - MagazineBox5,56x45mmLMGCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge5,56x45mm
+          whitelistFailPopup: gun-magazine-whitelist-fail
 
+#MARK: 200rd FMJ
 - type: entity
   id: WeaponLightMachineGunM249Filled200rdFMJ
   suffix: FMJ - 200rd
@@ -107,7 +127,25 @@
         gun_magazine:
           name: Magazine
           startingItem: MagazineBox5,56x45mmLMG200rdFMJ
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine5,56x45mmSTANAGCompatible
+              - AmmoBelt5,56x45mm
+              - MagazineBox5,56x45mmLMGCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge5,56x45mm
+          whitelistFailPopup: gun-magazine-whitelist-fail
 
+#MARK: 200rd Tracer Red
 - type: entity
   id: WeaponLightMachineGunM249Filled200rdTracerRed
   suffix: Tracer Red - 200rd
@@ -118,3 +156,20 @@
         gun_magazine:
           name: Magazine
           startingItem: MagazineBox5,56x45mmLMG200rdTracerRed
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine5,56x45mmSTANAGCompatible
+              - AmmoBelt5,56x45mm
+              - MagazineBox5,56x45mmLMGCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge5,56x45mm
+          whitelistFailPopup: gun-magazine-whitelist-fail

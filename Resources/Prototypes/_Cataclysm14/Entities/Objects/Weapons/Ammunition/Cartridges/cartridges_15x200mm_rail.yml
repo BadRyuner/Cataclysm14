@@ -1,6 +1,7 @@
+#MARK: Base
 - type: entity
   id: BaseCartridge15x200mmRail
-  name: cartridge (15x200mm rail)
+  name: metalic rod (15x200mm rail)
   parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
   description: A small metal rod, originally intended as construction component. Its ballistic capabilities and low cost made it a favorite for makeshift and certain commercial railguns.
   abstract: true
@@ -21,16 +22,91 @@
   - type: StaticPrice
     price: 1
 
+#MARK: Steel
 - type: entity
   id: Cartridge15x200mmRailSteel
-  name: cartridge (15x200mm rail steel)
+  name: metalic rod (15x200mm rail steel)
   parent: [BaseCartridge15x200mmRail, BasicHitscan]
   components:
   - type: HitscanBasicDamage
     damage:
       types:
-        Piercing: 45
-        Structural: 50
+        Piercing: 75
+        Structural: 200
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: muzzle
+    travelFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: trail
+    impactFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: impact
+
+#MARK: Tungsten
+- type: entity
+  id: Cartridge15x200mmRailTungsten
+  name: metalic rod (15x200mm rail tungsten)
+  parent: [BaseCartridge15x200mmRail, BasicHitscan]
+  components:
+  - type: Sprite
+    color: "#676767"
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Piercing: 140
+        Structural: 500
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: muzzle
+    travelFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: trail
+    impactFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: impact
+
+#MARK: Copper
+- type: entity
+  id: Cartridge15x200mmRailCopper
+  name: metalic rod (15x200mm rail copper)
+  parent: [BaseCartridge15x200mmRail, BasicHitscan]
+  components:
+  - type: Sprite
+    color: "#d04900"
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Slash: 90
+        Heat: 20
+        Structural: 400
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: muzzle
+    travelFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: trail
+    impactFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi
+      state: impact
+
+#MARK: Depleted Uranium
+- type: entity
+  id: Cartridge15x200mmRailDepletedUranium
+  name: metalic rod (15x200mm rail depleted uranium)
+  parent: [BaseCartridge15x200mmRail, BasicHitscan]
+  components:
+  - type: Sprite
+    color: "#0b8900"
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Slash: 80
+        Piercing: 120
+        Structural: 600
   - type: HitscanBasicVisuals
     muzzleFlash:
       sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_railgun.rsi

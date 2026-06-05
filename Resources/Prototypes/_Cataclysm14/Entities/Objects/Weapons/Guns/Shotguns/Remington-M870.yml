@@ -42,6 +42,7 @@
     - type: BallisticAmmoProvider
       capacity: 6
 
+#MARK: Empty
 - type: entity
   id: WeaponShotgunRemingtonM870Empty
   suffix: Empty
@@ -50,6 +51,7 @@
     - type: BallisticAmmoProvider
       proto: null
 
+#MARK: Buckshot
 - type: entity
   id: WeaponShotgunRemingtonM870FilledBuckshot
   suffix: Buckshot
@@ -58,6 +60,7 @@
     - type: BallisticAmmoProvider
       proto: ShellShotgun12GaugeBuckshot
 
+#MARK: Beanbag
 - type: entity
   id: WeaponShotgunRemingtonM870FilledBeanbag
   suffix: Beanbag

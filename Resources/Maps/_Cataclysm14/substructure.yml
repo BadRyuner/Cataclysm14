@@ -21,6 +21,8 @@ entities:
   entities:
   - uid: 1
     components:
+    - type: Parallax
+      parallax: ParallaxSubstructureSky
     - type: MetaData
       name: Map Entity
     - type: Transform

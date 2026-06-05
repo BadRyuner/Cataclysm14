@@ -43,6 +43,7 @@
     - type: BallisticAmmoProvider
       capacity: 6
 
+#MARK: Empty
 - type: entity
   id: WeaponShotgunMossberg500Empty
   suffix: Empty
@@ -51,6 +52,7 @@
     - type: BallisticAmmoProvider
       proto: null
 
+#MARK: Buckshot
 - type: entity
   id: WeaponShotgunMossberg500FilledBuckshot
   suffix: Buckshot
@@ -59,6 +61,7 @@
     - type: BallisticAmmoProvider
       proto: ShellShotgun12GaugeBuckshot
 
+#MARK: Beanbag
 - type: entity
   id: WeaponShotgunMossberg500FilledBeanbag
   suffix: Beanbag

@@ -108,3 +108,31 @@
     roomWhitelist:
       tags:
       - CataStructureMonorailDoubleSidewalkStraight26x13
+
+#MARK: StraightOpen13x13
+- type: dungeonRoom
+  id: StructureSpawnerMonorailSidewalkStraightOpen13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_sidewalk_straight_open_13x13_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailSidewalkStraightOpen13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMonorailSidewalkStraightOpen13x13
+  name: structure spawner monorail sidewalk
+  suffix: Straight-Open][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_monorail.rsi
+    layers:
+    - state: structure_border_monorail_straight
+    - state: structure_border_monorail_sidewalk_straight
+    - state: structure_border_monorail_railing_straight
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureMonorailSidewalkStraightOpen13x13
