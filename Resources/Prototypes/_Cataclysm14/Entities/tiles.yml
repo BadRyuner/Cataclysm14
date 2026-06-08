@@ -1,12 +1,12 @@
 - type: entity
   id: FloorEntityPitInvisible
-  suffix: Invisible Pit
-  name: unknown depth
-  description: You can't even see the bottom.
+  suffix: Invisible Pit/Chasm
+  name: FloorEntityPitInvisible
   placement:
     mode: SnapgridCenter
     snap:
     - Wall
+  parent: MarkerBase
   components:
   - type: Chasm
   - type: StepTrigger
@@ -17,14 +17,16 @@
       - Catwalk
   - type: Transform
     anchored: true
+    noRot: true
   - type: Clickable
   - type: Sprite
+    noRot: true
     sprite: _Cataclysm14/Mapping/warning_pit.rsi
     layers:
-    - state: chasm
+    - state: warning_pit
   - type: Icon
     sprite: _Cataclysm14/Mapping/warning_pit.rsi
-    state: full
+    state: warning_pit
   - type: Physics
     bodyType: Static
   - type: Fixtures
@@ -32,13 +34,101 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
+          bounds: "-0.4,-0.4,0.4,0.4"
         layer:
         - WallLayer
         mask:
         - ItemMask
         density: 1000
         hard: false
-  - type: Tag
-    tags:
-    - HideContextMenu
+
+- type: entity
+  id: FloorEntityPitInvisible13x13
+  suffix: Invisible Pit/Chasm][13x13
+  name: FloorEntityPitInvisible13x13
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  parent: MarkerBase
+  components:
+  - type: Chasm
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.4
+    blacklist:
+      tags:
+      - Catwalk
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Clickable
+  - type: Sprite
+    scale: 13,13
+    noRot: true
+    sprite: _Cataclysm14/Mapping/warning_pit.rsi
+    layers:
+    - state: warning_pit
+  - type: Icon
+    sprite: _Cataclysm14/Mapping/warning_pit.rsi
+    state: warning_pit
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-6.4,-6.4,6.4,6.4"
+        layer:
+        - WallLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
+
+- type: entity
+  id: FloorEntityPitInvisible26x26
+  suffix: Invisible Pit/Chasm][26x26
+  name: FloorEntityPitInvisible26x26
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  parent: MarkerBase
+  components:
+  - type: Chasm
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.4
+    blacklist:
+      tags:
+      - Catwalk
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Clickable
+  - type: Sprite
+    scale: 26,26
+    offset: 0.5,0.5
+    noRot: true
+    sprite: _Cataclysm14/Mapping/warning_pit.rsi
+    layers:
+    - state: warning_pit
+  - type: Icon
+    sprite: _Cataclysm14/Mapping/warning_pit.rsi
+    state: warning_pit
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-12.4,-12.4,13.4,13.4"
+        layer:
+        - WallLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false

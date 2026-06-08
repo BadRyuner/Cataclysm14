@@ -33,3 +33,7 @@
 #MARK: Misc
   - type: Tag
     id: CataStructureWallFull13x13
+  - type: Tag
+    id: CataStructurePitEmpty13x13
+  - type: Tag
+    id: CataStructurePitEmpty26x26

@@ -15,13 +15,13 @@
     mode: SnapgridCenter
   parent: BaseStructureSpawner
   components:
-    - type: Sprite
-      scale: 13,13
-      sprite: _Cataclysm14/Mapping/structure_wall.rsi
-      layers:
-        - state: structure_border_wall
-      noRot: true
-    - type: RoomFill
-      roomWhitelist:
-        tags:
-          - CataStructureWallFull13x13
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_wall.rsi
+    layers:
+    - state: structure_border_wall
+    noRot: true
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureWallFull13x13
