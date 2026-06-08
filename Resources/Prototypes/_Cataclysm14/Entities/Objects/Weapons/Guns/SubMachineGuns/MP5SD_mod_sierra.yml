@@ -69,7 +69,7 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridges9x19mmParabellum
+              - Cartridge9x19mmParabellum
           whitelistFailPopup: gun-magazine-whitelist-fail
     - type: ContainerContainer
       containers:
@@ -109,7 +109,7 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridges9x19mmParabellum
+              - Cartridge9x19mmParabellum
           whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: 30rd FMJ
@@ -136,7 +136,7 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridges9x19mmParabellum
+              - Cartridge9x19mmParabellum
           whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: 30rd Green Tracer
@@ -163,5 +163,5 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridges9x19mmParabellum
+              - Cartridge9x19mmParabellum
           whitelistFailPopup: gun-magazine-whitelist-fail

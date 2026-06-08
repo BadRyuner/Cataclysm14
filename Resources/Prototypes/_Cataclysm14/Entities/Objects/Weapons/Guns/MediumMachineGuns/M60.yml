@@ -62,7 +62,6 @@
           whitelist:
             tags:
               - Magazine7,62x51mmSTANAGCompatible
-              - AmmoBelt7,62x51mm
               - MagazineBox7,62x51mmLMGCompatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
@@ -104,7 +103,6 @@
           whitelist:
             tags:
               - Magazine7,62x51mmSTANAGCompatible
-              - AmmoBelt7,62x51mm
               - MagazineBox7,62x51mmLMGCompatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
@@ -133,7 +131,6 @@
           whitelist:
             tags:
               - Magazine7,62x51mmSTANAGCompatible
-              - AmmoBelt7,62x51mm
               - MagazineBox7,62x51mmLMGCompatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
@@ -162,7 +159,6 @@
           whitelist:
             tags:
               - Magazine7,62x51mmSTANAGCompatible
-              - AmmoBelt7,62x51mm
               - MagazineBox7,62x51mmLMGCompatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:

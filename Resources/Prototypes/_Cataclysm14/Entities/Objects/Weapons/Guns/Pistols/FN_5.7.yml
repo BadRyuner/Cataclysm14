@@ -51,7 +51,7 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridges5,7x28mm
+              - Cartridge5,7x28mm
           whitelistFailPopup: gun-magazine-whitelist-fail
     - type: ContainerContainer
       containers:
@@ -84,7 +84,7 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridges5,7x28mm
+              - Cartridge5,7x28mm
           whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: 20rd FMJ
@@ -111,5 +111,5 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridges5,7x28mm
+              - Cartridge5,7x28mm
           whitelistFailPopup: gun-magazine-whitelist-fail
