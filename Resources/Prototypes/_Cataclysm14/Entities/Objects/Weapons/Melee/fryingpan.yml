@@ -30,7 +30,6 @@
     reflects: NonEnergy
     reflectProb: 0.10
     spread: 45
-    reflectingInHands: true
     soundOnReflect:
       path: /Audio/Weapons/Guns/Hits/ric5.ogg
 
