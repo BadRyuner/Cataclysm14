@@ -1,0 +1,55 @@
+- type: entity
+  name: frying pan
+  parent: BaseItem
+  id: WeaponMeleeFryingPan
+  description: A frying pan for cooking; both in a kitchen and the battlefield. Perhaps you could even deflect a bullet with this...?
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Melee/fryingpan.rsi
+    state: icon
+  - type: Icon
+    sprite: _Cataclysm14/Objects/Weapons/Melee/fryingpan.rsi
+    state: icon
+
+  - type: MeleeWeapon
+    angle: 0
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 20
+    bluntStaminaDamageFactor: 1.1
+    animation: WeaponArcSlash
+    soundHit:
+      path: /Audio/_Cataclysm14/Weapons/Melee/pan_bonk.ogg
+      params:
+        volume: 5
+        variation: 0.05
+
+  # bullet projectile reflection ripped from captain's sword; good thinking Wassuy    -pierow
+  - type: Reflect
+    reflects: NonEnergy
+    reflectProb: 0.10
+    spread: 45
+    soundOnReflect:
+      path: /Audio/Weapons/Guns/Hits/ric5.ogg
+
+  - type: LandAtCursor
+
+  - type: Item
+    size: Normal
+
+  # allows the frying pan to be holstered
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Melee/fryingpan.rsi
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+    - belt
+
+  - type: DisarmMalus
+    malus: 0.225
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 200
