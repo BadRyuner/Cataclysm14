@@ -4,10 +4,10 @@
   name: blackberry shrub
   description: A large bush.
   components:
-  - type: Sprite
-    layers:
-    - state: bush1
-    drawdepth: Overdoors
+  # - type: Sprite
+  #   layers:
+  #   - state: bush1
+  #   drawdepth: Overdoors
   - type: Destructible
     thresholds:
     - trigger:
