@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from CDDA tileset Ultimate Cataclysm, by ali-anomma, recolor by I-Am-Erk",
+  "size": {
+    "x": 96,
+    "y": 96
+  },
+  "states": [
+    {
+      "name": "spring"
+    },
+    {
+      "name": "summer"
+    },
+    {
+      "name": "autumn"
+    }
+  ]
+}

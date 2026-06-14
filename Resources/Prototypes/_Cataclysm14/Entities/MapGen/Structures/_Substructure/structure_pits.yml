@@ -38,7 +38,7 @@
 - type: entity
   id: StructureSpawnerPitEmpty26x26
   name: structure spawner empty pit
-  suffix: 1x1 Chunk][26x26
+  suffix: 2x2 Chunk][26x26
   parent: BaseStructureSpawner
   components:
     - type: Sprite
