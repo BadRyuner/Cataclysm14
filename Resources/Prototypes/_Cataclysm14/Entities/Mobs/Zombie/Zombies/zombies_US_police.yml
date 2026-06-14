@@ -1,0 +1,105 @@
+#MARK: US Police officer
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombiePoliceOfficerUS
+  suffix: US Police officer
+  components:
+  #Worn armor isn't effective enough to be a real threat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      300: Dead
+  - type: Stamina
+    critThreshold: 150
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingPoliceUsBulletProofVest
+        prob: 0.95
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHatCapPoliceUS
+        prob: 0.5
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.5
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaNeckGaiterBlack
+        - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+        prob: 0.4
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+        prob: 0.99
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesSneakersBlack
+        prob: 0.99
+
+#MARK: SWAT officer
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieSWATOfficer
+  suffix: SWAT officer
+  components:
+  #Worn armor isn't effective enough to be a real threat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Critical
+      500: Dead
+  - type: Stamina
+    critThreshold: 250
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestPoliceUSLightBlack
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofM88SWAT
+        prob: 0.95
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPoliceFilledPolice
+          weight: 2
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.5
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaNeckGaiterBlack
+        - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+        prob: 0.5
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+        prob: 0.99
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsPoliceCopUS
+        - id: ClothingPantsCombatDigitalBlack
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtPoliceCopUS
+        prob: 0.99

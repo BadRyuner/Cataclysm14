@@ -1,6 +1,6 @@
 #MARK: Basic - Base / white
     - type: entity
-      parent: ClothingHeadBase
+      parent: BaseClothingHead
       id: ClothingHeadHelmetHardhatPlasticBase
       name: plastic hardhat (white)
       description: A light plastic hardhat to protect against accidents and shock, or a frying pan to the head.

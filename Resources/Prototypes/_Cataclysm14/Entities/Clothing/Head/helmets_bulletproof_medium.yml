@@ -1,6 +1,6 @@
 #MARK: ACH
     - type: entity
-      parent: ClothingHeadBase
+      parent: BaseClothingHead
       id: ClothingHeadHelmetBulletproofACHOCPMulticam
       name: ACH ballistic helmet (OCP multicam)
       description: A medium ballistic helmet made for the US army, the Advanced Combat Headgear ACH.

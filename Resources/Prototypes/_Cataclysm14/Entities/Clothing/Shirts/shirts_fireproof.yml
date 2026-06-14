@@ -6,6 +6,8 @@
       name: fire fighter suit top (brown)
       description: A strong and thick jacket made of fire resistant materials, offers slight protection against physical damages and good ones against caustic and heat.
       components:
+      - type: Item
+        storedScale: 1.8
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Shirt/shirt_firesuit_firefighter_brown.rsi
       - type: Clothing

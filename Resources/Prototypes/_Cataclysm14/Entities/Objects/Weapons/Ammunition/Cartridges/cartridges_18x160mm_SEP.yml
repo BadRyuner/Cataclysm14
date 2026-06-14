@@ -1,0 +1,131 @@
+#MARK: Base
+- type: entity
+  id: BaseCartridge18x160mmSEP
+  name: cartridge (18x160mm SEP)
+  parent: BaseCartridge
+  description: A solid metal core projectile energized with a trumendous ammount of energy that is used to propel the round through the gauss barrel at extreme velocity.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge18x160mmSEP
+  - type: Sprite
+    scale: 0.3, 0.3
+    sprite: _Cataclysm14/Objects/Weapons/Casings/18x160mm_SEP_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+#MARK: Steel
+- type: entity
+  id: Cartridge18x160mmSEPSteel
+  name: cartridge (18x160mm SEP steel)
+  parent:
+  - BaseCartridge18x160mmSEP
+  - BasicHitscan
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+        color: "#818181"
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Piercing: 40
+        Structural: 120
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: muzzle
+    travelFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: trail
+    impactFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: impact
+
+#MARK: HE
+- type: entity
+  id: Cartridge18x160mmSEPHE
+  name: cartridge (18x160mm SEP high-explosive)
+  description: A solid metal core projectile energized with a trumendous ammount of energy that is used to propel the round through the gauss barrel at extreme velocity. This is an high explosive variant filled with an explosive compound.
+  parent:
+  - BaseCartridge18x160mmSEP
+  - BasicHitscan
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+        color: "#818181"
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ff6e52"
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Piercing: 40
+        Structural: 120
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: muzzle
+    travelFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: trail
+    impactFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: impact
+  - type: HitscanSpawnEntity
+    spawnedEntity: Explosion18x160mmSEPHE
+
+- type: entity
+  id: Explosion18x160mmSEPHE
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TriggerOnSpawn
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 25
+    intensitySlope: 4
+    maxIntensity: 4
+
+#MARK: APFSD
+- type: entity
+  id: Cartridge18x160mmSEPAPFSD
+  name: cartridge (18x160mm SEP APFSD)
+  description: A solid metal core projectile energized with a trumendous ammount of energy that is used to propel the round through the gauss barrel at extreme velocity. This one i an armor-percing fin stabilizing dart variant for extreme armor-piercing capacities.
+  parent:
+  - BaseCartridge18x160mmSEP
+  - BasicHitscan
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+        color: "#818181"
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#333333"
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Piercing: 135
+        Structural: 400
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: muzzle
+    travelFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: trail
+    impactFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: impact

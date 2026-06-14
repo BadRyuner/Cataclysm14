@@ -1,0 +1,34 @@
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobFeralSimple
+  id: MobFeralNaked
+  suffix: Naked
+
+#MARK: Civilian Basic
+- type: entity
+  id: MobFeralCivilianBasic
+  suffix: Civilian Basic
+  parent: BaseMobFeralSimple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      shoes: !type:NestedSelector
+        tableId: LootTableClothingShoesCivilian
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.5
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomCivilian
+        prob: 0.99
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4
+  - type: Loadout
+    prototypes:
+      - LoadoutInhandMobFeralCivilianBasic
+
+- type: startingGear
+  id: LoadoutInhandMobFeralCivilianBasic
+  inhand:
+    - WeaponMeleeSpearWoodKnife

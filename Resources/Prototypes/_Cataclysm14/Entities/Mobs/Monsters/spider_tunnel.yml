@@ -7,7 +7,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Cataclysm14/Mobs/spider_tunnel.rsi
+    sprite: _Cataclysm14/Mobs/Mob/spider_tunnel.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: spider

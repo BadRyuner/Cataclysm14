@@ -5,21 +5,21 @@
     id: PryingT1
     name: tool-quality-prying-name-T1
     toolName: tool-quality-prying-tool-name
-    spawn: ToolCrowbar
+    spawn: ToolCrowbarMetal
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
   - type: tool
     id: PryingT2
     name: tool-quality-prying-name-T2
     toolName: tool-quality-prying-tool-name
-    spawn: ToolCrowbar
+    spawn: ToolCrowbarMetal
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
   - type: tool
     id: PryingT3
     name: tool-quality-prying-name-T3
     toolName: tool-quality-prying-tool-name
-    spawn: ToolCrowbar
+    spawn: ToolCrowbarMetal
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
 #MARK: Hammering
@@ -27,21 +27,21 @@
     id: HammeringT1
     name: tool-quality-hammering-name-T1
     toolName: tool-quality-hammering-tool-name
-    spawn: ToolCrowbar
+    spawn: ToolCrowbarMetal
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
   - type: tool
     id: HammeringT2
     name: tool-quality-hammering-name-T2
     toolName: tool-quality-hammering-tool-name
-    spawn: ToolCrowbar
+    spawn: ToolCrowbarMetal
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
   - type: tool
     id: HammeringT3
     name: tool-quality-hammering-name-T3
     toolName: tool-quality-hammering-tool-name
-    spawn: ToolCrowbar
+    spawn: ToolCrowbarMetal
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
 #MARK: Fine hammering
@@ -49,7 +49,7 @@
     id: FineHammeringT1
     name: tool-quality-fine-hammering-name-T1
     toolName: tool-quality-fine-hammering-tool-name
-    spawn: ToolCrowbar
+    spawn: ToolCrowbarMetal
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
 #MARK: Nail prying
@@ -57,148 +57,7 @@
     id: NailPryingT1
     name: tool-quality-nail-prying-name-T1
     toolName: tool-quality-nail-prying-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-#MARK: Metal sawing
-  - type: tool
-    id: MetalSawingT1
-    name: tool-quality-metal-sawing-name-T1
-    toolName: tool-quality-metal-sawing-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: MetalSawingT2
-    name: tool-quality-metal-sawing-name-T2
-    toolName: tool-quality-metal-sawing-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: MetalSawingT3
-    name: tool-quality-metal-sawing-name-T3
-    toolName: tool-quality-metal-sawing-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: MetalSawingT4
-    name: tool-quality-metal-sawing-name-T4
-    toolName: tool-quality-metal-sawing-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-#MARK: Fine metal sawing
-  - type: tool
-    id: FineMetalSawingT1
-    name: tool-quality-fine-metal-sawing-name-T1
-    toolName: tool-quality-fine-metal-sawing-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: FineMetalSawingT2
-    name: tool-quality-fine-metal-sawing-name-T2
-    toolName: tool-quality-fine-metal-sawing-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-#MARK: Digging
-  - type: tool
-    id: DiggingT1
-    name: tool-quality-digging-name-T1
-    toolName: tool-quality-digging-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: DiggingT2
-    name: tool-quality-digging-name-T2
-    toolName: tool-quality-digging-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: DiggingT3
-    name: tool-quality-digging-name-T3
-    toolName: tool-quality-digging-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-#MARK: Screwdriving
-  - type: tool
-    id: ScrewdrivingT1
-    name: tool-quality-screwdriving-name-T1
-    toolName: tool-quality-screwdriving-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-#MARK: Cutting
-  - type: tool
-    id: CuttingT1
-    name: tool-quality-cutting-name-T1
-    toolName: tool-quality-cutting-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: CuttingT2
-    name: tool-quality-cutting-name-T2
-    toolName: tool-quality-cutting-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-#MARK: Fine cutting
-  - type: tool
-    id: FineCuttingT1
-    name: tool-quality-fine-cutting-name-T1
-    toolName: tool-quality-fine-cutting-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: FineCuttingT2
-    name: tool-quality-fine-cutting-name-T2
-    toolName: tool-quality-fine-cutting-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: FineCuttingT3
-    name: tool-quality-fine-cutting-name-T3
-    toolName: tool-quality-fine-cutting-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-#MARK: Fabric cutting
-  - type: tool
-    id: FabricCuttingT1
-    name: tool-quality-fabric-cutting-name-T1
-    toolName: tool-quality-fabric-cutting-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: FabricCuttingT2
-    name: tool-quality-fabric-cutting-name-T2
-    toolName: tool-quality-fabric-cutting-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-#MARK: Filing
-  - type: tool
-    id: FilingT1
-    name: tool-quality-filing-name-T1
-    toolName: tool-quality-filing-tool-name
-    spawn: ToolCrowbar
-    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
-
-  - type: tool
-    id: FilingT2
-    name: tool-quality-filing-name-T2
-    toolName: tool-quality-filing-tool-name
-    spawn: ToolCrowbar
+    spawn: ToolCrowbarMetal
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
 #MARK: Wood sawing
@@ -206,12 +65,183 @@
     id: WoodSawingT1
     name: tool-quality-wood-sawing-name-T1
     toolName: tool-quality-wood-sawing-tool-name
-    spawn: ToolCrowbar
+    spawn: ToolCrowbarMetal
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
 
   - type: tool
     id: WoodSawingT2
     name: tool-quality-wood-sawing-name-T2
     toolName: tool-quality-wood-sawing-tool-name
-    spawn: ToolCrowbar
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Metal sawing
+  - type: tool
+    id: MetalSawingT1
+    name: tool-quality-metal-sawing-name-T1
+    toolName: tool-quality-metal-sawing-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: MetalSawingT2
+    name: tool-quality-metal-sawing-name-T2
+    toolName: tool-quality-metal-sawing-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: MetalSawingT3
+    name: tool-quality-metal-sawing-name-T3
+    toolName: tool-quality-metal-sawing-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: MetalSawingT4
+    name: tool-quality-metal-sawing-name-T4
+    toolName: tool-quality-metal-sawing-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Fine metal sawing
+  - type: tool
+    id: FineMetalSawingT1
+    name: tool-quality-fine-metal-sawing-name-T1
+    toolName: tool-quality-fine-metal-sawing-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FineMetalSawingT2
+    name: tool-quality-fine-metal-sawing-name-T2
+    toolName: tool-quality-fine-metal-sawing-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Digging
+  - type: tool
+    id: DiggingT1
+    name: tool-quality-digging-name-T1
+    toolName: tool-quality-digging-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: DiggingT2
+    name: tool-quality-digging-name-T2
+    toolName: tool-quality-digging-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: DiggingT3
+    name: tool-quality-digging-name-T3
+    toolName: tool-quality-digging-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Screwdriving
+  - type: tool
+    id: ScrewdrivingT1
+    name: tool-quality-screwdriving-name-T1
+    toolName: tool-quality-screwdriving-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Cutting
+  - type: tool
+    id: CuttingT1
+    name: tool-quality-cutting-name-T1
+    toolName: tool-quality-cutting-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: CuttingT2
+    name: tool-quality-cutting-name-T2
+    toolName: tool-quality-cutting-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Fine cutting
+  - type: tool
+    id: FineCuttingT1
+    name: tool-quality-fine-cutting-name-T1
+    toolName: tool-quality-fine-cutting-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FineCuttingT2
+    name: tool-quality-fine-cutting-name-T2
+    toolName: tool-quality-fine-cutting-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FineCuttingT3
+    name: tool-quality-fine-cutting-name-T3
+    toolName: tool-quality-fine-cutting-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Fabric cutting
+  - type: tool
+    id: FabricCuttingT1
+    name: tool-quality-fabric-cutting-name-T1
+    toolName: tool-quality-fabric-cutting-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FabricCuttingT2
+    name: tool-quality-fabric-cutting-name-T2
+    toolName: tool-quality-fabric-cutting-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Filing
+  - type: tool
+    id: FilingT1
+    name: tool-quality-filing-name-T1
+    toolName: tool-quality-filing-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FilingT2
+    name: tool-quality-filing-name-T2
+    toolName: tool-quality-filing-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Bolt turning
+  - type: tool
+    id: BoltTurningT1
+    name: tool-quality-bolt-turning-name-T1
+    toolName: tool-quality-bolt-turning-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: BoltTurningT2
+    name: tool-quality-bolt-turning-name-T2
+    toolName: tool-quality-bolt-turning-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+#MARK: Fine bolt turning
+  - type: tool
+    id: FineBoltTurningT1
+    name: tool-quality-fine-bolt-turning-name-T1
+    toolName: tool-quality-fine-bolt-turning-tool-name
+    spawn: ToolCrowbarMetal
+    icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }
+
+  - type: tool
+    id: FineBoltTurningT2
+    name: tool-quality-fine-bolt-turning-name-T2
+    toolName: tool-quality-fine-bolt-turning-tool-name
+    spawn: ToolCrowbarMetal
     icon: { sprite: Objects/Weapons/Melee/fireaxe.rsi, state: icon }

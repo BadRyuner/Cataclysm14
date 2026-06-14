@@ -1,11 +1,14 @@
 #MARK: -THOR-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackSides, BaseClothingOuterBulletProofVest]
       id: ClothingOuterBulletProofVestTHOR
       name: NFM-THOR heavy ballistic vest
       suffix: Empty
       description: A heavy armor vest colored in tan. Made to resist intermediate calibers.
       components:
+      - type: Item
+        shape:
+        - 0,0,4,5
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_NFM-THOR.rsi
       - type: Clothing

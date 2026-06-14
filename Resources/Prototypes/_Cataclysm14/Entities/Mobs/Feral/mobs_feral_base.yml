@@ -1,0 +1,276 @@
+#MARK: BaseFeralStats
+- type: entity
+  id: BaseMobFeralStats
+  abstract: true
+  components:
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    - Critical
+    - Dead
+    damageCap: 9999
+    damage:
+      groups:
+        Brute: -0.1
+        Burn: -0.05
+        Airloss: -0.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+  - type: DamageVisuals
+    thresholds: [ 10, 20, 30, 50, 70, 100 ]
+    targetLayers:
+    - "enum.HumanoidVisualLayers.Chest"
+    - "enum.HumanoidVisualLayers.Head"
+    - "enum.HumanoidVisualLayers.LArm"
+    - "enum.HumanoidVisualLayers.LLeg"
+    - "enum.HumanoidVisualLayers.RArm"
+    - "enum.HumanoidVisualLayers.RLeg"
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#FF0000"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      40: 0.95
+      60: 0.90
+      80: 0.85
+      90: 0.7
+      95: 0.4
+  - type: Stamina
+    critThreshold: 100
+
+#MARK: BaseFeral
+- type: entity
+  id: BasePrototypeSpecieFeral
+  save: false
+  parent:
+  - BaseMobSpecies
+  - MobBloodstream
+  - MobFlammable
+  - MobEnhancedMovement
+  - MobPrying
+  - MobStepTriggerImmune
+  abstract: true
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Feral/parts.rsi
+    state: full
+  - type: Sprite
+    layers:
+    - map:
+      - enum.HumanoidVisualLayers.Chest
+    - map:
+      - enum.HumanoidVisualLayers.Head
+    - map:
+      - enum.HumanoidVisualLayers.Snout
+    - map:
+      - enum.HumanoidVisualLayers.Eyes
+    - map:
+      - enum.HumanoidVisualLayers.RArm
+    - map:
+      - enum.HumanoidVisualLayers.LArm
+    - map:
+      - enum.HumanoidVisualLayers.RLeg
+    - map:
+      - enum.HumanoidVisualLayers.LLeg
+    - map:
+      - jumpsuit
+    - map:
+      - pants
+    - map:
+      - balaclava
+    - map:
+      - enum.HumanoidVisualLayers.LFoot
+    - map:
+      - enum.HumanoidVisualLayers.RFoot
+    - map:
+      - enum.HumanoidVisualLayers.LHand
+    - map:
+      - enum.HumanoidVisualLayers.RHand
+    - map:
+      - gloves
+    - map:
+      - shoes
+    - map:
+      - ears
+    - map:
+      - id
+      # Mono - move from between belt and back
+    - map:
+      - outerClothing
+      # mono - i hate you upstream
+    - map:
+      - eyes
+    - map:
+      - belt
+    - map:
+      - back
+    - map:
+      - neck
+    - map:
+      - enum.HumanoidVisualLayers.FacialHair
+    - map:
+      - enum.HumanoidVisualLayers.Hair
+    - map:
+      - enum.HumanoidVisualLayers.HeadSide
+    - map:
+      - enum.HumanoidVisualLayers.HeadTop
+    - map:
+      - enum.HumanoidVisualLayers.Tail
+    - map:
+      - enum.HumanoidVisualLayers.Wings
+      # For IPC wings porting from SimpleStation
+    - map:
+      - mask
+    - map:
+      - head
+    - map:
+      - faceshield
+    - map:
+      - helmetattachment
+    - map:
+      - pocket1
+    - map:
+      - pocket2
+    - map:
+      - enum.HumanoidVisualLayers.Handcuffs
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
+    - map:
+      - clownedon
+      # Dynamically generated
+      sprite: Effects/creampie.rsi
+      state: creampie_human
+      visible: false
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: MobMover
+  - type: StandingState
+  - type: HumanoidAppearance
+    species: SpecieFeralBase
+  - type: RandomHumanoidAppearance
+    randomizeName: true
+
+  - type: Blindable
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+    butcheringType: Spike
+  # - type: Advertise
+  #   pack: syndicatehumanoidchatter
+  #   minimumWait: 120 # 1 * 2
+  #   maximumWait: 240 # 2 * 60
+  #   nextAdvertisementTime: 0
+  - type: Zombie
+  - type: NpcFactionMember
+    factions:
+    - NpcFactionFerals
+  - type: AutoWakeUp
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: feral
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: SSDIndicator
+    icon: PulpingSSDIcon
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.35 #make ferals block each other way less
+        density: 220
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+
+#MARK: Dummy
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobFeralDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _Mono/Mobs/Species/Protogen/displacement.rsi #Dont really care
+            state: jumpsuit-female
+
+#MARK: Mob Base
+- type: entity
+  id: BaseMobFeralSimple
+  abstract: true
+  name: feral
+  description: A corrupted human, a green-ish pale feral thing that used to be a person which is now spewing black goo, and it's coming at you armed.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombieBase
+  - BasePrototypeSpecieFeral
+  - BaseMobFeralStats
+  components:
+  - type: Inventory
+    templateId: InvTemplateFeralBase
+  - type: Body
+    prototype: BodyPartSetFeralBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+  - type: MeleeWeapon
+    attackRate: 0.8
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5
+
+#MARK: Mob Ranged
+- type: entity
+  id: BaseMobFeralRanged
+  abstract: true
+  name: feral
+  description: A corrupted human, a green-ish pale feral thing that used to be a person which is now spewing black goo, and it's coming at you armed.
+  categories: [ HideSpawnMenu ]
+  parent:
+  # - MobHumanoidHostileBase
+  - MobHumanoidHostileAISimpleRanged
+  - BasePrototypeSpecieFeral
+  - BaseMobFeralStats
+  components:
+  - type: Inventory
+    templateId: InvTemplateFeralBase
+  - type: Body
+    prototype: BodyPartSetFeralBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+  - type: MeleeWeapon
+    attackRate: 0.8
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5

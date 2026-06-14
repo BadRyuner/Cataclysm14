@@ -1,0 +1,352 @@
+
+- type: entity
+  abstract: true
+  parent: BasePartInorganic
+  id: BaseFeralPart
+  components:
+  - type: Damageable
+    damageContainer: OrganicPart # Shitmed Change
+#  - type: Destructible
+#    thresholds:
+#    - trigger:
+#        !type:DamageTypeTrigger
+#        damageType: Blunt
+#        damage: 160 # 110->160
+#      behaviors:
+#      - !type:GibPartBehavior { }
+#    - trigger:
+#        !type:DamageTypeTrigger
+#        damageType: Slash
+#        damage: 180 # 150->180
+#      behaviors:
+#      - !type:GibPartBehavior { }
+#    - trigger:
+#        !type:DamageTypeTrigger
+#        damageType: Heat
+#        damage: 230 # 200->230
+#      behaviors:
+#      - !type:SpawnEntitiesBehavior
+#        spawnInContainer: true
+#        spawn:
+#          Ash:
+#            min: 1
+#            max: 1
+#      - !type:BurnBodyBehavior { }
+#      - !type:PlaySoundBehavior
+#        sound:
+#          collection: MeatLaserImpact
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  abstract: true
+  parent: BaseTorsoInorganic
+  id: BaseFeralTorso
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 400
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 400
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 400
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+  - type: Extractable # torso is meatier
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
+
+- type: entity
+  abstract: true
+  id: BaseFeralHead
+  name: "head"
+  components:
+  - type: Sprite
+    state: "head_m"
+  - type: Icon
+    state: "head_m"
+  - type: BodyPart
+    severIntegrity: 50
+    partType: Head
+    toolName: "a head" # Shitmed Change
+    vital: true
+    organs: # Shitmed Change
+      brain:
+        id: brain
+      eyes:
+        id: eyes
+  - type: Input
+    context: "ghost"
+  - type: Tag
+    tags:
+      - Head
+  - type: Destructible # Mono
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 500 # 110->500
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 600 # 150->600
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 700 # 200->700
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+
+- type: entity
+  abstract: true
+  parent: MajorLimbFeral # Mono
+  id: BaseFeralLeftArm
+  name: "left arm"
+  components:
+  - type: Sprite
+    state: "l_arm"
+  - type: Icon
+    state: "l_arm"
+  - type: BodyPart
+    partType: Arm
+    symmetry: Left
+    toolName: "a left arm" # Shitmed Change
+    children: # Shitmed Change
+      left hand:
+        id: left hand
+        type: Hand
+
+- type: entity
+  abstract: true
+  parent: MajorLimbFeral # Mono
+  id: BaseFeralRightArm
+  name: "right arm"
+  components:
+  - type: Sprite
+    state: "r_arm"
+  - type: Icon
+    state: "r_arm"
+  - type: BodyPart
+    partType: Arm
+    symmetry: Right
+    toolName: "a right arm" # Shitmed Change
+    children: # Shitmed Change
+      right hand:
+        id: right hand
+        type: Hand
+    severIntegrity: 50 # Mono
+
+- type: entity
+  abstract: true
+  parent: MinorLimbFeral # Mono
+  id: BaseFeralLeftHand
+  name: "left hand"
+  components:
+  - type: Sprite
+    state: "l_hand"
+  - type: Icon
+    state: "l_hand"
+  - type: BodyPart
+    partType: Hand
+    symmetry: Left
+    toolName: "a left hand" # Shitmed Change
+
+- type: entity
+  abstract: true
+  parent: MinorLimbFeral # Mono
+  id: BaseFeralRightHand
+  name: "right hand"
+  components:
+  - type: Sprite
+    state: "r_hand"
+  - type: Icon
+    state: "r_hand"
+  - type: BodyPart
+    partType: Hand
+    symmetry: Right
+    toolName: "a right hand" # Shitmed Change
+
+- type: entity
+  abstract: true
+  parent: MajorLimbFeral # Mono
+  id: BaseFeralLeftLeg
+  name: "left leg"
+  components:
+  - type: Sprite
+    state: "l_leg"
+  - type: Icon
+    state: "l_leg"
+  - type: BodyPart
+    partType: Leg
+    symmetry: Left
+    toolName: "a left leg" # Shitmed Change
+    children: # Shitmed Change
+      left foot:
+        id: left foot
+        type: Foot
+  - type: MovementBodyPart
+
+- type: entity
+  abstract: true
+  parent: MajorLimbFeral # Mono
+  id: BaseFeralRightLeg
+  name: "right leg"
+  components:
+  - type: Sprite
+    state: "r_leg"
+  - type: Icon
+    state: "r_leg"
+  - type: BodyPart
+    partType: Leg
+    symmetry: Right
+    toolName: "a right leg" # Shitmed Change
+    children: # Shitmed Change
+      right foot:
+        id: right foot
+        type: Foot
+  - type: MovementBodyPart
+
+- type: entity
+  abstract: true
+  parent: MinorLimbFeral # Mono
+  id: BaseFeralLeftFoot
+  name: "left foot"
+  components:
+  - type: Sprite
+    state: "l_foot"
+  - type: Icon
+    state: "l_foot"
+  - type: BodyPart
+    partType: Foot
+    symmetry: Left
+    toolName: "a left foot" # Shitmed Change
+
+- type: entity
+  abstract: true
+  parent: MinorLimbFeral # Mono
+  id: BaseFeralRightFoot
+  name: "right foot"
+  components:
+  - type: Sprite
+    state: "r_foot"
+  - type: Icon
+    state: "r_foot"
+  - type: BodyPart
+    partType: Foot
+    symmetry: Right
+    toolName: "a right foot" # Shitmed Change
+
+- type: entity # Mono
+  abstract: true
+  id: MajorLimbFeral
+  components:
+  - type: BodyPart
+    severIntegrity: 50
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 190 # 110->190
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 210 # 150->210
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 250 # 200->250
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+
+
+- type: entity # Mono
+  abstract: true
+  id: MinorLimbFeral
+  components:
+  - type: BodyPart
+    severIntegrity: 50
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 150 # 110->150
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 180 # 150->180
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 230 # 200->230
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact

@@ -18,8 +18,8 @@
     scale: 26,13
     offset: -0.5,0
     layers:
-      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
-        state: structure_border_house_small
+      - sprite: _Cataclysm14/Mapping/structure_checkpoint.rsi
+        state: structure_checkpoint
   - type: RoomFill
     rotation: false
     roomWhitelist:
@@ -46,8 +46,8 @@
     scale: 26,13
     offset: -0.5,0
     layers:
-      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
-        state: structure_border_house_small
+      - sprite: _Cataclysm14/Mapping/structure_checkpoint.rsi
+        state: structure_checkpoint
   - type: RoomFill
     rotation: false
     roomWhitelist:
@@ -74,8 +74,8 @@
     scale: 39,13
     offset: -0.5,0
     layers:
-      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
-        state: structure_border_house_small
+      - sprite: _Cataclysm14/Mapping/structure_checkpoint.rsi
+        state: structure_checkpoint
   - type: RoomFill
     rotation: false
     roomWhitelist:
@@ -102,8 +102,8 @@
     scale: 26,26
     offset: -0.5,-0.5
     layers:
-      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
-        state: structure_border_house_small
+      - sprite: _Cataclysm14/Mapping/structure_checkpoint.rsi
+        state: structure_checkpoint
   - type: RoomFill
     rotation: false
     roomWhitelist:

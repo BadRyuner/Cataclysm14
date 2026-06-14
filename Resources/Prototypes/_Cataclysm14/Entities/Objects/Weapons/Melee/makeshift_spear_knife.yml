@@ -1,5 +1,6 @@
 - type: entity
   name: makeshift wooden knife spear
+  parent: BaseItem
   id: WeaponMeleeSpearWoodKnife
   description: A spear made out of a wooden stick with a knife taped on the end, quite sharp innit mate.
   components:

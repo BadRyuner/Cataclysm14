@@ -1,0 +1,66 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine5,56x45mmCoil
+  name: "magazine (5,56x45mmCoil NATO FMJ)"
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Sprite
+    scale: 0.30,0.30
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge5,56x45mmCoil
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: STANAG 25rd
+- type: entity
+  id: BaseMagazine5,56x45mmCoil25rd
+  abstract: true
+  name: "25rd coil magazine (5,56x45mm coil)"
+  description: "A modified 5,56x45mm magazine made to now fit coilgun ammunition."
+  parent: BaseMagazine5,56x45mmCoil
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 25
+  - type: Item
+    storedScale: 2.5
+  - type: Tag
+    tags:
+      - Magazine5,56x45mmCoilCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,56x45mm_coil/magazine_5,56x45mm_coil_25rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine5,56x45mmCoil25rdEmpty
+  suffix: Empty
+  parent: BaseMagazine5,56x45mmCoil25rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: Coil
+- type: entity
+  id: Magazine5,56x45mmCoil25rdSteel
+  suffix: Coil
+  parent: BaseMagazine5,56x45mmCoil25rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5,56x45mmCoilSteel

@@ -32,6 +32,14 @@
   - type: Tag
     id: MagazineBox5,56x45mmLMGCompatible
 
+  #MARK: 5,56x45mm coil
+
+  - type: Tag
+    id: Cartridge5,56x45mmCoil
+
+  - type: Tag
+    id: Magazine5,56x45mmCoilCompatible
+
   #MARK: 7,62x39mm
 
   - type: Tag
@@ -90,7 +98,7 @@
   - type: Tag
     id: Cartridge45Magnum
 
-  #MARK:9x19mmParabellum
+  #MARK:9x19mm parabellum
 
   - type: Tag
     id: Magazine9x19mmParabellumGlockCompatible
@@ -138,3 +146,19 @@
     #Deprecated-ish, unless implemented
   - type: Tag
     id: Cartridge6,35x40mmCaseless
+
+  #MARK: 15x200mmRail
+
+  - type: Tag
+    id: Cartridge15x200mmRail
+
+  - type: Tag
+    id: Magazine15x200mmRailCompatible
+
+  #MARK: 18x160mmSEP
+
+  - type: Tag
+    id: Cartridge18x160mmSEP
+
+  - type: Tag
+    id: Magazine18x160mmSEPCompatible

@@ -1,7 +1,7 @@
 #MARK: -firesuit helmets-
   #MARK: Brown firefighter
     - type: entity
-      parent: ClothingHeadLightBase
+      parent: BaseClothingHeadLight
       id: ClothingHeadHelmetFireSuitFireFighterBrown
       name: fire helmet and hood (brown)
       description: A firesuit hood and helmet for firefighters. Provides some heat resistance and looks cool.

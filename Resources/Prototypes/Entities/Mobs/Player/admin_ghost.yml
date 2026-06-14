@@ -4,8 +4,11 @@
   name: admin observer
   categories: [ HideSpawnMenu ]
   components:
+  - type: MovementSpeedModifier #Cataclysm14, admin edit
+    baseSprintSpeed: 75
+    baseWalkSpeed: 20
   - type: ContentEye
-    maxZoom: 8.916104, 8.916104
+    maxZoom: 15,15 #Cataclysm14, admin edit
   - type: Tag
     tags:
     - InstantDoAfters

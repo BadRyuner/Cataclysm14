@@ -1,65 +1,73 @@
-#MARK: Base
 - type: entity
-  name: Izhmash Saiga-12 (12 gauge)
-  parent: [BaseItem, BaseGunWieldable]
   id: WeaponShotgunSaiga12
+  name: Izhmash Saiga-12 (12 gauge)
   description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Uses 12 gauge shotgun shells.
+  parent:
+    - BaseItem
+    - BaseGunWieldable
   components:
-  - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Saiga-12_64x32.rsi
-    scale: 0.55,0.55
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Saiga-12_32x32.rsi
-    size: Large
-    shape:
-    - 0,0,5,1
-    storedScale: 2.5
-  - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Saiga-12_32x32.rsi
-    quickEquip: false
-    slots:
-    - Back
-    - suitStorage
-  - type: AmmoCounter
-  - type: GunSpreadModifier
-    spread: 0.4
-  - type: GunRequiresWield
-  - type: Gun
-    projectileSpeed: 60 # Mono
-    selectedMode: SemiAuto
-    availableModes:
-    - SemiAuto
-    fireRate: 3
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
-    soundEmpty:
-      path: /Audio/Weapons/Guns/Empty/empty.ogg
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine12GaugeBuckshot
-        priority: 2
-        whitelist:
-          tags:
-          - Magazine12GaugeSaiga12Compatible
-        whitelistFailPopup: gun-magazine-whitelist-fail
-        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineAmmoProvider
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
-  - type: StaticPrice
-    price: 500
+    - type: Sprite
+      scale: 0.55,0.55
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Saiga-12_64x32.rsi
+      layers:
+        - state: base
+          map:
+            - enum.GunVisualLayers.Base
+        - state: mag-0
+          map:
+            - enum.GunVisualLayers.Mag
+    - type: Item
+      size: Large
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Saiga-12_32x32.rsi
+      shape:
+        - 0,0,5,1
+      storedScale: 2.5
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Back
+        - suitStorage
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Saiga-12_32x32.rsi
+    - type: AmmoCounter
+    - type: GunSpreadModifier
+      spread: 0.4
+    - type: GunRequiresWield
+    - type: Gun
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+        params:
+          volume: 15
+          variation: 0.1
+          pitch: 1.2
+          playOffsetSeconds: 0.05
+      soundEmpty:
+        path: /Audio/Weapons/Guns/Empty/empty.ogg
+      fireRate: 3
+      projectileSpeed: 60
+      availableModes:
+        - SemiAuto
+      selectedMode: SemiAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine12GaugeBuckshot
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine12GaugeSaiga12Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot {}
+        gun_chamber: !type:ContainerSlot {}
+    - type: MagazineAmmoProvider
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Appearance
+    - type: StaticPrice
+      price: 500

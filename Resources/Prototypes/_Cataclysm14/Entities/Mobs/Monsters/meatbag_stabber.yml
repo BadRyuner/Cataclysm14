@@ -7,7 +7,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Cataclysm14/Mobs/meatbag_stabber.rsi
+    sprite: _Cataclysm14/Mobs/Mob/meatbag_stabber.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: meat

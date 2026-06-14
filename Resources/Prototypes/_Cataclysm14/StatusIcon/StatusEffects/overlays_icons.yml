@@ -1,5 +1,5 @@
 - type: ssdIcon
-  id: ZombieSSDIcon #actually is for pulping warning
+  id: PulpingSSDIcon #actually is for pulping warning
   icon:
     sprite: /Textures/_Cataclysm14/Effects/zombie_pulp.rsi
     state: default0

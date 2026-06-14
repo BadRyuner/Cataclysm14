@@ -1,0 +1,82 @@
+#MARK: UN Peacekeeper
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployableUNPeacekeeper
+  suffix: UN Peacekeeper
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingUNPeacekeeperBulletProofVest
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofM88UN
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPoliceFilledPolice
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatCCEDesertCargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatCCEDesertCargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatCCECargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatCCECargo
+
+#MARK: UN Officer
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployableUNOfficer
+  suffix: UN Officer
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingUNPeacekeeperBulletProofVest
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHatBeretUN
+        - id: ClothingHeadHatCapUN
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPoliceFilledPolice
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatCCEDesertCargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatCCEDesertCargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatCCECargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatCCECargo

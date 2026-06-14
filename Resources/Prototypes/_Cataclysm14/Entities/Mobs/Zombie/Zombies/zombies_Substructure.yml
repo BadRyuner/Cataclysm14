@@ -1,0 +1,189 @@
+#MARK: Sierra Trooper
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieTaskforceSierraTrooper
+  suffix: Sierra Trooper
+  components:
+  #Worn armor isn't effective enough to be a real threat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Critical
+      500: Dead
+  - type: Stamina
+    critThreshold: 250
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestInterceptorOTVSierra
+        - id: ClothingOuterBulletProofVestInterceptorOTVSierraFilled
+        - id: ClothingOuterBulletProofVestIOTVSierra
+        - id: ClothingOuterBulletProofVestIOTVSierraFilled
+        prob: 0.9
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetRiotSecurityArmoredSierra
+        - id: ClothingHeadHelmetRiotSecurityArmoredSierraOfficer
+        - id: ClothingHeadHatBeretSierra
+        prob: 0.9
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltBlackFilledSierra
+        - id: ClothingBeltDutyBeltBlack
+        prob: 0.8
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskBlack
+        prob: 0.4
+      slingfront: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      suitstorage: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+        prob: 0.99
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackBlackFilledSierra
+        - id: ClothingBackpackAlicePackBlack
+        prob: 0.5
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsCombatSierraDuty
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtCombatSierraDuty
+        prob: 0.99
+
+#MARK: Sierra Commandant
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieTaskforceSierraCommandant
+  suffix: Sierra Commandant
+  components:
+  #Worn armor isn't effective enough to be a real threat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Critical
+      300: Dead
+  - type: Stamina
+    critThreshold: 250
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestInterceptorOTVSierra
+        - id: ClothingOuterBulletProofVestInterceptorOTVSierraFilled
+        prob: 0.5
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHatBeretSierraCommandant
+        prob: 0.8
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltBlackFilledSierra
+        - id: ClothingBeltDutyBeltBlack
+        prob: 0.5
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaSkiMaskBlack
+        prob: 0.4
+      slingfront: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      suitstorage: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+        prob: 0.99
+      # back: !type:GroupSelector
+      #   children:
+      #   - id: ClothingBackpackAlicePackTanFilledNationalGuard
+      #     weight: 2
+      #   - id: ClothingBackpackAlicePackTan
+      #   prob: 0.99
+      pants: !type:GroupSelector
+        children:
+        - id: ClothingPantsCombatSierraCommandant
+        prob: 0.99
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtCombatSierraCommandant
+        prob: 0.99
+
+#MARK: Super Structure Scientist
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieSupStructScientist
+  suffix: Super Structure Scientist
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableOutfitContainerFill
+    containers:
+      eyes: !type:GroupSelector
+        children:
+        - id: ClothingEyesCorrectiveGlasses
+        prob: 0.7
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterCoatLabCoat
+        prob: 0.9
+      # head: !type:GroupSelector
+      #   children:
+      #   - id: ClothingHeadHatBeretSierraCommandant
+      #   prob: 0.8
+      # belt: !type:GroupSelector
+      #   children:
+      #   - id: ClothingBeltDutyBeltPoliceFilledPolice
+      #   - id: ClothingBeltDutyBeltPolice
+      #   prob: 0.5
+      # balaclava: !type:GroupSelector
+      #   children:
+      #   - id: ClothingBalaclavaSkiMaskBlack
+      #   prob: 0.4
+      # slingfront: !type:NestedSelector
+      #   tableId: LootTableWeaponGunNationalGuard
+      #   prob: 0.01
+      # suitstorage: !type:NestedSelector
+      #   tableId: LootTableWeaponGunNationalGuard
+      #   prob: 0.01
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesSterileLatex
+        prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesSneakersWhite
+        prob: 0.99
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackSatchelLeatherBrown
+        - id: ClothingBackpackSatchelLeatherBlack
+        prob: 0.4
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.95
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomCivilian
+        prob: 0.99

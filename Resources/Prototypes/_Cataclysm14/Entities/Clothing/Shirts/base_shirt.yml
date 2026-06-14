@@ -7,7 +7,7 @@
     shape:
     - 0,0,2,1
     size: Normal
-    storedScale: 2
+    storedScale: 2.3
 
 #Version with large pockets
 - type: entity

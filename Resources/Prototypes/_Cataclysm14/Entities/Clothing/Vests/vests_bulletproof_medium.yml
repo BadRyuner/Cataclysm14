@@ -1,7 +1,7 @@
 #MARK: -6B13-
   #MARK: 6B13 - flora
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackHeavy, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackHeavy, BaseClothingOuterBulletProofVest]
       id: ClothingOuterBulletProofVest6B13Flora
       suffix: Empty
       name: 6B13 body armor (flora)
@@ -67,12 +67,15 @@
         - id: BallisticPlateFront6B33Level4
 #MARK: -Korund VM-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackHeavySides, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackHeavySides, BaseClothingOuterBulletProofVest]
       id: ClothingOuterBulletProofVestKorundVM
       suffix: Empty
       name: Korund-VM armor vest
       description: An high quality russian armor vest used by special forces and members of the GRU.
       components:
+      - type: Item
+        shape:
+        - 0,0,3,4
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Korund-VM.rsi
       - type: Clothing
@@ -114,12 +117,15 @@
         - id: BallisticPlateSidesKorundVMLevel5
 #MARK: -Kirasa-N-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBack, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBack, BaseClothingOuterBulletProofVest]
       id: ClothingOuterBulletProofVestKirasaN
       suffix: Empty
       name: Kirasa-N armor vest
       description: The BNTI Kirasa-N, a decent armor vest made for the russian police.
       components:
+      - type: Item
+        shape:
+        - 0,0,3,4
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_Kirasa-N.rsi
       - type: Clothing
@@ -164,12 +170,15 @@
         - id: BallisticPlateFrontAR500Level3
 #MARK: -IOTV-Gen4-
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackSides, BaseClothingOuterBulletProofVest]
       id: ClothingOuterBulletProofVestIOTVGen4
       suffix: Empty
       name: IOTV Gen4 armor vest
       description: An high quality vest part of the IOTV modular kit. Can handle weak fully powered rounds.
       components:
+      - type: Item
+        shape:
+        - 0,0,3,4
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV-Gen4.rsi
       - type: Clothing
@@ -216,7 +225,7 @@
         - id: BallisticPlateSidesSSAPILevel5
 #MARK: -ANA UnNations-
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: BaseClothingOuterBulletProofVest
       id: ClothingOuterBulletProofVestANAModularUN
       name: ANA modular armor vest (UN)
       description: An standard quality armor vest made for UN forces. Can resist a whole lot of pistol caliber rounds.
@@ -245,7 +254,7 @@
         vendPrice: 9000
 #MARK: -OTV UnNations-
     - type: entity
-      parent: ClothingOuterArmorBase
+      parent: BaseClothingOuterBulletProofVest
       id: ClothingOuterBulletProofVestOTVUN
       name: OTV medium armor vest (UN)
       description: An standard quality armor vest made for the United Nation peace keeping forces. Can resist a whole lot of pistol caliber rounds.
@@ -274,12 +283,14 @@
         vendPrice: 9000
 #MARK: -IOTV- US forces tan
     - type: entity
-      parent: [ClothingBallisticPlateFrontBackSides, ClothingOuterArmorBase]
+      parent: [ClothingBallisticPlateFrontBackSides, BaseClothingOuterBulletProofVest]
       id: ClothingOuterBulletProofVestIOTVTan
       suffix: Empty
       name: IOTV armor vest (tan)
       description: An high quality vest part of the IOTV modular kit. Can handle weak fully powered rounds.
       components:
+      - type: Item
+        storedScale: 2.8
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_tan.rsi
       - type: Clothing

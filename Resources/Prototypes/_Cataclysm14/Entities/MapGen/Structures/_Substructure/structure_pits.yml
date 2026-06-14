@@ -1,0 +1,58 @@
+- type: dungeonRoom
+  id: StructureSpawnerPitEmpty13x13a
+  tags:
+    - CataStructurePitEmpty13x13
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/structure_pit_empty_13x13_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+
+- type: entity
+  id: StructureSpawnerPitEmpty13x13
+  name: structure spawner empty pit
+  suffix: 1x1 Chunk][13x13
+  placement:
+    mode: SnapgridCenter
+  parent: BaseStructureSpawner
+  components:
+    - type: Sprite
+      scale: 13,13
+      sprite: _Cataclysm14/Mapping/warning_pit.rsi
+      layers:
+        - state: warning_pit
+      noRot: true
+    - type: RoomFill
+      roomWhitelist:
+        tags:
+          - CataStructurePitEmpty13x13
+
+- type: dungeonRoom
+  id: StructureSpawnerPitEmpty26x26a
+  tags:
+    - CataStructurePitEmpty26x26
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/structure_pit_empty_26x26_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+
+- type: entity
+  id: StructureSpawnerPitEmpty26x26
+  name: structure spawner empty pit
+  suffix: 2x2 Chunk][26x26
+  parent: BaseStructureSpawner
+  components:
+    - type: Sprite
+      scale: 26,26
+      offset: -0.5,-0.5
+      sprite: _Cataclysm14/Mapping/warning_pit.rsi
+      layers:
+        - state: warning_pit
+      noRot: true
+    - type: Transform
+      noRot: true
+    - type: RoomFill
+      rotation: false
+      roomWhitelist:
+        tags:
+          - CataStructurePitEmpty26x26
+

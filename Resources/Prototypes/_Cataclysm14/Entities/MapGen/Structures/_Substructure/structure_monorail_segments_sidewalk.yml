@@ -25,10 +25,10 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    sprite: _Cataclysm14/Mapping/structure_monorail.rsi
     layers:
-    - state: structure_border_road_asphalt_gray_straight
-    - state: structure_border_road_line_white_straight
+    - state: structure_border_monorail_straight
+    - state: structure_border_monorail_sidewalk_straight
   - type: RoomFill
     roomWhitelist:
       tags:
@@ -61,10 +61,12 @@
   components:
   - type: Sprite
     scale: 13,13
-    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    sprite: _Cataclysm14/Mapping/structure_monorail.rsi
     layers:
-    - state: structure_border_road_asphalt_gray_straight
-    - state: structure_border_road_line_white_straight
+    - state: structure_border_monorail_corner_sharp
+      rotation: 90
+    - state: structure_border_monorail_sidewalk_corner_sharp
+      rotation: 90
   - type: RoomFill
     roomWhitelist:
       tags:
@@ -98,11 +100,39 @@
   - type: Sprite
     scale: 26,13
     offset: -0.5,0
-    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    sprite: _Cataclysm14/Mapping/structure_monorail.rsi
     layers:
-    - state: structure_border_road_asphalt_gray_straight
-    - state: structure_border_road_line_white_straight
+    - state: structure_border_monorail_straight
+    - state: structure_border_monorail_sidewalk_straight
   - type: RoomFill
     roomWhitelist:
       tags:
       - CataStructureMonorailDoubleSidewalkStraight26x13
+
+#MARK: StraightOpen13x13
+- type: dungeonRoom
+  id: StructureSpawnerMonorailSidewalkStraightOpen13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/_Substructure/Monorail/structure_monorail_sidewalk_straight_open_13x13_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMonorailSidewalkStraightOpen13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMonorailSidewalkStraightOpen13x13
+  name: structure spawner monorail sidewalk
+  suffix: Straight-Open][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_monorail.rsi
+    layers:
+    - state: structure_border_monorail_straight
+    - state: structure_border_monorail_sidewalk_straight
+    - state: structure_border_monorail_railing_straight
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureMonorailSidewalkStraightOpen13x13

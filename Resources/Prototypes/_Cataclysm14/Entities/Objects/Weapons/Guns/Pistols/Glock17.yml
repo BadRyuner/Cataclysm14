@@ -1,78 +1,115 @@
-#MARK: Base
 - type: entity
-  name: Glock 17 (9x19mm parabellum)
-  parent: BaseWeaponPistol
   id: WeaponPistolGlock17Base
-  abstract: true
+  name: Glock 17 (9x19mm parabellum)
   description: A cheap, ubiquitous sidearm, produced by Glock and uses 9x19mm parabellum ammunition.
+  parent: BaseWeaponPistol
+  abstract: true
   components:
-  - type: Item
-    size: Normal
-    shape:
-    - 0,0,1,1
-    storedScale: 2
-  - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/Glock17.rsi
-    scale: 0.4,0.4
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/Glock17.rsi
-  - type: Gun
-    fireRate: 10
-    availableModes:
-    - SemiAuto
-    soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mk_fire.ogg
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine9x19mmParabellumGlock17rdFMJ
-        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - Magazine9x19mmParabellumGlockCompatible
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: Cartridge9x19mmParabellumFMJ
-        priority: 1
-        whitelist:
-          tags:
-            - Cartridge9x19mmParabellum
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: StaticPrice # Mono
-    price: 50
+    - type: Item
+      size: Normal
+      shape:
+        - 0,0,1,1
+      storedScale: 2
+    - type: Sprite
+      scale: 0.4,0.4
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/Glock17.rsi
+      layers:
+        - state: base
+          map:
+            - enum.GunVisualLayers.Base
+        - state: mag-0
+          map:
+            - enum.GunVisualLayers.Mag
+    - type: Clothing
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/Glock17.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mk_fire.ogg
+        params:
+          variation: 0.1
+          volume: 13
+          pitch: 1.5
+          playOffsetSeconds: 0.15
+      fireRate: 10
+      availableModes:
+        - SemiAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine9x19mmParabellumGlock17rdFMJ
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine9x19mmParabellumGlockCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge9x19mmParabellumFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge9x19mmParabellum
+          whitelistFailPopup: gun-magazine-whitelist-fail
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot {}
+        gun_chamber: !type:ContainerSlot {}
+    - type: StaticPrice
+      price: 50
 
-#MARK: Glock 17rd Empty
+#MARK: 17rd Empty
 - type: entity
-  parent: WeaponPistolGlock17Base
   id: WeaponPistolGlock17Filled17rdEmpty
   suffix: Empty - 17rd
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine9x19mmParabellumGlock17rdEmpty
-
-#MARK: Glock 17rd FMJ
-- type: entity
   parent: WeaponPistolGlock17Base
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine9x19mmParabellumGlock17rdEmpty
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine9x19mmParabellumGlockCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge9x19mmParabellumFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge9x19mmParabellum
+          whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: 17rd RMJ
+- type: entity
   id: WeaponPistolGlock17Filled17rdFMJ
   suffix: FMJ - 17rd
+  parent: WeaponPistolGlock17Base
   components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine9x19mmParabellumGlock17rdFMJ
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine9x19mmParabellumGlock17rdFMJ
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine9x19mmParabellumGlockCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge9x19mmParabellumFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge9x19mmParabellum
+          whitelistFailPopup: gun-magazine-whitelist-fail

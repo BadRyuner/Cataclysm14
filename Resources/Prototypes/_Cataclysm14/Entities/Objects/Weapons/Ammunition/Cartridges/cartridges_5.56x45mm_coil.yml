@@ -1,0 +1,51 @@
+#MARK: Base
+- type: entity
+  id: BaseCartridge5,56x45mmCoil
+  name: cartridge (5,56x45mm coil)
+  parent: BaseCartridge
+  description: A modified 5,56x45mm NATO round stripped of its primer and powder, instead filled in with steel.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge5,56x45mmCoil
+  - type: Sprite
+    scale: 0.3, 0.3
+    sprite: _Cataclysm14/Objects/Weapons/Casings/5,56x45mm_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+#MARK: Steel Coil
+- type: entity
+  id: Cartridge5,56x45mmCoilSteel
+  name: cartridge (5,56x45mm coil steel)
+  parent:
+  - BaseCartridge5,56x45mmCoil
+  - BasicHitscan
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+        color: "#818181"
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Piercing: 25
+        Structural: 40
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: muzzle
+    travelFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: trail
+    impactFlash:
+      sprite: _Cataclysm14/Objects/Weapons/Hitscans/hitscan_gauss.rsi
+      state: impact
