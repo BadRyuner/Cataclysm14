@@ -45,15 +45,15 @@
       delay: 1
     - type: Sprite
       state: circular-saw
-      sprite: _Cataclysm14/Objects/Tools/power_circular_saw.rsi
+      sprite: _Cataclysm14/Objects/Tools/tool_power_circular_saw.rsi
       scale: 0.85,0.85
     - type: Clothing
-      sprite: _Cataclysm14/Objects/Tools/power_circular_saw.rsi
+      sprite: _Cataclysm14/Objects/Tools/tool_power_circular_saw.rsi
       quickEquip: false
       slots:
       - Belt
     - type: Item
-      sprite: _Cataclysm14/Objects/Tools/power_circular_saw.rsi
+      sprite: _Cataclysm14/Objects/Tools/tool_power_circular_saw.rsi
       size: Normal
       shape:
       - 0,0,0,1
