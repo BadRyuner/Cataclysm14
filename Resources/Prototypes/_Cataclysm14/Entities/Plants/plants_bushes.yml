@@ -1,6 +1,6 @@
 - type: entity
-  parent: BaseFlora
-  id: FloraCataBlackberry
+  parent: BasePlantBush
+  id: PlantBushBlackberry
   name: blackberry shrub
   description: A large bush.
   components:
