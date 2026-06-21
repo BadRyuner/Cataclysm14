@@ -1,0 +1,43 @@
+# Misfits/Cataclysm14 port - Debug map item
+# using Resources/Textures/_Misfits/Maps/Dev-0.png
+# yes that is just the debug map, it's a placeholder   -pierow
+
+- type: entity
+  parent: BaseItem
+  id: MisfitsDebugMap
+  name: Debug map
+  description: A weathered paper map of the Debug area. Useful for navigating around.
+  components:
+  - type: WastelandMap
+    mapTexturePath: _Misfits/Maps/Dev-0.png
+    mapTitle: Debug Area Map
+    # World tile bounds of the rendered image: left,bottom,right,top.
+    worldBounds: "-18,-27,35,29"
+  - type: Sprite
+    sprite: _Misfits/map.rsi
+    layers:
+    - state: map
+  - type: Item
+    size: Small
+  - type: ActivatableUI
+    inHandsOnly: false
+    singleUser: true
+    key: enum.WastelandMapUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.WastelandMapUiKey.Key:
+        type: WastelandMapBoundUserInterface
+  - type: Tag
+    tags:
+    - Document
+
+# - type: entity
+  # parent: MisfitsDebugMap
+  # id: MisfitsDebugMapFolded
+  # name: folded map
+  # description: A folded paper map. Looks like it covers the local area.
+  # components:
+  # - type: Sprite
+    # sprite: _Misfits/map.rsi
+    # layers:
+    # - state: trifold
