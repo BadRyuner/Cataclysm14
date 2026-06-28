@@ -16,9 +16,9 @@
     worldBounds: "-18,-27,35,29"
     #Deleted it too lol
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/MediumMachineGuns/Lewis_Gun_32x32.rsi
+    sprite: Structures/Wallmounts/posters.rsi
     layers:
-    - state: icon
+    - state: packedmap
   - type: Item
     size: Small
   - type: ActivatableUI

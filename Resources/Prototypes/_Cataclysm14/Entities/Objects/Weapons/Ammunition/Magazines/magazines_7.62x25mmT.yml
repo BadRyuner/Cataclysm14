@@ -79,7 +79,7 @@
 #MARK: PT gzh
 - type: entity
   id: Magazine7,62x25mmT_TT33_8rdPtGzh
-  suffix: Tracer Green
+  suffix: PT gzh
   parent: BaseMagazine7,62x25mmT_TT33_8rd
   components:
   - type: BallisticAmmoProvider
@@ -129,7 +129,7 @@
 #MARK: PT gzh
 - type: entity
   id: Magazine7,62x25mmTPPSh41_35rdPtGzh
-  suffix: Tracer Green
+  suffix: PT gzh
   parent: BaseMagazine7,62x25mmTPPSh41_35rd
   components:
   - type: BallisticAmmoProvider
