@@ -1,0 +1,227 @@
+#MARK: National Guard Infantry
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployableNationalGuardInfantry
+  suffix: National Guard Infantry
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardBulletProofVestFilled
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltTanFilledNationalGuard
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaBalaclavaSkiMaskTan
+        - id: ClothingBalaclavaBalaclavaSkiMaskCoyoteBrown
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponAssaultRifleM4A1FilledSTANAG30rdTracerRed
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatTan
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATTan
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackTanFilledNationalGuard
+      pocket1: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdTracerRed
+      pocket2: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdTracerRed
+      pocket3: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdTracerRed
+      pocket4: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdTracerRed
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatUCPCargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatUCPCargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatOCPMulticamCargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatOCPMulticamCargo
+
+#MARK: National Guard Gunner
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployableNationalGuardGunner
+  suffix: National Guard Gunner
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardBulletProofVestFilled
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltTanFilledNationalGuard
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaBalaclavaSkiMaskTan
+        - id: ClothingBalaclavaBalaclavaSkiMaskCoyoteBrown
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponLightMachineGunM249Filled200rdFMJ
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatTan
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATTan
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackTanFilledNationalGuard
+      pocket1: !type:GroupSelector
+        children:
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
+      pocket2: !type:GroupSelector
+        children:
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
+      pocket3: !type:GroupSelector
+        children:
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
+      pocket4: !type:GroupSelector
+        children:
+        - id: MagazineBox5,56x45mmLMG200rdFMJ
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatUCPCargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatUCPCargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatOCPMulticamCargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatOCPMulticamCargo
+
+#MARK: National Guard CBRN
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployableNationalGuardCBRN
+  suffix: National Guard CBRN Unit
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtHazmatSuitYellow
+      mask: !type:NestedSelector
+        tableId: LootTableClothingMaskGasmasksFullFaceIndustrial
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardBulletProofVestFilled
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltTanFilledNationalGuard
+      suitstorage: !type:NestedSelector
+            tableId: LootTableToolsTanksExternalOxygenSupply
+      slingfront: !type:GroupSelector
+        children:
+        - id: WeaponAssaultRifleM4A1FilledSTANAG30rdTracerRed
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatTan
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATTan
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackTanFilledNationalGuard
+      pocket1: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdTracerRed
+      pocket2: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdTracerRed
+      pocket3: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdTracerRed
+      pocket4: !type:GroupSelector
+        children:
+        - id: Magazine5,56x45mmSTANAG30rdTracerRed
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatUCPCargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatOCPMulticamCargo
+
+#MARK: FEMA
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployableFEMACBRN
+  suffix: FEMA CBRN Unit
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetHardhatPlasticRed
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltBlack
+      jumpsuit: !type:GroupSelector
+        children:
+        - id: ClothingShirtHazmatSuitWhite
+      suitstorage: !type:NestedSelector
+            tableId: LootTableToolsTanksExternalOxygenSupply
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatTan
+        - id: ClothingHandsGlovesTacticalCombatBlack
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATTan
+        - id: ClothingShoesBootsSWATBlack
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+      mask: !type:NestedSelector
+        tableId: LootTableClothingMaskGasmasksFullFaceIndustrial
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatUCPCargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatOCPMulticamCargo

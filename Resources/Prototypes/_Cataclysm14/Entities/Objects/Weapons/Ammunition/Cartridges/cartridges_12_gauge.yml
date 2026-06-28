@@ -1,0 +1,200 @@
+#MARK: Base
+- type: entity
+  id: BaseShellShotgun12Gauge
+  name: shotgun shell (12 gauge)
+  parent: BaseCartridge
+  description: Standard shotgun round practically everywhere.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun12Gauge
+  - type: CartridgeAmmo
+    soundEject:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: EmitSoundOnLand
+    sound:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Casings/12Gauge_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+    scale: 0.3, 0.3
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+#MARK: Beanbag
+- type: entity
+  id: ShellShotgun12GaugeBeanbag
+  name: shotgun shell (12 gauge beanbag)
+  parent: BaseShellShotgun12Gauge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun12Gauge
+  - type: Sprite
+    layers:
+      - state: beanbag
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12GaugeBeanbag
+  - type: SpentAmmoVisuals
+    state: "beanbag"
+
+#MARK: Slug
+- type: entity
+  id: ShellShotgun12GaugeSlug
+  name: shotgun shell (12 gauge slug)
+  parent: BaseShellShotgun12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: slug
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12GaugeSlug
+  - type: SpentAmmoVisuals
+    state: "slug"
+
+#MARK: Flare
+- type: entity
+  id: ShellShotgun12GaugeFlare
+  name: flare shell (12 gauge flare)
+  parent: BaseShellShotgun12Gauge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun12Gauge
+  - type: Sprite
+    layers:
+      - state: flare
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12GaugeFlare
+  - type: SpentAmmoVisuals
+    state: "flare"
+
+#MARK: Buckshot
+- type: entity
+  id: ShellShotgun12GaugeBuckshot
+  name: shotgun shell (12 gauge buckshot)
+  parent: BaseShellShotgun12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12GaugeSpread
+
+#MARK: Incendiary
+- type: entity
+  id: ShellShotgun12GaugeIncendiary
+  name: shotgun shell (12 gauge incendiary)
+  parent: BaseShellShotgun12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: incendiary
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12GaugeIncendiarySpread
+  - type: SpentAmmoVisuals
+    state: "incendiary"
+
+#MARK: Tranquilizer
+- type: entity
+  id: ShellShotgun12GaugeTranquilizer
+  name: shotgun shell (12 gauge tranquilizer)
+  parent: BaseShellShotgun12Gauge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun12Gauge
+  - type: Sprite
+    layers:
+      - state: tranquilizer
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12GaugeTranquilizer
+  - type: ChemicalAmmo
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        reagents:
+        - ReagentId: ChloralHydrate
+          Quantity: 4
+  - type: SolutionTransfer
+    maxTransferAmount: 4
+  - type: SpentAmmoVisuals
+    state: "tranquilizer"
+
+#MARK: Depleted Uranium
+- type: entity
+  id: ShellShotgun12GaugeDepletedUranium
+  name: shotgun shell (12 gauge depleted uranium)
+  parent: BaseShellShotgun12Gauge
+  components:
+    - type: Sprite
+      layers:
+        - state: depleted-uranium
+          map: [ "enum.AmmoVisualLayers.Base" ]
+    - type: CartridgeAmmo
+      proto: Pellet12GaugeDepletedUraniumSpread
+    - type: SpentAmmoVisuals
+      state: "depleted-uranium"
+
+#MARK: OO Magnum Buckshot
+- type: entity
+  id: ShellShotgun12GaugeOOBuckshot
+  name: shotgun shell (12 gauge OO magnum buckshot)
+  parent: BaseShellShotgun12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12GaugeOOBuckshotSpread
+  - type: SpentAmmoVisuals
+
+#MARK: RIP
+- type: entity
+  id: ShellShotgun12GaugeSlugRIP
+  name: shotgun shell (12 gauge RIP)
+  parent: BaseShellShotgun12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: RIP
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12GaugeSlugRIP
+  - type: SpentAmmoVisuals
+    state: "RIP"
+
+#MARK: Flechette
+- type: entity
+  id: ShellShotgun12GaugeFlechette
+  name: shotgun shell (12 gauge flechette)
+  parent: BaseShellShotgun12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: flechette
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12GaugeFlechetteSpread
+  - type: SpentAmmoVisuals
+    state: "flechette"
