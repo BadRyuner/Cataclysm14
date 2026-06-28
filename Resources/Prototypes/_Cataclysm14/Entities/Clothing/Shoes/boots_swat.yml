@@ -1,3 +1,4 @@
+#MARK: tan
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATTan
@@ -25,6 +26,7 @@
       - state: inhand-right
         color: "#cdac7f"
 
+#MARK: olive
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATOlive
@@ -52,6 +54,7 @@
       - state: inhand-right
         color: "#5e662d"
 
+#MARK: black
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATBlack
@@ -79,6 +82,7 @@
       - state: inhand-right
         color: "#2F2F2F"
 
+#MARK: ranger green
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATRangerGreen
@@ -106,6 +110,7 @@
       - state: inhand-right
         color: "#465545"
 
+#MARK: coyote brown
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATCoyoteBrown
@@ -133,6 +138,7 @@
       - state: inhand-right
         color: "#81613C"
 
+#MARK: white
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATWhite
