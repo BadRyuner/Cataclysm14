@@ -34,6 +34,13 @@
     zeroVisible: false
   - type: Appearance
 
+#MARK: Glock Mags >
+
+
+
+
+
+
 #MARK: Glock 10rd
 - type: entity
   id: BaseMagazine9x19mmParabellumGlock10rd

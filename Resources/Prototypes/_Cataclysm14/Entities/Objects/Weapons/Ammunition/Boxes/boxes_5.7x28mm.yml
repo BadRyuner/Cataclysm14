@@ -1,4 +1,3 @@
-#MARK: Base
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
@@ -34,7 +33,7 @@
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
 
-#MARK: FMJ
+#small ammo boxes
 - type: entity
   parent: BaseAmmoBox5,7x28mm
   id: AmmoBox5,7x28mmFMJ
@@ -49,7 +48,21 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
-#MARK: Incendiary
+- type: entity
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmPractice
+  name: ammunition box (5,7x28mm practice)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5,7x28mmPractice
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice
+
 - type: entity
   parent: BaseAmmoBox5,7x28mm
   id: AmmoBox5,7x28mmIncendiary
@@ -65,7 +78,6 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: incendiary
 
-#MARK: Depleted Uranium
 - type: entity
   id: AmmoBox5,7x28mmDepletedUranium
   parent: BaseAmmoBox5,7x28mm
@@ -81,7 +93,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: uranium
 
-#MARK: Rubber
+# Upstream
 - type: entity
   parent: BaseAmmoBox5,7x28mm
   id: AmmoBox5,7x28mmRubber
@@ -97,7 +109,24 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: rubber
 
-#MARK: HP
+# Frontier
+- type: entity
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmEmp
+  name: ammunition box (5,7x28mm emp)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5,7x28mmEmp
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: emp
+
+# Mono AP syst
+#anti-flesh:
 - type: entity
   parent: BaseAmmoBox5,7x28mm
   id: AmmoBox5,7x28mmHP
@@ -113,7 +142,6 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: HP
 
-#MARK: RIP
 - type: entity
   parent: BaseAmmoBox5,7x28mm
   id: AmmoBox5,7x28mmRIP
@@ -129,7 +157,24 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: RIP
 
-#MARK: Big FMJ
+#armor-piercing:
+
+- type: entity
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmPlasteelAP
+  name: ammunition box (5,7x28mm AP)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5,7x28mmPlasteelAP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: plasteelAP
+
+#big ammo boxes
 - type: entity
   parent: BaseAmmoBox5,7x28mm
   id: AmmoBox5,7x28mmBigFMJ

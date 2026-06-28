@@ -60,7 +60,9 @@
           priority: 2
           whitelist:
             tags:
-              - Magazine45AcpUMP45Compatible
+              - Magazine5,56x45mmSTANAGCompatible
+              - AmmoBelt5,56x45mm
+              - MagazineBox5,56x45mmLMGCompatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
@@ -68,7 +70,7 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridge45Acp
+              - Cartridge5,56x45mm
           whitelistFailPopup: gun-magazine-whitelist-fail
     - type: ContainerContainer
       containers:
@@ -100,7 +102,9 @@
           priority: 2
           whitelist:
             tags:
-              - Magazine45AcpUMP45Compatible
+              - Magazine5,56x45mmSTANAGCompatible
+              - AmmoBelt5,56x45mm
+              - MagazineBox5,56x45mmLMGCompatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
@@ -108,7 +112,7 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridge45Acp
+              - Cartridge5,56x45mm
           whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: 30rd FMJ
@@ -127,7 +131,9 @@
           priority: 2
           whitelist:
             tags:
-              - Magazine45AcpUMP45Compatible
+              - Magazine5,56x45mmSTANAGCompatible
+              - AmmoBelt5,56x45mm
+              - MagazineBox5,56x45mmLMGCompatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
@@ -135,5 +141,5 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridge45Acp
+              - Cartridge5,56x45mm
           whitelistFailPopup: gun-magazine-whitelist-fail

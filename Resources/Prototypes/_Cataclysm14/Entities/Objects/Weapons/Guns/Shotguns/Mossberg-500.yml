@@ -41,10 +41,6 @@
       tags:
         - WeaponShotgunMossberg500
     - type: BallisticAmmoProvider
-      whitelist:
-        tags:
-        - ShellShotgun12Gauge
-      autoCycle: false
       capacity: 6
 
 #MARK: Empty
