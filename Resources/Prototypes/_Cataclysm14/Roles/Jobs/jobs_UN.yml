@@ -1,0 +1,22 @@
+#MARK: Peacekeeper
+- type: job
+  id: JobUNPeacekeeper
+  name: job-name-UN-peacekeeper
+  description: job-description-UN-peacekeeper
+  playTimeTracker: JobTimeTrackerUNPeacekeeper
+  # setPreference: false # Frontier
+  # requirements:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 10800
+  # startingGear: CargoTechGear
+  icon: "JobIconUNPeacekeeper"
+  # supervisors: job-supervisors-hire # Frontier
+  accessGroups: # Frontier
+  - GeneralAccess # Frontier
+  # special:
+  # - !type:GiveItemOnHolidaySpecial
+  #   holiday: BoxingDay
+  #   prototype: BoxCardboard
+
+- type: playTimeTracker
+  id: JobTimeTrackerUNPeacekeeper

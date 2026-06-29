@@ -1,5 +1,4 @@
-#custom armbands
-
+#MARK: UNSA
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandUNSA
@@ -16,6 +15,8 @@
       rightarmband:
       - state: equipped-ARMBANDRIGHT
 
+
+#MARK: USA
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandUSA
@@ -32,8 +33,7 @@
       rightarmband:
       - state: equipped-ARMBANDRIGHT
 
-#colored armbands
-
+#MARK:  White
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandWhite
@@ -53,6 +53,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#f8f8ff"
 
+#MARK: Gray
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandGray
@@ -72,6 +73,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#6F6F6F"
 
+#MARK: Black
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandBlack
@@ -91,6 +93,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#131313"
 
+#MARK: DarkRed
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandDarkRed
@@ -110,6 +113,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#9E1A1A"
 
+#MARK: Red
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandRed
@@ -129,6 +133,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#ff2c2c"
 
+#MARK: DarkGreen
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandDarkGreen
@@ -148,6 +153,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#3d8c40"
 
+#MARK: Green
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandGreen
@@ -167,6 +173,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#4CBB17"
 
+#MARK: DarkBlue
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandDarkBlue
@@ -186,6 +193,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#0A1172"
 
+#MARK: Blue
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandBlue
@@ -205,6 +213,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#2832C2"
 
+#MARK: DarkPurple
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandDarkPurple
@@ -224,6 +233,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#702963"
 
+#MARK: Purple
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandPurple
@@ -243,6 +253,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#B200ED"
 
+#MARK: DarkYellow
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandDarkYellow
@@ -262,6 +273,7 @@
       - state: equipped-ARMBANDRIGHT
         color: "#E4CD05"
 
+#MARK: Yellow
 - type: entity
   parent: BaseClothingArmArmband
   id: ClothingArmArmbandYellow
