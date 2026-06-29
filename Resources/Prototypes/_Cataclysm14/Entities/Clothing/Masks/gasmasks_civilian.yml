@@ -1,3 +1,4 @@
+#MARK: 200-LS
 - type: entity
   parent: ClothingMaskGas
   id: ClothingMaskGasMaskRespiratorAdvantage200LS
@@ -21,6 +22,7 @@
         Piercing: 0.95
         Heat: 0.95
 
+#MARK: 3M 7500Series
 - type: entity
   parent: ClothingMaskGas
   id: ClothingMaskGasMaskRespirator3M7500
@@ -44,6 +46,7 @@
         Piercing: 0.95
         Heat: 0.95
 
+#MARK: Unix 5000
 - type: entity
   parent: ClothingMaskGas
   id: ClothingMaskGasMaskUnix5000
