@@ -5,6 +5,8 @@
   parent: BaseItem
   id: BaseToolRadioHandheld
   components:
+  - type: Sprite
+    scale: 0.45,0.45
   - type: Speech
     speechVerb: Robotic
   - type: TelecomExempt
@@ -36,3 +38,24 @@
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Tools/RadioComms/radio_handheld_small_industrial.rsi
+    state: walkietalkie
+
+#MARK: Commercial handheld black
+- type: entity
+  parent: BaseToolRadioHandheld
+  id: ToolRadioHandheldCommercialBlack
+  name: commercial handheld radio (black)
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Tools/RadioComms/radio_handheld_small_black.rsi
+    state: walkietalkie
+
+#MARK: Military handheld black
+- type: entity
+  parent: BaseToolRadioHandheld
+  id: ToolRadioHandheldMilitaryBlack
+  name: military handheld radio (black)
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Tools/RadioComms/radio_handheld_heavy_military.rsi
+    state: walkietalkie
