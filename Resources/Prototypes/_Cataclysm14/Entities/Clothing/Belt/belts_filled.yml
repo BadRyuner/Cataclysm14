@@ -9,7 +9,7 @@
       storagebase: !type:AllSelector
         children:
         - !type:NestedSelector
-          tableId: LootTableLoadoutWeaponGunM1911
+          tableId: LootTableLoadoutWeaponGunM1911Filled10rdFMJ
 
 #MARK: Duty Belt (police) - Police
 - type: entity
@@ -22,7 +22,7 @@
       storagebase: !type:AllSelector
         children:
         - !type:NestedSelector
-          tableId: LootTableLoadoutWeaponGunGlock17
+          tableId: LootTableLoadoutWeaponGunGlock17Filled17rdFMJ
 
 #MARK: Duty Belt (black) - Sierra
 - type: entity
@@ -35,4 +35,4 @@
       storagebase: !type:AllSelector
         children:
         - !type:NestedSelector
-          tableId: LootTableLoadoutWeaponGunFN5,7
+          tableId: LootTableLoadoutWeaponGunFN5,7Filled20rdFMJ

@@ -55,7 +55,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge45MagnumFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -95,7 +95,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge45MagnumFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -122,7 +122,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge45MagnumFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:

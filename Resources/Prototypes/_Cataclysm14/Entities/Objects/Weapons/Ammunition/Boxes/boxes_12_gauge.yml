@@ -34,6 +34,22 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: lethal
 
+#MARK: Birdshot
+- type: entity
+  name: shotgun shell box (12 gauge birdshot)
+  parent: AmmoProvider12GaugeShotgunShell
+  id: AmmoBox12GaugeBirdshot
+  components:
+    - type: BallisticAmmoProvider
+      proto: ShellShotgun12GaugeBirdshot
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: lethal
+
 #MARK: Slug
 - type: entity
   name: shotgun shell box (12 gauge slug)

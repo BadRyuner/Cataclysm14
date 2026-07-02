@@ -1,39 +1,21 @@
 #MARK: US Police Armory
 - type: entityTable
-  id: LootTableLoadoutPoliceUsArmoryRandom75
-  table: !type:GroupSelector
-    children:
-      - !type:NestedSelector
-        weight: 100
-        tableId: LootTableLoadoutPoliceUsArmory
-        prob: 0.75
-
-- type: entityTable
-  id: LootTableLoadoutPoliceUsArmoryRandom50
-  table: !type:GroupSelector
-    children:
-      - !type:NestedSelector
-        weight: 100
-        tableId: LootTableLoadoutPoliceUsArmory
-        prob: 0.5
-
-- type: entityTable
   id: LootTableLoadoutPoliceUsArmory
   table: !type:AllSelector
     children:
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableLoadoutWeaponGunM36
+        tableId: LootTableLoadoutWeaponGunM36FilledFMJ
         rolls: !type:RangeNumberSelector
           range: 1,3
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableLoadoutWeaponGunGlock17
+        tableId: LootTableLoadoutWeaponGunGlock17Filled17rdFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableLoadoutWeaponGunM1911
+        tableId: LootTableLoadoutWeaponGunM1911Filled10rdFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
       - !type:NestedSelector
@@ -63,6 +45,6 @@
           range: 0,2
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableAmmunitionAmmoBoxMilitaryGradeLowTier
+        tableId: LootTableAmmunitionAmmoBoxUsForcesLowTier
         rolls: !type:RangeNumberSelector
           range: 0,4

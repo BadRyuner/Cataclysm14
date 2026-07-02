@@ -1,0 +1,88 @@
+- type: stack
+  id: StackMetalPipe
+  name: metal pipe
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/metal_pipe.rsi, state: metal_3 }
+  spawn: MaterialObjectMetalPipeStack1
+  maxCount: 25
+
+- type: material
+  id: MaterialMetalPipe
+  stackEntity: MaterialObjectMetalPipeStack1
+  name: materials-wood-plank
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/metal_pipe.rsi, state: metal_3 }
+  color: "#000000"
+  price: 0.1 # 10/sheet
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MaterialBase
+  id: MaterialObjectMetalPipe
+  name: metal pipe
+  description: A simple metal pipe, could be used as a weapon if you hit hard enough.
+  suffix: Full
+  components:
+  - type: Sprite
+    scale: 0.7,0.7
+    sprite: _Cataclysm14/Objects/Materials/metal_pipe.rsi
+    state: metal_3
+    layers:
+    - state: metal_3
+      map: ["base"]
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Item
+    sprite: _Cataclysm14/Objects/Materials/metal_pipe.rsi
+    heldPrefix: metal pipe
+  - type: Stack
+    stackType: StackMetalPipe
+    count: 100
+    baseLayer: base
+    layerStates:
+    - metal_1
+    - metal_2
+    - metal_3
+  - type: Material
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      MaterialMetalPipe: 100
+
+- type: entity
+  parent: MaterialObjectMetalPipe
+  id: MaterialObjectMetalPipeStack1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialObjectMetalPipe
+  id: MaterialObjectMetalPipeStack5
+  suffix: 5
+  components:
+  - type: Construction
+    node: MaterialObjectMetalPipeStack5
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: MaterialObjectMetalPipe
+  id: MaterialObjectMetalPipeStack10
+  suffix: 10
+  components:
+  - type: Construction
+    node: MaterialObjectMetalPipeStack10
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MaterialObjectMetalPipe
+  id: MaterialObjectMetalPipeStack25
+  suffix: 25
+  components:
+  - type: Construction
+    node: MaterialObjectMetalPipeStack25
+  - type: Stack
+    count: 25

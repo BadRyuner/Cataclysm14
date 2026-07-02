@@ -24,6 +24,9 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
+        prob: 0.4
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationIDCardUS

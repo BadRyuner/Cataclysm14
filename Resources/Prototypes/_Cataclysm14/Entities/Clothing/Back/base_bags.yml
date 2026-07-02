@@ -4,6 +4,8 @@
   id: BaseClothingBackpackDuffelTactical
   abstract: true
   components:
+  - type: Sprite
+    scale: 0.60,0.60
   - type: Storage
     maxItemSize: Normal
     defaultStorageOrientation: Vertical
@@ -23,6 +25,8 @@
   id: BaseClothingBackpackDuffelSport
   abstract: true
   components:
+  - type: Sprite
+    scale: 0.60,0.60
   - type: Storage
     maxItemSize: Normal
     defaultStorageOrientation: Vertical
@@ -42,6 +46,8 @@
   id: BaseClothingBackpackSchoolBag
   abstract: true
   components:
+  - type: Sprite
+    scale: 0.60,0.60
   - type: Storage
     maxItemSize: Normal
     defaultStorageOrientation: Vertical
@@ -61,6 +67,8 @@
   id: BaseClothingBackpackRucksack
   abstract: true
   components:
+  - type: Sprite
+    scale: 0.60,0.60
   - type: Storage
     maxItemSize: Normal
     defaultStorageOrientation: Vertical
@@ -81,6 +89,8 @@
   id: BaseClothingBackpackAlicePack
   abstract: true
   components:
+  - type: Sprite
+    scale: 0.60,0.60
   - type: Storage
     maxItemSize: Normal
     defaultStorageOrientation: Vertical
@@ -103,6 +113,8 @@
   id: BaseClothingBackpackLeatherSatchel
   abstract: true
   components:
+  - type: Sprite
+    scale: 0.60,0.60
   - type: Storage
     maxItemSize: Normal
     defaultStorageOrientation: Vertical

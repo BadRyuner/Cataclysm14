@@ -1,0 +1,20 @@
+- type: planet
+  id: CataPlanetNewEngland
+  biome: CataBiomeEmpty
+  mapName: planete-cata-new-england
+  mapLight: "#CCDCFF"
+  # addedComponents:
+  # - type: FTLDestination
+  atmosphere:
+    volume: 2500
+    temperature: 295 # Around 22-23 Celcius
+    moles:
+    - 21.824779 # oxygen
+    - 82.10312 # nitrogen
+
+- type: biomeTemplate
+  id: CataBiomeEmpty
+  layers:
+    - !type:BiomeTileLayer
+      threshold: -1
+      tile: FloorCataGrassBaseDirty

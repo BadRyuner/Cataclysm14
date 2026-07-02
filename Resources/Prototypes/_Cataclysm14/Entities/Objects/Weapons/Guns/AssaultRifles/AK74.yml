@@ -49,7 +49,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5,45x39mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -89,7 +89,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5,45x39mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -115,7 +115,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5,45x39mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:

@@ -9,7 +9,15 @@
       - !type:NestedSelector
         weight: 100
         tableId: LootTableClothingSweater
-
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingTankTop
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingShirtTracksuit
+      - !type:NestedSelector
+        weight: 35
+        tableId: LootTableClothingShirtStrippedMariniereTeslnyashka
 
 #MARK: BottomCivilian
 - type: entityTable
@@ -22,6 +30,12 @@
       - !type:NestedSelector
         weight: 100
         tableId: LootTableClothingJoggings
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingPantsDuty
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingPantsTracksuit
 
 #MARK: SoesCivilian
 - type: entityTable
@@ -44,22 +58,59 @@
         weight: 100
         tableId: LootTableClothingSchoolBag
 
+#MARK: HatCivilian
+- type: entityTable
+  id: LootTableClothingHatCivilian
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 50
+        tableId: LootTableClothingBeanie
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingHeadHatCap
+
 #MARK: TShirt
 - type: entityTable
   id: LootTableClothingTShirt
   table: !type:GroupSelector
     children:
+    - id: ClothingShirtTShirtWhite
+      weight: 3
+    - id: ClothingShirtTShirtBlack
+      weight: 3
+    - id: ClothingShirtTShirtBeige
+      weight: 2
+    - id: ClothingShirtTShirtBrown
+      weight: 2
+    - id: ClothingShirtTShirtRangerGreen
+    - id: ClothingShirtTShirtOlive
     - id: ClothingShirtTShirtRed
     - id: ClothingShirtTShirtBlue
     - id: ClothingShirtTShirtGreen
     - id: ClothingShirtTShirtYellow
     - id: ClothingShirtTShirtPurple
-    - id: ClothingShirtTShirtWhite
-      weight: 2
-    - id: ClothingShirtTShirtBlack
+
+#MARK: TankTop
+- type: entityTable
+  id: LootTableClothingTankTop
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtTankTopWhite
       weight: 3
-    - id: ClothingShirtTShirtBeige
+    - id: ClothingShirtTankTopBlack
+      weight: 3
+    - id: ClothingShirtTankTopBeige
       weight: 2
+    - id: ClothingShirtTankTopBrown
+      weight: 2
+    - id: ClothingShirtTankTopRed
+    - id: ClothingShirtTankTopBlue
+    - id: ClothingShirtTankTopGreen
+    - id: ClothingShirtTankTopYellow
+    - id: ClothingShirtTankTopPurple
+    - id: ClothingShirtTankTopRangerGreen
+    - id: ClothingShirtTankTopOlive
 
 #MARK: Sweater
 - type: entityTable
@@ -77,6 +128,11 @@
       weight: 3
     - id: ClothingShirtSweaterBeige
       weight: 2
+    - id: ClothingShirtSweaterBrown
+      weight: 2
+    - id: ClothingShirtSweaterRangerGreen
+      weight: 2
+    - id: ClothingShirtSweaterOlive
 
 #MARK: Jeans
 - type: entityTable
@@ -94,30 +150,30 @@
   id: LootTableClothingJoggings
   table: !type:GroupSelector
     children:
+    - id: ClothingPantsJoggingsWhite
+      weight: 3
+    - id: ClothingPantsJoggingsBlack
+      weight: 3
     - id: ClothingPantsJoggingsRed
     - id: ClothingPantsJoggingsBlue
     - id: ClothingPantsJoggingsGreen
     - id: ClothingPantsJoggingsYellow
     - id: ClothingPantsJoggingsPurple
-    - id: ClothingPantsJoggingsWhite
-      weight: 3
-    - id: ClothingPantsJoggingsBlack
-      weight: 3
 
 #MARK: Sneakers
 - type: entityTable
   id: LootTableClothingSneakers
   table: !type:GroupSelector
     children:
+    - id: ClothingShoesSneakersWhite
+      weight: 5
+    - id: ClothingShoesSneakersBlack
+      weight: 5
     - id: ClothingShoesSneakersRed
     - id: ClothingShoesSneakersBlue
     - id: ClothingShoesSneakersGreen
     - id: ClothingShoesSneakersYellow
     - id: ClothingShoesSneakersPurple
-    - id: ClothingShoesSneakersWhite
-      weight: 3
-    - id: ClothingShoesSneakersBlack
-      weight: 3
 
 #MARK: Sneakers
 - type: entityTable
@@ -143,17 +199,19 @@
   id: LootTableClothingSchoolBag
   table: !type:GroupSelector
     children:
+    - id: ClothingBackpackSchoolBagBlack
+      weight: 3
+    - id: ClothingBackpackSchoolBagWhite
+      weight: 2
+    - id: ClothingBackpackSchoolBagBeige
+      weight: 2
+    - id: ClothingBackpackSchoolBagRed
+    - id: ClothingBackpackSchoolBagBlue
     - id: ClothingBackpackSchoolBagWhite
     - id: ClothingBackpackSchoolBagGreen
     - id: ClothingBackpackSchoolBagYellow
     - id: ClothingBackpackSchoolBagPurple
     - id: ClothingBackpackSchoolBagBeige
-    - id: ClothingBackpackSchoolBagRed
-      weight: 2
-    - id: ClothingBackpackSchoolBagBlue
-      weight: 2
-    - id: ClothingBackpackSchoolBagBlack
-      weight: 3
 
 #MARK: TopHighVis
 - type: entityTable
@@ -194,4 +252,78 @@
   id: LootTableClothingEyesCommonEyewear
   table: !type:GroupSelector
     children:
-    - id: ClothingEyesCorrectiveGlasses
+    - id: ClothingEyesGlassesCorrectiveGlasses
+    - id: ClothingEyesGlassesShadesSunglasses
+
+#MARK: PantsDuty
+- type: entityTable
+  id: LootTableClothingPantsDuty
+  table: !type:GroupSelector
+    children:
+    - id: ClothingPantsDutyTan
+    - id: ClothingPantsDutyCoyoteBrown
+    - id: ClothingPantsDutyRangerGreen
+    - id: ClothingPantsDutyBlack
+
+#MARK: PantsTracksuit
+- type: entityTable
+  id: LootTableClothingPantsTracksuit
+  table: !type:GroupSelector
+    children:
+    - id: ClothingPantsTracksuitBlack
+    - id: ClothingPantsTracksuitBlue
+    - id: ClothingPantsTracksuitYellow
+    - id: ClothingPantsTracksuitRed
+    - id: ClothingPantsTracksuitGreen
+
+#MARK: ShirtTracksuit
+- type: entityTable
+  id: LootTableClothingShirtTracksuit
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtTracksuitBlack
+    - id: ClothingShirtTracksuitBlue
+    - id: ClothingShirtTracksuitYellow
+    - id: ClothingShirtTracksuitRed
+    - id: ClothingShirtTracksuitGreen
+
+#MARK: Beanie
+- type: entityTable
+  id: LootTableClothingBeanie
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHeadHatBeanieBlack
+    - id: ClothingHeadHatBeanieBeige
+    - id: ClothingHeadHatBeanieBeige
+    - id: ClothingHeadHatBeaniePurple
+    - id: ClothingHeadHatBeanieGray
+    - id: ClothingHeadHatBeanieTan
+    - id: ClothingHeadHatBeanieOlive
+    - id: ClothingHeadHatBeanieRangerGreen
+
+#MARK: HeadHatCap
+- type: entityTable
+  id: LootTableClothingHeadHatCap
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHeadHatCapWhite
+    - id: ClothingHeadHatCapRed
+    - id: ClothingHeadHatCapBlue
+    - id: ClothingHeadHatCapGreen
+    - id: ClothingHeadHatCapYellow
+    - id: ClothingHeadHatCapPurple
+    - id: ClothingHeadHatCapBlack
+    - id: ClothingHeadHatCapBeige
+    - id: ClothingHeadHatCapBrown
+    - id: ClothingHeadHatCapOlive
+    - id: ClothingHeadHatCapRangerGreen
+
+#MARK: ShirtStrippedMariniereTeslnyashka
+- type: entityTable
+  id: LootTableClothingShirtStrippedMariniereTeslnyashka
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtStrippedMariniereTeslnyashkaGreen
+    - id: ClothingShirtStrippedMariniereTeslnyashkaBlue
+    - id: ClothingShirtStrippedMariniereTeslnyashkaRed
+    - id: ClothingShirtStrippedMariniereTeslnyashkaBlack

@@ -27,7 +27,7 @@
 
 #MARK: Buckshot
 - type: entity
-  id: Pellet12Gauge
+  id: Pellet12GaugeBuckshot
   categories: [ HideSpawnMenu ]
   parent: BaseProjectileShotgunBulletPellet
   components:
@@ -38,13 +38,35 @@
     armorPenetration: -0.5
 
 - type: entity
-  id: Pellet12GaugeSpread
+  id: Pellet12GaugeBuckshotSpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet12Gauge
+  parent: Pellet12GaugeBuckshot
   components:
   - type: ProjectileSpread
-    proto: Pellet12Gauge
+    proto: Pellet12GaugeBuckshot
     count: 6
+    spread: 15
+
+#MARK: Birdshot
+- type: entity
+  id: Pellet12GaugeBirdshot
+  categories: [ HideSpawnMenu ]
+  parent: BaseProjectileShotgunBulletPellet
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 3
+    armorPenetration: -0.5
+
+- type: entity
+  id: Pellet12GaugeBirdshotSpread
+  categories: [ HideSpawnMenu ]
+  parent: Pellet12GaugeBirdshot
+  components:
+  - type: ProjectileSpread
+    proto: Pellet12GaugeBirdshot
+    count: 14
     spread: 15
 
 #MARK: Incendiary

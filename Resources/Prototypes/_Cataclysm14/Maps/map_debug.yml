@@ -2,7 +2,7 @@
 - type: gameMap
   id: CataDev
   mapName: CataDev
-  mapPath: /Maps/_Cataclysm14/Test/dev_map.yml # Mono
+  mapPath: /Maps/_Cataclysm14/Test/dev_map_planet.yml
   minPlayers: 0
   stations:
     CataDev:
@@ -10,9 +10,9 @@
       components:
         - type: StationNameSetup
           mapNameTemplate: "CataDev"
-        - type: StationPlanetSpawner
-          planet: DesertWorld
-          gridPath: /Maps/_Mono/POI/surface_outpost_desert.yml
+        # - type: StationPlanetSpawner
+        #   planet: CataBiomeEmpty
+        #   gridPath: /Maps/_Cataclysm14/Test/dev_map.yml
         - type: StationJobs
           availableJobs:
             ProfessionUnemployed: [ -1, -1 ]

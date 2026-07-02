@@ -51,20 +51,3 @@
 #MARK: Bathroom
   - type: Tag
     id: CataRoomSpawnerHouseBathroomBase3x3
-
-# #MARK: City Block
-#   - type: Tag
-#     id: CataStructureSmallNeighborhood91x91
-
-#MARK: Houses
-  - type: Tag
-    id: CataStructureHouseSmall13x13
-
-  - type: Tag
-    id: CataStructureHouseSmall26x26
-
-  - type: Tag
-    id: CataStructureHouseLarge39x39
-
-  - type: Tag
-    id: CataStructurePoliceStationSmall26x26

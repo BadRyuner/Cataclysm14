@@ -35,6 +35,9 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
+        prob: 0.4
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationIDCardUS
@@ -74,6 +77,9 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
+        prob: 0.4
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationIDCardUS
@@ -111,13 +117,16 @@
         tableId: LootTableClothingShoesCivilian
         prob: 0.99
       jumpsuit: !type:NestedSelector
-        tableId: LootTableClothingTopCivilian
+        tableId: LootTableClothingShirtTracksuit
         prob: 0.95
       pants: !type:NestedSelector
-        tableId: LootTableClothingBottomCivilian
+        tableId: LootTableClothingPantsTracksuit
         prob: 0.99
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
+        prob: 0.4
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
         prob: 0.4
       id: !type:GroupSelector
         children:
@@ -156,13 +165,16 @@
         tableId: LootTableClothingShoesCivilian
         prob: 0.99
       jumpsuit: !type:NestedSelector
-        tableId: LootTableClothingTopCivilian
+        tableId: LootTableClothingShirtTracksuit
         prob: 0.95
       pants: !type:NestedSelector
-        tableId: LootTableClothingBottomCivilian
+        tableId: LootTableClothingPantsTracksuit
         prob: 0.99
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
+        prob: 0.4
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
         prob: 0.4
       id: !type:GroupSelector
         children:
@@ -209,6 +221,9 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
+        prob: 0.4
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationIDCardUS
@@ -254,6 +269,9 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
+        prob: 0.4
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationIDCardUS
@@ -275,22 +293,21 @@
     templateId: InvTemplateZombieBase
   - type: EntityTableOutfitContainerFill
     containers:
-      # outerClothing: !type:NestedSelector
-      #   tableId: LootTableClothingUNPeacekeeperBulletProofVest
-      #   prob: 0.95
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingBulletProofVestCivilian
+        prob: 0.90
       # head: !type:NestedSelector
       #   tableId: LootTableClothingHatHardHat
       #   prob: 0.95
-      # belt: !type:GroupSelector
-      #   children:
-      #   - id: ClothingBeltDutyBeltPoliceFilledPolice
-      #     weight: 2
-      #   - id: ClothingBeltDutyBeltPolice
-      #   prob: 0.9
-      # gloves: !type:GroupSelector
-      #   children:
-      #   - id: ClothingHandsGlovesTacticalCombatBlack
-      #   prob: 0.5
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPoliceFilledPolice
+          weight: 2
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:NestedSelector
+        tableId: LootTableClothingCombatGloves
+        prob: 0.70
       # balaclava: !type:GroupSelector
       #   children:
       #   - id: ClothingBalaclavaBalaclavaSkiMaskBlack
@@ -299,16 +316,89 @@
         children:
         - id: ClothingShoesBootsSWATBlack
         prob: 0.99
-      pants: !type:NestedSelector
-        tableId: LootTableClothingBottomHighVis
+      pants: !type:GroupSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableClothingBottomCivilian
+        - !type:NestedSelector
+          tableId: LootTableClothingPantsDuty
+          weight: 2
+        - !type:NestedSelector
+          tableId: LootTableClothingPantsDutyMercenary
         prob: 0.99
       jumpsuit: !type:NestedSelector
-        tableId: LootTableClothingTopHighVis
+        tableId: LootTableClothingTopCivilian
         prob: 0.99
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationIDCardUS
-        prob: 0.20
+        prob: 0.15
+
+#MARK: MilitiaMan
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieMilitiaMan
+  suffix: Militia Man
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableOutfitContainerFill
+    containers:
+      #Todo, proper gun table, but good enough
+      slingfront: !type:GroupSelector
+        children:
+        - id: WeaponRifleAR15FilledSTANAG30rdEmpty
+        - id: WeaponRifleAR15FilledSTANAG30rdFMJ
+        - id: WeaponRifleAR10FilledSTANAG20rdEmpty
+        - id: WeaponRifleAR10FilledSTANAG20rdFMJ
+        prob: 0.01
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponRifleAR15FilledSTANAG30rdEmpty
+        - id: WeaponRifleAR15FilledSTANAG30rdFMJ
+        - id: WeaponRifleAR10FilledSTANAG20rdEmpty
+        - id: WeaponRifleAR10FilledSTANAG20rdFMJ
+        prob: 0.01
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingBulletProofVestCivilian
+        prob: 0.90
+      # head: !type:NestedSelector
+      #   tableId: LootTableClothingHatHardHat
+      #   prob: 0.95
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPoliceFilledPolice
+          weight: 2
+        - id: ClothingBeltDutyBeltPolice
+        prob: 0.9
+      gloves: !type:NestedSelector
+        tableId: LootTableClothingCombatGloves
+        prob: 0.70
+      # balaclava: !type:GroupSelector
+      #   children:
+      #   - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+      #   prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+        prob: 0.99
+      pants: !type:GroupSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableClothingBottomCivilian
+        - !type:NestedSelector
+          tableId: LootTableClothingPantsDuty
+          weight: 2
+        - !type:NestedSelector
+          tableId: LootTableClothingPantsDutyMercenary
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.99
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.15
 
 #MARK: Cleansuit
 - type: entity

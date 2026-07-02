@@ -2,8 +2,8 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtSweaterWhite
-  name: white sweater
-  description: A warm sweater, this one is colored in white.
+  name: sweater (white)
+  description: A comfy warm ample sweater.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
@@ -14,8 +14,8 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtSweaterRed
-  name: red sweater
-  description: A warm sweater, this one is colored in red.
+  name: sweater (red)
+  description: A comfy warm ample sweater.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
@@ -39,33 +39,33 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtSweaterBlue
-  name: blue sweater
-  description: A warm sweater, this one is colored in blue.
+  name: sweater (blue)
+  description: A comfy warm ample sweater.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
-    color: "#2832C2"
+    color: "#404691"
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#2832C2"
+        color: "#404691"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#2832C2"
+        color: "#404691"
       right:
       - state: inhand-right
-        color: "#2832C2"
+        color: "#404691"
 
 #MARK: green
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtSweaterGreen
-  name: green sweater
-  description: A warm sweater, this one is colored in green.
+  name: sweater (green)
+  description: A comfy warm ample sweater.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
@@ -89,33 +89,33 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtSweaterYellow
-  name: yellow sweater
-  description: A warm sweater, this one is colored in yellow.
+  name: sweater (yellow)
+  description: A comfy warm ample sweater.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
-    color: "#E4CD05"
+    color: "#A89B25"
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#E4CD05"
+        color: "#A89B25"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#E4CD05"
+        color: "#A89B25"
       right:
       - state: inhand-right
-        color: "#E4CD05"
+        color: "#A89B25"
 
 #MARK: purple
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtSweaterPurple
-  name: purple sweater
-  description: A warm sweater, this one is colored in purple.
+  name: sweater (purple)
+  description: A comfy warm ample sweater.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
@@ -139,8 +139,8 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtSweaterBlack
-  name: black sweater
-  description: A warm sweater, this one is colored in black.
+  name: sweater (black)
+  description: A comfy warm ample sweater.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
@@ -164,8 +164,8 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtSweaterBeige
-  name: beige sweater
-  description: A warm sweater, this one is colored in beige.
+  name: sweater (beige)
+  description: A comfy warm ample sweater.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
@@ -184,3 +184,78 @@
       right:
       - state: inhand-right
         color: "#CDBEA1"
+
+#MARK:  brown
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtSweaterBrown
+  name: sweater (brown)
+  description: A comfy warm ample sweater.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+    color: "#5F4D2A"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#5F4D2A"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#5F4D2A"
+      right:
+      - state: inhand-right
+        color: "#5F4D2A"
+
+#MARK:  olive
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtSweaterOlive
+  name: sweater (olive)
+  description: A comfy warm ample sweater.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+    color: "#92A168"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#92A168"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#92A168"
+      right:
+      - state: inhand-right
+        color: "#92A168"
+
+#MARK:  ranger green
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtSweaterRangerGreen
+  name: sweater (ranger green)
+  description: A comfy warm ample sweater.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+    color: "#4A5A49"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#4A5A49"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#4A5A49"
+      right:
+      - state: inhand-right
+        color: "#4A5A49"

@@ -116,6 +116,10 @@
         weight: 5
       - id: MobZombieHazmat
         weight: 5
+      - id: MobZombieMilitiaMan
+        weight: 2.5
+      - id: MobZombieSurvivor
+        weight: 2.5
 
 #MARK: MilitaryGeneric
 - type: entityTable

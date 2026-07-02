@@ -25,9 +25,12 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialWoodPlank1:
-            min: 3
-            max: 3
+          MaterialObjectMetalPlateStack1:
+            min: 2
+            max: 8
+          MaterialObjectMetalPipeStack1:
+            min: 0
+            max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Storage
@@ -88,9 +91,12 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialWoodPlank1:
-            min: 3
-            max: 3
+          MaterialObjectMetalPlateStack1:
+            min: 2
+            max: 8
+          MaterialObjectMetalPipeStack1:
+            min: 0
+            max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Storage
@@ -143,9 +149,12 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialWoodPlank1:
-            min: 3
-            max: 3
+          MaterialObjectMetalPlateStack1:
+            min: 2
+            max: 8
+          MaterialObjectMetalPipeStack1:
+            min: 0
+            max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Storage
@@ -206,9 +215,12 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialWoodPlank1:
-            min: 3
-            max: 3
+          MaterialObjectMetalPlateStack1:
+            min: 2
+            max: 8
+          MaterialObjectMetalPipeStack1:
+            min: 0
+            max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Storage
@@ -271,9 +283,12 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialWoodPlank1:
-            min: 3
-            max: 3
+          MaterialObjectMetalPlateStack1:
+            min: 2
+            max: 8
+          MaterialObjectMetalPipeStack1:
+            min: 0
+            max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Storage

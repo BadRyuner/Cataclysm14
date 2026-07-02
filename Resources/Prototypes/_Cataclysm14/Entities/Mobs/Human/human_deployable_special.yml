@@ -59,3 +59,43 @@
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationIDCardUS
+
+#MARK: MilitiaMan
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployableMilitiaMan
+  suffix: MilitiaMan
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponRifleAR15FilledSTANAG30rdFMJ
+        - id: WeaponRifleAR10FilledSTANAG20rdFMJ
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingBulletProofVestCivilian
+      # head: !type:NestedSelector
+      #   tableId: LootTableClothingHatHardHat
+      #   prob: 0.95
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltPoliceFilledPolice
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesCombatBlack
+      # balaclava: !type:GroupSelector
+      #   children:
+      #   - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+      #   prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+      pants: !type:GroupSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableClothingPantsDutyMercenary
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS

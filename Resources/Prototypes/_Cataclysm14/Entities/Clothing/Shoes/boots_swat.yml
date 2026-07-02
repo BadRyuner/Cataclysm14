@@ -2,7 +2,7 @@
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATTan
-  name: tan SWAT boots
+  name: SWAT boots (tan)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
   - type: StaticPrice
@@ -30,7 +30,7 @@
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATOlive
-  name: olive SWAT boots
+  name: SWAT boots (olive)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
   - type: StaticPrice
@@ -58,7 +58,7 @@
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATBlack
-  name: black SWAT boots
+  name: SWAT boots (black)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
   - type: StaticPrice
@@ -86,7 +86,7 @@
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATRangerGreen
-  name: ranger green SWAT boots
+  name: SWAT boots (ranger green)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
   - type: StaticPrice
@@ -114,7 +114,7 @@
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATCoyoteBrown
-  name: coyote brown SWAT boots
+  name: SWAT boots (coyote brown)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
   - type: StaticPrice
@@ -142,7 +142,7 @@
 - type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsSWATWhite
-  name: white SWAT boots
+  name: SWAT boots (white)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
   - type: StaticPrice

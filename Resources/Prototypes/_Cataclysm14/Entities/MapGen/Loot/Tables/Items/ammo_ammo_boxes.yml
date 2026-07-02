@@ -2,8 +2,23 @@
 
 
 
-
-
+#MARK: AmmoBoxMilLow
+- type: entityTable
+  id: LootTableAmmunitionAmmoBoxUsForcesLowTier
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox9x19mmParabellumMilitaryGradeLowTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox5,56x45mmMilitaryGradeLowTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox7,62x51mmMilitaryGradeLowTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox12GaugeMilitaryGradeLowTier
 
 #MARK: AmmoBoxMilLow
 - type: entityTable
@@ -19,6 +34,54 @@
       - !type:NestedSelector
         weight: 100
         tableId: LootTableAmmunitionAmmoBox7,62x51mmMilitaryGradeLowTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox7,62x39mmMilitaryGradeLowTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox12GaugeMilitaryGradeLowTier
+
+#MARK: AmmoBoxCivMid
+- type: entityTable
+  id: LootTableAmmunitionAmmoBoxCivilianGradeMediumTier
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox9x19mmParabellumCivilianGradeMediumTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox5,56x45mmCivilianGradeMediumTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox7,62x51mmCivilianGradeMediumTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox7,62x39mmCivilianGradeMediumTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox12GaugeCivilianGradeMediumTier
+
+#MARK: AmmoBoxCivLow
+- type: entityTable
+  id: LootTableAmmunitionAmmoBoxCivilianGradeLowTier
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox9x19mmParabellumCivilianGradeLowTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox5,56x45mmCivilianGradeLowTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox7,62x51mmCivilianGradeLowTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox7,62x39mmCivilianGradeLowTier
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableAmmunitionAmmoBox12GaugeCivilianGradeLowTier
 
 #MARK: 5,56x45mm >
 
@@ -215,5 +278,127 @@
         rolls: !type:RangeNumberSelector
           range: 0,2
       - id: AmmoBox9x19mmParabellum+P
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: 7,62x39mm >
+
+
+
+
+
+
+#MARK: AmmoBoxMilLow
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox7,62x39mmMilitaryGradeLowTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox7,62x39mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x39mmT45Gzh
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: AmmoBoxCivHigh
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox7,62x39mmCivilianGradeHighTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox7,62x39mmRIP
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x39mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x39mmT45Gzh
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: AmmoBoxCivMid
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox7,62x39mmCivilianGradeMediumTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox7,62x39mmHP
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x39mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x39mmT45Gzh
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: AmmoBoxCivLow
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox7,62x39mmCivilianGradeLowTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox7,62x39mmHP
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: 12Gauge >
+
+
+
+
+
+
+#MARK: AmmoBoxMilLow
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox12GaugeMilitaryGradeLowTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox12GaugeBeanbag
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox12GaugeBuckshot
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: AmmoBoxCivHigh
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox12GaugeCivilianGradeHighTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox12GaugeSlugRIP
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox12GaugeIncendiary
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox12GaugeFlechette
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: AmmoBoxCivMid
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox12GaugeCivilianGradeMediumTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox12GaugeFlare
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox12GaugeBuckshot
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox12GaugeBeanbag
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox12GaugeOOBuckshot
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: AmmoBoxCivLow
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox12GaugeCivilianGradeLowTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox12GaugeBuckshot
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox12GaugeBirdshot
         rolls: !type:RangeNumberSelector
           range: 0,2

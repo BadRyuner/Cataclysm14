@@ -15,6 +15,7 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
+    storedScale: 2
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AKM_32x32.rsi
     size: Large
     shape:
@@ -53,7 +54,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7,62x39mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -93,7 +94,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7,62x39mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -120,7 +121,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7,62x39mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:

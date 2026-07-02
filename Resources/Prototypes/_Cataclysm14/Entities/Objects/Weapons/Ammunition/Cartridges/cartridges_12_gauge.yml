@@ -95,7 +95,20 @@
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
-    proto: Pellet12GaugeSpread
+    proto: Pellet12GaugeBuckshotSpread
+
+#MARK: Birdshot
+- type: entity
+  id: ShellShotgun12GaugeBirdshot
+  name: shotgun shell (12 gauge birdshot)
+  parent: BaseShellShotgun12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Pellet12GaugeBirdshotSpread
 
 #MARK: Incendiary
 - type: entity

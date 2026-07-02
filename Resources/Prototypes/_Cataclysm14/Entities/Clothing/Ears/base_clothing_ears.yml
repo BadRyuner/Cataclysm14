@@ -1,0 +1,37 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: BaseClothingEars
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Small
+  - type: Clothing
+    slots:
+    - ears
+    sprite: Clothing/Ears/Headsets/base.rsi
+
+- type: entity
+  abstract: true
+  parent: BaseClothingEars
+  id: BaseClothingEarsRadio
+  components:
+  - type: TelecomExempt
+  - type: RadioMicrophone
+    broadcastChannel: Handheld
+    frequency: 1111
+  - type: RadioSpeaker
+    channels:
+    - Handheld
+  - type: Speech
+    speechVerb: Robotic
+  - type: Tag
+    tags:
+    - Radio
+  - type: ActivatableUI
+    key: enum.HandheldRadioUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.HandheldRadioUiKey.Key:
+        type: HandheldRadioBoundUserInterface

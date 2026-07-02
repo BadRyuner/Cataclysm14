@@ -1,0 +1,115 @@
+#MARK: Green
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtStrippedMariniereTeslnyashkaGreen
+  name: marinière/telnyashka stripped shirt (green)
+  description: A stripped shirt originally worn by french-normand sailors, now mainly used by russian military forces and navy-men.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_mariniere-telnyashka.rsi
+    layers:
+    - state: shirt-icon
+    - state: bits-icon
+      color: "#5BAD46"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_mariniere-telnyashka.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: shirt-equipped-INNERCLOTHING
+      - state: bits-equipped-INNERCLOTHING
+        color: "#5BAD46"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#5BAD46"
+      right:
+      - state: inhand-right
+        color: "#5BAD46"
+
+#MARK: Blue
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtStrippedMariniereTeslnyashkaBlue
+  name: marinière/telnyashka stripped shirt (blue)
+  description: A stripped shirt originally worn by french-normand sailors, now mainly used by russian military forces and navy-men.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_mariniere-telnyashka.rsi
+    layers:
+    - state: shirt-icon
+    - state: bits-icon
+      color: "#1962FF"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_mariniere-telnyashka.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: shirt-equipped-INNERCLOTHING
+      - state: bits-equipped-INNERCLOTHING
+        color: "#1962FF"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#1962FF"
+      right:
+      - state: inhand-right
+        color: "#1962FF"
+
+#MARK: Red
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtStrippedMariniereTeslnyashkaRed
+  name: marinière/telnyashka stripped shirt (red)
+  description: A stripped shirt originally worn by french-normand sailors, now mainly used by russian military forces and navy-men.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_mariniere-telnyashka.rsi
+    layers:
+    - state: shirt-icon
+    - state: bits-icon
+      color: "#D32828"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_mariniere-telnyashka.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: shirt-equipped-INNERCLOTHING
+      - state: bits-equipped-INNERCLOTHING
+        color: "#D32828"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#D32828"
+      right:
+      - state: inhand-right
+        color: "#D32828"
+
+#MARK: Black
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtStrippedMariniereTeslnyashkaBlack
+  name: marinière/telnyashka stripped shirt (black)
+  description: A stripped shirt originally worn by french-normand sailors, now mainly used by russian military forces and navy-men.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_mariniere-telnyashka.rsi
+    layers:
+    - state: shirt-icon
+    - state: bits-icon
+      color: "#3B3B3B"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_mariniere-telnyashka.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: shirt-equipped-INNERCLOTHING
+      - state: bits-equipped-INNERCLOTHING
+        color: "#3B3B3B"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#3B3B3B"
+      right:
+      - state: inhand-right
+        color: "#3B3B3B"

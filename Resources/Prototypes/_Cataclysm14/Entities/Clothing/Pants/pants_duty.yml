@@ -1,0 +1,115 @@
+#MARK: Tan
+- type: entity
+  parent: BaseClothingPantsPocket
+  id: ClothingPantsDutyTan
+  name: duty pants (tan)
+  description: A pair of though duty pants made for work or everyday wear for middle-aged men, and perhapse private security.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_any.rsi
+    layers:
+    - state: pants-icon
+      color: "#d2B48C"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_any.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#d2B48C"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#d2B48C"
+      right:
+      - state: inhand-right
+        color: "#d2B48C"
+
+#MARK: Coyote Brown
+- type: entity
+  parent: BaseClothingPantsPocket
+  id: ClothingPantsDutyCoyoteBrown
+  name: duty pants (coyote brown)
+  description: A pair of though duty pants made for work or everyday wear for middle-aged men, and perhapse private security.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_any.rsi
+    layers:
+    - state: pants-icon
+      color: "#81613C"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_any.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#81613C"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#81613C"
+      right:
+      - state: inhand-right
+        color: "#81613C"
+
+#MARK: Ranger Green
+- type: entity
+  parent: BaseClothingPantsPocket
+  id: ClothingPantsDutyRangerGreen
+  name: duty pants (ranger green)
+  description: A pair of though duty pants made for work or everyday wear for middle-aged men, and perhapse private security.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_any.rsi
+    layers:
+    - state: pants-icon
+      color: "#4A5A49"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_any.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#4A5A49"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#4A5A49"
+      right:
+      - state: inhand-right
+        color: "#4A5A49"
+
+#MARK: Black
+- type: entity
+  parent: BaseClothingPantsPocket
+  id: ClothingPantsDutyBlack
+  name: duty pants (black)
+  description: A pair of though duty pants made for work or everyday wear for middle-aged men, and perhapse private security.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_any.rsi
+    layers:
+    - state: pants-icon
+      color: "#444444"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_any.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#444444"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#444444"
+      right:
+      - state: inhand-right
+        color: "#444444"
