@@ -22,8 +22,9 @@ public abstract class SharedContentEyeSystem : EntitySystem
     public const AdminFlags EyeFlag = AdminFlags.Debug;
 
     public const float ZoomMod = 1.5f;
+    public const float ScrollZoomMod = 1.08f;
     public static readonly Vector2 DefaultZoom = Vector2.One;
-    public static readonly Vector2 MinZoom = DefaultZoom * (float)Math.Pow(ZoomMod, -3);
+    public static readonly Vector2 MinZoom = DefaultZoom * 0.125f;
 
     [Dependency] private readonly SharedEyeSystem _eye = default!;
 
@@ -38,6 +39,8 @@ public abstract class SharedContentEyeSystem : EntitySystem
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.ZoomIn, InputCmdHandler.FromDelegate(ZoomIn, handle:false))
             .Bind(ContentKeyFunctions.ZoomOut, InputCmdHandler.FromDelegate(ZoomOut, handle:false))
+            .Bind(ContentKeyFunctions.PreciseZoomIn, InputCmdHandler.FromDelegate(PreciseZoomIn, handle:false))
+            .Bind(ContentKeyFunctions.PreciseZoomOut, InputCmdHandler.FromDelegate(PreciseZoomOut, handle:false))
             .Bind(ContentKeyFunctions.ResetZoom, InputCmdHandler.FromDelegate(ResetZoom, handle:false))
             .Register<SharedContentEyeSystem>();
 
@@ -67,6 +70,18 @@ public abstract class SharedContentEyeSystem : EntitySystem
     {
         if (TryComp(session?.AttachedEntity, out ContentEyeComponent? eye))
             SetZoom(session.AttachedEntity.Value, eye.TargetZoom / ZoomMod, eye: eye);
+    }
+
+    private void PreciseZoomOut(ICommonSession? session)
+    {
+        if (TryComp(session?.AttachedEntity, out ContentEyeComponent? eye))
+            SetZoom(session.AttachedEntity.Value, eye.TargetZoom * ScrollZoomMod, eye: eye);
+    }
+
+    private void PreciseZoomIn(ICommonSession? session)
+    {
+        if (TryComp(session?.AttachedEntity, out ContentEyeComponent? eye))
+            SetZoom(session.AttachedEntity.Value, eye.TargetZoom / ScrollZoomMod, eye: eye);
     }
 
     private Vector2 Clamp(Vector2 zoom, ContentEyeComponent component)

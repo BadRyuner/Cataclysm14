@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Numerics;
+using Content.Shared.Input;
 using Robust.Client.Graphics;
 using Robust.Client.Input;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.Graphics;
+using Robust.Shared.Input;
 using Robust.Shared.IoC;
 using Robust.Shared.Map;
 using Robust.Shared.Maths;
@@ -146,6 +148,40 @@ namespace Content.Client.Viewport
                 return;
 
             _inputManager.ViewportKeyEvent(this, args);
+        }
+
+        protected override void MouseWheel(GUIMouseWheelEventArgs args)
+        {
+            base.MouseWheel(args);
+
+            if (args.Handled || args.Delta.Y == 0)
+                return;
+
+            var function = args.Delta.Y > 0
+                ? ContentKeyFunctions.PreciseZoomIn
+                : ContentKeyFunctions.PreciseZoomOut;
+
+            var argsDown = new GUIBoundKeyEventArgs(
+                function,
+                BoundKeyState.Down,
+                default,
+                false,
+                args.RelativePosition,
+                args.RelativePixelPosition);
+
+            _inputManager.ViewportKeyEvent(this, argsDown);
+
+            var argsUp = new GUIBoundKeyEventArgs(
+                function,
+                BoundKeyState.Up,
+                default,
+                false,
+                args.RelativePosition,
+                args.RelativePixelPosition);
+
+            _inputManager.ViewportKeyEvent(this, argsUp);
+
+            args.Handle();
         }
 
         protected override void Draw(IRenderHandle handle)

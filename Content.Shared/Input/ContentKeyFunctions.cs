@@ -87,6 +87,8 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction Point = "Point";
         public static readonly BoundKeyFunction ZoomOut = "ZoomOut";
         public static readonly BoundKeyFunction ZoomIn = "ZoomIn";
+        public static readonly BoundKeyFunction PreciseZoomOut = "PreciseZoomOut"; // cata14 add
+        public static readonly BoundKeyFunction PreciseZoomIn = "PreciseZoomIn"; // cata14 add
         public static readonly BoundKeyFunction ResetZoom = "ResetZoom";
         public static readonly BoundKeyFunction ToggleStanding = "ToggleStanding"; // WD EDIT
         public static readonly BoundKeyFunction ToggleFocus = "ToggleFocus"; // Mono

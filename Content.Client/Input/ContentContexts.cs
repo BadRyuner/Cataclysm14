@@ -38,6 +38,8 @@ namespace Content.Client.Input
             common.AddFunction(ContentKeyFunctions.ToggleFocus); // Mono
             common.AddFunction(ContentKeyFunctions.ZoomOut);
             common.AddFunction(ContentKeyFunctions.ZoomIn);
+            common.AddFunction(ContentKeyFunctions.PreciseZoomIn); // cata14 add
+            common.AddFunction(ContentKeyFunctions.PreciseZoomOut); // cata14 add
             common.AddFunction(ContentKeyFunctions.ResetZoom);
             common.AddFunction(ContentKeyFunctions.InspectEntity);
             common.AddFunction(ContentKeyFunctions.ToggleRoundEndSummaryWindow);
