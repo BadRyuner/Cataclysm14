@@ -3,6 +3,7 @@
   name: handicomms
   description: A handy handheld radio with adjustible frequency.
   parent: BaseItem
+  abstract: true
   id: BaseToolRadioHandheld
   components:
   - type: Sprite
