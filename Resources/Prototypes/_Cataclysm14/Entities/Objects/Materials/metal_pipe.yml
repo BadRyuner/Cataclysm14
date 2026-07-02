@@ -63,7 +63,6 @@
   suffix: 5
   components:
   - type: Construction
-    graph: GraphMaterialMetalPipe
     node: MaterialObjectMetalPipeStack5
   - type: Stack
     count: 5
@@ -74,7 +73,6 @@
   suffix: 10
   components:
   - type: Construction
-    graph: GraphMaterialMetalPipe
     node: MaterialObjectMetalPipeStack10
   - type: Stack
     count: 10
@@ -85,7 +83,6 @@
   suffix: 25
   components:
   - type: Construction
-    graph: GraphMaterialMetalPipe
     node: MaterialObjectMetalPipeStack25
   - type: Stack
     count: 25

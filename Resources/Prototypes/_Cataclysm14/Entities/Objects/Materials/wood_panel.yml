@@ -63,7 +63,6 @@
   suffix: 5
   components:
   - type: Construction
-    graph: GraphMaterialWoodPanel
     node: MaterialObjectWoodPanelStack5
   - type: Stack
     count: 5
@@ -74,7 +73,6 @@
   suffix: 10
   components:
   - type: Construction
-    graph: GraphMaterialWoodPanel
     node: MaterialObjectWoodPanelStack10
   - type: Stack
     count: 10
@@ -85,7 +83,6 @@
   suffix: 25
   components:
   - type: Construction
-    graph: GraphMaterialWoodPanel
     node: MaterialObjectWoodPanelStack25
   - type: Stack
     count: 25
@@ -96,7 +93,6 @@
   suffix: 50
   components:
   - type: Construction
-    graph: GraphMaterialWoodPanel
     node: MaterialObjectWoodPanelStack50
   - type: Stack
     count: 50

@@ -306,7 +306,7 @@
   id: LootTableClothingHeadHatCap
   table: !type:GroupSelector
     children:
-    - id: ClohingHeadHatCapWhite
+    - id: ClothingHeadHatCapWhite
     - id: ClothingHeadHatCapRed
     - id: ClothingHeadHatCapBlue
     - id: ClothingHeadHatCapGreen

@@ -6,13 +6,13 @@
       description: A light plastic hardhat to protect against accidents and shock, or a frying pan to the head.
       components:
       - type: Sprite
-        sprite: _Cataclysm14\Clothing\Head\Helmets\helmet_protection_football_any.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_protection_football_any.rsi
         layers:
         - state: bits-icon
         - state: helmet-icon
           color: "#FFFFFF"
       - type: Clothing
-        sprite: _Cataclysm14\Clothing\Head\Helmets\helmet_protection_football_any.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_protection_football_any.rsi
         clothingVisuals:
           head:
           - state: bits-equipped-HELMET

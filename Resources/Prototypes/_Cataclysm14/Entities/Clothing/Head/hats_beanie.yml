@@ -6,10 +6,10 @@
   description: A beanie or seamed cap, a small piece of cloth to protect your head from cold or just for fashion.
   components:
   - type: Sprite
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     color: "#3B3B3B"
   - type: Clothing
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -31,10 +31,10 @@
   description: A beanie or seamed cap, a small piece of cloth to protect your head from cold or just for fashion.
   components:
   - type: Sprite
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     color: "#B8A98A"
   - type: Clothing
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -56,10 +56,10 @@
   description: A beanie or seamed cap, a small piece of cloth to protect your head from cold or just for fashion.
   components:
   - type: Sprite
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     color: "#8D4E78"
   - type: Clothing
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -81,10 +81,10 @@
   description: A beanie or seamed cap, a small piece of cloth to protect your head from cold or just for fashion.
   components:
   - type: Sprite
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     color: "#777777"
   - type: Clothing
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -106,10 +106,10 @@
   description: A beanie or seamed cap, a small piece of cloth to protect your head from cold or just for fashion.
   components:
   - type: Sprite
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     color: "#d2B48C"
   - type: Clothing
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -131,10 +131,10 @@
   description: A beanie or seamed cap, a small piece of cloth to protect your head from cold or just for fashion.
   components:
   - type: Sprite
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     color: "#92A168"
   - type: Clothing
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -156,10 +156,10 @@
   description: A beanie or seamed cap, a small piece of cloth to protect your head from cold or just for fashion.
   components:
   - type: Sprite
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     color: "#4A5A49"
   - type: Clothing
-    sprite: _Cataclysm14\Clothing\Head\Hats\hat_beanie_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_beanie_any.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET

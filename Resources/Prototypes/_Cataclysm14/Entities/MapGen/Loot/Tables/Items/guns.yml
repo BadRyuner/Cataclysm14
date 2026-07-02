@@ -20,14 +20,14 @@
         - id: WeaponLightMachineGunM249Filled200rdTracerRed
       - !type:GroupSelector
         children:
-        - id: WeaponLightMachineGunM240Filled200rdEmpty
-        - id: WeaponLightMachineGunM240Filled200rdFMJ
-        - id: WeaponLightMachineGunM240Filled200rdTracerYellow
+        - id: WeaponMediumMachineGunM240Filled200rdEmpty
+        - id: WeaponMediumMachineGunM240Filled200rdFMJ
+        - id: WeaponMediumMachineGunM240Filled200rdTracerYellow
       - !type:GroupSelector
         children:
-        - id: WeaponLightMachineGunM60Filled200rdEmpty
-        - id: WeaponLightMachineGunM60Filled200rdFMJ
-        - id: WeaponLightMachineGunM60Filled200rdTracerYellow
+        - id: WeaponMediumMachineGunM60Filled200rdEmpty
+        - id: WeaponMediumMachineGunM60Filled200rdFMJ
+        - id: WeaponMediumMachineGunM60Filled200rdTracerYellow
 
 #MARK: Guns Civilian Gunshop
 - type: entityTable
