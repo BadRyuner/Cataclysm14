@@ -2,7 +2,7 @@
 
 - type: entity
   id: StructureFurnitureLockerMetalThirdTripleFilledMilitaryArmyFrench
-  suffix: French Army Filled
+  suffix: French Army 100%
   parent: StructureFurnitureLockerMetalThirdTriple
   components:
   - type: EntityTableContainerFill
@@ -18,12 +18,12 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableLoadoutMilitaryArmyFrenchRandom50
+        tableId: LootTableLoadoutMilitaryArmyFrench
 
 #MARK: National Guard
 - type: entity
   id: StructureFurnitureLockerMetalThirdTripleFilledMilitaryNationalGuard
-  suffix: National Guard Filled
+  suffix: National Guard 100%
   parent: StructureFurnitureLockerMetalThirdTriple
   components:
   - type: EntityTableContainerFill
@@ -39,4 +39,4 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableLoadoutMilitaryNationalGuardRandom50
+        tableId: LootTableLoadoutMilitaryNationalGuard

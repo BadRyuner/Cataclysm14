@@ -7,44 +7,44 @@
     - BaseGunWieldable
   abstract: true
   components:
-    - type: Item
-      size: Large
-      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Remington-M870_64x64.rsi
-      shape:
-        - 0,0,5,1
-      storedScale: 2.5
-    - type: Sprite
-      scale: 0.55,0.55
-      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Remington-M870_64x32.rsi
-    - type: Clothing
-      clothingVisuals:
-        slingfront:
-          - state: equipped-SLINGFRONT
-        suitstorage:
-          - state: equipped-SUITSTORAGE
-      slots:
-        - slingfront
-        - suitstorage
-      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Remington-M870_64x32.rsi
-    - type: GunRequiresWield
-    - type: Gun
-      soundGunshot:
-        path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
-        params:
-          volume: 15
-          variation: 0.1
-      fireRate: 1.4
-    - type: GunSpreadModifier
-      spread: 0.7
-    - type: Tag
+  - type: Item
+    storedScale: 3
+    size: Large
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Remington-M870_64x64.rsi
+    shape:
+      - 0,0,5,1
+  - type: Sprite
+    scale: 0.55,0.55
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Remington-M870_64x32.rsi
+  - type: Clothing
+    clothingVisuals:
+      slingfront:
+        - state: equipped-SLINGFRONT
+      suitstorage:
+        - state: equipped-SUITSTORAGE
+    slots:
+      - slingfront
+      - suitstorage
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/Remington-M870_64x32.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+      params:
+        volume: 15
+        variation: 0.1
+    fireRate: 1.4
+  - type: GunSpreadModifier
+    spread: 0.7
+  - type: Tag
+    tags:
+      - WeaponShotgunRemingtonM870
+  - type: BallisticAmmoProvider
+    whitelist:
       tags:
-        - WeaponShotgunRemingtonM870
-    - type: BallisticAmmoProvider
-      whitelist:
-        tags:
-        - ShellShotgun12Gauge
-      autoCycle: false
-      capacity: 6
+      - ShellShotgun12Gauge
+    autoCycle: false
+    capacity: 6
 
 #MARK: Empty
 - type: entity
@@ -52,8 +52,8 @@
   suffix: Empty
   parent: WeaponShotgunRemingtonM870Base
   components:
-    - type: BallisticAmmoProvider
-      proto: null
+  - type: BallisticAmmoProvider
+    proto: null
 
 #MARK: Buckshot
 - type: entity
@@ -61,8 +61,8 @@
   suffix: Buckshot
   parent: WeaponShotgunRemingtonM870Base
   components:
-    - type: BallisticAmmoProvider
-      proto: ShellShotgun12GaugeBuckshot
+  - type: BallisticAmmoProvider
+    proto: ShellShotgun12GaugeBuckshot
 
 #MARK: Beanbag
 - type: entity
@@ -70,5 +70,5 @@
   suffix: Beanbag
   parent: WeaponShotgunRemingtonM870Base
   components:
-    - type: BallisticAmmoProvider
-      proto: ShellShotgun12GaugeBeanbag
+  - type: BallisticAmmoProvider
+    proto: ShellShotgun12GaugeBeanbag

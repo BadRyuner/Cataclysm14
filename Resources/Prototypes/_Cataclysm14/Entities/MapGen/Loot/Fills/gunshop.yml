@@ -1,0 +1,155 @@
+#MARK: Gun Racks
+- type: entity
+  id: StructureFurnitureGunRackMetalFilledGunshop
+  suffix: Gunshop 100%
+  parent: StructureFurnitureGunRackMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+
+- type: entity
+  id: StructureFurnitureGunRackMetalFilledGunshopRandom50
+  suffix: Gunshop 50%
+  parent: StructureFurnitureGunRackMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+        prob: 0.50
+
+- type: entity
+  id: StructureFurnitureGunRackMetalFilledGunshopRandom25
+  suffix: Gunshop 25%
+  parent: StructureFurnitureGunRackMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+        prob: 0.25
+
+- type: entity
+  id: StructureFurnitureGunRackMetalFilledGunshopRandom10
+  suffix: Gunshop 10%
+  parent: StructureFurnitureGunRackMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+        prob: 0.10
+
+#MARK: Locked Gun Racks
+- type: entity
+  id: StructureFurnitureGunRackMetalLockedFilledGunshop
+  suffix: Gunshop 100%][Locked
+  parent: StructureFurnitureGunRackMetalLocked
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+
+- type: entity
+  id: StructureFurnitureGunRackMetalLockedFilledGunshopRandom50
+  suffix: Gunshop 50%][Locked
+  parent: StructureFurnitureGunRackMetalLocked
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+        prob: 0.50
+
+- type: entity
+  id: StructureFurnitureGunRackMetalLockedFilledGunshopRandom25
+  suffix: Gunshop 25%][Locked
+  parent: StructureFurnitureGunRackMetalLocked
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+        prob: 0.25
+
+- type: entity
+  id: StructureFurnitureGunRackMetalLockedFilledGunshopRandom10
+  suffix: Gunshop 10%][Locked
+  parent: StructureFurnitureGunRackMetalLocked
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+        prob: 0.10
+
+#MARK: Ammo Shelves
+- type: entity
+  id: StructureFurnitureShelfMetalFilledGunshopAmmo
+  suffix: Gunshop 100%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBoxCivilianGradeLowTier
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBoxCivilianGradeMediumTier
+        rolls: !type:RangeNumberSelector
+          range: 1,5
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledGunshopAmmoRandom50
+  suffix: Gunshop 50%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBoxCivilianGradeLowTier
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBoxCivilianGradeMediumTier
+        rolls: !type:RangeNumberSelector
+          range: 1,5
+        prob: 0.50
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledGunshopAmmoRandom25
+  suffix: Gunshop 25%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBoxCivilianGradeLowTier
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBoxCivilianGradeMediumTier
+        rolls: !type:RangeNumberSelector
+          range: 1,5
+        prob: 0.25
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledGunshopAmmoRandom10
+  suffix: Gunshop 10%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBoxCivilianGradeLowTier
+        - !type:NestedSelector
+          tableId: LootTableAmmunitionAmmoBoxCivilianGradeMediumTier
+        rolls: !type:RangeNumberSelector
+          range: 1,5
+        prob: 0.10

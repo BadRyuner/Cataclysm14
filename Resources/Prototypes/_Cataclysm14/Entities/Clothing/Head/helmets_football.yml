@@ -1,0 +1,156 @@
+#MARK: Basic - Base / white
+    - type: entity
+      parent: BaseClothingHead
+      id: ClothingHeadHelmetFootballBase
+      name: american football helmet (white)
+      description: A light plastic hardhat to protect against accidents and shock, or a frying pan to the head.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14\Clothing\Head\Helmets\helmet_protection_football_any.rsi
+        layers:
+        - state: bits-icon
+        - state: helmet-icon
+          color: "#FFFFFF"
+      - type: Clothing
+        sprite: _Cataclysm14\Clothing\Head\Helmets\helmet_protection_football_any.rsi
+        clothingVisuals:
+          head:
+          - state: bits-equipped-HELMET
+          - state: helmet-equipped-HELMET
+            color: "#FFFFFF"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: bits-inhand-left
+          - state: helmet-inhand-left
+            color: "#FFFFFF"
+          right:
+          - state: bits-inhand-right
+          - state: helmet-inhand-right
+            color: "#FFFFFF"
+      - type: ExplosionResistance
+        damageCoefficient: 0.8
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.85
+            Slash: 0.85
+            Piercing: 0.85
+      - type: HideLayerClothing
+        slots:
+        - Hair
+        - Snout
+        - HeadTop
+        - HeadSide
+
+#MARK: Yellow
+    - type: entity
+      parent: ClothingHeadHelmetFootballBase
+      id: ClothingHeadHelmetFootballYellow
+      name: american football helmet (yellow)
+      components:
+      - type: Sprite
+        layers:
+        - state: bits-icon
+        - state: helmet-icon
+          color: "#ECD449"
+      - type: Clothing
+        clothingVisuals:
+          head:
+          - state: bits-equipped-HELMET
+          - state: helmet-equipped-HELMET
+            color: "#ECD449"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: bits-inhand-left
+          - state: helmet-inhand-left
+            color: "#ECD449"
+          right:
+          - state: bits-inhand-right
+          - state: helmet-inhand-right
+            color: "#ECD449"
+
+#MARK: Blue
+    - type: entity
+      parent: ClothingHeadHelmetFootballBase
+      id: ClothingHeadHelmetFootballBlue
+      name: american football helmet (blue)
+      components:
+      - type: Sprite
+        layers:
+        - state: bits-icon
+        - state: helmet-icon
+          color: "#3E7ACE"
+      - type: Clothing
+        clothingVisuals:
+          head:
+          - state: bits-equipped-HELMET
+          - state: helmet-equipped-HELMET
+            color: "#3E7ACE"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: bits-inhand-left
+          - state: helmet-inhand-left
+            color: "#3E7ACE"
+          right:
+          - state: bits-inhand-right
+          - state: helmet-inhand-right
+            color: "#3E7ACE"
+
+#MARK: Red
+    - type: entity
+      parent: ClothingHeadHelmetFootballBase
+      id: ClothingHeadHelmetFootballRed
+      name: american football helmet (red)
+      components:
+      - type: Sprite
+        layers:
+        - state: bits-icon
+        - state: helmet-icon
+          color: "#D15F46"
+      - type: Clothing
+        clothingVisuals:
+          head:
+          - state: bits-equipped-HELMET
+          - state: helmet-equipped-HELMET
+            color: "#D15F46"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: bits-inhand-left
+          - state: helmet-inhand-left
+            color: "#D15F46"
+          right:
+          - state: bits-inhand-right
+          - state: helmet-inhand-right
+            color: "#D15F46"
+
+#MARK: Black
+    - type: entity
+      parent: ClothingHeadHelmetFootballBase
+      id: ClothingHeadHelmetFootballBlack
+      name: american football helmet (black)
+      components:
+      - type: Sprite
+        layers:
+        - state: bits-icon
+        - state: helmet-icon
+          color: "#333333"
+      - type: Clothing
+        clothingVisuals:
+          head:
+          - state: bits-equipped-HELMET
+          - state: helmet-equipped-HELMET
+            color: "#333333"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: bits-inhand-left
+          - state: helmet-inhand-left
+            color: "#333333"
+          right:
+          - state: bits-inhand-right
+          - state: helmet-inhand-right
+            color: "#333333"

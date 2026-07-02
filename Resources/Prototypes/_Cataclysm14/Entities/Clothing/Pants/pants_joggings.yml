@@ -32,21 +32,21 @@
       components:
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
-        color: "#2832C2"
+        color: "#404691"
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
-            color: "#2832C2"
+            color: "#404691"
       - type: Item
         inhandVisuals:
           left:
           - state: inhand-left
-            color: "#2832C2"
+            color: "#404691"
           right:
           - state: inhand-right
-            color: "#2832C2"
+            color: "#404691"
   #MARK: TShirt - green
     - type: entity
       parent: BaseClothingPants
@@ -80,21 +80,21 @@
       components:
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
-        color: "#E4CD05"
+        color: "#A89B25"
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
-            color: "#E4CD05"
+            color: "#A89B25"
       - type: Item
         inhandVisuals:
           left:
           - state: inhand-left
-            color: "#E4CD05"
+            color: "#A89B25"
           right:
           - state: inhand-right
-            color: "#E4CD05"
+            color: "#A89B25"
   #MARK: TShirt - purple
     - type: entity
       parent: BaseClothingPants

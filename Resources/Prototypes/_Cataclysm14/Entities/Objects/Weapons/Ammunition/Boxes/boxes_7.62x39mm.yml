@@ -113,6 +113,22 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: HP
 
+#MARK: T45 gzh
+- type: entity
+  parent: BaseAmmoBox7,62x39mm
+  id: AmmoBox7,62x39mmT45Gzh
+  name: ammunition box (7,62x39mm T45 gzh green tracers)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7,62x39mmT45Gzh
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: HP
+
 #MARK: RIP
 - type: entity
   parent: BaseAmmoBox7,62x39mm

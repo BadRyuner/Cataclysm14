@@ -1,6 +1,6 @@
 #MARK: Loadout FAMAS
 - type: entityTable
-  id: LootTableLoadoutWeaponGunFAMAS
+  id: LootTableLoadoutWeaponGunFAMASFilledFAMAS25rdFMJ
   table: !type:AllSelector
     children:
       - !type:GroupSelector
@@ -13,7 +13,7 @@
 
 #MARK: Loadout M4A1
 - type: entityTable
-  id: LootTableLoadoutWeaponGunM4A1
+  id: LootTableLoadoutWeaponGunM4A1FilledSTANAG30rdFMJ
   table: !type:AllSelector
     children:
       - !type:GroupSelector
@@ -26,7 +26,7 @@
 
 #MARK: Loadout FN FAL
 - type: entityTable
-  id: LootTableLoadoutWeaponGunFnFal
+  id: LootTableLoadoutWeaponGunFnFalFilledSTANAG20rdFMJ
   table: !type:AllSelector
     children:
       - !type:GroupSelector
@@ -39,7 +39,7 @@
 
 #MARK: Loadout M249
 - type: entityTable
-  id: LootTableLoadoutWeaponGunM249
+  id: LootTableLoadoutWeaponGunM249Filled200rdFMJ
   table: !type:AllSelector
     children:
       - !type:GroupSelector
@@ -48,16 +48,14 @@
           - id: WeaponLightMachineGunM249Filled200rdFMJ
       - !type:AllSelector
           children:
-          - id: MagazineBox5,56x45mmLMG100rdFMJ
           - id: MagazineBox5,56x45mmLMG200rdFMJ
-          - id: MagazineBox5,56x45mmLMG100rdEmpty
           - id: MagazineBox5,56x45mmLMG200rdEmpty
           rolls: !type:RangeNumberSelector
             range: 1,2
 
 #MARK: Loadout Glock 17
 - type: entityTable
-  id: LootTableLoadoutWeaponGunGlock17
+  id: LootTableLoadoutWeaponGunGlock17Filled17rdFMJ
   table: !type:AllSelector
     children:
       - !type:GroupSelector
@@ -70,7 +68,7 @@
 
 #MARK: Loadout M1911
 - type: entityTable
-  id: LootTableLoadoutWeaponGunM1911
+  id: LootTableLoadoutWeaponGunM1911Filled10rdFMJ
   table: !type:AllSelector
     children:
       - !type:GroupSelector
@@ -83,7 +81,7 @@
 
 #MARK: Loadout M36
 - type: entityTable
-  id: LootTableLoadoutWeaponGunM36
+  id: LootTableLoadoutWeaponGunM36FilledFMJ
   table: !type:AllSelector
     children:
       - !type:GroupSelector
@@ -99,7 +97,7 @@
 
 #MARK: Loadout FN 5,7
 - type: entityTable
-  id: LootTableLoadoutWeaponGunFN5,7
+  id: LootTableLoadoutWeaponGunFN5,7Filled20rdFMJ
   table: !type:AllSelector
     children:
       - !type:GroupSelector

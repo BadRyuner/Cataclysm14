@@ -1,0 +1,102 @@
+- type: stack
+  id: StackWoodPanel
+  name: wood panel
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_panel.rsi, state: wood_3 }
+  spawn: MaterialObjectWoodPanelStack1
+  maxCount: 50
+
+- type: material
+  id: MaterialWoodPanel
+  stackEntity: MaterialObjectWoodPanelStack1
+  name: materials-wood-panel
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_panel.rsi, state: wood_3 }
+  color: "#000000"
+  price: 0.1 # 10/sheet
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MaterialBase
+  id: MaterialObjectWoodPanel
+  name: wood panel
+  description: A simple wood panel, could be used as a weapon if you hit hard enough.
+  suffix: Full
+  components:
+  - type: Sprite
+    scale: 0.7,0.7
+    sprite: _Cataclysm14/Objects/Materials/wood_panel.rsi
+    state: wood_3
+    layers:
+    - state: wood_3
+      map: ["base"]
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Item
+    sprite: _Cataclysm14/Objects/Materials/wood_panel.rsi
+    heldPrefix: wood panel
+  - type: Stack
+    stackType: StackWoodPanel
+    count: 100
+    baseLayer: base
+    layerStates:
+    - wood_1
+    - wood_2
+    - wood_3
+  - type: Material
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      MaterialWoodPanel: 100
+
+- type: entity
+  parent: MaterialObjectWoodPanel
+  id: MaterialObjectWoodPanelStack1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialObjectWoodPanel
+  id: MaterialObjectWoodPanelStack5
+  suffix: 5
+  components:
+  - type: Construction
+    graph: GraphMaterialWoodPanel
+    node: MaterialObjectWoodPanelStack5
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: MaterialObjectWoodPanel
+  id: MaterialObjectWoodPanelStack10
+  suffix: 10
+  components:
+  - type: Construction
+    graph: GraphMaterialWoodPanel
+    node: MaterialObjectWoodPanelStack10
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MaterialObjectWoodPanel
+  id: MaterialObjectWoodPanelStack25
+  suffix: 25
+  components:
+  - type: Construction
+    graph: GraphMaterialWoodPanel
+    node: MaterialObjectWoodPanelStack25
+  - type: Stack
+    count: 25
+
+- type: entity
+  parent: MaterialObjectWoodPanel
+  id: MaterialObjectWoodPanelStack50
+  suffix: 50
+  components:
+  - type: Construction
+    graph: GraphMaterialWoodPanel
+    node: MaterialObjectWoodPanelStack50
+  - type: Stack
+    count: 50

@@ -2,7 +2,7 @@
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesSneakersWhite
-  name: white sneakers
+  name: sneakers (white)
   description: A pair of colored sneakers, this one is colored in white.
   components:
   - type: Sprite
@@ -14,7 +14,7 @@
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesSneakersRed
-  name: red sneakers
+  name: sneakers (red)
   description: A pair of colored sneakers, this one is colored in red.
   components:
   - type: Sprite
@@ -39,32 +39,32 @@
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesSneakersBlue
-  name: blue sneakers
+  name: sneakers (blue)
   description: A pair of colored sneakers, this one is colored in blue.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shoes/shoes_sneakers_greyscale.rsi
-    color: "#2832C2"
+    color: "#404691"
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shoes/shoes_sneakers_greyscale.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#2832C2"
+        color: "#404691"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#2832C2"
+        color: "#404691"
       right:
       - state: inhand-right
-        color: "#2832C2"
+        color: "#404691"
 
 #MARK: green
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesSneakersGreen
-  name: green sneakers
+  name: sneakers (green)
   description: A pair of colored sneakers, this one is colored in green.
   components:
   - type: Sprite
@@ -89,32 +89,32 @@
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesSneakersYellow
-  name: yellow sneakers
+  name: sneakers (yellow)
   description: A pair of colored sneakers, this one is colored in yellow.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shoes/shoes_sneakers_greyscale.rsi
-    color: "#E4CD05"
+    color: "#A89B25"
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shoes/shoes_sneakers_greyscale.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
-        color: "#E4CD05"
+        color: "#A89B25"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#E4CD05"
+        color: "#A89B25"
       right:
       - state: inhand-right
-        color: "#E4CD05"
+        color: "#A89B25"
 
 #MARK: purple
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesSneakersPurple
-  name: purple sneakers
+  name: sneakers (purple)
   description: A pair of colored sneakers, this one is colored in purple.
   components:
   - type: Sprite
@@ -139,7 +139,7 @@
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesSneakersBlack
-  name: black sneakers
+  name: sneakers (black)
   description: A pair of colored sneakers, this one is colored in black.
   components:
   - type: Sprite

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "By avtomata (disc:core_mene).",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "walkietalkie"
+    },
+    {
+      "name": "walkietalkie-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "walkietalkie-inhand-left",
+      "directions": 4
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 - type: entity
-  id: WeaponShotgunSaiga12
+  id: WeaponShotgunSaiga12Base
   name: Izhmash Saiga-12 (12 gauge)
   description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Uses 12 gauge shotgun shells.
   parent:

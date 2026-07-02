@@ -2,8 +2,8 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtWhite
-  name: white t-shirt
-  description: A plain colored t-shirt, this one is colored in white.
+  name: t-shirt (white)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
@@ -14,8 +14,8 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtRed
-  name: red t-shirt
-  description: A plain colored t-shirt, this one is colored in red.
+  name: t-shirt (red)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
@@ -39,33 +39,33 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtBlue
-  name: blue t-shirt
-  description: A plain colored t-shirt, this one is colored in blue.
+  name: t-shirt (blue)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
-    color: "#2832C2"
+    color: "#404691"
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#2832C2"
+        color: "#404691"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#2832C2"
+        color: "#404691"
       right:
       - state: inhand-right
-        color: "#2832C2"
+        color: "#404691"
 
 #MARK:  green
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtGreen
-  name: green t-shirt
-  description: A plain colored t-shirt, this one is colored in green.
+  name: t-shirt (green)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
@@ -89,33 +89,33 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtYellow
-  name: yellow t-shirt
-  description: A plain colored t-shirt, this one is colored in yellow.
+  name: t-shirt (yellow)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
-    color: "#E4CD05"
+    color: "#A89B25"
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#E4CD05"
+        color: "#A89B25"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#E4CD05"
+        color: "#A89B25"
       right:
       - state: inhand-right
-        color: "#E4CD05"
+        color: "#A89B25"
 
 #MARK:  purple
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtPurple
-  name: purple t-shirt
-  description: A plain colored t-shirt, this one is colored in purple.
+  name: t-shirt (purple)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
@@ -139,8 +139,8 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtBlack
-  name: black t-shirt
-  description: A plain colored t-shirt, this one is colored in black.
+  name: t-shirt (black)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
@@ -164,8 +164,8 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtBeige
-  name: beige t-shirt
-  description: A plain colored t-beige, this one is colored in beige.
+  name: t-shirt (beige)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
@@ -184,3 +184,78 @@
       right:
       - state: inhand-right
         color: "#CDBEA1"
+
+#MARK: brown
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtTShirtBrown
+  name: t-shirt (brown)
+  description: A plain colored t-shirt.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    color: "#5F4D2A"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#5F4D2A"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#5F4D2A"
+      right:
+      - state: inhand-right
+        color: "#5F4D2A"
+
+#MARK:  olive
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtTShirtOlive
+  name: t-shirt (olive)
+  description: A plain colored t-shirt.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    color: "#92A168"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#92A168"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#92A168"
+      right:
+      - state: inhand-right
+        color: "#92A168"
+
+#MARK:  ranger green
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtTShirtRangerGreen
+  name: t-shirt (ranger green)
+  description: A plain colored t-shirt.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    color: "#4A5A49"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#4A5A49"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#4A5A49"
+      right:
+      - state: inhand-right
+        color: "#4A5A49"

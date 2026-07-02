@@ -1,6 +1,7 @@
+#MARK: Corrective
 - type: entity
   parent: ClothingEyesBase
-  id: ClothingEyesCorrectiveGlasses
+  id: ClothingEyesGlassesCorrectiveGlasses
   name: corrective glasses
   description: A pair of glasses with prescription lenses.
   components:
@@ -9,3 +10,17 @@
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Eyes/eyes_glasses_corrective.rsi
   - type: VisionCorrection
+
+#MARK: Sun
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesShadesSunglasses
+  name: sunglasses
+  description: A pair of black sunglasses. Doesn't block light well, more of an accessory than something useful.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Eyes/glasses_sunglasses.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Eyes/glasses_sunglasses.rsi
+  - type: IdentityBlocker
+    coverage: EYES

@@ -83,3 +83,41 @@
     children:
     - id: ClothingOuterBulletProofVestOTVUN
     - id: ClothingOuterBulletProofVestANAModularUN
+
+#MARK: PantsDutyMercenary
+- type: entityTable
+  id: LootTableClothingPantsDutyMercenary
+  table: !type:GroupSelector
+    children:
+    - id: ClothingPantsDutyMercenaryTan
+    - id: ClothingPantsDutyMercenaryCoyoteBrown
+    - id: ClothingPantsDutyMercenaryRangerGreen
+    - id: ClothingPantsDutyMercenaryBlack
+
+#MARK: Civilian BP vests
+- type: entityTable
+  id: LootTableClothingBulletProofVestCivilian
+  table: !type:GroupSelector
+    children:
+    - id: ClothingOuterBulletProofVestPACA
+    - !type:GroupSelector
+      children:
+      - id: ClothingOuterBulletProofVestSlickBlack
+      - id: ClothingOuterBulletProofVestSlickBlackFilled
+    - !type:GroupSelector
+      children:
+      - id: ClothingOuterBulletProofVestInterceptorOTV
+      - id: ClothingOuterBulletProofVestInterceptorOTVFilled
+
+#MARK: Combat Gloves
+- type: entityTable
+  id: LootTableClothingCombatGloves
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHandsGlovesCombatTan
+    - id: ClothingHandsGlovesCombatBlack
+    - id: ClothingHandsGlovesCombatRangerGreen
+    - id: ClothingHandsGlovesCombatOlive
+    - id: ClothingHandsGlovesCombatCoyoteBrown
+    - id: ClothingHandsGlovesCombatWhite
+      weight: 0.5

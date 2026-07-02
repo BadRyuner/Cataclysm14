@@ -1,0 +1,144 @@
+#MARK: Black
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtTracksuitBlack
+  name: tracksuit shirt (blacl)
+  description: An ample and breathable track shirt, has some branding line.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_tracksuit.rsi
+    layers:
+    - state: shirt-icon
+      color: "#141414"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_tracksuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: shirt-equipped-INNERCLOTHING
+        color: "#141414"
+      - state: bits-equipped-INNERCLOTHING
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#141414"
+      right:
+      - state: inhand-right
+        color: "#141414"
+
+#MARK: Blue
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtTracksuitBlue
+  name: tracksuit shirt (blue)
+  description: An ample and breathable track shirt, has some branding line.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_tracksuit.rsi
+    layers:
+    - state: shirt-icon
+      color: "#2D62D6"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_tracksuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: shirt-equipped-INNERCLOTHING
+        color: "#2D62D6"
+      - state: bits-equipped-INNERCLOTHING
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#2D62D6"
+      right:
+      - state: inhand-right
+        color: "#2D62D6"
+
+#MARK: Yellow
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtTracksuitYellow
+  name: tracksuit shirt (yellow)
+  description: An ample and breathable track shirt, has some branding line.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_tracksuit.rsi
+    layers:
+    - state: shirt-icon
+      color: "#DBDD44"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_tracksuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: shirt-equipped-INNERCLOTHING
+        color: "#DBDD44"
+      - state: bits-equipped-INNERCLOTHING
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#DBDD44"
+      right:
+      - state: inhand-right
+        color: "#DBDD44"
+
+#MARK: Red
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtTracksuitRed
+  name: tracksuit shirt (red)
+  description: An ample and breathable track shirt, has some branding line.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_tracksuit.rsi
+    layers:
+    - state: shirt-icon
+      color: "#D33838"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_tracksuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: shirt-equipped-INNERCLOTHING
+        color: "#D33838"
+      - state: bits-equipped-INNERCLOTHING
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#D33838"
+      right:
+      - state: inhand-right
+        color: "#D33838"
+
+#MARK: Green
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtTracksuitGreen
+  name: tracksuit shirt (green)
+  description: An ample and breathable track shirt, has some branding line.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_tracksuit.rsi
+    layers:
+    - state: shirt-icon
+      color: "#5BAD46"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_tracksuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: shirt-equipped-INNERCLOTHING
+        color: "#5BAD46"
+      - state: bits-equipped-INNERCLOTHING
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#5BAD46"
+      right:
+      - state: inhand-right
+        color: "#5BAD46"

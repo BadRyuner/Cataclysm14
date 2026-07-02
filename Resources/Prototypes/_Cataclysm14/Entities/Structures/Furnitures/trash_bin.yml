@@ -19,9 +19,9 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialWoodPlank1:
-            min: 3
-            max: 3
+          MaterialObjectWoodPanelStack1:
+            min: 0
+            max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Storage

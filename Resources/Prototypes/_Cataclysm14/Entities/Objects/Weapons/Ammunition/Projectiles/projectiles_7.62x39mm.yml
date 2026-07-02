@@ -1,7 +1,6 @@
 #MARK: FMJ
 - type: entity
   id: Bullet7,62x39mmFMJ
-  name: bullet (7,62x39mm FMJ)
   parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -14,7 +13,6 @@
 #MARK: Rubber
 - type: entity
   id: Bullet7,62x39mmRubber
-  name: bullet (7,62x39mm rubber)
   parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -27,7 +25,6 @@
 - type: entity
   id: Bullet7,62x39mmIncendiary
   parent: BaseProjectileBulletIncendiary
-  name: bullet (7,62x39mm incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -40,7 +37,6 @@
 - type: entity
   id: Bullet7,62x39mmDepletedUranium
   parent: BaseProjectileBulletDepletedUranium
-  name: bullet (7,62x39mm depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -53,7 +49,6 @@
 - type: entity
   id: Bullet7,62x39mmHP
   parent: BaseProjectileBullet
-  name: bullet (7,62x39mm hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -67,7 +62,6 @@
 - type: entity
   id: Bullet7,62x39mmRIP
   parent: BaseProjectileBullet
-  name: bullet (7,62x39mm RIP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -76,3 +70,24 @@
         Slash: 8
         Piercing: 42
     armorPenetration: -0.95
+
+#MARK: T45 gzh
+- type: entity
+  id: Bullet7,62x39mmT45Gzh
+  parent: BaseProjectileBulletTracerGreen
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 24
+    armorPenetration: 0.05
+  - type: PointLight
+    enabled: true
+    color: "#49E048"
+    radius: 1.1
+    energy: 20.0
+  - type: Tracer
+    color: "#49E048"
+    length: 15
+    lifetime: 1

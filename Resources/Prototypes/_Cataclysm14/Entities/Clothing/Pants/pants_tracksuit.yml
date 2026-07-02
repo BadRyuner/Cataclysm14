@@ -1,0 +1,144 @@
+#MARK: Black
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsTracksuitBlack
+  name: tracksuit pants (blacl)
+  description: A pair of ample and breathable track pants, has some branding line.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_tracksuit.rsi
+    layers:
+    - state: pants-icon
+      color: "#141414"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_tracksuit.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#141414"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#141414"
+      right:
+      - state: inhand-right
+        color: "#141414"
+
+#MARK: Blue
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsTracksuitBlue
+  name: tracksuit pants (blue)
+  description: A pair of ample and breathable track pants, has some branding line.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_tracksuit.rsi
+    layers:
+    - state: pants-icon
+      color: "#2D62D6"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_tracksuit.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#2D62D6"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#2D62D6"
+      right:
+      - state: inhand-right
+        color: "#2D62D6"
+
+#MARK: Yellow
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsTracksuitYellow
+  name: tracksuit pants (yellow)
+  description: A pair of ample and breathable track pants, has some branding line.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_tracksuit.rsi
+    layers:
+    - state: pants-icon
+      color: "#DBDD44"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_tracksuit.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#DBDD44"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#DBDD44"
+      right:
+      - state: inhand-right
+        color: "#DBDD44"
+
+#MARK: Red
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsTracksuitRed
+  name: tracksuit pants (red)
+  description: A pair of ample and breathable track pants, has some branding line.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_tracksuit.rsi
+    layers:
+    - state: pants-icon
+      color: "#D33838"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_tracksuit.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#D33838"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#D33838"
+      right:
+      - state: inhand-right
+        color: "#D33838"
+
+#MARK: Green
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsTracksuitGreen
+  name: tracksuit pants (green)
+  description: A pair of ample and breathable track pants, has some branding line.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_tracksuit.rsi
+    layers:
+    - state: pants-icon
+      color: "#5BAD46"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_tracksuit.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#5BAD46"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#5BAD46"
+      right:
+      - state: inhand-right
+        color: "#5BAD46"

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "By avtomata (disc:core_mene)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "metal_1"
+    },
+    {
+      "name": "metal_2"
+    },
+    {
+      "name": "metal_3"
+    },
+    {
+      "name": "metal-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "metal-inhand-right",
+      "directions": 4
+    }
+  ]
+}

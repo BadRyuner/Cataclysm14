@@ -1,0 +1,116 @@
+#MARK: Tan
+- type: entity
+  parent: BaseClothingPantsPocket
+  id: ClothingPantsDutyMercenaryTan
+  name: mercenary duty pants (tan)
+  description: A pair of though duty pants with kneepads often used by private security, PMCs and mercenaries.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_mercenary_any.rsi
+    layers:
+    - state: pants-icon
+      color: "#d2B48C"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_mercenary_any.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#d2B48C"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#d2B48C"
+      right:
+      - state: inhand-right
+        color: "#d2B48C"
+
+#MARK: Coyote Brown
+- type: entity
+  parent: BaseClothingPantsPocket
+  id: ClothingPantsDutyMercenaryCoyoteBrown
+  name: mercenary duty pants (coyote brown)
+  description: A pair of though duty pants with kneepads often used by private security, PMCs and mercenaries.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_mercenary_any.rsi
+    layers:
+    - state: pants-icon
+      color: "#81613C"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_mercenary_any.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#81613C"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#81613C"
+      right:
+      - state: inhand-right
+        color: "#81613C"
+
+#MARK: Ranger Green
+- type: entity
+  parent: BaseClothingPantsPocket
+  id: ClothingPantsDutyMercenaryRangerGreen
+  name: mercenary duty pants (ranger green)
+  description: A pair of though duty pants with kneepads often used by private security, PMCs and mercenaries.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_mercenary_any.rsi
+    layers:
+    - state: pants-icon
+      color: "#4A5A49"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_mercenary_any.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#4A5A49"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#4A5A49"
+      right:
+      - state: inhand-right
+        color: "#4A5A49"
+
+#MARK: Black
+- type: entity
+  parent: BaseClothingPantsPocket
+  id: ClothingPantsDutyMercenaryBlack
+  name: mercenary duty pants (black)
+  description: A pair of though duty pants with kneepads often used by private security, PMCs and mercenaries.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_mercenary_any.rsi
+    layers:
+    - state: pants-icon
+      color: "#444444"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_mercenary_any.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#444444"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#444444"
+      right:
+      - state: inhand-right
+        color: "#444444"
+

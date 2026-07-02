@@ -111,3 +111,19 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#C04000"
+
+#MARK: T45 gzh
+- type: entity
+  id: Cartridge7,62x39mmT45Gzh
+  name: cartridge (7,62x39mm T45 gzh green tracer)
+  parent: BaseCartridge7,62x39mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7,62x39mmT45Gzh
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#539B26"

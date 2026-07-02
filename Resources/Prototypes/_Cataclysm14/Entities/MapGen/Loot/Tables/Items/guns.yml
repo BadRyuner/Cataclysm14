@@ -1,40 +1,82 @@
-#MARK: GunsMilitaryModernCommonGeneric
-- type: entityTable
-  id: LootTableWeaponGunsMilitaryModernCommonGenericRandom75
-  table: !type:GroupSelector
-    children:
-      - !type:NestedSelector
-        weight: 100
-        tableId: LootTableWeaponGunsMilitaryModernCommonGeneric
-        prob: 0.75
-
-- type: entityTable
-  id: LootTableWeaponGunsMilitaryModernCommonGenericRandom50
-  table: !type:GroupSelector
-    children:
-      - !type:NestedSelector
-        weight: 100
-        tableId: LootTableWeaponGunsMilitaryModernCommonGeneric
-        prob: 0.5
-
-- type: entityTable
-  id: LootTableWeaponGunsMilitaryModernCommonGeneric
-  table: !type:AllSelector
-    children:
-      - !type:NestedSelector
-        weight: 100
-        tableId: LootTableLoadoutWeaponGunFAMAS
-        rolls: !type:RangeNumberSelector
-          range: 1,2
-
 #MARK: Guns National Guard
 - type: entityTable
   id: LootTableWeaponGunNationalGuard
   table: !type:GroupSelector
     children:
-      - id: WeaponAssaultRifleM4A1FilledSTANAG30rdEmpty
-      - id: WeaponAssaultRifleM4A1FilledSTANAG30rdFMJ
-      - id: WeaponAssaultRifleM4A1FilledSTANAG30rdTracerRed
-      - id: WeaponLightMachineGunM249Filled200rdEmpty
-      - id: WeaponLightMachineGunM249Filled200rdFMJ
-      - id: WeaponLightMachineGunM249Filled200rdTracerRed
+      - !type:GroupSelector
+        children:
+        - id: WeaponAssaultRifleM4A1FilledSTANAG30rdEmpty
+        - id: WeaponAssaultRifleM4A1FilledSTANAG30rdFMJ
+        - id: WeaponAssaultRifleM4A1FilledSTANAG30rdTracerRed
+      - !type:GroupSelector
+        children:
+        - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdEmpty
+        - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdFMJ
+        - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdTracerRed
+      - !type:GroupSelector
+        children:
+        - id: WeaponLightMachineGunM249Filled200rdEmpty
+        - id: WeaponLightMachineGunM249Filled200rdFMJ
+        - id: WeaponLightMachineGunM249Filled200rdTracerRed
+      - !type:GroupSelector
+        children:
+        - id: WeaponLightMachineGunM240Filled200rdEmpty
+        - id: WeaponLightMachineGunM240Filled200rdFMJ
+        - id: WeaponLightMachineGunM240Filled200rdTracerYellow
+      - !type:GroupSelector
+        children:
+        - id: WeaponLightMachineGunM60Filled200rdEmpty
+        - id: WeaponLightMachineGunM60Filled200rdFMJ
+        - id: WeaponLightMachineGunM60Filled200rdTracerYellow
+
+#MARK: Guns Civilian Gunshop
+- type: entityTable
+  id: LootTableWeaponGunCivilianGunshop
+  table: !type:GroupSelector
+    rolls: !type:RangeNumberSelector
+      range: 0,6
+    children:
+    - id: WeaponBattleRifleM1AFilledSTANAG20rdEmpty
+      weight: 50
+    - id: WeaponBattleRifleM14MarksmanFilledSTANAG20rdEmpty
+      weight: 25
+    - id: WeaponBattleRifleM14FilledSTANAG20rdEmpty
+      weight: 50
+    - id: WeaponBoltActionRifleM24Base
+      weight: 100
+    - id: WeaponBoltActionRifleRemingtonM700Base
+      weight: 100
+    - id: WeaponBoltActionRifleMosinNagantBase
+      weight: 100
+    - id: WeaponCarbineM1CarbineFilledSTANAG20rdEmpty
+      weight: 100
+    - id: WeaponCarbineMini14FilledSTANAG30rdEmpty
+      weight: 100
+    - id: WeaponAssaultRifleVPO-136FilledSteel30rdEmpty
+      weight: 100
+    - id: WeaponPistolFN5,7Filled20rdEmpty
+      weight: 75
+    - id: WeaponPistolGlock17Filled17rdEmpty
+      weight: 100
+    - id: WeaponPistolM1911Filled10rdEmpty
+      weight: 100
+    - id: WeaponPistolRugerMK2TargetFilled10rdEmpty
+      weight: 100
+    - id: WeaponPistolTT33Filled8rdEmpty
+      weight: 100
+    - id: WeaponRevolverM36Empty
+      weight: 100
+    - id: WeaponRifleAR10FilledSTANAG20rdEmpty
+      weight: 100
+    - id: WeaponRifleAR15FilledSTANAG30rdEmpty
+      weight: 100
+    - id: WeaponBoltActionRifleRuger10-22Base
+      weight: 100
+    - id: WeaponShotgun12GaugeDoubleBarrelEmpty
+      weight: 100
+    - id: WeaponShotgunMossberg500Empty
+      weight: 100
+    - id: WeaponShotgunMossberg590TacticalEmpty
+      weight: 100
+    - id: WeaponShotgunRemingtonM870Empty
+      weight: 100

@@ -1,0 +1,38 @@
+#MARK: Base
+- type: entity
+  name: handicomms
+  description: A handy handheld radio with adjustible frequency.
+  parent: BaseItem
+  id: BaseToolRadioHandheld
+  components:
+  - type: Speech
+    speechVerb: Robotic
+  - type: TelecomExempt
+  - type: RadioMicrophone
+    broadcastChannel: Handheld
+    toggleOnInteract: false
+    frequency: 1330
+  - type: RadioSpeaker
+    toggleOnInteract: false
+  - type: Item
+    heldPrefix: walkietalkie
+  - type: Tag
+    tags:
+    - HandicommsBounty
+    - Radio
+  - type: ActivatableUI
+    key: enum.HandheldRadioUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.HandheldRadioUiKey.Key:
+        type: HandheldRadioBoundUserInterface
+  - type: Appearance
+
+#MARK: Industrial handheld
+- type: entity
+  parent: BaseToolRadioHandheld
+  id: ToolRadioHandheldIndustrial
+  name: industrial handheld radio
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Tools/RadioComms/radio_handheld_small_industrial.rsi

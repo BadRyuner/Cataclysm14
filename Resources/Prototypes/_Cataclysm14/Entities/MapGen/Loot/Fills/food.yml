@@ -1,7 +1,7 @@
 #MARK: FridgeOldBasic
 - type: entity
   id: StructureApplianceFridgeOldFilledBasic
-  suffix: Basic Filled
+  suffix: Basic 100%
   parent: StructureApplianceFridgeOld
   components:
   - type: EntityTableContainerFill
@@ -17,12 +17,13 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableFoodFridgeBasicRandom50
+        tableId: LootTableFoodFridgeBasic
+        prob: 0.50
 
 #MARK: FridgeOldFood
 - type: entity
   id: StructureApplianceFridgeOldFilledFood
-  suffix: Food Filled
+  suffix: Food 100%
   parent: StructureApplianceFridgeOld
   components:
   - type: EntityTableContainerFill
@@ -38,12 +39,13 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableFoodFridgeFoodRandom50
+        tableId: LootTableFoodFridgeFood
+        prob: 0.50
 
 #MARK: FridgeOldDrinks
 - type: entity
   id: StructureApplianceFridgeOldFilledDrinks
-  suffix: Drinks Filled
+  suffix: Drinks 100%
   parent: StructureApplianceFridgeOld
   components:
   - type: EntityTableContainerFill
@@ -59,12 +61,13 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableFoodFridgeDrinksRandom50
+        tableId: LootTableFoodFridgeDrinks
+        prob: 0.50
 
 #MARK: ShelfWood
 - type: entity
   id: StructureFurnitureShelfWoodFilledFoodLongLasting
-  suffix: Food Longlasting Filled
+  suffix: Food Longlasting 100%
   parent: StructureFurnitureShelfWood
   components:
   - type: EntityTableContainerFill
@@ -80,12 +83,13 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableFoodShelfLongLastingRandom50
+        tableId: LootTableFoodShelfLongLasting
+        prob: 0.50
 
 #MARK: ShelfWoodStorage
 - type: entity
   id: StructureFurnitureShelfWoodStorageFilledFoodLongLasting
-  suffix: Food Longlasting Filled
+  suffix: Food Longlasting 100%
   parent: StructureFurnitureShelfWoodStorage
   components:
   - type: EntityTableContainerFill
@@ -101,12 +105,13 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableFoodShelfLongLastingRandom50
+        tableId: LootTableFoodShelfLongLasting
+        prob: 0.50
 
 #MARK: FridgeStoreBasic
 - type: entity
   id: StructureApplianceFridgeStoreFilledBasic
-  suffix: Basic Filled
+  suffix: Basic 100%
   parent: StructureApplianceFridgeStore
   components:
   - type: EntityTableContainerFill
@@ -122,12 +127,13 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableFoodFridgeBasicRandom50
+        tableId: LootTableFoodFridgeBasic
+        prob: 0.50
 
 #MARK: FridgeStoreFood
 - type: entity
   id: StructureApplianceFridgeStoreFilledFood
-  suffix: Food Filled
+  suffix: Food 100%
   parent: StructureApplianceFridgeStore
   components:
   - type: EntityTableContainerFill
@@ -143,12 +149,13 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableFoodFridgeFoodRandom50
+        tableId: LootTableFoodFridgeFood
+        prob: 0.50
 
 #MARK: FridgeStoreDrinks
 - type: entity
   id: StructureApplianceFridgeStoreFilledDrinks
-  suffix: Drinks Filled
+  suffix: Drinks 100%
   parent: StructureApplianceFridgeStore
   components:
   - type: EntityTableContainerFill
@@ -164,4 +171,5 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableFoodFridgeDrinksRandom50
+        tableId: LootTableFoodFridgeDrinks
+        prob: 0.50

@@ -1,0 +1,39 @@
+- type: dungeonRoom
+  id: StructureSpawnerGunshopSmall26x26a
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Gunshops/structure_gunshop_26x26_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureGunshopSmall26x26
+
+# - type: dungeonRoom
+#   id: StructureSpawnerGunshopSmall26x26b
+#   size: 27,27
+#   atlas: /Maps/_Cataclysm14/Structures/Shops/Gunshops/structure_gunshop_26x26_b.yml
+#   offset: 0,0
+#   ignoreTile: FloorShuttleOrange
+#   tags:
+#   - CataStructureGunshopSmall26x26
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerGunshopSmall26x26
+  name: structure spawner small gunshop
+  suffix: 2x2 Chunk][26x26
+  components:
+  - type: Sprite
+    scale: 26,26
+    offset: -0.5,-0.5
+    layers:
+      - sprite: _Cataclysm14/Mapping/Shops/structure_shop.rsi
+        state: structure_border_shop_small
+      - sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/AR15_64x32.rsi
+        state: icon
+        scale: 0.4,0.4
+        offset: 0.1,-0.1
+  - type: RoomFill
+    rotation: false
+    roomWhitelist:
+      tags:
+      - CataStructureGunshopSmall26x26

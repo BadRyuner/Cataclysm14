@@ -17,7 +17,7 @@
     size: Huge
     shape:
     - 0,0,6,1
-    storedScale: 2
+    storedScale: 2.5
   - type: Clothing
     slots:
     - slingfront

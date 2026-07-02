@@ -1,7 +1,7 @@
 #MARK: DresserWood
 - type: entity
   id: StructureFurnitureDresserWoodFilledClothingCivilian
-  suffix: CivClothing Filled
+  suffix: CivClothing 100%
   parent: StructureFurnitureDresserWood
   components:
   - type: EntityTableContainerFill
@@ -17,12 +17,13 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableClothingCivilianGenericRandom50
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.50
 
 #MARK: ShelfWood
 - type: entity
   id: StructureFurnitureShelfWoodFilledClothingCivilian
-  suffix: CivClothing Filled
+  suffix: CivClothing 100%
   parent: StructureFurnitureShelfWood
   components:
   - type: EntityTableContainerFill
@@ -38,12 +39,13 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableClothingCivilianGenericRandom50
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.50
 
 #MARK: ShelfWoodStorage
 - type: entity
   id: StructureFurnitureShelfWoodStorageFilledClothingCivilian
-  suffix: CivClothing Filled
+  suffix: CivClothing 100%
   parent: StructureFurnitureShelfWoodStorage
   components:
   - type: EntityTableContainerFill
@@ -59,12 +61,13 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableClothingCivilianGenericRandom50
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.50
 
 #MARK: Wardrobe
 - type: entity
   id: StructureFurnitureWardrobeWoodFilledClothingCivilian
-  suffix: CivClothing Filled
+  suffix: CivClothing 100%
   parent: StructureFurnitureWardrobeWood
   components:
   - type: EntityTableContainerFill
@@ -80,7 +83,8 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableClothingCivilianGenericRandom75
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.75
 
 - type: entity
   id: StructureFurnitureWardrobeWoodFilledClothingCivilianRandom50
@@ -90,4 +94,5 @@
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:NestedSelector
-        tableId: LootTableClothingCivilianGenericRandom50
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.50

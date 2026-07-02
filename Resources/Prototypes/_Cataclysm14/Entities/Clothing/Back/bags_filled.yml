@@ -9,7 +9,7 @@
       storagebase: !type:AllSelector
         children:
         - !type:NestedSelector
-          tableId: LootTableAmmunitionAmmoBoxMilitaryGradeLowTier
+          tableId: LootTableAmmunitionAmmoBoxUsForcesLowTier
           prob: 0.4
         - !type:NestedSelector
           tableId: LootTableFoodLongLasting

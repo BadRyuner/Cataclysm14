@@ -15,11 +15,11 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
+    storedScale: 2.5
     sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/M14_Marksman_32x32.rsi
     size: Large
     shape:
     - 0,0,5,1
-    storedScale: 2
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/M14_Marksman_32x32.rsi
     clothingVisuals:
@@ -55,7 +55,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7,62x51mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -95,7 +95,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7,62x51mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:
@@ -122,7 +122,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7,62x51mmFMJ
+        startingItem: null
         priority: 1
         whitelist:
           tags:

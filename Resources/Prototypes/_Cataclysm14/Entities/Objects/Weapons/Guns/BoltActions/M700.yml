@@ -13,11 +13,11 @@
       - state: base
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
+    storedScale: 3
     sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/Remington-M700_32x32.rsi
     size: Large
     shape:
     - 0,0,6,1
-    storedScale: 2
   - type: Clothing
     slots:
     - slingfront
