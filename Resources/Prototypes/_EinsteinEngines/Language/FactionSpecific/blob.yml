@@ -2,7 +2,7 @@
 - type: language
   id: Blob
   speech:
-    fontId: Monospace
+    fontId: Terminus # Cataclysm 14 Monospace < Terminus
     color: "#800080"
   obfuscation:
     !type:SyllableObfuscation

@@ -1,0 +1,60 @@
+﻿<controls:CataclysmSidebar
+    xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client._Cataclysm14.UserInterface.Systems"
+    HorizontalExpand="true"
+    VerticalExpand="false"
+    SeparationOverride="0"
+    Orientation="Horizontal"
+    HorizontalAlignment="Stretch"
+    VerticalAlignment="Top"
+    >
+
+    <BoxContainer Name="ContainerOfContainers" HorizontalExpand="true" VerticalExpand="true" Orientation="Vertical" SeparationOverride="0">
+        <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Date: "/>
+            <Label Name="DateLabel" Text="Wednesday huh?"/>
+        </BoxContainer>
+
+        <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Time: "/>
+            <Label Name="TimeLabel" Text="Day huh?"/>
+        </BoxContainer>
+
+        <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Moon: "/>
+            <Label Name="MoonLabel" Text="We have moon system?"/>
+        </BoxContainer>
+
+        <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Weather: "/>
+            <Label Name="WeatherLabel" Text="We have weather system?"/>
+        </BoxContainer>
+
+        <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Lighting: "/>
+            <Label Name="LightingLabel" Text="Robust gimme access plz"/>
+        </BoxContainer>
+
+        <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Temperature: "/>
+            <Label Name="TemperatureLabel" Text="We have temperature system?"/>
+        </BoxContainer>
+
+        <BoxContainer Name="HealthContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Health: "/>
+            <Label Name="HealthLabel" Text="..... u ded"/>
+        </BoxContainer>
+
+        <BoxContainer Name="HungerContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Hunger: "/>
+            <Label Name="HungerLabel" Text="poo"/>
+        </BoxContainer>
+
+        <BoxContainer Name="ThirstContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Thirst: "/>
+            <Label Name="ThirstLabel" Text="pee"/>
+        </BoxContainer>
+
+    </BoxContainer>
+
+</controls:CataclysmSidebar>

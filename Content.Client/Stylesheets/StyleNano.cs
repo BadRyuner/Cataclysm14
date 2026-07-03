@@ -115,6 +115,11 @@ namespace Content.Client.Stylesheets
         public const string StyleClassPopupMessageLarge = "PopupMessageLarge";
         public const string StyleClassPopupMessageLargeCaution = "PopupMessageLargeCaution";
 
+        // Cataclysm14 Begin
+        public const string StyleClassChatOutputPanel = "StyleClassChatOutputPanel";
+        public const string StyleClassBoxOfTerminusLabels = "StyleClassBoxOfTerminusLabels";
+        // Cataclysm14 End
+
         public static readonly Color PanelDark = Color.FromHex("#1E1E1E");
 
         public static readonly Color NanoGold = Color.FromHex("#bdbdbd");
@@ -179,7 +184,7 @@ namespace Content.Client.Stylesheets
         public const string StyleClassButtonColorRed = "ButtonColorRed";
         public const string StyleClassButtonColorGreen = "ButtonColorGreen";
 
-        public static readonly Color ChatBackgroundColor = Color.FromHex("#2B2B2BDD");
+        public static readonly Color ChatBackgroundColor = Color.Black; // Cataclysm14 Change #2B2B2BDD > Black
 
         //Bwoink
         public const string StyleClassPinButtonPinned = "pinButtonPinned";
@@ -207,6 +212,10 @@ namespace Content.Client.Stylesheets
             var notoSansBold18 = resCache.NotoStack(variation: "Bold", size: 18);
             var notoSansBold20 = resCache.NotoStack(variation: "Bold", size: 20);
             var notoSansMono = resCache.NotoStack2ElectricBoogaloo("/EngineFonts/NotoSans/NotoSansMono-Regular.ttf", size: 12); // Goobstation - ZH text support
+            var terminus = resCache.GetFont("/Fonts/_Cataclysm14/Terminus/Terminus.ttf", size: 12); // Cataclysm14
+            var terminusBold = resCache.GetFont("/Fonts/_Cataclysm14/Terminus/TerminusBold.ttf", size: 12); // Cataclysm14
+            var terminusItalic = resCache.GetFont("/Fonts/_Cataclysm14/Terminus/TerminusItalic.ttf", size: 12); // Cataclysm14
+            var terminusBoldItalic = resCache.GetFont("/Fonts/_Cataclysm14/Terminus/TerminusBoldItalic.ttf", size: 12); // Cataclysm14
             var windowHeaderTex = resCache.GetTexture("/Textures/Interface/Nano/window_header.png");
             var windowHeader = new StyleBoxTexture
             {
@@ -356,7 +365,7 @@ namespace Content.Client.Stylesheets
             };
             topButtonSquare.SetPatchMargin(StyleBox.Margin.Horizontal, 0);
 
-            var chatChannelButtonTex = resCache.GetTexture("/Textures/Interface/Nano/rounded_button.svg.96dpi.png");
+            var chatChannelButtonTex = resCache.GetTexture("/Textures/_Cataclysm14/Interface/Nano/square_button.png"); // Cataclysm14
             var chatChannelButton = new StyleBoxTexture
             {
                 Texture = chatChannelButtonTex,
@@ -364,7 +373,7 @@ namespace Content.Client.Stylesheets
             chatChannelButton.SetPatchMargin(StyleBox.Margin.All, 5);
             chatChannelButton.SetPadding(StyleBox.Margin.All, 2);
 
-            var chatFilterButtonTex = resCache.GetTexture("/Textures/Interface/Nano/rounded_button_bordered.svg.96dpi.png");
+            var chatFilterButtonTex = resCache.GetTexture("/Textures/_Cataclysm14/Interface/Nano/square_button.png"); // Cataclysm14
             var chatFilterButton = new StyleBoxTexture
             {
                 Texture = chatFilterButtonTex,
@@ -926,6 +935,7 @@ namespace Content.Client.Stylesheets
                     new[]
                     {
                         new StyleProperty(LineEdit.StylePropertyStyleBox, new StyleBoxEmpty()),
+                        new StyleProperty("font", terminus), // Cataclysm14
                     }),
 
                 // Action searchbox lineedit
@@ -1765,6 +1775,28 @@ namespace Content.Client.Stylesheets
                     {
                         Modulate = ButtonColorGoodDefault
                     }),
+
+                // Cataclysm14 Begin
+                // FUCK FUUUUUUUUUUUCK FUCK STYLESHEETS FUUCCCCCCCCK
+
+                new StyleRule(new SelectorElement(typeof(OutputPanel), new[] {StyleClassChatOutputPanel}, null, null),
+                    new[]
+                    {
+                        new StyleProperty("font", terminus),
+                        new StyleProperty("test", "boo"),
+                    }),
+
+                Child().Parent(Element<OutputPanel>().Class(StyleClassChatOutputPanel))
+                    .Child(Element<VScrollBar>())
+                    .Prop(ScrollBar.StylePropertyGrabber, new StyleBoxFlat(new Color(0, 150, 180)) { ContentMarginLeftOverride = DefaultGrabberSize, ContentMarginTopOverride = DefaultGrabberSize })
+                    .Prop(ScrollBar.StylePseudoClassGrabbed, new StyleBoxFlat(new Color(0, 150, 180)) { ContentMarginLeftOverride = DefaultGrabberSize, ContentMarginTopOverride = DefaultGrabberSize })
+                    .Prop(ScrollBar.StylePseudoClassHover, new StyleBoxFlat(new Color(0, 150, 180)) { ContentMarginLeftOverride = DefaultGrabberSize, ContentMarginTopOverride = DefaultGrabberSize }),
+
+                Child().Parent(Element<BoxContainer>().Class(StyleClassBoxOfTerminusLabels))
+                    .Child(Element<Label>())
+                    .Prop("font", terminus),
+
+                // Cataclysm14 End
             }).ToList());
         }
     }
