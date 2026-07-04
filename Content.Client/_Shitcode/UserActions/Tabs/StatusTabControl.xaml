@@ -2,11 +2,16 @@
     xmlns="https://spacestation14.io"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:maths="clr-namespace:Robust.Shared.Maths;assembly=Robust.Shared.Maths"
+    xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
     xmlns:info="clr-namespace:Content.Client.Info"
     xmlns:controls="clr-namespace:Content.Client._Shitcode.UserActions.Tabs"
     xmlns:actions="clr-namespace:Content.Client.UserInterface.Systems.Actions.Widgets">
 
-    <PanelContainer StyleClasses="BackgroundDark">
+    <PanelContainer>
+        <PanelContainer.PanelOverride>
+            <graphics:StyleBoxFlat BackgroundColor="#000000" />
+        </PanelContainer.PanelOverride>
+
         <ScrollContainer VerticalExpand="True"
                          HorizontalExpand="True"
                          Margin="2"
@@ -16,12 +21,21 @@
                           Orientation="Vertical"
                           HorizontalExpand="True"
                           Margin="5">
-                <info:ServerInfo Name="ServerInfo" Access="Public" MinSize="0 30" VerticalExpand="false"
-                            Margin="0" MaxWidth="400" HorizontalAlignment="Left" Visible="False" />
-                <Label Name="StationTime" Access="Public" FontColorOverride="{x:Static maths:Color.LightGray}"
-                            Margin="0" HorizontalAlignment="Left" />
+                <info:ServerInfo Name="ServerInfo"
+                                 Access="Public"
+                                 MinSize="0 30"
+                                 VerticalExpand="false"
+                                 Margin="0"
+                                 MaxWidth="400"
+                                 HorizontalAlignment="Left"
+                                 Visible="False" />
+
+                <Label Name="StationTime"
+                       Access="Public"
+                       FontColorOverride="{x:Static maths:Color.White}"
+                       Margin="0"
+                       HorizontalAlignment="Left" />
             </BoxContainer>
         </ScrollContainer>
     </PanelContainer>
-
 </controls:StatusTabControl>
