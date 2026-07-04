@@ -11,6 +11,7 @@
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
     xmlns:inventory="clr-namespace:Content.Client.UserInterface.Systems.Inventory.Widgets"
     xmlns:targeting="clr-namespace:Content.Client._Shitmed.UserInterface.Systems.Targeting.Widgets"
+    xmlns:us="clr-namespace:Content.Client._Shitcode.UserActions"
     xmlns:cata="clr-namespace:Content.Client._Cataclysm14.UserInterface.Systems"
     Name="SeparatedChatHud"
     VerticalExpand="False"
@@ -37,6 +38,7 @@
             <!-- Cataclysm14 Changes Begin-->
             <BoxContainer Orientation="Vertical" HorizontalExpand="True" SeparationOverride="10" Margin="10">
                 <menuBar:GameTopMenuBar Name="TopBar" HorizontalExpand="True" Access="Protected" />
+                <us:UserActionsPanel Name="UserActionsPanel" Access="Public"/>
                 <cata:CataclysmSidebar/>
                 <chat:ChatBox VerticalExpand="True" HorizontalExpand="True" Name="Chat" Access="Protected" MinSize="0 0"/>
             </BoxContainer>
