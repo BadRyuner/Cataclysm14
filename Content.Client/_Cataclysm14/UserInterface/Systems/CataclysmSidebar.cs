@@ -1,5 +1,7 @@
 ﻿using System.Linq;
+using Content.Client._Shitmed.UserInterface.Systems.Targeting;
 using Content.Client.GameTicking.Managers;
+using Content.Shared._Shitmed.Targeting;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
 using Content.Shared.Mobs;
@@ -20,6 +22,7 @@ public sealed partial class CataclysmSidebar : UIWidget
     private readonly IPlayerManager _playerManager;
     private readonly IEntityManager _ent;
     private readonly IEntitySystemManager _entitySystem = default!;
+    private readonly TargetingUIController _targetingController;
     //private readonly ClientGameTicker _gameTicker;
 
     private readonly EntityQuery<DamageableComponent> _damageableQuery;
@@ -33,7 +36,13 @@ public sealed partial class CataclysmSidebar : UIWidget
     private ThirstComponent? _cachedThirst = null;
     private HungerComponent? _cachedHunger = null;
 
+    // todo: remove that shit and change only with events
     private TimeSpan _cachedTime = TimeSpan.Zero;
+    private FixedPoint2 _cachedHpLevel = FixedPoint2.New(9999);
+    private ThirstThreshold _cachedThirstThreshold = (ThirstThreshold)(1 << 7);
+    private HungerThreshold _cachedHungerThreshold = (HungerThreshold)(1 << 7);
+
+    private Dictionary<TargetBodyPart, (Label graph, Label labels, Button dollButton)> _bodyPartToLabel;
 
     private FixedPoint2 _deadThreshold = FixedPoint2.New(200);
 
@@ -44,6 +53,7 @@ public sealed partial class CataclysmSidebar : UIWidget
         _ent = IoCManager.Resolve<IEntityManager>();
         //_gameTiming = IoCManager.Resolve<GameTiming>(); crash bruh because too early
         _entitySystem = IoCManager.Resolve<IEntitySystemManager>();
+        _targetingController = UserInterfaceManager.GetUIController<TargetingUIController>();
 
         //_gameTicker = _entitySystem.GetEntitySystem<ClientGameTicker>(); crash bruh because too early
 
@@ -51,18 +61,64 @@ public sealed partial class CataclysmSidebar : UIWidget
         _mobThresholdsQuery = _ent.GetEntityQuery<MobThresholdsComponent>();
         _thirstQuery = _ent.GetEntityQuery<ThirstComponent>();
         _hungerQuery = _ent.GetEntityQuery<HungerComponent>();
+
+        // hardshitcode area
+        StatusHead.Text = "     ###\n     ###";
+        StatusTorso.Text = " ##### \n#######\n#######\n ##### ";
+        StatusGroin.Text = " ##### ";
+        StatusLArm.Text = "\n  #\n  #\n ##\n # ";
+        StatusRArm.Text = "\n#  \n#  \n## \n # ";
+        StatusLHand.Text = "#  \n\n\n\n"; // holy \n
+        StatusRHand.Text = "  #\n\n\n\n";
+        StatusLLeg.Text = "### \n### \n### \n ## \n ## ";
+        StatusRLeg.Text = "###\n###\n###\n## \n## ";
+        StatusLFoot.Text = "     # ";
+        StatusRFoot.Text = "#";
+
+        TargetDollHead.Text = StatusHead.Text;
+        TargetDollTorso.Text = StatusTorso.Text;
+        TargetDollGroin.Text = StatusGroin.Text;
+        TargetDollLArm.Text = StatusLArm.Text;
+        TargetDollRArm.Text = StatusRArm.Text;
+        TargetDollLHand.Text = StatusLHand.Text;
+        TargetDollRHand.Text = StatusRHand.Text;
+        TargetDollLLeg.Text = StatusLLeg.Text;
+        TargetDollRLeg.Text = StatusRLeg.Text;
+        TargetDollLFoot.Text = StatusLFoot.Text;
+        TargetDollRFoot.Text = StatusRFoot.Text;
+
+        _bodyPartToLabel = new()
+        {
+            { TargetBodyPart.Head, (StatusHead, StatusHeadLabel, TargetDollHead) },
+            { TargetBodyPart.Torso, (StatusTorso, StatusTorsoLabel, TargetDollTorso) },
+            { TargetBodyPart.Groin, (StatusGroin, StatusGroinLabel, TargetDollGroin) },
+            { TargetBodyPart.LeftArm, (StatusLArm, StatusLArmLabel, TargetDollLArm) },
+            { TargetBodyPart.LeftHand, (StatusLHand, StatusLHandLabel, TargetDollLHand) },
+            { TargetBodyPart.RightArm, (StatusRArm, StatusRArmLabel, TargetDollRArm) },
+            { TargetBodyPart.RightHand, (StatusRHand, StatusRHandLabel, TargetDollRHand) },
+            { TargetBodyPart.LeftLeg, (StatusLLeg, StatusLLegLabel, TargetDollLLeg) },
+            { TargetBodyPart.LeftFoot, (StatusLFoot, StatusLFootLabel, TargetDollLFoot) },
+            { TargetBodyPart.RightLeg, (StatusRLeg, StatusRLegLabel, TargetDollRLeg) },
+            { TargetBodyPart.RightFoot, (StatusRFoot, StatusRFootLabel, TargetDollRFoot) }
+        };
+
+        foreach (var (part , (_, _, bodyPartButton)) in _bodyPartToLabel)
+        {
+            bodyPartButton.MouseFilter = MouseFilterMode.Stop;
+            bodyPartButton.OnPressed += _ => SetActiveBodyPart(part);
+        }
     }
 
     protected override void FrameUpdate(FrameEventArgs args) // sorry, mr. FPS
     {
+        base.FrameUpdate(args);
+
         var u = _playerManager.LocalEntity;
         if (u == null)
         {
             HealthContainer.Visible = false;
             return;
         }
-
-        HealthContainer.Visible = true;
 
         //var stationTime = _gameTiming.CurTime.Subtract(_gameTicker.RoundStartTimeSpan); // from PdaMenu
         /*var stationTime = _gameTicker.RoundDuration();
@@ -92,23 +148,29 @@ public sealed partial class CataclysmSidebar : UIWidget
             HealthContainer.Visible = true;
 
             // 1.0f -> 100, so 9% = 9, 18% = 18, etc.
-            var (healthValue, healthColor) = (_cachedDamageable.Damage.GetTotal() / _deadThreshold).Value switch
-            {
-               < 9 => ("|||||", new Color(0, 110, 0)),
-               < 18 => ("||||\\", new Color(0, 110, 0)),
-               < 27 => ("||||.", new Color(0, 110, 0)), // dark green, thx paint
-               < 36 => ("|||\\.", Color.Green),
-               < 45 => ("|||..", Color.Green),
-               < 54 => ("||\\..", Color.Yellow),
-               < 63 => ("||...", Color.Yellow),
-               < 72 => ("|\\...", new Color(255, 150, 150)),
-               < 81 => ("|....", new Color(255, 150, 150)), // pink
-               < 90 => ("\\....", Color.Red),
-               >= 90 => (".....", Color.Red),
-            };
+            var hpLevel = (_cachedDamageable.Damage.GetTotal() / _deadThreshold).Value;
 
-            HealthLabel.Text = healthValue;
-            HealthLabel.Modulate = healthColor;
+            if (_cachedHpLevel != hpLevel)
+            {
+                _cachedHpLevel = hpLevel;
+                var (healthValue, healthColor) = hpLevel switch
+                {
+                    < 9 => ("|||||", new Color(0, 110, 0)),
+                    < 18 => ("||||\\", new Color(0, 110, 0)),
+                    < 27 => ("||||.", new Color(0, 110, 0)), // dark green, thx paint
+                    < 36 => ("|||\\.", Color.Green),
+                    < 45 => ("|||..", Color.Green),
+                    < 54 => ("||\\..", Color.Yellow),
+                    < 63 => ("||...", Color.Yellow),
+                    < 72 => ("|\\...", new Color(255, 150, 150)),
+                    < 81 => ("|....", new Color(255, 150, 150)), // pink
+                    < 90 => ("\\....", Color.Red),
+                    >= 90 => (".....", Color.Red),
+                };
+
+                HealthLabel.Text = healthValue;
+                HealthLabel.Modulate = healthColor;
+            }
         }
 
         if (_cachedThirst == null)
@@ -117,18 +179,23 @@ public sealed partial class CataclysmSidebar : UIWidget
         {
             ThirstContainer.Visible = true;
 
-            var (value, color) = _cachedThirst.CurrentThirstThreshold switch
+            var thirst = _cachedThirst.CurrentThirstThreshold;
+            if (_cachedThirstThreshold != thirst)
             {
-                ThirstThreshold.Dead => ("Dead", Color.Red),
-                ThirstThreshold.Parched => ("Parched", Color.Red),
-                ThirstThreshold.Thirsty => ("Thirsty", Color.Yellow),
-                ThirstThreshold.Okay => ("Okay", Color.Green),
-                ThirstThreshold.OverHydrated => ("Over hydrated", new Color(0, 110, 0)), // dark green
-                _ => ("Unknown", Color.Gray)
-            };
+                _cachedThirstThreshold = thirst;
+                var (value, color) = thirst switch
+                {
+                    ThirstThreshold.Dead => ("Dead", Color.Red),
+                    ThirstThreshold.Parched => ("Parched", Color.Red),
+                    ThirstThreshold.Thirsty => ("Thirsty", Color.Yellow),
+                    ThirstThreshold.Okay => ("Okay", Color.Green),
+                    ThirstThreshold.OverHydrated => ("Over hydrated", new Color(0, 110, 0)), // dark green
+                    _ => ("Unknown", Color.Gray)
+                };
 
-            ThirstLabel.Text = value;
-            ThirstLabel.Modulate = color;
+                ThirstLabel.Text = value;
+                ThirstLabel.Modulate = color;
+            }
         }
 
         if (_cachedHunger == null)
@@ -137,21 +204,66 @@ public sealed partial class CataclysmSidebar : UIWidget
         {
             HungerContainer.Visible = true;
 
-            var (value, color) = _cachedHunger.CurrentThreshold switch
+            var hunger = _cachedHunger.CurrentThreshold;
+            if (_cachedHungerThreshold != hunger)
             {
-                HungerThreshold.Dead => ("Dead", Color.Red),
-                HungerThreshold.Starving => ("Starving", Color.Red),
-                HungerThreshold.Peckish => ("Peckish", Color.Yellow),
-                HungerThreshold.Okay => ("Okay", Color.Green),
-                HungerThreshold.Overfed => ("Overfed", new Color(0, 110, 0)), // dark green
-                _ => ("Unknown", Color.Gray)
-            };
+                _cachedHungerThreshold = hunger;
+                var (value, color) = hunger switch
+                {
+                    HungerThreshold.Dead => ("Dead", Color.Red),
+                    HungerThreshold.Starving => ("Starving", Color.Red),
+                    HungerThreshold.Peckish => ("Peckish", Color.Yellow),
+                    HungerThreshold.Okay => ("Okay", Color.Green),
+                    HungerThreshold.Overfed => ("Overfed", new Color(0, 110, 0)), // dark green
+                    _ => ("Unknown", Color.Gray)
+                };
 
-            HungerLabel.Text = value;
-            HungerLabel.Modulate = color;
+                HungerLabel.Text = value;
+                HungerLabel.Modulate = color;
+            }
         }
-
-        base.FrameUpdate(args);
     }
+
+    public void SetVisibleStatusDoll(bool visible)
+    {
+        HealthStatusContainer.Visible = visible;
+        HealthStatusLabelsContainer.Visible = visible;
+    }
+
+    public void SetStatusDoll(Dictionary<TargetBodyPart, TargetIntegrity> state)
+    {
+        foreach (var (bodyPart, integrity) in state)
+        {
+            var (color, text) = integrity switch
+            {
+                TargetIntegrity.Healthy => (new Color(0, 110, 0), "|||||"),
+                TargetIntegrity.LightlyWounded => (Color.Green, "||||."),
+                TargetIntegrity.SomewhatWounded => (Color.Yellow, "|||.."),
+                TargetIntegrity.ModeratelyWounded => (Color.Yellow, "||..."),
+                TargetIntegrity.HeavilyWounded => (new Color(255, 150, 150), "|\\..."),
+                TargetIntegrity.CriticallyWounded => (new Color(255, 150, 150), "|...."),
+                TargetIntegrity.Severed => (Color.Red, "/....."),
+                TargetIntegrity.Dead => (Color.Red, "....."),
+                TargetIntegrity.Disabled => (Color.Gray, "....."),
+                _ => (Color.Black, "....."), // oops
+            };
+            var (graph, label, _) = _bodyPartToLabel[bodyPart];
+            graph.Modulate = color;
+            label.Modulate = color;
+            label.Text = text;
+        }
+    }
+
+    private void SetActiveBodyPart(TargetBodyPart bodyPart) => _targetingController.CycleTarget(bodyPart);
+
+    public void SetBodyPartsVisible(TargetBodyPart bodyPart)
+    {
+        foreach (var (part, (_, _, dollButton)) in _bodyPartToLabel)
+        {
+            dollButton.Pressed = part == bodyPart;
+        }
+    }
+
+    public void SetTargetDollVisible(bool visible) => TargetDollContainer.Visible = visible;
 }
 

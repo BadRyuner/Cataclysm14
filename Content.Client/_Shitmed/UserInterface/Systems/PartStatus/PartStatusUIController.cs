@@ -1,3 +1,4 @@
+using Content.Client._Cataclysm14.UserInterface.Systems;
 using Content.Client.Gameplay;
 using Content.Client._Shitmed.UserInterface.Systems.PartStatus.Widgets;
 using Content.Shared._Shitmed.Targeting;
@@ -18,6 +19,7 @@ public sealed class PartStatusUIController : UIController, IOnStateEntered<Gamep
     private SpriteSystem _spriteSystem = default!;
     private TargetingComponent? _targetingComponent;
     private PartStatusControl? PartStatusControl => UIManager.GetActiveUIWidgetOrNull<PartStatusControl>();
+    private CataclysmSidebar? CataclysmSidebar => UIManager.GetActiveUIWidgetOrNull<CataclysmSidebar>(); // Cataclysm14 Change
 
     public void OnSystemLoaded(TargetingSystem system)
     {
@@ -42,6 +44,15 @@ public sealed class PartStatusUIController : UIController, IOnStateEntered<Gamep
             if (_targetingComponent != null)
                 PartStatusControl.SetTextures(_targetingComponent.BodyStatus);
         }
+        // Cataclysm14 SideBar
+        if (CataclysmSidebar != null)
+        {
+            CataclysmSidebar.SetVisibleStatusDoll(_targetingComponent != null);
+
+            if (_targetingComponent != null)
+                CataclysmSidebar.SetStatusDoll(_targetingComponent.BodyStatus);
+        }
+        // Cataclysm14 SideBar
     }
 
     public void AddPartStatusControl(TargetingComponent component)
@@ -55,13 +66,26 @@ public sealed class PartStatusUIController : UIController, IOnStateEntered<Gamep
             if (_targetingComponent != null)
                 PartStatusControl.SetTextures(_targetingComponent.BodyStatus);
         }
+        // Cataclysm14 SideBar
+        if (CataclysmSidebar != null)
+        {
+            CataclysmSidebar.SetVisibleStatusDoll(_targetingComponent != null);
 
+            if (_targetingComponent != null)
+                CataclysmSidebar.SetStatusDoll(_targetingComponent.BodyStatus);
+        }
+        // Cataclysm14 SideBar
     }
 
     public void RemovePartStatusControl()
     {
         if (PartStatusControl != null)
             PartStatusControl.SetVisible(false);
+
+        // Cataclysm14 SideBar
+        if (CataclysmSidebar != null)
+            CataclysmSidebar.SetVisibleStatusDoll(_targetingComponent != null);
+        // Cataclysm14 SideBar
 
         _targetingComponent = null;
     }
@@ -70,6 +94,11 @@ public sealed class PartStatusUIController : UIController, IOnStateEntered<Gamep
     {
         if (PartStatusControl != null && _targetingComponent != null)
             PartStatusControl.SetTextures(_targetingComponent.BodyStatus);
+
+        // Cataclysm14 SideBar
+        if (CataclysmSidebar != null && _targetingComponent != null)
+            CataclysmSidebar.SetStatusDoll(_targetingComponent.BodyStatus);
+        // Cataclysm14 SideBar
     }
 
     public Texture GetTexture(SpriteSpecifier specifier)

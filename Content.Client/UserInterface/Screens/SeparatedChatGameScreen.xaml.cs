@@ -22,9 +22,9 @@ public sealed partial class SeparatedChatGameScreen : InGameScreen
         SetAnchorAndMarginPreset(TopLeftContainer, LayoutPreset.TopLeft, margin: 10);
         SetAnchorAndMarginPreset(Ghost, LayoutPreset.BottomWide, margin: 80);
         SetAnchorAndMarginPreset(Hotbar, LayoutPreset.BottomWide, margin: 5);
-        SetAnchorAndMarginPreset(Alerts, LayoutPreset.CenterRight, margin: 10);
-        SetAnchorAndMarginPreset(Targeting, LayoutPreset.BottomRight, margin: 5);
-        
+        // SetAnchorAndMarginPreset(Alerts, LayoutPreset.CenterRight, margin: 10); // Cataclysm14 nuh huh uh, moved to cataclysmsidebar
+        // SetAnchorAndMarginPreset(Targeting, LayoutPreset.BottomRight, margin: 5); // Cataclysm14 also moved to cataclysmsidebar
+
         ScreenContainer.OnSplitResizeFinished += () =>
             OnChatResized?.Invoke(new Vector2(ScreenContainer.SplitFraction, 0));
 

@@ -1,3 +1,4 @@
+using Content.Client._Cataclysm14.UserInterface.Systems;
 using Content.Client.Gameplay;
 using Content.Client._Shitmed.UserInterface.Systems.Targeting.Widgets;
 using Content.Shared._Shitmed.Targeting;
@@ -16,6 +17,7 @@ public sealed class TargetingUIController : UIController, IOnStateEntered<Gamepl
 
     private TargetingComponent? _targetingComponent;
     private TargetingControl? TargetingControl => UIManager.GetActiveUIWidgetOrNull<TargetingControl>();
+    private CataclysmSidebar? CataclysmSidebar => UIManager.GetActiveUIWidgetOrNull<CataclysmSidebar>();
 
     public void OnSystemLoaded(TargetingSystem system)
     {
@@ -33,33 +35,42 @@ public sealed class TargetingUIController : UIController, IOnStateEntered<Gamepl
 
     public void OnStateEntered(GameplayState state)
     {
-        if (TargetingControl == null)
+        if (TargetingControl == null && CataclysmSidebar == null) // Cataclysm14
             return;
 
-        TargetingControl.SetTargetDollVisible(_targetingComponent != null);
+        TargetingControl?.SetTargetDollVisible(_targetingComponent != null);
 
+        // cataclysm14 begin
         if (_targetingComponent != null)
-            TargetingControl.SetBodyPartsVisible(_targetingComponent.Target);
+        {
+            TargetingControl?.SetBodyPartsVisible(_targetingComponent.Target);
+            CataclysmSidebar?.SetBodyPartsVisible(_targetingComponent.Target);
+        }
+        // cataclysm14 end
     }
 
     public void AddTargetingControl(TargetingComponent component)
     {
         _targetingComponent = component;
 
-        if (TargetingControl != null)
+        // cataclysm14 begin
+        if (TargetingControl != null || CataclysmSidebar != null)
         {
-            TargetingControl.SetTargetDollVisible(_targetingComponent != null);
+            TargetingControl?.SetTargetDollVisible(_targetingComponent != null);
 
             if (_targetingComponent != null)
-                TargetingControl.SetBodyPartsVisible(_targetingComponent.Target);
+            {
+                TargetingControl?.SetBodyPartsVisible(_targetingComponent.Target);
+                CataclysmSidebar?.SetBodyPartsVisible(_targetingComponent.Target);
+            }
         }
-
+        // cataclysm14 end
     }
 
     public void RemoveTargetingControl()
     {
-        if (TargetingControl != null)
-            TargetingControl.SetTargetDollVisible(false);
+        TargetingControl?.SetTargetDollVisible(false); // Cataclysm14
+        CataclysmSidebar?.SetTargetDollVisible(false); // Cataclysm14
 
         _targetingComponent = null;
     }
@@ -68,7 +79,7 @@ public sealed class TargetingUIController : UIController, IOnStateEntered<Gamepl
     {
         if (_playerManager.LocalEntity is not { } user
             || _entManager.GetComponent<TargetingComponent>(user) is not { } targetingComponent
-            || TargetingControl == null)
+            || (TargetingControl == null && CataclysmSidebar == null)) // Cataclysm14
             return;
 
         var player = _entManager.GetNetEntity(user);
@@ -77,6 +88,7 @@ public sealed class TargetingUIController : UIController, IOnStateEntered<Gamepl
             var msg = new TargetChangeEvent(player, bodyPart);
             _net.SendSystemNetworkMessage(msg);
             TargetingControl?.SetBodyPartsVisible(bodyPart);
+            CataclysmSidebar?.SetBodyPartsVisible(bodyPart);
         }
     }
 }

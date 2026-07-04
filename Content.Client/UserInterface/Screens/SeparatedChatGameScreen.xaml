@@ -22,12 +22,12 @@
             <widgets:GhostGui Name="Ghost" Access="Protected" />
             <inventory:InventoryGui Name="Inventory" Access="Protected"/>
             <hotbar:HotbarGui Name="Hotbar" Access="Protected"/>
-            <targeting:TargetingControl Name="Targeting" Access="Protected"/> <!-- Shitmed Change -->
+            <!-- <targeting:TargetingControl Name="Targeting" Access="Protected"/> Shitmed Change | Cataclysm14 Change. Moved to CataclysmSidebar -->
             <BoxContainer Name="TopLeftContainer" Orientation="Vertical">
                 <actions:ActionsBar Name="Actions" Access="Protected" />
                 <BoxContainer Name="VoteMenu" Access="Public" Orientation="Vertical"/>
             </BoxContainer>
-            <alerts:AlertsUI Name="Alerts" Access="Protected" />
+            <!-- <alerts:AlertsUI Name="Alerts" Access="Protected" />  Cataclysm14 Change, moved to CataclysmSidebar-->
         </LayoutContainer>
         <PanelContainer Name="SeparatedChatPanel" MinWidth="300">
             <PanelContainer.PanelOverride>

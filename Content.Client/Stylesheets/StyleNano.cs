@@ -118,6 +118,7 @@ namespace Content.Client.Stylesheets
         // Cataclysm14 Begin
         public const string StyleClassChatOutputPanel = "StyleClassChatOutputPanel";
         public const string StyleClassBoxOfTerminusLabels = "StyleClassBoxOfTerminusLabels";
+        public const string StyleClassDollButton = "StyleClassDollButton";
         // Cataclysm14 End
 
         public static readonly Color PanelDark = Color.FromHex("#1E1E1E");
@@ -1795,6 +1796,34 @@ namespace Content.Client.Stylesheets
                 Child().Parent(Element<BoxContainer>().Class(StyleClassBoxOfTerminusLabels))
                     .Child(Element<Label>())
                     .Prop("font", terminus),
+
+                Element<Button>().Class(StyleClassDollButton)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
+                Element<Button>().Class(StyleClassDollButton).Pseudo(Button.StylePseudoClassDisabled)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
+                Element<Button>().Class(StyleClassDollButton).Pseudo(Button.StylePseudoClassHover)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
+                Element<Button>().Class(StyleClassDollButton).Pseudo(Button.StylePseudoClassNormal)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
+                Element<Button>().Class(StyleClassDollButton).Pseudo(Button.StylePseudoClassPressed)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
+
+                Child().Parent(Element<Button>().Class(StyleClassDollButton))
+                    .Child(Element<Label>())
+                    .Prop("font", terminus)
+                    .Prop(Control.StylePropertyModulateSelf, Color.White),
+                Child().Parent(Element<Button>().Class(StyleClassDollButton).Pseudo(Button.StylePseudoClassNormal))
+                    .Child(Element<Label>())
+                    .Prop("font", terminus)
+                    .Prop(Control.StylePropertyModulateSelf, Color.White),
+                Child().Parent(Element<Button>().Class(StyleClassDollButton).Pseudo(Button.StylePseudoClassHover))
+                    .Child(Element<Label>())
+                    .Prop("font", terminus)
+                    .Prop(Control.StylePropertyModulateSelf, new Color(0, 150, 180)),
+                Child().Parent(Element<Button>().Class(StyleClassDollButton).Pseudo(Button.StylePseudoClassPressed))
+                    .Child(Element<Label>())
+                    .Prop("font", terminus)
+                    .Prop(Control.StylePropertyModulateSelf, new Color(0, 150, 180)),
 
                 // Cataclysm14 End
             }).ToList());
