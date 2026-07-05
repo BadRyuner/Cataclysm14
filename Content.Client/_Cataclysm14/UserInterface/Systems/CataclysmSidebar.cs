@@ -1,7 +1,10 @@
 ﻿using System.Linq;
+using Content.Client._Cataclysm14.UserInterface.Controls;
 using Content.Client._Shitmed.UserInterface.Systems.Targeting;
+using Content.Client.Alerts;
 using Content.Client.GameTicking.Managers;
 using Content.Shared._Shitmed.Targeting;
+using Content.Shared.Alert;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
 using Content.Shared.Mobs;
@@ -12,6 +15,8 @@ using Robust.Client.Player;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
+using Robust.Shared.Input;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
 namespace Content.Client._Cataclysm14.UserInterface.Systems;
@@ -43,8 +48,11 @@ public sealed partial class CataclysmSidebar : UIWidget
     private HungerThreshold _cachedHungerThreshold = (HungerThreshold)(1 << 7);
 
     private Dictionary<TargetBodyPart, (Label graph, Label labels, Button dollButton)> _bodyPartToLabel;
+    private readonly Dictionary<AlertKey, CataAlertControl> _alertControls = new();
 
     private FixedPoint2 _deadThreshold = FixedPoint2.New(200);
+
+    public event EventHandler<ProtoId<AlertPrototype>>? AlertPressed;
 
     public CataclysmSidebar()
     {
@@ -139,13 +147,24 @@ public sealed partial class CataclysmSidebar : UIWidget
             var dead = _cachedMobThresholds?.Thresholds.FirstOrDefault(t => t.Value == MobState.Dead).Key;
             if (dead is {} deady) // fck c# why i cant just == null
                 _deadThreshold = deady;
+
+            Root?.InvalidateMeasure(); // queue layout fix
         }
 
         if (_cachedDamageable == null || _cachedMobThresholds == null)
-            HealthContainer.Visible = false;
+        {
+            if (HealthContainer.Visible)
+            {
+                HealthContainer.Visible = false;
+            }
+            // else skip render
+        }
         else
         {
-            HealthContainer.Visible = true;
+            if (!HealthContainer.Visible)
+            {
+                HealthContainer.Visible = true;
+            }
 
             // 1.0f -> 100, so 9% = 9, 18% = 18, etc.
             var hpLevel = (_cachedDamageable.Damage.GetTotal() / _deadThreshold).Value;
@@ -174,10 +193,18 @@ public sealed partial class CataclysmSidebar : UIWidget
         }
 
         if (_cachedThirst == null)
-            ThirstContainer.Visible = false;
+        {
+            if (ThirstContainer.Visible)
+            {
+                ThirstContainer.Visible = false;
+            }
+        }
         else
         {
-            ThirstContainer.Visible = true;
+            if (!ThirstContainer.Visible)
+            {
+                ThirstContainer.Visible = true;
+            }
 
             var thirst = _cachedThirst.CurrentThirstThreshold;
             if (_cachedThirstThreshold != thirst)
@@ -199,10 +226,18 @@ public sealed partial class CataclysmSidebar : UIWidget
         }
 
         if (_cachedHunger == null)
-            HungerContainer.Visible = false;
+        {
+            if (HungerContainer.Visible)
+            {
+                HungerContainer.Visible = false;
+            }
+        }
         else
         {
-            HungerContainer.Visible = true;
+            if (!HungerContainer.Visible)
+            {
+                HungerContainer.Visible = true;
+            }
 
             var hunger = _cachedHunger.CurrentThreshold;
             if (_cachedHungerThreshold != hunger)
@@ -224,10 +259,27 @@ public sealed partial class CataclysmSidebar : UIWidget
         }
     }
 
+    private void CheckEmptyContainers()
+    {
+        if (!HealthStatusContainer.Visible && !TargetDollContainer.Visible)
+        {
+            HealthAndDollContainer.Visible = false;
+            HealthLabelName.Text = "General Health     : ";
+        }
+        else
+        {
+            HealthAndDollContainer.Visible = true;
+            HealthLabelName.Text = "General Health      : ";
+        }
+
+        Root?.InvalidateMeasure();
+    }
+
     public void SetVisibleStatusDoll(bool visible)
     {
         HealthStatusContainer.Visible = visible;
         HealthStatusLabelsContainer.Visible = visible;
+        CheckEmptyContainers();
     }
 
     public void SetStatusDoll(Dictionary<TargetBodyPart, TargetIntegrity> state)
@@ -264,6 +316,151 @@ public sealed partial class CataclysmSidebar : UIWidget
         }
     }
 
-    public void SetTargetDollVisible(bool visible) => TargetDollContainer.Visible = visible;
+    public void SetTargetDollVisible(bool visible)
+    {
+        TargetDollContainer.Visible = visible;
+        TargetDollLabelContainer.Visible = visible;
+        CheckEmptyContainers();
+    }
+
+    private CataAlertControl CreateAlertControl(AlertPrototype alert, AlertState alertState)
+    {
+        (TimeSpan, TimeSpan)? cooldown = null;
+        if (alertState.ShowCooldown)
+            cooldown = alertState.Cooldown;
+
+        var alertControl = new CataAlertControl(alert, alertState.Severity)
+        {
+            Cooldown = cooldown
+        };
+
+        alertControl.OnPressed += AlertControlPressed;
+        return alertControl;
+    }
+
+    private void AlertControlPressed(BaseButton.ButtonEventArgs args)
+    {
+        if (args.Button is not CataAlertControl control)
+            return;
+
+        if (args.Event.Function != EngineKeyFunctions.UIClick)
+            return;
+
+        AlertPressed?.Invoke(this, control.Alert.ID);
+    }
+
+    public void ClearAllAlerts()
+    {
+        foreach (var alertControl in _alertControls.Values)
+        {
+            alertControl.OnPressed -= AlertControlPressed;
+            alertControl.Dispose();
+        }
+
+        _alertControls.Clear();
+    }
+
+    // from AlertsUI.xaml.cs
+    public void SyncAlert(ClientAlertsSystem alertsSystem, AlertOrderPrototype? alertOrderPrototype, IReadOnlyDictionary<AlertKey, AlertState> alertStates)
+    {
+        // remove any controls with keys no longer present
+        if (SyncRemoveControls(alertStates))
+            return;
+
+        // now we know that alertControls contains alerts that should still exist but
+        // may need to updated,
+        // also there may be some new alerts we need to show.
+        // further, we need to ensure they are ordered w.r.t their configured order
+        SyncUpdateControls(alertsSystem, alertOrderPrototype, alertStates);
+    }
+
+    private bool SyncRemoveControls(IReadOnlyDictionary<AlertKey, AlertState> alertStates)
+    {
+        var toRemove = new List<AlertKey>();
+        foreach (var existingKey in _alertControls.Keys)
+        {
+            if (!alertStates.ContainsKey(existingKey))
+                toRemove.Add(existingKey);
+        }
+
+        foreach (var alertKeyToRemove in toRemove)
+        {
+            _alertControls.Remove(alertKeyToRemove, out var control);
+            if (control == null)
+                return true;
+            AlertsContainer.Children.Remove(control);
+        }
+
+        return false;
+    }
+
+    private void SyncUpdateControls(AlertsSystem alertsSystem, AlertOrderPrototype? alertOrderPrototype,
+        IReadOnlyDictionary<AlertKey, AlertState> alertStates)
+    {
+        foreach (var (alertKey, alertState) in alertStates)
+        {
+            if (!alertKey.AlertType.HasValue)
+            {
+                //Logger.WarningS("alert", "found alertkey without alerttype," +
+                //                         " alert keys should never be stored without an alerttype set: {0}", alertKey);
+                continue;
+            }
+
+            var alertType = alertKey.AlertType.Value;
+            if (!alertsSystem.TryGet(alertType, out var newAlert))
+            {
+                //Logger.ErrorS("alert", "Unrecognized alertType {0}", alertType);
+                continue;
+            }
+
+            if (_alertControls.TryGetValue(newAlert.AlertKey, out var existingAlertControl) &&
+                existingAlertControl.Alert.ID == newAlert.ID)
+            {
+                // key is the same, simply update the existing control severity / cooldown
+                existingAlertControl.SetSeverity(alertState.Severity);
+                if (alertState.ShowCooldown)
+                    existingAlertControl.Cooldown = alertState.Cooldown;
+            }
+            else
+            {
+                if (existingAlertControl != null)
+                    AlertsContainer.Children.Remove(existingAlertControl);
+
+                if (!newAlert.VisibleInCataclysmSideBar)
+                    continue;
+
+                // this is a new alert + alert key or just a different alert with the same
+                // key, create the control and add it in the appropriate order
+                var newAlertControl = CreateAlertControl(newAlert, alertState);
+
+                //TODO: Can the presenter sort the states before giving it to us?
+                if (alertOrderPrototype != null)
+                {
+                    var added = false;
+                    foreach (var alertControl in AlertsContainer.Children)
+                    {
+                        if (alertOrderPrototype.Compare(newAlert, ((CataAlertControl) alertControl).Alert) >= 0)
+                            continue;
+
+                        var idx = alertControl.GetPositionInParent();
+                        AlertsContainer.Children.Add(newAlertControl);
+                        newAlertControl.SetPositionInParent(idx);
+                        added = true;
+                        break;
+                    }
+
+                    if (!added)
+                        AlertsContainer.Children.Add(newAlertControl);
+                }
+                else
+                {
+                    AlertsContainer.Children.Add(newAlertControl);
+                }
+
+                _alertControls[newAlert.AlertKey] = newAlertControl;
+            }
+        }
+    }
+    // end AlertsUI.xaml.cs ctrl+c ctrl+v
 }
 

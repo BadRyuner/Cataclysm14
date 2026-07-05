@@ -84,7 +84,7 @@ public sealed class PartStatusUIController : UIController, IOnStateEntered<Gamep
 
         // Cataclysm14 SideBar
         if (CataclysmSidebar != null)
-            CataclysmSidebar.SetVisibleStatusDoll(_targetingComponent != null);
+            CataclysmSidebar.SetVisibleStatusDoll(false);
         // Cataclysm14 SideBar
 
         _targetingComponent = null;

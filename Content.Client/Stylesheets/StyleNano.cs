@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Numerics;
+using Content.Client._Cataclysm14.UserInterface.Controls;
 using Content.Client.ContextMenu.UI;
 using Content.Client.Examine;
 using Content.Client.PDA;
@@ -119,6 +120,7 @@ namespace Content.Client.Stylesheets
         public const string StyleClassChatOutputPanel = "StyleClassChatOutputPanel";
         public const string StyleClassBoxOfTerminusLabels = "StyleClassBoxOfTerminusLabels";
         public const string StyleClassDollButton = "StyleClassDollButton";
+        public const string StyleClassAlertButton = "StyleClassAlertButton";
         // Cataclysm14 End
 
         public static readonly Color PanelDark = Color.FromHex("#1E1E1E");
@@ -1822,6 +1824,34 @@ namespace Content.Client.Stylesheets
                     .Prop(Control.StylePropertyModulateSelf, new Color(0, 150, 180)),
                 Child().Parent(Element<Button>().Class(StyleClassDollButton).Pseudo(Button.StylePseudoClassPressed))
                     .Child(Element<Label>())
+                    .Prop("font", terminus)
+                    .Prop(Control.StylePropertyModulateSelf, new Color(0, 150, 180)),
+
+                Element<CataAlertControl>().Class(StyleClassAlertButton)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
+                Element<CataAlertControl>().Class(StyleClassAlertButton).Pseudo(ContainerButton.StylePseudoClassDisabled)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
+                Element<CataAlertControl>().Class(StyleClassAlertButton).Pseudo(ContainerButton.StylePseudoClassHover)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
+                Element<CataAlertControl>().Class(StyleClassAlertButton).Pseudo(ContainerButton.StylePseudoClassNormal)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
+                Element<CataAlertControl>().Class(StyleClassAlertButton).Pseudo(ContainerButton.StylePseudoClassPressed)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
+
+                Child().Parent(Element<CataAlertControl>().Class(StyleClassAlertButton))
+                    .Child(Element<RichTextLabel>())
+                    .Prop("font", terminus)
+                    .Prop(Control.StylePropertyModulateSelf, Color.White),
+                Child().Parent(Element<CataAlertControl>().Class(StyleClassAlertButton).Pseudo(ContainerButton.StylePseudoClassNormal))
+                    .Child(Element<RichTextLabel>())
+                    .Prop("font", terminus)
+                    .Prop(Control.StylePropertyModulateSelf, Color.White),
+                Child().Parent(Element<CataAlertControl>().Class(StyleClassAlertButton).Pseudo(ContainerButton.StylePseudoClassHover))
+                    .Child(Element<RichTextLabel>())
+                    .Prop("font", terminus)
+                    .Prop(Control.StylePropertyModulateSelf, new Color(0, 150, 180)),
+                Child().Parent(Element<CataAlertControl>().Class(StyleClassAlertButton).Pseudo(ContainerButton.StylePseudoClassPressed))
+                    .Child(Element<RichTextLabel>())
                     .Prop("font", terminus)
                     .Prop(Control.StylePropertyModulateSelf, new Color(0, 150, 180)),
 

@@ -39,6 +39,7 @@ public sealed class TargetingUIController : UIController, IOnStateEntered<Gamepl
             return;
 
         TargetingControl?.SetTargetDollVisible(_targetingComponent != null);
+        CataclysmSidebar?.SetTargetDollVisible(_targetingComponent != null); // Cataclysm14
 
         // cataclysm14 begin
         if (_targetingComponent != null)
@@ -57,6 +58,7 @@ public sealed class TargetingUIController : UIController, IOnStateEntered<Gamepl
         if (TargetingControl != null || CataclysmSidebar != null)
         {
             TargetingControl?.SetTargetDollVisible(_targetingComponent != null);
+            CataclysmSidebar?.SetTargetDollVisible(_targetingComponent != null);
 
             if (_targetingComponent != null)
             {
@@ -88,7 +90,7 @@ public sealed class TargetingUIController : UIController, IOnStateEntered<Gamepl
             var msg = new TargetChangeEvent(player, bodyPart);
             _net.SendSystemNetworkMessage(msg);
             TargetingControl?.SetBodyPartsVisible(bodyPart);
-            CataclysmSidebar?.SetBodyPartsVisible(bodyPart);
+            CataclysmSidebar?.SetBodyPartsVisible(bodyPart); // Cataclysm14
         }
     }
 }

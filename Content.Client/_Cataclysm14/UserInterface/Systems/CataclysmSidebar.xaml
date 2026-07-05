@@ -11,7 +11,7 @@
 
     <BoxContainer Name="ContainerOfContainers" HorizontalExpand="true" VerticalExpand="true" Orientation="Vertical" SeparationOverride="0">
         <!-- combined -->
-        <BoxContainer Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top"> <!-- mmm, div div div div -->
+        <BoxContainer Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Visible="False" > <!-- Remove visible -->
             <BoxContainer Orientation="Vertical">
                 <!-- Date -->
                 <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
@@ -49,13 +49,17 @@
             </BoxContainer>
         </BoxContainer>
         <!-- Entity Health -->
-        <BoxContainer Name="HealthContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
-            <Label Text="General Health      : "/>
-            <Label Name="HealthLabel" Text="....."/>
-            <Label Text="  Target Doll"/> <!-- Weird -->
+        <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" HorizontalAlignment="Stretch" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <BoxContainer Name="HealthContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" HorizontalAlignment="Left" StyleClasses="StyleClassBoxOfTerminusLabels">
+                <Label Name="HealthLabelName" Text="General Health      : "/>
+                <Label Name="HealthLabel" Text="....."/>
+            </BoxContainer>
+            <BoxContainer Name="TargetDollLabelContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" HorizontalAlignment="Right" StyleClasses="StyleClassBoxOfTerminusLabels">
+                <Label Text="Target  Doll" HorizontalAlignment="Right"/> <!-- Weird -->
+            </BoxContainer>
         </BoxContainer>
         <!-- super puper duper container -->
-        <BoxContainer Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalExpand="true" VerticalExpand="true" StyleClasses="StyleClassBoxOfTerminusLabels">
+        <BoxContainer Name="HealthAndDollContainer" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalExpand="true" VerticalExpand="true" StyleClasses="StyleClassBoxOfTerminusLabels">
             <!-- Health doll -->
             <BoxContainer Name="HealthStatusContainer" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
                 <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
@@ -132,7 +136,7 @@
             <!-- Another Shitty separator -->
             <Label Text=" "/>
             <!-- Target doll -->
-            <BoxContainer Name="TargetDollContainer" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <BoxContainer Name="TargetDollContainer" Orientation="Vertical" HorizontalAlignment="Right" HorizontalExpand="true" VerticalAlignment="Top">
                 <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
                     <Button Name="TargetDollHead" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0" />
                 </BoxContainer>
@@ -155,6 +159,12 @@
                     <Button Name="TargetDollRFoot" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
                 </BoxContainer>
             </BoxContainer>
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" VerticalExpand="true" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Alerts: " VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <WrapContainer Name="AlertsContainer" VerticalAlignment="Top">
+                <!-- Alerts -->
+            </WrapContainer>
         </BoxContainer>
         <BoxContainer Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
             <!-- Hunger -->

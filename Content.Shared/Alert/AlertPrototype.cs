@@ -82,6 +82,11 @@ public sealed partial class AlertPrototype : IPrototype
     [DataField]
     public BaseAlertEvent? ClickEvent;
 
+    // Cataclysm14 Begin
+    [DataField]
+    public bool VisibleInCataclysmSideBar = true;
+    // Cataclysm14 End
+
     /// <param name="severity">severity level, if supported by this alert</param>
     /// <returns>the icon path to the texture for the provided severity level</returns>
     public SpriteSpecifier GetIcon(short? severity = null)

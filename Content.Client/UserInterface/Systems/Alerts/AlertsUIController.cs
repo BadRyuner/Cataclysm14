@@ -1,3 +1,4 @@
+using Content.Client._Cataclysm14.UserInterface.Systems;
 using Content.Client.Alerts;
 using Content.Client.Gameplay;
 using Content.Client.UserInterface.Systems.Alerts.Widgets;
@@ -18,6 +19,7 @@ public sealed class AlertsUIController : UIController, IOnStateEntered<GameplayS
     [UISystemDependency] private readonly ClientAlertsSystem? _alertsSystem = default;
 
     private AlertsUI? UI => UIManager.GetActiveUIWidgetOrNull<AlertsUI>();
+    private CataclysmSidebar? CataclysmSidebar => UIManager.GetActiveUIWidgetOrNull<CataclysmSidebar>(); // Cataclysm14
 
     public override void Initialize()
     {
@@ -33,6 +35,8 @@ public sealed class AlertsUIController : UIController, IOnStateEntered<GameplayS
         var widget = UI;
         if (widget != null)
             widget.AlertPressed -= OnAlertPressed;
+
+        CataclysmSidebar?.AlertPressed -= OnAlertPressed; // Cataclysm14
     }
 
     private void OnScreenLoad()
@@ -40,6 +44,8 @@ public sealed class AlertsUIController : UIController, IOnStateEntered<GameplayS
         var widget = UI;
         if (widget != null)
             widget.AlertPressed += OnAlertPressed;
+
+        CataclysmSidebar?.AlertPressed += OnAlertPressed; // Cataclysm14
 
         SyncAlerts();
     }
@@ -52,6 +58,7 @@ public sealed class AlertsUIController : UIController, IOnStateEntered<GameplayS
     private void SystemOnClearAlerts(object? sender, EventArgs e)
     {
         UI?.ClearAllControls();
+        CataclysmSidebar?.ClearAllAlerts(); // Cataclysm14
     }
 
     private void SystemOnSyncAlerts(object? sender, IReadOnlyDictionary<AlertKey, AlertState> e)
@@ -59,6 +66,7 @@ public sealed class AlertsUIController : UIController, IOnStateEntered<GameplayS
         if (sender is ClientAlertsSystem system)
         {
             UI?.SyncControls(system, system.AlertOrder, e);
+            CataclysmSidebar?.SyncAlert(system, system.AlertOrder, e); // Cataclysm14
         }
     }
 
