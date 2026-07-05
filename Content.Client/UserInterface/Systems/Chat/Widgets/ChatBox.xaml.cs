@@ -153,7 +153,7 @@ public partial class ChatBox : UIWidget
 
     public void AddLine(string message, Color color, int repeat = 0) // WD EDIT
     {
-        var formatted = new FormattedMessage(4); // WD EDIT // specifying size beforehand smells like a useless microoptimisation, but i'll give them the benefit of doubt
+        var formatted = new FormattedMessage(6); // WD EDIT // specifying size beforehand smells like a useless microoptimisation, but i'll give them the benefit of doubt
         formatted.PushColor(color);
         formatted.AddMarkupOrThrow(message);
         formatted.Pop();

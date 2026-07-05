@@ -1,18 +1,18 @@
 - type: font
   id: Default
-  path: /Fonts/NotoSans/NotoSans-Regular.ttf
+  path: /Fonts/_Cataclysm14/Terminus/Terminus.ttf # Cataclysm14 Terminusfication
 
 - type: font
   id: DefaultItalic
-  path: /Fonts/NotoSans/NotoSans-Italic.ttf
+  path: /Fonts/_Cataclysm14/Terminus/TerminusItalic.ttf # Cataclysm14 Terminusfication
 
 - type: font
   id: DefaultBold
-  path: /Fonts/NotoSans/NotoSans-Bold.ttf
+  path: /Fonts/_Cataclysm14/Terminus/TerminusBold.ttf # Cataclysm14 Terminusfication
 
 - type: font
   id: DefaultBoldItalic
-  path: /Fonts/NotoSans/NotoSans-BoldItalic.ttf
+  path: /Fonts/_Cataclysm14/Terminus/TerminusBoldItalic.ttf # Cataclysm14 Terminusfication
 
 - type: font
   id: NotoSansDisplay
@@ -50,3 +50,20 @@
 - type: font
   id: Helvetica
   path: /Fonts/Helvetica/Helvetica-Bold.ttf
+
+# Cataclysm14
+- type: font
+  id: Terminus
+  path: /Fonts/_Cataclysm14/Terminus/Terminus.ttf
+
+- type: font
+  id: TerminusItalic
+  path: /Fonts/_Cataclysm14/Terminus/TerminusItalic.ttf
+
+- type: font
+  id: TerminusBold
+  path: /Fonts/_Cataclysm14/Terminus/TerminusBold.ttf
+
+- type: font
+  id: TerminusBoldItalic
+  path: /Fonts/_Cataclysm14/Terminus/TerminusBoldItalic.ttf

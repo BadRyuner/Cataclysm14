@@ -204,6 +204,7 @@
   description: alerts-health-desc
   minSeverity: 0
   maxSeverity: 4
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: BorgHealth
@@ -223,6 +224,7 @@
   description: alerts-health-desc
   minSeverity: 0
   maxSeverity: 4
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: BorgCrit
@@ -314,6 +316,7 @@
     state: peckish
   name: alerts-hunger-name
   description: alerts-hunger-desc
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: Stamina
@@ -337,6 +340,7 @@
   description: alerts-stamina-desc
   minSeverity: 0
   maxSeverity: 6
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: Starving
@@ -346,6 +350,7 @@
     state: starving
   name: alerts-starving-name
   description: alerts-starving-desc
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: Thirsty
@@ -355,6 +360,7 @@
     state: thirsty
   name: alerts-thirsty-name
   description: alerts-thirsty-desc
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: Parched
@@ -364,6 +370,7 @@
     state: parched
   name: alerts-parched-name
   description: alerts-parched-desc
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: Muted

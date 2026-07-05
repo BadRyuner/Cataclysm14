@@ -1,0 +1,185 @@
+﻿<controls:CataclysmSidebar
+    xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client._Cataclysm14.UserInterface.Systems"
+    HorizontalExpand="true"
+    VerticalExpand="false"
+    SeparationOverride="0"
+    Orientation="Vertical"
+    HorizontalAlignment="Stretch"
+    VerticalAlignment="Top"
+    >
+
+    <BoxContainer Name="ContainerOfContainers" HorizontalExpand="true" VerticalExpand="true" Orientation="Vertical" SeparationOverride="0">
+        <!-- combined -->
+        <BoxContainer Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Visible="False" > <!-- Remove visible -->
+            <BoxContainer Orientation="Vertical">
+                <!-- Date -->
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="Date: "/>
+                    <Label Name="DateLabel" Text="TODO"/>
+                </BoxContainer>
+                <!-- Time -->
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="Time: "/>
+                    <Label Name="TimeLabel" Text="TODO"/>
+                </BoxContainer>
+                <!-- Moon -->
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="Moon: "/>
+                    <Label Name="MoonLabel" Text="TODO"/>
+                </BoxContainer>
+            </BoxContainer>
+            <Label Text="     "/> <!-- DON'T TOUCH -->
+            <BoxContainer Orientation="Vertical">
+                <!-- Weather -->
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="Weather    : "/>
+                    <Label Name="WeatherLabel" Text="TODO"/>
+                </BoxContainer>
+                <!-- Lighting level -->
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="Lighting   : "/>
+                    <Label Name="LightingLabel" Text="TODO"/>
+                </BoxContainer>
+                <!-- Temperature | TODO: Move temperature from server-side to shared-->
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="Temperature: "/>
+                    <Label Name="TemperatureLabel" Text="TODO"/>
+                </BoxContainer>
+            </BoxContainer>
+        </BoxContainer>
+        <!-- Entity Health -->
+        <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" HorizontalAlignment="Stretch" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <BoxContainer Name="HealthContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" HorizontalAlignment="Left" StyleClasses="StyleClassBoxOfTerminusLabels">
+                <Label Name="HealthLabelName" Text="General Health      : "/>
+                <Label Name="HealthLabel" Text="....."/>
+            </BoxContainer>
+            <BoxContainer Name="TargetDollLabelContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" HorizontalAlignment="Right" StyleClasses="StyleClassBoxOfTerminusLabels">
+                <Label Text="Target  Doll" HorizontalAlignment="Right"/> <!-- Weird -->
+            </BoxContainer>
+        </BoxContainer>
+        <!-- super puper duper container -->
+        <BoxContainer Name="HealthAndDollContainer" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalExpand="true" VerticalExpand="true" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <!-- Health doll -->
+            <BoxContainer Name="HealthStatusContainer" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Name="StatusHead"/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Name="StatusLArm"/>
+                    <BoxContainer HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical" StyleClasses="StyleClassBoxOfTerminusLabels">
+                        <Label Name="StatusTorso"/>
+                        <Label Name="StatusGroin"/>
+                    </BoxContainer>
+                    <Label Name="StatusRArm"/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Name="StatusLHand"/>
+                    <Label Name="StatusLLeg"/>
+                    <Label Name="StatusRLeg"/>
+                    <Label Name="StatusRHand"/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Name="StatusLFoot"/>
+                    <Label Name="StatusRFoot"/>
+                </BoxContainer>
+            </BoxContainer>
+            <!-- Shitty separator -->
+            <Label Text=" "/>
+            <!-- Labels for health -->
+            <BoxContainer Name="HealthStatusLabelsContainer" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalExpand="true">
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="HEAD  : "/>
+                    <Label Name="StatusHeadLabel" Text="....."/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="TORSO : "/>
+                    <Label Name="StatusTorsoLabel" Text="....."/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="GROIN : "/>
+                    <Label Name="StatusGroinLabel" Text="....."/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="L.ARM : "/>
+                    <Label Name="StatusLArmLabel" Text="....."/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="L.HAND: "/>
+                    <Label Name="StatusLHandLabel" Text="....."/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="R.ARM : "/>
+                    <Label Name="StatusRArmLabel" Text="....."/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="R.HAND: "/>
+                    <Label Name="StatusRHandLabel" Text="....."/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="L.LEG : "/>
+                    <Label Name="StatusLLegLabel" Text="....."/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="L.FOOT: "/>
+                    <Label Name="StatusLFootLabel" Text="....."/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="R.LEG : "/>
+                    <Label Name="StatusRLegLabel" Text="....."/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Label Text="R.FOOT: "/>
+                    <Label Name="StatusRFootLabel" Text="....."/>
+                </BoxContainer>
+            </BoxContainer>
+            <!-- Another Shitty separator -->
+            <Label Text=" "/>
+            <!-- Target doll -->
+            <BoxContainer Name="TargetDollContainer" Orientation="Vertical" HorizontalAlignment="Right" HorizontalExpand="true" VerticalAlignment="Top">
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Button Name="TargetDollHead" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0" />
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Button Name="TargetDollLArm" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
+                    <BoxContainer HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical" StyleClasses="StyleClassBoxOfTerminusLabels">
+                        <Button Name="TargetDollTorso" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
+                        <Button Name="TargetDollGroin" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
+                    </BoxContainer>
+                    <Button Name="TargetDollRArm" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Button Name="TargetDollLHand" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
+                    <Button Name="TargetDollLLeg" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
+                    <Button Name="TargetDollRLeg" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
+                    <Button Name="TargetDollRHand" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
+                </BoxContainer>
+                <BoxContainer HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                    <Button Name="TargetDollLFoot" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
+                    <Button Name="TargetDollRFoot" StyleClasses="StyleClassDollButton" ToggleMode="true" Margin="0"/>
+                </BoxContainer>
+            </BoxContainer>
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" VerticalExpand="true" StyleClasses="StyleClassBoxOfTerminusLabels">
+            <Label Text="Alerts: " VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <WrapContainer Name="AlertsContainer" VerticalAlignment="Top">
+                <!-- Alerts -->
+            </WrapContainer>
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <!-- Hunger -->
+            <BoxContainer Name="HungerContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                <Label Text="Hunger: "/>
+                <Label Name="HungerLabel" Text="poo"/>
+            </BoxContainer>
+            <Label Text="  "/>
+            <!-- Thirst -->
+            <BoxContainer Name="ThirstContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                <Label Text="Thirst: "/>
+                <Label Name="ThirstLabel" Text="pee"/>
+            </BoxContainer>
+        </BoxContainer>
+
+    </BoxContainer>
+
+</controls:CataclysmSidebar>
