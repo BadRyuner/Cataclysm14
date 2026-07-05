@@ -316,6 +316,7 @@
     state: peckish
   name: alerts-hunger-name
   description: alerts-hunger-desc
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: Stamina
@@ -349,6 +350,7 @@
     state: starving
   name: alerts-starving-name
   description: alerts-starving-desc
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: Thirsty
@@ -358,6 +360,7 @@
     state: thirsty
   name: alerts-thirsty-name
   description: alerts-thirsty-desc
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: Parched
@@ -367,6 +370,7 @@
     state: parched
   name: alerts-parched-name
   description: alerts-parched-desc
+  visibleInCataclysmSideBar: false # Cataclysm14
 
 - type: alert
   id: Muted
