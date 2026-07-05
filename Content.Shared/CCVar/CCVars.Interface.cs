@@ -19,8 +19,8 @@ public sealed partial class CCVars
     /// <summary>
     /// The layout style of the UI
     /// </summary>
-    public static readonly CVarDef<string> UILayout =
-        CVarDef.Create("ui.layout", "Default", CVar.CLIENTONLY | CVar.ARCHIVE);
+	public static readonly CVarDef<string> UILayout =
+		CVarDef.Create("ui.layout", "Separated", CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     /// The dimensions for the chat window in Default UI mode
