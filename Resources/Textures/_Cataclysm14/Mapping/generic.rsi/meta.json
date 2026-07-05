@@ -9,6 +9,9 @@
   "states": [
     {
       "name": "structure_border_small"
+    },
+    {
+      "name": "structure_full_directions"
     }
   ]
 }

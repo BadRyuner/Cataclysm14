@@ -35,6 +35,8 @@
   - type: Carriable # Frontier: Carrying system from nyanotrasen.
   - type: Speech # Frontier
     allowedEmotes: ['Belch'] # Frontier
+  - type: ContentEye #Cataclysm14, bigger view
+    maxZoom: 1.75,1.75
 
 - type: entity
   parent: BaseSpeciesDummy

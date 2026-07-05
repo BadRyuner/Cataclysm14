@@ -23,11 +23,23 @@
   suffix: 2x2 Chunk][26x26
   components:
   - type: Sprite
-    scale: 26,26
     offset: -0.5,-0.5
     layers:
-      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
-        state: structure_border_house_small
+    - sprite: _Cataclysm14/Mapping/building.rsi
+      state: structure_building_brick
+      scale: 26,26
+    - sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_police_US.rsi
+      state: icon
+      scale: 12,12
+      offset: -1,7
+    - sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/Glock17.rsi
+      state: icon
+      scale: 8,8
+      offset: -3,-4
+    - sprite: _Cataclysm14/Objects/Weapons/Melee/nightstick.rsi
+      state: icon
+      scale: 10,10
+      offset: 3,-4
   - type: RoomFill
     rotation: false
     roomWhitelist:

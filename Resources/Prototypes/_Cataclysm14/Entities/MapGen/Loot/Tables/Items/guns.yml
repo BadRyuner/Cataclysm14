@@ -10,6 +10,16 @@
         - id: WeaponAssaultRifleM4A1FilledSTANAG30rdTracerRed
       - !type:GroupSelector
         children:
+        - id: WeaponAssaultRifleM16A1FilledSTANAG30rdEmpty
+        - id: WeaponAssaultRifleM16A1FilledSTANAG30rdFMJ
+        - id: WeaponAssaultRifleM16A1FilledSTANAG30rdTracerRed
+      - !type:GroupSelector
+        children:
+        - id: WeaponAssaultRifleM16A3FilledSTANAG30rdEmpty
+        - id: WeaponAssaultRifleM16A3FilledSTANAG30rdFMJ
+        - id: WeaponAssaultRifleM16A3FilledSTANAG30rdTracerRed
+      - !type:GroupSelector
+        children:
         - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdEmpty
         - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdFMJ
         - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdTracerRed
@@ -69,6 +79,8 @@
     - id: WeaponRifleAR10FilledSTANAG20rdEmpty
       weight: 100
     - id: WeaponRifleAR15FilledSTANAG30rdEmpty
+      weight: 100
+    - id: WeaponRifleAR15WoodFurnituresFilledSTANAG30rdEmpty
       weight: 100
     - id: WeaponBoltActionRifleRuger10-22Base
       weight: 100

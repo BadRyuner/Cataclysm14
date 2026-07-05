@@ -1,0 +1,339 @@
+#MARK: Blackberry
+- type: entity
+  parent: BasePlantBush
+  id: PlantBushBlackberry
+  name: blackberry bush
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_blackberry.rsi
+    state: summer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4
+
+#MARK: Blueberry
+- type: entity
+  parent: BasePlantBush
+  id: PlantBushBlueberry
+  name: blueberry bush
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_blueberry.rsi
+    state: summer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4
+
+#MARK: Grape
+- type: entity
+  parent: BasePlantBush
+  id: PlantBushGrape
+  name: grape bush
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_grape.rsi
+    state: summer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4
+
+#MARK: Huckleberry
+- type: entity
+  parent: BasePlantBush
+  id: PlantBushHuckleberry
+  name: huckleberry bush
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_huckleberry.rsi
+    state: summer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4
+
+#MARK: Hydrangea
+- type: entity
+  parent: BasePlantBush
+  id: PlantBushHydrangea
+  name: hydrangea bush
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_hydrangea.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4
+
+#MARK: Lilac
+- type: entity
+  parent: BasePlantBush
+  id: PlantBushLilac
+  name: lilac bush
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_lilac.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4
+
+#MARK: Peanut
+- type: entity
+  parent: BasePlantBush
+  id: PlantBushPeanut
+  name: peanut bush
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_peanut.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4
+
+#MARK: Raspberry
+- type: entity
+  parent: BasePlantBush
+  id: PlantBushRaspberry
+  name: raspberry bush
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_raspberry.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4
+
+#MARK: Strawberry
+- type: entity
+  parent: BasePlantBush
+  id: PlantBushStrawberry
+  name: strawberry bush
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_strawberry.rsi
+    state: summer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4
+
+#MARK: Winter rose
+- type: entity
+  parent: BasePlantBush
+  id: PlantBushWinterRose
+  name: winter rose bush
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_winter_rose.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth1:
+            min: 0
+            max: 4

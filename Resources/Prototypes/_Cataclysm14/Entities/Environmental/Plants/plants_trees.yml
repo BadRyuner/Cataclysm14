@@ -1,0 +1,260 @@
+#MARK: Oak
+- type: entity
+  parent: BasePlantTree
+  id: PlantTreeOak
+  name: oak tree
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Trees/tree_oak.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectWoodLogStack1:
+            min: 2
+            max: 4
+
+#MARK: Pear
+- type: entity
+  parent: BasePlantTree
+  id: PlantTreePear
+  name: pear tree
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Trees/tree_pear.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectWoodLogStack1:
+            min: 2
+            max: 4
+
+#MARK: Peach
+- type: entity
+  parent: BasePlantTree
+  id: PlantTreePeach
+  name: peach tree
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Trees/tree_peach.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectWoodLogStack1:
+            min: 2
+            max: 4
+
+#MARK: Mapple
+- type: entity
+  parent: BasePlantTree
+  id: PlantTreeMapple
+  name: mapple tree
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Trees/tree_mapple.rsi
+    state: autumn
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectWoodLogStack1:
+            min: 2
+            max: 4
+
+#MARK: Elm
+- type: entity
+  parent: BasePlantTree
+  id: PlantTreeElm
+  name: elm tree
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Trees/tree_elm.rsi
+    state: autumn
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectWoodLogStack1:
+            min: 2
+            max: 4
+
+#MARK: Cherry
+- type: entity
+  parent: BasePlantTree
+  id: PlantTreeCherry
+  name: cherry tree
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Trees/tree_cherry.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectWoodLogStack1:
+            min: 2
+            max: 4
+
+#MARK: Birch
+- type: entity
+  parent: BasePlantTree
+  id: PlantTreeBirch
+  name: birch tree
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Trees/tree_birch.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectWoodLogStack1:
+            min: 2
+            max: 4
+
+#MARK: Apple
+- type: entity
+  parent: BasePlantTree
+  id: PlantTreeApple
+  name: apple tree
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Trees/tree_apple.rsi
+    state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectWoodLogStack1:
+            min: 2
+            max: 4
+
+#MARK: Cottonwood
+- type: entity
+  parent: BasePlantTree
+  id: PlantTreeCottonwood
+  name: cottonwood tree
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Trees/tree_cottonwood.rsi
+    state: autumn
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/plant_rustle.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectWoodLogStack1:
+            min: 2
+            max: 4
