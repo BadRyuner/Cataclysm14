@@ -21,6 +21,15 @@
   - type: Tag
     id: CataStructurePoliceStationSmall26x26
 
+  - type: Tag
+    id: CataStructureSpawnerForestBaseGrass13x13
+
+  - type: Tag
+    id: CataStructureSpawnerPlainBaseGrass13x13
+
+  - type: Tag
+    id: CataStructureSpawnerMarshBaseGrass13x13
+
 #MARK: Roads
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteBaseBaseStraight13x13

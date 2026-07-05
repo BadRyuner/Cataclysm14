@@ -5,10 +5,10 @@
   description: A nightstick for hitting and incapacitating people with. Actively harming with this is considered bad tone.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Melee/nighstick.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Melee/nightstick.rsi
     state: icon
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/Melee/nighstick.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Melee/nightstick.rsi
     state: icon
   - type: MeleeWeapon
     angle: 0

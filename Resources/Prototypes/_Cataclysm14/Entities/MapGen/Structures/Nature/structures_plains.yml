@@ -1,0 +1,44 @@
+#MARK: Sidewalk-less
+
+
+
+#Mark spacing
+
+
+
+#MARK: Straight
+- type: dungeonRoom
+  id: StructureSpawnerPlainBaseGrass13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Nature/structure_plain_base_grass_13x13a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerPlainBaseGrass13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerPlainBaseGrass13x13
+  name: structure spawner plain
+  suffix: Base Grass][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    layers:
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_border_small
+      scale: 13,13
+    - sprite: _Cataclysm14/Plants/Bushes/bush_blackberry.rsi
+      state: summer
+      scale: 3,3
+    - sprite: _Cataclysm14/Plants/Bushes/bush_blackberry.rsi
+      state: summer
+      scale: 3,3
+      offset: 2,-1
+    - sprite: _Cataclysm14/Plants/Bushes/bush_blackberry.rsi
+      state: summer
+      scale: 3,3
+      offset: -2,-1
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerPlainBaseGrass13x13

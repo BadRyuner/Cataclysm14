@@ -33,12 +33,27 @@
         weight: 100
         tableId: LootTableLoadoutWeaponGunM4A1FilledSTANAG30rdFMJ
         rolls: !type:RangeNumberSelector
-          range: 0,3
+          range: 0,1
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableLoadoutWeaponGunM16A1FilledSTANAG30rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,1
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableLoadoutWeaponGunM16A3FilledSTANAG30rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,1
       - !type:NestedSelector
         weight: 100
         tableId: LootTableLoadoutWeaponGunM249Filled200rdFMJ
         rolls: !type:RangeNumberSelector
-          range: 0,2
+          range: 0,1
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableLoadoutWeaponGunM240Filled200rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,1
       - !type:NestedSelector
         weight: 100
         tableId: LootTableClothingNationalGuardBulletProofVests

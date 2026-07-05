@@ -11,17 +11,13 @@
       - sprite: _NF/Markers/general.rsi
         state: questionmark
         color: red
-  - type: RandomSpawner
-    prototypes:
-    - StructureFurnitureDresserWoodFilledClothingCivilianRandom50
-    - StructureFurnitureShelfWoodFilledClothingCivilianRandom50
-    - StructureFurnitureShelfWoodStorageFilledClothingCivilianRandom50
-    - StructureFurnitureWardrobeWoodFilledClothingCivilianRandom75
-    chance: 1
-    offset: 0.0
-    # rarePrototypes:
-    # - SpawnDungeonLootLockersGeneral
-    # rareChance: 0.1
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: StructureFurnitureDresserWoodFilledClothingCivilianRandom50
+      - id: StructureFurnitureShelfWoodFilledClothingCivilianRandom50
+      - id: StructureFurnitureShelfWoodStorageFilledClothingCivilianRandom50
+      - id: StructureFurnitureWardrobeWoodFilledClothingCivilianRandom75
 
 - type: entity
   name: bedroom decoration spawner
@@ -36,16 +32,12 @@
       - sprite: _NF/Markers/general.rsi
         state: questionmark
         color: red
-  - type: RandomSpawner
-    prototypes:
-    - StructureFurnitureTrashBinSmall
-    - DogBed
-    - PottedPlantRandom
-    chance: 1
-    offset: 0.0
-    # rarePrototypes:
-    # - SpawnDungeonLootLockersGeneral
-    # rareChance: 0.1
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: StructureFurnitureTrashBinSmall
+      - id: DogBed
+      - id: PottedPlantRandom
 
 - type: entity
   name: pantry furnitures spawner
@@ -60,15 +52,11 @@
       - sprite: _NF/Markers/general.rsi
         state: questionmark
         color: red
-  - type: RandomSpawner
-    prototypes:
-    - StructureFurnitureShelfWoodFilledFoodLongLastingRandom50
-    - StructureFurnitureShelfWoodStorageFilledFoodLongLastingRandom50
-    chance: 1
-    offset: 0.0
-    # rarePrototypes:
-    # - SpawnDungeonLootLockersGeneral
-    # rareChance: 0.1
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: StructureFurnitureShelfWoodFilledFoodLongLastingRandom50
+      - id: StructureFurnitureShelfWoodStorageFilledFoodLongLastingRandom50
 
 - type: entity
   name: generic house decoration spawner
@@ -83,13 +71,9 @@
       - sprite: _NF/Markers/general.rsi
         state: questionmark
         color: red
-  - type: RandomSpawner
-    prototypes:
-    - StructureFurnitureTrashBinSmall
-    - DogBed
-    - PottedPlantRandom
-    chance: 1
-    offset: 0.0
-    # rarePrototypes:
-    # - SpawnDungeonLootLockersGeneral
-    # rareChance: 0.1
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: StructureFurnitureTrashBinSmall
+      - id: DogBed
+      - id: PottedPlantRandom

@@ -24,6 +24,32 @@
         rolls: !type:RangeNumberSelector
           range: 1,4
 
+#MARK: Loadout M16A1
+- type: entityTable
+  id: LootTableLoadoutWeaponGunM16A1FilledSTANAG30rdFMJ
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponAssaultRifleM16A1FilledSTANAG30rdEmpty
+          - id: WeaponAssaultRifleM16A1FilledSTANAG30rdFMJ
+      - id: Magazine5,56x45mmSTANAG30rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+
+#MARK: Loadout M16A3
+- type: entityTable
+  id: LootTableLoadoutWeaponGunM16A3FilledSTANAG30rdFMJ
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponAssaultRifleM16A3FilledSTANAG30rdEmpty
+          - id: WeaponAssaultRifleM16A3FilledSTANAG30rdFMJ
+      - id: Magazine5,56x45mmSTANAG30rdFMJ
+        rolls: !type:RangeNumberSelector
+          range: 1,4
+
 #MARK: Loadout FN FAL
 - type: entityTable
   id: LootTableLoadoutWeaponGunFnFalFilledSTANAG20rdFMJ
@@ -50,6 +76,22 @@
           children:
           - id: MagazineBox5,56x45mmLMG200rdFMJ
           - id: MagazineBox5,56x45mmLMG200rdEmpty
+          rolls: !type:RangeNumberSelector
+            range: 1,2
+
+#MARK: Loadout M240
+- type: entityTable
+  id: LootTableLoadoutWeaponGunM240Filled200rdFMJ
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponMediumMachineGunM240Filled200rdEmpty
+          - id: WeaponMediumMachineGunM240Filled200rdFMJ
+      - !type:AllSelector
+          children:
+          - id: MagazineBox7,62x51mmLMG200rdFMJ
+          - id: MagazineBox7,62x51mmLMG200rdEmpty
           rolls: !type:RangeNumberSelector
             range: 1,2
 

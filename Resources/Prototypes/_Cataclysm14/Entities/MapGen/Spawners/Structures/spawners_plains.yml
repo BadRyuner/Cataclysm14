@@ -1,0 +1,60 @@
+#MARK: Plain stuff Spawner
+- type: entity
+  name: random plain stuff spawner
+  id: EntitiesSpawnerPlainStuff
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+        scale: 1.3,1.3
+      - sprite: _Cataclysm14/Plants/Bushes/bush_raspberry.rsi
+        state: base
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      prob: 0.05
+      children:
+      #Bushes
+      - !type:GroupSelector
+        weight: 100
+        children:
+        - id: PlantBushBlackberry
+        - id: PlantBushBlueberry
+        - id: PlantBushGrape
+        - id: PlantBushHuckleberry
+        - id: PlantBushHydrangea
+        - id: PlantBushLilac
+        - id: PlantBushPeanut
+        - id: PlantBushRaspberry
+        - id: PlantBushStrawberry
+        - id: PlantBushWinterRose
+      #Trees
+      - !type:GroupSelector
+        weight: 1
+        children:
+        - id: PlantTreeOak
+          weight: 100
+        - id: PlantTreePear
+          weight: 100
+        - id: PlantTreePeach
+          weight: 100
+        - id: PlantTreeMapple
+          weight: 30
+        - id: PlantTreeElm
+          weight: 100
+        - id: PlantTreeCherry
+          weight: 30
+        - id: PlantTreeBirch
+          weight: 100
+        - id: PlantTreeApple
+          weight: 100
+        - id: PlantTreeCottonwood
+          weight: 30
+      #Ground plants, vines, puddles, whatever
+      - !type:GroupSelector
+        weight: 10
+        children:
+        - id: EnvironmentalWaterPuddle

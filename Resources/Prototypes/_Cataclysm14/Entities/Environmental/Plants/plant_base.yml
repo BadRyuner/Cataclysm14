@@ -1,8 +1,10 @@
-
+#MARK: Base Tree
 - type: entity
   id: BasePlantTree
   description: A towering tree, yep.
   abstract: true
+  placement:
+    mode: AlignTileAny
   components:
   - type: SpriteFade
   - type: Clickable
@@ -57,10 +59,13 @@
             min: 2
             max: 8
 
+#MARK: Base Bush
 - type: entity
   id: BasePlantBush
-  description: Plant of goodies.
+  description: A large bush.
   abstract: true
+  placement:
+    mode: AlignTileAny
   components:
   - type: SpriteFade
   - type: Clickable
