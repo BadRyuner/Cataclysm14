@@ -5,6 +5,7 @@
 
 using System.Linq;
 using System.Numerics;
+using Content.Client._Cataclysm14.UserInterface.Controls;
 using Content.Shared.Chat;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Speech;
@@ -71,9 +72,9 @@ public sealed partial class EmotesTabControl : BaseTabControl
         };
     }
 
-    private Button CreateEmoteButton(EmotePrototype emote)
+    private CataButton CreateEmoteButton(EmotePrototype emote)
     {
-        var button = new Button { Text = Loc.GetString(emote.Name) };
+        var button = new CataButton { Text = Loc.GetString(emote.Name) };
         button.OnPressed += _ => OnPlayEmote(new ProtoId<EmotePrototype>(emote.ID));
 
         return button;
@@ -110,5 +111,6 @@ public sealed partial class EmotesTabControl : BaseTabControl
 
     protected override void Resized()
     {
+        base.Resized();
     }
 }

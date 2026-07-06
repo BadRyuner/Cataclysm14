@@ -1,6 +1,8 @@
-﻿using System.Numerics;
+﻿using System.Linq;
+using System.Numerics;
 using Content.Client.Actions.UI;
 using Content.Client.Cooldown;
+using Content.Client.Stylesheets;
 using Content.Shared.Alert;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
@@ -36,7 +38,7 @@ public sealed class CataAlertControl : ContainerButton
                 return _locString;
 
             _unLocString = Alert.Name;
-            _locString = $"[{Loc.GetString(_unLocString)}]";
+            _locString = $"\\[{Loc.GetString(_unLocString)}\\]";
             return _locString;
         }
     }
@@ -79,7 +81,40 @@ public sealed class CataAlertControl : ContainerButton
     {
         var msg = FormattedMessage.FromMarkupOrThrow(Loc.GetString(Alert.Name));
         var desc = FormattedMessage.FromMarkupOrThrow(Loc.GetString(Alert.Description));
-        return new ActionAlertTooltip(msg, desc) {Cooldown = Cooldown};
+        var tooltip = new ActionAlertTooltip(msg, desc) { Cooldown = Cooldown, StyleClasses = { StyleNano.StyleClassCataAlertPanel }, Margin = new(1)};
+        var box = tooltip.Children[0];
+        var name = box.Children[0];
+        box.RemoveChild(name);
+        name.Margin = new Thickness(5, 0,0,0);
+        var otherChildren = box.Children.ToArray();
+        foreach (var otherChild in otherChildren)
+        {
+            box.Children.Remove(otherChild);
+        }
+        box.AddChild(new PanelContainer() { StyleClasses = { StyleNano.StyleClassCataAlertPanel },
+            Children =
+            {
+                new BoxContainer()
+                {
+                    StyleClasses = { StyleNano.StyleClassBoxOfTerminusLabels },
+                    Children =
+                    {
+                        name
+                    }
+                }
+            }});
+        var otherThings = new BoxContainer()
+        {
+            Orientation = BoxContainer.LayoutOrientation.Vertical,
+            StyleClasses = { StyleNano.StyleClassBoxOfTerminusLabels },
+            Margin = new(5)
+        };
+        foreach (var otherChild in otherChildren)
+        {
+            otherThings.Children.Add(otherChild);
+        }
+        box.AddChild(otherThings);
+        return tooltip;
     }
 
     protected override void FrameUpdate(FrameEventArgs args)

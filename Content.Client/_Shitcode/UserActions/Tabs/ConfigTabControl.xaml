@@ -11,14 +11,13 @@
         <ScrollContainer VerticalExpand="True"
                          HorizontalExpand="True"
                          Margin="2"
-                         MinHeight="100"
-                         HScrollEnabled="False">
+                         HScrollEnabled="False"
+                         StyleClasses="StyleClassCataScrollBar"> <!-- Cataclysm14: Add StyleClass -->
             <BoxContainer Orientation="Vertical"
                           HorizontalExpand="True"
                           VerticalExpand="True"
                           Margin="2">
-                <GridContainer Name="MenuList" Access="Public" Columns="2" HorizontalExpand="True">
-                </GridContainer>
+                <GridContainer Name="MenuList" Access="Public" Columns="2" HorizontalExpand="True"/>
             </BoxContainer>
         </ScrollContainer>
     </PanelContainer>
