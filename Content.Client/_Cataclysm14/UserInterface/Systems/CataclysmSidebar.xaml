@@ -162,7 +162,7 @@
         </BoxContainer>
         <BoxContainer Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" VerticalExpand="true" StyleClasses="StyleClassBoxOfTerminusLabels">
             <Label Text="Alerts: " VerticalAlignment="Top" HorizontalAlignment="Left"/>
-            <WrapContainer Name="AlertsContainer" VerticalAlignment="Top">
+            <WrapContainer Name="AlertsContainer" Access="Public" VerticalAlignment="Top">
                 <!-- Alerts -->
             </WrapContainer>
         </BoxContainer>

@@ -1,4 +1,6 @@
 using System.Linq;
+using Content.Client._Cataclysm14.UserInterface.Controls;
+using Content.Client._Cataclysm14.UserInterface.Systems;
 using Content.Client.UserInterface.Systems.Alerts.Controls;
 using Content.Client.UserInterface.Systems.Alerts.Widgets;
 using Content.Shared.Alert;
@@ -53,6 +55,7 @@ namespace Content.IntegrationTests.Tests.GameObjects.Components.Mobs
             await pair.RunTicksSync(5);
 
             AlertsUI clientAlertsUI = default;
+            CataclysmSidebar clientAlertsInSideBarUI = default; // Cataclysm14 Fix Test
             await client.WaitAssertion(() =>
             {
                 var local = client.Session;
@@ -66,29 +69,44 @@ namespace Content.IntegrationTests.Tests.GameObjects.Components.Mobs
 
                 // find the alertsui
 
-                clientAlertsUI = FindAlertsUI(clientUIMgr.ActiveScreen);
-                Assert.That(clientAlertsUI, Is.Not.Null);
+                (clientAlertsUI, clientAlertsInSideBarUI) = FindAlertsUI(clientUIMgr.ActiveScreen);
+                Assert.That((Control)clientAlertsUI ?? (Control)clientAlertsInSideBarUI, Is.Not.Null);
 
-                static AlertsUI FindAlertsUI(Control control)
+                static (AlertsUI, CataclysmSidebar) FindAlertsUI(Control control)
                 {
                     if (control is AlertsUI alertUI)
-                        return alertUI;
+                        return (alertUI, null); // Cataclysm14 Fix Test
+                    if (control is CataclysmSidebar cataUI) // Cataclysm14 Fix Test
+                        return (null, cataUI); // Cataclysm14 Fix Test
                     foreach (var child in control.Children)
                     {
                         var found = FindAlertsUI(child);
-                        if (found != null)
+                        if (found.Item1 != null || found.Item2 != null) // Cataclysm14 Fix Test
                             return found;
                     }
 
-                    return null;
+                    return (null, null); // Cataclysm14 Fix Test
                 }
 
-                // we should be seeing 3 alerts - our health, and the 2 debug alerts, in a specific order.
-                Assert.That(clientAlertsUI.AlertContainer.ChildCount, Is.GreaterThanOrEqualTo(3));
-                var alertControls = clientAlertsUI.AlertContainer.Children.Select(c => (AlertControl) c);
-                var alertIDs = alertControls.Select(ac => ac.Alert.ID).ToArray();
-                var expectedIDs = new[] { "Debug1", "Debug2" };
-                Assert.That(alertIDs, Is.SupersetOf(expectedIDs));
+                // Cataclysm14 Begin Fix Test
+                if (clientAlertsInSideBarUI != null)
+                {
+                    // we should be seeing 2 alerts - the 2 debug alerts, in a specific order. NO HEALTH ALERT IN CATA-STYLE SIDEBAR!!!
+                    Assert.That(clientAlertsInSideBarUI.AlertsContainer.ChildCount, Is.GreaterThanOrEqualTo(2));
+                    var alertControls = clientAlertsInSideBarUI.AlertsContainer.Children.Select(c => (CataAlertControl) c);
+                    var alertIDs = alertControls.Select(ac => ac.Alert.ID).ToArray();
+                    var expectedIDs = new[] { "Debug1", "Debug2" };
+                    Assert.That(alertIDs, Is.SupersetOf(expectedIDs));
+                }
+                else // Cataclysm14 End Fix Test
+                {
+                    // we should be seeing 3 alerts - our health, and the 2 debug alerts, in a specific order.
+                    Assert.That(clientAlertsUI.AlertContainer.ChildCount, Is.GreaterThanOrEqualTo(3));
+                    var alertControls = clientAlertsUI.AlertContainer.Children.Select(c => (AlertControl) c);
+                    var alertIDs = alertControls.Select(ac => ac.Alert.ID).ToArray();
+                    var expectedIDs = new[] { "Debug1", "Debug2" };
+                    Assert.That(alertIDs, Is.SupersetOf(expectedIDs));
+                }
             });
 
             await server.WaitAssertion(() =>
@@ -100,12 +118,24 @@ namespace Content.IntegrationTests.Tests.GameObjects.Components.Mobs
 
             await client.WaitAssertion(() =>
             {
-                // we should be seeing 2 alerts now because one was cleared
-                Assert.That(clientAlertsUI.AlertContainer.ChildCount, Is.GreaterThanOrEqualTo(2));
-                var alertControls = clientAlertsUI.AlertContainer.Children.Select(c => (AlertControl) c);
-                var alertIDs = alertControls.Select(ac => ac.Alert.ID).ToArray();
-                var expectedIDs = new[] { "Debug2" };
-                Assert.That(alertIDs, Is.SupersetOf(expectedIDs));
+                if (clientAlertsInSideBarUI != null)
+                {
+                    // we should be seeing 1 alert now because one was cleared
+                    Assert.That(clientAlertsInSideBarUI.AlertsContainer.ChildCount, Is.GreaterThanOrEqualTo(2));
+                    var alertControls = clientAlertsInSideBarUI.AlertsContainer.Children.Select(c => (CataAlertControl) c);
+                    var alertIDs = alertControls.Select(ac => ac.Alert.ID).ToArray();
+                    var expectedIDs = new[] { "Debug2" };
+                    Assert.That(alertIDs, Is.SupersetOf(expectedIDs));
+                }
+                else
+                {
+                    // we should be seeing 2 alerts now because one was cleared
+                    Assert.That(clientAlertsUI.AlertContainer.ChildCount, Is.GreaterThanOrEqualTo(2));
+                    var alertControls = clientAlertsUI.AlertContainer.Children.Select(c => (AlertControl) c);
+                    var alertIDs = alertControls.Select(ac => ac.Alert.ID).ToArray();
+                    var expectedIDs = new[] { "Debug2" };
+                    Assert.That(alertIDs, Is.SupersetOf(expectedIDs));
+                }
             });
 
             await pair.CleanReturnAsync();
