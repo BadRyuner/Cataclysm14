@@ -11,3 +11,28 @@
   - type: IconSmooth
     key: walls
     base: glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectShardGlassStack1:
+            min: 1
+            max: 15
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

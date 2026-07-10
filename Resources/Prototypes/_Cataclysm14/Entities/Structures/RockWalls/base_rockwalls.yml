@@ -1,0 +1,108 @@
+#MARK: BaseStructureRockWall
+- type: entity
+  id: BaseStructureRockWall
+  parent: BaseWall
+  name: rock
+  description: A firm piece of rock.
+  abstract: true
+  components:
+  - type: Transform
+    noRot: true
+  - type: IconSmooth
+    key: asteroidrock
+    mode: NoSprite
+  - type: SmoothEdge
+  - type: Icon
+    sprite: Structures/Walls/rock.rsi
+    state: rock_asteroid
+  - type: Sprite
+    sprite: Structures/Walls/rock.rsi
+    layers:
+    - state: rock
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_west
+  - type: MiningScannerViewable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/break_stone.ogg
+          params:
+            volume: -6
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 2000
+  - type: SoundOnGather
+  - type: Gatherable
+    toolWhitelist:
+      tags:
+      - Pickaxe
+      components:
+      - MiningGatheringHard
+      - MiningGatheringSoft
+
+# - type: entity
+#   id: WallRockSalt
+#   parent: NFWallRockOre
+#   description: An ore vein rich with salt.
+#   suffix: Salt
+#   components:
+#   - type: EntityRemap
+#     mask:
+#       AsteroidRock: AsteroidRockSalt
+#       WallRockBasalt: WallRockBasaltSalt
+#       WallRockChromite: WallRockChromiteSalt
+#       WallRockSand: WallRockSandSalt
+#       WallRockSnow: WallRockSnowSalt
+#   - type: OreVein
+#     oreChance: 1.0
+#     currentOre: NFOreSalt
+#   - type: Sprite
+#     layers:
+#     - state: rock
+#     - map: [ "enum.EdgeLayer.South" ]
+#       state: rock_south
+#     - map: [ "enum.EdgeLayer.East" ]
+#       state: rock_east
+#     - map: [ "enum.EdgeLayer.North" ]
+#       state: rock_north
+#     - map: [ "enum.EdgeLayer.West" ]
+#       state: rock_west
+#     - state: rock_salt
+#       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+# - type: entity
+#   parent: AsteroidRock
+#   id: NFAsteroidRockOre
+#   abstract: true
+#   components: &softRockComps
+#   - type: OreVein
+
+# - type: entity
+#   parent: IronRock
+#   id: NFIronRockOre
+#   abstract: true
+#   components: *softRockComps

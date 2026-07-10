@@ -11,7 +11,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -45,7 +45,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -79,7 +79,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -113,7 +113,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -147,7 +147,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -181,7 +181,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -215,7 +215,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -249,7 +249,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -283,7 +283,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -317,7 +317,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:

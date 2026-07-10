@@ -1,0 +1,25 @@
+#MARK: RecipePack Handmade Kiln
+- type: latheRecipePack
+  id: RecipePackMineralKilnHandmade
+  recipes:
+  #MARK: Iron
+  #Ingots
+  - LatheRecipeMineralIngotIronFromOre
+  #Plates
+  - LatheRecipeMineralPlateIronFromOre
+  - LatheRecipeMineralPlateIronFromIngot
+  #Pipes
+  - LatheRecipeMineralPipeIronFromOre
+  - LatheRecipeMineralPipeIronFromIngot
+
+  #MARK: Copper
+  - LatheRecipeMineralIngotCopperFromOre
+  #Plates
+  - LatheRecipeMineralPlateCopperFromOre
+  - LatheRecipeMineralPlateCopperFromIngot
+  #Pipes
+  - LatheRecipeMineralPipeCopperFromOre
+  - LatheRecipeMineralPipeCopperFromIngot
+
+  #MARK: Gold
+  - LatheRecipeMineralIngotGoldFromOre

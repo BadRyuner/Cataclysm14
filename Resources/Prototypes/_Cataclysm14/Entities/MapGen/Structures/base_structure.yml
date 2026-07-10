@@ -25,7 +25,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerTest5x5
-  name: structure spawner small test
+  name: small test
   suffix: 5x5
   components:
   - type: Sprite
@@ -50,7 +50,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: CataStructureTestRecursive10x10
-  name: structure spawner recursive test
+  name: recursive test
   suffix: 10x10
   components:
   - type: Sprite

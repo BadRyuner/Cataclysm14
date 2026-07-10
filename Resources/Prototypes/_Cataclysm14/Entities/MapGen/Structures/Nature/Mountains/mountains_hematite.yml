@@ -1,0 +1,44 @@
+#MARK: Base
+- type: dungeonRoom
+  id: StructureSpawnerMountainRockHematite13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Nature/structure_mountain_rock_hematite_13x13a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerMountainRockHematite13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMountainRockHematite13x13
+  name: mountain
+  suffix: Hematite][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    layers:
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_border_small
+      scale: 13,13
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_hematite.rsi
+      state: rock
+      scale: 6,6
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_hematite.rsi
+      state: rock_west
+      offset: -6,0
+      scale: 6,6
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_hematite.rsi
+      state: rock_east
+      offset: 6,0
+      scale: 6,6
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_hematite.rsi
+      state: rock_south
+      offset: 0,-6
+      scale: 6,6
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_hematite.rsi
+      state: rock_north
+      offset: 0,6
+      scale: 6,6
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerMountainRockHematite13x13

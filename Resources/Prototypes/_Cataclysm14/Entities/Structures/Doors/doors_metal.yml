@@ -25,15 +25,26 @@
       path: /Audio/Effects/door_close.ogg
   - type: Damageable
     damageContainer: StructuralInorganic
-    damageModifierSet: Wood
+    damageModifierSet: StructuralMetallic
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 500
       behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectMineralPlateSteelStack1:
+            min: 2
+            max: 4
+          MaterialObjectMineralPipeSteelStack1:
+            min: 1
+            max: 3
+          MaterialObjectDoorHingesStack1:
+            min: 0
+            max: 2
       - !type:DoActsBehavior
-        acts: ["Destruction"]
+        acts: [ "Destruction" ]
   - type: Construction
     graph: DoorCataWoodHouse
     node: DoorCataWoodHouse
@@ -64,10 +75,21 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 2000 #Don't really want those to be easily destroyed
+        damage: 500
       behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectMineralPlateSteelStack1:
+            min: 2
+            max: 4
+          MaterialObjectMineralPipeSteelStack1:
+            min: 1
+            max: 3
+          MaterialObjectDoorHingesStack1:
+            min: 0
+            max: 2
       - !type:DoActsBehavior
-        acts: ["Destruction"]
+        acts: [ "Destruction" ]
   - type: InteractionPopup
     interactSuccessString: comp-window-knock
     messagePerceivedByOthers: comp-window-knock

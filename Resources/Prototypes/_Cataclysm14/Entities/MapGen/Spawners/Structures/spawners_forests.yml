@@ -38,23 +38,30 @@
         - id: PlantTreeOak
           weight: 100
         - id: PlantTreePear
-          weight: 100
+          weight: 5
         - id: PlantTreePeach
-          weight: 100
+          weight: 5
         - id: PlantTreeMapple
-          weight: 30
+          weight: 5
         - id: PlantTreeElm
           weight: 100
         - id: PlantTreeCherry
-          weight: 30
+          weight: 1
         - id: PlantTreeBirch
           weight: 100
         - id: PlantTreeApple
           weight: 100
         - id: PlantTreeCottonwood
-          weight: 30
+          weight: 5
       #Ground plants, vines, puddles, whatever
       - !type:GroupSelector
         weight: 20
         children:
-        - id: EnvironmentalWaterPuddle
+        - id: EnvironmentalPuddleWater
+          weight: 100
+        - id: EnvironmentalBoulderSmall
+          weight: 30
+        - id: EnvironmentalBoulderMedium
+          weight: 30
+        - id: EnvironmentalBoulderLarge
+          weight: 30

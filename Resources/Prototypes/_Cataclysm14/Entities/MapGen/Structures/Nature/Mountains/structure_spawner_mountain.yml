@@ -1,0 +1,50 @@
+#MARK: Base Mountain Chunk Spawner
+- type: entity
+  name: random mountain chunk spawner
+  id: StructureSpawnerMountainRandomBase13x13
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_border_small
+      scale: 13,13
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock
+      scale: 6,6
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_west
+      offset: -6,0
+      scale: 6,6
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_east
+      offset: 6,0
+      scale: 6,6
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_south
+      offset: 0,-6
+      scale: 6,6
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_north
+      offset: 0,6
+      scale: 6,6
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_ores.rsi
+      state: ore_iron
+      scale: 8,8
+    - sprite: _NF/Markers/general.rsi
+      scale: 6,6
+      state: questionmark
+      color: red
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: StructureSpawnerMountainRockStone13x13
+        weight: 100
+      - id: StructureSpawnerMountainRockQuartz13x13
+        weight: 5
+      - id: StructureSpawnerMountainRockHematite13x13
+        weight: 5
+      - id: StructureSpawnerMountainRockMalachite13x13
+        weight: 5
+      - id: StructureSpawnerMountainRockAnthracite13x13
+        weight: 5

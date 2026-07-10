@@ -17,6 +17,9 @@
       "name": "structure_border_road_asphalt_gray_straight"
     },
     {
+      "name": "structure_border_road_asphalt_gray_end"
+    },
+    {
       "name": "structure_border_road_asphalt_gray_threeway"
     },
     {
@@ -29,6 +32,9 @@
       "name": "structure_border_road_line_white_straight"
     },
     {
+      "name": "structure_border_road_line_white_end"
+    },
+    {
       "name": "structure_border_road_line_white_threeway"
     },
     {
@@ -39,6 +45,9 @@
     },
     {
       "name": "structure_border_road_sidewalk_straight"
+    },
+    {
+      "name": "structure_border_road_sidewalk_end"
     },
     {
       "name": "structure_border_road_sidewalk_threeway"

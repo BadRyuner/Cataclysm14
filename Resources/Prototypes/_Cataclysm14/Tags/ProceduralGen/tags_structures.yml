@@ -1,4 +1,4 @@
-#MARK: Structures
+#MARK: Base
 
   - type: Tag
     id: CataStructureTestSmall
@@ -6,6 +6,7 @@
   - type: Tag
     id: CataStructureTestRecursive
 
+#MARK: City Buildings
   - type: Tag
     id: CataStructureGunshopSmall26x26
 
@@ -21,6 +22,13 @@
   - type: Tag
     id: CataStructurePoliceStationSmall26x26
 
+#MARK: Special Buildings
+
+  - type: Tag
+    id: CataStructureEmergencyShelter13x13
+
+#MARK: Biomes
+
   - type: Tag
     id: CataStructureSpawnerForestBaseGrass13x13
 
@@ -29,6 +37,23 @@
 
   - type: Tag
     id: CataStructureSpawnerMarshBaseGrass13x13
+
+#MARK: Mountains
+
+  - type: Tag
+    id: CataStructureSpawnerMountainRockStone13x13
+
+  - type: Tag
+    id: CataStructureSpawnerMountainRockAnthracite13x13
+
+  - type: Tag
+    id: CataStructureSpawnerMountainRockHematite13x13
+
+  - type: Tag
+    id: CataStructureSpawnerMountainRockQuartz13x13
+
+  - type: Tag
+    id: CataStructureSpawnerMountainRockMalachite13x13
 
 #MARK: Roads
   - type: Tag
@@ -42,7 +67,10 @@
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteBaseBaseCornerLong26x26
   - type: Tag
-    id: CataStructureSpawnerRoadGrayWhiteSidewalkBase13x13
+    id: CataStructureSpawnerRoadGrayWhiteBaseBaseEnd13x13
+
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseStraight13x13
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseFourway13x13
   - type: Tag
@@ -51,3 +79,5 @@
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerSharp13x13
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong26x26
+  - type: Tag
+    id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseEnd13x13

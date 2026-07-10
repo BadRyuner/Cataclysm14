@@ -1,0 +1,164 @@
+# - type: entity
+#   id: StructureWindowSimple
+#   parent: BaseStructureWindow
+#   name: simple window
+#   description: A simple window with a shutter that can be oppened and closed.
+#   components:
+#   - type: Door
+#     openSpriteState: closed
+#     closedSpriteState: shutters
+#   - type: Sprite
+#     sprite: _Cataclysm14/Structures/Windows/window_simple.rsi
+#     layers:
+#     - state: closed
+#       map: ["enum.DoorVisualLayers.Base"]
+
+# - type: entity
+#   id: StructureWindowSimpleOpen
+#   parent: StructureWindowSimple
+#   suffix: Open
+#   components:
+#   - type: Door
+#     state: Open
+#   - type: Occluder
+#     enabled: false
+#   - type: Physics
+#     canCollide: false
+
+#MARK: Simple Window
+- type: entity
+  id: StructureWindowSimple
+  parent: BaseStructure
+  name: simple window
+  description: A simple window with a shutter that can be oppened and closed.
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmack
+  - type: Tag
+    tags:
+      - ForceFixRotations
+      - Window
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _Cataclysm14/Structures/Windows/window_simple.rsi
+    state: shutters
+  - type: Occluder
+    enabled: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: DamageVisuals
+    thresholds: [15, 30, 75]
+    damageDivisor: 2
+    trackAllDamage: true
+    damageOverlay:
+      sprite: Structures/Windows/cracks.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectShardGlassStack1:
+            min: 1
+            max: 15
+          MaterialObjectWoodPlankStack1:
+            min: 0
+            max: 0
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: StructureWindowSimpleOpen
+  parent: BaseStructure
+  name: simple window
+  suffix: Open
+  description: A simple window with a shutter that can be oppened and closed.
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmack
+  - type: Tag
+    tags:
+      - ForceFixRotations
+      - Window
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _Cataclysm14/Structures/Windows/window_simple.rsi
+    state: closed
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: DamageVisuals
+    thresholds: [15, 30, 75]
+    damageDivisor: 2
+    trackAllDamage: true
+    damageOverlay:
+      sprite: Structures/Windows/cracks.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectShardGlassStack1:
+            min: 1
+            max: 15
+          MaterialObjectWoodPlankStack1:
+            min: 0
+            max: 0
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

@@ -1,18 +1,19 @@
+#MARK: Material
 - type: stack
   id: StackDoorHinges
   name: door hinge
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_log.rsi, state: log_3 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/door_hinges.rsi, state: stack_3 }
   spawn: MaterialObjectDoorHingesStack1
   maxCount: 10
 
 - type: material
   id: MaterialDoorHinges
   stackEntity: MaterialObjectDoorHingesStack1
-  name: materials-wood-log
+  name: materials-door-hinges
   unit: materials-unit-sheet
-  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/wood_log.rsi, state: log_3 }
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/door_hinges.rsi, state: stack_3 }
   color: "#000000"
-  price: 0.1 # 10/sheet
+  price: 0.1 # per material unit
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -23,31 +24,30 @@
   suffix: Full
   components:
   - type: Sprite
-    scale: 0.7,0.7
-    sprite: _Cataclysm14/Objects/Materials/wood_log.rsi
-    state: log_3
+    scale: 0.4,0.4
+    sprite: _Cataclysm14/Objects/Materials/door_hinges.rsi
+    state: stack_3
     layers:
-    - state: log_3
+    - state: stack_3
       map: ["base"]
   - type: Tag
     tags:
     - Sheet
   - type: Item
-    sprite: _Cataclysm14/Objects/Materials/wood_log.rsi
-    heldPrefix: door hinge
+    sprite: _Cataclysm14/Objects/Materials/door_hinges.rsi
   - type: Stack
     stackType: StackDoorHinges
     count: 100
     baseLayer: base
     layerStates:
-    - log_1
-    - log_2
-    - log_3
+    - stack_1
+    - stack_2
+    - stack_3
   - type: Material
   - type: Appearance
   - type: PhysicalComposition
     materialComposition:
-      MaterialDoorHinges: 100
+      MaterialDoorHinges: 1
 
 - type: entity
   parent: MaterialObjectDoorHinges

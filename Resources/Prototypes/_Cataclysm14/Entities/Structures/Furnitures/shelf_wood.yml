@@ -1,13 +1,20 @@
+#MARK: Shelves
 - type: entity
   id: StructureFurnitureShelfWood
   parent: StructureFurnitureBaseLarge
   name: wooden shelves
   description: Wooden shelves, can store things inside itself.
   components:
+  - type: Appearance
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/shelf_wood.rsi
-    state: icon
     noRot: true
+    layers:
+    - state: icon
+    - map: ["enum.StorageFillLayers.Fill"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 6
+    fillBaseName: fill
   - type: Damageable
     damageModifierSet: Wood
     damageContainer: StructuralInorganic
@@ -49,16 +56,23 @@
     anchored: true
     noRot: true
 
+#MARK: Storage Shelves
 - type: entity
   id: StructureFurnitureShelfWoodStorage
   parent: StructureFurnitureBaseLarge
   name: wooden storage shelves
   description: Wooden shelves, can store things inside itself.
   components:
+  - type: Appearance
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/shelf_wood_storage.rsi
-    state: icon
     noRot: true
+    layers:
+    - state: icon
+    - map: ["enum.StorageFillLayers.Fill"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 6
+    fillBaseName: fill
   - type: Damageable
     damageModifierSet: Wood
     damageContainer: StructuralInorganic

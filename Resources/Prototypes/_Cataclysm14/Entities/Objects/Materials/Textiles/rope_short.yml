@@ -1,3 +1,4 @@
+#MARK: Material
 - type: stack
   id: StackRopeShort
   name: short rope
@@ -8,11 +9,11 @@
 - type: material
   id: MaterialRopeShort
   stackEntity: MaterialObjectRopeShortStack1
-  name: materials-wood-plank
+  name: materials-rope-short
   unit: materials-unit-sheet
   icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/rope_short.rsi, state: rope_3 }
   color: "#000000"
-  price: 0.1 # 10/sheet
+  price: 0.1 # per material unit
 
 - type: entity
   categories: [ HideSpawnMenu ]

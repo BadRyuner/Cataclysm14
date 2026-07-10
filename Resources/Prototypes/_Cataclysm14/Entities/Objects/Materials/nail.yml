@@ -1,3 +1,4 @@
+#MARK: Material
 - type: stack
   id: StackNail
   name: nail
@@ -8,11 +9,11 @@
 - type: material
   id: MaterialNail
   stackEntity: MaterialObjectNailStack1
-  name: materials-wood-plank
+  name: materials-nail
   unit: materials-unit-sheet
   icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/nails.rsi, state: nail_100 }
   color: "#000000"
-  price: 0.1 # 10/sheet
+  price: 0.1 # per material unit
 
 - type: entity
   categories: [ HideSpawnMenu ]

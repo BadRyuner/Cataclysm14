@@ -1,0 +1,60 @@
+#MARK: BlastFurnace
+- type: entity
+  id: StructureMachineProductionBlastFurnace
+  parent: BaseMachine
+  name: blast furnace
+  description: Ore goes in, ingots come out.
+  components:
+  - type: Appearance
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Machines/Production/production_blast_furnace.rsi
+    layers:
+    - state: icon
+      map: [ "enum.LatheVisualLayers.IsRunning" ]
+  - type: Lathe
+    idleState: icon
+    runningState: working
+    timeMultiplier: 1.0
+    materialUseMultiplier: 1.0
+    defaultProductionAmount: 10
+    staticPacks:
+    - RecipePackMineralKilnHandmade
+  - type: MaterialStorage
+    ignoreColor: true
+    whitelist:
+      tags:
+      - TagMaterialMineralOres
+      - TagMaterialMineralIngots
+  # - type: Construction
+  #   graph: Smeltery
+  #   node: smeltery
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ActivatableUI
+    key: enum.LatheUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.LatheUiKey.Key:
+        type: LatheBoundUserInterface
+  - type: Transform
+    anchored: true
+  - type: Pullable
+  - type: MaterialStorageMagnetPickup
+    range: 0.30

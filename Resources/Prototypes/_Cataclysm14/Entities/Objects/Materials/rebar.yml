@@ -1,3 +1,4 @@
+#MARK: Material
 - type: stack
   id: StackRebar
   name: rebar pole
@@ -8,11 +9,11 @@
 - type: material
   id: MaterialRebar
   stackEntity: MaterialObjectRebarStack1
-  name: materials-wood-plank
+  name: materials-rebar
   unit: materials-unit-sheet
   icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/rebar_poles.rsi, state: rebar_3 }
   color: "#000000"
-  price: 0.1 # 10/sheet
+  price: 0.1 # per material unit
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -22,6 +23,7 @@
   description: A strong structural rebar metallic rod. Used for reinforced structures, as well as bashing heads with enough strength.
   suffix: Full
   components:
+  - type: Appearance
   - type: Sprite
     scale: 0.6,0.6
     sprite: _Cataclysm14/Objects/Materials/rebar_poles.rsi
@@ -44,7 +46,6 @@
     - rebar_2
     - rebar_3
   - type: Material
-  - type: Appearance
   - type: PhysicalComposition
     materialComposition:
       MaterialRebar: 100

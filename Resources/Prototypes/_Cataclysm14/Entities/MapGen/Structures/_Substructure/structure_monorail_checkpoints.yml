@@ -11,7 +11,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerMonorailCheckpointRightRail26x13
-  name: structure spawner monorail checkpoint
+  name: monorail checkpoint
   suffix: RightRail][2x1 Chunk][26x13
   components:
   - type: Sprite
@@ -39,7 +39,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerMonorailCheckpointLeftRail26x13
-  name: structure spawner monorail checkpoint
+  name: monorail checkpoint
   suffix: LeftRail][2x1 Chunk][26x13
   components:
   - type: Sprite
@@ -67,7 +67,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerMonorailCheckpoint39x13
-  name: structure spawner monorail checkpoint
+  name: monorail checkpoint
   suffix: 3x1 Chunk][39x13
   components:
   - type: Sprite
@@ -95,7 +95,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerMonorailCheckpointDouble26x26
-  name: structure spawner monorail checkpoint
+  name: monorail checkpoint
   suffix: Double][2x2 Chunk][26x26
   components:
   - type: Sprite

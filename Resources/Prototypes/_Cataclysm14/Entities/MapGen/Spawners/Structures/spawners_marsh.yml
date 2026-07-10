@@ -59,4 +59,11 @@
       - !type:GroupSelector
         weight: 75
         children:
-        - id: EnvironmentalWaterPuddle
+        - id: EnvironmentalPuddleWater
+          weight: 100
+        - id: EnvironmentalBoulderSmall
+          weight: 5
+        - id: EnvironmentalBoulderMedium
+          weight: 5
+        - id: EnvironmentalBoulderLarge
+          weight: 5

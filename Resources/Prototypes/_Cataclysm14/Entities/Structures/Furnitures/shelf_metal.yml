@@ -1,13 +1,20 @@
+#MARK: Shelves
 - type: entity
   id: StructureFurnitureShelfMetal
   parent: StructureFurnitureBaseLarge
   name: metal shelves
   description: Metal shelves, can store things inside itself.
   components:
+  - type: Appearance
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/shelf_metal.rsi
-    state: icon
     noRot: true
+    layers:
+    - state: icon
+    - map: ["enum.StorageFillLayers.Fill"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 6
+    fillBaseName: fill
   - type: Damageable
     damageModifierSet: Metallic
     damageContainer: StructuralInorganic
@@ -19,10 +26,10 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialObjectMetalPlateStack1:
+          MaterialObjectMineralPlateSteelStack1:
             min: 3
             max: 6
-          MaterialObjectMetalPipeStack1:
+          MaterialObjectMineralPipeSteelStack1:
             min: 1
             max: 4
       - !type:DoActsBehavior
@@ -52,16 +59,23 @@
     anchored: true
     noRot: true
 
+#MARK: Storage Shelves
 - type: entity
   id: StructureFurnitureShelfMetalStorage
   parent: StructureFurnitureBaseLarge
   name: metal storage shelves
   description: Metal shelves, can store things inside itself.
   components:
+  - type: Appearance
   - type: Sprite
     sprite: _Cataclysm14/Structures/Furnitures/shelf_metal_storage.rsi
-    state: icon
     noRot: true
+    layers:
+    - state: icon
+    - map: ["enum.StorageFillLayers.Fill"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 6
+    fillBaseName: fill
   - type: Damageable
     damageModifierSet: Metallic
     damageContainer: StructuralInorganic
@@ -73,10 +87,10 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialObjectMetalPlateStack1:
+          MaterialObjectMineralPlateSteelStack1:
             min: 4
             max: 8
-          MaterialObjectMetalPipeStack1:
+          MaterialObjectMineralPipeSteelStack1:
             min: 2
             max: 4
   - type: Storage
@@ -104,6 +118,7 @@
     anchored: true
     noRot: true
 
+#MARK: Store Shelves
 - type: entity
   id: StructureFurnitureShelfStore
   parent: StructureFurnitureBaseLarge
@@ -124,10 +139,10 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialObjectMetalPlateStack1:
+          MaterialObjectMineralPlateSteelStack1:
             min: 3
             max: 6
-          MaterialObjectMetalPipeStack1:
+          MaterialObjectMineralPipeSteelStack1:
             min: 1
             max: 4
       - !type:DoActsBehavior

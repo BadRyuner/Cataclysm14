@@ -9,7 +9,7 @@
 
 - type: entity
   id: StructureSpawnerWallFull13x13
-  name: structure spawner full wall
+  name: full wall
   suffix: 1x1 Chunk][13x13
   placement:
     mode: SnapgridCenter

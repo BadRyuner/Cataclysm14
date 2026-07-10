@@ -1,0 +1,98 @@
+#MARK: Iron Ingot - FromOre
+- type: latheRecipe
+  id: LatheRecipeMineralIngotIronFromOre
+  result: MaterialObjectMineralIngotIronStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralOreIron: 100
+    MaterialMineralOreCoal: 60
+
+#MARK: Iron Plate - FromOre
+- type: latheRecipe
+  id: LatheRecipeMineralPlateIronFromOre
+  result: MaterialObjectMineralPlateIronStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralOreIron: 100
+    MaterialMineralOreCoal: 90
+
+#MARK: Iron Plate - FromIngot
+- type: latheRecipe
+  id: LatheRecipeMineralPlateIronFromIngot
+  result: MaterialObjectMineralPlateIronStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralIngotIron: 100
+    MaterialMineralOreCoal: 30
+
+#MARK: Iron Pipe - FromOre
+- type: latheRecipe
+  id: LatheRecipeMineralPipeIronFromOre
+  result: MaterialObjectMineralPipeIronStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralOreIron: 100
+    MaterialMineralOreCoal: 90
+
+#MARK: Iron Pipe - FromIngot
+- type: latheRecipe
+  id: LatheRecipeMineralPipeIronFromIngot
+  result: MaterialObjectMineralPipeIronStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralIngotIron: 100
+    MaterialMineralOreCoal: 30
+
+#MARK: Copper Ingot - FromOre
+- type: latheRecipe
+  id: LatheRecipeMineralIngotCopperFromOre
+  result: MaterialObjectMineralIngotCopperStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralOreCopper: 100
+    MaterialMineralOreCoal: 60
+
+#MARK: Copper Plate - FromOre
+- type: latheRecipe
+  id: LatheRecipeMineralPlateCopperFromOre
+  result: MaterialObjectMineralPlateCopperStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralOreCopper: 100
+    MaterialMineralOreCoal: 90
+
+#MARK: Copper Plate - FromIngot
+- type: latheRecipe
+  id: LatheRecipeMineralPlateCopperFromIngot
+  result: MaterialObjectMineralPlateCopperStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralIngotCopper: 100
+    MaterialMineralOreCoal: 30
+
+#MARK: Copper Pipe - FromOre
+- type: latheRecipe
+  id: LatheRecipeMineralPipeCopperFromOre
+  result: MaterialObjectMineralPipeCopperStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralOreCopper: 100
+    MaterialMineralOreCoal: 90
+
+#MARK: Copper Pipe - FromIngot
+- type: latheRecipe
+  id: LatheRecipeMineralPipeCopperFromIngot
+  result: MaterialObjectMineralPipeCopperStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralIngotCopper: 100
+    MaterialMineralOreCoal: 30
+
+#MARK: Gold Ingot - FromOre
+- type: latheRecipe
+  id: LatheRecipeMineralIngotGoldFromOre
+  result: MaterialObjectMineralIngotGoldStack1
+  completetime: 0.50
+  materials:
+    MaterialMineralOreGold: 100
+    MaterialMineralOreCoal: 60

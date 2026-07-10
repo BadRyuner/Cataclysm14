@@ -1,3 +1,4 @@
+#MARK: Material
 - type: stack
   id: StackKevlarSheet
   name: kevlar sheet
@@ -12,7 +13,7 @@
   unit: materials-unit-sheet
   icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Textiles/kevlar_sheet.rsi, state: stack_3 }
   color: "#000000"
-  price: 0.1 # 10/sheet
+  price: 0.1 # per material unit
 
 - type: entity
   categories: [ HideSpawnMenu ]

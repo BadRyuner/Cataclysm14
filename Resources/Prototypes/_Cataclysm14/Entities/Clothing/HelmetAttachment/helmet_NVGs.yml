@@ -1,0 +1,63 @@
+#MARK: AN/PVS-7 green
+- type: entity
+  parent: BaseClothingHelmetAttachment
+  id: ClothingHelmetAttachmentNVGPVS7Green
+  name: AN/PVS-7 night vision monocular (green phosphorus)
+  description: An old 3rd gen night vision monocular initially made to replace old AN/PVS-5 Vietnam-era NVGs.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-7_green.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-7_green.rsi
+  - type: NightVision
+    isEquipment: true
+    color: "#59BE66"
+
+#MARK: AN/PVS-7 red
+- type: entity
+  parent: BaseClothingHelmetAttachment
+  id: ClothingHelmetAttachmentNVGPVS7Red
+  name: AN/PVS-7 night vision monocular (red phosphorus)
+  description: An old 3rd gen night vision monocular initially made to replace old AN/PVS-5 Vietnam-era NVGs.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-7_red.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-7_red.rsi
+  - type: NightVision
+    isEquipment: true
+    color: "#AA443D"
+
+#MARK: AN/PVS-7 blue
+- type: entity
+  parent: BaseClothingHelmetAttachment
+  id: ClothingHelmetAttachmentNVGPVS7Blue
+  name: AN/PVS-7 night vision monocular (blue phosphorus)
+  description: An old 3rd gen night vision monocular initially made to replace old AN/PVS-5 Vietnam-era NVGs.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-7_blue.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-7_blue.rsi
+  - type: NightVision
+    isEquipment: true
+    color: "#406B9C"
+
+#MARK: AN/PVS-14 Dual
+- type: entity
+  parent: BaseClothingHelmetAttachment
+  id: ClothingHelmetAttachmentNVGPVS14Dual
+  name: dual AN/PVS-14 night vision goggles
+  description: A fairly recent 3rd gen pair of NVGs initially made to replace the AN/PVS-7.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-14_dual.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-14_dual.rsi
+  - type: NightVision
+    isEquipment: true
+    color: "#4F3DA0"
