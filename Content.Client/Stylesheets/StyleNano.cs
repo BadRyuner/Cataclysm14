@@ -121,6 +121,10 @@ namespace Content.Client.Stylesheets
         public const string StyleClassBoxOfTerminusLabels = "StyleClassBoxOfTerminusLabels";
         public const string StyleClassDollButton = "StyleClassDollButton";
         public const string StyleClassAlertButton = "StyleClassAlertButton";
+        public const string StyleClassCataTabContainer = "CataTabContainer";
+        public const string StyleClassCataButton = "StyleClassCataButton";
+        public const string StyleClassCataScrollBar = "StyleClassCataScrollBar";
+        public const string StyleClassCataAlertPanel = "StyleClassCataAlertPanel";
         // Cataclysm14 End
 
         public static readonly Color PanelDark = Color.FromHex("#1E1E1E");
@@ -1799,6 +1803,10 @@ namespace Content.Client.Stylesheets
                     .Child(Element<Label>())
                     .Prop("font", terminus),
 
+                Child().Parent(Element<BoxContainer>().Class(StyleClassBoxOfTerminusLabels))
+                    .Child(Element<RichTextLabel>())
+                    .Prop("font", terminus),
+
                 Element<Button>().Class(StyleClassDollButton)
                     .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxEmpty()),
                 Element<Button>().Class(StyleClassDollButton).Pseudo(Button.StylePseudoClassDisabled)
@@ -1854,6 +1862,75 @@ namespace Content.Client.Stylesheets
                     .Child(Element<RichTextLabel>())
                     .Prop("font", terminus)
                     .Prop(Control.StylePropertyModulateSelf, new Color(0, 150, 180)),
+
+                // TabContainer
+                new StyleRule(new SelectorElement(typeof(TabContainer), [ StyleClassCataTabContainer ], null, null),
+                    new[]
+                    {
+                        new StyleProperty(TabContainer.StylePropertyPanelStyleBox, new StyleBoxFlat() { BorderThickness = new(0, 1, 0, 0), BorderColor = new(139, 58, 98), BackgroundColor = Color.Black }),
+                        new StyleProperty(TabContainer.StylePropertyTabStyleBox, new StyleBoxFlat() { BackgroundColor = new(10, 10, 220) }),
+                        new StyleProperty(TabContainer.StylePropertyTabStyleBoxInactive, new StyleBoxFlat() { BackgroundColor = Color.Black }),
+                        new StyleProperty(TabContainer.stylePropertyTabFontColor, Color.White),
+                        new StyleProperty(TabContainer.StylePropertyTabFontColorInactive, new Color(150, 150, 150)),
+                        new StyleProperty("font", terminus),
+                    }),
+
+                Element<CataButton>().Class(StyleClassCataButton)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxFlat() { BackgroundColor = Color.Black }),
+                Element<CataButton>().Class(StyleClassCataButton).Pseudo(ContainerButton.StylePseudoClassDisabled)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxFlat() { BackgroundColor = Color.Black }),
+                Element<CataButton>().Class(StyleClassCataButton).Pseudo(ContainerButton.StylePseudoClassHover)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxFlat() { BackgroundColor = new(10, 10, 220) }),
+                Element<CataButton>().Class(StyleClassCataButton).Pseudo(ContainerButton.StylePseudoClassNormal)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxFlat() { BackgroundColor = Color.Black }),
+                Element<CataButton>().Class(StyleClassCataButton).Pseudo(ContainerButton.StylePseudoClassPressed)
+                    .Prop(ContainerButton.StylePropertyStyleBox, new StyleBoxFlat() { BackgroundColor = new(10, 10, 220) }),
+
+                Child().Parent(Element<CataButton>().Class(StyleClassCataButton))
+                    .Child(Element<RichTextLabel>())
+                    .Prop("font", terminus),
+                Child().Parent(Element<CataButton>().Class(StyleClassCataButton).Pseudo(ContainerButton.StylePseudoClassNormal))
+                    .Child(Element<RichTextLabel>())
+                    .Prop("font", terminus),
+                Child().Parent(Element<CataButton>().Class(StyleClassCataButton).Pseudo(ContainerButton.StylePseudoClassHover))
+                    .Child(Element<RichTextLabel>())
+                    .Prop("font", terminus),
+                Child().Parent(Element<CataButton>().Class(StyleClassCataButton).Pseudo(ContainerButton.StylePseudoClassPressed))
+                    .Child(Element<RichTextLabel>())
+                    .Prop("font", terminus),
+
+                Child().Parent(Element<CataButton>().Class(StyleClassCataButton))
+                    .Child(Element<Label>())
+                    .Prop("font", terminus),
+                Child().Parent(Element<CataButton>().Class(StyleClassCataButton).Pseudo(ContainerButton.StylePseudoClassNormal))
+                    .Child(Element<Label>())
+                    .Prop("font", terminus),
+                Child().Parent(Element<CataButton>().Class(StyleClassCataButton).Pseudo(ContainerButton.StylePseudoClassHover))
+                    .Child(Element<Label>())
+                    .Prop("font", terminus),
+                Child().Parent(Element<CataButton>().Class(StyleClassCataButton).Pseudo(ContainerButton.StylePseudoClassPressed))
+                    .Child(Element<Label>())
+                    .Prop("font", terminus),
+
+                Child().Parent(Element<ScrollContainer>().Class(StyleClassCataScrollBar))
+                    .Child(Element<VScrollBar>())
+                    .Prop(ScrollBar.StylePropertyGrabber, new StyleBoxFlat(new Color(0, 150, 180)) { ContentMarginLeftOverride = DefaultGrabberSize, ContentMarginTopOverride = DefaultGrabberSize })
+                    .Prop(ScrollBar.StylePseudoClassGrabbed, new StyleBoxFlat(new Color(0, 150, 180)) { ContentMarginLeftOverride = DefaultGrabberSize, ContentMarginTopOverride = DefaultGrabberSize })
+                    .Prop(ScrollBar.StylePseudoClassHover, new StyleBoxFlat(new Color(0, 150, 180)) { ContentMarginLeftOverride = DefaultGrabberSize, ContentMarginTopOverride = DefaultGrabberSize }),
+
+                Child().Parent(Element<ScrollContainer>().Class(StyleClassCataScrollBar))
+                    .Child(Element<HScrollBar>())
+                    .Prop(ScrollBar.StylePropertyGrabber, new StyleBoxFlat(new Color(0, 150, 180)) { ContentMarginLeftOverride = DefaultGrabberSize, ContentMarginTopOverride = DefaultGrabberSize })
+                    .Prop(ScrollBar.StylePseudoClassGrabbed, new StyleBoxFlat(new Color(0, 150, 180)) { ContentMarginLeftOverride = DefaultGrabberSize, ContentMarginTopOverride = DefaultGrabberSize })
+                    .Prop(ScrollBar.StylePseudoClassHover, new StyleBoxFlat(new Color(0, 150, 180)) { ContentMarginLeftOverride = DefaultGrabberSize, ContentMarginTopOverride = DefaultGrabberSize }),
+
+                Element<PanelContainer>().Class(StyleClassCataAlertPanel)
+                    .Prop(PanelContainer.StylePropertyPanel, new StyleBoxFlat(Color.Black) { BorderColor = new(139, 58, 98), BorderThickness = new(1)}),
+
+                /*Child().Parent(Child().Parent(Element<PanelContainer>().Class(StyleClassCataAlertPanel))
+                        .Child(Element<BoxContainer>()))
+                    .Child(Element<RichTextLabel>())
+                    .Prop("font", terminus)*/
 
                 // Cataclysm14 End
             }).ToList());

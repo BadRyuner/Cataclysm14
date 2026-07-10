@@ -32,7 +32,7 @@
         </LayoutContainer>
         <PanelContainer Name="SeparatedChatPanel" MinWidth="300">
             <PanelContainer.PanelOverride>
-                <graphics:StyleBoxFlat BackgroundColor="#000000" /> <!-- Cataclysm14 Black background -->
+                <graphics:StyleBoxFlat BackgroundColor="#000000" BorderColor="#8B3A62" BorderThickness="1" /> <!-- Cataclysm14 Black background -->
             </PanelContainer.PanelOverride>
 
             <!-- Cataclysm14 Changes Begin-->

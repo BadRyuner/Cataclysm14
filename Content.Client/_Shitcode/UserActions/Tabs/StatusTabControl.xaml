@@ -15,12 +15,12 @@
         <ScrollContainer VerticalExpand="True"
                          HorizontalExpand="True"
                          Margin="2"
-                         MinHeight="100"
                          HScrollEnabled="False">
             <BoxContainer Name="InfoContainer"
                           Orientation="Vertical"
                           HorizontalExpand="True"
-                          Margin="5">
+                          Margin="5"
+                          StyleClasses="StyleClassBoxOfTerminusLabels"> <!-- Cataclysm14: Add StyleClass -->
                 <info:ServerInfo Name="ServerInfo"
                                  Access="Public"
                                  MinSize="0 30"
