@@ -1,0 +1,127 @@
+#MARK: Base
+- type: entity
+  id: StructureRockWallStone
+  name: stone rockwall
+  parent: BaseStructureRockWall
+  components:
+  - type: OreVein
+    oreChance: 1
+    currentOre: OreMineralRockStoneBaseYield
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+
+#MARK: Iron Vein
+- type: entity
+  id: StructureRockWallStoneOreIron
+  name: stone rockwall (iron vein)
+  parent: BaseStructureRockWall
+  components:
+  - type: OreVein
+    oreChance: 1
+    currentOre: OreMineralOreIronBaseYield
+  - type: Sprite
+    layers:
+    - state: rock
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+    - map: [ "enum.EdgeLayer.South" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_west
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_ores.rsi
+      state: ore_iron
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+ #MARK: Copper Vein
+- type: entity
+  id: StructureRockWallStoneOreCopper
+  name: stone rockwall (copper vein)
+  parent: BaseStructureRockWall
+  components:
+  - type: OreVein
+    oreChance: 1
+    currentOre: OreMineralOreCopperBaseYield
+  - type: Sprite
+    layers:
+    - state: rock
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+    - map: [ "enum.EdgeLayer.South" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_west
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_ores.rsi
+      state: ore_copper
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+ #MARK: Coal Vein
+- type: entity
+  id: StructureRockWallStoneOreCoal
+  name: stone rockwall (coal vein)
+  parent: BaseStructureRockWall
+  components:
+  - type: OreVein
+    oreChance: 1
+    currentOre: OreMineralOreCoalBaseYield
+  - type: Sprite
+    layers:
+    - state: rock
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+    - map: [ "enum.EdgeLayer.South" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_west
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_ores.rsi
+      state: ore_coal
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+ #MARK: Gold Vein
+- type: entity
+  id: StructureRockWallStoneOreGold
+  name: stone rockwall (gold vein)
+  parent: BaseStructureRockWall
+  components:
+  - type: OreVein
+    oreChance: 1
+    currentOre: OreMineralOreGoldBaseYield
+  - type: Sprite
+    layers:
+    - state: rock
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+    - map: [ "enum.EdgeLayer.South" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      sprite: _Cataclysm14/Structures/RockWalls/rockwall_stone.rsi
+      state: rock_west
+    - sprite: _Cataclysm14/Structures/RockWalls/rockwall_ores.rsi
+      state: ore_gold
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]

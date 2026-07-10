@@ -1,0 +1,7 @@
+#MARK: Mineral Ores
+- type: Tag
+  id: TagMaterialMineralOres
+
+#MARK: Mineral Ingots
+- type: Tag
+  id: TagMaterialMineralIngots

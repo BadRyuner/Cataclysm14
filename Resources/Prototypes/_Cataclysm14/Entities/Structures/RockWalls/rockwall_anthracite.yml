@@ -1,0 +1,10 @@
+- type: entity
+  id: StructureRockWallAnthracite
+  parent: BaseStructureRockWall
+  name: anthracite rockwall
+  components:
+  - type: OreVein
+    oreChance: 1
+    currentOre: OreMineralRockAnthraciteBaseYield
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/RockWalls/rockwall_anthracite.rsi

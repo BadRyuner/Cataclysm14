@@ -55,6 +55,13 @@
           weight: 30
       #Ground plants, vines, puddles, whatever
       - !type:GroupSelector
-        weight: 10
+        weight: 30
         children:
-        - id: EnvironmentalWaterPuddle
+        - id: EnvironmentalPuddleWater
+          weight: 100
+        - id: EnvironmentalBoulderSmall
+          weight: 75
+        - id: EnvironmentalBoulderMedium
+          weight: 75
+        - id: EnvironmentalBoulderLarge
+          weight: 75

@@ -45,10 +45,10 @@
         acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialObjectMetalPlateStack1:
+          MaterialObjectMineralPlateSteelStack1:
             min: 2
             max: 8
-          MaterialObjectMetalPipeStack1:
+          MaterialObjectMineralPipeSteelStack1:
             min: 1
             max: 4
   - type: Transform

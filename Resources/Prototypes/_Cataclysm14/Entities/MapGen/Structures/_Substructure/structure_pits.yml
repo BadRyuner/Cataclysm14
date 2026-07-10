@@ -9,7 +9,7 @@
 
 - type: entity
   id: StructureSpawnerPitEmpty13x13
-  name: structure spawner empty pit
+  name: empty pit
   suffix: 1x1 Chunk][13x13
   placement:
     mode: SnapgridCenter
@@ -37,7 +37,7 @@
 
 - type: entity
   id: StructureSpawnerPitEmpty26x26
-  name: structure spawner empty pit
+  name: empty pit
   suffix: 2x2 Chunk][26x26
   parent: BaseStructureSpawner
   components:

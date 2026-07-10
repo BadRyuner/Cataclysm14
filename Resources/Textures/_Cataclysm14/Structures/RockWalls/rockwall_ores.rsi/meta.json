@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Modified by avtomata (disc:core_mene), based on TG Station sprites and https://github.com/Citadel-Station-13/Citadel-Station-13-RP/blob/817e7c1f225876b45891e3f06908e6d032f0a8bc/icons/turf/walls.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "ore_copper"
+    },
+    {
+      "name": "ore_iron"
+    },
+    {
+      "name": "ore_gold"
+    },
+    {
+      "name": "ore_coal"
+    }
+  ]
+}

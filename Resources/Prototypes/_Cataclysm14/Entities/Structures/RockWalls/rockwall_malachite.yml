@@ -1,0 +1,10 @@
+- type: entity
+  id: StructureRockWallMalachite
+  parent: BaseStructureRockWall
+  name: malachite rockwall
+  components:
+  - type: OreVein
+    oreChance: 1
+    currentOre: OreMineralRockMalachiteBaseYield
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/RockWalls/rockwall_malachite.rsi

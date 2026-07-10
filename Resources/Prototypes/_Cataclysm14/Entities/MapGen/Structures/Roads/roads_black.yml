@@ -1,0 +1,162 @@
+#MARK: Straight
+- type: dungeonRoom
+  id: StructureSpawnerRoadGrayWhiteBaseBaseStraight13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_straight_1.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerRoadGrayWhiteBaseBaseStraight13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerRoadGrayWhiteBaseBaseStraight13x13
+  name: road gray-white base-base
+  suffix: Straight][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    layers:
+    - state: structure_border_road_asphalt_gray_straight
+    - state: structure_border_road_line_white_straight
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerRoadGrayWhiteBaseBaseStraight13x13
+
+#MARK: Fourway
+- type: dungeonRoom
+  id: StructureSpawnerRoadGrayWhiteBaseBaseFourway13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_fourway_1.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerRoadGrayWhiteBaseBaseFourway13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerRoadGrayWhiteBaseBaseFourway13x13
+  name: road gray-white base-base
+  suffix: Fourway][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    layers:
+    - state: structure_border_road_asphalt_gray_fourway
+    - state: structure_border_road_line_white_fourway
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerRoadGrayWhiteBaseBaseFourway13x13
+
+#MARK: Threeway
+- type: dungeonRoom
+  id: StructureSpawnerRoadGrayWhiteBaseBaseThreeway13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_threeway_1.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerRoadGrayWhiteBaseBaseThreeway13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerRoadGrayWhiteBaseBaseThreeway13x13
+  name: road gray-white base-base
+  suffix: Threeway][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    layers:
+    - state: structure_border_road_asphalt_gray_threeway
+    - state: structure_border_road_line_white_threeway
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerRoadGrayWhiteBaseBaseThreeway13x13
+
+#MARK: CornerSharp
+- type: dungeonRoom
+  id: StructureSpawnerRoadGrayWhiteBaseBaseCornerSharp13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_corner_sharp_1.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerRoadGrayWhiteBaseBaseCornerSharp13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerRoadGrayWhiteBaseBaseCornerSharp13x13
+  name: road gray-white base-base
+  suffix: Sharp Corner][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    layers:
+    - state: structure_border_road_asphalt_gray_corner_sharp
+    - state: structure_border_road_line_white_corner_sharp
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerRoadGrayWhiteBaseBaseCornerSharp13x13
+
+#MARK: CornerLong
+- type: dungeonRoom
+  id: StructureSpawnerRoadGrayWhiteBaseBaseCornerLong26x26a
+  size: 26,26
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_corner_long_1.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerRoadGrayWhiteBaseBaseCornerLong26x26
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerRoadGrayWhiteBaseBaseCornerLong26x26
+  name: road gray-white base-base
+  suffix: Long Corner][26x26
+  components:
+  - type: Sprite
+    scale: 26,26
+    offset: -0.5,0.5
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    layers:
+    - state: structure_border_road_asphalt_gray_corner_sharp
+    - state: structure_border_road_line_white_corner_sharp
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerRoadGrayWhiteBaseBaseCornerLong26x26
+
+#MARK: End
+- type: dungeonRoom
+  id: StructureSpawnerRoadGrayWhiteBaseBaseEnd13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_gray_white_base_base_end_1.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerRoadGrayWhiteBaseBaseEnd13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerRoadGrayWhiteBaseBaseEnd13x13
+  name: road gray-white base-base
+  suffix: End][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    sprite: _Cataclysm14/Mapping/structure_road.rsi
+    layers:
+    - state: structure_border_road_asphalt_gray_end
+    - state: structure_border_road_line_white_end
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerRoadGrayWhiteBaseBaseEnd13x13

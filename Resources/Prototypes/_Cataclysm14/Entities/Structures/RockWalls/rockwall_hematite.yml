@@ -1,0 +1,10 @@
+- type: entity
+  id: StructureRockWallHematite
+  parent: BaseStructureRockWall
+  name: hematite rockwall
+  components:
+  - type: OreVein
+    oreChance: 1
+    currentOre: OreMineralRockHematiteBaseYield
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/RockWalls/rockwall_hematite.rsi

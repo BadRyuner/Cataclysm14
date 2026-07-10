@@ -2,7 +2,8 @@
 - type: gameMap
   id: CataDev
   mapName: CataDev
-  mapPath: /Maps/_Cataclysm14/Test/dev_map_planet.yml
+  # mapPath: /Maps/_Cataclysm14/Test/dev_map_planet.yml
+  mapPath: /Maps/_Cataclysm14/new_england.yml
   minPlayers: 0
   stations:
     CataDev:

@@ -4,5 +4,7 @@
   abstract: true
   components:
   - type: ESViewcone
+    grainBase: 0.1
+    grainMultiplier: 0.15
   - type: ESViewconeOccludable
   - type: ESHoldToFace

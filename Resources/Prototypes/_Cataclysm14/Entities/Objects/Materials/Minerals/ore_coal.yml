@@ -1,0 +1,86 @@
+#MARK: Material
+- type: stack
+  id: StackMineralOreCoal
+  name: nail
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Minerals/ore_coal.rsi, state: stack_3 }
+  spawn: MaterialObjectMineralOreCoalStack1
+  maxCount: 25
+
+- type: material
+  id: MaterialMineralOreCoal
+  stackEntity: MaterialObjectMineralOreCoalStack1
+  name: materials-ore-coal
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Cataclysm14/Objects/Materials/Minerals/ore_coal.rsi, state: stack_3 }
+  color: "#000000"
+  price: 0.1 # per material unit
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MaterialBase
+  id: MaterialObjectMineralOreCoal
+  name: coal ore
+  description: Loose pieces of raw coal ore.
+  suffix: Full
+  components:
+  - type: Sprite
+    scale: 0.7,0.7
+    sprite: _Cataclysm14/Objects/Materials/Minerals/ore_coal.rsi
+    state: state
+    layers:
+    - state: stack_3
+      map: ["base"]
+  - type: Tag
+    tags:
+    - TagMaterialMineralOres
+  - type: Item
+    sprite: _Cataclysm14/Objects/Materials/Minerals/ore_coal.rsi
+  - type: Stack
+    stackType: StackMineralOreCoal
+    count: 100
+    baseLayer: base
+    layerStates:
+    - stack_1
+    - stack_2
+    - stack_3
+  - type: Material
+  - type: Appearance
+  - type: PhysicalComposition
+    materialComposition:
+      MaterialMineralOreCoal: 100
+  - type: UserInterface
+    interfaces:
+      enum.StackCustomSplitUiKey.Key:
+        type: StackCustomSplitBoundUserInterface
+
+#MARK: Stacks
+- type: entity
+  parent: MaterialObjectMineralOreCoal
+  id: MaterialObjectMineralOreCoalStack1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialObjectMineralOreCoal
+  id: MaterialObjectMineralOreCoalStack10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: MaterialObjectMineralOreCoal
+  id: MaterialObjectMineralOreCoalStack25
+  suffix: 25
+  components:
+  - type: Stack
+    count: 25
+
+#MARK: Ores
+- type: ore
+  id: OreMineralOreCoalBaseYield
+  oreEntity: MaterialObjectMineralOreCoalStack1
+  minOreYield: 1
+  maxOreYield: 4

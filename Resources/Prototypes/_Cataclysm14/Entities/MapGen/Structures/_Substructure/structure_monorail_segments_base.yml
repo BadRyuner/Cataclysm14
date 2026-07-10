@@ -20,7 +20,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerMonorailBaseStraight13x13
-  name: structure spawner monorail base
+  name: monorail base
   suffix: Straight][1x1 Chunk][13x13
   components:
   - type: Sprite
@@ -55,7 +55,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerMonorailBaseCorner13x13
-  name: structure spawner monorail base
+  name: monorail base
   suffix: Corner][1x1 Chunk][13x13
   components:
   - type: Sprite
@@ -91,7 +91,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerMonorailBaseStraight26x26
-  name: structure spawner monorail base
+  name: monorail base
   suffix: Double][Straight][2x2 Chunk][26x26
   components:
   - type: Sprite
@@ -118,7 +118,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerMonorailBaseStraightOpen13x13
-  name: structure spawner monorail base
+  name: monorail base
   suffix: Straight-Open][1x1 Chunk][13x13
   components:
   - type: Sprite

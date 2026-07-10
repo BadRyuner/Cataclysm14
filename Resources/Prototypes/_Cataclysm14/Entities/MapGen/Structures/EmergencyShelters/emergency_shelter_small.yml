@@ -1,0 +1,33 @@
+- type: dungeonRoom
+  id: StructureSpawnerEmergencyShelter13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/EmergencyShelters/structure_emergency_shelter_13x13_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureEmergencyShelter13x13
+
+# - type: dungeonRoom
+#   id: StructureSpawnerEmergencyShelter13x13b
+#   size: 13,13
+#   atlas: /Maps/_Cataclysm14/Structures/EmergencyShelters/structure_emergency_shelter_13x13_a.yml
+#   offset: 0,0
+#   ignoreTile: FloorShuttleOrange
+#   tags:
+#   - CataStructureEmergencyShelter13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerEmergencyShelter13x13
+  name: emergency shelter
+  suffix: 1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    layers:
+    - sprite: _Cataclysm14/Mapping/building.rsi
+      state: structure_building_brick
+      scale: 13,13
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureEmergencyShelter13x13

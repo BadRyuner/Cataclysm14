@@ -1,0 +1,34 @@
+- type: entity
+  id: BaseEnvironmentalBoulder
+  name: boulder
+  description: Heavy as a really heavy thing.
+  abstract: true
+  components:
+  - type: Clickable
+  - type: Sprite
+    noRot: true
+    sprite: Objects/Decoration/Flora/flora_rockssolid.rsi
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Climbable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 200
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]

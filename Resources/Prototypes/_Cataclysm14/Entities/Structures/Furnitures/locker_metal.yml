@@ -25,10 +25,10 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialObjectMetalPlateStack1:
+          MaterialObjectMineralPlateSteelStack1:
             min: 2
             max: 8
-          MaterialObjectMetalPipeStack1:
+          MaterialObjectMineralPipeSteelStack1:
             min: 0
             max: 2
       - !type:DoActsBehavior
@@ -91,10 +91,10 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialObjectMetalPlateStack1:
+          MaterialObjectMineralPlateSteelStack1:
             min: 2
             max: 8
-          MaterialObjectMetalPipeStack1:
+          MaterialObjectMineralPipeSteelStack1:
             min: 0
             max: 2
       - !type:DoActsBehavior
@@ -149,10 +149,10 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialObjectMetalPlateStack1:
+          MaterialObjectMineralPlateSteelStack1:
             min: 2
             max: 8
-          MaterialObjectMetalPipeStack1:
+          MaterialObjectMineralPipeSteelStack1:
             min: 0
             max: 2
       - !type:DoActsBehavior
@@ -215,10 +215,10 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialObjectMetalPlateStack1:
+          MaterialObjectMineralPlateSteelStack1:
             min: 2
             max: 8
-          MaterialObjectMetalPipeStack1:
+          MaterialObjectMineralPipeSteelStack1:
             min: 0
             max: 2
       - !type:DoActsBehavior
@@ -283,10 +283,10 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialObjectMetalPlateStack1:
+          MaterialObjectMineralPlateSteelStack1:
             min: 2
             max: 8
-          MaterialObjectMetalPipeStack1:
+          MaterialObjectMineralPipeSteelStack1:
             min: 0
             max: 2
       - !type:DoActsBehavior

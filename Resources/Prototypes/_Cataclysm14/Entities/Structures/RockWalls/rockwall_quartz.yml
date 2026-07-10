@@ -1,0 +1,10 @@
+- type: entity
+  id: StructureRockWallQuartz
+  parent: BaseStructureRockWall
+  name: quartz rockwall
+  components:
+  - type: OreVein
+    oreChance: 1
+    currentOre: OreMineralRockQuartzBaseYield
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/RockWalls/rockwall_quartz.rsi
