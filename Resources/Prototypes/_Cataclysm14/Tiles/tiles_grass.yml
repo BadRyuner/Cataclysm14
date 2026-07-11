@@ -31,7 +31,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
   baseTurf: FloorCataDirt
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [] # Cataclysm14: natural terrain cannot be pried
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -69,7 +69,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
   baseTurf: FloorCataDirt
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [] # Cataclysm14: natural terrain cannot be pried
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -107,7 +107,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
   baseTurf: FloorCataDirt
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [] # Cataclysm14: natural terrain cannot be pried
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -147,7 +147,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
   baseTurf: FloorCataDirt
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [] # Cataclysm14: natural terrain cannot be pried
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -185,7 +185,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
   baseTurf: FloorCataDirt
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [] # Cataclysm14: natural terrain cannot be pried
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -223,7 +223,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
   baseTurf: FloorCataDirt
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [] # Cataclysm14: natural terrain cannot be pried
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
@@ -254,7 +254,7 @@
     North: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
   baseTurf: FloorCataRockBase # Delta V
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [] # Cataclysm14: natural terrain cannot be pried
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -284,7 +284,7 @@
     North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
   baseTurf: FloorCataDirt
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [] # Cataclysm14: natural terrain cannot be pried
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass

@@ -24,7 +24,7 @@
     North: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
     West: /Textures/_Cataclysm14/Tiles/sand/double_edge.png
   baseTurf: FloorCataRockSand
-  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  deconstructTools: [] # Cataclysm14: natural terrain cannot be pried
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
