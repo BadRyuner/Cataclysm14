@@ -2,7 +2,7 @@
   parent: BaseStructureStack
   id: StructureStackTires
   name: tire stack
-  description: A shattered wooden door.
+  description: A tall stack of tires towering over most things, could serve as a makeshift wall or barricade.
   components:
   - type: Sprite
     offset: 0,0.5
