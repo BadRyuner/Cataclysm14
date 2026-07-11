@@ -31,6 +31,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Content.Server.Station.Systems;
+using Content.Shared._Cataclysm14.Noise;
 using Content.Shared._EinsteinEngines.Language;
 using Content.Shared.Humanoid;
 using Robust.Shared.Prototypes;
@@ -123,6 +124,15 @@ namespace Content.Server.Explosion.EntitySystems
 
         private void OnSoundTrigger(EntityUid uid, SoundOnTriggerComponent component, TriggerEvent args)
         {
+            // Cataclysm14 Begin
+            if (component.Noise is { } noise)
+            {
+                // Cataclysm14: Begin Noise system
+                var ev = new NoiseEvent(Transform(uid).Coordinates, noise);
+                RaiseLocalEvent(ref ev);
+                // Cataclysm14: End Noise System
+            }
+            // Cataclysm14 End
             if (component.RemoveOnTrigger) // if the component gets removed when it's triggered
             {
                 var xform = Transform(uid);

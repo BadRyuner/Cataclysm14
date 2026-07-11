@@ -1,3 +1,4 @@
+using Content.Shared._Cataclysm14.Noise;
 using Content.Shared.Weapons.Melee.Components;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Audio;
@@ -104,6 +105,11 @@ public sealed class MeleeSoundSystem : EntitySystem
                     break;
             }
         }
+
+        // Cataclysm14: Begin Noise system
+        var ev = new NoiseEvent(Transform(userUid ?? targetUid).Coordinates, 7);
+        RaiseLocalEvent(ref ev);
+        // Cataclysm14: End Noise System
     }
 
 }

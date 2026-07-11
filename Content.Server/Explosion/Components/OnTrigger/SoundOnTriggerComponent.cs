@@ -14,4 +14,9 @@ public sealed partial class SoundOnTriggerComponent : Component
 
     [DataField("sound")]
     public SoundSpecifier? Sound = new SoundPathSpecifier("/Audio/Effects/Grenades/supermatter_start.ogg");
+
+    // Cataclysm14 Begin
+    [DataField("noise")]
+    public float? Noise;
+    // Cataclysm14 End
 }

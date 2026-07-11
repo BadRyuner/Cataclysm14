@@ -153,6 +153,7 @@
         - MobMask
         layer:
         - MobLayer
+  - type: NoiseListener
 
 #MARK: Dummy
 - type: entity
