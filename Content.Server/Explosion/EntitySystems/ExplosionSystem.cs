@@ -35,6 +35,7 @@ using Robust.Shared.Timing; // Mono
 // Mono
 using Content.Shared.Stacks;
 using Content.Server.Stack;
+using Content.Shared._Cataclysm14.Noise;
 using Robust.Shared.Serialization.TypeSerializers.Implementations;
 
 namespace Content.Server.Explosion.EntitySystems;
@@ -430,6 +431,11 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
             : queued.Proto.SoundFar;
 
         _audio.PlayGlobal(farSound, farFilter, true, farSound.Params);
+
+        // Cataclysm14: Begin Noise system
+        var ev = new NoiseEvent(entPos, 30); // scale with intensity?
+        RaiseLocalEvent(ref ev);
+        // Cataclysm14: End Noise System
 
         return new Explosion(this,
             queued.Proto,

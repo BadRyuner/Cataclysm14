@@ -83,4 +83,5 @@
         Quantity: 8
   - type: DeleteOnTrigger
   - type: SoundOnTrigger
+    noise: 30 # Cataclysm14
     sound: /Audio/Items/smoke_grenade_smoke.ogg

@@ -1,3 +1,4 @@
+using Content.Shared._Cataclysm14.Noise;
 using Content.Shared.Audio;
 using Content.Shared.Hands;
 using Content.Shared.Interaction;
@@ -144,6 +145,11 @@ public abstract class SharedEmitSoundSystem : EntitySystem
     {
         if (component.Sound == null)
             return;
+
+        // Cataclysm14: Begin Noise system
+        var ev = new NoiseEvent(Transform(uid).Coordinates, 4);
+        RaiseLocalEvent(ref ev);
+        // Cataclysm14: End Noise System
 
         if (component.Positional)
         {

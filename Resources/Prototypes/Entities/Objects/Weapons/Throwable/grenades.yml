@@ -79,6 +79,7 @@
   - type: FlashOnTrigger
     range: 7
   - type: SoundOnTrigger
+    noise: 30 # Cataclysm14
     sound:
       path: "/Audio/_Mono/Weapons/Grenades/flashbang_explode_1.ogg" # Mono
   - type: DeleteOnTrigger
@@ -196,6 +197,7 @@
       params:
         volume: -5
   - type: SoundOnTrigger
+    noise: 30 # Cataclysm14
     removeOnTrigger: true
     sound:
       path: /Audio/Effects/Grenades/Supermatter/supermatter_start.ogg
@@ -497,6 +499,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Grenades/airboom.rsi
   - type: SoundOnTrigger
+    noise: 20 # Cataclysm14
     sound: /Audio/Items/smoke_grenade_smoke.ogg
   - type: TimerTriggerVisuals
     primingSound:
@@ -535,6 +538,7 @@
   - type: SpawnOnTrigger
     proto: GrenadeFlashEffect
   - type: SoundOnTrigger
+    noise: 15 # Cataclysm14
     sound:
       path: /Audio/Effects/Emotes/parp1.ogg
   - type: Appearance
@@ -551,6 +555,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Grenades/syndgrenade.rsi
   - type: SoundOnTrigger
+    noise: 15 # Cataclysm14
     sound:
       path: /Audio/Effects/Emotes/parp1.ogg
   - type: Appearance

@@ -28,6 +28,9 @@
           task: MeleeCombatCompoundZombieBase
     - tasks:
         - !type:HTNCompoundTask
+          task: ExploreTheSoundTargetCompoundZombieBase
+    - tasks:
+        - !type:HTNCompoundTask
           task: IdleCompoundZombieBase
 
 - type: htnCompound
@@ -187,3 +190,20 @@
         6
       AggroVisionRadius: !type:Single
         3
+
+- type: htnCompound
+  id: ExploreTheSoundTargetCompoundZombieBase
+  branches:
+    - preconditions:
+      - !type:SoundTargetExistsPrecondition
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:SetSoundTargetOperator
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            brakeMaxVelocity: null # Monolith - don't try to brake
+            targetKey: SoundCoordinates
+            pathfindKey: TargetPathfind
+            rangeKey: MeleeRange
