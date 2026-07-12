@@ -72,6 +72,7 @@
   - type: Sprite
     noRot: true
     sprite: _Mono/Objects/Flora/flora.rsi
+  - type: Appearance
   - type: Physics
     bodyType: Static
   - type: Fixtures

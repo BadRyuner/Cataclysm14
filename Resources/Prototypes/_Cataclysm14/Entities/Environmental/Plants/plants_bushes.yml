@@ -7,6 +7,14 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_blackberry.rsi
     state: summer
+  - type: Forageable
+    foodProto: FoodBlackBerries
+    maxSpawnAmount: 3 # in game: 2..5
+    sound:
+      path: /Audio/Effects/plant_rustle.ogg
+      params:
+        volume: 5
+        variation: 0.05
   - type: Destructible
     thresholds:
     - trigger:
@@ -41,6 +49,14 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_blueberry.rsi
     state: summer
+  - type: Forageable
+    foodProto: FoodBlueBerries
+    maxSpawnAmount: 3 # in game: 2..5
+    sound:
+      path: /Audio/Effects/plant_rustle.ogg
+      params:
+        volume: 5
+        variation: 0.05
   - type: Destructible
     thresholds:
     - trigger:
@@ -75,6 +91,14 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_grape.rsi
     state: summer
+  - type: Forageable
+    foodProto: FoodGrape
+    maxSpawnAmount: 3 # in game: 2..5
+    sound:
+      path: /Audio/Effects/plant_rustle.ogg
+      params:
+        volume: 5
+        variation: 0.05
   - type: Destructible
     thresholds:
     - trigger:
@@ -109,6 +133,14 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_huckleberry.rsi
     state: summer
+  - type: Forageable
+    foodProto: FoodHuckleBerries
+    maxSpawnAmount: 3 # in game: 2..5
+    sound:
+      path: /Audio/Effects/plant_rustle.ogg
+      params:
+        volume: 5
+        variation: 0.05
   - type: Destructible
     thresholds:
     - trigger:
@@ -244,7 +276,15 @@
   components:
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_raspberry.rsi
-    state: base
+    state: summer
+  - type: Forageable
+    foodProto: FoodRaspBerries
+    maxSpawnAmount: 3 # in game: 2..5
+    sound:
+      path: /Audio/Effects/plant_rustle.ogg
+      params:
+        volume: 5
+        variation: 0.05
   - type: Destructible
     thresholds:
     - trigger:
@@ -279,6 +319,14 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_strawberry.rsi
     state: summer
+  - type: Forageable
+    foodProto: FoodStrawBerries
+    maxSpawnAmount: 3 # in game: 2..5
+    sound:
+      path: /Audio/Effects/plant_rustle.ogg
+      params:
+        volume: 5
+        variation: 0.05
   - type: Destructible
     thresholds:
     - trigger:

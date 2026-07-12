@@ -1,0 +1,159 @@
+- type: entity
+  name: handful of blackberries
+  parent: FoodProduceBase
+  id: FoodBlackBerries
+  description: A darker cousin of the raspberry.  The color isn't actually what sets them apart - the identifying characteristic is whether the stem stays connected to the fruit when it's first picked.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3 # ccal 62
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_blackberry.rsi
+    state: produce
+  #- type: Produce # some day maybe
+  #  seedId: blackberry
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceBerry
+        Quantity: 9
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: handful of blueberries
+  parent: FoodProduceBase
+  id: FoodBlueBerries
+  description: A handful of tasty sweet-tart berries.  They're blue, but that doesn't mean they're sad.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 8
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4 # ccal 84
+        - ReagentId: Vitamin
+          Quantity: 3
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_blueberry.rsi
+    state: produce
+  #- type: Produce # some day maybe
+  #  seedId: blackberry
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceBerry
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: handful of huckleberries
+  parent: FoodProduceBase
+  id: FoodHuckleBerries
+  description: A handful of huckleberries, often times confused for blueberries.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 8
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4 # ccal 84
+        - ReagentId: Vitamin
+          Quantity: 3
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_huckleberry.rsi
+    state: produce
+  #- type: Produce # some day maybe
+  #  seedId: blackberry
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceBerry
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: handful of raspberries
+  parent: FoodProduceBase
+  id: FoodRaspBerries
+  description: A handful of sweet red berries, each with a hollow core.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3 # ccal 62
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_raspberry.rsi
+    state: produce
+  #- type: Produce # some day maybe
+  #  seedId: blackberry
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceBerry
+        Quantity: 9
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: handful of strawberries
+  parent: FoodProduceBase
+  id: FoodStrawBerries
+  description: A handful of tasty, juicy red berries with visible seeds on the outside of the skin.  Often found growing wild in fields.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2 # ccal 46
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Sprite
+    sprite: _Cataclysm14/Plants/Bushes/bush_strawberry.rsi
+    state: produce
+  #- type: Produce # some day maybe
+  #  seedId: blackberry
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceBerry
+        Quantity: 6
+  - type: Tag
+    tags:
+    - Fruit

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from CDDA tileset Ultimate Cataclysm, modified by zeranov/avtomata (disc:core_mene)",
+  "copyright": "Taken from CDDA tileset Ultimate Cataclysm, modified by zeranov/avtomata (disc:core_mene), 'produce' taken from CDDA tileset MSXotto+, modified by badryuner",
   "size": {
     "x": 32,
     "y": 32
@@ -18,6 +18,9 @@
     },
     {
       "name": "winter"
+    },
+    {
+      "name": "produce"
     }
   ]
 }
