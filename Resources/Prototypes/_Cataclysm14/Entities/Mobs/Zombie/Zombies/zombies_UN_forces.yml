@@ -66,3 +66,14 @@
           - id: ClothingShirtCombatCCE
           - id: ClothingShirtCombatCCECargo
           prob: 0.99
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81
+          - id: ClothingPantsCombatM81Cargo
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatM81
+          - id: ClothingShirtCombatM81Cargo
+          prob: 0.99

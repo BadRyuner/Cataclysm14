@@ -47,7 +47,7 @@
         - id: ClothingOuterBulletProofVestPoliceUSLightBlack
       head: !type:GroupSelector
         children:
-        - id: ClothingHeadHelmetBulletproofM88SWAT
+        - id: ClothingHeadHelmetBulletproofM88BlackSWAT
       belt: !type:GroupSelector
         children:
         - id: ClothingBeltDutyBeltPoliceFilledPolice

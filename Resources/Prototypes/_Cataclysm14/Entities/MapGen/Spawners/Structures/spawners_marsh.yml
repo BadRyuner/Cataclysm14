@@ -8,8 +8,8 @@
     layers:
       - state: green
         scale: 1.3,1.3
-      - sprite: _Cataclysm14/Tiles/puddles.rsi
-        state: base_grass
+      - sprite: _Cataclysm14/Tiles/Puddles/puddle_water.rsi
+        state: full
       - sprite: _Cataclysm14/Plants/Bushes/bush_raspberry.rsi
         state: base
       - sprite: _NF/Markers/general.rsi

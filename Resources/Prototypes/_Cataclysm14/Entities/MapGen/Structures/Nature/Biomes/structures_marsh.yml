@@ -19,16 +19,16 @@
     - sprite: _Cataclysm14/Mapping/generic.rsi
       state: structure_border_small
       scale: 13,13
-    - sprite: _Cataclysm14/Tiles/puddles.rsi
-      state: base_grass
+    - sprite: _Cataclysm14/Tiles/Puddles/puddle_water.rsi
+      state: full
       scale: 3,3
       offset: 0 ,-1
-    - sprite: _Cataclysm14/Tiles/puddles.rsi
-      state: base_grass
+    - sprite: _Cataclysm14/Tiles/Puddles/puddle_water.rsi
+      state: full
       scale: 3,3
       offset: 2,-1
-    - sprite: _Cataclysm14/Tiles/puddles.rsi
-      state: base_grass
+    - sprite: _Cataclysm14/Tiles/Puddles/puddle_water.rsi
+      state: full
       scale: 3,3
       offset: -2,-1
     - sprite: _Cataclysm14/Plants/Bushes/bush_blackberry.rsi

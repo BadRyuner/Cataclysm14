@@ -132,6 +132,10 @@
         weight: 10
       - id: MobZombieFEMACBRN
         weight: 10
+      - id: MobZombieUSArmyInfantryDesert
+        weight: 10
+      - id: MobZombieUSArmyInfantryWoodland
+        weight: 10
       - id: MobZombieUNPeacekeeperFR
         weight: 5
       - id: MobZombieHazmat

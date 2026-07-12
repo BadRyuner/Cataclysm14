@@ -110,7 +110,7 @@
         - id: ClothingOuterBulletProofVestPoliceUSLightBlack
       head: !type:GroupSelector
         children:
-        - id: ClothingHeadHelmetBulletproofM88SWAT
+        - id: ClothingHeadHelmetBulletproofM88BlackSWAT
         prob: 0.95
       belt: !type:GroupSelector
         children:

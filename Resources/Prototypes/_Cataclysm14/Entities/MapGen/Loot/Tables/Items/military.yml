@@ -58,7 +58,7 @@
         weight: 100
         tableId: LootTableClothingNationalGuardBulletProofVests
         rolls: !type:RangeNumberSelector
-          range: 0,4
+          range: 0,2
       - !type:NestedSelector
         weight: 100
         tableId: LootTableClothingNationalGuardTop
@@ -69,6 +69,11 @@
         tableId: LootTableClothingNationalGuardBottom
         rolls: !type:RangeNumberSelector
           range: 0,4
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingNationalGuardHelmet
+        rolls: !type:RangeNumberSelector
+          range: 0,2
       - !type:NestedSelector
         weight: 100
         tableId: LootTableAmmunitionAmmoBoxUsForcesLowTier
