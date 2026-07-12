@@ -37,7 +37,6 @@
     allowedEmotes: ['Belch'] # Frontier
   - type: ContentEye #Cataclysm14, bigger view
     maxZoom: 1.75,1.75
-  - type: ZombifyOnDeath #Cataclysm14, blob lore moment real
 
 - type: entity
   parent: BaseSpeciesDummy
