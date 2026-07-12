@@ -109,7 +109,7 @@
       state: equipped-PANTS
       offset: 0,0.08
     - sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
-      state: equipped-HELMET
+      state: helmet-equipped-HELMET
       color: "#202020"
     - sprite: _Cataclysm14/Clothing/Hands/gloves_tactical_any.rsi
       state: equipped-HAND
