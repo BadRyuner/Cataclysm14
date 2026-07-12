@@ -18,10 +18,10 @@ public sealed partial class ForageableComponent : Component
     public bool ReadyToForage = true;
 
     [DataField, AutoNetworkedField]
-    public int SpawnAmount;
+    public int SpawnAmount = 1;
 
     [DataField]
-    public int MaxSpawnAmount;
+    public int MaxSpawnAmount = 1;
 
     [DataField]
     public EntProtoId FoodProto;

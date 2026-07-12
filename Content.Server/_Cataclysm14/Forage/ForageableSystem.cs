@@ -11,11 +11,14 @@ public sealed class ForageableSystem : SharedForageableSystem
     [Dependency] private readonly IConfigurationManager _cfgManager = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IParallelManager _parallel = default!;
+    [Dependency] private readonly SharedMapSystem _map = default!;
 
     private readonly HashSet<Entity<ForageableComponent>> _respawnTargets = new(128);
 
     private float _respawnTimer = 0f;
     private float _respawnCooldown = 0f;
+    private int _respawnMaxPerOnce = 30;
+    private bool _respawnProcessing = false;
 
     public override void Initialize()
     {
@@ -25,11 +28,13 @@ public sealed class ForageableSystem : SharedForageableSystem
         SubscribeLocalEvent<ForageableComponent, ComponentShutdown>(OnComponentShutdown);
 
         Subs.CVar(_cfgManager, CataCCVars.ForageRespawnCooldown, value => _respawnCooldown = value, true);
+        Subs.CVar(_cfgManager, CataCCVars.ForageMaxRespawnPerOnce, value => _respawnMaxPerOnce = value, true);
     }
 
     private void OnComponentInit(EntityUid uid, ForageableComponent component, ComponentInit args)
     {
-        Respawn(uid, component, true);
+        if (_map.IsInitialized(Transform(uid).MapID)) // skip if it`s entity from mapping or frozen or uninit map
+            Respawn(uid, component, true);
     }
 
     private void OnComponentShutdown(EntityUid uid, ForageableComponent component, ComponentShutdown args)
@@ -59,14 +64,25 @@ public sealed class ForageableSystem : SharedForageableSystem
 
     public override void Update(float frameTime)
     {
-        _respawnTimer += frameTime;
-        if (_respawnTimer < _respawnCooldown)
-            return;
+        if (!_respawnProcessing)
+        {
+            _respawnTimer += frameTime;
+            if (_respawnTimer < _respawnCooldown)
+                return;
 
-        _respawnTimer = 0f;
+            _respawnTimer = 0f;
+            _respawnProcessing = true;
+        }
+
+        var respawned = 0;
         foreach (var respawnTarget in _respawnTargets)
         {
+            respawned++;
             Respawn(respawnTarget.Owner, respawnTarget.Comp);
+            if (respawned >= _respawnMaxPerOnce)
+                return;
         }
+
+        _respawnProcessing = false;
     }
 }
