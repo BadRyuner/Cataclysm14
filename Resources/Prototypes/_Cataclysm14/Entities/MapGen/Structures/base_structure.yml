@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   id: BaseStructureSpawner
   parent: MarkerBase
@@ -13,6 +14,7 @@
     clearExisting: true
     inheritRotation: true
 
+#MARK: Test5x5a
 - type: dungeonRoom
   id: CataStructureTest5x5a
   size: 5,5
@@ -38,6 +40,7 @@
       tags:
       - CataStructureTestSmall
 
+#MARK: TestRecursive10x10
 - type: dungeonRoom
   id: CataStructureTestRecursive10x10
   size: 10,10

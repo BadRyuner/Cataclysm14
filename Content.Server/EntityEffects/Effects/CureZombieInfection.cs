@@ -25,13 +25,13 @@ public sealed partial class CureZombieInfection : EntityEffect
         if (entityManager.HasComponent<IncurableZombieComponent>(args.TargetEntity))
             return;
 
-        entityManager.RemoveComponent<ZombifyOnDeathComponent>(args.TargetEntity);
+        // entityManager.RemoveComponent<ZombifyOnDeathComponent>(args.TargetEntity); //Cataclysm14, zombification changes
         entityManager.RemoveComponent<PendingZombieComponent>(args.TargetEntity);
 
-        if (Innoculate)
-        {
-            entityManager.EnsureComponent<ZombieImmuneComponent>(args.TargetEntity);
-        }
+        // if (Innoculate)
+        // {
+        //     entityManager.EnsureComponent<ZombieImmuneComponent>(args.TargetEntity); //Cataclysm14, zombification changes
+        // }
     }
 }
 

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by zeranov/avtomata (disc:core_mene) for use by monolith station and RU S.T.A.K.L.E.R.",
+  "copyright": "Based on https://github.com/Civ13/Civ13/blob/d5cca4c4d7a649176c5f0b26d02dfccaaf5649f4/icons/obj/clothing/uniforms.dmi, modified by avtomata (disc:core_mene)",
   "size": {
     "x": 32,
     "y": 32
@@ -11,7 +11,7 @@
       "name": "icon"
     },
     {
-      "name": "equipped-HELMET",
+      "name": "equipped-INNERCLOTHING",
       "directions": 4
     },
     {

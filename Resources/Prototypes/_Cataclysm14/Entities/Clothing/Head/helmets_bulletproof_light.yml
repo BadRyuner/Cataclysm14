@@ -26,17 +26,15 @@
       - type: StaticPrice
         price: 12000
         vendPrice: 20000
-#MARK: M88 UN
+
+#MARK: Base M88
     - type: entity
       parent: BaseClothingHead
-      id: ClothingHeadHelmetBulletproofM88Black
-      name: M88 ballistic helmet (Black)
+      id: BaseClothingHeadHelmetBulletproofM88
+      abstract: true
+      name: M88 ballistic helmet
       description: A light ballistic helmet made for the US army.
       components:
-      - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_black.rsi
-      - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_black.rsi
       - type: ExplosionResistance
         damageCoefficient: 0.8
       - type: Armor
@@ -55,8 +53,202 @@
         price: 12000
         vendPrice: 20000
 
+#MARK: M88 Black
     - type: entity
-      parent: ClothingHeadHelmetBulletproofM88Black
+      parent: BaseClothingHeadHelmetBulletproofM88
+      id: ClothingHeadHelmetBulletproofM88Black
+      name: M88 ballistic helmet (Black)
+      description: A light ballistic helmet made for the US army.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        layers:
+        - state: helmet-icon
+          color: "#1B1B1B"
+        - state: bits-icon
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        clothingVisuals:
+          head:
+          - state: helmet-equipped-HELMET
+            color: "#1B1B1B"
+          - state: bits-equipped-HELMET
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: helmet-inhand-left
+            color: "#1B1B1B"
+          - state: bits-inhand-left
+          right:
+          - state: helmet-inhand-right
+            color: "#1B1B1B"
+          - state: bits-inhand-right
+
+#MARK: M88 Black SWAT
+    - type: entity
+      parent: BaseClothingHeadHelmetBulletproofM88
+      id: ClothingHeadHelmetBulletproofM88BlackSWAT
+      name: M88 ballistic helmet (black SWAT)
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_SWAT_any.rsi
+        layers:
+        - state: helmet-icon
+          color: "#1B1B1B"
+        - state: bits-icon
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_SWAT_any.rsi
+        clothingVisuals:
+          head:
+          - state: helmet-equipped-HELMET
+            color: "#1B1B1B"
+          - state: bits-equipped-HELMET
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: helmet-inhand-left
+            color: "#1B1B1B"
+          - state: bits-inhand-left
+          right:
+          - state: helmet-inhand-right
+            color: "#1B1B1B"
+          - state: bits-inhand-right
+
+#MARK: M88 Dark Blue
+    - type: entity
+      parent: BaseClothingHeadHelmetBulletproofM88
+      id: ClothingHeadHelmetBulletproofM88DarkBlue
+      name: M88 ballistic helmet (dark blue)
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        layers:
+        - state: helmet-icon
+          color: "#191931"
+        - state: bits-icon
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        clothingVisuals:
+          head:
+          - state: helmet-equipped-HELMET
+            color: "#191931"
+          - state: bits-equipped-HELMET
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: helmet-inhand-left
+            color: "#191931"
+          - state: bits-inhand-left
+          right:
+          - state: helmet-inhand-right
+            color: "#191931"
+          - state: bits-inhand-right
+
+#MARK: M88 Dark Blue SWAT
+    - type: entity
+      parent: BaseClothingHeadHelmetBulletproofM88
+      id: ClothingHeadHelmetBulletproofM88DarkBlueSWAT
+      name: M88 ballistic helmet (dark blue SWAT)
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_SWAT_any.rsi
+        layers:
+        - state: helmet-icon
+          color: "#191931"
+        - state: bits-icon
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_SWAT_any.rsi
+        clothingVisuals:
+          head:
+          - state: helmet-equipped-HELMET
+            color: "#191931"
+          - state: bits-equipped-HELMET
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: helmet-inhand-left
+            color: "#191931"
+          - state: bits-inhand-left
+          right:
+          - state: helmet-inhand-right
+            color: "#191931"
+          - state: bits-inhand-right
+
+#MARK: M88 Green
+    - type: entity
+      parent: BaseClothingHeadHelmetBulletproofM88
+      id: ClothingHeadHelmetBulletproofM88Green
+      name: M88 ballistic helmet (green)
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        layers:
+        - state: helmet-icon
+          color: "#3C4E20"
+        - state: bits-icon
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        clothingVisuals:
+          head:
+          - state: helmet-equipped-HELMET
+            color: "#3C4E20"
+          - state: bits-equipped-HELMET
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: helmet-inhand-left
+            color: "#3C4E20"
+          - state: bits-inhand-left
+          right:
+          - state: helmet-inhand-right
+            color: "#3C4E20"
+          - state: bits-inhand-right
+
+#MARK: M88 Olive
+    - type: entity
+      parent: BaseClothingHeadHelmetBulletproofM88
+      id: ClothingHeadHelmetBulletproofM88Olive
+      name: M88 ballistic helmet (olive)
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        layers:
+        - state: helmet-icon
+          color: "#667A46"
+        - state: bits-icon
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        clothingVisuals:
+          head:
+          - state: helmet-equipped-HELMET
+            color: "#667A46"
+          - state: bits-equipped-HELMET
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: helmet-inhand-left
+            color: "#667A46"
+          - state: bits-inhand-left
+          right:
+          - state: helmet-inhand-right
+            color: "#667A46"
+          - state: bits-inhand-right
+
+#MARK: M88 M81 patern
+    - type: entity
+      parent: BaseClothingHeadHelmetBulletproofM88
+      id: ClothingHeadHelmetBulletproofM88M81
+      name: M88 ballistic helmet (M81 patern)
+      description: A light ballistic helmet made for the US army and the United nations blue helmet peacekeepers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_M81.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_M81.rsi
+
+#MARK: M88 UN
+    - type: entity
+      parent: BaseClothingHeadHelmetBulletproofM88
       id: ClothingHeadHelmetBulletproofM88UN
       name: M88 ballistic helmet (UN)
       description: A light ballistic helmet made for the US army and the United nations blue helmet peacekeepers.
@@ -65,23 +257,3 @@
         sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_UN.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_UN.rsi
-
-    - type: entity
-      parent: ClothingHeadHelmetBulletproofM88Black
-      id: ClothingHeadHelmetBulletproofM88SWAT
-      name: M88 ballistic helmet (SWAT)
-      components:
-      - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_SWAT.rsi
-      - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_SWAT.rsi
-
-    - type: entity
-      parent: ClothingHeadHelmetBulletproofM88Black
-      id: ClothingHeadHelmetBulletproofM88Olive
-      name: M88 ballistic helmet (Olive)
-      components:
-      - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_olive.rsi
-      - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_olive.rsi

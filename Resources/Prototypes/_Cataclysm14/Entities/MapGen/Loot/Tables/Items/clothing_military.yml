@@ -65,6 +65,8 @@
     - id: ClothingShirtCombatUCPCargo
     - id: ClothingShirtCombatOCPMulticam
     - id: ClothingShirtCombatOCPMulticamCargo
+    - id: ClothingShirtCombatM81
+    - id: ClothingShirtCombatM81Cargo
 
 #MARK: National Guard Bottom
 - type: entityTable
@@ -75,6 +77,16 @@
     - id: ClothingPantsCombatUCPCargo
     - id: ClothingPantsCombatOCPMulticam
     - id: ClothingPantsCombatOCPMulticamCargo
+    - id: ClothingPantsCombatM81
+    - id: ClothingPantsCombatM81Cargo
+
+#MARK: National Guard Helmet
+- type: entityTable
+  id: LootTableClothingNationalGuardHelmet
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+    - id: ClothingHeadHelmetBulletproofM88M81
 
 #MARK: UN Peacekeeper vest
 - type: entityTable

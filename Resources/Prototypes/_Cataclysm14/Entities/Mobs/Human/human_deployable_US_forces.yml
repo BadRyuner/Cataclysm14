@@ -8,9 +8,8 @@
     containers:
       outerClothing: !type:NestedSelector
         tableId: LootTableClothingNationalGuardBulletProofVestFilled
-      head: !type:GroupSelector
-        children:
-        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+      head: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardHelmet
       belt: !type:GroupSelector
         children:
         - id: ClothingBeltDutyBeltTanFilledNationalGuard
@@ -60,6 +59,14 @@
         jumpsuit: !type:GroupSelector
           children:
           - id: ClothingShirtCombatOCPMulticamCargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81Cargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatM81Cargo
+
 
 #MARK: National Guard Gunner
 - type: entity
@@ -71,9 +78,8 @@
     containers:
       outerClothing: !type:NestedSelector
         tableId: LootTableClothingNationalGuardBulletProofVestFilled
-      head: !type:GroupSelector
-        children:
-        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+      head: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardHelmet
       belt: !type:GroupSelector
         children:
         - id: ClothingBeltDutyBeltTanFilledNationalGuard
@@ -123,6 +129,13 @@
         jumpsuit: !type:GroupSelector
           children:
           - id: ClothingShirtCombatOCPMulticamCargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81Cargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatM81Cargo
 
 #MARK: National Guard CBRN
 - type: entity
@@ -139,9 +152,8 @@
         tableId: LootTableClothingMaskGasmasksFullFaceIndustrial
       outerClothing: !type:NestedSelector
         tableId: LootTableClothingNationalGuardBulletProofVestFilled
-      head: !type:GroupSelector
-        children:
-        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+      head: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardHelmet
       belt: !type:GroupSelector
         children:
         - id: ClothingBeltDutyBeltTanFilledNationalGuard
@@ -183,6 +195,10 @@
         pants: !type:GroupSelector
           children:
           - id: ClothingPantsCombatOCPMulticamCargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81Cargo
 
 #MARK: FEMA
 - type: entity
@@ -225,3 +241,7 @@
         pants: !type:GroupSelector
           children:
           - id: ClothingPantsCombatOCPMulticamCargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81Cargo

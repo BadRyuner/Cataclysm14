@@ -1,7 +1,7 @@
 - type: dungeonRoom
   id: StructureSpawnerHouseSmall26x26a
   size: 27,27
-  atlas: /Maps/_Cataclysm14/Structures/structure_house_residential_small_26x26_a.yml
+  atlas: /Maps/_Cataclysm14/Structures/Houses/structure_house_residential_small_26x26_a.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -10,7 +10,7 @@
 - type: dungeonRoom
   id: StructureSpawnerHouseSmall26x26b
   size: 27,27
-  atlas: /Maps/_Cataclysm14/Structures/structure_house_residential_small_26x26_b.yml
+  atlas: /Maps/_Cataclysm14/Structures/Houses/structure_house_residential_small_26x26_b.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:

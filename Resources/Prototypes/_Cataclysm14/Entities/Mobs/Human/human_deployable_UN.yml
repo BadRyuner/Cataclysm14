@@ -41,6 +41,14 @@
         jumpsuit: !type:GroupSelector
           children:
           - id: ClothingShirtCombatCCECargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81Cargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatM81Cargo
+
 
 #MARK: UN Officer
 - type: entity
@@ -86,3 +94,10 @@
         jumpsuit: !type:GroupSelector
           children:
           - id: ClothingShirtCombatCCECargo
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81Cargo
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatM81Cargo

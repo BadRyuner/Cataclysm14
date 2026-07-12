@@ -19,9 +19,8 @@
       outerClothing: !type:NestedSelector
         tableId: LootTableClothingNationalGuardBulletProofVests
         prob: 0.95
-      head: !type:GroupSelector
-        children:
-        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+      head: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardHelmet
         prob: 0.8
       belt: !type:GroupSelector
         children:
@@ -81,6 +80,17 @@
           - id: ClothingShirtCombatOCPMulticam
           - id: ClothingShirtCombatOCPMulticamCargo
           prob: 0.99
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81
+          - id: ClothingPantsCombatM81Cargo
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatM81
+          - id: ClothingShirtCombatM81Cargo
+          prob: 0.99
 
 #MARK: National Guard CBRN
 - type: entity
@@ -103,9 +113,8 @@
       outerClothing: !type:NestedSelector
         tableId: LootTableClothingNationalGuardBulletProofVests
         prob: 0.95
-      head: !type:GroupSelector
-        children:
-        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+      head: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardHelmet
         prob: 0.8
       belt: !type:GroupSelector
         children:
@@ -161,6 +170,17 @@
           children:
           - id: ClothingPantsCombatOCPMulticam
           - id: ClothingPantsCombatOCPMulticamCargo
+          prob: 0.99
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81
+          - id: ClothingPantsCombatM81Cargo
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatM81
+          - id: ClothingShirtCombatM81Cargo
           prob: 0.99
 
 #MARK: FEMA
@@ -231,4 +251,171 @@
           children:
           - id: ClothingPantsCombatOCPMulticam
           - id: ClothingPantsCombatOCPMulticamCargo
+          prob: 0.99
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81
+          - id: ClothingPantsCombatM81Cargo
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatM81
+          - id: ClothingShirtCombatM81Cargo
+          prob: 0.99
+
+#MARK: US Army Woodland Infantry
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieUSArmyInfantryWoodland
+  suffix: US Army Woodland Infantry
+  components:
+  #Worn armor isn't effective enough to be a real threat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Critical
+      500: Dead
+  - type: Stamina
+    critThreshold: 250
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardBulletProofVests
+        prob: 0.50
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofM88M81
+        prob: 0.8
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltTanFilledNationalGuard
+          weight: 2
+        - id: ClothingBeltDutyBeltTan
+        prob: 0.8
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaBalaclavaSkiMaskRangerGreen
+        prob: 0.2
+      slingfront: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      suitstorage: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatRangerGreen
+        prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATRangerGreen
+        prob: 0.99
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackTanFilledNationalGuard
+          weight: 2
+        - id: ClothingBackpackAlicePackTan
+        prob: 0.99
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.45
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81
+          - id: ClothingPantsCombatM81Cargo
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatM81
+          - id: ClothingShirtCombatM81Cargo
+          prob: 0.99
+
+#MARK: US Army Desert Infantry
+- type: entity
+  parent: BaseMobZombieSimple
+  id: MobZombieUSArmyInfantryDesert
+  suffix: US Army Desert Infantry
+  components:
+  #Worn armor isn't effective enough to be a real threat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Critical
+      500: Dead
+  - type: Stamina
+    critThreshold: 250
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableOutfitContainerFill
+    containers:
+      outerClothing: !type:NestedSelector
+        tableId: LootTableClothingNationalGuardBulletProofVests
+        prob: 0.95
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+        prob: 0.8
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltTanFilledNationalGuard
+          weight: 2
+        - id: ClothingBeltDutyBeltTan
+        prob: 0.8
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaBalaclavaSkiMaskTan
+        - id: ClothingBalaclavaBalaclavaSkiMaskCoyoteBrown
+        prob: 0.2
+      slingfront: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      suitstorage: !type:NestedSelector
+        tableId: LootTableWeaponGunNationalGuard
+        prob: 0.01
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatTan
+        prob: 0.8
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATTan
+        prob: 0.99
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackTanFilledNationalGuard
+          weight: 2
+        - id: ClothingBackpackAlicePackTan
+        prob: 0.99
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.45
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatUCP
+          - id: ClothingPantsCombatUCPCargo
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatUCP
+          - id: ClothingShirtCombatUCPCargo
+          prob: 0.99
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatOCPMulticam
+          - id: ClothingPantsCombatOCPMulticamCargo
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatOCPMulticam
+          - id: ClothingShirtCombatOCPMulticamCargo
           prob: 0.99

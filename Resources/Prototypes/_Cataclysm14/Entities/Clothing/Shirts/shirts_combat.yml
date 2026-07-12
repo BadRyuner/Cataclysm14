@@ -140,3 +140,26 @@
     sprite: _Cataclysm14/Clothing/Shirt/shirt_Gorka4_olive.rsi
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/shirt_Gorka4_olive.rsi
+
+#MARK: M81
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatM81
+  name: M81 patern combat shirt
+  description: Ripstop combat shirt. It has the M81 american forces woodland camo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_M81.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_M81.rsi
+
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatM81Cargo
+  name: M81 patern cargo combat shirt
+  description: Ripstop combat shirt with large pockets. It has the M81 american forces woodland camo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_M81.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_M81.rsi
