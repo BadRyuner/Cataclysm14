@@ -14,10 +14,12 @@ public sealed class ForageableSystem : SharedForageableSystem
     [Dependency] private readonly SharedMapSystem _map = default!;
 
     private readonly HashSet<Entity<ForageableComponent>> _respawnTargets = new(128);
+    private readonly List<Entity<ForageableComponent>> _processRespawnTargets = new(128);
 
     private float _respawnTimer = 0f;
     private float _respawnCooldown = 0f;
     private int _respawnMaxPerOnce = 30;
+    private int _alreadyRespawned = 0;
     private bool _respawnProcessing = false;
 
     public override void Initialize()
@@ -72,17 +74,24 @@ public sealed class ForageableSystem : SharedForageableSystem
 
             _respawnTimer = 0f;
             _respawnProcessing = true;
+            _processRespawnTargets.EnsureCapacity(_respawnTargets.Capacity);
+            _processRespawnTargets.AddRange(_respawnTargets);
         }
 
-        var respawned = 0;
-        foreach (var respawnTarget in _respawnTargets)
+        var amount = Math.Min(_alreadyRespawned + _respawnMaxPerOnce, _processRespawnTargets.Count);
+        for (var i = _alreadyRespawned; i < amount; i++)
         {
-            respawned++;
-            Respawn(respawnTarget.Owner, respawnTarget.Comp);
-            if (respawned >= _respawnMaxPerOnce)
-                return;
+            var target = _processRespawnTargets[i];
+            Respawn(target.Owner, target.Comp);
         }
 
-        _respawnProcessing = false;
+        _alreadyRespawned = amount;
+
+        if (_alreadyRespawned == _processRespawnTargets.Count)
+        {
+            _processRespawnTargets.Clear();
+            _alreadyRespawned = 0;
+            _respawnProcessing = false;
+        }
     }
 }
