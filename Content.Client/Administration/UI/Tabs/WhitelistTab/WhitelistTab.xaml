@@ -1,0 +1,14 @@
+<Control xmlns="https://spacestation14.io">
+    <BoxContainer Orientation="Vertical" SeparationOverride="6">
+        <Label Text="Manage the server whitelist. Enter an SS14 username or UID." />
+        <BoxContainer Orientation="Horizontal" SeparationOverride="6">
+            <LineEdit Name="UserNameOrId" HorizontalExpand="True" PlaceHolder="Username or UID" />
+            <Button Name="AddButton" Text="Add" />
+            <Button Name="RefreshButton" Text="Refresh" />
+        </BoxContainer>
+        <Label Name="StatusLabel" />
+        <ScrollContainer VerticalExpand="True">
+            <BoxContainer Name="EntryList" Orientation="Vertical" SeparationOverride="2" />
+        </ScrollContainer>
+    </BoxContainer>
+</Control>

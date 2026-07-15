@@ -27,6 +27,8 @@ using Content.Server._Mono.Company; // Mono
 
 namespace Content.Server.Database
 {
+    public readonly record struct WhitelistEntryRecord(NetUserId UserId, string? UserName);
+
     public interface IServerDbManager
     {
         void Init();
@@ -262,6 +264,8 @@ namespace Content.Server.Database
         #endregion
 
         #region Whitelist
+
+        Task<IReadOnlyList<WhitelistEntryRecord>> GetWhitelistEntriesAsync(CancellationToken cancel = default);
 
         Task<bool> GetWhitelistStatusAsync(NetUserId player);
 
@@ -824,6 +828,12 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.CountAdminLogs(round));
+        }
+
+        public Task<IReadOnlyList<WhitelistEntryRecord>> GetWhitelistEntriesAsync(CancellationToken cancel = default)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetWhitelistEntriesAsync(cancel));
         }
 
         public Task<bool> GetWhitelistStatusAsync(NetUserId player)
