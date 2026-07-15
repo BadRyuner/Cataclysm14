@@ -196,14 +196,15 @@
   branches:
     - preconditions:
       - !type:SoundTargetExistsPrecondition
+      - !type:KeyNotExistsPrecondition
+        key: Target
       tasks:
         - !type:HTNPrimitiveTask
           operator: !type:SetSoundTargetOperator
         - !type:HTNPrimitiveTask
           operator: !type:MoveToOperator
             pathfindInPlanning: true
-            removeKeyOnFinish: false
+            removeKeyOnFinish: true
             brakeMaxVelocity: null # Monolith - don't try to brake
             targetKey: SoundCoordinates
-            pathfindKey: TargetPathfind
-            rangeKey: MeleeRange
+            rangeKey: VisionRadius
