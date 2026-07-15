@@ -1,5 +1,49 @@
+#MARK: Tools Common
 - type: entityTable
-  id: LootTableToolsCrowbarsMetal
+  id: LootTableToolsCommon
+  table: !type:GroupSelector
+    children:
+    #Tables >>
+    #Lights
+    - !type:NestedSelector
+      tableId: LootTableToolLightFlashlightHandheldBlack
+    - !type:NestedSelector
+      tableId: LootTableToolLightFlashlightHandheldHeavy
+    - !type:NestedSelector
+      tableId: LootTableToolLightFlashlightHandheldHeavyDuty
+    #Misc
+    - !type:NestedSelector
+      tableId: LootTableToolCrowbarsMetal
+    #Tools >>
+    #Saws
+    - id: ToolSawWoodSaw
+    - id: ToolSawHacksaw
+    #Screwdrivers
+    - id: ToolScrewdriverSocketSet
+    - id: ToolScrewdriver
+    #Wrenches
+    - id: ToolWrenchAdjustable
+    - id: ToolWrenchAdjustableSmall
+    - id: ToolWrenchAdjustableHeavy
+    - id: ToolWrenchSocket
+    - id: ToolWrenchSocketSet
+    #Comms
+    - id: ToolRadioHandheldIndustrial
+    - id: ToolRadioHandheldCommercialBlack
+    - id: ToolRadioHandheldMilitaryBlack
+    #Power
+    - id: PowerCellMedium
+    - id: PowerCellSmall
+    - id: PowerCellHigh
+    #Misc
+    - id: ToolTireIron
+    - id: ToolPliers
+    - id: ToolPliersTongueGroove
+    - id: ToolPowerCircularSaw
+
+#MARK: Metal Crowbars
+- type: entityTable
+  id: LootTableToolCrowbarsMetal
   table: !type:GroupSelector
     children:
     - id: ToolCrowbarMetal
@@ -8,18 +52,47 @@
     - id: ToolCrowbarMetalOrange
     - id: ToolCrowbarMetalYellow
 
+#MARK: Tanks Oxy
 - type: entityTable
-  id: LootTableToolsTanksOxygen
+  id: LootTableToolTanksOxygen
   table: !type:GroupSelector
     children:
     - id: ToolTankOxygen
       weight: 2.5
     - id: ToolTankOxygenFilledOxygen
 
+#MARK: External Supplies Oxy
 - type: entityTable
-  id: LootTableToolsTanksExternalOxygenSupply
+  id: LootTableToolTanksExternalOxygenSupply
   table: !type:GroupSelector
     children:
     - id: ToolTankOxygenExternalSupply
       weight: 2.5
     - id: ToolTankOxygenExternalSupplyFilledOxygen
+
+#MARK: Black Flashlight
+- type: entityTable
+  id: LootTableToolLightFlashlightHandheldBlack
+  table: !type:GroupSelector
+    children:
+    - id: ToolLightFlashlightHandheldBlackFilled
+    - id: ToolLightFlashlightHandheldBlackEmpty
+      weight: 2.0
+
+#MARK: Heavy Flashlight
+- type: entityTable
+  id: LootTableToolLightFlashlightHandheldHeavy
+  table: !type:GroupSelector
+    children:
+    - id: ToolLightFlashlightHandheldHeavyFilled
+    - id: ToolLightFlashlightHandheldHeavyEmpty
+      weight: 2.0
+
+#MARK: Heavy Duty Flashlight
+- type: entityTable
+  id: LootTableToolLightFlashlightHandheldHeavyDuty
+  table: !type:GroupSelector
+    children:
+    - id: ToolLightFlashlightHandheldHeavyDutyFilled
+    - id: ToolLightFlashlightHandheldHeavyDutyEmpty
+      weight: 2.0

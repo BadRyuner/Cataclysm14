@@ -1,0 +1,271 @@
+#MARK: Shelf Tools
+- type: entity
+  id: StructureFurnitureShelfMetalFilledToolsCommon
+  suffix: Tools 100%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledToolsCommonRandom50
+  suffix: Tools 50%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.50
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledToolsCommonRandom25
+  suffix: Tools 25%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.25
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledToolsCommonRandom10
+  suffix: Tools 10%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.10
+
+#MARK: Tool Chest Compact Tools
+- type: entity
+  id: StructureFurnitureToolchestMobileCompactFilledToolsCommon
+  suffix: Tools 100%
+  parent: StructureFurnitureToolchestMobileCompact
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+
+- type: entity
+  id: StructureFurnitureToolchestMobileCompactFilledToolsCommonRandom50
+  suffix: Tools 50%
+  parent: StructureFurnitureToolchestMobileCompact
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.50
+
+- type: entity
+  id: StructureFurnitureToolchestMobileCompactFilledToolsCommonRandom25
+  suffix: Tools 25%
+  parent: StructureFurnitureToolchestMobileCompact
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.25
+
+- type: entity
+  id: StructureFurnitureToolchestMobileCompactFilledToolsCommonRandom10
+  suffix: Tools 10%
+  parent: StructureFurnitureToolchestMobileCompact
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.10
+
+#MARK: Tool Chest Large Tools
+- type: entity
+  id: StructureFurnitureToolchestMobileLargeFilledToolsCommon
+  suffix: Tools 100%
+  parent: StructureFurnitureToolchestMobileLarge
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+
+- type: entity
+  id: StructureFurnitureToolchestMobileLargeFilledToolsCommonRandom50
+  suffix: Tools 50%
+  parent: StructureFurnitureToolchestMobileLarge
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.50
+
+- type: entity
+  id: StructureFurnitureToolchestMobileLargeFilledToolsCommonRandom25
+  suffix: Tools 25%
+  parent: StructureFurnitureToolchestMobileLarge
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.25
+
+- type: entity
+  id: StructureFurnitureToolchestMobileLargeFilledToolsCommonRandom10
+  suffix: Tools 10%
+  parent: StructureFurnitureToolchestMobileLarge
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.10
+
+#MARK: Tool Chest Workstation Tools
+- type: entity
+  id: StructureFurnitureToolchestMobileWorkstationFilledToolsCommon
+  suffix: Tools 100%
+  parent: StructureFurnitureToolchestMobileWorkstation
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+
+- type: entity
+  id: StructureFurnitureToolchestMobileWorkstationFilledToolsCommonRandom50
+  suffix: Tools 50%
+  parent: StructureFurnitureToolchestMobileWorkstation
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.50
+
+- type: entity
+  id: StructureFurnitureToolchestMobileWorkstationFilledToolsCommonRandom25
+  suffix: Tools 25%
+  parent: StructureFurnitureToolchestMobileWorkstation
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.25
+
+- type: entity
+  id: StructureFurnitureToolchestMobileWorkstationFilledToolsCommonRandom10
+  suffix: Tools 10%
+  parent: StructureFurnitureToolchestMobileWorkstation
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableToolsCommon
+          rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.10

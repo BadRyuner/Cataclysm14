@@ -1,35 +1,139 @@
-#MARK: Alicepack - green
-- type: entity
-  parent: BaseClothingBackpackRucksack
-  id: ClothingBackpackRucksackGreen
-  name: green rucksack
-  description: A large military backpack with a main pocket and a few small ones.
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_green.rsi
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_green.rsi
-
-#MARK: Alicepack - black
-- type: entity
-  parent: BaseClothingBackpackRucksack
-  id: ClothingBackpackRucksackBlack
-  name: black rucksack
-  description: A large military backpack with a main pocket and a few small ones.
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_black.rsi
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_black.rsi
-
-#MARK: Alicepack - Tan
+ #MARK: Tan
 - type: entity
   parent: BaseClothingBackpackRucksack
   id: ClothingBackpackRucksackTan
-  name: tan rucksack
+  name: rucksack (tan)
   description: A large military backpack with a main pocket and a few small ones.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_tan.rsi
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    color: "#cdac7f"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_tan.rsi
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK
+        color: "#cdac7f"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#cdac7f"
+      right:
+      - state: inhand-right
+        color: "#cdac7f"
+
+#MARK: Olive
+- type: entity
+  parent: BaseClothingBackpackRucksack
+  id: ClothingBackpackRucksackOlive
+  name: rucksack (olive)
+  description: A large military backpack with a main pocket and a few small ones.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    color: "#5e662d"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK
+        color: "#5e662d"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#5e662d"
+      right:
+      - state: inhand-right
+        color: "#5e662d"
+
+#MARK: Black
+- type: entity
+  parent: BaseClothingBackpackRucksack
+  id: ClothingBackpackRucksackBlack
+  name: rucksack (black)
+  description: A large military backpack with a main pocket and a few small ones.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    color: "#2F2F2F"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK
+        color: "#2F2F2F"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#2F2F2F"
+      right:
+      - state: inhand-right
+        color: "#2F2F2F"
+
+#MARK: Ranger
+- type: entity
+  parent: BaseClothingBackpackRucksack
+  id: ClothingBackpackRucksackRangerGreen
+  name: rucksack (ranger green)
+  description: A large military backpack with a main pocket and a few small ones.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    color: "#465545"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK
+        color: "#465545"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#465545"
+      right:
+      - state: inhand-right
+        color: "#465545"
+
+#MARK: Brown
+- type: entity
+  parent: BaseClothingBackpackRucksack
+  id: ClothingBackpackRucksackCoyoteBrown
+  name: rucksack (coyote brown)
+  description: A large military backpack with a main pocket and a few small ones.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    color: "#7b5c39"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK
+        color: "#7b5c39"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#7b5c39"
+      right:
+      - state: inhand-right
+        color: "#7b5c39"
+
+#MARK: White
+- type: entity
+  parent: BaseClothingBackpackRucksack
+  id: ClothingBackpackRucksackWhite
+  name: rucksack (white)
+  description: A large military backpack with a main pocket and a few small ones.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Back/backpack_rucksack_any.rsi
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK

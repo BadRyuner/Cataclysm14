@@ -2,7 +2,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBathroomBase3x3a
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bathroom/room_bathroom_3x3.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bathroom/room_bathroom_3x3.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -11,7 +11,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBathroomBase3x3b
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bathroom/room_bathroom_3x3.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bathroom/room_bathroom_3x3.yml
   offset: 4,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -20,7 +20,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBathroomBase3x3c
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bathroom/room_bathroom_3x3.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bathroom/room_bathroom_3x3.yml
   offset: 8,0
   ignoreTile: FloorShuttleOrange
   tags:

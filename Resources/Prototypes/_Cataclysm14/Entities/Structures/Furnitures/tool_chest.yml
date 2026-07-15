@@ -1,3 +1,4 @@
+#MARK: Tool Chest Mobile Compact
 - type: entity
   id: StructureFurnitureToolchestMobileCompact
   parent: [StructureFurnitureBaseLarge, StructureWheeled]
@@ -52,6 +53,7 @@
     anchored: true
     noRot: true
 
+#MARK: Tool Chest Mobile Large
 - type: entity
   id: StructureFurnitureToolchestMobileLarge
   parent: [StructureFurnitureBaseLarge, StructureWheeled]
@@ -106,6 +108,7 @@
     anchored: true
     noRot: true
 
+#MARK: Tool Chest Workstation
 - type: entity
   id: StructureFurnitureToolchestMobileWorkstation
   parent: [StructureFurnitureBaseLarge, StructureWheeled]
@@ -160,8 +163,9 @@
     anchored: true
     noRot: true
 
+#MARK: Tool Chest Counter
 - type: entity
-  id: StructureFurnitureToolchestCounters1
+  id: StructureFurnitureToolchestCounters
   parent: TableBase
   name: tool chest counter
   description: Tool chest counter for mechanic shops, can store things inside itself.

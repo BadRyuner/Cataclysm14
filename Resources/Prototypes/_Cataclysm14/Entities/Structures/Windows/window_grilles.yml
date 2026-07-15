@@ -1,0 +1,17 @@
+#MARK: Armored
+- type: entity
+  parent: BaseStructureWallCataTierThree
+  id: StructureWindowGrilleArmored
+  name: armored window grille
+  components:
+  - type: Occluder
+    enabled: false
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Windows/window_grille_armored.rsi
+    state: icon
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Windows/window_grille_armored.rsi
+    state: icon
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite

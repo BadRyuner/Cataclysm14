@@ -72,7 +72,7 @@
       #   prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       pants: !type:NestedSelector
         tableId: LootTableClothingBottomHighVis
@@ -120,7 +120,7 @@
       #   prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       pants: !type:NestedSelector
         tableId: LootTableClothingBottomHighVis
@@ -298,7 +298,7 @@
       #   prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       pants: !type:NestedSelector
         tableId: LootTableClothingBottomHighVis

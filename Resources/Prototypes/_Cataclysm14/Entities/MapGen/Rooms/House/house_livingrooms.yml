@@ -3,7 +3,7 @@
   id: RoomSpawnerHouseLivingRoomBase4x4a
   size: 5,5
   offset: 0,0
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_4x4.yml
+  atlas: /Maps/_Cataclysm14/Rooms/LivingRoom/room_livingroom_4x4.yml
   ignoreTile: FloorShuttleOrange
   tags:
   - CataStructureSpawnerLivingRoomBase4x4
@@ -12,7 +12,7 @@
   id: RoomSpawnerHouseLivingRoomBase4x4b
   size: 5,5
   offset: 6,0
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_4x4.yml
+  atlas: /Maps/_Cataclysm14/Rooms/LivingRoom/room_livingroom_4x4.yml
   ignoreTile: FloorShuttleOrange
   tags:
   - CataStructureSpawnerLivingRoomBase4x4
@@ -21,7 +21,7 @@
   id: RoomSpawnerHouseLivingRoomBase4x4c
   size: 5,5
   offset: 12,0
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_4x4.yml
+  atlas: /Maps/_Cataclysm14/Rooms/LivingRoom/room_livingroom_4x4.yml
   ignoreTile: FloorShuttleOrange
   tags:
   - CataStructureSpawnerLivingRoomBase4x4
@@ -48,7 +48,7 @@
   id: RoomSpawnerHouseLivingRoomBase5x4a
   size: 5,5
   offset: 0,0
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x4.yml
+  atlas: /Maps/_Cataclysm14/Rooms/LivingRoom/room_livingroom_5x4.yml
   ignoreTile: FloorShuttleOrange
   tags:
   - CataStructureSpawnerLivingRoomBase5x4
@@ -57,7 +57,7 @@
   id: RoomSpawnerHouseLivingRoomBase5x4b
   size: 5,5
   offset: 6,0
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x4.yml
+  atlas: /Maps/_Cataclysm14/Rooms/LivingRoom/room_livingroom_5x4.yml
   ignoreTile: FloorShuttleOrange
   tags:
   - CataStructureSpawnerLivingRoomBase5x4
@@ -66,7 +66,7 @@
   id: RoomSpawnerHouseLivingRoomBase5x4c
   size: 5,5
   offset: 12,0
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x4.yml
+  atlas: /Maps/_Cataclysm14/Rooms/LivingRoom/room_livingroom_5x4.yml
   ignoreTile: FloorShuttleOrange
   tags:
   - CataStructureSpawnerLivingRoomBase5x4
@@ -93,7 +93,7 @@
   id: RoomSpawnerHouseLivingRoomBase5x5a
   size: 5,5
   offset: 0,0
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x5.yml
+  atlas: /Maps/_Cataclysm14/Rooms/LivingRoom/room_livingroom_5x5.yml
   ignoreTile: FloorShuttleOrange
   tags:
   - CataStructureSpawnerLivingRoomBase5x5
@@ -102,7 +102,7 @@
   id: RoomSpawnerHouseLivingRoomBase5x5b
   size: 5,5
   offset: 6,0
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x5.yml
+  atlas: /Maps/_Cataclysm14/Rooms/LivingRoom/room_livingroom_5x5.yml
   ignoreTile: FloorShuttleOrange
   tags:
   - CataStructureSpawnerLivingRoomBase5x5
@@ -111,7 +111,7 @@
   id: RoomSpawnerHouseLivingRoomBase5x5c
   size: 5,5
   offset: 12,0
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/LivingRoom/room_livingroom_5x5.yml
+  atlas: /Maps/_Cataclysm14/Rooms/LivingRoom/room_livingroom_5x5.yml
   ignoreTile: FloorShuttleOrange
   tags:
   - CataStructureSpawnerLivingRoomBase5x5

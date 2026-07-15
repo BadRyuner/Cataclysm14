@@ -76,9 +76,11 @@
     - 0,0,3,2
     - 0,4,3,5
   - type: Item
+    storedScale: 3.8
+    storedOffset: 1,-5
     size: Huge
     shape:
-    - 0,0,3,5
+    - 0,0,2,3
   - type: StaticPrice
     price: 14000
     vendPrice: 22000
@@ -100,9 +102,11 @@
     - 3,5,4,6
     - 6,5,7,6
   - type: Item
+    storedScale: 4.5
+    storedOffset: 0,-3
     size: Huge
     shape:
-    - 0,0,7,5
+    - 0,0,3,3
   - type: StaticPrice
     price: 25750
     vendPrice: 45000

@@ -2,7 +2,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBedroomBase3x3a
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_3x3.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bedroom/room_bedroom_3x3.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -11,7 +11,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBedroomBase3x3b
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_3x3.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bedroom/room_bedroom_3x3.yml
   offset: 4,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -20,7 +20,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBedroomBase3x3c
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_3x3.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bedroom/room_bedroom_3x3.yml
   offset: 8,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -46,7 +46,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBedroomBase4x3a
   size: 5,5
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x3.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bedroom/room_bedroom_4x3.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -55,7 +55,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBedroomBase4x3b
   size: 5,5
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x3.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bedroom/room_bedroom_4x3.yml
   offset: 6,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -64,7 +64,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBedroomBase4x3c
   size: 5,5
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x3.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bedroom/room_bedroom_4x3.yml
   offset: 12,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -91,7 +91,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBedroomBase4x4a
   size: 5,5
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x4.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bedroom/room_bedroom_4x4.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -100,7 +100,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBedroomBase4x4b
   size: 5,5
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x4.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bedroom/room_bedroom_4x4.yml
   offset: 6,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -109,7 +109,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseBedroomBase4x4c
   size: 5,5
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Bedroom/room_bedroom_4x4.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Bedroom/room_bedroom_4x4.yml
   offset: 12,0
   ignoreTile: FloorShuttleOrange
   tags:

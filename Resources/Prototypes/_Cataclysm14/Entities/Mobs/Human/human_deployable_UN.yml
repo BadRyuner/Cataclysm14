@@ -8,9 +8,6 @@
     containers:
       outerClothing: !type:NestedSelector
         tableId: LootTableClothingUNPeacekeeperBulletProofVest
-      head: !type:GroupSelector
-        children:
-        - id: ClothingHeadHelmetBulletproofM88UN
       belt: !type:GroupSelector
         children:
         - id: ClothingBeltDutyBeltPoliceFilledPolice
@@ -22,7 +19,7 @@
         - id: ClothingBalaclavaBalaclavaSkiMaskBlack
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationPassportUN
@@ -34,6 +31,12 @@
         jumpsuit: !type:GroupSelector
           children:
           - id: ClothingShirtCombatCCEDesertCargo
+        head: !type:GroupSelector
+          children:
+          - id: ClothingHeadHatCapUN
+          - id: ClothingHeadHelmetBulletproofM88UN
+          - id: ClothingHeadHelmetBulletproofM88Green
+          - id: ClothingHeadHelmetBulletproofM88Green
     - slots:
         pants: !type:GroupSelector
           children:
@@ -41,6 +44,12 @@
         jumpsuit: !type:GroupSelector
           children:
           - id: ClothingShirtCombatCCECargo
+        head: !type:GroupSelector
+          children:
+          - id: ClothingHeadHatCapUN
+          - id: ClothingHeadHelmetBulletproofM88UN
+          - id: ClothingHeadHelmetBulletproofM88CCE
+          - id: ClothingHeadHelmetBulletproofM88Green
     - slots:
         pants: !type:GroupSelector
           children:
@@ -48,7 +57,12 @@
         jumpsuit: !type:GroupSelector
           children:
           - id: ClothingShirtCombatM81Cargo
-
+        head: !type:GroupSelector
+          children:
+          - id: ClothingHeadHatCapUN
+          - id: ClothingHeadHelmetBulletproofM88UN
+          - id: ClothingHeadHelmetBulletproofM88M81
+          - id: ClothingHeadHelmetBulletproofM88Green
 
 #MARK: UN Officer
 - type: entity
@@ -63,7 +77,6 @@
       head: !type:GroupSelector
         children:
         - id: ClothingHeadHatBeretUN
-        - id: ClothingHeadHatCapUN
       belt: !type:GroupSelector
         children:
         - id: ClothingBeltDutyBeltPoliceFilledPolice
@@ -75,7 +88,7 @@
         - id: ClothingBalaclavaBalaclavaSkiMaskBlack
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationPassportUN

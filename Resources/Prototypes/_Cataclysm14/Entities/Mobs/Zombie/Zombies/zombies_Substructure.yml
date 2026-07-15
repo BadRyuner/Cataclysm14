@@ -50,7 +50,7 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       back: !type:GroupSelector
         children:
@@ -114,7 +114,7 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       # back: !type:GroupSelector
       #   children:

@@ -18,7 +18,7 @@
         prob: 0.99
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopCivilian

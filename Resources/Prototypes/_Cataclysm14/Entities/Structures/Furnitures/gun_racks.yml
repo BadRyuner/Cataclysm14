@@ -80,6 +80,7 @@
         layer:
         - WallLayer
 
+#MARK: Locked
 - type: entity
   parent: StructureFurnitureGunRackMetal
   id: StructureFurnitureGunRackMetalLocked

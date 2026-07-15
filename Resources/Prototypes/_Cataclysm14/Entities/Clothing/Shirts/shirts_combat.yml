@@ -74,25 +74,25 @@
 #MARK: OCP Multicam
 - type: entity
   parent: BaseClothingShirt
-  id: ClothingShirtCombatOCPMulticam
+  id: ClothingShirtCombatMulticamOCP
   name: OCP multicam combat shirt
   description: Ripstop combat shirt. It has a OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_OCP_multicam.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_OCP.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_OCP_multicam.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_OCP.rsi
 
 - type: entity
   parent: BaseClothingShirtCargo
-  id: ClothingShirtCombatOCPMulticamCargo
+  id: ClothingShirtCombatMulticamOCPCargo
   name: OCP multicam cargo combat shirt
   description: Ripstop combat shirt with large pockets. It has a OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_OCP_multicam.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_OCP.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_OCP_multicam.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_OCP.rsi
 
 #MARK: Digital Black
 - type: entity
@@ -163,3 +163,72 @@
     sprite: _Cataclysm14/Clothing/Shirt/shirt_M81.rsi
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/shirt_M81.rsi
+
+#MARK: Multicam Standard
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatMulticamStandard
+  name: standard multicam combat shirt
+  description: Ripstop combat shirt. It has the multicam patern made by the Crye Precision company, in standard colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_standard.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_standard.rsi
+
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatMulticamStandardCargo
+  name: standard multicam cargo combat shirt
+  description: Ripstop combat shirt with large pockets. It has the multicam patern made by the Crye Precision company, in standard colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_standard.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_standard.rsi
+
+#MARK: Multicam Arid
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatMulticamArid
+  name: arid multicam combat shirt
+  description: Ripstop combat shirt. It has the multicam patern made by the Crye Precision company, in arid colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_arid.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_arid.rsi
+
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatMulticamAridCargo
+  name: arid multicam cargo combat shirt
+  description: Ripstop combat shirt with large pockets. It has the multicam patern made by the Crye Precision company, in arid colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_arid.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_arid.rsi
+
+#MARK: Multicam Forest
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatMulticamForest
+  name: forest multicam combat shirt
+  description: Ripstop combat shirt. It has the multicam patern made by the Crye Precision company, in forest colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_forest.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_forest.rsi
+
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatMulticamForestCargo
+  name: forest multicam cargo combat shirt
+  description: Ripstop combat shirt with large pockets. It has the multicam patern made by the Crye Precision company, in forest colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_forest.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_multicam_forest.rsi

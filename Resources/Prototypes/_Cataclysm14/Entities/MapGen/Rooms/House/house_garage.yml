@@ -2,7 +2,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseGarageBase5x6a
   size: 7,7
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Garage/room_garage_5x6.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Garage/room_garage_5x6.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -11,7 +11,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseGarageBase5x6b
   size: 7,7
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Garage/room_garage_5x6.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Garage/room_garage_5x6.yml
   offset: 8,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -20,7 +20,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseGarageBase5x6c
   size: 7,7
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Garage/room_garage_5x6.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Garage/room_garage_5x6.yml
   offset: 16,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -47,7 +47,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseGarageBase6x6a
   size: 7,7
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Garage/room_garage_6x6.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Garage/room_garage_6x6.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -56,7 +56,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseGarageBase6x6b
   size: 7,7
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Garage/room_garage_6x6.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Garage/room_garage_6x6.yml
   offset: 8,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -65,7 +65,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseGarageBase6x6c
   size: 7,7
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Garage/room_garage_6x6.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Garage/room_garage_6x6.yml
   offset: 16,0
   ignoreTile: FloorShuttleOrange
   tags:

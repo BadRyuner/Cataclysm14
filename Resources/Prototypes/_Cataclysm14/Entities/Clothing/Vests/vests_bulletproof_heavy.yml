@@ -171,7 +171,7 @@
   #MARK: IOTV Heavy OCP multicam
     - type: entity
       parent: ClothingOuterBulletProofVestIOTVHeavyTan
-      id: ClothingOuterBulletProofVestIOTVHeavyOCPMulticam
+      id: ClothingOuterBulletProofVestIOTVHeavyMulticamOCP
       suffix: Empty
       name: IOTV armor vest (OCP Multicam)
       components:
@@ -181,8 +181,8 @@
         sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_heavy_OCP_multicam.rsi
 
     - type: entity
-      parent: ClothingOuterBulletProofVestIOTVHeavyOCPMulticam
-      id: ClothingOuterBulletProofVestIOTVHeavyOCPMulticamFilled
+      parent: ClothingOuterBulletProofVestIOTVHeavyMulticamOCP
+      id: ClothingOuterBulletProofVestIOTVHeavyMulticamOCPFilled
       suffix: Filled
       components:
       - type: StorageFill

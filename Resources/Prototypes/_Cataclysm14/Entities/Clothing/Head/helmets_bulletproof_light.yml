@@ -234,17 +234,89 @@
             color: "#667A46"
           - state: bits-inhand-right
 
+#MARK: M88 Tan
+    - type: entity
+      parent: BaseClothingHeadHelmetBulletproofM88
+      id: ClothingHeadHelmetBulletproofM88Tan
+      name: M88 ballistic helmet (tan)
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        layers:
+        - state: helmet-icon
+          color: "#d2B48C"
+        - state: bits-icon
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        clothingVisuals:
+          head:
+          - state: helmet-equipped-HELMET
+            color: "#d2B48C"
+          - state: bits-equipped-HELMET
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: helmet-inhand-left
+            color: "#d2B48C"
+          - state: bits-inhand-left
+          right:
+          - state: helmet-inhand-right
+            color: "#d2B48C"
+          - state: bits-inhand-right
+
+#MARK: M88 Sand
+    - type: entity
+      parent: BaseClothingHeadHelmetBulletproofM88
+      id: ClothingHeadHelmetBulletproofM88Sand
+      name: M88 ballistic helmet (sand)
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        layers:
+        - state: helmet-icon
+          color: "#E4CCAE"
+        - state: bits-icon
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi
+        clothingVisuals:
+          head:
+          - state: helmet-equipped-HELMET
+            color: "#E4CCAE"
+          - state: bits-equipped-HELMET
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: helmet-inhand-left
+            color: "#E4CCAE"
+          - state: bits-inhand-left
+          right:
+          - state: helmet-inhand-right
+            color: "#E4CCAE"
+          - state: bits-inhand-right
+
 #MARK: M88 M81 patern
     - type: entity
       parent: BaseClothingHeadHelmetBulletproofM88
       id: ClothingHeadHelmetBulletproofM88M81
       name: M88 ballistic helmet (M81 patern)
-      description: A light ballistic helmet made for the US army and the United nations blue helmet peacekeepers.
+      description: A light ballistic helmet made for the US army. It has the M81 american forces woodland camo.
       components:
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_M81.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_M81.rsi
+
+#MARK: M88 CCE
+    - type: entity
+      parent: BaseClothingHeadHelmetBulletproofM88
+      id: ClothingHeadHelmetBulletproofM88CCE
+      name: M88 ballistic helmet (CCE)
+      description: A light ballistic helmet made for the US army. It has the CCE central europe camo of the french army.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_CCE.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_CCE.rsi
 
 #MARK: M88 UN
     - type: entity

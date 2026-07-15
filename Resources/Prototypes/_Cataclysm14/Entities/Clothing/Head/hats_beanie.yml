@@ -15,6 +15,10 @@
       - state: equipped-HELMET
         color: "#3B3B3B"
   - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
     inhandVisuals:
       left:
       - state: inhand-left
@@ -40,6 +44,10 @@
       - state: equipped-HELMET
         color: "#B8A98A"
   - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 1,3
     inhandVisuals:
       left:
       - state: inhand-left
@@ -65,6 +73,10 @@
       - state: equipped-HELMET
         color: "#8D4E78"
   - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
     inhandVisuals:
       left:
       - state: inhand-left
@@ -90,6 +102,10 @@
       - state: equipped-HELMET
         color: "#777777"
   - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
     inhandVisuals:
       left:
       - state: inhand-left
@@ -115,6 +131,10 @@
       - state: equipped-HELMET
         color: "#d2B48C"
   - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
     inhandVisuals:
       left:
       - state: inhand-left
@@ -140,6 +160,10 @@
       - state: equipped-HELMET
         color: "#92A168"
   - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
     inhandVisuals:
       left:
       - state: inhand-left
@@ -165,6 +189,10 @@
       - state: equipped-HELMET
         color: "#4A5A49"
   - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
     inhandVisuals:
       left:
       - state: inhand-left

@@ -1,0 +1,67 @@
+#MARK: Surplus Clothings
+- type: entity
+  id: StructureFurnitureShelfMetalFilledSurplusClothings
+  suffix: Surplus Clothings 100%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableClothingsSurplus
+          rolls: !type:RangeNumberSelector
+            range: 4,20
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledSurplusClothingsRandom50
+  suffix: Surplus Clothings 50%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableClothingsSurplus
+          rolls: !type:RangeNumberSelector
+            range: 4,20
+        prob: 0.50
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledSurplusClothingsRandom25
+  suffix: Surplus Clothings 25%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableClothingsSurplus
+          rolls: !type:RangeNumberSelector
+            range: 4,20
+        prob: 0.25
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledSurplusClothingsRandom10
+  suffix: Surplus Clothings 10%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableClothingsSurplus
+          rolls: !type:RangeNumberSelector
+            range: 4,20
+        prob: 0.10

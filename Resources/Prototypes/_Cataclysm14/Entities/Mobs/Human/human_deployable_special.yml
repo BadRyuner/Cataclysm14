@@ -17,7 +17,7 @@
         tableId: LootTableClothingHandsGlovesClean
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
       pants: !type:NestedSelector
         tableId: LootTableClothingBottomHighVis
       jumpsuit: !type:NestedSelector
@@ -49,7 +49,7 @@
         tableId: LootTableClothingHandsGlovesClean
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
       pants: !type:NestedSelector
         tableId: LootTableClothingBottomHighVis
       jumpsuit: !type:NestedSelector
@@ -89,7 +89,7 @@
       #   prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
       pants: !type:GroupSelector
         children:
         - !type:NestedSelector

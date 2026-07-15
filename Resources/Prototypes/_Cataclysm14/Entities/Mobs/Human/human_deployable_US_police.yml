@@ -29,7 +29,7 @@
         - id: ClothingShirtPoliceCopUS
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationIDCardUS
@@ -63,7 +63,7 @@
         - id: ClothingBalaclavaBalaclavaSkiMaskBlack
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
       pants: !type:GroupSelector
         children:
         - id: ClothingPantsPoliceCopUS

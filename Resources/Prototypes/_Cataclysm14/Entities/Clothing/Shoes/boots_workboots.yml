@@ -1,6 +1,6 @@
 #MARK: tan
 - type: entity
-  parent: ClothingShoesBootsJack
+  parent: BaseClothingShoes
   id: ClothingShoesBootsWorkbootsTan
   name: workboots (tan)
   description: A pair of workboots for when heavy duty work is required.
@@ -9,10 +9,10 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     color: "#cdac7f"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
@@ -28,7 +28,7 @@
 
 #MARK: olive
 - type: entity
-  parent: ClothingShoesBootsJack
+  parent: BaseClothingShoes
   id: ClothingShoesBootsWorkbootsOlive
   name: workboots (olive)
   description: A pair of workboots for when heavy duty work is required.
@@ -37,10 +37,10 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     color: "#5e662d"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
@@ -56,7 +56,7 @@
 
 #MARK: black
 - type: entity
-  parent: ClothingShoesBootsJack
+  parent: BaseClothingShoes
   id: ClothingShoesBootsWorkbootsBlack
   name: workboots (black)
   description: A pair of workboots for when heavy duty work is required.
@@ -65,10 +65,10 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     color: "#2F2F2F"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
@@ -84,7 +84,7 @@
 
 #MARK: ranger green
 - type: entity
-  parent: ClothingShoesBootsJack
+  parent: BaseClothingShoes
   id: ClothingShoesBootsWorkbootsRangerGreen
   name: workboots (ranger green)
   description: A pair of workboots for when heavy duty work is required.
@@ -93,10 +93,10 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     color: "#465545"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
@@ -112,7 +112,7 @@
 
 #MARK: coyote brown
 - type: entity
-  parent: ClothingShoesBootsJack
+  parent: BaseClothingShoes
   id: ClothingShoesBootsWorkbootsCoyoteBrown
   name: workboots (coyote brown)
   description: A pair of workboots for when heavy duty work is required.
@@ -121,10 +121,10 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     color: "#81613C"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
@@ -140,7 +140,7 @@
 
 #MARK: white
 - type: entity
-  parent: ClothingShoesBootsJack
+  parent: BaseClothingShoes
   id: ClothingShoesBootsWorkbootsWhite
   name: workboots (white)
   description: A pair of workboots for when heavy duty work is required.
@@ -149,9 +149,9 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_workboots_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET

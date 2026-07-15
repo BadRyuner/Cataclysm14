@@ -311,7 +311,7 @@
       #   prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       pants: !type:GroupSelector
         children:
@@ -377,7 +377,7 @@
       #   prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       pants: !type:GroupSelector
         children:
@@ -410,10 +410,10 @@
       suitstorage: !type:GroupSelector
         children:
         - !type:NestedSelector
-            tableId: LootTableToolsTanksExternalOxygenSupply
+            tableId: LootTableToolTanksExternalOxygenSupply
             prob: 0.60
         - !type:NestedSelector
-            tableId: LootTableToolsTanksOxygen
+            tableId: LootTableToolTanksOxygen
             prob: 0.60
             weight: 5
       eyes: !type:GroupSelector
@@ -439,7 +439,7 @@
         prob: 0.80
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       pants: !type:NestedSelector
         tableId: LootTableClothingBottomHighVis
@@ -468,11 +468,11 @@
       suitstorage: !type:GroupSelector
         children:
         - !type:NestedSelector
-            tableId: LootTableToolsTanksExternalOxygenSupply
+            tableId: LootTableToolTanksExternalOxygenSupply
             prob: 0.90
             weight: 2
         - !type:NestedSelector
-            tableId: LootTableToolsTanksOxygen
+            tableId: LootTableToolTanksOxygen
             prob: 0.90
       eyes: !type:GroupSelector
         children:
@@ -497,7 +497,7 @@
         prob: 0.80
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       pants: !type:NestedSelector
         tableId: LootTableClothingBottomHighVis

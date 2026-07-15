@@ -35,20 +35,21 @@
       - Screwing
       useSound:
         collection: Screwdriver
-    - type: RandomSprite
-      available:
-      - enum.DamageStateVisualLayers.Base:
-          screwdriver: Rainbow
     - type: PhysicalComposition
       materialComposition:
         Steel: 100
 
+#MARK: Scrawdriver
   - type: entity
     name: screwdriver
     parent: BaseToolScrewdriver
     id: ToolScrewdriver
     description: Industrial grade torque in a small screwdriving package.
     components:
+    - type: RandomSprite
+      available:
+      - enum.DamageStateVisualLayers.Base:
+          screwdriver: Rainbow
     - type: Sprite
       scale: 0.5,0.5
       sprite: _Cataclysm14/Objects/Tools/tool_screwdriver.rsi
@@ -62,6 +63,7 @@
       qualities:
       - ScrewdrivingT1
 
+#MARK: Socket Screwdriver Set
   - type: entity
     name: socket screwdriver set
     parent: BaseToolScrewdriver
@@ -70,12 +72,13 @@
     components:
     - type: Item
       storedScale: 2
-      shape: 
+      shape:
       - 0,0,1,1
     - type: Sprite
       sprite: _Cataclysm14/Objects/Tools/tool_screwdriver_socket_set.rsi
       scale: 0.7,0.7
-      state: icon
+      layers:
+      - state: icon
     - type: Tool
       qualities:
       - ScrewdrivingT1

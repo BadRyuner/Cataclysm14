@@ -40,6 +40,7 @@
       collection: MetalThud
   - type: Item
     sprite: _Cataclysm14/Objects/Tools/Lights/light_handheld.rsi
+    storedScale: 2.5
   - type: PointLight
     enabled: false
     radius: 6
@@ -101,6 +102,7 @@
       collection: MetalThud
   - type: Item
     sprite: _Cataclysm14/Objects/Tools/Lights/light_handheld_heavy.rsi
+    storedScale: 2
   - type: PointLight
     enabled: false
     radius: 8
@@ -163,6 +165,7 @@
       collection: MetalThud
   - type: Item
     sprite: _Cataclysm14/Objects/Tools/Lights/light_handheld_heavy-duty.rsi
+    storedScale: 2
   - type: PointLight
     enabled: false
     radius: 12

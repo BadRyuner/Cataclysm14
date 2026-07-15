@@ -1,7 +1,7 @@
 #MARK: tan
 - type: entity
-  parent: ClothingShoesBootsJack
-  id: ClothingShoesBootsSWATTan
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsSWATBootsTan
   name: SWAT boots (tan)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
@@ -9,10 +9,38 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
+    color: "#AD8D62"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+        color: "#AD8D62"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#AD8D62"
+      right:
+      - state: inhand-right
+        color: "#AD8D62"
+
+#MARK: sand
+- type: entity
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsSWATBootsSand
+  name: SWAT boots (sand)
+  description: A pair of SWAT boots for when you want to turn up the heat.
+  components:
+  - type: StaticPrice
+    price: 900
+    vendPrice: 1470
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     color: "#cdac7f"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
@@ -28,8 +56,8 @@
 
 #MARK: olive
 - type: entity
-  parent: ClothingShoesBootsJack
-  id: ClothingShoesBootsSWATOlive
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsSWATBootsOlive
   name: SWAT boots (olive)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
@@ -37,10 +65,10 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     color: "#5e662d"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
@@ -56,8 +84,8 @@
 
 #MARK: black
 - type: entity
-  parent: ClothingShoesBootsJack
-  id: ClothingShoesBootsSWATBlack
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsSWATBootsBlack
   name: SWAT boots (black)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
@@ -65,10 +93,10 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     color: "#2F2F2F"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
@@ -84,8 +112,8 @@
 
 #MARK: ranger green
 - type: entity
-  parent: ClothingShoesBootsJack
-  id: ClothingShoesBootsSWATRangerGreen
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsSWATBootsRangerGreen
   name: SWAT boots (ranger green)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
@@ -93,10 +121,10 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     color: "#465545"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
@@ -112,8 +140,8 @@
 
 #MARK: coyote brown
 - type: entity
-  parent: ClothingShoesBootsJack
-  id: ClothingShoesBootsSWATCoyoteBrown
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsSWATBootsCoyoteBrown
   name: SWAT boots (coyote brown)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
@@ -121,10 +149,10 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     color: "#81613C"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
@@ -140,8 +168,8 @@
 
 #MARK: white
 - type: entity
-  parent: ClothingShoesBootsJack
-  id: ClothingShoesBootsSWATWhite
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsSWATBootsWhite
   name: SWAT boots (white)
   description: A pair of SWAT boots for when you want to turn up the heat.
   components:
@@ -149,9 +177,9 @@
     price: 900
     vendPrice: 1470
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_swat_any.rsi
     clothingVisuals:
       shoes:
       - state: equipped-FEET
