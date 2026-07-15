@@ -3,6 +3,7 @@ using Content.Client._Cataclysm14.UserInterface.Controls;
 using Content.Client._Shitmed.UserInterface.Systems.Targeting;
 using Content.Client.Alerts;
 using Content.Client.GameTicking.Managers;
+using Content.Shared.Damage.Components;
 using Content.Shared._Shitmed.Targeting;
 using Content.Shared.Alert;
 using Content.Shared.Damage;
@@ -34,12 +35,14 @@ public sealed partial class CataclysmSidebar : UIWidget
     private readonly EntityQuery<MobThresholdsComponent> _mobThresholdsQuery;
     private readonly EntityQuery<ThirstComponent> _thirstQuery;
     private readonly EntityQuery<HungerComponent> _hungerQuery;
+    private readonly EntityQuery<StaminaComponent> _staminaQuery;
 
     private EntityUid? _cachedPlayer = null;
     private DamageableComponent? _cachedDamageable = null;
     private MobThresholdsComponent? _cachedMobThresholds = null;
     private ThirstComponent? _cachedThirst = null;
     private HungerComponent? _cachedHunger = null;
+    private StaminaComponent? _cachedStamina = null;
 
     // todo: remove that shit and change only with events
     private TimeSpan _cachedTime = TimeSpan.Zero;
@@ -69,6 +72,7 @@ public sealed partial class CataclysmSidebar : UIWidget
         _mobThresholdsQuery = _ent.GetEntityQuery<MobThresholdsComponent>();
         _thirstQuery = _ent.GetEntityQuery<ThirstComponent>();
         _hungerQuery = _ent.GetEntityQuery<HungerComponent>();
+        _staminaQuery = _ent.GetEntityQuery<StaminaComponent>();
 
         // hardshitcode area
         StatusHead.Text = "     ###\n     ###";
@@ -143,6 +147,7 @@ public sealed partial class CataclysmSidebar : UIWidget
             _mobThresholdsQuery.TryComp(u, out _cachedMobThresholds);
             _thirstQuery.TryComp(u, out _cachedThirst);
             _hungerQuery.TryComp(u, out _cachedHunger);
+            _staminaQuery.TryComp(u, out _cachedStamina);
 
             var dead = _cachedMobThresholds?.Thresholds.FirstOrDefault(t => t.Value == MobState.Dead).Key;
             if (dead is {} deady) // fck c# why i cant just == null
@@ -256,6 +261,39 @@ public sealed partial class CataclysmSidebar : UIWidget
                 HungerLabel.Text = value;
                 HungerLabel.Modulate = color;
             }
+        }
+
+        if (_cachedStamina == null)
+        {
+            if (StaminaContainer.Visible)
+            {
+                StaminaContainer.Visible = false;
+            }
+        }
+        else
+        {
+            if (!StaminaContainer.Visible)
+            {
+                StaminaContainer.Visible = true;
+            }
+            // 1.0f -> 100, so 9% = 9, 18% = 18, etc.
+            //yes this is hardcoded for 100 stamina :godo:
+            var (staminaValue, staminaColor) = _cachedStamina.StaminaDamage switch
+            {
+                < 9 => ("|||||", new Color(0, 110, 0)),
+                < 18 => ("||||\\", new Color(0, 110, 0)),
+                < 27 => ("||||.", new Color(0, 110, 0)), // dark green, thx paint
+                < 36 => ("|||\\.", Color.Green),
+                < 45 => ("|||..", Color.Green),
+                < 54 => ("||\\..", Color.Yellow),
+                < 63 => ("||...", Color.Yellow),
+                < 72 => ("|\\...", new Color(255, 150, 150)),
+                < 81 => ("|....", new Color(255, 150, 150)), // pink
+                < 90 => ("\\....", Color.Red),
+                >= 90 => (".....", Color.Red),
+            };
+            StaminaLabel.Text = staminaValue;
+            StaminaLabel.Modulate = staminaColor;
         }
     }
 
