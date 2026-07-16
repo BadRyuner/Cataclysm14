@@ -2,7 +2,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseToiletBase1x2a
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_1x2.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Toilet/room_toilet_1x2.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -11,7 +11,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseToiletBase1x2b
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_1x2.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Toilet/room_toilet_1x2.yml
   offset: 4,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -20,7 +20,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseToiletBase1x2c
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_1x2.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Toilet/room_toilet_1x2.yml
   offset: 8,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -47,7 +47,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseToiletBase2x1a
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_2x1.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Toilet/room_toilet_2x1.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -56,7 +56,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseToiletBase2x1b
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_2x1.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Toilet/room_toilet_2x1.yml
   offset: 4,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -65,7 +65,7 @@
 - type: dungeonRoom
   id: RoomSpawnerHouseToiletBase2x1c
   size: 3,3
-  atlas: /Maps/_Cataclysm14/Structures/Rooms/Toilet/room_toilet_2x1.yml
+  atlas: /Maps/_Cataclysm14/Rooms/Toilet/room_toilet_2x1.yml
   offset: 8,0
   ignoreTile: FloorShuttleOrange
   tags:

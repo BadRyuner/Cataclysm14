@@ -18,6 +18,7 @@
   - type: RadioSpeaker
     toggleOnInteract: false
   - type: Item
+    storedScale: 3
     heldPrefix: walkietalkie
   - type: Tag
     tags:

@@ -185,6 +185,7 @@
       description: An LBT-6094A milspec standard quality armor vest. Can handle low power intermediate calibers.
       components:
       - type: Item
+        storedOffset: -2,3
         storedScale: 2.5
         shape:
         - 0,0,2,2

@@ -1,0 +1,10 @@
+#You need to add "Job" in front of the roleLoadout ID of the job/profession you wanna add loadout to lol.
+- type: roleLoadout
+  id: JobProfessionUnemployed
+  groups:
+  #Pants
+  - LoadoutGroupPants
+  - LoadoutGroupShoes
+  - LoadoutGroupEyewear
+  - LoadoutGroupHat
+  - LoadoutGroupShirt

@@ -1,0 +1,88 @@
+- type: loadoutGroup
+  id: LoadoutGroupShoes
+  name: loadout-group-shoes
+  loadouts:
+  #Sneakers
+  - LoadoutEntryClothingShoesSneakersWhite
+  - LoadoutEntryClothingShoesSneakersRed
+  - LoadoutEntryClothingShoesSneakersBlue
+  - LoadoutEntryClothingShoesSneakersGreen
+  - LoadoutEntryClothingShoesSneakersYellow
+  - LoadoutEntryClothingShoesSneakersPurple
+  - LoadoutEntryClothingShoesSneakersBlack
+  #Workboots
+  - LoadoutEntryClothingShoesBootsWorkbootsTan
+  - LoadoutEntryClothingShoesBootsWorkbootsOlive
+  - LoadoutEntryClothingShoesBootsWorkbootsBlack
+  - LoadoutEntryClothingShoesBootsWorkbootsRangerGreen
+  - LoadoutEntryClothingShoesBootsWorkbootsCoyoteBrown
+  - LoadoutEntryClothingShoesBootsWorkbootsWhite
+  fallbacks:
+  - LoadoutEntryClothingShoesSneakersBlack
+
+#MARK: Sneakers
+- type: loadout
+  id: LoadoutEntryClothingShoesSneakersWhite
+  equipment:
+    shoes: ClothingShoesSneakersWhite
+
+- type: loadout
+  id: LoadoutEntryClothingShoesSneakersRed
+  equipment:
+    shoes: ClothingShoesSneakersRed
+
+- type: loadout
+  id: LoadoutEntryClothingShoesSneakersBlue
+  equipment:
+    shoes: ClothingShoesSneakersBlue
+
+- type: loadout
+  id: LoadoutEntryClothingShoesSneakersGreen
+  equipment:
+    shoes: ClothingShoesSneakersGreen
+
+- type: loadout
+  id: LoadoutEntryClothingShoesSneakersYellow
+  equipment:
+    shoes: ClothingShoesSneakersYellow
+
+- type: loadout
+  id: LoadoutEntryClothingShoesSneakersPurple
+  equipment:
+    shoes: ClothingShoesSneakersPurple
+
+- type: loadout
+  id: LoadoutEntryClothingShoesSneakersBlack
+  equipment:
+    shoes: ClothingShoesSneakersBlack
+
+#MARK: Workboots
+- type: loadout
+  id: LoadoutEntryClothingShoesBootsWorkbootsTan
+  equipment:
+    shoes: ClothingShoesBootsWorkbootsTan
+
+- type: loadout
+  id: LoadoutEntryClothingShoesBootsWorkbootsOlive
+  equipment:
+    shoes: ClothingShoesBootsWorkbootsOlive
+
+- type: loadout
+  id: LoadoutEntryClothingShoesBootsWorkbootsBlack
+  equipment:
+    shoes: ClothingShoesBootsWorkbootsBlack
+
+- type: loadout
+  id: LoadoutEntryClothingShoesBootsWorkbootsRangerGreen
+  equipment:
+    shoes: ClothingShoesBootsWorkbootsRangerGreen
+
+- type: loadout
+  id: LoadoutEntryClothingShoesBootsWorkbootsCoyoteBrown
+  equipment:
+    shoes: ClothingShoesBootsWorkbootsCoyoteBrown
+
+- type: loadout
+  id: LoadoutEntryClothingShoesBootsWorkbootsWhite
+  equipment:
+    shoes: ClothingShoesBootsWorkbootsWhite

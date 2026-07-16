@@ -28,7 +28,8 @@ humanoid-profile-editor-height-label = Height:
 humanoid-profile-editor-width-label = Width:
 # Mono End
 humanoid-profile-editor-eyes-label = Eye color:
-humanoid-profile-editor-jobs-tab = Jobs
+# Cataclysm14, larp >>
+humanoid-profile-editor-jobs-tab = Profession
 humanoid-profile-editor-preference-unavailable-stay-in-lobby-button = Stay in lobby if preference unavailable.
 # Frontier: we have multiple overflow job types, so we change this message.
 # humanoid-profile-editor-preference-unavailable-spawn-as-overflow-button = Be {INDEFINITE($overflowJob)} {$overflowJob} if preference unavailable.

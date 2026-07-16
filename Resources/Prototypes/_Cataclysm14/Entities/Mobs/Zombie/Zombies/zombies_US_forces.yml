@@ -45,7 +45,7 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATTan
+        - id: ClothingShoesBootsSWATBootsTan
         prob: 0.99
       back: !type:GroupSelector
         children:
@@ -72,13 +72,13 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatOCPMulticam
-          - id: ClothingPantsCombatOCPMulticamCargo
+          - id: ClothingPantsCombatMulticamOCP
+          - id: ClothingPantsCombatMulticamOCPCargo
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatOCPMulticam
-          - id: ClothingShirtCombatOCPMulticamCargo
+          - id: ClothingShirtCombatMulticamOCP
+          - id: ClothingShirtCombatMulticamOCPCargo
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
@@ -132,10 +132,10 @@
       suitstorage: !type:GroupSelector
         children:
         - !type:NestedSelector
-            tableId: LootTableToolsTanksExternalOxygenSupply
+            tableId: LootTableToolTanksExternalOxygenSupply
             prob: 0.90
         - !type:NestedSelector
-            tableId: LootTableToolsTanksOxygen
+            tableId: LootTableToolTanksOxygen
             prob: 0.90
       gloves: !type:GroupSelector
         children:
@@ -143,7 +143,7 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATTan
+        - id: ClothingShoesBootsSWATBootsTan
         prob: 0.99
       back: !type:GroupSelector
         children:
@@ -168,8 +168,8 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatOCPMulticam
-          - id: ClothingPantsCombatOCPMulticamCargo
+          - id: ClothingPantsCombatMulticamOCP
+          - id: ClothingPantsCombatMulticamOCPCargo
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
@@ -214,7 +214,7 @@
         - id: ClothingShirtHazmatSuitWhite
         prob: 0.99
       suitstorage: !type:NestedSelector
-            tableId: LootTableToolsTanksExternalOxygenSupply
+            tableId: LootTableToolTanksExternalOxygenSupply
             prob: 0.90
       gloves: !type:GroupSelector
         children:
@@ -223,8 +223,8 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATTan
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsTan
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
       back: !type:GroupSelector
         children:
@@ -249,8 +249,8 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatOCPMulticam
-          - id: ClothingPantsCombatOCPMulticamCargo
+          - id: ClothingPantsCombatMulticamOCP
+          - id: ClothingPantsCombatMulticamOCPCargo
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
@@ -311,7 +311,7 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATRangerGreen
+        - id: ClothingShoesBootsSWATBootsRangerGreen
         prob: 0.99
       back: !type:GroupSelector
         children:
@@ -359,7 +359,7 @@
         prob: 0.95
       head: !type:GroupSelector
         children:
-        - id: ClothingHeadHelmetBulletproofACHOCPMulticam
+        - id: ClothingHeadHelmetBulletproofACHMulticamOCP
         prob: 0.8
       belt: !type:GroupSelector
         children:
@@ -384,7 +384,7 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATTan
+        - id: ClothingShoesBootsSWATBootsTan
         prob: 0.99
       back: !type:GroupSelector
         children:
@@ -411,11 +411,11 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatOCPMulticam
-          - id: ClothingPantsCombatOCPMulticamCargo
+          - id: ClothingPantsCombatMulticamOCP
+          - id: ClothingPantsCombatMulticamOCPCargo
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatOCPMulticam
-          - id: ClothingShirtCombatOCPMulticamCargo
+          - id: ClothingShirtCombatMulticamOCP
+          - id: ClothingShirtCombatMulticamOCPCargo
           prob: 0.99

@@ -4,7 +4,10 @@
   id: EntitiesSpawnerStructureWindowSimple
   parent: MarkerBase
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     layers:
       - state: green
         scale: 1.3,1.3
@@ -19,3 +22,30 @@
       children:
       - id: StructureWindowSimple
       - id: StructureWindowSimpleOpen
+
+#MARK: Residential Door Spawner
+- type: entity
+  name: random residental door spawner
+  id: EntitiesSpawnerDoorCataWoodHouse
+  parent: MarkerBase
+  components:
+  - type: Transform
+    noRot: true
+  - type: Sprite
+    noRot: true
+    layers:
+      - state: green
+        scale: 1.3,1.3
+      - sprite: _Cataclysm14/Structures/Doors/wood_house.rsi
+        state: closed
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      prob: 1
+      children:
+      - id: DoorCataWoodHouse
+      - id: DoorCataWoodHouseBroken
+        weight: 0.3
+      - id: DoorCataWoodHouseLocked

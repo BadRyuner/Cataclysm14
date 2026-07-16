@@ -5,6 +5,7 @@
   id: BaseClothingShirt
   components:
   - type: Item
+    storedOffset: 1,0
     shape:
     - 0,0,2,1
     size: Normal

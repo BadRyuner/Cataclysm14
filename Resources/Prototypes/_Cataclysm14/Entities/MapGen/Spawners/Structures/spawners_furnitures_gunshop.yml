@@ -2,6 +2,7 @@
 - type: entity
   name: random gunshop metal gun rack spawner
   id: EntitiesSpawnerStructureFurnituresGunshopGunRack
+  suffix: Gunshop Guns
   parent: MarkerBase
   components:
   - type: Sprite
@@ -28,6 +29,7 @@
 - type: entity
   name: random gunshop metal shelf ammo spawner
   id: EntitiesSpawnerStructureFurnituresGunshopShelfAmmo
+  suffix: Gunshop Ammo
   parent: MarkerBase
   components:
   - type: Sprite
@@ -47,3 +49,28 @@
       - id: StructureFurnitureShelfMetalFilledGunshopAmmoRandom50
       - id: StructureFurnitureShelfMetalFilledGunshopAmmoRandom25
       - id: StructureFurnitureShelfMetalFilledGunshopAmmoRandom10
+
+#MARK: Metal Clothings Shelf Spawner
+- type: entity
+  name: random surplus metal shelf clothings spawner
+  id: EntitiesSpawnerStructureFurnituresGunshopShelfSurplusClothings
+  suffix: Surplus Clothings
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+        scale: 1.3,1.3
+      - sprite: _Cataclysm14/Structures/Furnitures/shelf_metal_storage.rsi
+        state: icon
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: StructureFurnitureShelfMetalFilledSurplusClothings
+      - id: StructureFurnitureShelfMetalFilledSurplusClothingsRandom50
+      - id: StructureFurnitureShelfMetalFilledSurplusClothingsRandom25
+      - id: StructureFurnitureShelfMetalFilledSurplusClothingsRandom10

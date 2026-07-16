@@ -77,11 +77,15 @@
     - id: WeaponRevolverM36Empty
       weight: 100
     - id: WeaponRifleAR10FilledSTANAG20rdEmpty
-      weight: 100
+      weight: 75
     - id: WeaponRifleAR15FilledSTANAG30rdEmpty
-      weight: 100
+      weight: 75
     - id: WeaponRifleAR15WoodFurnituresFilledSTANAG30rdEmpty
       weight: 100
+    - id: WeaponRifleKelTecRFBFilledSTANAG20rdEmpty
+      weight: 75
+    - id: WeaponRifleKelTecRDBFilledSTANAG20rdEmpty
+      weight: 75
     - id: WeaponBoltActionRifleRuger10-22Base
       weight: 100
     - id: WeaponShotgun12GaugeDoubleBarrelEmpty
@@ -89,6 +93,6 @@
     - id: WeaponShotgunMossberg500Empty
       weight: 100
     - id: WeaponShotgunMossberg590TacticalEmpty
-      weight: 100
+      weight: 75
     - id: WeaponShotgunRemingtonM870Empty
       weight: 100

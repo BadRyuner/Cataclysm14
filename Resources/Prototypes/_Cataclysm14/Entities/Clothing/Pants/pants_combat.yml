@@ -70,25 +70,25 @@
 #MARK: OCP Multicam
 - type: entity
   parent: BaseClothingPants
-  id: ClothingPantsCombatOCPMulticam
+  id: ClothingPantsCombatMulticamOCP
   name: OCP multicam combat pants
   description: Ripstop combat pants. It has a OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_OCP.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_OCP.rsi
 
 - type: entity
   parent: BaseClothingPantsCargo
-  id: ClothingPantsCombatOCPMulticamCargo
+  id: ClothingPantsCombatMulticamOCPCargo
   name: OCP multicam cargo combat pants
   description: Ripstop combat pants with large pockets. It has a OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_OCP.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Pants/pants_OCP_multicam.rsi
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_OCP.rsi
 
 #MARK: Digital Black
 - type: entity
@@ -159,3 +159,72 @@
     sprite: _Cataclysm14/Clothing/Pants/pants_M81_cargo.rsi
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Pants/pants_M81_cargo.rsi
+
+#MARK: Multicam Standard
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamStandard
+  name: standard multicam combat pants
+  description: Ripstop combat pants. It has the multicam patern made by the Crye Precision company, in standard colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_standard.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_standard.rsi
+
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatMulticamStandardCargo
+  name: standard multicam cargo combat pants
+  description: Ripstop combat pants with large pockets. It has the multicam patern made by the Crye Precision company, in standard colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_standard_cargo.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_standard_cargo.rsi
+
+#MARK: Multicam Arid
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamArid
+  name: arid multicam combat pants
+  description: Ripstop combat pants. It has the multicam patern made by the Crye Precision company, in arid colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_arid.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_arid.rsi
+
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatMulticamAridCargo
+  name: arid multicam cargo combat pants
+  description: Ripstop combat pants with large pockets. It has the multicam patern made by the Crye Precision company, in arid colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_arid_cargo.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_arid_cargo.rsi
+
+#MARK: Multicam Forest
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamForest
+  name: forest multicam combat pants
+  description: Ripstop combat pants. It has the multicam patern made by the Crye Precision company, in forest colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_forest.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_forest.rsi
+
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatMulticamForestCargo
+  name: forest multicam cargo combat pants
+  description: Ripstop combat pants with large pockets. It has the multicam patern made by the Crye Precision company, in forest colors.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_forest_cargo.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_multicam_forest_cargo.rsi

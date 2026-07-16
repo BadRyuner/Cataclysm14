@@ -71,7 +71,7 @@
 
 - type: entity
   id: StructureFurnitureLockerMetalHalfDouble
-  parent: StructureFurnitureBaseLarge
+  parent: StructureFurnitureBaseTall
   name: metal locker (2/2)
   description: Metal locker, can store things inside itself.
   components:
@@ -263,7 +263,7 @@
 
 - type: entity
   id: StructureFurnitureLockerMetalThirdTriple
-  parent: StructureFurnitureBaseLarge
+  parent: StructureFurnitureBaseTall
   name: metal locker (3/3)
   description: Metal locker, can store things inside itself.
   components:

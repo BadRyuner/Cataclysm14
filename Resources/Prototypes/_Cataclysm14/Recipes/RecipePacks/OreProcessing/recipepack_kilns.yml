@@ -13,6 +13,7 @@
   - LatheRecipeMineralPipeIronFromIngot
 
   #MARK: Copper
+  #Ingots
   - LatheRecipeMineralIngotCopperFromOre
   #Plates
   - LatheRecipeMineralPlateCopperFromOre

@@ -1,52 +1,170 @@
 #MARK: Base Duty Belt
-  - type: entity
-    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
-    id: BaseClothingBeltDutyBelt
-    abstract: true
-    components:
-    - type: StaticPrice
-      price: 3000
-      vendPrice: 5500
-    - type: Sprite
-      scale: 0.7,0.7
-    - type: ExplosionResistance
-      damageCoefficient: 0.9
-    - type: Storage
-      grid:
-      - 0,0,7,1
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: BaseClothingBeltDutyBelt
+  abstract: true
+  components:
+  - type: StaticPrice
+    price: 3000
+    vendPrice: 5500
+  - type: Sprite
+    scale: 0.5,0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    grid:
+    - 0,0,7,1
+  - type: Item
+    shape:
+    - 0,0,2,1
+    storedScale: 3.5
 
-#MARK: Duty Belt Police
-  - type: entity
-    parent: BaseClothingBeltDutyBelt
-    id: ClothingBeltDutyBeltPolice
-    name: police duty belt (police)
-    description: A belt with plenty of attach for equipment and pockets, used by law enforcement.
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_police.rsi
-    - type: Clothing
-      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_police.rsi
+#MARK: Police
+- type: entity
+  parent: BaseClothingBeltDutyBelt
+  id: ClothingBeltDutyBeltPolice
+  name: police duty belt (police)
+  description: A belt with plenty of attach for equipment and pockets, used by law enforcement.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    color: "#191931"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#191931"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#191931"
+      right:
+      - state: inhand-right
+        color: "#191931"
 
-#MARK: Duty Belt Tan
-  - type: entity
-    parent: BaseClothingBeltDutyBelt
-    id: ClothingBeltDutyBeltTan
-    name: duty belt (tan)
-    description: A belt with plenty of attach for equipment and pockets, used by soldiers.
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_tan.rsi
-    - type: Clothing
-      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_tan.rsi
+#MARK: Tan
+- type: entity
+  parent: BaseClothingBeltDutyBelt
+  id: ClothingBeltDutyBeltTan
+  name: duty belt (tan)
+  description: A belt with plenty of attach for equipment and pockets, used by soldiers.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    color: "#d2B48C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#d2B48C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#d2B48C"
+      right:
+      - state: inhand-right
+        color: "#d2B48C"
 
-#MARK: Duty Belt Black
-  - type: entity
-    parent: BaseClothingBeltDutyBelt
-    id: ClothingBeltDutyBeltBlack
-    name: duty belt (black)
-    description: A belt with plenty of attach for equipment and pockets, used by various militias and special forces, and mall ninjas.
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_black.rsi
-    - type: Clothing
-      sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_black.rsi
+#MARK: Black
+- type: entity
+  parent: BaseClothingBeltDutyBelt
+  id: ClothingBeltDutyBeltBlack
+  name: duty belt (black)
+  description: A belt with plenty of attach for equipment and pockets, used by various militias and special forces, and mall ninjas.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    color: "#1F1F1F"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#1F1F1F"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#1F1F1F"
+      right:
+      - state: inhand-right
+        color: "#1F1F1F"
+
+#MARK: Olive
+- type: entity
+  parent: BaseClothingBeltDutyBelt
+  id: ClothingBeltDutyBeltOlive
+  name: duty belt (olive)
+  description: A belt with plenty of attach for equipment and pockets, used by various militias and special forces, and mall ninjas.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    color: "#717A56"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#717A56"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#717A56"
+      right:
+      - state: inhand-right
+        color: "#717A56"
+
+#MARK: Ranger Green
+- type: entity
+  parent: BaseClothingBeltDutyBelt
+  id: ClothingBeltDutyBeltRangerGreen
+  name: duty belt (ranger green)
+  description: A belt with plenty of attach for equipment and pockets, used by various militias and special forces, and mall ninjas.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    color: "#4A5A49"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#4A5A49"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#4A5A49"
+      right:
+      - state: inhand-right
+        color: "#4A5A49"
+
+#MARK: Green
+- type: entity
+  parent: BaseClothingBeltDutyBelt
+  id: ClothingBeltDutyBeltGreen
+  name: duty belt (green)
+  description: A belt with plenty of attach for equipment and pockets, used by various militias and special forces, and mall ninjas.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    color: "#4C573B"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#4C573B"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#4C573B"
+      right:
+      - state: inhand-right
+        color: "#4C573B"

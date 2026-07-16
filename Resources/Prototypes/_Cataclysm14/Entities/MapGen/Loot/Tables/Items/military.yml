@@ -18,6 +18,9 @@
         tableId: LootTableClothingShirtCombatCCE
         rolls: !type:RangeNumberSelector
           range: 0,4
+      - id: ClothingHeadHelmetBulletproofM88CCE
+        rolls: !type:RangeNumberSelector
+          range: 0,4
       - !type:NestedSelector
         weight: 100
         tableId: LootTableAmmunitionAmmoBoxUsForcesLowTier

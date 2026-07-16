@@ -24,6 +24,9 @@
         - id: ClothingHeadHelmetBulletproofM88UN
         - id: ClothingHeadHatBeretUN
         - id: ClothingHeadHatCapUN
+        - id: ClothingHeadHelmetBulletproofM88CCE
+        - id: ClothingHeadHelmetBulletproofM88Olive
+        - id: ClothingHeadHelmetBulletproofM88Green
         prob: 0.95
       belt: !type:GroupSelector
         children:
@@ -41,7 +44,7 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATBlack
+        - id: ClothingShoesBootsSWATBootsBlack
         prob: 0.99
     outfits:
     - slots:

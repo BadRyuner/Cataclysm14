@@ -1,0 +1,95 @@
+#MARK: ToolsCommon - compact tool chest
+- type: entity
+  id: EntitiesSpawnerStructureFurnitureToolchestMobileCompactFilledToolsCommon
+  suffix: EntitesSpawner][ToolsCommon
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+        scale: 1.3,1.3
+      - sprite: _Cataclysm14/Structures/Furnitures/tool_chest_mobile.rsi
+        state: mobile_tool_chest_compact
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: StructureFurnitureToolchestMobileCompactFilledToolsCommon
+      - id: StructureFurnitureToolchestMobileCompactFilledToolsCommonRandom50
+      - id: StructureFurnitureToolchestMobileCompactFilledToolsCommonRandom25
+      - id: StructureFurnitureToolchestMobileCompactFilledToolsCommonRandom10
+
+#MARK: ToolsCommon - large tool chest
+- type: entity
+  id: EntitiesSpawnerStructureFurnitureToolchestMobileLargeFilledToolsCommon
+  suffix: EntitesSpawner][ToolsCommon
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+        scale: 1.3,1.3
+      - sprite: _Cataclysm14/Structures/Furnitures/tool_chest_mobile.rsi
+        state: mobile_tool_chest_large
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: StructureFurnitureToolchestMobileLargeFilledToolsCommon
+      - id: StructureFurnitureToolchestMobileLargeFilledToolsCommonRandom50
+      - id: StructureFurnitureToolchestMobileLargeFilledToolsCommonRandom25
+      - id: StructureFurnitureToolchestMobileLargeFilledToolsCommonRandom10
+
+#MARK: ToolsCommon - tool chest mounted workstation
+- type: entity
+  id: EntitiesSpawnerStructureFurnitureToolchestMobileWorkstationFilledToolsCommon
+  suffix: EntitesSpawner][ToolsCommon
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+        scale: 1.3,1.3
+      - sprite: _Cataclysm14/Structures/Furnitures/tool_chest_mobile.rsi
+        state: mobile_tool_chest_workstation
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: StructureFurnitureToolchestMobileWorkstationFilledToolsCommon
+      - id: StructureFurnitureToolchestMobileWorkstationFilledToolsCommonRandom50
+      - id: StructureFurnitureToolchestMobileWorkstationFilledToolsCommonRandom25
+      - id: StructureFurnitureToolchestMobileWorkstationFilledToolsCommonRandom10
+
+#MARK: ToolsCommon - metal shelves
+- type: entity
+  id: EntitiesSpawnerStructureFurnitureShelfMetalFilledToolsCommon
+  suffix: EntitesSpawner][ToolsCommon
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+        scale: 1.3,1.3
+      - sprite: _Cataclysm14/Structures/Furnitures/shelf_metal_storage.rsi
+        state: icon
+      - sprite: _NF/Markers/general.rsi
+        state: questionmark
+        color: red
+
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: StructureFurnitureShelfMetalFilledToolsCommon
+      - id: StructureFurnitureShelfMetalFilledToolsCommonRandom50
+      - id: StructureFurnitureShelfMetalFilledToolsCommonRandom25
+      - id: StructureFurnitureShelfMetalFilledToolsCommonRandom10

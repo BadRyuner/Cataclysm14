@@ -1,0 +1,35 @@
+- type: dungeonRoom
+  id: StructureSpawnerResidentialBlockMedium52x52a
+  size: 53,53
+  atlas: /Maps/_Cataclysm14/Structures/Houses/structure_residential_block_medium_52x52_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureHouseMedium52x52
+
+# - type: dungeonRoom
+#   id: StructureSpawnerResidentialBlockMedium52x52b
+#   size: 53,53
+#   atlas: /Maps/_Cataclysm14/Structures/Houses/structure_residential_block_medium_52x52_b.yml
+#   offset: 0,0
+#   ignoreTile: FloorShuttleOrange
+#   tags:
+#   - CataStructureHouseMedium52x52
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerResidentialBlockMedium52x52
+  name: medium house
+  suffix: 4x4 Chunk][52x52
+  components:
+  - type: Sprite
+    scale: 52,52
+    offset: -0.5,-0.5
+    layers:
+      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
+        state: structure_border_house_small
+  - type: RoomFill
+    rotation: false
+    roomWhitelist:
+      tags:
+      - CataStructureHouseMedium52x52

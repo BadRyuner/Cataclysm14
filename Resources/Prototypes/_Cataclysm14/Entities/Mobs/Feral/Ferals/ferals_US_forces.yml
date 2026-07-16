@@ -43,7 +43,7 @@
         prob: 0.8
       shoes: !type:GroupSelector
         children:
-        - id: ClothingShoesBootsSWATTan
+        - id: ClothingShoesBootsSWATBootsTan
         prob: 0.99
       back: !type:GroupSelector
         children:
@@ -69,12 +69,12 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatOCPMulticam
-          - id: ClothingPantsCombatOCPMulticamCargo
+          - id: ClothingPantsCombatMulticamOCP
+          - id: ClothingPantsCombatMulticamOCPCargo
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatOCPMulticam
-          - id: ClothingShirtCombatOCPMulticamCargo
+          - id: ClothingShirtCombatMulticamOCP
+          - id: ClothingShirtCombatMulticamOCPCargo
           prob: 0.9
     - slots:
         pants: !type:GroupSelector

@@ -126,6 +126,21 @@ namespace Content.Server.Spawners.EntitySystems
             if (TerminatingOrDeleted(ent) || !Exists(ent))
                 return;
 
+            //Cataclysm14, start
+            var rotation = Angle.Zero;
+            if (ent.Comp.Rotate)
+            {
+                rotation = Transform(ent).LocalRotation;
+            }
+
+            //DOES NOT WORK ON NON-EVEN DIMENSIONS FUCKASS ROTATION SYSTEM
+            if (ent.Comp.RandomRotation)
+            {
+                var randRotation = _robustRandom.NextAngle();
+                rotation = randRotation.RoundToCardinalAngle();
+            }
+            //Cataclysm14, end
+
             var coords = Transform(ent).Coordinates;
 
             var spawns = _entityTable.GetSpawns(ent.Comp.Table);
@@ -135,7 +150,7 @@ namespace Content.Server.Spawners.EntitySystems
                 var yOffset = _robustRandom.NextFloat(-ent.Comp.Offset, ent.Comp.Offset);
                 var trueCoords = coords.Offset(new Vector2(xOffset, yOffset));
 
-                Spawn(proto, trueCoords);
+                SpawnAttachedTo(proto, trueCoords, null, rotation); //Cataclysm14, turend into SpawnAttachedTo for rotation.
             }
         }
     }

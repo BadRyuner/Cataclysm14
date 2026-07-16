@@ -131,6 +131,15 @@
   - type: BallisticAmmoProvider
     proto: Cartridge5,56x45mmFMJ
 
+#MARK: Tracer Red
+- type: entity
+  id: Magazine5,56x45mmSTANAG20rdTracerRed
+  suffix: Tracer Red
+  parent: BaseMagazine5,56x45mmSTANAG20rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5,56x45mmTracerRed
+
 #MARK: 223 Remington
 - type: entity
   id: Magazine5,56x45mmSTANAG20rd223Remington

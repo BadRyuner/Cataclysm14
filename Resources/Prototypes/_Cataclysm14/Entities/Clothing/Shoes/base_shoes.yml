@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBootsJack
+  id: BaseClothingShoes
+  abstract: true
+  components:
+  - type: Sprite
+    scale: 0.6,0.6
+  - type: Item
+    storedScale: 2.5
+    storedOffset: 0,-3

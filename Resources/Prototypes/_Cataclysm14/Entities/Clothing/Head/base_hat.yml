@@ -5,7 +5,8 @@
   components:
   - type: Item
     size: Normal
-    storedScale: 2
+    storedScale: 2.3
+    storedOffset: -2,0
 
 - type: entity
   abstract: true

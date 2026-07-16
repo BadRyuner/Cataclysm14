@@ -1,3 +1,29 @@
+#MARK: CivilianRandom
+- type: entityTable
+  id: LootTableClothingCivilianGeneric
+  table: !type:AllSelector
+    children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingTopCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,4
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingBottomCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,4
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingShoesCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,4
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingBagCivilian
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
 #MARK: TopCivilian
 - type: entityTable
   id: LootTableClothingTopCivilian

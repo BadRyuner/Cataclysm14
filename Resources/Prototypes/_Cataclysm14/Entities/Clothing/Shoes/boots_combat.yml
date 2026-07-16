@@ -1,0 +1,185 @@
+#MARK: tan
+- type: entity
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsCombatBootsTan
+  name: combat boots (tan)
+  description: A pair of combat boots for when you gotta turn up the heat.
+  components:
+  - type: StaticPrice
+    price: 900
+    vendPrice: 1470
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    color: "#AD8D62"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+        color: "#AD8D62"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#AD8D62"
+      right:
+      - state: inhand-right
+        color: "#AD8D62"
+
+#MARK: sand
+- type: entity
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsCombatBootsSand
+  name: combat boots (sand)
+  description: A pair of combat boots for when you gotta turn up the heat.
+  components:
+  - type: StaticPrice
+    price: 900
+    vendPrice: 1470
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    color: "#cdac7f"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+        color: "#cdac7f"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#cdac7f"
+      right:
+      - state: inhand-right
+        color: "#cdac7f"
+
+#MARK: olive
+- type: entity
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsCombatBootsOlive
+  name: combat boots (olive)
+  description: A pair of combat boots for when you gotta turn up the heat.
+  components:
+  - type: StaticPrice
+    price: 900
+    vendPrice: 1470
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    color: "#5e662d"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+        color: "#5e662d"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#5e662d"
+      right:
+      - state: inhand-right
+        color: "#5e662d"
+
+#MARK: black
+- type: entity
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsCombatBootsBlack
+  name: combat boots (black)
+  description: A pair of combat boots for when you gotta turn up the heat.
+  components:
+  - type: StaticPrice
+    price: 900
+    vendPrice: 1470
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    color: "#2F2F2F"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+        color: "#2F2F2F"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#2F2F2F"
+      right:
+      - state: inhand-right
+        color: "#2F2F2F"
+
+#MARK: ranger green
+- type: entity
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsCombatBootsRangerGreen
+  name: combat boots (ranger green)
+  description: A pair of combat boots for when you gotta turn up the heat.
+  components:
+  - type: StaticPrice
+    price: 900
+    vendPrice: 1470
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    color: "#465545"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+        color: "#465545"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#465545"
+      right:
+      - state: inhand-right
+        color: "#465545"
+
+#MARK: coyote brown
+- type: entity
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsCombatBootsCoyoteBrown
+  name: combat boots (coyote brown)
+  description: A pair of combat boots for when you gotta turn up the heat.
+  components:
+  - type: StaticPrice
+    price: 900
+    vendPrice: 1470
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    color: "#81613C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+        color: "#81613C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#81613C"
+      right:
+      - state: inhand-right
+        color: "#81613C"
+
+#MARK: white
+- type: entity
+  parent: BaseClothingShoes
+  id: ClothingShoesBootsCombatBootsWhite
+  name: combat boots (white)
+  description: A pair of combat boots for when you gotta turn up the heat.
+  components:
+  - type: StaticPrice
+    price: 900
+    vendPrice: 1470
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shoes/boots_combat_boots_any.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET

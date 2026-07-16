@@ -1,0 +1,336 @@
+- type: loadoutGroup
+  id: LoadoutGroupShirt
+  name: loadout-group-shirt
+  loadouts:
+  #Hoodie
+  - LoadoutEntryClothingShirtHoodieWhite
+  - LoadoutEntryClothingShirtHoodieRed
+  - LoadoutEntryClothingShirtHoodieBlue
+  - LoadoutEntryClothingShirtHoodieGreen
+  - LoadoutEntryClothingShirtHoodieYellow
+  - LoadoutEntryClothingShirtHoodiePurple
+  - LoadoutEntryClothingShirtHoodieBlack
+  - LoadoutEntryClothingShirtHoodieBeige
+  - LoadoutEntryClothingShirtHoodieBrown
+  - LoadoutEntryClothingShirtHoodieOlive
+  - LoadoutEntryClothingShirtHoodieRangerGreen
+  #Sweater
+  - LoadoutEntryClothingShirtSweaterWhite
+  - LoadoutEntryClothingShirtSweaterRed
+  - LoadoutEntryClothingShirtSweaterBlue
+  - LoadoutEntryClothingShirtSweaterGreen
+  - LoadoutEntryClothingShirtSweaterYellow
+  - LoadoutEntryClothingShirtSweaterPurple
+  - LoadoutEntryClothingShirtSweaterBlack
+  - LoadoutEntryClothingShirtSweaterBeige
+  - LoadoutEntryClothingShirtSweaterBrown
+  - LoadoutEntryClothingShirtSweaterOlive
+  - LoadoutEntryClothingShirtSweaterRangerGreen
+  #T-Shirt
+  - LoadoutEntryClothingShirtTShirtWhite
+  - LoadoutEntryClothingShirtTShirtRed
+  - LoadoutEntryClothingShirtTShirtBlue
+  - LoadoutEntryClothingShirtTShirtGreen
+  - LoadoutEntryClothingShirtTShirtYellow
+  - LoadoutEntryClothingShirtTShirtPurple
+  - LoadoutEntryClothingShirtTShirtBlack
+  - LoadoutEntryClothingShirtTShirtBeige
+  - LoadoutEntryClothingShirtTShirtBrown
+  - LoadoutEntryClothingShirtTShirtOlive
+  - LoadoutEntryClothingShirtTShirtRangerGreen
+  #Tank Top
+  - LoadoutEntryClothingShirtTankTopWhite
+  - LoadoutEntryClothingShirtTankTopRed
+  - LoadoutEntryClothingShirtTankTopBlue
+  - LoadoutEntryClothingShirtTankTopGreen
+  - LoadoutEntryClothingShirtTankTopYellow
+  - LoadoutEntryClothingShirtTankTopPurple
+  - LoadoutEntryClothingShirtTankTopBlack
+  - LoadoutEntryClothingShirtTankTopBeige
+  - LoadoutEntryClothingShirtTankTopBrown
+  - LoadoutEntryClothingShirtTankTopOlive
+  - LoadoutEntryClothingShirtTankTopRangerGreen
+  #Tracksuit
+  - LoadoutEntryClothingShirtTracksuitBlack
+  - LoadoutEntryClothingShirtTracksuitBlue
+  - LoadoutEntryClothingShirtTracksuitYellow
+  - LoadoutEntryClothingShirtTracksuitRed
+  - LoadoutEntryClothingShirtTracksuitGreen
+  #HMariniere/Teslnyashka
+  - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaGreen
+  - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlue
+  - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaRed
+  - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlack
+  fallbacks:
+  - LoadoutEntryClothingShirtTracksuitBlack
+
+#MARK: Hoodie
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodieWhite
+  equipment:
+    jumpsuit: ClothingShirtHoodieWhite
+
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodieRed
+  equipment:
+    jumpsuit: ClothingShirtHoodieRed
+
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodieBlue
+  equipment:
+    jumpsuit: ClothingShirtHoodieBlue
+
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodieGreen
+  equipment:
+    jumpsuit: ClothingShirtHoodieGreen
+
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodieYellow
+  equipment:
+    jumpsuit: ClothingShirtHoodieYellow
+
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodiePurple
+  equipment:
+    jumpsuit: ClothingShirtHoodiePurple
+
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodieBlack
+  equipment:
+    jumpsuit: ClothingShirtHoodieBlack
+
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodieBeige
+  equipment:
+    jumpsuit: ClothingShirtHoodieBeige
+
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodieBrown
+  equipment:
+    jumpsuit: ClothingShirtHoodieBrown
+
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodieOlive
+  equipment:
+    jumpsuit: ClothingShirtHoodieOlive
+
+- type: loadout
+  id: LoadoutEntryClothingShirtHoodieRangerGreen
+  equipment:
+    jumpsuit: ClothingShirtHoodieRangerGreen
+
+#MARK: Sweater
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterWhite
+  equipment:
+    jumpsuit: ClothingShirtSweaterWhite
+
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterRed
+  equipment:
+    jumpsuit: ClothingShirtSweaterRed
+
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterBlue
+  equipment:
+    jumpsuit: ClothingShirtSweaterBlue
+
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterGreen
+  equipment:
+    jumpsuit: ClothingShirtSweaterGreen
+
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterYellow
+  equipment:
+    jumpsuit: ClothingShirtSweaterYellow
+
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterPurple
+  equipment:
+    jumpsuit: ClothingShirtSweaterPurple
+
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterBlack
+  equipment:
+    jumpsuit: ClothingShirtSweaterBlack
+
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterBeige
+  equipment:
+    jumpsuit: ClothingShirtSweaterBeige
+
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterBrown
+  equipment:
+    jumpsuit: ClothingShirtSweaterBrown
+
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterOlive
+  equipment:
+    jumpsuit: ClothingShirtSweaterOlive
+
+- type: loadout
+  id: LoadoutEntryClothingShirtSweaterRangerGreen
+  equipment:
+    jumpsuit: ClothingShirtSweaterRangerGreen
+
+#MARK: T-Shirt
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtWhite
+  equipment:
+    jumpsuit: ClothingShirtTShirtWhite
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtRed
+  equipment:
+    jumpsuit: ClothingShirtTShirtRed
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtBlue
+  equipment:
+    jumpsuit: ClothingShirtTShirtBlue
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtGreen
+  equipment:
+    jumpsuit: ClothingShirtTShirtGreen
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtYellow
+  equipment:
+    jumpsuit: ClothingShirtTShirtYellow
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtPurple
+  equipment:
+    jumpsuit: ClothingShirtTShirtPurple
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtBlack
+  equipment:
+    jumpsuit: ClothingShirtTShirtBlack
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtBeige
+  equipment:
+    jumpsuit: ClothingShirtTShirtBeige
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtBrown
+  equipment:
+    jumpsuit: ClothingShirtTShirtBrown
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtOlive
+  equipment:
+    jumpsuit: ClothingShirtTShirtOlive
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTShirtRangerGreen
+  equipment:
+    jumpsuit: ClothingShirtTShirtRangerGreen
+
+#MARK: Tank Top
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopWhite
+  equipment:
+    jumpsuit: ClothingShirtTankTopWhite
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopRed
+  equipment:
+    jumpsuit: ClothingShirtTankTopRed
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopBlue
+  equipment:
+    jumpsuit: ClothingShirtTankTopBlue
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopGreen
+  equipment:
+    jumpsuit: ClothingShirtTankTopGreen
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopYellow
+  equipment:
+    jumpsuit: ClothingShirtTankTopYellow
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopPurple
+  equipment:
+    jumpsuit: ClothingShirtTankTopPurple
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopBlack
+  equipment:
+    jumpsuit: ClothingShirtTankTopBlack
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopBeige
+  equipment:
+    jumpsuit: ClothingShirtTankTopBeige
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopBrown
+  equipment:
+    jumpsuit: ClothingShirtTankTopBrown
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopOlive
+  equipment:
+    jumpsuit: ClothingShirtTankTopOlive
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTankTopRangerGreen
+  equipment:
+    jumpsuit: ClothingShirtTankTopRangerGreen
+
+#MARK: Tracksuit
+- type: loadout
+  id: LoadoutEntryClothingShirtTracksuitBlack
+  equipment:
+    jumpsuit: ClothingShirtTracksuitBlack
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTracksuitBlue
+  equipment:
+    jumpsuit: ClothingShirtTracksuitBlue
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTracksuitYellow
+  equipment:
+    jumpsuit: ClothingShirtTracksuitYellow
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTracksuitRed
+  equipment:
+    jumpsuit: ClothingShirtTracksuitRed
+
+- type: loadout
+  id: LoadoutEntryClothingShirtTracksuitGreen
+  equipment:
+    jumpsuit: ClothingShirtTracksuitGreen
+
+#MARK: Mariniere/Teslnyashka
+- type: loadout
+  id: LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaGreen
+  equipment:
+    jumpsuit: ClothingShirtStrippedMariniereTeslnyashkaGreen
+
+- type: loadout
+  id: LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlue
+  equipment:
+    jumpsuit: ClothingShirtStrippedMariniereTeslnyashkaBlue
+
+- type: loadout
+  id: LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaRed
+  equipment:
+    jumpsuit: ClothingShirtStrippedMariniereTeslnyashkaRed
+
+- type: loadout
+  id: LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlack
+  equipment:
+    jumpsuit: ClothingShirtStrippedMariniereTeslnyashkaBlack

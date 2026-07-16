@@ -22,6 +22,9 @@
   - type: Tag
     id: CataStructurePoliceStationSmall26x26
 
+  - type: Tag
+    id: CataStructureHouseMedium52x52
+
 #MARK: Special Buildings
 
   - type: Tag

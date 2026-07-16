@@ -1,5 +1,5 @@
 #MARK: -TShirts-
-  #MARK: TShirt - red
+  #MARK: red
     - type: entity
       parent: BaseClothingPants
       id: ClothingPantsJoggingsRed
@@ -23,7 +23,7 @@
           right:
           - state: inhand-right
             color: "#9E1A1A"
-  #MARK: TShirt - blue
+  #MARK: blue
     - type: entity
       parent: BaseClothingPants
       id: ClothingPantsJoggingsBlue
@@ -47,7 +47,7 @@
           right:
           - state: inhand-right
             color: "#404691"
-  #MARK: TShirt - green
+  #MARK: green
     - type: entity
       parent: BaseClothingPants
       id: ClothingPantsJoggingsGreen
@@ -71,7 +71,7 @@
           right:
           - state: inhand-right
             color: "#3d8c40"
-  #MARK: TShirt - yellow
+  #MARK: yellow
     - type: entity
       parent: BaseClothingPants
       id: ClothingPantsJoggingsYellow
@@ -95,7 +95,7 @@
           right:
           - state: inhand-right
             color: "#A89B25"
-  #MARK: TShirt - purple
+  #MARK: purple
     - type: entity
       parent: BaseClothingPants
       id: ClothingPantsJoggingsPurple
@@ -119,7 +119,7 @@
           right:
           - state: inhand-right
             color: "#702963"
-  #MARK: TShirt - black
+  #MARK: black
     - type: entity
       parent: BaseClothingPants
       id: ClothingPantsJoggingsBlack
@@ -143,7 +143,7 @@
           right:
           - state: inhand-right
             color: "#444444"
-  #MARK: TShirt - white
+  #MARK: white
     - type: entity
       parent: BaseClothingPants
       id: ClothingPantsJoggingsWhite
