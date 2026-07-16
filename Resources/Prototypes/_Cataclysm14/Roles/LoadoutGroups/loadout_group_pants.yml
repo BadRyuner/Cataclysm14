@@ -1,0 +1,136 @@
+- type: loadoutGroup
+  id: LoadoutGroupPants
+  name: loadout-group-pants
+  loadouts:
+  #MARK: Duty Pants
+  - LoadoutEntryClothingPantsDutyTan
+  - LoadoutEntryClothingPantsDutyCoyoteBrown
+  - LoadoutEntryClothingPantsDutyRangerGreen
+  - LoadoutEntryClothingPantsDutyBlack
+  #MARK: Jeans
+  - LoadoutEntryClothingPantsJeansBlue
+  - LoadoutEntryClothingPantsJeansPurple
+  - LoadoutEntryClothingPantsJeansBlack
+  - LoadoutEntryClothingPantsJeansBrown
+  #MARK: Joggings
+  - LoadoutEntryClothingPantsJoggingsRed
+  - LoadoutEntryClothingPantsJoggingsBlue
+  - LoadoutEntryClothingPantsJoggingsGreen
+  - LoadoutEntryClothingPantsJoggingsYellow
+  - LoadoutEntryClothingPantsJoggingsPurple
+  - LoadoutEntryClothingPantsJoggingsBlack
+  - LoadoutEntryClothingPantsJoggingsWhite
+  #MARK: Tracksuit
+  - LoadoutEntryClothingPantsTracksuitBlack
+  - LoadoutEntryClothingPantsTracksuitBlue
+  - LoadoutEntryClothingPantsTracksuitYellow
+  - LoadoutEntryClothingPantsTracksuitRed
+  - LoadoutEntryClothingPantsTracksuitGreen
+  fallbacks:
+  - LoadoutEntryClothingPantsTracksuitBlack
+
+#MARK: Duty Pants
+- type: loadout
+  id: LoadoutEntryClothingPantsDutyTan
+  equipment:
+    pants: ClothingPantsDutyTan
+
+- type: loadout
+  id: LoadoutEntryClothingPantsDutyCoyoteBrown
+  equipment:
+    pants: ClothingPantsDutyCoyoteBrown
+
+- type: loadout
+  id: LoadoutEntryClothingPantsDutyRangerGreen
+  equipment:
+    pants: ClothingPantsDutyRangerGreen
+
+- type: loadout
+  id: LoadoutEntryClothingPantsDutyBlack
+  equipment:
+    pants: ClothingPantsDutyBlack
+
+#MARK: Jeans
+- type: loadout
+  id: LoadoutEntryClothingPantsJeansBlue
+  equipment:
+    pants: ClothingPantsJeansBlue
+
+- type: loadout
+  id: LoadoutEntryClothingPantsJeansPurple
+  equipment:
+    pants: ClothingPantsJeansPurple
+
+- type: loadout
+  id: LoadoutEntryClothingPantsJeansBlack
+  equipment:
+    pants: ClothingPantsJeansBlack
+
+- type: loadout
+  id: LoadoutEntryClothingPantsJeansBrown
+  equipment:
+    pants: ClothingPantsJeansBrown
+
+#MARK: Joggings
+- type: loadout
+  id: LoadoutEntryClothingPantsJoggingsRed
+  equipment:
+    pants: ClothingPantsJoggingsRed
+
+- type: loadout
+  id: LoadoutEntryClothingPantsJoggingsBlue
+  equipment:
+    pants: ClothingPantsJoggingsBlue
+
+- type: loadout
+  id: LoadoutEntryClothingPantsJoggingsGreen
+  equipment:
+    pants: ClothingPantsJoggingsGreen
+
+- type: loadout
+  id: LoadoutEntryClothingPantsJoggingsYellow
+  equipment:
+    pants: ClothingPantsJoggingsYellow
+
+- type: loadout
+  id: LoadoutEntryClothingPantsJoggingsPurple
+  equipment:
+    pants: ClothingPantsJoggingsPurple
+
+- type: loadout
+  id: LoadoutEntryClothingPantsJoggingsBlack
+  equipment:
+    pants: ClothingPantsJoggingsBlack
+
+- type: loadout
+  id: LoadoutEntryClothingPantsJoggingsWhite
+  equipment:
+    pants: ClothingPantsJoggingsWhite
+
+#MARK: Tracksuit
+- type: loadout
+  id: LoadoutEntryClothingPantsTracksuitBlack
+  equipment:
+    pants: ClothingPantsTracksuitBlack
+
+- type: loadout
+  id: LoadoutEntryClothingPantsTracksuitBlue
+  equipment:
+    pants: ClothingPantsTracksuitBlue
+
+- type: loadout
+  id: LoadoutEntryClothingPantsTracksuitYellow
+  equipment:
+    pants: ClothingPantsTracksuitYellow
+
+- type: loadout
+  id: LoadoutEntryClothingPantsTracksuitRed
+  equipment:
+    pants: ClothingPantsTracksuitRed
+
+- type: loadout
+  id: LoadoutEntryClothingPantsTracksuitGreen
+  equipment:
+    pants: ClothingPantsTracksuitGreen
+
+

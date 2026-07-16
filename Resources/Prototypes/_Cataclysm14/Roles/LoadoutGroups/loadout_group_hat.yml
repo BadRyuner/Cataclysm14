@@ -1,0 +1,118 @@
+- type: loadoutGroup
+  id: LoadoutGroupHat
+  name: loadout-group-hat
+  loadouts:
+  #Cap
+  - LoadoutEntryClothingHeadHatCapWhite
+  - LoadoutEntryClothingHeadHatCapRed
+  - LoadoutEntryClothingHeadHatCapBlue
+  - LoadoutEntryClothingHeadHatCapGreen
+  - LoadoutEntryClothingHeadHatCapYellow
+  - LoadoutEntryClothingHeadHatCapPurple
+  - LoadoutEntryClothingHeadHatCapBlack
+  - LoadoutEntryClothingHeadHatCapBeige
+  - LoadoutEntryClothingHeadHatCapBrown
+  - LoadoutEntryClothingHeadHatCapOlive
+  - LoadoutEntryClothingHeadHatCapRangerGreen
+  #Beanie
+  - LoadoutEntryClothingHeadHatBeanieBlack
+  - LoadoutEntryClothingHeadHatBeanieBeige
+  - LoadoutEntryClothingHeadHatBeaniePurple
+  - LoadoutEntryClothingHeadHatBeanieGray
+  - LoadoutEntryClothingHeadHatBeanieTan
+  - LoadoutEntryClothingHeadHatBeanieOlive
+  - LoadoutEntryClothingHeadHatBeanieRangerGreen
+  fallbacks:
+  - LoadoutEntryClothingHeadHatBeanieBlack
+
+#MARK: Caps
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapWhite
+  equipment:
+    head: ClothingHeadHatCapWhite
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapRed
+  equipment:
+    head: ClothingHeadHatCapRed
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapBlue
+  equipment:
+    head: ClothingHeadHatCapBlue
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapGreen
+  equipment:
+    head: ClothingHeadHatCapGreen
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapYellow
+  equipment:
+    head: ClothingHeadHatCapYellow
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapPurple
+  equipment:
+    head: ClothingHeadHatCapPurple
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapBlack
+  equipment:
+    head: ClothingHeadHatCapBlack
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapBeige
+  equipment:
+    head: ClothingHeadHatCapBeige
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapBrown
+  equipment:
+    head: ClothingHeadHatCapBrown
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapOlive
+  equipment:
+    head: ClothingHeadHatCapOlive
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatCapRangerGreen
+  equipment:
+    head: ClothingHeadHatCapRangerGreen
+
+#MARK: Beanie
+- type: loadout
+  id: LoadoutEntryClothingHeadHatBeanieBlack
+  equipment:
+    head: ClothingHeadHatBeanieBlack
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatBeanieBeige
+  equipment:
+    head: ClothingHeadHatBeanieBeige
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatBeaniePurple
+  equipment:
+    head: ClothingHeadHatBeaniePurple
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatBeanieGray
+  equipment:
+    head: ClothingHeadHatBeanieGray
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatBeanieTan
+  equipment:
+    head: ClothingHeadHatBeanieTan
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatBeanieOlive
+  equipment:
+    head: ClothingHeadHatBeanieOlive
+
+- type: loadout
+  id: LoadoutEntryClothingHeadHatBeanieRangerGreen
+  equipment:
+    head: ClothingHeadHatBeanieRangerGreen

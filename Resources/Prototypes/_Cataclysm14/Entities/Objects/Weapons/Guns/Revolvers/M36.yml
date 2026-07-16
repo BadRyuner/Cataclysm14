@@ -3,6 +3,7 @@
   name: S&W M36 (.38 Special)
   description: A revolver that is commonly used by american law enforcer when budget is lacking. Manufactured by Smith & Wesson and uses .38 Special ammo.
   suffix: Empty
+  abstract: true
   parent: BaseWeaponRevolver
   components:
     - type: Item

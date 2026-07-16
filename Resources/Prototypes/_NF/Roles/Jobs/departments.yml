@@ -16,6 +16,7 @@
   description: department-NF-description
   color: "#334E6D"
   weight: 50 # accounted for in jobs
+  editorHidden: true
   roles:
   - StationRepresentative
   - StationTrafficController
@@ -30,6 +31,7 @@
   description: department-NFAntag-description
   color: "#DE3A3A"
   weight: 115 # Mono
+  editorHidden: true
   roles:
   - PirateCaptain
   - PirateFirstMate

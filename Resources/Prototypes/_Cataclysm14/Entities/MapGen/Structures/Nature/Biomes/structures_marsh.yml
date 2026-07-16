@@ -14,7 +14,10 @@
   name: marsh
   suffix: Base Grass][1x1 Chunk][13x13
   components:
+  - type: Transform
+    noRot: true
   - type: Sprite
+    noRot: true
     layers:
     - sprite: _Cataclysm14/Mapping/generic.rsi
       state: structure_border_small

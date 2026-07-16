@@ -2,7 +2,7 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTracksuitBlack
-  name: tracksuit shirt (blacl)
+  name: tracksuit shirt (black)
   description: An ample and breathable track shirt, has some branding line.
   components:
   - type: Sprite

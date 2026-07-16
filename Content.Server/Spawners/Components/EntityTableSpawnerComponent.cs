@@ -13,6 +13,20 @@ public sealed partial class EntityTableSpawnerComponent : Component
     [DataField(required: true)]
     public EntityTableSelector Table = default!;
 
+    //Cataclysm14, >>
+    /// <summary>
+    /// Whether the result entity should be rotated with the spawner.
+    /// </summary>
+    [DataField]
+    public bool Rotate = false;
+
+    //Cataclysm14, >>
+    /// <summary>
+    /// Whether the result entity should have a random rotation, overrides spawner rotation and doesn't require it.
+    /// </summary>
+    [DataField]
+    public bool RandomRotation = false;
+
     /// <summary>
     /// Scatter of entity spawn coordinates
     /// </summary>

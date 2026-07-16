@@ -7,14 +7,14 @@
   tags:
   - CataStructureGunshopSmall26x26
 
-# - type: dungeonRoom
-#   id: StructureSpawnerGunshopSmall26x26b
-#   size: 27,27
-#   atlas: /Maps/_Cataclysm14/Structures/Shops/Gunshops/structure_gunshop_26x26_b.yml
-#   offset: 0,0
-#   ignoreTile: FloorShuttleOrange
-#   tags:
-#   - CataStructureGunshopSmall26x26
+- type: dungeonRoom
+  id: StructureSpawnerGunshopSmall26x26b
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Gunshops/structure_gunshop_26x26_b.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureGunshopSmall26x26
 
 - type: entity
   parent: BaseStructureSpawner

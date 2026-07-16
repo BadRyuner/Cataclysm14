@@ -1,3 +1,4 @@
+#MARK: BaseTall
 - type: entity
   id: StructureFurnitureBaseLarge
   parent: BaseStructure
@@ -18,6 +19,29 @@
         - LargeMobMask
         layer:
         - WallLayer
+
+#MARK: BaseTall
+- type: entity
+  id: StructureFurnitureBaseTall
+  parent: BaseStructure
+  abstract: true
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.35,0.4"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+  - type: Occluder
 
 #Starts unanchored, cannot be rotated while anchored
 - type: entity

@@ -9,7 +9,7 @@
   #     time: 43200
   # icon: JobIconBorg
   # supervisors: job-supervisors-hire
-  jobEntity: MobHumanDeployableNationalGuardInfantry
+  # jobEntity: MobHumanDeployableNationalGuardInfantry
   applyTraits: true
 
 - type: playTimeTracker

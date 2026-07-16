@@ -18,6 +18,38 @@
       state: questionmark
       color: red
   - type: EntityTableSpawner
+    rotate: true
+    table: !type:GroupSelector
+      children:
+      - id: StructureSpawnerGunshopSmall26x26
+        weight: 100
+
+#MARK: Service Building
+- type: entity
+  name: random service building spawner
+  id: StructureSpawnerCityServiceBuilding26x26
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    offset: -0.5,-0.5
+    layers:
+    - sprite: _Cataclysm14/Mapping/Shops/structure_shop.rsi
+      state: structure_border_shop_small
+      scale: 26,26
+    - sprite: _Cataclysm14/Objects/Weapons/Melee/nightstick.rsi
+      state: icon
+      scale: 16,16
+      offset: -4,-6
+    - sprite: _Cataclysm14/Objects/Containers/medkit_box_medium_red.rsi
+      state: icon
+      scale: 16,16
+      offset: 4,-6
+    - sprite: _NF/Markers/general.rsi
+      scale: 20,20
+      state: questionmark
+      color: red
+  - type: EntityTableSpawner
+    rotate: true
     table: !type:GroupSelector
       children:
       - id: StructureSpawnerGunshopSmall26x26

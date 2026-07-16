@@ -1,0 +1,20 @@
+- type: loadoutGroup
+  id: LoadoutGroupEyewear
+  name: loadout-group-eyewear
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutEntryClothingEyesGlassesCorrectiveGlasses
+  - LoadoutEntryClothingEyesGlassesShadesSunglasses
+  fallbacks:
+  - LoadoutEntryClothingEyesGlassesCorrectiveGlasses
+
+- type: loadout
+  id: LoadoutEntryClothingEyesGlassesCorrectiveGlasses
+  equipment:
+    eyes: ClothingEyesGlassesCorrectiveGlasses
+
+- type: loadout
+  id: LoadoutEntryClothingEyesGlassesShadesSunglasses
+  equipment:
+    eyes: ClothingEyesGlassesShadesSunglasses
