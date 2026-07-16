@@ -8,6 +8,7 @@ panic_bunker.enabled = false
 panic_bunker.disable_with_admins = false
 panic_bunker.enable_without_admins = false
 panic_bunker.custom_reason = ""
+map = "CataDev"
 
 [chat]
 motd = "Welcome to Cataclysm14. Your starts here, and ends soon. Be sure to join our Discord."
@@ -63,6 +64,7 @@ time = 240
 mode = 1
 
 [net]
+pvs_range = 38
 tickrate = 30
 max_connections = 2000
 lidgren_log_warning = false
@@ -87,3 +89,9 @@ tags = "lang:en,region:eu_w,rp:med"
 
 [whitelist]
 enabled = true
+
+[physics]
+grid_splitting = false
+
+[procgen]
+preload = false
