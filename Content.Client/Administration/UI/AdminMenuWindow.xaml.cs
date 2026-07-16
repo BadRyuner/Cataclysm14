@@ -23,6 +23,7 @@ public sealed partial class AdminMenuWindow : DefaultWindow
         MasterTabContainer.SetTabTitle((int) TabIndex.PanicBunker, Loc.GetString("admin-menu-panic-bunker-tab"));
         MasterTabContainer.SetTabTitle((int) TabIndex.Players, Loc.GetString("admin-menu-players-tab"));
         MasterTabContainer.SetTabTitle((int) TabIndex.Objects, Loc.GetString("admin-menu-objects-tab"));
+        MasterTabContainer.SetTabTitle((int) TabIndex.Whitelist, "Whitelist"); //Cata14 add; Whitelist tab, makes my life fucking easier
         MasterTabContainer.OnTabChanged += OnTabChanged;
     }
 
@@ -31,6 +32,8 @@ public sealed partial class AdminMenuWindow : DefaultWindow
         var tabEnum = (TabIndex)tabIndex;
         if (tabEnum == TabIndex.Objects)
             ObjectsTabControl.RefreshObjectList();
+        else if (tabEnum == TabIndex.Whitelist)
+            WhitelistTabControl.Refresh();
     }
 
     protected override void Dispose(bool disposing)
@@ -50,5 +53,6 @@ public sealed partial class AdminMenuWindow : DefaultWindow
         PanicBunker,
         Players,
         Objects,
+        Whitelist,
     }
 }

@@ -1167,6 +1167,22 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         #endregion
 
         #region Whitelist
+		//Cata 14 add for whitelisting
+        public async Task<IReadOnlyList<WhitelistEntryRecord>> GetWhitelistEntriesAsync(CancellationToken cancel = default)
+        {
+            await using var db = await GetDb(cancel);
+
+            return await (
+                from whitelist in db.DbContext.Whitelist
+                join player in db.DbContext.Player
+                    on whitelist.UserId equals player.UserId into playerRows
+                from player in playerRows.DefaultIfEmpty()
+                orderby player == null ? null : player.LastSeenUserName, whitelist.UserId
+                select new WhitelistEntryRecord(
+                    new NetUserId(whitelist.UserId),
+                    player == null ? null : player.LastSeenUserName))
+                .ToListAsync(cancel);
+        }
 
         public async Task<bool> GetWhitelistStatusAsync(NetUserId player)
         {
