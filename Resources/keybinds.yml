@@ -615,3 +615,9 @@ binds:
   key: X
   mod1: Shift
 # endregion Frontier
+# region Cataclysm14
+- function: OpenCataCraftingMenu
+  type: State
+  key: Num7 # &
+  mod1: Shift
+# endregion Cataclysm14

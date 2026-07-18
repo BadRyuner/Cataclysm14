@@ -247,6 +247,7 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(ContentKeyFunctions.CycleChatChannelBackward);
             AddButton(ContentKeyFunctions.OpenCharacterMenu);
             AddButton(ContentKeyFunctions.OpenCraftingMenu);
+            AddButton(ContentKeyFunctions.OpenCataCraftingMenu); // Cataclysm14
             AddButton(ContentKeyFunctions.OpenGuidebook);
             AddButton(ContentKeyFunctions.OpenInventoryMenu);
             AddButton(ContentKeyFunctions.OpenLanguageMenu); // Einstein Engines - Language

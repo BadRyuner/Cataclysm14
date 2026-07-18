@@ -1,0 +1,1 @@
+ui-options-function-open-cata-crafting-menu = Open crafting menu

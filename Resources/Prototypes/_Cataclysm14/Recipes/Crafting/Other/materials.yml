@@ -1,0 +1,44 @@
+#MARK: WoodPlank
+- type: CraftingRecipe
+  id: CraftMaterialObjectWoodPlankStack5
+  name: wood plank (x5)
+  subCategory: MATERIALS
+  item: MaterialObjectWoodPlankStack5
+  doAfter: 2
+  conditions:
+    - item: MaterialObjectWoodLog
+      amount: 1
+    - tool: PryingT1
+
+- type: CraftingRecipe
+  id: CraftMaterialObjectWoodPlankStack10
+  name: wood plank (x10)
+  subCategory: MATERIALS
+  item: MaterialObjectWoodPlankStack10
+  doAfter: 15
+  conditions:
+    - item: MaterialObjectWoodLog
+      amount: 2
+    - tool: PryingT1
+
+- type: CraftingRecipe
+  id: CraftMaterialObjectWoodPlankStack25
+  name: wood plank (x25)
+  subCategory: MATERIALS
+  item: MaterialObjectWoodPlankStack25
+  doAfter: 30
+  conditions:
+    - item: MaterialObjectWoodLog
+      amount: 5
+    - tool: PryingT1
+
+- type: CraftingRecipe
+  id: CraftMaterialObjectWoodPlankStack50
+  name: wood plank (x50)
+  subCategory: MATERIALS
+  item: MaterialObjectWoodPlankStack50
+  doAfter: 50
+  conditions:
+    - item: MaterialObjectWoodLog
+      amount: 10
+    - tool: PryingT1

@@ -1,0 +1,94 @@
+# shithardcode area
+
+- type: ToolQualityFamily
+  id: Prying
+  family:
+    PryingT1: 1
+    PryingT2: 2
+    PryingT3: 3
+
+- type: ToolQualityFamily
+  id: Hammering
+  family:
+    HammeringT1: 1
+    HammeringT2: 2
+    HammeringT3: 3
+
+- type: ToolQualityFamily
+  id: FineHammering
+  family:
+    FineHammeringT1: 1
+
+- type: ToolQualityFamily
+  id: NailPrying
+  family:
+    NailPryingT1: 1
+
+- type: ToolQualityFamily
+  id: WoodSawing
+  family:
+    WoodSawingT1: 1
+    WoodSawingT2: 2
+
+- type: ToolQualityFamily
+  id: MetalSawing
+  family:
+    MetalSawingT1: 1
+    MetalSawingT2: 2
+    MetalSawingT3: 3
+    MetalSawingT4: 4
+
+- type: ToolQualityFamily
+  id: FineMetalSawing
+  family:
+    FineMetalSawingT1: 1
+    FineMetalSawingT2: 2
+    
+- type: ToolQualityFamily
+  id: Digging
+  family:
+    DiggingT1: 1
+    DiggingT2: 2
+    DiggingT3: 3
+    
+- type: ToolQualityFamily
+  id: Screwdriving
+  family:
+    ScrewdrivingT1: 1
+    
+- type: ToolQualityFamily
+  id: Cutting
+  family:
+    CuttingT1: 1
+    CuttingT2: 2
+    
+- type: ToolQualityFamily
+  id: FineCutting
+  family:
+    FineCuttingT1: 1
+    FineCuttingT2: 2
+    FineCuttingT3: 3
+    
+- type: ToolQualityFamily
+  id: FabricCutting
+  family:
+    FabricCuttingT1: 1
+    FabricCuttingT2: 2
+    
+- type: ToolQualityFamily
+  id: Filing
+  family:
+    FilingT1: 1
+    FilingT2: 2
+    
+- type: ToolQualityFamily
+  id: BoltTurning
+  family:
+    BoltTurningT1: 1
+    BoltTurningT2: 2
+    
+- type: ToolQualityFamily
+  id: FineBoltTurning
+  family:
+    FineBoltTurningT1: 1
+    FineBoltTurningT2: 2

@@ -26,6 +26,7 @@ public sealed class GameTopMenuBarUIController : UIController
     [Dependency] private readonly GuidebookUIController _guidebook = default!;
     [Dependency] private readonly EmotesUIController _emotes = default!;
     [Dependency] private readonly LanguageMenuUIController _language = default!;
+    [Dependency] private readonly Content.Client._Cataclysm14.UserInterface.Systems.Crafting.CraftingUIController _cataCrafting = default!; // Cataclysm14
 
     private GameTopMenuBar? GameTopMenuBar => UIManager.GetActiveUIWidgetOrNull<GameTopMenuBar>();
 
@@ -50,6 +51,7 @@ public sealed class GameTopMenuBarUIController : UIController
         _sandbox.UnloadButton();
         _emotes.UnloadButton();
         _language.UnloadButton();
+        _cataCrafting.UnloadButton(); // Cataclysm14
     }
 
     public void LoadButtons()
@@ -64,5 +66,6 @@ public sealed class GameTopMenuBarUIController : UIController
         _sandbox.LoadButton();
         _emotes.LoadButton();
         _language.LoadButton();
+        _cataCrafting.LoadButton(); // Cataclysm14
     }
 }

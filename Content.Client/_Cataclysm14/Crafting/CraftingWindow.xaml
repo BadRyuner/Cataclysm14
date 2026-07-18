@@ -1,0 +1,37 @@
+﻿<controls:CraftingWindow
+    xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client._Cataclysm14.Crafting"
+    xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+    MinSize="400 400"
+    Title="Crafting">
+
+    <PanelContainer HorizontalExpand="true" VerticalExpand="true">
+        <PanelContainer.PanelOverride>
+            <graphics:StyleBoxFlat BorderThickness="0" BorderColor="#000000" BackgroundColor="#000000" />
+        </PanelContainer.PanelOverride>
+
+        <BoxContainer Orientation="Vertical">
+            <BoxContainer Name="CategoryContainer" Orientation="Horizontal" SeparationOverride="5" />
+            <PanelContainer Margin="2" HorizontalExpand="true" VerticalExpand="true">
+                <PanelContainer.PanelOverride>
+                    <graphics:StyleBoxFlat BorderThickness="2" BorderColor="#969696" BackgroundColor="#000000" />
+                </PanelContainer.PanelOverride>
+                <BoxContainer Orientation="Vertical" VerticalAlignment="Stretch">
+                    <BoxContainer Name="SubCategoryContainer" Orientation="Horizontal" SeparationOverride="5" VerticalAlignment="Top" />
+                    <BoxContainer Orientation="Horizontal" VerticalAlignment="Stretch" VerticalExpand="true">
+                        <ItemList Name="RecipeList" SetWidth="200" SelectMode="Single" VerticalExpand="true" VerticalAlignment="Stretch"/>
+                        <BoxContainer Name="CraftingInfoContainer" Orientation="Vertical" HorizontalExpand="true" VerticalExpand="true" VerticalAlignment="Top">
+                            <BoxContainer Orientation="Horizontal">
+                                <Label Text="Recipe Result: "/>
+                                <Label Name="RecipeResultLabel"/>
+                            </BoxContainer>
+                            <Label Text="Required:"/>
+                            <BoxContainer Name="RequirementsContainer" Orientation="Vertical"/>
+                        </BoxContainer>
+                    </BoxContainer>
+                </BoxContainer>
+            </PanelContainer>
+        </BoxContainer>
+
+    </PanelContainer>
+</controls:CraftingWindow>

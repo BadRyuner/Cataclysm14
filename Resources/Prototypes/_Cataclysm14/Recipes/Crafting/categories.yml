@@ -1,0 +1,212 @@
+# do not do OTHER plz due ass implementation
+# MARK: WEAPON
+- type: CraftingCategory
+  id: WEAPON
+
+- type: CraftingSubCategory
+  parent: WEAPON
+  id: BASHING
+
+- type: CraftingSubCategory
+  parent: WEAPON
+  id: CUTTING
+
+- type: CraftingSubCategory
+  parent: WEAPON
+  id: STABBING
+
+- type: CraftingSubCategory
+  parent: WEAPON
+  id: UNARMED
+
+- type: CraftingSubCategory
+  parent: WEAPON
+  id: RANGED
+
+- type: CraftingSubCategory
+  parent: WEAPON
+  id: EXPLOSIVE
+
+- type: CraftingSubCategory
+  parent: WEAPON
+  id: MODS
+
+- type: CraftingSubCategory
+  parent: WEAPON
+  id: MAGAZINES
+
+# MARK: AMMO
+- type: CraftingCategory
+  id: AMMO
+
+- type: CraftingSubCategory
+  parent: AMMO
+  id: PISTOL
+
+- type: CraftingSubCategory
+  parent: AMMO
+  id: RIFLE
+
+- type: CraftingSubCategory
+  parent: AMMO
+  id: SHOT
+
+- type: CraftingSubCategory
+  parent: AMMO
+  id: GRENADES
+
+- type: CraftingSubCategory
+  parent: AMMO
+  id: ARROWS
+
+#- type: CraftingSubCategory CURSED DUE DUPLICATE
+#  parent: AMMO
+#  id: COMPONENTS
+
+# MARK: FOOD
+- type: CraftingCategory
+  id: FOOD
+
+- type: CraftingSubCategory
+  parent: FOOD
+  id: DRINKS
+
+- type: CraftingSubCategory
+  parent: FOOD
+  id: DRY
+
+- type: CraftingSubCategory
+  parent: FOOD
+  id: MEAT
+
+- type: CraftingSubCategory
+  parent: FOOD
+  id: VEGGI
+
+- type: CraftingSubCategory
+  parent: FOOD
+  id: SNACK
+
+- type: CraftingSubCategory
+  parent: FOOD
+  id: BREAD
+
+- type: CraftingSubCategory
+  parent: FOOD
+  id: PASTA
+
+- type: CraftingSubCategory
+  parent: FOOD
+  id: BREW
+
+- type: CraftingSubCategory
+  parent: FOOD
+  id: SEEDS
+
+# MARK: CHEM
+- type: CraftingCategory
+  id: CHEM
+
+- type: CraftingSubCategory
+  parent: CHEM
+  id: DRUGS
+
+- type: CraftingSubCategory
+  parent: CHEM
+  id: FUEL
+
+- type: CraftingSubCategory
+  parent: CHEM
+  id: MUTAGEN
+
+- type: CraftingSubCategory
+  parent: CHEM
+  id: CHEMICALS
+
+# MARK: ELECTRONIC
+- type: CraftingCategory
+  id: ELECTRONIC
+
+- type: CraftingSubCategory
+  parent: ELECTRONIC
+  id: ETOOLS
+
+- type: CraftingSubCategory
+  parent: ELECTRONIC
+  id: EPARTS
+
+- type: CraftingSubCategory
+  parent: ELECTRONIC
+  id: LIGHTING
+
+- type: CraftingSubCategory
+  parent: ELECTRONIC
+  id: COMPONENTS
+
+# MARK: ARMOR
+- type: CraftingCategory
+  id: ARMOR
+
+- type: CraftingSubCategory
+  parent: ARMOR
+  id: STORAGE
+
+- type: CraftingSubCategory
+  parent: ARMOR
+  id: SUIT
+
+- type: CraftingSubCategory
+  parent: ARMOR
+  id: HEAD
+
+- type: CraftingSubCategory
+  parent: ARMOR
+  id: TORSO
+
+- type: CraftingSubCategory
+  parent: ARMOR
+  id: ARMS
+
+- type: CraftingSubCategory
+  parent: ARMOR
+  id: HANDS
+
+- type: CraftingSubCategory
+  parent: ARMOR
+  id: LEGS
+
+- type: CraftingSubCategory
+  parent: ARMOR
+  id: FEET
+
+# MARK: OTHER
+- type: CraftingCategory
+  id: OTHER
+
+- type: CraftingSubCategory
+  parent: OTHER
+  id: TOOLS
+
+- type: CraftingSubCategory
+  parent: OTHER
+  id: MEDICAL
+
+- type: CraftingSubCategory
+  parent: OTHER
+  id: CONTAINERS
+
+- type: CraftingSubCategory
+  parent: OTHER
+  id: MATERIALS
+
+- type: CraftingSubCategory
+  parent: OTHER
+  id: PARTS
+
+- type: CraftingSubCategory
+  parent: OTHER
+  id: TRAPS
+
+- type: CraftingSubCategory
+  parent: OTHER
+  id: VEHICLE

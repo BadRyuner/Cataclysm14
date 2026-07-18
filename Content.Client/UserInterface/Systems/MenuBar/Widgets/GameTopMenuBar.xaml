@@ -52,7 +52,8 @@
         MinSize="42 64"
         HorizontalExpand="True"
         AppendStyleClass="{x:Static style:StyleBase.ButtonSquare}"
-        />
+        Visible="False"
+        /> <!-- Cataclysm14 Hide, because replaced with _shitcode.UserActions -->
     <ui:MenuButton
         Name="CraftingButton"
         Access="Internal"
@@ -63,6 +64,18 @@
         HorizontalExpand="True"
         AppendStyleClass="{x:Static style:StyleBase.ButtonSquare}"
         />
+    <!-- Cataclysm14 Begin Add Crafting (not construction) Button -->
+    <ui:MenuButton
+        Name="CataCraftingButton"
+        Access="Internal"
+        Icon="{xe:Tex '/Textures/Interface/hammer.svg.192dpi.png'}"
+        BoundKey = "{x:Static is:ContentKeyFunctions.OpenCataCraftingMenu}"
+        ToolTip="{Loc 'game-hud-open-crafting-menu-button-tooltip'}"
+        MinSize="42 64"
+        HorizontalExpand="True"
+        AppendStyleClass="{x:Static style:StyleBase.ButtonSquare}"
+    />
+    <!-- Cataclysm14 End -->
     <ui:MenuButton
         Name="ActionButton"
         Access="Internal"
