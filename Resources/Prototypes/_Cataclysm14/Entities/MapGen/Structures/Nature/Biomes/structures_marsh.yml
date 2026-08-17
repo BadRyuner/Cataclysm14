@@ -52,4 +52,4 @@
       - CataStructureSpawnerMarshBaseGrass13x13
   - type: MapGenChunk
     char: 'F'
-    charColor: '#00008BFF'
+    charColor: '#4EC1D9FF'

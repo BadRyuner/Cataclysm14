@@ -24,6 +24,13 @@ entities:
   - uid: 1
     components:
     - type: MapGen
+      noise: 
+        frequency: 0.040
+        noiseType: OpenSimplex2
+        fractalType: FBm
+        octaves: 5
+        lacunarity: 2
+        gain: 0.5
     - type: MetaData
       name: CataDev
     - type: Transform

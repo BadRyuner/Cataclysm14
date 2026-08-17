@@ -13,7 +13,7 @@ public sealed partial class MapGenComponent : Component
 
     [DataField] public Box2i MapSize { get; private set; } = new(-1, -1, 1, 1);
 
-    [DataField] public int Cities { get; private set; } = 2;
+    [DataField] public int Cities { get; private set; } = 1;
 
     [DataField] public int CitySizeInChunks { get; private set; } = 8; // 8x8
 

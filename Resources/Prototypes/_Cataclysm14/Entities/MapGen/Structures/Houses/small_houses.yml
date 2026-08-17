@@ -33,3 +33,6 @@
     roomWhitelist:
       tags:
       - CataStructureHouseSmall26x26
+  - type: MapGenChunk
+    char: '<'
+    charColor: green
