@@ -1,0 +1,18 @@
+﻿<debug:ViewMapWindow
+    xmlns="https://spacestation14.io"
+    xmlns:debug="clr-namespace:Content.Client._Cataclysm14.MapGen._Debug"
+    xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+    MinSize="600 600">
+
+    <PanelContainer VerticalExpand="true" HorizontalExpand="true">
+        <PanelContainer.PanelOverride>
+            <graphics:StyleBoxFlat BackgroundColor="#000000FF" />
+        </PanelContainer.PanelOverride>
+        <BoxContainer VerticalExpand="true" HorizontalExpand="true" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <!-- <ScrollContainer VerticalExpand="true" HorizontalExpand="true" HScrollEnabled="True" VScrollEnabled="True"> -->
+                <BoxContainer Name="ScrollCon" VerticalExpand="true" HorizontalExpand="true"/>
+            <!-- </ScrollContainer> -->
+        </BoxContainer>
+    </PanelContainer>
+
+</debug:ViewMapWindow>

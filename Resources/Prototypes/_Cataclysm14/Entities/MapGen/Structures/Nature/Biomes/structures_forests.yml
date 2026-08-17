@@ -34,3 +34,6 @@
     roomWhitelist:
       tags:
       - CataStructureSpawnerForestBaseGrass13x13
+  - type: MapGenChunk
+    char: 'F'
+    charColor: '#006400FF'

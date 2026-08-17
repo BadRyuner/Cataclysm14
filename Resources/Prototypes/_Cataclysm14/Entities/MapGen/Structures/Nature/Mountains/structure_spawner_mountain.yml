@@ -51,3 +51,6 @@
         weight: 5
       - id: StructureSpawnerMountainRockAnthracite13x13
         weight: 5
+  - type: MapGenChunk
+    char: 'H'
+    charColor: '#311916FF'
